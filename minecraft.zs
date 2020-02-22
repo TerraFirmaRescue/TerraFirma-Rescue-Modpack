@@ -5,4 +5,6 @@ recipes.addShaped(<minecraft:shears>,
 [<ore:plateAnyIron>,<gregtech:gt.metatool.01:18>,null],
 [null,null,null]]);
 
+//Git hub test
+
 mods.chisel.Groups.removeGroup("diamond_block"); 
