@@ -27,49 +27,6 @@ recipes.addShaped(<minecraft:string>,
 [<gregtech:gt.multiitem.food:12000>,<gregtech:gt.multiitem.food:12000>,<gregtech:gt.multiitem.food:12000>],
 [null,null,null]]);
 
-//computers
-recipes.remove(<ComputerCraft:CC-Computer>);
-recipes.addShaped(<ComputerCraft:CC-Computer>, 
-[[<gregtech:gt.multitileentity:28066>,<gregtech:gt.multiitem.technological:30303>,<gregtech:gt.multitileentity:28066>],
-[<gregtech:gt.meta.rotor:8630>,<gregtech:gt.meta.machine:8651>,<gregtech:gt.meta.rotor:8630>],
-[<gregtech:gt.multitileentity:28066>,<gregtech:gt.multiitem.technological:30303>,<gregtech:gt.multitileentity:28066>]]);
-
-recipes.remove(<ComputerCraft:CC-Turtle:1>);
-recipes.addShaped(<ComputerCraft:CC-Turtle:1>, 
-[[null,null,null],
-[null,<ComputerCraft:CC-Turtle>,<gregtech:gt.meta.toolHeadDrill:8630>],
-[null,null,null]]);
-
-recipes.remove(<ComputerCraft:CC-Computer:16384>);
-recipes.addShaped(<ComputerCraft:CC-Computer:16384>, 
-[[<gregtech:gt.multitileentity:28366>,<gregtech:gt.multiitem.technological:30306>,<gregtech:gt.multitileentity:28366>],
-[<gregtech:gt.meta.rotor:130>,<gregtech:gt.meta.machine:790>,<gregtech:gt.meta.rotor:130>],
-[<gregtech:gt.multitileentity:28366>,<gregtech:gt.multiitem.technological:30306>,<gregtech:gt.multitileentity:28366>]]);
-
-recipes.remove(<ComputerCraft:CC-Turtle:16384>);
-recipes.addShaped(<ComputerCraft:CC-Turtle:16384>, 
-[[null,null,null],
-[null,<ComputerCraft:CC-TurtleAdvanced>.withTag({leftUpgrade: 5 as short}),<gregtech:gt.meta.toolHeadDrill:8635>],
-[null,null,null]]);
-
-//superconducting
-MTUtilsGT.removeAllRecipes("gt.recipe.canner",<gregtech:gt.multitileentity:29950>);
-MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 16, 32, 0, [10000], 
-[<gregtech:gt.multitileentity:29650>,<gregtech:gt.multitileentity:26220>],
-[<liquid:liquidnitrogen>*10],
-[null],
-[<gregtech:gt.multitileentity:29950>]);
-MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 16, 32, 0, [10000], 
-[<gregtech:gt.multitileentity:29500>,<gregtech:gt.multitileentity:26220>],
-[<liquid:liquidnitrogen>*10],
-[null],
-[<gregtech:gt.multitileentity:29950>]);
-MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 16, 32, 0, [10000], 
-[<gregtech:gt.multitileentity:29600>,<gregtech:gt.multitileentity:26220>],
-[<liquid:liquidnitrogen>*10],
-[null],
-[<gregtech:gt.multitileentity:29950>]);
-
 //liquid N2
 MTUtilsGT.addCustomRecipe("gt.recipe.freezer", false, 16, 32, 0, [10000], 
 [<gregapi:gt.integrated_circuit>*0],
