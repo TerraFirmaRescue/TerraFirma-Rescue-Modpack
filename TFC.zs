@@ -1,34 +1,11 @@
 import mods.MTUtilsGT;
 
-//remove gt early anvils
-recipes.remove(<gregtech:gt.multitileentity:32025>);
-recipes.remove(<gregtech:gt.multitileentity:32026>);
-recipes.remove(<gregtech:gt.multitileentity:32027>);
-recipes.remove(<gregtech:gt.multitileentity:32050>);
-recipes.remove(<gregtech:gt.multitileentity:32028>);
-recipes.remove(<gregtech:gt.multitileentity:32030>);
-recipes.remove(<gregtech:gt.multitileentity:32031>);
-recipes.remove(<gregtech:gt.multitileentity:32034>);
-
-//RC coke oven
-recipes.remove(<Railcraft:machine.alpha:7>);
-recipes.addShaped(<Railcraft:machine.alpha:7>,
- [[<terrafirmacraft:item.Fire Brick:1>,<ore:sand>,<terrafirmacraft:item.Fire Brick:1>],
-  [<ore:sand>,<ore:craftingToolHardHammer>,<ore:sand>],
-  [<terrafirmacraft:item.Fire Brick:1>,<ore:sand>,<terrafirmacraft:item.Fire Brick:1>]]);
-
-//GT coke oven
-recipes.remove(<gregtech:gt.multitileentity:18000>);
-recipes.addShaped(<gregtech:gt.multitileentity:18000>,
- [[<terrafirmacraft:item.Fire Brick:1>,<terrafirmacraft:item.Fire Brick:1>,null],
-  [<terrafirmacraft:item.Fire Brick:1>,<terrafirmacraft:item.Fire Brick:1>,null],
-  [null,null,null]]);
-
-recipes.remove(<gregtech:gt.multitileentity:17000>);
-recipes.addShaped(<gregtech:gt.multitileentity:17000>,
-[[<ore:craftingToolHardHammer>,<ore:stickBlackSteel>,<ore:screwBlackSteel>],
-[<ore:plateBlackSteel>,<gregtech:gt.multitileentity:18000>,<ore:stickBlackSteel>],
-[<ore:craftingToolWrench>,<ore:stickBlackSteel>,<ore:screwBlackSteel>]]);
+val Screwdriver = <ore:craftingToolScrewdriver>;
+val HHammer = <ore:craftingToolHardHammer>;
+val SHammer = <ore:craftingToolSoftHammer>;
+val Knife = <ore:craftingToolKnife>;
+val Saw = <ore:craftingToolSaw>;
+val Wrench = <ore:craftingToolWrench>;
 
 //clay
 recipes.remove(<terrafirmacraft:item.Clay:1>);
@@ -38,32 +15,31 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 16, 0, [10000],
 
 recipes.remove(<minecraft:furnace>);
 
+//mc chest
 MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 16, 16, 0, [10000],
 [<terrafirmacraft:Chest TFC:*>],
 [<liquid:creosote>*1000],
 [null],
 [<minecraft:chest>]);
 
-//gt clay crucible
-recipes.remove(<gregtech:gt.multitileentity:1055>);
-recipes.addShaped(<gregtech:gt.multitileentity:1055>,
-[[<ore:craftingToolHardHammer>,null,<ore:craftingToolChisel>],
-[<terrafirmacraft:item.Clay:1>,null,<terrafirmacraft:item.Clay:1>],
-[<terrafirmacraft:item.Clay:1>,<terrafirmacraft:item.Clay:1>,<terrafirmacraft:item.Clay:1>]]);
+//iron oven
+recipes.remove(<terrafirmacraft:EarlyBloomery>);
+recipes.addShaped(<terrafirmacraft:EarlyBloomery>,
+[[<terrafirmacraft:item.Bronze Double Sheet>,HHammer,<terrafirmacraft:item.Bronze Double Sheet>],
+[<terrafirmacraft:item.Bronze Double Sheet>,Wrench,<terrafirmacraft:item.Bronze Double Sheet>],
+[null,<terrafirmacraft:item.Bronze Double Sheet>,null]]);
 
-//rc crusher
-recipes.remove(<Railcraft:machine.alpha:15>);
-recipes.addShaped(<Railcraft:machine.alpha:15>*6,
-[[<ore:plateAnyIron>,<ore:plateAnyIron>,<ore:plateAnyIron>],
-[<ore:plateAnyIron>,<minecraft:diamond>,<ore:plateAnyIron>],
-[<ore:plateAnyIron>,<ore:plateAnyIron>,<ore:plateAnyIron>]]);
+//tfc blast furnace
+recipes.remove(<terrafirmacraft:Bloomery>);
+recipes.addShaped(<terrafirmacraft:Bloomery>,
+[[HHammer,null,Wrench],
+[<terrafirmacraft:item.Wrought Iron Double Sheet>,null,<terrafirmacraft:item.Wrought Iron Double Sheet>],
+[<terrafirmacraft:item.Wrought Iron Double Sheet>,<terrafirmacraft:Crucible>,<terrafirmacraft:item.Wrought Iron Double Sheet>]]);
 
-//lead rf generator
-recipes.remove(<gregtech:gt.multitileentity:11111>);
-recipes.addShaped(<gregtech:gt.multitileentity:11111>,
-[[<ore:stickLongLead>,<ore:gearSteel>,<ore:stickLongLead>],
-[<ore:stickLongLead>,<gregtech:gt.meta.machine.double:8630>,<ore:stickLongLead>],
-[<gregtech:gt.multitileentity:28350>,<ore:gearLead>,<gregtech:gt.multitileentity:28350>]]);
+//hopper mc
+MTUtilsGT.addCustomRecipe("gt.recipe.extruder", false, 16, 160, 0, [10000],
+[<terrafirmacraft:item.Wrought Iron Sheet>*4,<gregtech:gt.multiitem.technological:10898>*0],
+[<terrafirmacraft:Hopper>]);
 
 //template
 /*

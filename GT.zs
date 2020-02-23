@@ -1,5 +1,12 @@
 import mods.MTUtilsGT;
 
+val Screwdriver = <ore:craftingToolScrewdriver>;
+val HHammer = <ore:craftingToolHardHammer>;
+val SHammer = <ore:craftingToolSoftHammer>;
+val Knife = <ore:craftingToolKnife>;
+val Saw = <ore:craftingToolSaw>;
+val Wrench = <ore:craftingToolWrench>;
+
 //Lighters
 recipes.addShaped(<gregtech:gt.multiitem.randomtools:5004>,
 [[<gregtech:gt.multiitem.randomtools:5010>,<gregtech:gt.meta.screw:8653>,<gregtech:gt.meta.plateTiny:720>],
@@ -12,28 +19,11 @@ recipes.addShaped(<gregtech:gt.multiitem.randomtools:5007>,
 [<gregtech:gt.meta.plateCurved:8682>,<gregtech:gt.metatool.01:22>,<gregtech:gt.meta.plateCurved:8682>],
 [<gregtech:gt.meta.plateCurved:8682>,<gregtech:gt.meta.ring:8682>,<gregtech:gt.meta.plateCurved:8682>]]);
 
-//TD Extractor
-recipes.addShaped(<ThermalDynamics:servo:2> * 2,
-[[<gregtech:gt.meta.nugget:260>,<minecraft:glass>,<gregtech:gt.meta.nugget:260>],
-[<minecraft:gold_ingot>,<minecraft:redstone>,<minecraft:gold_ingot>],
-[null,null,null]]);
-
-//Maturllurgy Crusher fukc it
-recipes.remove(<Metallurgy:crusher>);
-
 //String made with grass
 recipes.addShaped(<minecraft:string>, 
 [[null,null,null],
 [<gregtech:gt.multiitem.food:12000>,<gregtech:gt.multiitem.food:12000>,<gregtech:gt.multiitem.food:12000>],
 [null,null,null]]);
-
-//liquid N2
-MTUtilsGT.addCustomRecipe("gt.recipe.freezer", false, 16, 32, 0, [10000], 
-[<gregapi:gt.integrated_circuit>*0],
-[<liquid:nitrogen>*1000],
-[<liquid:liquidnitrogen>*10],
-[null]);
-
 
 //ban RF-EU RF-LU
 recipes.remove(<gregtech:gt.multitileentity:11021>);
@@ -48,6 +38,7 @@ recipes.remove(<gregtech:gt.multitileentity:11103>);
 recipes.remove(<gregtech:gt.multitileentity:11104>);
 recipes.remove(<gregtech:gt.multitileentity:11105>);
 
+
 //RF-LU ZPM
 
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",<gregtech:gt.multiitem.technological:12127>);
@@ -56,6 +47,8 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 4096, 400, 0, [10000],
 [<liquid:molten.draconium>*288],
 [null],
 [<gregtech:gt.multiitem.technological:12127>]);
+
+
 //UV
 
 
@@ -90,7 +83,7 @@ recipes.addShaped(<gregtech:gt.multitileentity:11104>,
 [<gregtech:gt.multiitem.technological:30502>,<Avaritia:Resource:9>,<gregtech:gt.multiitem.technological:30502>]]);
 
 
-mods.avaritia.ExtremeCrafting.remove(<gregtech:gt.multitileentity:11105>);
+recipes.remove(<gregtech:gt.multitileentity:11105>);
 mods.avaritia.ExtremeCrafting.addShaped (<gregtech:gt.multitileentity:11105>,
 [[null,null,null,null,null,null,null,null,null],
   [null,null,null,null,null,null,null,null,null],
@@ -101,6 +94,8 @@ mods.avaritia.ExtremeCrafting.addShaped (<gregtech:gt.multitileentity:11105>,
   [null,null,null,null, <DraconicEvolution:energyCrystal:5>,null, null,null,null],
   [null,null,null,null,null,null,null,null,null],
   [null,null,null,null,null,null,null,null,null]]);
+
+
 recipes.remove(<Railcraft:firestone.cut>);
 recipes.remove(<IC2:blockNuke>);
 MTUtilsGT.removeAllRecipes("gt.recipe.replicator",<gregtech:gt.meta.gem:1520>);
@@ -126,3 +121,40 @@ MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 265, 100000000
 [<gregtech:gt.meta.dustTiny:8761>]);
 
 MTUtilsGT.removeAllRecipes("gt.recipe.replicator",<gregtech:gt.meta.ingot:2220>);
+
+//lead rf generator
+recipes.remove(<gregtech:gt.multitileentity:11111>);
+recipes.addShaped(<gregtech:gt.multitileentity:11111>,
+[[<ore:stickLongLead>,<ore:gearSteel>,<ore:stickLongLead>],
+[<ore:stickLongLead>,<gregtech:gt.meta.machine.double:8630>,<ore:stickLongLead>],
+[<gregtech:gt.multitileentity:28350>,<ore:gearLead>,<gregtech:gt.multitileentity:28350>]]);
+
+//gt clay mold
+recipes.remove(<gregtech:gt.multitileentity:1055>);
+recipes.addShaped(<gregtech:gt.multitileentity:1055>,
+[[<ore:craftingToolHardHammer>,null,<ore:craftingToolChisel>],
+[<terrafirmacraft:item.Clay:1>,null,<terrafirmacraft:item.Clay:1>],
+[<terrafirmacraft:item.Clay:1>,<terrafirmacraft:item.Clay:1>,<terrafirmacraft:item.Clay:1>]]);
+
+//GT coke oven
+recipes.remove(<gregtech:gt.multitileentity:18000>);
+recipes.addShaped(<gregtech:gt.multitileentity:18000>,
+ [[<terrafirmacraft:item.Fire Brick:1>,<terrafirmacraft:item.Fire Brick:1>,null],
+  [<terrafirmacraft:item.Fire Brick:1>,<terrafirmacraft:item.Fire Brick:1>,null],
+  [null,null,null]]);
+
+recipes.remove(<gregtech:gt.multitileentity:17000>);
+  recipes.addShaped(<gregtech:gt.multitileentity:17000>,
+  [[<ore:craftingToolHardHammer>,<ore:stickBlackSteel>,<ore:screwBlackSteel>],
+  [<ore:plateBlackSteel>,<gregtech:gt.multitileentity:18000>,<ore:stickBlackSteel>],
+  [<ore:craftingToolWrench>,<ore:stickBlackSteel>,<ore:screwBlackSteel>]]);
+
+//remove gt early anvils
+recipes.remove(<gregtech:gt.multitileentity:32025>);
+recipes.remove(<gregtech:gt.multitileentity:32026>);
+recipes.remove(<gregtech:gt.multitileentity:32027>);
+recipes.remove(<gregtech:gt.multitileentity:32050>);
+recipes.remove(<gregtech:gt.multitileentity:32028>);
+recipes.remove(<gregtech:gt.multitileentity:32030>);
+recipes.remove(<gregtech:gt.multitileentity:32031>);
+recipes.remove(<gregtech:gt.multitileentity:32034>);

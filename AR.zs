@@ -1,5 +1,12 @@
 import mods.MTUtilsGT;
 
+val Screwdriver = <ore:craftingToolScrewdriver>;
+val HHammer = <ore:craftingToolHardHammer>;
+val SHammer = <ore:craftingToolSoftHammer>;
+val Knife = <ore:craftingToolKnife>;
+val Saw = <ore:craftingToolSaw>;
+val Wrench = <ore:craftingToolWrench>;
+
 //machine block
 recipes.remove(<libVulpes:blockStructureBlock>);
 recipes.addShaped(<libVulpes:blockStructureBlock>*2,
