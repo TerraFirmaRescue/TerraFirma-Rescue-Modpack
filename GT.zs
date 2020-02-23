@@ -6,6 +6,8 @@ val SHammer = <ore:craftingToolSoftHammer>;
 val Knife = <ore:craftingToolKnife>;
 val Saw = <ore:craftingToolSaw>;
 val Wrench = <ore:craftingToolWrench>;
+val Chisel = <ore:craftingToolChisel>;
+val n = null;
 
 //Lighters
 recipes.addShaped(<gregtech:gt.multiitem.randomtools:5004>,
@@ -158,3 +160,57 @@ recipes.remove(<gregtech:gt.multitileentity:32028>);
 recipes.remove(<gregtech:gt.multitileentity:32030>);
 recipes.remove(<gregtech:gt.multitileentity:32031>);
 recipes.remove(<gregtech:gt.multitileentity:32034>);
+
+//clay crucible
+recipes.remove(<gregtech:gt.multitileentity:1005>);
+recipes.addShaped(<gregtech:gt.multitileentity:1005>,
+[[<terrafirmacraft:item.Fire Brick:1>,Chisel,<terrafirmacraft:item.Fire Brick:1>],
+[<terrafirmacraft:item.Fire Brick:1>,HHammer,<terrafirmacraft:item.Fire Brick:1>],
+[<terrafirmacraft:item.Fire Brick:1>,<terrafirmacraft:item.Blue Steel Double Sheet>,<terrafirmacraft:item.Fire Brick:1>]]);
+
+//remove low tier crucibles
+recipes.remove(<gregtech:gt.multitileentity:1000>);
+recipes.remove(<gregtech:gt.multitileentity:1001>);
+recipes.remove(<gregtech:gt.multitileentity:1002>);
+recipes.remove(<gregtech:gt.multitileentity:1003>);
+recipes.remove(<gregtech:gt.multitileentity:1004>);
+recipes.remove(<gregtech:gt.multitileentity:1006>);
+recipes.remove(<gregtech:gt.multitileentity:1020>);
+
+recipes.remove(<gregtech:gt.multitileentity:1855>);
+recipes.addShaped(<gregtech:gt.multitileentity:1855>,
+[[Chisel,<terrafirmacraft:item.Fire Brick:1>,HHammer],
+[<terrafirmacraft:item.Fire Brick:1>,<terrafirmacraft:item.Fire Brick:1>,<terrafirmacraft:item.Fire Brick:1>],
+[n,<terrafirmacraft:item.Fire Brick:1>,n]]);
+
+recipes.remove(<gregtech:gt.multitileentity:1705>);
+recipes.addShaped(<gregtech:gt.multitileentity:1705>,
+[[Chisel,n,HHammer],
+[<terrafirmacraft:item.Fire Brick:1>,null,<terrafirmacraft:item.Fire Brick:1>],
+[null,<terrafirmacraft:item.Fire Brick:1>,null]]);
+
+recipes.remove(<gregtech:gt.multitileentity:1755>);
+recipes.addShaped(<gregtech:gt.multitileentity:1755>,
+[[<terrafirmacraft:item.Fire Brick:1>,Chisel,<terrafirmacraft:item.Fire Brick:1>],
+[<terrafirmacraft:item.Fire Brick:1>,HHammer,<terrafirmacraft:item.Fire Brick:1>],
+[null,<terrafirmacraft:item.Fire Brick:1>,null]]);
+
+recipes.remove(<Railcraft:machine.alpha:12>);
+recipes.addShaped(<Railcraft:machine.alpha:12>*5,
+[[<ore:plateBlackSteel>,<terrafirmacraft:FireBrick>,HHammer],
+[<terrafirmacraft:FireBrick>,<terrafirmacraft:FireBrick>,<terrafirmacraft:FireBrick>],
+[Wrench,<terrafirmacraft:FireBrick>,n]]);
+
+/*
+recipes.remove();
+recipes.addShaped(,
+[[,,],
+[,,],
+[,,]]);
+
+MTUtilsGT.removeAllRecipes("", );
+MTUtilsGT.addCustomRecipe("", false, 16, 16, 0, [10000],
+[],
+[]);
+
+*/
