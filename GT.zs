@@ -214,3 +214,8 @@ MTUtilsGT.addCustomRecipe("", false, 16, 16, 0, [10000],
 []);
 
 */
+
+recipes.addShaped(<gregtech:gt.multitileentity:11104>,
+[[<gregtech:gt.multiitem.technological:12127>,<gregtech:gt.multiitem.technological:12128>,<gregtech:gt.multiitem.technological:12127>],
+[<advancedRocketry:circuitIC>,<gregtech:gt.meta.machine.double:8610>,<advancedRocketry:circuitIC>],
+[null,null,null]]);

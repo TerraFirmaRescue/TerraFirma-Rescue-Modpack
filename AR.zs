@@ -36,3 +36,17 @@ MTUtilsGT.addCustomRecipe("", false, 16, 16, 0, [10000],
 
 */
 
+
+MTUtilsGT.removeAllRecipes("gt.recipe.press",<advancedRocketry:circuitIC:5>);
+MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16,  1200,0,[10000], 
+[<tfctech:item.Circuit>,<minecraft:dye:4>*4,<gregtech:gt.meta.wireFine:8708>*4],
+[<advancedRocketry:circuitIC:5>]);
+MTUtilsGT.removeAllRecipes("gt.recipe.press",<advancedRocketry:circuitIC:4>);
+MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16,  1200,0,[10000], 
+[<tfctech:item.Circuit>,<gregtech:gt.meta.wireFine:790>*4,<gregtech:gt.meta.wireFine:8708>*4],
+[<advancedRocketry:circuitIC:4>]);
+MTUtilsGT.removeAllRecipes("gt.recipe.press",<advancedRocketry:circuitIC:3>);
+MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16,  1200,0,[10000], 
+[<tfctech:item.Circuit>,<gregtech:gt.meta.wireFine:290>*4,<gregtech:gt.meta.wireFine:8708>*4],
+[<advancedRocketry:circuitIC:3>]);
+
