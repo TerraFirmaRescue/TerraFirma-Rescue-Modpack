@@ -1,5 +1,12 @@
 import mods.MTUtilsGT;
 
+val Screwdriver = <ore:craftingToolScrewdriver>;
+val HHammer = <ore:craftingToolHardHammer>;
+val SHammer = <ore:craftingToolSoftHammer>;
+val Knife = <ore:craftingToolKnife>;
+val Saw = <ore:craftingToolSaw>;
+val Wrench = <ore:craftingToolWrench>;
+
 //template
 /*
 recipes.remove();
@@ -156,5 +163,5 @@ recipes.addShaped(<Forestry:engine:3>,
  [[<gregtech:gt.multitileentity:1512>,<gregtech:gt.multitileentity:11111>,<gregtech:gt.multitileentity:26101>],
   [<gregtech:gt.multitileentity:1202>,<ore:craftingToolWrench>,<ore:plateStainlessSteel>],
   [<gregtech:gt.multitileentity:1602>,<ore:craftingToolHardHammer>,<ore:plateStainlessSteel>]]);
-  
+
 
