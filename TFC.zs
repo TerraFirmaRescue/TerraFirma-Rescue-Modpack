@@ -29,6 +29,11 @@ recipes.addShaped(<terrafirmacraft:EarlyBloomery>,
 [<terrafirmacraft:item.Bronze Double Sheet>,Wrench,<terrafirmacraft:item.Bronze Double Sheet>],
 [null,<terrafirmacraft:item.Bronze Double Sheet>,null]]);
 
+recipes.addShaped(<terrafirmacraft:EarlyBloomery>,
+[[<terrafirmacraft:item.Bismuth Bronze Double Sheet>,HHammer,<terrafirmacraft:item.Bismuth Bronze Double Sheet>],
+[<terrafirmacraft:item.Bismuth Bronze Double Sheet>,Wrench,<terrafirmacraft:item.Bismuth Bronze Double Sheet>],
+[null,<terrafirmacraft:item.Bismuth Bronze Double Sheet>,null]]);
+
 //tfc blast furnace
 recipes.remove(<terrafirmacraft:Bloomery>);
 recipes.addShaped(<terrafirmacraft:Bloomery>,
@@ -40,6 +45,13 @@ recipes.addShaped(<terrafirmacraft:Bloomery>,
 MTUtilsGT.addCustomRecipe("gt.recipe.extruder", false, 16, 160, 0, [10000],
 [<terrafirmacraft:item.Wrought Iron Sheet>*4,<gregtech:gt.multiitem.technological:10898>*0],
 [<terrafirmacraft:Hopper>]);
+
+//ice for cellars
+MTUtilsGT.addCustomRecipe("gt.recipe.freezer", false, 16, 128, 0, [10000],
+[<gregapi:gt.integrated_circuit:10>*0],
+[<liquid:water>],
+[null],
+[<tfccellars:Ice>]);
 
 //template
 /*

@@ -133,10 +133,8 @@ recipes.addShaped(<gregtech:gt.multitileentity:11111>,
 
 //gt clay mold
 recipes.remove(<gregtech:gt.multitileentity:1055>);
-recipes.addShaped(<gregtech:gt.multitileentity:1055>,
-[[<ore:craftingToolHardHammer>,null,<ore:craftingToolChisel>],
-[<terrafirmacraft:item.Clay:1>,null,<terrafirmacraft:item.Clay:1>],
-[<terrafirmacraft:item.Clay:1>,<terrafirmacraft:item.Clay:1>,<terrafirmacraft:item.Clay:1>]]);
+mods.Terrafirmacraft.Knapping.addFireClayWorkingRecipe(<gregtech:gt.multitileentity:1055>, " ### ", " ### ", "     ", "#####", "#####");
+
 
 //GT coke oven
 recipes.remove(<gregtech:gt.multitileentity:18000>);
@@ -150,16 +148,6 @@ recipes.remove(<gregtech:gt.multitileentity:17000>);
   [[<ore:craftingToolHardHammer>,<ore:stickBlackSteel>,<ore:screwBlackSteel>],
   [<ore:plateBlackSteel>,<gregtech:gt.multitileentity:18000>,<ore:stickBlackSteel>],
   [<ore:craftingToolWrench>,<ore:stickBlackSteel>,<ore:screwBlackSteel>]]);
-
-//remove gt early anvils
-recipes.remove(<gregtech:gt.multitileentity:32025>);
-recipes.remove(<gregtech:gt.multitileentity:32026>);
-recipes.remove(<gregtech:gt.multitileentity:32027>);
-recipes.remove(<gregtech:gt.multitileentity:32050>);
-recipes.remove(<gregtech:gt.multitileentity:32028>);
-recipes.remove(<gregtech:gt.multitileentity:32030>);
-recipes.remove(<gregtech:gt.multitileentity:32031>);
-recipes.remove(<gregtech:gt.multitileentity:32034>);
 
 //clay crucible
 recipes.remove(<gregtech:gt.multitileentity:1005>);
@@ -195,11 +183,31 @@ recipes.addShaped(<gregtech:gt.multitileentity:1755>,
 [<terrafirmacraft:item.Fire Brick:1>,HHammer,<terrafirmacraft:item.Fire Brick:1>],
 [null,<terrafirmacraft:item.Fire Brick:1>,null]]);
 
-recipes.remove(<Railcraft:machine.alpha:12>);
-recipes.addShaped(<Railcraft:machine.alpha:12>*5,
-[[<ore:plateBlackSteel>,<terrafirmacraft:FireBrick>,HHammer],
-[<terrafirmacraft:FireBrick>,<terrafirmacraft:FireBrick>,<terrafirmacraft:FireBrick>],
-[Wrench,<terrafirmacraft:FireBrick>,n]]);
+//mixer bowl
+recipes.remove(<gregtech:gt.multitileentity:32706>);
+recipes.addShaped(<gregtech:gt.multitileentity:32706>,
+[[HHammer,null,Chisel],
+[<minecraft:brick_block>,null,<minecraft:brick_block>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
+//gt furnaces
+recipes.remove(<gregtech:gt.multitileentity:20001>);
+recipes.addShaped(<gregtech:gt.multitileentity:20001>,
+[[HHammer,<terrafirmacraft:item.Black Steel Double Sheet>,Wrench],
+[<terrafirmacraft:item.Black Steel Double Sheet>,<gregtech:gt.meta.machine:8630>,<terrafirmacraft:item.Black Steel Double Sheet>],
+[<minecraft:brick_block>,<terrafirmacraft:item.Copper Double Sheet>,<minecraft:brick_block>]]);
+
+recipes.remove(<gregtech:gt.multitileentity:20002>);
+recipes.addShaped(<gregtech:gt.multitileentity:20002>,
+[[HHammer,<terrafirmacraft:item.Blue Steel Double Sheet>,Wrench],
+[<terrafirmacraft:item.Blue Steel Double Sheet>,<gregtech:gt.meta.machine:8661>,<terrafirmacraft:item.Blue Steel Double Sheet>],
+[<minecraft:brick_block>,<terrafirmacraft:item.Copper Double Sheet>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:20002>,
+[[HHammer,<terrafirmacraft:item.Red Steel Double Sheet>,Wrench],
+[<terrafirmacraft:item.Red Steel Double Sheet>,<gregtech:gt.meta.machine:8661>,<terrafirmacraft:item.Red Steel Double Sheet>],
+[<minecraft:brick_block>,<terrafirmacraft:item.Copper Double Sheet>,<minecraft:brick_block>]]);
+
 
 /*
 recipes.remove();
@@ -219,3 +227,6 @@ recipes.addShaped(<gregtech:gt.multitileentity:11104>,
 [[<gregtech:gt.multiitem.technological:12127>,<gregtech:gt.multiitem.technological:12128>,<gregtech:gt.multiitem.technological:12127>],
 [<advancedRocketry:circuitIC>,<gregtech:gt.meta.machine.double:8610>,<advancedRocketry:circuitIC>],
 [null,null,null]]);
+
+//long rod weld
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.stickLong:8660>, <gregtech:gt.meta.stick:8660>, <gregtech:gt.meta.stick:8660>, 2);
