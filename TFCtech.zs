@@ -17,7 +17,7 @@ recipes.addShapeless(<gregtech:gt.multitileentity:28050>,[<tfctech:item.Tin Wire
 recipes.remove(<gregtech:gt.multitileentity:28950>);
 recipes.addShapeless(<gregtech:gt.multitileentity:28950>,[<tfctech:item.Steel Wire>]);
 
-recipes.remove(mo:isolinear_circuit);
+recipes.remove(<mo:isolinear_circuit>);
 recipes.remove(<gregtech:gt.multitileentity:28350>);
 recipes.addShaped(<gregtech:gt.multitileentity:28350>,
 [[<tfctech:item.Copper Wire>,null,null],
