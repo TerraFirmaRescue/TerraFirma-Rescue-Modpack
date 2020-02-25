@@ -1,0 +1,9 @@
+recipes.remove(<terrafirmacraft:item.MetalNugget>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:2>);recipes.remove(<terrafirmacraft:item.MetalNugget:1>);recipes.remove(<terrafirmacraft:item.MetalNugget:3>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:4>);recipes.remove(<terrafirmacraft:item.MetalNugget:5>);recipes.remove(<terrafirmacraft:item.MetalNugget:6>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:7>);recipes.remove(<terrafirmacraft:item.MetalNugget:8>);recipes.remove(<terrafirmacraft:item.MetalNugget:9>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:10>);recipes.remove(<terrafirmacraft:item.MetalNugget:11>);recipes.remove(<terrafirmacraft:item.MetalNugget:12>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:13>);recipes.remove(<terrafirmacraft:item.MetalNugget:14>);recipes.remove(<terrafirmacraft:item.MetalNugget:15>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:16>);recipes.remove(<terrafirmacraft:item.MetalNugget:17>);recipes.remove(<terrafirmacraft:item.MetalNugget:18>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:19>);recipes.remove(<terrafirmacraft:item.MetalNugget:20>);recipes.remove(<terrafirmacraft:item.MetalNugget:21>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:22>);
