@@ -9,6 +9,21 @@ val Wrench = <ore:craftingToolWrench>;
 val Chisel = <ore:craftingToolChisel>;
 val n = null;
 
+//template
+/*
+recipes.remove();
+recipes.addShaped(,
+[[,,],
+[,,],
+[,,]]);
+
+MTUtilsGT.removeAllRecipes("", );
+MTUtilsGT.addCustomRecipe("", false, 16, 16, 0, [10000],
+[],
+[]);
+
+*/
+
 //Lighters
 recipes.addShaped(<gregtech:gt.multiitem.randomtools:5004>,
 [[<gregtech:gt.multiitem.randomtools:5010>,<gregtech:gt.meta.screw:8653>,<gregtech:gt.meta.plateTiny:720>],
@@ -22,7 +37,7 @@ recipes.addShaped(<gregtech:gt.multiitem.randomtools:5007>,
 [<gregtech:gt.meta.plateCurved:8682>,<gregtech:gt.meta.ring:8682>,<gregtech:gt.meta.plateCurved:8682>]]);
 
 //String made with grass
-recipes.addShaped(<minecraft:string>, 
+recipes.addShaped(<minecraft:string>,
 [[null,null,null],
 [<gregtech:gt.multiitem.food:12000>,<gregtech:gt.multiitem.food:12000>,<gregtech:gt.multiitem.food:12000>],
 [null,null,null]]);
@@ -44,7 +59,7 @@ recipes.remove(<gregtech:gt.multitileentity:11105>);
 //RF-LU ZPM
 
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",<gregtech:gt.multiitem.technological:12127>);
-MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 4096, 400, 0, [10000], 
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 4096, 400, 0, [10000],
 [<gregtech:gt.meta.plateCurved:760>*4,<mo:s_magnet>*2,<minecraft:nether_star>,<gregtech:gt.multiitem.technological:30504>*2],
 [<liquid:molten.draconium>*288],
 [null],
@@ -55,24 +70,24 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 4096, 400, 0, [10000],
 
 
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",<gregtech:gt.multiitem.technological:12128>);
-MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 8192, 400, 0, [10000], 
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 8192, 400, 0, [10000],
 [<gregtech:gt.multiitem.technological:12127>,<gregtech:gt.meta.plateCurved:8790>*4,<mo:s_magnet>*4,<minecraft:nether_star>,<gregtech:gt.multiitem.technological:30504>*4],
 [<liquid:molten.draconiumawakened>*432],
 [null],
 [<gregtech:gt.multiitem.technological:12128>]);
 //xiajie
 MTUtilsGT.removeAllRecipes("gt.recipe.boxinator",<gregtech:gt.meta.storage.plateGem:8320>);
-MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 8192, 400, 0, [10000], 
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 8192, 400, 0, [10000],
 [<minecraft:nether_star>*18,<Avaritia:Resource:1>],
 [<liquid:molten.draconiumawakened>*144],
 [null],
 [<gregtech:gt.meta.storage.plateGem:8320>]);
-MTUtilsGT.addCustomRecipe("gt.recipe.laserengraver", false, 8192, 800, 0, [10000], 
+MTUtilsGT.addCustomRecipe("gt.recipe.laserengraver", false, 8192, 800, 0, [10000],
 [<gregtech:gt.meta.storage.plateGem:8320>,<gregtech:gt.meta.lens:8320>*0],
 [<gregtech:gt.meta.gemLegendary:8320>]);
 //puv
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",<gregtech:gt.multiitem.technological:12129>);
-MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16384, 1600,0,[10000], 
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16384, 1600,0,[10000],
 [<gregtech:gt.multiitem.technological:12128>*2,<gregtech:gt.meta.plateCurved:8684>*8,<mo:s_magnet>*8,<gregtech:gt.meta.gemLegendary:8320>,<gregtech:gt.multiitem.technological:30504>*8],
 [<liquid:molten.draconiumawakened>*864],
 [null],
@@ -102,21 +117,21 @@ recipes.remove(<Railcraft:firestone.cut>);
 recipes.remove(<IC2:blockNuke>);
 MTUtilsGT.removeAllRecipes("gt.recipe.replicator",<gregtech:gt.meta.gem:1520>);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 2048, 1200,0,[10000], 
+MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 2048, 1200,0,[10000],
 [null],
 [<liquid:molten.lithium>*144],
 [<liquid:molten.lithium6>*10],
 [null]);
 
 MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor",<gregtech:gt.meta.dust:30>);
-MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 265, 100000000,[10000], 
+MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 265, 100000000,[10000],
 [<gregtech:gt.meta.dust:30>],
 [<liquid:helium3>*144, <liquid:deuterium>*1000],
 [<liquid:molten.lithium6>*144],
 [<gregtech:gt.meta.dust:30>]);
 
 MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor",<gregtech:gt.meta.dustTiny:8761>);
-MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 265, 100000000,[10000], 
+MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 265, 100000000,[10000],
 [<gregtech:gt.meta.dust:1740>],
 [<liquid:radon>*72],
 [<liquid:molten.adamantium>*72],
@@ -148,6 +163,16 @@ recipes.remove(<gregtech:gt.multitileentity:17000>);
   [[<ore:craftingToolHardHammer>,<ore:stickBlackSteel>,<ore:screwBlackSteel>],
   [<ore:plateBlackSteel>,<gregtech:gt.multitileentity:18000>,<ore:stickBlackSteel>],
   [<ore:craftingToolWrench>,<ore:stickBlackSteel>,<ore:screwBlackSteel>]]);
+
+//remove gt early anvils
+recipes.remove(<gregtech:gt.multitileentity:32025>);
+recipes.remove(<gregtech:gt.multitileentity:32026>);
+recipes.remove(<gregtech:gt.multitileentity:32027>);
+recipes.remove(<gregtech:gt.multitileentity:32050>);
+recipes.remove(<gregtech:gt.multitileentity:32028>);
+recipes.remove(<gregtech:gt.multitileentity:32030>);
+recipes.remove(<gregtech:gt.multitileentity:32031>);
+recipes.remove(<gregtech:gt.multitileentity:32034>);
 
 //clay crucible
 recipes.remove(<gregtech:gt.multitileentity:1005>);
@@ -208,25 +233,7 @@ recipes.addShaped(<gregtech:gt.multitileentity:20002>,
 [<terrafirmacraft:item.Red Steel Double Sheet>,<gregtech:gt.meta.machine:8661>,<terrafirmacraft:item.Red Steel Double Sheet>],
 [<minecraft:brick_block>,<terrafirmacraft:item.Copper Double Sheet>,<minecraft:brick_block>]]);
 
-
-/*
-recipes.remove();
-recipes.addShaped(,
-[[,,],
-[,,],
-[,,]]);
-
-MTUtilsGT.removeAllRecipes("", );
-MTUtilsGT.addCustomRecipe("", false, 16, 16, 0, [10000],
-[],
-[]);
-
-*/
-
 recipes.addShaped(<gregtech:gt.multitileentity:11104>,
 [[<gregtech:gt.multiitem.technological:12127>,<gregtech:gt.multiitem.technological:12128>,<gregtech:gt.multiitem.technological:12127>],
 [<advancedRocketry:circuitIC>,<gregtech:gt.meta.machine.double:8610>,<advancedRocketry:circuitIC>],
 [null,null,null]]);
-
-//long rod weld
-mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.stickLong:8660>, <gregtech:gt.meta.stick:8660>, <gregtech:gt.meta.stick:8660>, 2);

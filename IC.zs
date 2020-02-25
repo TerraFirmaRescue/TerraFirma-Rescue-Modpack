@@ -1,4 +1,6 @@
+
 import mods.MTUtilsGT;
+
 recipes.remove(<IC2:blockReactorChamber>);
 MTUtilsGT.removeAllRecipes("gt.recipe.welder", <IC2:blockReactorChamber>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 1024, 512, 0, [10000], 
@@ -15,4 +17,5 @@ MTUtilsGT.removeAllRecipes("gt.recipe.welder",<IC2:reactorVent:1>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 1024,256, 0, [10000], 
 [<gregtech:gt.meta.plate:2220>,<minecraft:iron_bars>*4,<IC2:itemRecipePart:1>], 
 [<IC2:reactorVent:1>]);
+
 recipes.remove(<IC2:itemupgradekit>);

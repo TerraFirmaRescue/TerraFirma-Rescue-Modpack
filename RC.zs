@@ -45,6 +45,7 @@ OutputStack
 mods.railcraft.Rolling.removeRecipe(<Railcraft:part.plate:1>);
 */
 
+
 //rc crusher
 recipes.remove(<Railcraft:machine.alpha:15>);
 recipes.addShaped(<Railcraft:machine.alpha:15>*6,
@@ -167,6 +168,5 @@ mods.railcraft.Rolling.addShapeless(plateTin*2, [ingotTin, ingotTin, ingotTin]);
 mods.railcraft.Rolling.addShapeless(plateBro*2, [ingotBro, ingotBro, ingotBro]);
 mods.railcraft.Rolling.addShapeless(plateFe*2, [ingotFe, ingotFe, ingotFe]);
 mods.railcraft.Rolling.addShapeless(platePb*2, [ingotPb, ingotPb, ingotPb]);
-
 
 
