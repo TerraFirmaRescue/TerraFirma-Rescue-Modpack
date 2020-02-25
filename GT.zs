@@ -237,3 +237,6 @@ recipes.addShaped(<gregtech:gt.multitileentity:11104>,
 [[<gregtech:gt.multiitem.technological:12127>,<gregtech:gt.multiitem.technological:12128>,<gregtech:gt.multiitem.technological:12127>],
 [<advancedRocketry:circuitIC>,<gregtech:gt.meta.machine.double:8610>,<advancedRocketry:circuitIC>],
 [null,null,null]]);
+
+//4-plates
+//mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8630>, <terrafirmacraft:item.Steel Double Sheet>, <terrafirmacraft:item.Steel Double Sheet>, 5);
