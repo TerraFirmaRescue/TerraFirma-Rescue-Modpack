@@ -102,6 +102,8 @@ recipes.remove(<gregtech:gt.meta.gearGt:280>  );
 recipes.remove(<gregtech:gt.meta.gearGt:130>  );
 recipes.remove(<gregtech:gt.meta.gearGt:790>  );
 recipes.remove(<gregtech:gt.meta.gearGt:470>  );
+//ma da
+recipes.remove(<gregtech:gt.multiitem.technological:12001>);
 
 //AR
 recipes.remove(<advancedRocketry:tile.blockHandPress>);
@@ -110,6 +112,7 @@ recipes.remove(<advancedRocketry:circuitIC:4>);
 recipes.remove(<advancedRocketry:circuitIC:3>);
 recipes.remove(<advancedRocketry:tile.energyPipe>);
 recipes.remove(<advancedRocketry:sawBlade>);
+recipes.remove(<advancedRocketry:precisionassemblingmachine>);
 
 //TFCtech
 recipes.remove(<tfctech:item.Circuit>);
