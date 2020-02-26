@@ -97,6 +97,7 @@ recipes.addShaped(<Railcraft:machine.alpha:12>*5,
 
 //tfc ores amount: 10 15 25 35
 //RC Crusher recipes change
+//metal ores
 //rich
 mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:38>, true, false, [<terrafirmacraft:item.Small Ore:3>*5,<gregtech:gt.meta.dust:8500>], [1,0.2]);
 mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:40>, true, false, [<terrafirmacraft:item.Small Ore:5>*5,<gregtech:gt.meta.dust:8500>], [1,0.2]);
@@ -130,6 +131,13 @@ mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:60>, true, false,
 mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:61>, true, false, [<terrafirmacraft:item.Small Ore:11>*2,<gregtech:gt.meta.dust:8500>], [1,0.2]);
 mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:62>, true, false, [<terrafirmacraft:item.Small Ore:12>*2,<gregtech:gt.meta.dust:8500>], [1,0.2]);
 mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:63>, true, false, [<terrafirmacraft:item.Small Ore:13>*2,<gregtech:gt.meta.dust:8500>], [1,0.2]);
+
+//non-metal ores
+mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:16>, true, false, [<terrafirmacraft:item.Powder:1>*6,<gregtech:gt.meta.dust:8500>], [1,0.2]);
+mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:20>, true, false, [<terrafirmacraft:item.Powder:2>*6,<gregtech:gt.meta.dust:8500>], [1,0.2]);
+mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.LooseRock:5>, true, false, [<terrafirmacraft:item.Powder:9>*6,<gregtech:gt.meta.dust:8500>], [1,0.2]);
+
+
 
 //RC Bender recipes change
 //3 ingot into 2 plate

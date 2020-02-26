@@ -228,7 +228,7 @@ mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Skull_Sword>,
   [null,<gregtech:gt.meta.stickLong:8635>,null,<gregtech:gt.meta.plate:8635>,null,null,null,null,null],
   [<minecraft:nether_star>,null,null,null,null,null,null,null,null]]);
 
-mods.avaritia.ExtremeCrafting.remove(<Avaritia:Endest_Pearl>);
+
 mods.avaritia.ExtremeCrafting.remove(<Avaritia:Resource:5>);
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",<Avaritia:Resource:9>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 4096, 400, 0, [10000],

@@ -239,7 +239,15 @@ recipes.addShaped(<gregtech:gt.multitileentity:11104>,
 [null,null,null]]);
 
 
+<<<<<<< HEAD
 //they are the changed recipes of boiler
+=======
+//4-plates
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8630>, <terrafirmacraft:item.Steel Double Sheet>, <terrafirmacraft:item.Steel Double Sheet>, 5);
+
+
+//Boilers
+>>>>>>> 87068655a736c3975e25bde9ba1df576be07df95
 recipes.remove(<gregtech:gt.multitileentity:1200>);
 recipes.addShaped(<gregtech:gt.multitileentity:1200>,
 [[<ore:plateDoubleLead>,<gregtech:gt.meta.ring:820>,<ore:plateDoubleLead>],
@@ -264,9 +272,13 @@ recipes.addShaped(<gregtech:gt.multitileentity:1203>,
 [<ore:plateDoubleInvar>,<ore:craftingToolWrench>,<ore:plateDoubleInvar>],
 [<ore:plateDoubleInvar>,<ore:plateDoubleInvar>,<ore:plateDoubleInvar>]]);
 //Fe2Ni
+<<<<<<< HEAD
 recipes.remove(<gregtech:gt.multitileentity:1203>);
 recipes.addShaped(<gregtech:gt.multitileentity:1203>,
 [[<ore:plateDoubleSteel>,<gregtech:gt.meta.ring:8630>,<ore:plateDoubleSteel>],
 [<ore:plateDoubleSteel>,<ore:craftingToolWrench>,<ore:plateDoubleSteel>],
 [<ore:plateDoubleSteel>,<ore:plateDoubleSteel>,<ore:plateDoubleSteel>]]);
 //Fe
+=======
+
+>>>>>>> 87068655a736c3975e25bde9ba1df576be07df95
