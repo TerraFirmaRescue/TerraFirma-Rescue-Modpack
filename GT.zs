@@ -238,7 +238,8 @@ recipes.addShaped(<gregtech:gt.multitileentity:11104>,
 [<advancedRocketry:circuitIC>,<gregtech:gt.meta.machine.double:8610>,<advancedRocketry:circuitIC>],
 [null,null,null]]);
 
-//以下为锅炉合成的更改
+
+//they are the changed recipes of boiler
 recipes.remove(<gregtech:gt.multitileentity:1200>);
 recipes.addShaped(<gregtech:gt.multitileentity:1200>,
 [[<ore:plateDoubleLead>,<gregtech:gt.meta.ring:820>,<ore:plateDoubleLead>],
@@ -263,3 +264,9 @@ recipes.addShaped(<gregtech:gt.multitileentity:1203>,
 [<ore:plateDoubleInvar>,<ore:craftingToolWrench>,<ore:plateDoubleInvar>],
 [<ore:plateDoubleInvar>,<ore:plateDoubleInvar>,<ore:plateDoubleInvar>]]);
 //Fe2Ni
+recipes.remove(<gregtech:gt.multitileentity:1203>);
+recipes.addShaped(<gregtech:gt.multitileentity:1203>,
+[[<ore:plateDoubleSteel>,<gregtech:gt.meta.ring:8630>,<ore:plateDoubleSteel>],
+[<ore:plateDoubleSteel>,<ore:craftingToolWrench>,<ore:plateDoubleSteel>],
+[<ore:plateDoubleSteel>,<ore:plateDoubleSteel>,<ore:plateDoubleSteel>]]);
+//Fe

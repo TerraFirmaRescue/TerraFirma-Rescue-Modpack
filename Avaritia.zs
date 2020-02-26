@@ -142,7 +142,7 @@ mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Resource:5>,
   [null,null,<IC2:itemPartIridium>,<Avaritia:Resource:8>, <Avaritia:Resource:8>,<Avaritia:Resource:8>, <IC2:itemPartIridium>,null,null],
   [null,null,<IC2:itemPartIridium>,<gregtech:gt.meta.plateDouble:8679>,<Avaritia:Resource:8>,<gregtech:gt.meta.plateDouble:8679>,<IC2:itemPartIridium>,null,null],
   [null,null,<IC2:itemPartIridium>,<IC2:itemPartIridium>,<gregtech:gt.multitileentity:1049>,<IC2:itemPartIridium>,<IC2:itemPartIridium>,null,null]]);
-
+import mods.MTUtilsGT;
 
 /*
 mods.avaritia.ExtremeCrafting.remove();
