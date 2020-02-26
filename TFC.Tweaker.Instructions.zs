@@ -261,7 +261,6 @@
 //-----------------------------------------------
 //OutputStack, InputStack {Stack sizes must be the same as the recipe to be removed}
 //mods.Terrafirmacraft.Quern.removeRecipe(<terrafirmacraft:item.dyePowder:15> * 2, <minecraft:bone>);
-=======
 //========================================================================
 //                          Anvil Recipes
 //========================================================================
@@ -790,8 +789,6 @@
 //-----------------------------------------------
 //OutputStack, InputStack {Stack sizes must be the same as the recipe to be removed}
 //mods.Terrafirmacraft.Quern.removeRecipe(<terrafirmacraft:item.dyePowder:15> * 2, <minecraft:bone>);
->>>>>>> 2f348cec78027ae577b2993c1993873a576b5511
-=======
 //========================================================================
 //                          Anvil Recipes
 //========================================================================
@@ -1055,5 +1052,4 @@
 //-----------------------------------------------
 //OutputStack, InputStack {Stack sizes must be the same as the recipe to be removed}
 //mods.Terrafirmacraft.Quern.removeRecipe(<terrafirmacraft:item.dyePowder:15> * 2, <minecraft:bone>);
->>>>>>> 2f348cec78027ae577b2993c1993873a576b5511
 //mods.Terrafirmacraft.Quern.removeRecipe(<terrafirmacraft:item.dyePowder:15>, <minecraft:bone>);
