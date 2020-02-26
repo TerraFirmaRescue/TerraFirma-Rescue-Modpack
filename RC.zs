@@ -55,7 +55,7 @@ recipes.addShaped(<Railcraft:machine.alpha:15>*6,
 
 //RC coke oven
 recipes.remove(<Railcraft:machine.alpha:7>);
-recipes.addShaped(<Railcraft:machine.alpha:7>,
+recipes.addShaped(<Railcraft:machine.alpha:7>*2,
  [[<terrafirmacraft:item.Fire Brick:1>,<ore:sand>,<terrafirmacraft:item.Fire Brick:1>],
   [<ore:sand>,<ore:craftingToolHardHammer>,<ore:sand>],
   [<terrafirmacraft:item.Fire Brick:1>,<ore:sand>,<terrafirmacraft:item.Fire Brick:1>]]);
@@ -177,4 +177,13 @@ mods.railcraft.Rolling.addShapeless(plateBro*2, [ingotBro, ingotBro, ingotBro]);
 mods.railcraft.Rolling.addShapeless(plateFe*2, [ingotFe, ingotFe, ingotFe]);
 mods.railcraft.Rolling.addShapeless(platePb*2, [ingotPb, ingotPb, ingotPb]);
 
+//RC blast furnace recipes
+mods.railcraft.BlastFurnace.addFuel(<terrafirmacraft:item.coal>);
+mods.railcraft.BlastFurnace.addFuel(<terrafirmacraft:item.coal:1>);
 
+furnace.setFuel(<terrafirmacraft:item.coal>, 4000);
+furnace.setFuel(<terrafirmacraft:item.coal:1>, 4000);
+
+mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.Small Ore:11>, false, false, 400, <terrafirmacraft:item.MetalNugget:9>*2);
+mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.Small Ore:3>, false, false, 400, <terrafirmacraft:item.MetalNugget:9>*2);
+mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.Small Ore:10>, false, false, 400, <terrafirmacraft:item.MetalNugget:9>*2);
