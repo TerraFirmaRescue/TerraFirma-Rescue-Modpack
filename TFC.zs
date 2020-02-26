@@ -53,6 +53,11 @@ MTUtilsGT.addCustomRecipe("gt.recipe.freezer", false, 16, 128, 0, [10000],
 [null],
 [<tfccellars:Ice>]);
 
+recipes.addShaped(<terrafirmacraft:item.Wrought Iron Ingot>,
+[[<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>],
+[<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>],
+[<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>]]);
+
 //template
 /*
 recipes.remove();
