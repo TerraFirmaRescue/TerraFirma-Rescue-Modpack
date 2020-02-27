@@ -235,6 +235,54 @@ recipes.addShaped(<gregtech:gt.multitileentity:20002>,
 [<terrafirmacraft:item.Red Steel Double Sheet>,<gregtech:gt.meta.machine:8661>,<terrafirmacraft:item.Red Steel Double Sheet>],
 [<minecraft:brick_block>,<terrafirmacraft:item.Copper Double Sheet>,<minecraft:brick_block>]]);
 
+recipes.remove(<gregtech:gt.multitileentity:20003>);
+recipes.addShaped(<gregtech:gt.multitileentity:20003>,
+[[HHammer,<terrafirmacraft:item.Blue Steel Double Sheet>,Wrench],
+[<terrafirmacraft:item.Blue Steel Double Sheet>,<gregtech:gt.meta.machine:220>,<terrafirmacraft:item.Blue Steel Double Sheet>],
+[<minecraft:brick_block>,<gregtech:gt.meta.plateDouble:8640>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:20003>,
+[[HHammer,<terrafirmacraft:item.Red Steel Double Sheet>,Wrench],
+[<terrafirmacraft:item.Red Steel Double Sheet>,<gregtech:gt.meta.machine:220>,<terrafirmacraft:item.Red Steel Double Sheet>],
+[<minecraft:brick_block>,<gregtech:gt.meta.plateDouble:8640>,<minecraft:brick_block>]]);
+
+recipes.remove(<gregtech:gt.multitileentity:20004>);
+recipes.addShaped(<gregtech:gt.multitileentity:20004>,
+[[HHammer,<terrafirmacraft:item.Blue Steel Double Sheet>,Wrench],
+[<terrafirmacraft:item.Blue Steel Double Sheet>,<gregtech:gt.meta.machine:8638>,<terrafirmacraft:item.Blue Steel Double Sheet>],
+[<minecraft:brick_block>,<gregtech:gt.meta.plateDouble:8640>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:20004>,
+[[HHammer,<terrafirmacraft:item.Red Steel Double Sheet>,Wrench],
+[<terrafirmacraft:item.Red Steel Double Sheet>,<gregtech:gt.meta.machine:8638>,<terrafirmacraft:item.Red Steel Double Sheet>],
+[<minecraft:brick_block>,<gregtech:gt.meta.plateDouble:8640>,<minecraft:brick_block>]]);
+
+//gt dryers
+recipes.remove(<gregtech:gt.multitileentity:20311>);
+recipes.addShaped(<gregtech:gt.multitileentity:20311>,
+[[HHammer,<gregtech:gt.multitileentity:26142>,Wrench],
+[<terrafirmacraft:item.Black Steel Double Sheet>,<gregtech:gt.meta.machine:8630>,<terrafirmacraft:item.Black Steel Double Sheet>],
+[<minecraft:brick_block>,<terrafirmacraft:item.Copper Double Sheet>,<minecraft:brick_block>]]);
+
+recipes.remove(<gregtech:gt.multitileentity:20312>);
+recipes.addShaped(<gregtech:gt.multitileentity:20312>,
+[[HHammer,<gregtech:gt.multitileentity:26402>,Wrench],
+[<terrafirmacraft:item.Blue Steel Double Sheet>,<gregtech:gt.multitileentity:20312>,<terrafirmacraft:item.Blue Steel Double Sheet>],
+[<minecraft:brick_block>,<terrafirmacraft:item.Copper Double Sheet>,<minecraft:brick_block>]]);
+
+recipes.remove(<gregtech:gt.multitileentity:20313>);
+recipes.addShaped(<gregtech:gt.multitileentity:20313>,
+[[HHammer,<gregtech:gt.multitileentity:26182>,Wrench],
+[<terrafirmacraft:item.Blue Steel Double Sheet>,<gregtech:gt.multitileentity:20313>,<terrafirmacraft:item.Blue Steel Double Sheet>],
+[<minecraft:brick_block>,<gregtech:gt.meta.plateDouble:8640>,<minecraft:brick_block>]]);
+
+recipes.remove(<gregtech:gt.multitileentity:20314>);
+recipes.addShaped(<gregtech:gt.multitileentity:20314>,
+[[HHammer,<gregtech:gt.multitileentity:26242>,Wrench],
+[<terrafirmacraft:item.Blue Steel Double Sheet>,<gregtech:gt.multitileentity:20314>,<terrafirmacraft:item.Blue Steel Double Sheet>],
+[<minecraft:brick_block>,<gregtech:gt.meta.plateDouble:8640>,<minecraft:brick_block>]]);
+
+//leisheqi
 recipes.addShaped(<gregtech:gt.multitileentity:11104>,
 [[<gregtech:gt.multiitem.technological:12127>,<gregtech:gt.multiitem.technological:12128>,<gregtech:gt.multiitem.technological:12127>],
 [<advancedRocketry:circuitIC>,<gregtech:gt.meta.machine.double:8610>,<advancedRocketry:circuitIC>],
@@ -438,24 +486,24 @@ mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.casingSmall:790>,  <
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.casingSmall:470>,  <terrafirmacraft:item.Silver Sheet>,         "gtcasing",5);
 
 //rings
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8661>, <gregtech:gt.meta.stick:8661>, <gregtech:gt.meta.stick:8661>, "gtring", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8610>, <gregtech:gt.meta.stick:8610>, <gregtech:gt.meta.stick:8610>, "gtring", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:290>,  <gregtech:gt.meta.stick:290>,  <gregtech:gt.meta.stick:290>,  "gtring", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8643>, <gregtech:gt.meta.stick:8643>, <gregtech:gt.meta.stick:8643>, "gtring", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8630>, <gregtech:gt.meta.stick:8630>, <gregtech:gt.meta.stick:8630>, "gtring", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:830>,  <gregtech:gt.meta.stick:830>,  <gregtech:gt.meta.stick:830>,  "gtring", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:500>,  <gregtech:gt.meta.stick:500>,  <gregtech:gt.meta.stick:500>,  "gtring", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:820>,  <gregtech:gt.meta.stick:820>,  <gregtech:gt.meta.stick:820>,  "gtring", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8636>, <gregtech:gt.meta.stick:8636>, <gregtech:gt.meta.stick:8636>, "gtring", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:240>,  <gregtech:gt.meta.stick:240>,  <gregtech:gt.meta.stick:240>,  "gtring",5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8620>, <gregtech:gt.meta.stick:8620>, <gregtech:gt.meta.stick:8620>, "gtring", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8612>, <gregtech:gt.meta.stick:8612>, <gregtech:gt.meta.stick:8612>, "gtring", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:270>,  <gregtech:gt.meta.stick:270>,  <gregtech:gt.meta.stick:270>,  "gtring",5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:320>,  <gregtech:gt.meta.stick:320>,  <gregtech:gt.meta.stick:320>,  "gtring",5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:280>,  <gregtech:gt.meta.stick:280>,  <gregtech:gt.meta.stick:280>,  "gtring",5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:130>,  <gregtech:gt.meta.stick:130>,  <gregtech:gt.meta.stick:130>,  "gtring",5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:790>,  <gregtech:gt.meta.stick:790>,  <gregtech:gt.meta.stick:790>,  "gtring",5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:470>,  <gregtech:gt.meta.stick:470>,  <gregtech:gt.meta.stick:470>,  "gtring",5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8661>, <gregtech:gt.meta.stick:8661>,  "gtring", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8610>, <gregtech:gt.meta.stick:8610>,  "gtring", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:290>,  <gregtech:gt.meta.stick:290>,   "gtring", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8643>, <gregtech:gt.meta.stick:8643>,  "gtring", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8630>, <gregtech:gt.meta.stick:8630>,  "gtring", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:830>,  <gregtech:gt.meta.stick:830>,   "gtring", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:500>,  <gregtech:gt.meta.stick:500>,   "gtring", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:820>,  <gregtech:gt.meta.stick:820>,   "gtring", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8636>, <gregtech:gt.meta.stick:8636>,  "gtring", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:240>,  <gregtech:gt.meta.stick:240>,   "gtring",5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8620>, <gregtech:gt.meta.stick:8620>,  "gtring", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8612>, <gregtech:gt.meta.stick:8612>,  "gtring", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:270>,  <gregtech:gt.meta.stick:270>,   "gtring",5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:320>,  <gregtech:gt.meta.stick:320>,   "gtring",5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:280>,  <gregtech:gt.meta.stick:280>,   "gtring",5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:130>,  <gregtech:gt.meta.stick:130>,   "gtring",5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:790>,  <gregtech:gt.meta.stick:790>,   "gtring",5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:470>,  <gregtech:gt.meta.stick:470>,   "gtring",5);
 
 //GT machine hulls
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:8630>, <gregtech:gt.meta.plateQuadruple:8630>, <gregtech:gt.meta.plateQuadruple:8630>, "gtmachinehull", 5);
@@ -465,6 +513,7 @@ mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:820>, <gregt
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:290>, <gregtech:gt.meta.plateQuadruple:290>, <gregtech:gt.meta.plateQuadruple:290>, "gtmachinehull", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:8661>, <gregtech:gt.meta.plateQuadruple:8661>, <gregtech:gt.meta.plateQuadruple:8661>, "gtmachinehull", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:8636>, <gregtech:gt.meta.plateQuadruple:8636>, <gregtech:gt.meta.plateQuadruple:8636>, "gtmachinehull", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:830>, <gregtech:gt.meta.plateQuadruple:830>, <gregtech:gt.meta.plateQuadruple:830>, "gtmachinehull", 5);
 
 
 //WELDING
@@ -528,13 +577,15 @@ mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:470>,  <t
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8630>, <terrafirmacraft:item.Steel Double Sheet>, <terrafirmacraft:item.Steel Double Sheet>, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8610>, <terrafirmacraft:item.Bronze Double Sheet>, <terrafirmacraft:item.Bronze Double Sheet>, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8643>, <terrafirmacraft:item.Wrought Iron Double Sheet>, <terrafirmacraft:item.Wrought Iron Double Sheet>, 5);
-mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:820>, <terrafirmacraft:item.Lead Double Sheet>, <terrafirmacraft:item.Lead Double Sheet>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:820> , <terrafirmacraft:item.Lead Double Sheet>, <terrafirmacraft:item.Lead Double Sheet>, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8631>, <terrafirmacraft:item.Black Steel Double Sheet>, <terrafirmacraft:item.Black Steel Double Sheet>, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8633>, <terrafirmacraft:item.Blue Steel Double Sheet>, <terrafirmacraft:item.Blue Steel Double Sheet>, 7);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8632>, <terrafirmacraft:item.Red Steel Double Sheet>, <terrafirmacraft:item.Red Steel Double Sheet>, 7);
-mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:290>, <terrafirmacraft:item.Copper Double Sheet>, <terrafirmacraft:item.Copper Double Sheet>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:290> , <terrafirmacraft:item.Copper Double Sheet>, <terrafirmacraft:item.Copper Double Sheet>, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8661>, <gregtech:gt.meta.plateDouble:8661>, <gregtech:gt.meta.plateDouble:8661>, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8636>, <gregtech:gt.meta.plateDouble:8636>, <gregtech:gt.meta.plateDouble:8636>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:830> , <terrafirmacraft:item.Bismuth Double Sheet>, <terrafirmacraft:item.Bismuth Double Sheet>, 5);
+
 
 //Boilers
 recipes.remove(<gregtech:gt.multitileentity:1200>);
@@ -561,4 +612,87 @@ recipes.addShaped(<gregtech:gt.multitileentity:1203>,
 [<ore:plateDoubleInvar>,<ore:craftingToolWrench>,<ore:plateDoubleInvar>],
 [<ore:plateDoubleInvar>,<ore:plateDoubleInvar>,<ore:plateDoubleInvar>]]);
 //Fe2Ni
+
+//Burners
+recipes.remove(<gregtech:gt.multitileentity:1100>);
+recipes.remove(<gregtech:gt.multitileentity:1101>);
+recipes.remove(<gregtech:gt.multitileentity:1102>);
+recipes.remove(<gregtech:gt.multitileentity:1103>);
+recipes.remove(<gregtech:gt.multitileentity:1104>);
+recipes.remove(<gregtech:gt.multitileentity:1105>);
+recipes.remove(<gregtech:gt.multitileentity:1106>);
+recipes.remove(<gregtech:gt.multitileentity:1107>);
+recipes.remove(<gregtech:gt.multitileentity:1108>);
+recipes.remove(<gregtech:gt.multitileentity:1109>);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1100>,
+[[HHammer,<ore:plateDoubleCopper>,Wrench],
+[<terrafirmacraft:item.Black Steel Sheet>,<ore:casingMachineLead>,<terrafirmacraft:item.Black Steel Sheet>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1101>,
+[[HHammer,<ore:plateDoubleCopper>,Wrench],
+[<terrafirmacraft:item.Black Steel Sheet>,<ore:casingMachineBismuth>,<terrafirmacraft:item.Black Steel Sheet>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1102>,
+[[HHammer,<ore:plateDoubleCopper>,Wrench],
+[<terrafirmacraft:item.Black Steel Sheet>,<ore:casingMachineBronze>,<terrafirmacraft:item.Black Steel Sheet>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1103>,
+[[HHammer,<ore:plateDoubleCopper>,Wrench],
+[<terrafirmacraft:item.Black Steel Sheet>,<ore:casingMachineInvar>,<terrafirmacraft:item.Black Steel Sheet>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1104>,
+[[HHammer,<ore:plateDoubleCopper>,Wrench],
+[<terrafirmacraft:item.Black Steel Sheet>,<ore:casingMachineSteel>,<terrafirmacraft:item.Black Steel Sheet>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1105>,
+[[HHammer,<ore:plateDoubleCopper>,Wrench],
+[<terrafirmacraft:item.Black Steel Sheet>,<ore:casingMachineChromium>,<terrafirmacraft:item.Black Steel Sheet>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1106>,
+[[HHammer,<ore:plateDoubleCopper>,Wrench],
+[<terrafirmacraft:item.Blue Steel Sheet>,<ore:casingMachineTitanium>,<terrafirmacraft:item.Blue Steel Sheet>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1106>,
+[[HHammer,<ore:plateDoubleCopper>,Wrench],
+[<terrafirmacraft:item.Red Steel Sheet>,<ore:casingMachineTitanium>,<terrafirmacraft:item.Red Steel Sheet>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1107>,
+[[HHammer,<ore:plateDoubleCopper>,Wrench],
+[<terrafirmacraft:item.Blue Steel Sheet>,<ore:casingMachineTungsten>,<terrafirmacraft:item.Blue Steel Sheet>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1107>,
+[[HHammer,<ore:plateDoubleCopper>,Wrench],
+[<terrafirmacraft:item.Red Steel Sheet>,<ore:casingMachineTungsten>,<terrafirmacraft:item.Red Steel Sheet>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1108>,
+[[HHammer,<ore:plateDoubleCopper>,Wrench],
+[<terrafirmacraft:item.Blue Steel Sheet>,<ore:casingMachineTungstensteel>,<terrafirmacraft:item.Blue Steel Sheet>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1108>,
+[[HHammer,<ore:plateDoubleCopper>,Wrench],
+[<terrafirmacraft:item.Red Steel Sheet>,<ore:casingMachineTungstensteel>,<terrafirmacraft:item.Red Steel Sheet>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1109>,
+[[HHammer,<ore:plateDoubleCopper>,Wrench],
+[<terrafirmacraft:item.Blue Steel Sheet>,<ore:casingMachineTantalumHafniumCarbide>,<terrafirmacraft:item.Blue Steel Sheet>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1109>,
+[[HHammer,<ore:plateDoubleCopper>,Wrench],
+[<terrafirmacraft:item.Red Steel Sheet>,<ore:casingMachineTantalumHafniumCarbide>,<terrafirmacraft:item.Red Steel Sheet>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
 

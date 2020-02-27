@@ -4,3 +4,5 @@ recipes.addShaped(<minecraft:shears>,
 [[<gregtech:gt.metatool.01:12>,<ore:plateAnyIron>,null],
 [<ore:plateAnyIron>,<gregtech:gt.metatool.01:18>,null],
 [null,null,null]]);
+
+recipes.addShapeless(<minecraft:glass_bottle>,[<terrafirmacraft:item.Glass Bottle>]);

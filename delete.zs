@@ -28,6 +28,7 @@ recipes.remove(<gregtech:gt.meta.machine:8643>);
 recipes.remove(<gregtech:gt.meta.machine:290>);
 recipes.remove(<gregtech:gt.meta.machine:8661>);
 recipes.remove(<gregtech:gt.meta.machine:8610>);
+recipes.remove(<gregtech:gt.meta.machine:830>);
 
 //remove low tier gt crucibles
 recipes.remove(<gregtech:gt.multitileentity:1000>);
@@ -118,3 +119,8 @@ recipes.remove(<tfctech:item.Vulcanizing Agents>);
 //TFCblock
 mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:3>, <terrafirmacraft:item.Black Steel Double Sheet>,<terrafirmacraft:item.Black Steel Double Sheet>, "block", 7);
 mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:4>, <terrafirmacraft:item.Blue Steel Double Sheet>,<terrafirmacraft:item.Blue Steel Double Sheet>, "block", 7);
+
+//FR
+recipes.remove(<Forestry:letters>);
+recipes.remove(<Forestry:letters:16>);
+recipes.remove(<Forestry:letters:32>);
