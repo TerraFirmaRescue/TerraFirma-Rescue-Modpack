@@ -122,16 +122,8 @@ recipes.remove(<tfctech:item.Vulcanizing Agents>);
 //TFCblock
 mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:3>, <terrafirmacraft:item.Black Steel Double Sheet>,<terrafirmacraft:item.Black Steel Double Sheet>, "block", 7);
 mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:4>, <terrafirmacraft:item.Blue Steel Double Sheet>,<terrafirmacraft:item.Blue Steel Double Sheet>, "block", 7);
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 87068655a736c3975e25bde9ba1df576be07df95
-=======
 
 //FR
 recipes.remove(<Forestry:letters>);
 recipes.remove(<Forestry:letters:16>);
 recipes.remove(<Forestry:letters:32>);
->>>>>>> 26d8d0d8d01a3152c12744d00d1b4b7348486a3d
