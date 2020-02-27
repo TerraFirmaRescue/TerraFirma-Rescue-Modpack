@@ -55,7 +55,7 @@ recipes.addShaped(<Railcraft:machine.alpha:15>*6,
 
 //RC coke oven
 recipes.remove(<Railcraft:machine.alpha:7>);
-recipes.addShaped(<Railcraft:machine.alpha:7>,
+recipes.addShaped(<Railcraft:machine.alpha:7>*2,
  [[<terrafirmacraft:item.Fire Brick:1>,<ore:sand>,<terrafirmacraft:item.Fire Brick:1>],
   [<ore:sand>,<ore:craftingToolHardHammer>,<ore:sand>],
   [<terrafirmacraft:item.Fire Brick:1>,<ore:sand>,<terrafirmacraft:item.Fire Brick:1>]]);
@@ -95,75 +95,36 @@ recipes.addShaped(<Railcraft:machine.alpha:12>*5,
 [<terrafirmacraft:FireBrick>,<terrafirmacraft:FireBrick>,<terrafirmacraft:FireBrick>],
 [Wrench,<terrafirmacraft:FireBrick>,<ore:plateSteel>]]);
 
-//tfc ores amount: 10 15 25 35
-//RC Crusher recipes change
-//metal ores
-//rich
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:38>, true, false, [<terrafirmacraft:item.Small Ore:3>*5,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:40>, true, false, [<terrafirmacraft:item.Small Ore:5>*5,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:41>, true, false, [<terrafirmacraft:item.Small Ore:6>*5,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:42>, true, false, [<terrafirmacraft:item.Small Ore:7>*5,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:43>, true, false, [<terrafirmacraft:item.Small Ore:8>*5,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:44>, true, false, [<terrafirmacraft:item.Small Ore:9>*5,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:45>, true, false, [<terrafirmacraft:item.Small Ore:10>*5,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:46>, true, false, [<terrafirmacraft:item.Small Ore:11>*5,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:47>, true, false, [<terrafirmacraft:item.Small Ore:12>*5,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:48>, true, false, [<terrafirmacraft:item.Small Ore:13>*5,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-//normal
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:3>, true, false, [<terrafirmacraft:item.Small Ore:3>*4,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:5>, true, false, [<terrafirmacraft:item.Small Ore:5>*4,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:6>, true, false, [<terrafirmacraft:item.Small Ore:6>*4,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:7>, true, false, [<terrafirmacraft:item.Small Ore:7>*4,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:8>, true, false, [<terrafirmacraft:item.Small Ore:8>*4,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:9>, true, false, [<terrafirmacraft:item.Small Ore:9>*4,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:10>, true, false, [<terrafirmacraft:item.Small Ore:10>*4,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:11>, true, false, [<terrafirmacraft:item.Small Ore:11>*4,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:12>, true, false, [<terrafirmacraft:item.Small Ore:12>*4,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:13>, true, false, [<terrafirmacraft:item.Small Ore:13>*4,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-//poor
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:52>, true, false, [<terrafirmacraft:item.Small Ore:3>*2,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:54>, true, false, [<terrafirmacraft:item.Small Ore:5>*2,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:56>, true, false, [<terrafirmacraft:item.Small Ore:6>*2,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:57>, true, false, [<terrafirmacraft:item.Small Ore:7>*2,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:58>, true, false, [<terrafirmacraft:item.Small Ore:8>*2,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:59>, true, false, [<terrafirmacraft:item.Small Ore:9>*2,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:60>, true, false, [<terrafirmacraft:item.Small Ore:10>*2,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:61>, true, false, [<terrafirmacraft:item.Small Ore:11>*2,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:62>, true, false, [<terrafirmacraft:item.Small Ore:12>*2,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:63>, true, false, [<terrafirmacraft:item.Small Ore:13>*2,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-
-//non-metal ores
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:16>, true, false, [<terrafirmacraft:item.Powder:1>*6,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:20>, true, false, [<terrafirmacraft:item.Powder:2>*6,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.LooseRock:5>, true, false, [<terrafirmacraft:item.Powder:9>*6,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-
-
-
 //RC Bender recipes change
 //3 ingot into 2 plate
-val ingotCu = <terrafirmacraft:item.Copper Ingot>;
+val ingotCu  = <terrafirmacraft:item.Copper Ingot>;
 val ingotBiB = <terrafirmacraft:item.Bismuth Bronze Ingot>;
 val ingotBlB = <terrafirmacraft:item.Black Bronze Ingot>;
 val ingotBSt = <terrafirmacraft:item.Black Steel Ingot>;
-val ingotSt = <terrafirmacraft:item.Steel Ingot>;
-val ingotEl = <terrafirmacraft:item.Electrum Ingot>;
+val ingotSt  = <terrafirmacraft:item.Steel Ingot>;
+val ingotEl  = <terrafirmacraft:item.Electrum Ingot>;
 val ingotCup = <terrafirmacraft:item.Cupronickel Ingot>;
 val ingotTin = <terrafirmacraft:item.Tin Ingot>;
 val ingotBro = <terrafirmacraft:item.Bronze Ingot>;
-val ingotFe = <terrafirmacraft:item.Wrought Iron Ingot>;
-val ingotPb = <terrafirmacraft:item.Lead Ingot>;
+val ingotFe  = <terrafirmacraft:item.Wrought Iron Ingot>;
+val ingotPb  = <terrafirmacraft:item.Lead Ingot>;
 
-val plateCu = <terrafirmacraft:item.Copper Sheet>;
+val plateCu  = <terrafirmacraft:item.Copper Sheet>;
 val plateBiB = <terrafirmacraft:item.Bismuth Bronze Sheet>;
 val plateBlB = <terrafirmacraft:item.Black Bronze Sheet>;
 val plateBSt = <terrafirmacraft:item.Black Steel Sheet>;
-val plateSt = <terrafirmacraft:item.Steel Sheet>;
-val plateEl = <terrafirmacraft:item.Electrum Sheet>;
+val plateSt  = <terrafirmacraft:item.Steel Sheet>;
+val plateEl  = <terrafirmacraft:item.Electrum Sheet>;
 val plateCup = <terrafirmacraft:item.Cupronickel Sheet>;
 val plateTin = <terrafirmacraft:item.Tin Sheet>;
 val plateBro = <terrafirmacraft:item.Bronze Sheet>;
-val plateFe = <terrafirmacraft:item.Wrought Iron Sheet>;
-val platePb = <terrafirmacraft:item.Lead Sheet>;
+val plateFe  = <terrafirmacraft:item.Wrought Iron Sheet>;
+val platePb  = <terrafirmacraft:item.Lead Sheet>;
+
+mods.railcraft.Rolling.removeRecipe(plateCu );
+mods.railcraft.Rolling.removeRecipe(plateSt );
+mods.railcraft.Rolling.removeRecipe(plateFe );
+mods.railcraft.Rolling.removeRecipe(platePb );
 
 mods.railcraft.Rolling.addShapeless(plateCu*2, [ingotCu, ingotCu, ingotCu]);
 mods.railcraft.Rolling.addShapeless(plateBiB*2, [ingotBiB, ingotBiB, ingotBiB]);
@@ -178,3 +139,13 @@ mods.railcraft.Rolling.addShapeless(plateFe*2, [ingotFe, ingotFe, ingotFe]);
 mods.railcraft.Rolling.addShapeless(platePb*2, [ingotPb, ingotPb, ingotPb]);
 
 
+//RC blast furnace recipes
+mods.railcraft.BlastFurnace.addFuel(<terrafirmacraft:item.coal>);
+mods.railcraft.BlastFurnace.addFuel(<terrafirmacraft:item.coal:1>);
+
+furnace.setFuel(<terrafirmacraft:item.coal>, 4000);
+furnace.setFuel(<terrafirmacraft:item.coal:1>, 4000);
+
+mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.Small Ore:11>, false, false, 400, <terrafirmacraft:item.MetalNugget:9>*2);
+mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.Small Ore:3>, false, false, 400, <terrafirmacraft:item.MetalNugget:9>*2);
+mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.Small Ore:10>, false, false, 400, <terrafirmacraft:item.MetalNugget:9>*2);

@@ -30,3 +30,26 @@
 <ore:gt:complateTin>.remove(<terrafirmacraft:item.Tin Sheet>);
 <ore:plateBlackSteel>.remove(<terrafirmacraft:item.Black Steel Sheet>);
 */
+
+<ore:sand>.add(<terrafirmacraft:Sand>);
+<ore:sand>.add(<terrafirmacraft:Sand:1>);
+<ore:sand>.add(<terrafirmacraft:Sand:2>);
+<ore:sand>.add(<terrafirmacraft:Sand:3>);
+<ore:sand>.add(<terrafirmacraft:Sand:4>);
+<ore:sand>.add(<terrafirmacraft:Sand:5>);
+<ore:sand>.add(<terrafirmacraft:Sand:6>);
+<ore:sand>.add(<terrafirmacraft:Sand:7>);
+<ore:sand>.add(<terrafirmacraft:Sand:8>);
+<ore:sand>.add(<terrafirmacraft:Sand:9>);
+<ore:sand>.add(<terrafirmacraft:Sand:10>);
+<ore:sand>.add(<terrafirmacraft:Sand:11>);
+<ore:sand>.add(<terrafirmacraft:Sand:12>);
+<ore:sand>.add(<terrafirmacraft:Sand:13>);
+<ore:sand>.add(<terrafirmacraft:Sand:14>);
+<ore:sand>.add(<terrafirmacraft:Sand:15>);
+<ore:sand>.add(<terrafirmacraft:Sand2>);
+<ore:sand>.add(<terrafirmacraft:Sand2:1>);
+<ore:sand>.add(<terrafirmacraft:Sand2:2>);
+<ore:sand>.add(<terrafirmacraft:Sand2:3>);
+<ore:sand>.add(<terrafirmacraft:Sand2:4>);
+
