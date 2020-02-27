@@ -267,19 +267,19 @@ recipes.addShaped(<gregtech:gt.multitileentity:20311>,
 recipes.remove(<gregtech:gt.multitileentity:20312>);
 recipes.addShaped(<gregtech:gt.multitileentity:20312>,
 [[HHammer,<gregtech:gt.multitileentity:26402>,Wrench],
-[<terrafirmacraft:item.Blue Steel Double Sheet>,<gregtech:gt.multitileentity:20312>,<terrafirmacraft:item.Blue Steel Double Sheet>],
+[<terrafirmacraft:item.Blue Steel Double Sheet>,<gregtech:gt.meta.machine:8661>,<terrafirmacraft:item.Blue Steel Double Sheet>],
 [<minecraft:brick_block>,<terrafirmacraft:item.Copper Double Sheet>,<minecraft:brick_block>]]);
 
 recipes.remove(<gregtech:gt.multitileentity:20313>);
 recipes.addShaped(<gregtech:gt.multitileentity:20313>,
 [[HHammer,<gregtech:gt.multitileentity:26182>,Wrench],
-[<terrafirmacraft:item.Blue Steel Double Sheet>,<gregtech:gt.multitileentity:20313>,<terrafirmacraft:item.Blue Steel Double Sheet>],
+[<terrafirmacraft:item.Blue Steel Double Sheet>,<gregtech:gt.meta.machine:220>,<terrafirmacraft:item.Blue Steel Double Sheet>],
 [<minecraft:brick_block>,<gregtech:gt.meta.plateDouble:8640>,<minecraft:brick_block>]]);
 
 recipes.remove(<gregtech:gt.multitileentity:20314>);
 recipes.addShaped(<gregtech:gt.multitileentity:20314>,
 [[HHammer,<gregtech:gt.multitileentity:26242>,Wrench],
-[<terrafirmacraft:item.Blue Steel Double Sheet>,<gregtech:gt.multitileentity:20314>,<terrafirmacraft:item.Blue Steel Double Sheet>],
+[<terrafirmacraft:item.Blue Steel Double Sheet>,<gregtech:gt.meta.machine:8638>,<terrafirmacraft:item.Blue Steel Double Sheet>],
 [<minecraft:brick_block>,<gregtech:gt.meta.plateDouble:8640>,<minecraft:brick_block>]]);
 
 //leisheqi

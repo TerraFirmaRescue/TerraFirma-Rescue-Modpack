@@ -7,6 +7,14 @@ val Knife = <ore:craftingToolKnife>;
 val Saw = <ore:craftingToolSaw>;
 val Wrench = <ore:craftingToolWrench>;
 
+//tfc freshwater - gt water
+MTUtilsGT.addFluidInput(<liquid:water>,<liquid:freshwater>);
+MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
+[null],
+[<liquid:freshwater>],
+[<liquid:water>],
+[null]);
+
 //clay
 recipes.remove(<terrafirmacraft:item.Clay:1>);
 MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 16, 0, [10000],

@@ -66,27 +66,86 @@ mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:27>, true, false,
 mods.Terrafirmacraft.Quern.removeRecipe(<minecraft:redstone>*8, <terrafirmacraft:item.Ore:28>);
 
 //GT Crusher recipes
-MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 300, 0,[10000],
+//nonmetal
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 [<terrafirmacraft:item.Ore:18>],
 [<gregtech:gt.meta.crushed:9159>*2,<gregtech:gt.meta.dust:8500>]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 300, 0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 [<terrafirmacraft:item.Ore:19>],
 [<gregtech:gt.meta.crushed:9221>*2,<gregtech:gt.meta.dust:8500>]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 300, 0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 [<terrafirmacraft:item.Ore:24>],
 [<gregtech:gt.meta.crushed:9131>*2,<gregtech:gt.meta.dust:8500>]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 300, 0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 [<terrafirmacraft:item.Ore:31>],
 [<gregtech:gt.meta.crushed:8203>*2,<gregtech:gt.meta.dust:8500>]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 300, 0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 [<terrafirmacraft:item.Ore:26>],
 [<gregtech:gt.meta.crushed:9155>*2,<gregtech:gt.meta.dust:8500>]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 300, 0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 [<terrafirmacraft:item.Ore:28>],
 [<gregtech:gt.meta.crushed:8009>*8,<gregtech:gt.meta.dust:8500>]);
+
+//metal
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<terrafirmacraft:item.Small Ore:13>],
+[<gregtech:gt.meta.crushed:9132>,<gregtech:gt.meta.dust:8500>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<terrafirmacraft:item.Small Ore:8>],
+[<gregtech:gt.meta.crushed:9118>,<gregtech:gt.meta.dust:8500>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<terrafirmacraft:item.Small Ore:10>],
+[<gregtech:gt.meta.crushed:9122>,<gregtech:gt.meta.dust:8500>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<terrafirmacraft:item.Small Ore:11>],
+[<gregtech:gt.meta.crushed:9106>,<gregtech:gt.meta.dust:8500>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<terrafirmacraft:item.Small Ore:7>],
+[<gregtech:gt.meta.crushed:830>,<gregtech:gt.meta.dust:8500>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<terrafirmacraft:item.Small Ore:6>],
+[<gregtech:gt.meta.crushed:9117>,<gregtech:gt.meta.dust:8500>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<terrafirmacraft:item.Small Ore:5>],
+[<gregtech:gt.meta.crushed:9108>,<gregtech:gt.meta.dust:8500>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<terrafirmacraft:item.Small Ore:3>],
+[<gregtech:gt.meta.crushed:9104>,<gregtech:gt.meta.dust:8500>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<terrafirmacraft:item.Small Ore:12>],
+[<gregtech:gt.meta.crushed:9130>,<gregtech:gt.meta.dust:8500>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<tfctech:item.Small Ore>],
+[<gregtech:gt.meta.crushed:9105>,<gregtech:gt.meta.dust:8500>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<terrafirmacraft:item.Small Ore:1>],
+[<gregtech:gt.meta.crushed:790>,<gregtech:gt.meta.dust:8500>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<terrafirmacraft:item.Small Ore:2>],
+[<gregtech:gt.meta.crushed:9116>,<gregtech:gt.meta.dust:8500>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<terrafirmacraft:item.Small Ore:4>],
+[<gregtech:gt.meta.crushed:9210>,<gregtech:gt.meta.dust:8500>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<terrafirmacraft:item.Small Ore>],
+[<gregtech:gt.meta.crushed:9111>,<gregtech:gt.meta.dust:8500>]);
+
 
