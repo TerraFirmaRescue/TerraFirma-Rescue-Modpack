@@ -80,3 +80,15 @@ MTUtilsGT.addCustomRecipe("", false, 16, 16, 0, [10000],
 []);
 
 */
+
+//GTTools->TFCTools
+//pickaxe
+recipes.addShapeless(<terrafirmacraft:item.Copper Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:290>]);
+recipes.addShapeless(<terrafirmacraft:item.Bronze Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8610>]);
+recipes.addShapeless(<terrafirmacraft:item.Black Bronze Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8611>]);
+recipes.addShapeless(<terrafirmacraft:item.Bismuth Bronze Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8612>]);
+recipes.addShapeless(<terrafirmacraft:item.Wrought Iron Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:260>]);
+recipes.addShapeless(<terrafirmacraft:item.Steel Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8630>]);
+recipes.addShapeless(<terrafirmacraft:item.Black Steel Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8631>]);
+recipes.addShapeless(<terrafirmacraft:item.Red Steel Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8632>]);
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8633>]);
