@@ -49,5 +49,11 @@ MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16,  1200,0,[10000],
 [<tfctech:item.Circuit>,<gregtech:gt.meta.wireFine:290>*4,<gregtech:gt.meta.wireFine:8708>*4],
 [<advancedRocketry:circuitIC:3>]);
 
+MTUtilsGT.removeAllRecipes("gt.recipe.generifier",<gregtech:gt.meta.lens:8301>);
+MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 16,  1200,0,[10000], 
+[<gregtech:gt.meta.lens:8311>],
+[null],
+[null],
+[<gregtech:gt.meta.lens:8301>]);
 
 
