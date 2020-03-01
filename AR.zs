@@ -164,7 +164,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 128, 256 ,0,[10000],
 [null],
 [<libVulpes:tile.eliteMotor>]);
 
-recipes.addShapeless(<libVulpes:tile.motor>,[<gregtech:gt.multiitem.technological:12001>, <gregtech:gt.meta.gearGtSmall:8651>, <gregtech:gt.meta.gearGt:8651>]);
+recipes.addShapeless(<libVulpes:tile.motor>,[<gregtech:gt.meta.plateCurved:8651>, <gregtech:gt.meta.stick:8645>, <gregtech:gt.multitileentity:28350>, <gregtech:gt.meta.gearGtSmall:8651>, <gregtech:gt.meta.gearGt:8651>]);
 recipes.addShapeless(<libVulpes:tile.advancedMotor>,[<gregtech:gt.multiitem.technological:12002>,<gregtech:gt.meta.gearGtSmall:130>, <gregtech:gt.meta.gearGt:130>]);
 recipes.addShapeless(<libVulpes:tile.enhancedMotor>,[<gregtech:gt.multiitem.technological:12003>,<gregtech:gt.meta.gearGtSmall:8636>,<gregtech:gt.meta.gearGt:8636>]);
 recipes.addShapeless(<libVulpes:tile.eliteMotor>,[<gregtech:gt.multiitem.technological:12004>, <gregtech:gt.meta.gearGtSmall:240>, <gregtech:gt.meta.gearGt:240>]);
