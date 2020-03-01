@@ -25,9 +25,9 @@ MTUtilsGT.addCustomRecipe("", false, 16, 16, 0, [10000],
 //machine block
 recipes.remove(<libVulpes:blockStructureBlock>);
 recipes.addShaped(<libVulpes:blockStructureBlock>*2,
-[[<ore:plateSteel>, <ore:stickSteel>, <ore:plateSteel>],
-[<ore:stickSteel>, <ore:craftingToolWrench>, <ore:stickSteel>],
-[<ore:plateSteel>, <ore:stickSteel>, <ore:plateSteel>]]);
+[[<ore:plateTinAlloy>, <ore:stickTinAlloy>, <ore:plateTinAlloy>],
+[<ore:stickTinAlloy>, <ore:craftingToolWrench>, <ore:stickTinAlloy>],
+[<ore:plateTinAlloy>, <ore:stickTinAlloy>, <ore:plateTinAlloy>]]);
 
 //advanced block
 recipes.remove(<libVulpes:tile.advStructureMachine>);
