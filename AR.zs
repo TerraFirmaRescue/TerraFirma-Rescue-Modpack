@@ -56,4 +56,11 @@ MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 16,  1200,0,[10000],
 [null],
 [<gregtech:gt.meta.lens:8301>]);
 
+recipes.remove(<advancedRocketry:precisionassemblingmachine>);
+recipes.addShaped(<advancedRocketry:precisionassemblingmachine>,
+[[<advancedRocketry:tile.energyPipe>,<advancedRocketry:miscpart>, <advancedRocketry:tile.energyPipe>],
+[<advancedRocketry:circuitIC:3>,<libVulpes:blockStructureBlock>, <advancedRocketry:circuitIC:4>],
+[<gregtech:gt.multiitem.technological:12000>, <gregtech:gt.multiitem.technological:12040>, <gregtech:gt.multiitem.technological:12060>]]);
+
+
 
