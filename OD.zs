@@ -67,4 +67,9 @@
 //tfc clay
 <ore:itemClay>.add(<terrafirmacraft:item.Clay>);
 
+//tfc silicon rock
+<ore:stoneQuartzite>.add(<terrafirmacraft:StoneMMCobble>);
+<ore:stoneAnySiliconDioxide>.add(<terrafirmacraft:StoneMMCobble>);
+<ore:stoneAnyQuartz>.add(<terrafirmacraft:StoneMMCobble>);
+
 

@@ -11,3 +11,6 @@ recipes.addShaped(<chisel:technical>,
 [<ore:ingotAnyIronOrSteel>,<ore:stoneBricks>,<ore:ingotAnyIronOrSteel>],
 [<ore:stoneBricks>,<ore:ingotAnyIronOrSteel>,<ore:stoneBricks>]]);
 //gongyifangkuai
+
+//remove diamond into block
+mods.chisel.Groups.removeGroup("diamond_block");

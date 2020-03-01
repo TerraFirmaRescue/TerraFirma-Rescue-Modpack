@@ -426,9 +426,15 @@ recipes.addShaped(<gregtech:gt.multitileentity:20152>,
 [[<gregtech:gt.meta.gearGtSmall:8631>,<gregtech:gt.meta.gearGt:8631>,<gregtech:gt.meta.gearGtSmall:8631>],
 [Wrench,<ore:casingMachineAnyIronStell>,HHammer],
 [null,<advancedRocketry:circuitIC>,null]]);
+
 // xian lan
 recipes.remove(<gregtech:gt.multitileentity:20152>);
 recipes.addShaped(<gregtech:gt.multitileentity:20152>,
 [[<gregtech:gt.meta.gearGtSmall:8631>,<gregtech:gt.meta.gearGt:8631>,<gregtech:gt.meta.gearGtSmall:8631>],
 [Wrench,<gregtech:gt.meta.machine:8630>,HHammer],
 [null,<advancedRocketry:circuitIC>,null]]);
+
+//stone dust
+MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 200 ,0,[10000],
+[],
+[<gregtech:gt.meta.dust:8500>]);

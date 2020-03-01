@@ -62,5 +62,21 @@ recipes.addShaped(<advancedRocketry:precisionassemblingmachine>,
 [<advancedRocketry:circuitIC:3>,<libVulpes:blockStructureBlock>, <advancedRocketry:circuitIC:4>],
 [<gregtech:gt.multiitem.technological:12000>, <gregtech:gt.multiitem.technological:12040>, <gregtech:gt.multiitem.technological:12060>]]);
 
+recipes.remove(<advancedRocketry:launchpad>);
+MTUtilsGT.removeAllRecipes("gt.recipe.drying",<advancedRocketry:launchpad>);
+MTUtilsGT.addCustomRecipe("gt.recipe.drying", false, 16, 600 ,0,[10000],
+[<gregtech:gt.meta.stick:8631>],
+[<liquid:concrete>*144],
+[<liquid:water>*10],
+[<advancedRocketry:launchpad>]);
+
+recipes.remove(<advancedRocketry:rocketBuilder>);
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<advancedRocketry:rocketBuilder>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 2000 ,0,[10000],
+[<gregtech:gt.meta.machine.double:220>, <gregtech:gt.multiitem.technological:30501>*2, <gregtech:gt.multiitem.technological:12084>*2,
+<gregtech:gt.multiitem.technological:12044>,<gregtech:gt.multiitem.technological:12064>*2,<gregtech:gt.multiitem.technological:11008>*4],
+[<liquid:helium>*1000],
+[null],
+[<advancedRocketry:rocketBuilder>]);
 
 

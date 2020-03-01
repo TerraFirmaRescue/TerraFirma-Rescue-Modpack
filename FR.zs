@@ -164,4 +164,15 @@ recipes.addShaped(<Forestry:engine:3>,
   [<gregtech:gt.multitileentity:1202>,<ore:craftingToolWrench>,<ore:plateStainlessSteel>],
   [<gregtech:gt.multitileentity:1602>,<ore:craftingToolHardHammer>,<ore:plateStainlessSteel>]]);
 
+//fertilizer
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 16 ,0,[10000],
+[<gregtech:gt.meta.dust:8203>,<minecraft:sand>*2],
+[<Forestry:fertilizerCompound>*8]);
 
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 16 ,0,[10000],
+[<gregtech:gt.meta.dust:8203>,<gregtech:gt.meta.dust:8200>*8],
+[<Forestry:fertilizerCompound>*16]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 16 ,0,[10000],
+[<gregtech:gt.meta.dust:8203>,<gregtech:gt.meta.dust:8207>*2],
+[<IC2:itemFertilizer>*3]);

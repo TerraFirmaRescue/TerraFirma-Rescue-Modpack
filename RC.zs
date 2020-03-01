@@ -50,7 +50,7 @@ mods.railcraft.Rolling.removeRecipe(<Railcraft:part.plate:1>);
 recipes.remove(<Railcraft:machine.alpha:15>);
 recipes.addShaped(<Railcraft:machine.alpha:15>*6,
 [[<ore:plateAnyIron>,<ore:plateAnyIron>,<ore:plateAnyIron>],
-[<ore:plateAnyIron>,<minecraft:diamond>,<ore:plateAnyIron>],
+[<ore:plateAnyIron>,<ore:gemDiamond>,<ore:plateAnyIron>],
 [<ore:plateAnyIron>,<ore:plateAnyIron>,<ore:plateAnyIron>]]);
 
 //RC coke oven

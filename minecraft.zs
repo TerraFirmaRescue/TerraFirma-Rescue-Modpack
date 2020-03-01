@@ -1,3 +1,5 @@
+import mods.MTUtilsGT;
+
 //shears
 recipes.remove(<minecraft:shears>);
 recipes.addShaped(<minecraft:shears>,
@@ -11,3 +13,5 @@ recipes.addShapeless(<gregtech:gt.block.sapling:2>,[<minecraft:stick>,<minecraft
 recipes.addShapeless(<gregtech:gt.block.sapling:7>,[<minecraft:stick>,<gregtech:gt.block.sapling:2>]);
 recipes.addShapeless(<minecraft:coal:1>,[<terrafirmacraft:item.coal:1>]);
 recipes.addShapeless(<minecraft:coal>,[<terrafirmacraft:item.coal>]);
+recipes.addShapeless(<minecraft:sand>,[<ore:sand>]);
+
