@@ -421,11 +421,6 @@ recipes.addShaped(<gregtech:gt.multitileentity:1109>,
 [<terrafirmacraft:item.Red Steel Sheet>,<ore:casingMachineTantalumHafniumCarbide>,<terrafirmacraft:item.Red Steel Sheet>],
 [<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
 
-recipes.remove(<gregtech:gt.multitileentity:20152>);
-recipes.addShaped(<gregtech:gt.multitileentity:20152>,
-[[<gregtech:gt.meta.gearGtSmall:8631>,<gregtech:gt.meta.gearGt:8631>,<gregtech:gt.meta.gearGtSmall:8631>],
-[Wrench,<ore:casingMachineAnyIronStell>,HHammer],
-[null,<advancedRocketry:circuitIC>,null]]);
 // xian lan
 recipes.remove(<gregtech:gt.multitileentity:20152>);
 recipes.addShaped(<gregtech:gt.multitileentity:20152>,
