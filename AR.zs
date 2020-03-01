@@ -6,6 +6,7 @@ val SHammer = <ore:craftingToolSoftHammer>;
 val Knife = <ore:craftingToolKnife>;
 val Saw = <ore:craftingToolSaw>;
 val Wrench = <ore:craftingToolWrench>;
+val Cutter = <ore:craftingToolWireCutter>;
 
 //template
 /*
@@ -70,13 +71,100 @@ MTUtilsGT.addCustomRecipe("gt.recipe.drying", false, 16, 600 ,0,[10000],
 [<liquid:water>*10],
 [<advancedRocketry:launchpad>]);
 
+//rocket builder
 recipes.remove(<advancedRocketry:rocketBuilder>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<advancedRocketry:rocketBuilder>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 2000 ,0,[10000],
-[<gregtech:gt.meta.machine.double:220>, <gregtech:gt.multiitem.technological:30501>*2, <gregtech:gt.multiitem.technological:12084>*2,
+[<gregtech:gt.meta.machine.double:8794>, <gregtech:gt.multiitem.technological:30501>*2, <gregtech:gt.multiitem.technological:12084>*2,
 <gregtech:gt.multiitem.technological:12044>,<gregtech:gt.multiitem.technological:12064>*2,<gregtech:gt.multiitem.technological:11008>*4],
-[<liquid:helium>*1000],
+[<liquid:molten.tin>*1000],
 [null],
 [<advancedRocketry:rocketBuilder>]);
 
+//space elevator
+recipes.remove(<advancedRocketry:tile.spaceElevatorController>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 4000 ,0,[10000],
+[<gregtech:gt.meta.machine.double:220>, <gregtech:gt.multiitem.technological:30502>*2, <gregtech:gt.meta.chain:9175>*64, <gregtech:gt.meta.chain:9175>*64,
+<minecraft:minecart>, <gregtech:gt.multitileentity:10050>*20, <gregtech:gt.multitileentity:29950>*64],
+[<liquid:molten.solderingalloy>*3000],
+[null],
+[<advancedRocketry:tile.spaceElevatorController>]);
 
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 16, 256 ,0,[10000],
+[<gregapi:gt.integrated_circuit:24>*0, <gregtech:gt.meta.dust:60>],
+[<gregtech:gt.meta.chain:9175>]);
+
+//battery
+recipes.remove(<libVulpes:battery>);
+recipes.addShaped(<libVulpes:battery>,
+[[null,<gregtech:gt.multitileentity:28066>,Cutter],
+[<gregtech:gt.meta.plateCurved:130>,<gregtech:gt.multiitem.technological:20003>,<gregtech:gt.meta.plateCurved:130>],
+[null,<gregtech:gt.multiitem.technological:20003>,null]]);
+
+//coils
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 256 ,0,[10000],
+[<gregtech:gt.multitileentity:29403>*4],
+[<liquid:molten.tin>*20],
+[null],
+[<libVulpes:libVulpescoil0:10>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 256 ,0,[10000],
+[<gregtech:gt.multitileentity:28353>*4],
+[<liquid:molten.tin>*20],
+[null],
+[<libVulpes:libVulpescoil0:4>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 256 ,0,[10000],
+[<gregtech:gt.multitileentity:29003>*4],
+[<liquid:molten.tin>*20],
+[null],
+[<libVulpes:libVulpescoil0:9>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 256 ,0,[10000],
+[<gregtech:gt.meta.stickLong:220>*4],
+[<liquid:molten.tin>*20],
+[null],
+[<libVulpes:libVulpescoil0:7>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 256 ,0,[10000],
+[<gregtech:gt.multitileentity:28703>*4],
+[<liquid:molten.tin>*20],
+[null],
+[<libVulpes:libVulpescoil0:2>]);
+
+//double-Li
+MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 265, 100000000,[10000],
+[<gregapi:gt.integrated_circuit:2>*0],
+[<liquid:molten.lithium>*144,<liquid:deuterium>*1000],
+[<liquid:hydrogen>*100],
+[<libVulpes:libVulpesproductdust>]);
+
+//motors
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 256 ,0,[10000],
+[<gregtech:gt.multiitem.technological:12001>, <gregtech:gt.meta.gearGtSmall:8651>, <gregtech:gt.meta.gearGt:8651>],
+[<liquid:molten.tin>*20],
+[null],
+[<libVulpes:tile.motor>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 32, 256 ,0,[10000],
+[<gregtech:gt.multiitem.technological:12002>,<gregtech:gt.meta.gearGtSmall:130>, <gregtech:gt.meta.gearGt:130>],
+[<liquid:molten.tin>*20],
+[null],
+[<libVulpes:tile.advancedMotor>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 64, 256 ,0,[10000],
+[<gregtech:gt.multiitem.technological:12003>,<gregtech:gt.meta.gearGtSmall:8636>,<gregtech:gt.meta.gearGt:8636>],
+[<liquid:molten.tin>*20],
+[null],
+[<libVulpes:tile.enhancedMotor>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 128, 256 ,0,[10000],
+[<gregtech:gt.multiitem.technological:12004>, <gregtech:gt.meta.gearGtSmall:240>, <gregtech:gt.meta.gearGt:240>],
+[<liquid:molten.tin>*20],
+[null],
+[<libVulpes:tile.eliteMotor>]);
+
+recipes.addShapeless(<libVulpes:tile.motor>,[<gregtech:gt.multiitem.technological:12001>, <gregtech:gt.meta.gearGtSmall:8651>, <gregtech:gt.meta.gearGt:8651>]);
+recipes.addShapeless(<libVulpes:tile.advancedMotor>,[<gregtech:gt.multiitem.technological:12002>,<gregtech:gt.meta.gearGtSmall:130>, <gregtech:gt.meta.gearGt:130>]);
+recipes.addShapeless(<libVulpes:tile.enhancedMotor>,[<gregtech:gt.multiitem.technological:12003>,<gregtech:gt.meta.gearGtSmall:8636>,<gregtech:gt.meta.gearGt:8636>]);
+recipes.addShapeless(<libVulpes:tile.eliteMotor>,[<gregtech:gt.multiitem.technological:12004>, <gregtech:gt.meta.gearGtSmall:240>, <gregtech:gt.meta.gearGt:240>]);

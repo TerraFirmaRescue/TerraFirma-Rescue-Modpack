@@ -28,6 +28,7 @@ recipes.addShaped(<tfctech:item.Circuit>,
 [[<minecraft:paper>,<minecraft:paper>,<minecraft:paper>],
 [<tfctech:item.Glue>,<ore:dyeGreen>,<tfctech:item.Glue>],
 [<minecraft:paper>,<ore:itemRubber>,<minecraft:paper>]]);
+recipes.addShapeless(<tfctech:item.Circuit>,[<gregtech:gt.multiitem.technological:30000>]);
 
 recipes.addShaped(<tfctech:item.Vulcanizing Agents>,
 [[<ore:dustGraphite>,<ore:dustKaolinite>,null],
@@ -35,3 +36,5 @@ recipes.addShaped(<tfctech:item.Vulcanizing Agents>,
 [null,null,null]]);
 
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<advancedRocketry:sawBlade>, <terrafirmacraft:item.Wrought Iron Double Sheet>, <terrafirmacraft:item.Wrought Iron Double Sheet>, "axe", 3);
+
+recipes.addShapeless(<tfctech:item.Glue>*4, [<gregtech:gt.multiitem.bottles:32766>]);

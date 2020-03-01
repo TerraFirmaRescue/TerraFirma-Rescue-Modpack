@@ -72,4 +72,8 @@
 <ore:stoneAnySiliconDioxide>.add(<terrafirmacraft:StoneMMCobble>);
 <ore:stoneAnyQuartz>.add(<terrafirmacraft:StoneMMCobble>);
 
+//tfc wool
+<ore:blockWool>.add(<terrafirmacraft:item.WoolCloth>);
+<ore:itemString>.add(<terrafirmacraft:item.WoolYarn>);
+
 

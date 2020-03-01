@@ -119,6 +119,7 @@ recipes.remove(<gregtech:gt.multitileentity:1108>);
 recipes.remove(<gregtech:gt.multitileentity:1109>);
 
 //AR
+//recipes.remove();
 recipes.remove(<advancedRocketry:tile.blockHandPress>);
 recipes.remove(<advancedRocketry:circuitIC:5>);
 recipes.remove(<advancedRocketry:circuitIC:4>);
@@ -126,6 +127,18 @@ recipes.remove(<advancedRocketry:circuitIC:3>);
 recipes.remove(<advancedRocketry:tile.energyPipe>);
 recipes.remove(<advancedRocketry:sawBlade>);
 recipes.remove(<advancedRocketry:precisionassemblingmachine>);
+recipes.remove(<libVulpes:tile.coalGenerator>);
+recipes.remove(<libVulpes:tile.motor>);
+recipes.remove(<libVulpes:tile.enhancedMotor>);
+recipes.remove(<libVulpes:tile.advancedMotor>);
+recipes.remove(<libVulpes:tile.eliteMotor>);
+recipes.remove(<libVulpes:libVulpescoil0:9>);
+recipes.remove(<libVulpes:libVulpescoil0:7>);
+recipes.remove(<libVulpes:libVulpescoil0:4>);
+recipes.remove(<libVulpes:libVulpescoil0:2>);
+recipes.remove(<libVulpes:libVulpescoil0:10>);
+
+
 
 //TFCtech
 recipes.remove(<tfctech:item.Circuit>);
