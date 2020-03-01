@@ -432,3 +432,37 @@ recipes.addShaped(<gregtech:gt.multitileentity:20152>,
 [[<gregtech:gt.meta.gearGtSmall:8631>,<gregtech:gt.meta.gearGt:8631>,<gregtech:gt.meta.gearGtSmall:8631>],
 [Wrench,<gregtech:gt.meta.machine:8630>,HHammer],
 [null,<advancedRocketry:circuitIC>,null]]);
+
+//fa dian ji
+recipes.remove(<gregtech:gt.multitileentity:10112>);
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multitileentity:10112>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 20, 256, 1000,[10000],
+[<gregtech:gt.meta.stick:130>*4,<gregtech:gt.multitileentity:28400>*16,<gregtech:gt.meta.plateCurved:130>*2,<gregtech:gt.meta.foil:8640>*2,<gregtech:gt.meta.stick:8646>,<gregtech:gt.multiitem.technological:30302>*2,<gregtech:gt.meta.machine.double:130>],
+[null],
+[null],
+[<gregtech:gt.multitileentity:10112>]);
+//MV
+recipes.remove(<gregtech:gt.multitileentity:10113>);
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multitileentity:10113>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 80, 256, 1000,[10000],
+[<gregtech:gt.meta.stick:8636>*4,<gregtech:gt.multitileentity:28700>*16,<gregtech:gt.meta.plateCurved:8636>*2,<gregtech:gt.meta.foil:790>*2,<gregtech:gt.meta.stickLong:8646>,<gregtech:gt.multiitem.technological:30303>*2,<gregtech:gt.meta.machine.double:8636>],
+[null],
+[null],
+[<gregtech:gt.multitileentity:10113>]);
+//HV
+recipes.remove(<gregtech:gt.multitileentity:10114>);
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multitileentity:10114>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 320, 256, 1000,[10000],
+[<gregtech:gt.meta.stick:240>*4,<gregtech:gt.multitileentity:29000>*16,<gregtech:gt.meta.plateCurved:240>*2,<gregtech:gt.meta.foil:130>*2,<gregtech:gt.meta.stick:8647>,<gregtech:gt.multiitem.technological:30304>*2,<gregtech:gt.meta.machine.double:240>],
+[null],
+[null],
+[<gregtech:gt.multitileentity:10114>]);
+//EV
+recipes.remove(<gregtech:gt.multitileentity:10115>);
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multitileentity:10115>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1280, 256, 1000,[10000],
+[<gregtech:gt.meta.stick:220>*4,<gregtech:gt.multitileentity:29250>*16,<gregtech:gt.meta.plateCurved:220>*2,<gregtech:gt.meta.foil:780>*2,<gregtech:gt.meta.stickLong:8647>,<gregtech:gt.multiitem.technological:30305>*2,<gregtech:gt.meta.machine.double:220>],
+[null],
+[null],
+[<gregtech:gt.multitileentity:10115>]);
+//IV
