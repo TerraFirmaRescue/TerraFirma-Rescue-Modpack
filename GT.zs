@@ -496,17 +496,17 @@ MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:2650
 
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
 [<gregtech:gt.meta.plateGem:140>*0,<gregtech:gt.meta.foil:280>],
-[<liquid:methane>*1500],
+[<liquid:methane>*5000],
 [null],
-[<gregtech:gt.meta.foil:9175>]);
+[<gregtech:gt.meta.foil:9175>*4]);
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
 [<gregtech:gt.meta.plateGem:140>*0,<gregtech:gt.meta.foil:280>],
-[<liquid:carbondioxide>*1000],
+[<liquid:carbondioxide>*3000],
 [null],
-[<gregtech:gt.meta.foil:9175>]);
+[<gregtech:gt.meta.foil:9175>*4]);
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
 [<gregtech:gt.meta.plateGem:140>*0,<gregtech:gt.meta.foil:280>],
-[<liquid:carbonmonoxide>*750],
+[<liquid:carbonmonoxide>*2000],
 [null],
-[<gregtech:gt.meta.foil:9175>]);
+[<gregtech:gt.meta.foil:9175>*4]);
 //bo
