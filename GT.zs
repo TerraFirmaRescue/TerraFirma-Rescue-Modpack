@@ -467,3 +467,46 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1280, 256, 1000,[10000],
 [null],
 [<gregtech:gt.multitileentity:10115>]);
 //IV
+
+//shi mo xi
+/*MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.foil:9175>);//bo
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.plate:9175>);//plate
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.plateCurved:9175>);//wanquplate
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.gearGtSmall:9175>);//small gear
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<<gregtech:gt.meta.gearGt:9175>);//gear
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.rotor:9175>);//zhuanzi
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.stick:9175>);//stick
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.stickLong:9175>);//long stick
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.springSmall:9175>);//xiao tan huang
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.spring:9175>);//tan huang
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.round:9175>);//dian pian
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.bolt:9175>);//luo shuan
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.screw:9175>);//luo si
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.ring:9175>);//ring
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.chain:9175>);//suo lian
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.casingSmall:9175>);//wai ke
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.wireFine:9175>);//jing xi xian lan
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:29800>);//xian lan
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26500>);//mini pipe
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26501>);//small pipe
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26502>);//pipe
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26503>);//big pipe
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26504>);//huge pipe*/
+//xian bu shan zhe xie he cheng , dao shi hou hao jia
+
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
+[<gregtech:gt.meta.plateGem:140>*0,<gregtech:gt.meta.foil:280>],
+[<liquid:methane>*1500],
+[null],
+[<gregtech:gt.meta.foil:9175>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
+[<gregtech:gt.meta.plateGem:140>*0,<gregtech:gt.meta.foil:280>],
+[<liquid:carbondioxide>*1000],
+[null],
+[<gregtech:gt.meta.foil:9175>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
+[<gregtech:gt.meta.plateGem:140>*0,<gregtech:gt.meta.foil:280>],
+[<liquid:carbonmonoxide>*750],
+[null],
+[<gregtech:gt.meta.foil:9175>]);
+//bo
