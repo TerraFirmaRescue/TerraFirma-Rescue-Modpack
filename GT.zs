@@ -486,18 +486,6 @@ recipes.remove(<gregtech:gt.multitileentity:1037>);
 //remove gan guo
 
 //shi mo xi
-//MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.springSmall:9175>);//xiao tan huang
-//MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.spring:9175>);//tan huang
-//MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.round:9175>);//dian pian
-
-
-
-
-
-//MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.wireFine:9175>);//jing xi xian lan
-
-//xian bu shan zhe xie he cheng , dao shi hou hao jia
-
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.foil:9175>);//bo
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
 [<gregtech:gt.meta.plateGem:140>*0,<gregtech:gt.meta.foil:280>],
