@@ -479,32 +479,26 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 32, 256, 1000,[10000],
 [<liquid:molten.aluminiumfluoride>*1152,<liquid:water>*3000],
 [null]);
 
+recipes.remove(<gregtech:gt.multitileentity:1036>);
+//Ta
+recipes.remove(<gregtech:gt.multitileentity:1037>);
+//Os
+//remove gan guo
+
 //shi mo xi
-/*MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.foil:9175>);//bo
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.plate:9175>);//plate
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.plateCurved:9175>);//wanquplate
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.gearGtSmall:9175>);//small gear
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<<gregtech:gt.meta.gearGt:9175>);//gear
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.rotor:9175>);//zhuanzi
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.stick:9175>);//stick
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.stickLong:9175>);//long stick
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.springSmall:9175>);//xiao tan huang
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.spring:9175>);//tan huang
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.round:9175>);//dian pian
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.bolt:9175>);//luo shuan
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.screw:9175>);//luo si
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.ring:9175>);//ring
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.chain:9175>);//suo lian
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.casingSmall:9175>);//wai ke
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.wireFine:9175>);//jing xi xian lan
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:29800>);//xian lan
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26500>);//mini pipe
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26501>);//small pipe
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26502>);//pipe
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26503>);//big pipe
-MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26504>);//huge pipe*/
+//MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.springSmall:9175>);//xiao tan huang
+//MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.spring:9175>);//tan huang
+//MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.round:9175>);//dian pian
+
+
+
+
+
+//MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.wireFine:9175>);//jing xi xian lan
+
 //xian bu shan zhe xie he cheng , dao shi hou hao jia
 
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.foil:9175>);//bo
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
 [<gregtech:gt.meta.plateGem:140>*0,<gregtech:gt.meta.foil:280>],
 [<liquid:methane>*5000],
@@ -521,4 +515,181 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
 [null],
 [<gregtech:gt.meta.foil:9175>*4]);
 //bo
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.wireFine:9175>);//jing xi xian lan
+recipes.remove(<gregtech:gt.meta.wireFine:9175>);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
+[<gregtech:gt.meta.dust:780>*0,<gregtech:gt.meta.stick:9174>],
+[<liquid:helium>*80],
+[null],
+[<gregtech:gt.meta.wireFine:9175>*8]);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
+[<gregtech:gt.meta.dust:780>*0,<gregtech:gt.meta.stick:9174>],
+[<liquid:helium>*80],
+[null],
+[<gregtech:gt.meta.wireFine:9175>*8]);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
+[<gregtech:gt.meta.dust:780>*0,<gregtech:gt.meta.stick:9174>],
+[<liquid:neon>*80],
+[null],
+[<gregtech:gt.meta.wireFine:9175>*8]);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
+[<gregtech:gt.meta.dust:780>*0,<gregtech:gt.meta.stick:9174>],
+[<liquid:argon>*80],
+[null],
+[<gregtech:gt.meta.wireFine:9175>*8]);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
+[<gregtech:gt.meta.dust:780>*0,<gregtech:gt.meta.stick:9174>],
+[<liquid:krypton>*80],
+[null],
+[<gregtech:gt.meta.wireFine:9175>*8]);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
+[<gregtech:gt.meta.dust:780>*0,<gregtech:gt.meta.stick:9174>],
+[<liquid:krypton>*80],
+[null],
+[<gregtech:gt.meta.wireFine:9175>*8]);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
+[<gregtech:gt.meta.dust:780>*0,<gregtech:gt.meta.stick:9174>],
+[<liquid:xenon>*80],
+[null],
+[<gregtech:gt.meta.wireFine:9175>*8]);
+//fine wire
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.plate:9175>);//plate
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 100, 1000,[10000],
+[<gregtech:gt.meta.foil:9175>*4,<gregapi:gt.integrated_circuit:1>*0],
+[null],
+[null],
+[<gregtech:gt.meta.plate:9175>]);
+//plate
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.plateCurved:9175>);//wanquplate
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 100, 1000,[10000],
+[<gregtech:gt.meta.foil:9175>*4,<gregapi:gt.integrated_circuit:2>],
+[null],
+[null],
+[<gregtech:gt.meta.plateCurved:9175>]);
+//curved plate
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.gearGtSmall:9175>);//small gear
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 200, 1000,[10000],
+[<gregapi:gt.integrated_circuit:10>,<gregtech:gt.meta.foil:9175>*4],
+[null],
+[null],
+[<gregtech:gt.meta.gearGtSmall:9175>]);
+//small gear
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.gearGt:9175>);//gear
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 800, 1000,[10000],
+[<gregtech:gt.meta.foil:9175>*16,<gregapi:gt.integrated_circuit:11>],
+[null],
+[null],
+[<gregtech:gt.meta.gearGt:9175>]);
+//gear
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.rotor:9175>);//zhuanzi
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 1200, 1000,[10000],
+[<gregtech:gt.meta.foil:9175>*17,<gregapi:gt.integrated_circuit:12>],
+[null],
+[null],
+[<gregtech:gt.meta.rotor:9175>]);
+//rotor
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.stick:9175>);//stick
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 50, 1000,[10000],
+[<gregtech:gt.meta.foil:9175>*2,<gregapi:gt.integrated_circuit:7>],
+[null],
+[null],
+[<gregtech:gt.meta.stick:9175>]);
+//stick
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.stickLong:9175>);//long stick
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 100, 1000,[10000],
+[<gregtech:gt.meta.foil:9175>*4,<gregapi:gt.integrated_circuit:8>],
+[null],
+[null],
+[<gregtech:gt.meta.plate:9175>]);
+//long stick
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.bolt:9175>);//luo shuan
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 25, 1000,[10000],
+[<gregtech:gt.meta.foil:9175>,<gregapi:gt.integrated_circuit:6>],
+[null],
+[null],
+[<gregtech:gt.meta.bolt:9175>*2]);
+//bolt
+
+//MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.ring:9175>);//ring
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 25, 1000,[10000],
+[<gregtech:gt.meta.foil:9175>,<gregapi:gt.integrated_circuit:9>],
+[null],
+[null],
+[<gregtech:gt.meta.ring:9175>]);
+//ring
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.chain:9175>);//suo lian
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 200, 1000,[10000],
+[<gregtech:gt.meta.ring:9175>*4,<gregapi:gt.integrated_circuit:24>],
+[null],
+[null],
+[<gregtech:gt.meta.chain:9175>]);
+//chain
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.casingSmall:9175>);//wai ke
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 50, 1000,[10000],
+[<gregtech:gt.meta.foil:9175>*2,<gregapi:gt.integrated_circuit:3>],
+[null],
+[null],
+[<gregtech:gt.meta.casingSmall:9175>]);
+//small casing
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:29800>);//wire
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 50, 1000,[10000],
+[<gregtech:gt.meta.foil:9175>,<gregtech:gt.meta.wireFine:9175>*2],
+[null],
+[null],
+[<gregtech:gt.multitileentity:29800>]);
+//wire
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26500>);//mini pipe
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 50, 1000,[10000],
+[<gregtech:gt.meta.foil:9175>*2,<gregapi:gt.integrated_circuit:13>],
+[null],
+[null],
+[<gregtech:gt.multitileentity:26500>]);
+//mini pipe
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26501>);//small pipe
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 100, 1000,[10000],
+[<gregtech:gt.meta.foil:9175>*4,<gregapi:gt.integrated_circuit:14>],
+[null],
+[null],
+[<gregtech:gt.multitileentity:26501>]);
+//small pipe
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26502>);//pipe
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 300, 1000,[10000],
+[<gregtech:gt.meta.foil:9175>*12,<gregapi:gt.integrated_circuit:15>],
+[null],
+[null],
+[<gregtech:gt.multitileentity:26502>]);
+//pipe
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26503>);//big pipe
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 600, 1000,[10000],
+[<gregtech:gt.meta.foil:9175>*24,<gregapi:gt.integrated_circuit:16>],
+[null],
+[null],
+[<gregtech:gt.multitileentity:26503>]);
+//big pipe
+
+//MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26504>);//huge pipe
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 1200, 1000,[10000],
+[<gregtech:gt.meta.foil:9175>*48,<gregapi:gt.integrated_circuit:17>],
+[null],
+[null],
+[<gregtech:gt.multitileentity:26504>]);
+//huge pipe
+
+
 
