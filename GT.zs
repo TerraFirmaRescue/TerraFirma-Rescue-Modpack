@@ -468,6 +468,17 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1280, 256, 1000,[10000],
 [<gregtech:gt.multitileentity:10115>]);
 //IV
 
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 32, 256, 1000,[10000],
+[<gregtech:gt.meta.ingot:8008>*5],
+[<liquid:hexafluorosilicicacid>*9000],
+[<liquid:molten.aluminiumfluoride>*1152,<liquid:water>*3000],
+[null]);
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 32, 256, 1000,[10000],
+[<gregtech:gt.meta.dust:8008>*5],
+[<liquid:hexafluorosilicicacid>*9000],
+[<liquid:molten.aluminiumfluoride>*1152,<liquid:water>*3000],
+[null]);
+
 //shi mo xi
 /*MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.foil:9175>);//bo
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.plate:9175>);//plate
@@ -510,3 +521,4 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
 [null],
 [<gregtech:gt.meta.foil:9175>*4]);
 //bo
+
