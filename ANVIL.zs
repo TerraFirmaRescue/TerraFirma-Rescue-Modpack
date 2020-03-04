@@ -275,6 +275,7 @@ mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:280>,  <g
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:130>,  <gregtech:gt.meta.plate:130>,  <gregtech:gt.meta.plate:130>,  5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:790>,  <gregtech:gt.meta.plate:790>,  <gregtech:gt.meta.plate:790>,  5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:470>,  <gregtech:gt.meta.plate:470>,  <gregtech:gt.meta.plate:470>,  5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:8667>,  <Railcraft:part.plate:2>,  <Railcraft:part.plate:2>,  4);
 
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:8610>, <terrafirmacraft:item.Bronze Sheet>,        <terrafirmacraft:item.Bronze Sheet>,         5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:290>,  <terrafirmacraft:item.Copper Sheet>,        <terrafirmacraft:item.Copper Sheet>,         5);

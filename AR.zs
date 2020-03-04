@@ -140,6 +140,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 265, 100000000
 [<libVulpes:libVulpesproductdust>]);
 
 //motors
+recipes.remove(<libVulpes:tile.motor>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 256 ,0,[10000],
 [<gregtech:gt.multiitem.technological:12001>, <gregtech:gt.meta.gearGtSmall:8651>, <gregtech:gt.meta.gearGt:8651>],
 [<liquid:molten.tin>*20],
