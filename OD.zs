@@ -1,4 +1,6 @@
 //Ore Dictionary Change
+
+//deprecated
 /*
 <ore:plateCopper>.remove(<terrafirmacraft:item.Copper Sheet>);
 <ore:plateAnyCopper>.remove(<terrafirmacraft:item.Copper Sheet>);

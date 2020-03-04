@@ -7,6 +7,15 @@ val Knife = <ore:craftingToolKnife>;
 val Saw = <ore:craftingToolSaw>;
 val Wrench = <ore:craftingToolWrench>;
 
+//delete starts
+
+//FR
+recipes.remove(<Forestry:letters>);
+recipes.remove(<Forestry:letters:16>);
+recipes.remove(<Forestry:letters:32>);
+
+//delete ends
+
 //template
 /*
 recipes.remove();

@@ -1,3 +1,11 @@
+//delete starts
+
+//TFCtech
+recipes.remove(<tfctech:item.Circuit>);
+recipes.remove(<tfctech:item.Vulcanizing Agents>);
+
+//delete ends
+
 //TFCtech wires to gt wires
 recipes.remove(<gregtech:gt.multitileentity:28350>);
 recipes.addShapeless(<gregtech:gt.multitileentity:28350>,[<tfctech:item.Copper Wire>]);

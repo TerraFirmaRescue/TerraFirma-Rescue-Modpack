@@ -1,5 +1,13 @@
 import mods.MTUtilsGT;
 
+//delete starts
+
+//minecraft
+mods.Terrafirmacraft.Knapping.removeLeatherWorkingRecipe(<minecraft:saddle>, "## ##", "     ", "     ", "     ", "## ##");
+
+
+//delete ends
+
 //shears
 recipes.remove(<minecraft:shears>);
 recipes.addShaped(<minecraft:shears>,
