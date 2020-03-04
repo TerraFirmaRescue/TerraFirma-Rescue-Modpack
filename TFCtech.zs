@@ -35,3 +35,9 @@ recipes.addShaped(<tfctech:item.Vulcanizing Agents>,
 [null,null,null]]);
 
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<advancedRocketry:sawBlade>, <terrafirmacraft:item.Wrought Iron Double Sheet>, <terrafirmacraft:item.Wrought Iron Double Sheet>, "axe", 3);
+recipes.addShapeless(<tfctech:item.Glue>*1, [<gregtech:gt.multiitem.bottles:32766>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 1, 1, 0, [10000],
+[<tfctech:item.Glue>],
+[<liquid:water>*150],
+[<liquid:glue>*150],
+[null]);
