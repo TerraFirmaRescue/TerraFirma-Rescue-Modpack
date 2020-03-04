@@ -97,9 +97,9 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 16, 256 ,0,[10000],
 //battery
 recipes.remove(<libVulpes:battery>);
 recipes.addShaped(<libVulpes:battery>,
-[[null,<gregtech:gt.multitileentity:28066>,Cutter],
-[<gregtech:gt.meta.plateCurved:130>,<gregtech:gt.multiitem.technological:20003>,<gregtech:gt.meta.plateCurved:130>],
-[null,<gregtech:gt.multiitem.technological:20003>,null]]);
+[[null,<gregtech:gt.multitileentity:27006>,Cutter],
+[<minecraft:redstone>,<gregtech:gt.meta.plateCurved:8668>,<minecraft:redstone>],
+[<minecraft:redstone>,<gregtech:gt.meta.ring:8217>,<minecraft:redstone>]]);
 
 //coils
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 256 ,0,[10000],
@@ -168,3 +168,10 @@ recipes.addShapeless(<libVulpes:tile.motor>,[<gregtech:gt.meta.plateCurved:8651>
 recipes.addShapeless(<libVulpes:tile.advancedMotor>,[<gregtech:gt.multiitem.technological:12002>,<gregtech:gt.meta.gearGtSmall:130>, <gregtech:gt.meta.gearGt:130>]);
 recipes.addShapeless(<libVulpes:tile.enhancedMotor>,[<gregtech:gt.multiitem.technological:12003>,<gregtech:gt.meta.gearGtSmall:8636>,<gregtech:gt.meta.gearGt:8636>]);
 recipes.addShapeless(<libVulpes:tile.eliteMotor>,[<gregtech:gt.multiitem.technological:12004>, <gregtech:gt.meta.gearGtSmall:240>, <gregtech:gt.meta.gearGt:240>]);
+
+recipes.remove(<libVulpes:libVulpescoil0:4>);
+recipes.addShaped(<libVulpes:libVulpescoil0:4>,
+[[<gregtech:gt.multitileentity:28351>,<gregtech:gt.multitileentity:28351>,<gregtech:gt.multitileentity:28351>],
+[<gregtech:gt.multitileentity:28351>,<ore:craftingToolWireCutter>,<gregtech:gt.multitileentity:28351>],
+[<gregtech:gt.multitileentity:28351>,<gregtech:gt.multitileentity:28351>,<gregtech:gt.multitileentity:28351>]]);
+//Cu xianquan

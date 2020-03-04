@@ -132,11 +132,7 @@ recipes.remove(<libVulpes:tile.motor>);
 recipes.remove(<libVulpes:tile.enhancedMotor>);
 recipes.remove(<libVulpes:tile.advancedMotor>);
 recipes.remove(<libVulpes:tile.eliteMotor>);
-recipes.remove(<libVulpes:libVulpescoil0:9>);
-recipes.remove(<libVulpes:libVulpescoil0:7>);
-recipes.remove(<libVulpes:libVulpescoil0:4>);
-recipes.remove(<libVulpes:libVulpescoil0:2>);
-recipes.remove(<libVulpes:libVulpescoil0:10>);
+
 
 
 
