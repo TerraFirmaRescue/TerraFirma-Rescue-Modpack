@@ -76,18 +76,18 @@ mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:130>,  <
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:790>,  <gregtech:gt.meta.plate:790>,  "gtgear",5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:470>,  <gregtech:gt.meta.plate:470>,  "gtgear",5);
 
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:8610>, <terrafirmacraft:item.Bronze Sheet>,        "gtfoil", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:290>,  <terrafirmacraft:item.Copper Sheet>,        "gtfoil", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:8643>, <terrafirmacraft:item.Wrought Iron Sheet>,  "gtfoil", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:8630>, <terrafirmacraft:item.Steel Sheet>,         "gtfoil", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:830>,  <terrafirmacraft:item.Bismuth Sheet>,       "gtfoil", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:500>,  <terrafirmacraft:item.Tin Sheet>,           "gtfoil", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:820>,  <terrafirmacraft:item.Lead Sheet>,          "gtfoil", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:8620>, <terrafirmacraft:item.Brass Sheet>,         "gtfoil", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:8612>, <terrafirmacraft:item.Bismuth Bronze Sheet>,"gtfoil", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:280>,  <terrafirmacraft:item.Nickel Sheet>,        "gtfoil",5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:790>,  <terrafirmacraft:item.Gold Sheet>,          "gtfoil", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:470>,  <terrafirmacraft:item.Silver Sheet>,        "gtfoil", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:8610>, <terrafirmacraft:item.Bronze Sheet>,        "gtgear", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:290>,  <terrafirmacraft:item.Copper Sheet>,        "gtgear", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:8643>, <terrafirmacraft:item.Wrought Iron Sheet>,  "gtgear", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:8630>, <terrafirmacraft:item.Steel Sheet>,         "gtgear", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:830>,  <terrafirmacraft:item.Bismuth Sheet>,       "gtgear", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:500>,  <terrafirmacraft:item.Tin Sheet>,           "gtgear", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:820>,  <terrafirmacraft:item.Lead Sheet>,          "gtgear", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:8620>, <terrafirmacraft:item.Brass Sheet>,         "gtgear", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:8612>, <terrafirmacraft:item.Bismuth Bronze Sheet>,"gtgear", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:280>,  <terrafirmacraft:item.Nickel Sheet>,        "gtgear",5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:790>,  <terrafirmacraft:item.Gold Sheet>,          "gtgear", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGtSmall:470>,  <terrafirmacraft:item.Silver Sheet>,        "gtgear", 5);
 
 
 //spring
