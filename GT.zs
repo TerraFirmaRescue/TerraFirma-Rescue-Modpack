@@ -731,7 +731,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 25, 1000,[10000],
 [<gregtech:gt.meta.bolt:9175>*2]);
 //bolt
 
-//MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.ring:9175>);//ring
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.ring:9175>);//ring
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 25, 1000,[10000],
 [<gregtech:gt.meta.foil:9175>,<gregapi:gt.integrated_circuit:9>],
 [null],
