@@ -198,3 +198,10 @@ recipes.addShaped(<libVulpes:libVulpescoil0:4>,
 [<gregtech:gt.multitileentity:28351>,<ore:craftingToolWireCutter>,<gregtech:gt.multitileentity:28351>],
 [<gregtech:gt.multitileentity:28351>,<gregtech:gt.multitileentity:28351>,<gregtech:gt.multitileentity:28351>]]);
 //Cu xianquan
+
+//lunar soil
+MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 128 ,0,[10000, 500, 1000, 3000, 4000, 9000],
+[<advancedRocketry:moonTurf>],
+[null],
+[<liquid:enderair>*200],
+[<gregtech:gt.meta.dustTiny:8504>, <gregtech:gt.meta.dustTiny:780>, <gregtech:gt.meta.dustTiny:9100>, <gregtech:gt.meta.dustTiny:9120>, <gregtech:gt.meta.dustTiny:8008>, <gregtech:gt.meta.dustSmall:8505>*3]);
