@@ -62,12 +62,6 @@ recipes.addShaped(<appliedenergistics2:tile.BlockInterface>,
 [<appliedenergistics2:item.ItemMultiMaterial:43>,<gregtech:gt.meta.machine:220>,<appliedenergistics2:item.ItemMultiMaterial:44>],
 [null,<gregtech:gt.multiitem.technological:12041>,null]]);
 
-recipes.remove(<extracells:ecbaseblock>);
-recipes.addShaped(<extracells:ecbaseblock>,
-[[null,<gregtech:gt.multiitem.technological:12021>,null],
-[<appliedenergistics2:item.ItemMultiMaterial:43>,<gregtech:gt.meta.machine:220>,<appliedenergistics2:item.ItemMultiMaterial:44>],
-[null,<gregtech:gt.multiitem.technological:12021>,null]]);
-
 recipes.remove(<appliedenergistics2:tile.BlockEnergyAcceptor>);
 recipes.addShaped(<appliedenergistics2:tile.BlockEnergyAcceptor>,
 [[null,<appliedenergistics2:item.ItemMultiPart:16>,null],
@@ -90,18 +84,6 @@ recipes.remove(<appliedenergistics2:item.ItemMultiPart:240>);
 recipes.addShaped(<appliedenergistics2:item.ItemMultiPart:240>,
 [[<appliedenergistics2:item.ItemMultiMaterial:44>],
 [<gregtech:gt.multiitem.technological:12041>],
-[<gregtech:gt.meta.plate:220>]]);
-
-recipes.remove(<extracells:part.base>);
-recipes.addShaped(<extracells:part.base>,
-[[<appliedenergistics2:item.ItemMultiMaterial:43>],
-[<gregtech:gt.multiitem.technological:12021>],
-[<gregtech:gt.meta.plate:220>]]);
-
-recipes.remove(<extracells:part.base:1>);
-recipes.addShaped(<extracells:part.base:1>,
-[[<appliedenergistics2:item.ItemMultiMaterial:44>],
-[<gregtech:gt.multiitem.technological:12021>],
 [<gregtech:gt.meta.plate:220>]]);
 
 recipes.remove(<appliedenergistics2:tile.BlockGrinder>);

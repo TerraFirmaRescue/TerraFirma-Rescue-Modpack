@@ -1,4 +1,6 @@
 //Ore Dictionary Change
+
+//deprecated
 /*
 <ore:plateCopper>.remove(<terrafirmacraft:item.Copper Sheet>);
 <ore:plateAnyCopper>.remove(<terrafirmacraft:item.Copper Sheet>);
@@ -66,5 +68,14 @@
 
 //tfc clay
 <ore:itemClay>.add(<terrafirmacraft:item.Clay>);
+
+//tfc silicon rock
+<ore:stoneQuartzite>.add(<terrafirmacraft:StoneMMCobble>);
+<ore:stoneAnySiliconDioxide>.add(<terrafirmacraft:StoneMMCobble>);
+<ore:stoneAnyQuartz>.add(<terrafirmacraft:StoneMMCobble>);
+
+//tfc wool
+<ore:blockWool>.add(<terrafirmacraft:item.WoolCloth>);
+<ore:itemString>.add(<terrafirmacraft:item.WoolYarn>);
 
 
