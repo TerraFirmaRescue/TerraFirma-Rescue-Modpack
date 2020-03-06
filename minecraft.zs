@@ -6,3 +6,8 @@ recipes.addShaped(<minecraft:shears>,
 [null,null,null]]);
 
 recipes.addShapeless(<minecraft:glass_bottle>,[<terrafirmacraft:item.Glass Bottle>]);
+recipes.addShapeless(<minecraft:sapling>,[<terrafirmacraft:item.Straw>,<minecraft:stick>]);
+recipes.addShapeless(<gregtech:gt.block.sapling:2>,[<minecraft:stick>,<minecraft:sapling>]);
+recipes.addShapeless(<gregtech:gt.block.sapling:7>,[<minecraft:stick>,<gregtech:gt.block.sapling:2>]);
+recipes.addShapeless(<minecraft:coal:1>,[<terrafirmacraft:item.coal:1>]);
+recipes.addShapeless(<minecraft:coal>,[<terrafirmacraft:item.coal>]);

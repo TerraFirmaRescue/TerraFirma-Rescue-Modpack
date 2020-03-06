@@ -80,3 +80,24 @@ MTUtilsGT.addCustomRecipe("", false, 16, 16, 0, [10000],
 []);
 
 */
+
+//GTTools->TFCTools
+//pickaxe
+recipes.addShapeless(<terrafirmacraft:item.Copper Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:290>]);
+recipes.addShapeless(<terrafirmacraft:item.Bronze Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8610>]);
+recipes.addShapeless(<terrafirmacraft:item.Black Bronze Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8611>]);
+recipes.addShapeless(<terrafirmacraft:item.Bismuth Bronze Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8612>]);
+recipes.addShapeless(<terrafirmacraft:item.Wrought Iron Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:260>]);
+recipes.addShapeless(<terrafirmacraft:item.Steel Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8630>]);
+recipes.addShapeless(<terrafirmacraft:item.Black Steel Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8631>]);
+recipes.addShapeless(<terrafirmacraft:item.Red Steel Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8632>]);
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8633>]);
+//bluesteel
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Shovel Head>,[<gregtech:gt.meta.toolHeadSpade:8633>]);
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Axe Head>,[<gregtech:gt.meta.toolHeadAxe:8633>]);
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Chisel Head>,[<gregtech:gt.meta.toolHeadChisel:8633>]);
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Sword Blade>,[<gregtech:gt.meta.toolHeadSword:8633>]);
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Hoe Head>,[<gregtech:gt.meta.toolHeadHoe:8633>]);
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Hammer Head>,[<gregtech:gt.meta.toolHeadHammer:8633>]);
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Saw Blade>,[<gregtech:gt.meta.toolHeadSaw:8633>]);
+

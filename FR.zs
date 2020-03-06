@@ -24,10 +24,10 @@ MTUtilsGT.addCustomRecipe("", false, 16, 16, 0, [10000],
 
 //Farm block
 recipes.remove(<Forestry:ffarm>);
-recipes.addShaped(<Forestry:ffarm>,
- [[<gregtech:gt.meta.plate:8610>,<ore:stoneBricks>,<gregtech:gt.meta.plate:8610>],
-  [<ore:slabWood>,<Forestry:thermionicTubes:1>,<ore:slabWood>],
-  [null,null,null]]);
+recipes.addShaped(<Forestry:ffarm>*2,
+ [[<ore:plateBronze>,<ore:stoneBricks>,<ore:plateBronze>],
+  [<ore:stoneBricks>,<mo:isolinear_circuit>,<ore:slabWood>],
+  [<ore:plateBronze>,<ore:stoneBricks>,<ore:plateBronze>]]);
 
 //Sturdy machine
 recipes.remove(<Forestry:sturdyMachine>);
@@ -39,7 +39,7 @@ recipes.addShaped(<Forestry:sturdyMachine>,
 //hot electronic workbench
 recipes.remove(<Forestry:factory2>);
 recipes.addShaped(<Forestry:factory2>,
- [[<gregtech:gt.meta.plate:790>,<ore:blockGlass>,<gregtech:gt.meta.plate:790>],
+ [[<mo:isolinear_circuit>,<ore:blockGlass>,<mo:isolinear_circuit>],
   [<gregtech:gt.multitileentity:28303>,<Forestry:sturdyMachine>,<gregtech:gt.multitileentity:28303>],
   [<gregtech:gt.meta.plate:790>,<minecraft:chest>,<gregtech:gt.meta.plate:790>]]);
   

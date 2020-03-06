@@ -121,7 +121,7 @@ val plateBro = <terrafirmacraft:item.Bronze Sheet>;
 val plateFe  = <terrafirmacraft:item.Wrought Iron Sheet>;
 val platePb  = <terrafirmacraft:item.Lead Sheet>;
 
-mods.railcraft.Rolling.removeRecipe(plateCu );
+mods.railcraft.Rolling.removeRecipe(<ore:plateCopper>);
 mods.railcraft.Rolling.removeRecipe(plateSt );
 mods.railcraft.Rolling.removeRecipe(plateFe );
 mods.railcraft.Rolling.removeRecipe(platePb );

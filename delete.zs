@@ -106,6 +106,18 @@ recipes.remove(<gregtech:gt.meta.gearGt:470>  );
 //ma da
 recipes.remove(<gregtech:gt.multiitem.technological:12001>);
 
+//burners
+recipes.remove(<gregtech:gt.multitileentity:1100>);
+recipes.remove(<gregtech:gt.multitileentity:1101>);
+recipes.remove(<gregtech:gt.multitileentity:1102>);
+recipes.remove(<gregtech:gt.multitileentity:1103>);
+recipes.remove(<gregtech:gt.multitileentity:1104>);
+recipes.remove(<gregtech:gt.multitileentity:1105>);
+recipes.remove(<gregtech:gt.multitileentity:1106>);
+recipes.remove(<gregtech:gt.multitileentity:1107>);
+recipes.remove(<gregtech:gt.multitileentity:1108>);
+recipes.remove(<gregtech:gt.multitileentity:1109>);
+
 //AR
 recipes.remove(<advancedRocketry:tile.blockHandPress>);
 recipes.remove(<advancedRocketry:circuitIC:5>);
@@ -120,10 +132,36 @@ recipes.remove(<tfctech:item.Circuit>);
 recipes.remove(<tfctech:item.Vulcanizing Agents>);
 
 //TFCblock
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock>, <terrafirmacraft:item.Bismuth Double Sheet>,<terrafirmacraft:item.Bismuth Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:1>, <terrafirmacraft:item.Bismuth Bronze Double Sheet>,<terrafirmacraft:item.Bismuth Bronze Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:2>, <terrafirmacraft:item.Black Bronze Double Sheet>,<terrafirmacraft:item.Black Bronze Double Sheet>, "block", 7);
 mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:3>, <terrafirmacraft:item.Black Steel Double Sheet>,<terrafirmacraft:item.Black Steel Double Sheet>, "block", 7);
 mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:4>, <terrafirmacraft:item.Blue Steel Double Sheet>,<terrafirmacraft:item.Blue Steel Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:5>, <terrafirmacraft:item.Brass Double Sheet>,<terrafirmacraft:item.Brass Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:6>, <terrafirmacraft:item.Bronze Double Sheet>,<terrafirmacraft:item.Bronze Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:7>, <terrafirmacraft:item.Copper Double Sheet>,<terrafirmacraft:item.Copper Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:8>, <terrafirmacraft:item.Gold Double Sheet>,<terrafirmacraft:item.Gold Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:9>, <terrafirmacraft:item.Wrought Iron Double Sheet>,<terrafirmacraft:item.Wrought Iron Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:10>, <terrafirmacraft:item.Lead Double Sheet>,<terrafirmacraft:item.Lead Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:11>, <terrafirmacraft:item.Nickel Double Sheet>,<terrafirmacraft:item.Nickel Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:12>, <terrafirmacraft:item.Pig Iron Double Sheet>,<terrafirmacraft:item.Pig Iron Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:13>, <terrafirmacraft:item.Platinum Double Sheet>,<terrafirmacraft:item.Platinum Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:14>, <terrafirmacraft:item.Red Steel Double Sheet>,<terrafirmacraft:item.Red Steel Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:15>, <terrafirmacraft:item.Rose Gold Double Sheet>,<terrafirmacraft:item.Rose Gold Double Sheet>, "block", 7);
+
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2>, <terrafirmacraft:item.Silver Double Sheet>,<terrafirmacraft:item.Silver Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:1>, <terrafirmacraft:item.Steel Double Sheet>,<terrafirmacraft:item.Steel Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:2>, <terrafirmacraft:item.Sterling Silver Double Sheet>,<terrafirmacraft:item.Sterling Silver Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:3>, <terrafirmacraft:item.Tin Double Sheet>,<terrafirmacraft:item.Tin Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:4>, <terrafirmacraft:item.Zinc Double Sheet>,<terrafirmacraft:item.Zinc Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:5>, <terrafirmacraft:item.Electrum Double Sheet>,<terrafirmacraft:item.Electrum Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:6>, <terrafirmacraft:item.Cupronickel Double Sheet>,<terrafirmacraft:item.Cupronickel Double Sheet>, "block", 7);
+
 
 //FR
 recipes.remove(<Forestry:letters>);
 recipes.remove(<Forestry:letters:16>);
 recipes.remove(<Forestry:letters:32>);
+
+//minecraft
+mods.Terrafirmacraft.Knapping.removeLeatherWorkingRecipe(<minecraft:saddle>, "## ##", "     ", "     ", "     ", "## ##");

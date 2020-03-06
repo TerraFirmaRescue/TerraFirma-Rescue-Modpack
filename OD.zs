@@ -53,3 +53,18 @@
 <ore:sand>.add(<terrafirmacraft:Sand2:3>);
 <ore:sand>.add(<terrafirmacraft:Sand2:4>);
 
+//tfc marble
+<ore:rockGtMarble>.add(<terrafirmacraft:item.LooseRock:20>);
+<ore:rockGtMarble>.add(<terrafirmacraft:item.LooseRock:10>);
+<ore:rockGtMarble>.add(<terrafirmacraft:item.LooseRock:8>);
+<ore:rockGtMarble>.add(<terrafirmacraft:item.LooseRock:6>);
+
+<ore:rockGtAnyCalcite>.add(<terrafirmacraft:item.LooseRock:20>);
+<ore:rockGtAnyCalcite>.add(<terrafirmacraft:item.LooseRock:10>);
+<ore:rockGtAnyCalcite>.add(<terrafirmacraft:item.LooseRock:8>);
+<ore:rockGtAnyCalcite>.add(<terrafirmacraft:item.LooseRock:6>);
+
+//tfc clay
+<ore:itemClay>.add(<terrafirmacraft:item.Clay>);
+
+
