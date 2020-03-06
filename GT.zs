@@ -562,7 +562,7 @@ recipes.addShaped(<gregtech:gt.multitileentity:20152>,
 recipes.remove(<gregtech:gt.multitileentity:10112>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multitileentity:10112>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 20, 256, 1000,[10000],
-[<gregtech:gt.meta.stick:130>*4,<gregtech:gt.multitileentity:28350>*16,<gregtech:gt.meta.plateCurved:130>*2,<gregtech:gt.meta.foil:290>*2,<gregtech:gt.meta.stick:8646>,<gregtech:gt.multiitem.technological:30302>*2,<gregtech:gt.meta.machine.double:130>],
+[<gregtech:gt.meta.stick:130>*4,<gregtech:gt.multitileentity:28350>*16,<gregtech:gt.meta.plateCurved:130>*2,<gregtech:gt.meta.foil:290>*2,<gregtech:gt.meta.stick:8646>,<gregtech:gt.multiitem.technological:30301>*2,<gregtech:gt.meta.machine.double:130>],
 [null],
 [null],
 [<gregtech:gt.multitileentity:10112>]);
@@ -570,7 +570,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 20, 256, 1000,[10000],
 recipes.remove(<gregtech:gt.multitileentity:10113>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multitileentity:10113>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 80, 256, 1000,[10000],
-[<gregtech:gt.meta.stick:8636>*4,<gregtech:gt.multitileentity:28700>*16,<gregtech:gt.meta.plateCurved:8636>*2,<gregtech:gt.meta.foil:790>*2,<gregtech:gt.meta.stickLong:8646>,<gregtech:gt.multiitem.technological:30303>*2,<gregtech:gt.meta.machine.double:8636>],
+[<gregtech:gt.meta.stick:8636>*4,<gregtech:gt.multitileentity:28700>*16,<gregtech:gt.meta.plateCurved:8636>*2,<gregtech:gt.meta.foil:790>*2,<gregtech:gt.meta.stickLong:8646>,<gregtech:gt.multiitem.technological:30302>*2,<gregtech:gt.meta.machine.double:8636>],
 [null],
 [null],
 [<gregtech:gt.multitileentity:10113>]);
@@ -578,7 +578,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 80, 256, 1000,[10000],
 recipes.remove(<gregtech:gt.multitileentity:10114>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multitileentity:10114>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 320, 256, 1000,[10000],
-[<gregtech:gt.meta.stick:240>*4,<gregtech:gt.multitileentity:29000>*16,<gregtech:gt.meta.plateCurved:240>*2,<gregtech:gt.meta.foil:130>*2,<gregtech:gt.meta.stick:8647>,<gregtech:gt.multiitem.technological:30304>*2,<gregtech:gt.meta.machine.double:240>],
+[<gregtech:gt.meta.stick:240>*4,<gregtech:gt.multitileentity:29000>*16,<gregtech:gt.meta.plateCurved:240>*2,<gregtech:gt.meta.foil:130>*2,<gregtech:gt.meta.stick:8647>,<gregtech:gt.multiitem.technological:30303>*2,<gregtech:gt.meta.machine.double:240>],
 [null],
 [null],
 [<gregtech:gt.multitileentity:10114>]);
@@ -586,7 +586,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 320, 256, 1000,[10000],
 recipes.remove(<gregtech:gt.multitileentity:10115>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multitileentity:10115>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1280, 256, 1000,[10000],
-[<gregtech:gt.meta.stick:220>*4,<gregtech:gt.multitileentity:29250>*16,<gregtech:gt.meta.plateCurved:220>*2,<gregtech:gt.meta.foil:780>*2,<gregtech:gt.meta.stickLong:8647>,<gregtech:gt.multiitem.technological:30305>*2,<gregtech:gt.meta.machine.double:220>],
+[<gregtech:gt.meta.stick:220>*4,<gregtech:gt.multitileentity:29250>*16,<gregtech:gt.meta.plateCurved:220>*2,<gregtech:gt.meta.foil:780>*2,<gregtech:gt.meta.stickLong:8647>,<gregtech:gt.multiitem.technological:30304>*2,<gregtech:gt.meta.machine.double:220>],
 [null],
 [null],
 [<gregtech:gt.multitileentity:10115>]);
@@ -803,5 +803,20 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 1200, 1000,[10000],
 [<gregtech:gt.multitileentity:26504>]);
 //huge pipe
 
+//LV zu zhuang ji
+recipes.addShaped(<gregtech:gt.multitileentity:20621>,
+[[<gregtech:gt.meta.screw:8651>,<gregtech:gt.meta.lens:8315>,<gregtech:gt.meta.screw:8651>],
+[<gregtech:gt.meta.gearGt:8651>,<gregtech:gt.multiitem.technological:11001>,<gregtech:gt.meta.gearGt:8651>],
+[<gregtech:gt.multiitem.technological:30301>,<gregtech:gt.meta.machine:8651>,<gregtech:gt.multiitem.technological:30301>]]);
+//yellow bule baoshi
+recipes.addShaped(<gregtech:gt.multitileentity:20621>,
+[[<gregtech:gt.meta.screw:8651>,<gregtech:gt.meta.lens:8300>,<gregtech:gt.meta.screw:8651>],
+[<gregtech:gt.meta.gearGt:8651>,<gregtech:gt.multiitem.technological:11001>,<gregtech:gt.meta.gearGt:8651>],
+[<gregtech:gt.multiitem.technological:30301>,<gregtech:gt.meta.machine:8651>,<gregtech:gt.multiitem.technological:30301>]]);
+//diamond toujing
 
-
+MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 400, 1000,[10000],
+[<gregtech:gt.meta.crushed:9155>],
+[null],
+[<liquid:helium>*20],
+[<gregtech:gt.meta.dust:9155>]);
