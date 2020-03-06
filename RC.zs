@@ -149,3 +149,4 @@ furnace.setFuel(<terrafirmacraft:item.coal:1>, 4000);
 mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.Small Ore:11>, false, false, 400, <terrafirmacraft:item.MetalNugget:9>*2);
 mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.Small Ore:3>, false, false, 400, <terrafirmacraft:item.MetalNugget:9>*2);
 mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.Small Ore:10>, false, false, 400, <terrafirmacraft:item.MetalNugget:9>*2);
+mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.MetalNugget:9>, false, false, 200, <terrafirmacraft:item.MetalNugget:17>);

@@ -78,4 +78,7 @@
 <ore:blockWool>.add(<terrafirmacraft:item.WoolCloth>);
 <ore:itemString>.add(<terrafirmacraft:item.WoolYarn>);
 
+//AR
+<ore:fanSteel>.add(<gregtech:gt.meta.rotor:8630>);
+
 

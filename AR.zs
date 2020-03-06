@@ -199,12 +199,19 @@ recipes.addShaped(<libVulpes:libVulpescoil0:4>,
 [<gregtech:gt.multitileentity:28351>,<gregtech:gt.multitileentity:28351>,<gregtech:gt.multitileentity:28351>]]);
 //Cu xianquan
 
-//ElectricArcFurnace
+//ElectricArcFurnace block
 recipes.remove(<advancedRocketry:utilBlock>);
 recipes.addShaped(<advancedRocketry:utilBlock>*2,
 [[null,<ore:plateInvar>,null],
 [<ore:plateInvar>,<terrafirmacraft:FireBrick>,<ore:plateInvar>],
 [null,<ore:plateInvar>,null]]);
+
+//electric arc furnace
+recipes.remove(<advancedRocketry:tile.electricArcFurnace>);
+recipes.addShaped(<advancedRocketry:tile.electricArcFurnace>,
+[[HHammer,<advancedRocketry:miscpart>,Wrench],
+[<ore:plateInvar>,<gregtech:gt.meta.machine.double:220>,<ore:plateInvar>],
+[<gregtech:gt.multiitem.technological:30304>,<ore:plateInvar>,<gregtech:gt.multiitem.technological:30304>]]);
 
 //lunar soil
 MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 128 ,0,[10000, 500, 1000, 3000, 4000, 9000],
@@ -212,3 +219,28 @@ MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 128 ,0,[10000, 500,
 [null],
 [<liquid:enderair>*200],
 [<gregtech:gt.meta.dustTiny:8504>, <gregtech:gt.meta.dustTiny:780>, <gregtech:gt.meta.dustTiny:9100>, <gregtech:gt.meta.dustTiny:9120>, <gregtech:gt.meta.dustTiny:8008>, <gregtech:gt.meta.dustSmall:8505>*3]);
+
+//space station assembler
+recipes.remove(<advancedRocketry:tile.stationAssembler>);
+recipes.addShaped(<advancedRocketry:tile.stationAssembler>,
+[[<libVulpes:libVulpesproductgear:7>,Wrench,<libVulpes:libVulpesproductgear:7>],
+[<gregtech:gt.meta.stick:220>,<advancedRocketry:rocketBuilder>,<gregtech:gt.meta.stick:220>],
+[<gregtech:gt.multiitem.technological:30306>,Screwdriver,<gregtech:gt.multiitem.technological:30306>]]);
+
+//unmanned spaceship assembler
+recipes.remove(<advancedRocketry:tile.deployableRocketAssembler>);
+recipes.addShaped(<advancedRocketry:tile.deployableRocketAssembler>,
+[[<advancedRocketry:advancedRocketryproductgear>,Wrench,<advancedRocketry:advancedRocketryproductgear>],
+[<gregtech:gt.meta.stick:8794>,<advancedRocketry:rocketBuilder>,<gregtech:gt.meta.stick:8794>],
+[<gregtech:gt.multiitem.technological:30306>,Screwdriver,<gregtech:gt.multiitem.technological:30306>]]);
+
+//linker
+recipes.remove(<libVulpes:Linker>);
+recipes.addShaped(<libVulpes:Linker>,
+[[<gregtech:gt.multitileentity:28116>,<gregtech:gt.meta.casingSmall:8643>,<gregtech:gt.multitileentity:28700>],
+[<gregtech:gt.multitileentity:28116>,<ore:gemQuartz>,<gregtech:gt.meta.casingSmall:8643>],
+[<minecraft:redstone_torch>,<gregtech:gt.multitileentity:28116>,<gregtech:gt.multitileentity:28116>]]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 256 ,0,[10000],
+[<gregtech:gt.meta.plateQuadruple:8643>,<gregapi:gt.integrated_circuit:4>],
+[<advancedRocketry:sawBlade>]);
