@@ -7,6 +7,7 @@ val Knife = <ore:craftingToolKnife>;
 val Saw = <ore:craftingToolSaw>;
 val Wrench = <ore:craftingToolWrench>;
 val Chisel = <ore:craftingToolChisel>;
+val Cutter = <ore:craftingToolWireCutter>;
 val n = null;
 
 //delete start
@@ -820,3 +821,11 @@ MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 400, 1000,[10000],
 [null],
 [<liquid:helium>*20],
 [<gregtech:gt.meta.dust:9155>]);
+
+//CO2 laser
+recipes.addShaped(<gregtech:gt.multiitem.technological:11000>,
+[[<mo:isolinear_circuit>,<gregtech:gt.multitileentity:28366>,<minecraft:glass>],
+[<terrafirmacraft:item.Silver Sheet>,<gregtech:gt.multitileentity:28366>,Screwdriver],
+[<gregtech:gt.meta.screw:8636>,<terrafirmacraft:item.Silver Sheet>,Cutter]]);
+
+recipes.remove(<tfcprimitivetech:itemWoodenTwig>);
