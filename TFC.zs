@@ -7,6 +7,65 @@ val Knife = <ore:craftingToolKnife>;
 val Saw = <ore:craftingToolSaw>;
 val Wrench = <ore:craftingToolWrench>;
 
+//delete starts
+
+//TFCblock
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock>, <terrafirmacraft:item.Bismuth Double Sheet>,<terrafirmacraft:item.Bismuth Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:1>, <terrafirmacraft:item.Bismuth Bronze Double Sheet>,<terrafirmacraft:item.Bismuth Bronze Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:2>, <terrafirmacraft:item.Black Bronze Double Sheet>,<terrafirmacraft:item.Black Bronze Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:3>, <terrafirmacraft:item.Black Steel Double Sheet>,<terrafirmacraft:item.Black Steel Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:4>, <terrafirmacraft:item.Blue Steel Double Sheet>,<terrafirmacraft:item.Blue Steel Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:5>, <terrafirmacraft:item.Brass Double Sheet>,<terrafirmacraft:item.Brass Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:6>, <terrafirmacraft:item.Bronze Double Sheet>,<terrafirmacraft:item.Bronze Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:7>, <terrafirmacraft:item.Copper Double Sheet>,<terrafirmacraft:item.Copper Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:8>, <terrafirmacraft:item.Gold Double Sheet>,<terrafirmacraft:item.Gold Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:9>, <terrafirmacraft:item.Wrought Iron Double Sheet>,<terrafirmacraft:item.Wrought Iron Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:10>, <terrafirmacraft:item.Lead Double Sheet>,<terrafirmacraft:item.Lead Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:11>, <terrafirmacraft:item.Nickel Double Sheet>,<terrafirmacraft:item.Nickel Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:12>, <terrafirmacraft:item.Pig Iron Double Sheet>,<terrafirmacraft:item.Pig Iron Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:13>, <terrafirmacraft:item.Platinum Double Sheet>,<terrafirmacraft:item.Platinum Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:14>, <terrafirmacraft:item.Red Steel Double Sheet>,<terrafirmacraft:item.Red Steel Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:15>, <terrafirmacraft:item.Rose Gold Double Sheet>,<terrafirmacraft:item.Rose Gold Double Sheet>, "block", 7);
+
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2>, <terrafirmacraft:item.Silver Double Sheet>,<terrafirmacraft:item.Silver Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:1>, <terrafirmacraft:item.Steel Double Sheet>,<terrafirmacraft:item.Steel Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:2>, <terrafirmacraft:item.Sterling Silver Double Sheet>,<terrafirmacraft:item.Sterling Silver Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:3>, <terrafirmacraft:item.Tin Double Sheet>,<terrafirmacraft:item.Tin Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:4>, <terrafirmacraft:item.Zinc Double Sheet>,<terrafirmacraft:item.Zinc Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:5>, <terrafirmacraft:item.Electrum Double Sheet>,<terrafirmacraft:item.Electrum Double Sheet>, "block", 7);
+mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:6>, <terrafirmacraft:item.Cupronickel Double Sheet>,<terrafirmacraft:item.Cupronickel Double Sheet>, "block", 7);
+
+//tfc nuggets
+recipes.remove(<terrafirmacraft:item.MetalNugget>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:2>);recipes.remove(<terrafirmacraft:item.MetalNugget:1>);recipes.remove(<terrafirmacraft:item.MetalNugget:3>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:4>);recipes.remove(<terrafirmacraft:item.MetalNugget:5>);recipes.remove(<terrafirmacraft:item.MetalNugget:6>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:7>);recipes.remove(<terrafirmacraft:item.MetalNugget:8>);recipes.remove(<terrafirmacraft:item.MetalNugget:9>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:10>);recipes.remove(<terrafirmacraft:item.MetalNugget:11>);recipes.remove(<terrafirmacraft:item.MetalNugget:12>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:13>);recipes.remove(<terrafirmacraft:item.MetalNugget:14>);recipes.remove(<terrafirmacraft:item.MetalNugget:15>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:16>);recipes.remove(<terrafirmacraft:item.MetalNugget:17>);recipes.remove(<terrafirmacraft:item.MetalNugget:18>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:19>);recipes.remove(<terrafirmacraft:item.MetalNugget:20>);recipes.remove(<terrafirmacraft:item.MetalNugget:21>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:22>);
+
+recipes.remove(<terrafirmacraft:item.MetalNugget>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:2>);recipes.remove(<terrafirmacraft:item.MetalNugget:1>);recipes.remove(<terrafirmacraft:item.MetalNugget:3>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:4>);recipes.remove(<terrafirmacraft:item.MetalNugget:5>);recipes.remove(<terrafirmacraft:item.MetalNugget:6>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:7>);recipes.remove(<terrafirmacraft:item.MetalNugget:8>);recipes.remove(<terrafirmacraft:item.MetalNugget:9>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:10>);recipes.remove(<terrafirmacraft:item.MetalNugget:11>);recipes.remove(<terrafirmacraft:item.MetalNugget:12>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:13>);recipes.remove(<terrafirmacraft:item.MetalNugget:14>);recipes.remove(<terrafirmacraft:item.MetalNugget:15>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:16>);recipes.remove(<terrafirmacraft:item.MetalNugget:17>);recipes.remove(<terrafirmacraft:item.MetalNugget:18>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:19>);recipes.remove(<terrafirmacraft:item.MetalNugget:20>);recipes.remove(<terrafirmacraft:item.MetalNugget:21>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:22>);
+
+//delete ends
+
+//tfc freshwater - gt water
+MTUtilsGT.addFluidInput(<liquid:water>,<liquid:freshwater>);
+MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
+[null],
+[<liquid:freshwater>],
+[<liquid:water>],
+[null]);
+
 //clay
 recipes.remove(<terrafirmacraft:item.Clay:1>);
 MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 16, 0, [10000],
@@ -53,6 +112,16 @@ MTUtilsGT.addCustomRecipe("gt.recipe.freezer", false, 16, 128, 0, [10000],
 [null],
 [<tfccellars:Ice>]);
 
+recipes.addShapeless(<terrafirmacraft:item.Wrought Iron Ingot>,
+[<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,
+<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,
+<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>]);
+
+recipes.addShapeless(<terrafirmacraft:item.Steel Ingot>,
+[<terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>,
+<terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>,
+<terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>]);
+
 //template
 /*
 recipes.remove();
@@ -67,3 +136,24 @@ MTUtilsGT.addCustomRecipe("", false, 16, 16, 0, [10000],
 []);
 
 */
+
+//GTTools->TFCTools
+//pickaxe
+recipes.addShapeless(<terrafirmacraft:item.Copper Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:290>]);
+recipes.addShapeless(<terrafirmacraft:item.Bronze Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8610>]);
+recipes.addShapeless(<terrafirmacraft:item.Black Bronze Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8611>]);
+recipes.addShapeless(<terrafirmacraft:item.Bismuth Bronze Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8612>]);
+recipes.addShapeless(<terrafirmacraft:item.Wrought Iron Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:260>]);
+recipes.addShapeless(<terrafirmacraft:item.Steel Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8630>]);
+recipes.addShapeless(<terrafirmacraft:item.Black Steel Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8631>]);
+recipes.addShapeless(<terrafirmacraft:item.Red Steel Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8632>]);
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Pick Head>,[<gregtech:gt.meta.toolHeadPickaxe:8633>]);
+//bluesteel
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Shovel Head>,[<gregtech:gt.meta.toolHeadSpade:8633>]);
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Axe Head>,[<gregtech:gt.meta.toolHeadAxe:8633>]);
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Chisel Head>,[<gregtech:gt.meta.toolHeadChisel:8633>]);
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Sword Blade>,[<gregtech:gt.meta.toolHeadSword:8633>]);
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Hoe Head>,[<gregtech:gt.meta.toolHeadHoe:8633>]);
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Hammer Head>,[<gregtech:gt.meta.toolHeadHammer:8633>]);
+recipes.addShapeless(<terrafirmacraft:item.Blue Steel Saw Blade>,[<gregtech:gt.meta.toolHeadSaw:8633>]);
+
