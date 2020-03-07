@@ -256,16 +256,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 256 ,0,[10000],
 [<gregtech:gt.meta.plateQuadruple:8643>,<gregapi:gt.integrated_circuit:4>],
 [<advancedRocketry:sawBlade>]);
 
-//Asteroids rock
-MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
-[<advancedRocketry:tile.geode>],
-[<gregtech:gt.meta.dust:8247>]);
-MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 256 ,0,[7000, 1500, 3000],
-[<gregtech:gt.meta.dust:8247>],
-[null],
-[null],
-[<gregtech:gt.meta.dust:260>,<gregtech:gt.meta.dust:8649>,<gregtech:gt.meta.dustSmall:770>*2]);
-
 //Artificial satellite
 recipes.remove(<advancedRocketry:item.satellite>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 120, 256 ,0,[10000],
