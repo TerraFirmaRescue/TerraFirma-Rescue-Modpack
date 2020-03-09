@@ -829,3 +829,9 @@ recipes.addShaped(<gregtech:gt.multiitem.technological:11000>,
 [<gregtech:gt.meta.screw:8636>,<terrafirmacraft:item.Silver Sheet>,Cutter]]);
 
 recipes.remove(<tfcprimitivetech:itemWoodenTwig>);
+
+recipes.remove(<gregtech:gt.multitileentity:18101>);
+recipes.addShaped(<gregtech:gt.multitileentity:18101>,[
+[<gregtech:gt.meta.plate:8661>,<terrafirmacraft:item.Copper Sheet>,<gregtech:gt.meta.plate:8661>],
+[<IC2:itemRecipePart:5>,Wrench,<IC2:itemRecipePart:5>],
+[<gregtech:gt.meta.plate:8661>,<terrafirmacraft:item.Copper Sheet>,<gregtech:gt.meta.plate:8661>]]);
