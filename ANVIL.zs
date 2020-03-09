@@ -290,6 +290,9 @@ mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:280>,  <t
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:790>,  <terrafirmacraft:item.Gold Sheet>,          <terrafirmacraft:item.Gold Sheet>,           5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:470>,  <terrafirmacraft:item.Silver Sheet>,        <terrafirmacraft:item.Silver Sheet>,         5);
 
+//3-plates
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:290>,  <terrafirmacraft:item.Copper Double Sheet>, <terrafirmacraft:item.Copper Sheet>,  5);
+
 //4-plates
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8630>, <terrafirmacraft:item.Steel Double Sheet>, <terrafirmacraft:item.Steel Double Sheet>, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8610>, <terrafirmacraft:item.Bronze Double Sheet>, <terrafirmacraft:item.Bronze Double Sheet>, 5);

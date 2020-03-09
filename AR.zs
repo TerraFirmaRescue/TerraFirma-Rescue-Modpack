@@ -257,8 +257,9 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 256 ,0,[10000],
 [<advancedRocketry:sawBlade>]);
 
 //Artificial satellite
-recipes.remove(<advancedRocketry:item.satellite>);
+/*recipes.remove(<advancedRocketry:item.satellite>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 120, 256 ,0,[10000],
 [<gregtech:gt.meta.machine.double:8794>,<gregtech:gt.meta.stickLong:8794>*2,<libVulpes:libVulpesproductsheet:9>*12],
 [<liquid:molten.tin>*144],
-[null],
+[null],*/
+//zan shi zhu shi diao
