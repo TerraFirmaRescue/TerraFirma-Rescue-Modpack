@@ -796,7 +796,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 600, 1000,[10000],
 [<gregtech:gt.multitileentity:26503>]);
 //big pipe
 
-//MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26504>);//huge pipe
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26504>);//huge pipe
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 1200, 1000,[10000],
 [<gregtech:gt.meta.foil:9175>*48,<gregapi:gt.integrated_circuit:17>],
 [null],
@@ -835,3 +835,11 @@ recipes.addShaped(<gregtech:gt.multitileentity:18101>,[
 [<gregtech:gt.meta.plate:8661>,<terrafirmacraft:item.Copper Sheet>,<gregtech:gt.meta.plate:8661>],
 [<IC2:itemRecipePart:5>,Wrench,<IC2:itemRecipePart:5>],
 [<gregtech:gt.meta.plate:8661>,<terrafirmacraft:item.Copper Sheet>,<gregtech:gt.meta.plate:8661>]]);
+
+recipes.remove(<gregtech:gt.meta.plateGemTiny:8733>);
+MTUtilsGT.removeAllRecipes("gt.recipe.cutter",<gregtech:gt.meta.plateGemTiny:8733>);
+MTUtilsGT.addCustomRecipe("gt.recipe.laserengraver", false, 288, 20, 1000,[10000],
+[<gregtech:gt.meta.plateGem:8733>,<gregtech:gt.meta.lens:8302>*0],
+[null],
+[null],
+[<gregtech:gt.meta.plateGemTiny:8733>]);
