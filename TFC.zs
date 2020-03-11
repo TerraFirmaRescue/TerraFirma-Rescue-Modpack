@@ -157,3 +157,5 @@ recipes.addShapeless(<terrafirmacraft:item.Blue Steel Hoe Head>,[<gregtech:gt.me
 recipes.addShapeless(<terrafirmacraft:item.Blue Steel Hammer Head>,[<gregtech:gt.meta.toolHeadHammer:8633>]);
 recipes.addShapeless(<terrafirmacraft:item.Blue Steel Saw Blade>,[<gregtech:gt.meta.toolHeadSaw:8633>]);
 
+recipes.addShapeless(<terrafirmacraft:item.coal:1>,[<minecraft:coal:1>]);
+//charcoal->TFCcharcoal
