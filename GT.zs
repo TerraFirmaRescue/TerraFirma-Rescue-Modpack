@@ -33,6 +33,13 @@ recipes.remove(<gregtech:gt.multitileentity:32037>);
 recipes.remove(<gregtech:gt.multitileentity:32040>);
 recipes.remove(<gregtech:gt.multitileentity:32043>);
 recipes.remove(<gregtech:gt.multitileentity:32088>);
+recipes.remove(<gregtech:gt.multitileentity:32044>);
+recipes.remove(<gregtech:gt.multitileentity:32045>);
+recipes.remove(<gregtech:gt.multitileentity:32046>);
+recipes.remove(<gregtech:gt.multitileentity:32048>);
+recipes.remove(<gregtech:gt.multitileentity:32049>);
+recipes.remove(<gregtech:gt.multitileentity:32068>);
+recipes.remove(<gregtech:gt.multitileentity:32069>);
 
 
 //remove gt machine hulls by hand
@@ -279,8 +286,8 @@ mods.Terrafirmacraft.Knapping.addFireClayWorkingRecipe(<gregtech:gt.multitileent
 //GT coke oven
 recipes.remove(<gregtech:gt.multitileentity:18000>);
 recipes.addShaped(<gregtech:gt.multitileentity:18000>,
- [[<terrafirmacraft:item.Fire Brick:1>,<terrafirmacraft:item.Fire Brick:1>,null],
-  [<terrafirmacraft:item.Fire Brick:1>,<terrafirmacraft:item.Fire Brick:1>,null],
+ [[<ore:sand>,<terrafirmacraft:item.Fire Brick:1>,HHammer],
+  [<terrafirmacraft:item.Fire Brick:1>,<ore:sand>,null],
   [null,null,null]]);
 
 recipes.remove(<gregtech:gt.multitileentity:17000>);
@@ -843,3 +850,45 @@ MTUtilsGT.addCustomRecipe("gt.recipe.laserengraver", false, 288, 20, 1000,[10000
 [null],
 [null],
 [<gregtech:gt.meta.plateGemTiny:8733>]);
+
+//IV batteries
+recipes.remove(<gregtech:gt.multitileentity:14005>);
+MTUtilsGT.removeAllRecipes("gt.recipe.welder",<gregtech:gt.multitileentity:14005>);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 128, 500 ,0,[10000],
+[<gregtech:gt.meta.plate:8668>*2,<gregtech:gt.multitileentity:29266>*2,<gregtech:gt.multiitem.technological:30306>,<gregtech:gt.multiitem.technological:20001>*8],
+[<liquid:molten.solderingalloy>*288],
+[null],
+[<gregtech:gt.multitileentity:14005>]);
+
+recipes.remove(<gregtech:gt.multitileentity:14015>);
+MTUtilsGT.removeAllRecipes("gt.recipe.welder",<gregtech:gt.multitileentity:14015>);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 128, 500 ,0,[10000],
+[<gregtech:gt.meta.plate:8668>*2,<gregtech:gt.multitileentity:29266>*2,<gregtech:gt.multiitem.technological:30306>,<gregtech:gt.multiitem.technological:20003>*8],
+[<liquid:molten.solderingalloy>*288],
+[null],
+[<gregtech:gt.multitileentity:14015>]);
+
+recipes.remove(<gregtech:gt.multitileentity:14025>);
+MTUtilsGT.removeAllRecipes("gt.recipe.welder",<gregtech:gt.multitileentity:14025>);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 128, 500 ,0,[10000],
+[<gregtech:gt.meta.plate:8668>*2,<gregtech:gt.multitileentity:29266>*2,<gregtech:gt.multiitem.technological:30306>,<gregtech:gt.multiitem.technological:20005>*8],
+[<liquid:molten.solderingalloy>*288],
+[null],
+[<gregtech:gt.multitileentity:14025>]);
+
+recipes.remove(<gregtech:gt.multitileentity:14035>);
+MTUtilsGT.removeAllRecipes("gt.recipe.welder",<gregtech:gt.multitileentity:14035>);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 128, 500 ,0,[10000],
+[<gregtech:gt.meta.plate:8668>*2,<gregtech:gt.multitileentity:29266>*2,<gregtech:gt.multiitem.technological:30306>,<gregtech:gt.multiitem.technological:20007>*8],
+[<liquid:molten.solderingalloy>*288],
+[null],
+[<gregtech:gt.multitileentity:14035>]);
+
+recipes.remove(<gregtech:gt.multitileentity:14045>);
+MTUtilsGT.removeAllRecipes("gt.recipe.welder",<gregtech:gt.multitileentity:14045>);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 128, 500 ,0,[10000],
+[<gregtech:gt.meta.plate:8668>*2,<gregtech:gt.multitileentity:29266>*2,<gregtech:gt.multiitem.technological:30306>,<gregtech:gt.multiitem.technological:20009>*8],
+[<liquid:molten.solderingalloy>*288],
+[null],
+[<gregtech:gt.multitileentity:14045>]);
+

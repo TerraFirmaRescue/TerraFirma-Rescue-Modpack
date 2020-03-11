@@ -55,6 +55,28 @@
 <ore:sand>.add(<terrafirmacraft:Sand2:3>);
 <ore:sand>.add(<terrafirmacraft:Sand2:4>);
 
+<ore:dirt>.add(<terrafirmacraft:Dirt>);
+<ore:dirt>.add(<terrafirmacraft:Dirt:1>);
+<ore:dirt>.add(<terrafirmacraft:Dirt:2>);
+<ore:dirt>.add(<terrafirmacraft:Dirt:3>);
+<ore:dirt>.add(<terrafirmacraft:Dirt:4>);
+<ore:dirt>.add(<terrafirmacraft:Dirt:5>);
+<ore:dirt>.add(<terrafirmacraft:Dirt:6>);
+<ore:dirt>.add(<terrafirmacraft:Dirt:7>);
+<ore:dirt>.add(<terrafirmacraft:Dirt:8>);
+<ore:dirt>.add(<terrafirmacraft:Dirt:9>);
+<ore:dirt>.add(<terrafirmacraft:Dirt:10>);
+<ore:dirt>.add(<terrafirmacraft:Dirt:11>);
+<ore:dirt>.add(<terrafirmacraft:Dirt:12>);
+<ore:dirt>.add(<terrafirmacraft:Dirt:13>);
+<ore:dirt>.add(<terrafirmacraft:Dirt:14>);
+<ore:dirt>.add(<terrafirmacraft:Dirt:15>);
+<ore:dirt>.add(<terrafirmacraft:Dirt2>);
+<ore:dirt>.add(<terrafirmacraft:Dirt2:1>);
+<ore:dirt>.add(<terrafirmacraft:Dirt2:2>);
+<ore:dirt>.add(<terrafirmacraft:Dirt2:3>);
+<ore:dirt>.add(<terrafirmacraft:Dirt2:4>);
+
 //tfc marble
 <ore:rockGtMarble>.add(<terrafirmacraft:item.LooseRock:20>);
 <ore:rockGtMarble>.add(<terrafirmacraft:item.LooseRock:10>);

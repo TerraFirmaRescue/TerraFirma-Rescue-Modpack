@@ -159,3 +159,10 @@ recipes.addShapeless(<terrafirmacraft:item.Blue Steel Saw Blade>,[<gregtech:gt.m
 
 recipes.addShapeless(<terrafirmacraft:item.coal:1>,[<minecraft:coal:1>]);
 //charcoal->TFCcharcoal
+
+//Shajiang
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 32, 32, 1000,[10000],
+[<minecraft:sand>*4,<gregtech:gt.meta.dust:9189>],
+[<liquid:water>*1000],
+[null],
+[<terrafirmacraft:item.Mortar>*5]);

@@ -55,10 +55,10 @@ recipes.addShaped(<Railcraft:machine.alpha:15>*6,
 
 //RC coke oven
 recipes.remove(<Railcraft:machine.alpha:7>);
-recipes.addShaped(<Railcraft:machine.alpha:7>*2,
- [[<terrafirmacraft:item.Fire Brick:1>,<ore:sand>,<terrafirmacraft:item.Fire Brick:1>],
+recipes.addShaped(<Railcraft:machine.alpha:7>*4,
+ [[<tfcprimitivetech:itemClayBrick:1>,<ore:sand>,<tfcprimitivetech:itemClayBrick:1>],
   [<ore:sand>,<ore:craftingToolHardHammer>,<ore:sand>],
-  [<terrafirmacraft:item.Fire Brick:1>,<ore:sand>,<terrafirmacraft:item.Fire Brick:1>]]);
+  [<tfcprimitivetech:itemClayBrick:1>,<ore:sand>,<tfcprimitivetech:itemClayBrick:1>]]);
 
 //RC bender
 recipes.remove(<Railcraft:machine.alpha:8>);
