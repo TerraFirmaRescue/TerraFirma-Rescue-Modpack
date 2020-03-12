@@ -1,16 +1,12 @@
 import mods.MTUtilsGT;
 
 recipes.addShaped(<appliedenergistics2:item.ToolCertusQuartzWrench>,
-[[<ore:itemCertusQuartz>, null,            <ore:itemCertusQuartz>],
+[[<ore:itemCertusQuartz>, null,<ore:itemCertusQuartz>],
 [null,<ore:plateIridium>,null],
- [            <ore:itemCertusQuartz>,      null,            <ore:itemCertusQuartz>]]
- );
+[<ore:itemCertusQuartz>,null,<ore:itemCertusQuartz>]]);
  
 //baocengxianlan
- recipes.addShapeless(<appliedenergistics2:item.ItemMultiPart:36>,
- [<gregtech:gt.meta.foil:8218>,<appliedenergistics2:item.ItemMultiPart:16>]);
-
- 
+ recipes.addShapeless(<appliedenergistics2:item.ItemMultiPart:36>, [<gregtech:gt.meta.foil:8218>,<appliedenergistics2:item.ItemMultiPart:16>]);
 //zhimixianlan 
 MTUtilsGT.removeAllRecipes("gt.recipe.press",<appliedenergistics2:item.ItemMultiPart:76>);
 MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 16, 0, [10000], 
