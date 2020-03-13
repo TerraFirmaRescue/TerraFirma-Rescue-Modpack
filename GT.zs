@@ -685,7 +685,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 100, 1000,[10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.plateCurved:9175>);//wanquplate
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 100, 1000,[10000],
-[<gregtech:gt.meta.foil:9175>*4,<gregapi:gt.integrated_circuit:2>],
+[<gregtech:gt.meta.foil:9175>*4,<gregapi:gt.integrated_circuit:2>*0],
 [null],
 [null],
 [<gregtech:gt.meta.plateCurved:9175>]);
@@ -693,7 +693,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 100, 1000,[10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.gearGtSmall:9175>);//small gear
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 200, 1000,[10000],
-[<gregapi:gt.integrated_circuit:10>,<gregtech:gt.meta.foil:9175>*4],
+[<gregapi:gt.integrated_circuit:10>*0,<gregtech:gt.meta.foil:9175>*4],
 [null],
 [null],
 [<gregtech:gt.meta.gearGtSmall:9175>]);
@@ -701,7 +701,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 200, 1000,[10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.gearGt:9175>);//gear
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 800, 1000,[10000],
-[<gregtech:gt.meta.foil:9175>*16,<gregapi:gt.integrated_circuit:11>],
+[<gregtech:gt.meta.foil:9175>*16,<gregapi:gt.integrated_circuit:11>*0],
 [null],
 [null],
 [<gregtech:gt.meta.gearGt:9175>]);
@@ -709,7 +709,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 800, 1000,[10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.rotor:9175>);//zhuanzi
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 1200, 1000,[10000],
-[<gregtech:gt.meta.foil:9175>*17,<gregapi:gt.integrated_circuit:12>],
+[<gregtech:gt.meta.foil:9175>*17,<gregapi:gt.integrated_circuit:12>*0],
 [null],
 [null],
 [<gregtech:gt.meta.rotor:9175>]);
@@ -717,7 +717,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 1200, 1000,[10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.stick:9175>);//stick
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 50, 1000,[10000],
-[<gregtech:gt.meta.foil:9175>*2,<gregapi:gt.integrated_circuit:7>],
+[<gregtech:gt.meta.foil:9175>*2,<gregapi:gt.integrated_circuit:7>*0],
 [null],
 [null],
 [<gregtech:gt.meta.stick:9175>]);
@@ -725,7 +725,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 50, 1000,[10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.stickLong:9175>);//long stick
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 100, 1000,[10000],
-[<gregtech:gt.meta.foil:9175>*4,<gregapi:gt.integrated_circuit:8>],
+[<gregtech:gt.meta.foil:9175>*4,<gregapi:gt.integrated_circuit:8>*0],
 [null],
 [null],
 [<gregtech:gt.meta.plate:9175>]);
@@ -733,7 +733,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 100, 1000,[10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.bolt:9175>);//luo shuan
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 25, 1000,[10000],
-[<gregtech:gt.meta.foil:9175>,<gregapi:gt.integrated_circuit:6>],
+[<gregtech:gt.meta.foil:9175>,<gregapi:gt.integrated_circuit:6>*0],
 [null],
 [null],
 [<gregtech:gt.meta.bolt:9175>*2]);
@@ -741,7 +741,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 25, 1000,[10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.ring:9175>);//ring
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 25, 1000,[10000],
-[<gregtech:gt.meta.foil:9175>,<gregapi:gt.integrated_circuit:9>],
+[<gregtech:gt.meta.foil:9175>,<gregapi:gt.integrated_circuit:9>*0],
 [null],
 [null],
 [<gregtech:gt.meta.ring:9175>]);
@@ -749,7 +749,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 25, 1000,[10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.chain:9175>);//suo lian
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 200, 1000,[10000],
-[<gregtech:gt.meta.ring:9175>*4,<gregapi:gt.integrated_circuit:24>],
+[<gregtech:gt.meta.ring:9175>*4,<gregapi:gt.integrated_circuit:24>*0],
 [null],
 [null],
 [<gregtech:gt.meta.chain:9175>]);
@@ -757,7 +757,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 200, 1000,[10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.casingSmall:9175>);//wai ke
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 50, 1000,[10000],
-[<gregtech:gt.meta.foil:9175>*2,<gregapi:gt.integrated_circuit:3>],
+[<gregtech:gt.meta.foil:9175>*2,<gregapi:gt.integrated_circuit:3>*0],
 [null],
 [null],
 [<gregtech:gt.meta.casingSmall:9175>]);
@@ -773,7 +773,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 50, 1000,[10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26500>);//mini pipe
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 50, 1000,[10000],
-[<gregtech:gt.meta.foil:9175>*2,<gregapi:gt.integrated_circuit:13>],
+[<gregtech:gt.meta.foil:9175>*2,<gregapi:gt.integrated_circuit:13>*0],
 [null],
 [null],
 [<gregtech:gt.multitileentity:26500>]);
@@ -781,7 +781,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 50, 1000,[10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26501>);//small pipe
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 100, 1000,[10000],
-[<gregtech:gt.meta.foil:9175>*4,<gregapi:gt.integrated_circuit:14>],
+[<gregtech:gt.meta.foil:9175>*4,<gregapi:gt.integrated_circuit:14>*0],
 [null],
 [null],
 [<gregtech:gt.multitileentity:26501>]);
@@ -789,7 +789,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 100, 1000,[10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26502>);//pipe
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 300, 1000,[10000],
-[<gregtech:gt.meta.foil:9175>*12,<gregapi:gt.integrated_circuit:15>],
+[<gregtech:gt.meta.foil:9175>*12,<gregapi:gt.integrated_circuit:15>*0],
 [null],
 [null],
 [<gregtech:gt.multitileentity:26502>]);
@@ -797,7 +797,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 300, 1000,[10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26503>);//big pipe
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 600, 1000,[10000],
-[<gregtech:gt.meta.foil:9175>*24,<gregapi:gt.integrated_circuit:16>],
+[<gregtech:gt.meta.foil:9175>*24,<gregapi:gt.integrated_circuit:16>*0],
 [null],
 [null],
 [<gregtech:gt.multitileentity:26503>]);
@@ -805,7 +805,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 600, 1000,[10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.multitileentity:26504>);//huge pipe
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 1200, 1000,[10000],
-[<gregtech:gt.meta.foil:9175>*48,<gregapi:gt.integrated_circuit:17>],
+[<gregtech:gt.meta.foil:9175>*48,<gregapi:gt.integrated_circuit:17>*0],
 [null],
 [null],
 [<gregtech:gt.multitileentity:26504>]);

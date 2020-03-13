@@ -273,6 +273,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
 [<advancedRocketry:fuelTank>]);
 
 //liquid engine source: https://zhidao.baidu.com/question/1604334018380485187.html
+
 recipes.remove(<advancedRocketry:rocketmotor>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
 [<advancedRocketry:pressureTank:3>*2,<gregtech:gt.meta.ring:8756>*4,<gregtech:gt.meta.screw:8756>*4,<gregtech:gt.meta.rotor:8621>,<gregtech:gt.meta.plateCurved:8663>*4,<gregtech:gt.multiitem.technological:12023>,<gregtech:gt.multitileentity:26160>*4],

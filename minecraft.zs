@@ -24,7 +24,6 @@ recipes.addShapeless(<minecraft:coal>,[<terrafirmacraft:item.coal>]);
 recipes.addShapeless(<minecraft:sand>,[<ore:sand>]);
 recipes.addShapeless(<minecraft:string>,[<terrafirmacraft:item.WoolYarn>]);
 recipes.addShapeless(<minecraft:clay_ball>,[<terrafirmacraft:item.Clay>]);
-recipes.addShapeless(<minecraft:reeds>,[<terrafirmacraft:item.Seeds Sugarcane>]);
 recipes.addShapeless(<minecraft:dirt>,[<ore:blockDirt>]);
 recipes.addShapeless(<minecraft:coal>,[<terrafirmacraft:item.coal>]);
 
@@ -43,3 +42,5 @@ recipes.addShaped(<minecraft:crafting_table>,
 [<ore:stoneSmooth>,null,null],
 [null,null,null]]);
 
+recipes.addShapeless(<minecraft:reeds>,[<terrafirmacraft:item.Seeds Sugarcane>,<terrafirmacraft:item.Reeds>]);
+//sugar cane
