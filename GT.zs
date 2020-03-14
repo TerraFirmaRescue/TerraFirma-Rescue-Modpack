@@ -17,6 +17,7 @@ recipes.remove(<gregtech:gt.multitileentity:20201>);
 recipes.remove(<gregtech:gt.multitileentity:20151>);
 recipes.remove(<gregtech:gt.multitileentity:10111>);
 recipes.remove(<terrafirmacraft:item.MetalNugget:7>);
+recipes.remove(<gregtech:gt.meta.ingot:8336>);
 
 //remove gt anvils
 recipes.remove(<gregtech:gt.multitileentity:32025>);
@@ -50,6 +51,7 @@ recipes.remove(<gregtech:gt.meta.machine:290>);
 recipes.remove(<gregtech:gt.meta.machine:8661>);
 recipes.remove(<gregtech:gt.meta.machine:8610>);
 recipes.remove(<gregtech:gt.meta.machine:830>);
+recipes.remove(<gregtech:gt.meta.machine:8636>);
 
 //remove low tier gt crucibles
 recipes.remove(<gregtech:gt.multitileentity:1000>);
