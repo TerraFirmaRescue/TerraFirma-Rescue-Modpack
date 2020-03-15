@@ -17,6 +17,7 @@ recipes.remove(<gregtech:gt.multitileentity:20201>);
 recipes.remove(<gregtech:gt.multitileentity:20151>);
 recipes.remove(<gregtech:gt.multitileentity:10111>);
 recipes.remove(<terrafirmacraft:item.MetalNugget:7>);
+recipes.remove(<gregtech:gt.meta.ingot:8336>);
 
 //remove gt anvils
 recipes.remove(<gregtech:gt.multitileentity:32025>);
@@ -50,6 +51,7 @@ recipes.remove(<gregtech:gt.meta.machine:290>);
 recipes.remove(<gregtech:gt.meta.machine:8661>);
 recipes.remove(<gregtech:gt.meta.machine:8610>);
 recipes.remove(<gregtech:gt.meta.machine:830>);
+recipes.remove(<gregtech:gt.meta.machine:8636>);
 
 //remove low tier gt crucibles
 recipes.remove(<gregtech:gt.multitileentity:1000>);
@@ -891,4 +893,11 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 128, 500 ,0,[10000],
 [<liquid:molten.solderingalloy>*288],
 [null],
 [<gregtech:gt.multitileentity:14045>]);
+
+//ionizer
+recipes.remove(<gregtech:gt.multitileentity:17315>);
+recipes.addShaped(<gregtech:gt.multitileentity:17315>,
+[[<gregtech:gt.multitileentity:29615>,<gregtech:gt.multitileentity:29615>,<gregtech:gt.multitileentity:29615>],
+[<gregtech:gt.meta.stickLong:8686>,Wrench,<gregtech:gt.meta.stickLong:8686>],
+[<gregtech:gt.multiitem.technological:30502>,<gregtech:gt.multitileentity:18115>,<gregtech:gt.multiitem.technological:12106>]]);
 

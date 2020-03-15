@@ -49,9 +49,9 @@ mods.railcraft.Rolling.removeRecipe(<Railcraft:part.plate:1>);
 //rc crusher
 recipes.remove(<Railcraft:machine.alpha:15>);
 recipes.addShaped(<Railcraft:machine.alpha:15>*6,
-[[<ore:plateAnyIron>,<ore:plateAnyIron>,<ore:plateAnyIron>],
+[[<ore:plateAnyIron>,HHammer,<ore:plateAnyIron>],
 [<ore:plateAnyIron>,<ore:gemDiamond>,<ore:plateAnyIron>],
-[<ore:plateAnyIron>,<ore:plateAnyIron>,<ore:plateAnyIron>]]);
+[<ore:plateAnyIron>,Wrench,<ore:plateAnyIron>]]);
 
 //RC coke oven
 recipes.remove(<Railcraft:machine.alpha:7>);
@@ -70,9 +70,9 @@ recipes.addShaped(<Railcraft:machine.alpha:8>,
 //steam engine minke
 recipes.remove(<Railcraft:machine.beta:7>);
 recipes.addShaped(<Railcraft:machine.beta:7>,
-[[<gregtech:gt.meta.stickLong:8660>,<gregtech:gt.meta.stickLong:8660>,<gregtech:gt.meta.stickLong:8660>],
-[<ore:gearTin>,<minecraft:piston>,<ore:gearGtSmallGold>],
-[Wrench,<ore:plateBlackSteel>,Screwdriver]]);
+[[Wrench,<ore:blockGlass>,HHammer],
+[<ore:gearTin>,<minecraft:piston>,<gregtech:gt.meta.ring:500>],
+[<ore:plateGold>,<minecraft:brick_block>,Screwdriver]]);
 
 //solid burner
 recipes.remove(<Railcraft:machine.beta:5>);
@@ -91,9 +91,14 @@ recipes.addShaped(<Railcraft:machine.beta:6>,
 //Rc blast furnace
 recipes.remove(<Railcraft:machine.alpha:12>);
 recipes.addShaped(<Railcraft:machine.alpha:12>*5,
-[[<ore:plateSteel>,<terrafirmacraft:FireBrick>,HHammer],
+[[<ore:plateBronze>,<terrafirmacraft:FireBrick>,HHammer],
 [<terrafirmacraft:FireBrick>,<terrafirmacraft:FireBrick>,<terrafirmacraft:FireBrick>],
-[Wrench,<terrafirmacraft:FireBrick>,<ore:plateSteel>]]);
+[Wrench,<terrafirmacraft:FireBrick>,<ore:plateBronze>]]);
+
+recipes.addShaped(<Railcraft:machine.alpha:12>*5,
+[[<ore:plateAnyIronOrSteel>,n,HHammer],
+[<terrafirmacraft:FireBrick>,<terrafirmacraft:FireBrick>,<terrafirmacraft:FireBrick>],
+[Wrench,n,<ore:plateAnyIronOrSteel>]]);
 
 //RC Bender recipes change
 //3 ingot into 2 plate

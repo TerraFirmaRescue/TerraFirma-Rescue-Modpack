@@ -287,3 +287,45 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
 [<liquid:molten.tin>*144],
 [null],
 [<advancedRocketry:tile.advRocket>]);
+
+//carbon collector recycle
+MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 16, 500 ,0,[10000],
+[<advancedRocketry:item.carbonScrubberCartridge>.withDamage(32767)],
+[null],
+[null],
+[<advancedRocketry:item.carbonScrubberCartridge>]);
+
+//satellite cabin
+recipes.remove(<advancedRocketry:tile.loader:1>);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
+[<gregtech:gt.multiitem.technological:30304>,<gregtech:gt.meta.machine:8665>,<gregtech:gt.meta.stick:220>*2],
+[<liquid:molten.tin>*144],
+[null],
+[<advancedRocketry:tile.loader:1>]);
+
+//guidance computer
+recipes.remove(<advancedRocketry:tile.guidanceComputer>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 64, 1000 ,0,[10000],
+[<gregtech:gt.meta.plate:220>,<libVulpes:blockStructureBlock>,<advancedRocketry:circuitIC:1>*2,<gregtech:gt.multiitem.technological:30502>],
+[<liquid:molten.tin>*144],
+[null],
+[<advancedRocketry:tile.guidanceComputer>]);
+
+//solar panel
+recipes.addShapeless(<advancedRocketry:tile.solarPanel>,[<gregtech:gt.multitileentity:10050>]);
+
+/*
+MTUtilsGT.addCustomRecipe("gt.recipe.freezer", false, 64, 100 ,0,[10000],
+[<gregapi:gt.integrated_circuit>*0],
+[<liquid:oxygen>*1000],
+[<liquid:liquidoxygen>*10],
+[null]);
+*/
+
+//rocket fuel
+MTUtilsGT.addCustomRecipe("gt.recipe.cryomixer", false, 64, 100 ,0,[10000],
+[<gregapi:gt.integrated_circuit>*0],
+[<liquid:oxygen>*1000,<liquid:hydrogen>*2000],
+[<liquid:rocketfuel>*30],
+[null]);
+
