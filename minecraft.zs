@@ -44,3 +44,25 @@ recipes.addShaped(<minecraft:crafting_table>,
 
 recipes.addShapeless(<minecraft:reeds>,[<terrafirmacraft:item.Seeds Sugarcane>,<terrafirmacraft:item.Reeds>]);
 //sugar cane
+
+//skull of skeleton
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 2048, 4000, 0, [10000],
+[<minecraft:dye:15>*32,<gregtech:gt.meta.stick:8684>],
+[<liquid:molten.calcium>*10000],
+[null],
+[<minecraft:skull>]);
+
+//skull of wither skeleton
+MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 2048, 6000, 0, [10000],
+[<minecraft:skull>],
+[<liquid:molten.carbon>*10000,<liquid:aquaregia>*5000],
+[null],
+[<minecraft:skull:1>]);
+
+//nether star
+MTUtilsGT.removeAllRecipes("gt.recipe.ionizer",<minecraft:nether_star>);
+MTUtilsGT.addCustomRecipe("gt.recipe.ionizer", false, 4096, 8000, 0, [10000],
+[<minecraft:skull:1>],
+[<liquid:soulsandoil>*500],
+[null],
+[<minecraft:nether_star>]);

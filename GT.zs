@@ -894,3 +894,10 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 128, 500 ,0,[10000],
 [null],
 [<gregtech:gt.multitileentity:14045>]);
 
+//ionizer
+recipes.remove(<gregtech:gt.multitileentity:17315>);
+recipes.addShaped(<gregtech:gt.multitileentity:17315>,
+[[<gregtech:gt.multitileentity:29615>,<gregtech:gt.multitileentity:29615>,<gregtech:gt.multitileentity:29615>],
+[<gregtech:gt.meta.stickLong:8686>,Wrench,<gregtech:gt.meta.stickLong:8686>],
+[<gregtech:gt.multiitem.technological:30502>,<gregtech:gt.multitileentity:18115>,<gregtech:gt.multiitem.technological:12106>]]);
+
