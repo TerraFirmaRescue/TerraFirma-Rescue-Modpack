@@ -847,11 +847,13 @@ recipes.addShaped(<gregtech:gt.multitileentity:18101>,[
 
 recipes.remove(<gregtech:gt.meta.plateGemTiny:8733>);
 MTUtilsGT.removeAllRecipes("gt.recipe.cutter",<gregtech:gt.meta.plateGemTiny:8733>);
+MTUtilsGT.removeAllRecipes("gt.recipe.laserengraver",<gregtech:gt.meta.plateGemTiny:8733>);
 MTUtilsGT.addCustomRecipe("gt.recipe.laserengraver", false, 288, 20, 1000,[10000],
 [<gregtech:gt.meta.plateGem:8733>,<gregtech:gt.meta.lens:8302>*0],
 [null],
 [null],
-[<gregtech:gt.meta.plateGemTiny:8733>]);
+[<gregtech:gt.meta.plateGemTiny:8733>*8]);
+//small red Si plate
 
 //IV batteries
 recipes.remove(<gregtech:gt.multitileentity:14005>);
