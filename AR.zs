@@ -267,7 +267,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 120, 4000 ,0,[10000],
 //liquid fuel tank
 recipes.remove(<advancedRocketry:fuelTank>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
-[<gregtech:gt.meta.plateCurved:8665>*6,<gregtech:gt.meta.stickLong:8665>*4,<gregtech:gt.meta.ring:8665>*2],
+[<gregtech:gt.meta.plateCurved:8665>*6,<gregtech:gt.meta.stickLong:8665>*4,<gregtech:gt.meta.ring:8636>*2],
 [<liquid:molten.tin>*144],
 [null],
 [<advancedRocketry:fuelTank>]);
@@ -276,14 +276,14 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
 
 recipes.remove(<advancedRocketry:rocketmotor>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
-[<advancedRocketry:pressureTank:3>*2,<gregtech:gt.meta.ring:8756>*4,<gregtech:gt.meta.screw:8756>*4,<gregtech:gt.meta.rotor:8621>,<gregtech:gt.meta.plateCurved:8663>*4,<gregtech:gt.multiitem.technological:12023>,<gregtech:gt.multitileentity:26160>*4],
+[<advancedRocketry:pressureTank:3>,<gregtech:gt.meta.ring:8756>*4,<gregtech:gt.meta.screw:8756>*4,<gregtech:gt.meta.rotor:8621>,<gregtech:gt.meta.plateCurved:8663>*4,<gregtech:gt.multiitem.technological:12023>,<gregtech:gt.multitileentity:26160>*4],
 [<liquid:molten.tin>*144],
 [null],
 [<advancedRocketry:rocketmotor>]);
 
 recipes.remove(<advancedRocketry:tile.advRocket>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
-[<advancedRocketry:pressureTank:3>*2,<gregtech:gt.meta.ring:8756>*4,<gregtech:gt.meta.screw:8756>*4,<gregtech:gt.meta.rotor:8793>,<gregtech:gt.meta.plateCurved:8638>*4,<gregtech:gt.multiitem.technological:12025>,<gregtech:gt.multitileentity:26160>*4],
+[<advancedRocketry:pressureTank:3>,<gregtech:gt.meta.ring:8756>*4,<gregtech:gt.meta.screw:8756>*4,<gregtech:gt.meta.rotor:8793>,<gregtech:gt.meta.plateCurved:8638>*4,<gregtech:gt.multiitem.technological:12025>,<gregtech:gt.multitileentity:26160>*4],
 [<liquid:molten.tin>*144],
 [null],
 [<advancedRocketry:tile.advRocket>]);
@@ -313,14 +313,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 64, 1000 ,0,[10000],
 
 //solar panel
 recipes.addShapeless(<advancedRocketry:tile.solarPanel>,[<gregtech:gt.multitileentity:10050>]);
-
-/*
-MTUtilsGT.addCustomRecipe("gt.recipe.freezer", false, 64, 100 ,0,[10000],
-[<gregapi:gt.integrated_circuit>*0],
-[<liquid:oxygen>*1000],
-[<liquid:liquidoxygen>*10],
-[null]);
-*/
 
 //rocket fuel
 MTUtilsGT.addCustomRecipe("gt.recipe.cryomixer", false, 64, 100 ,0,[10000],
