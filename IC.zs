@@ -19,3 +19,9 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 1024,256, 0, [10000],
 [<IC2:reactorVent:1>]);
 
 recipes.remove(<IC2:itemupgradekit>);
+
+recipes.remove(<IC2:itemRecipePart:5>);
+recipes.addShaped(<IC2:itemRecipePart:5>,
+[[<gregtech:gt.meta.plate:8217>,<terrafirmacraft:item.Copper Sheet>,<ore:craftingToolWrench>],
+[<gregtech:gt.multitileentity:26100>,<gregtech:gt.multitileentity:26100>,<gregtech:gt.multitileentity:26100>],
+[<gregtech:gt.meta.plate:8217>,<terrafirmacraft:item.Copper Sheet>,<gregtech:gt.meta.plate:8217>]]);
