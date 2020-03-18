@@ -42,7 +42,7 @@ mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGt:290> ,  <greg
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGt:8643>, <gregtech:gt.meta.plateQuadruple:8643>,  "gtgear", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGt:8630>, <gregtech:gt.meta.plateQuadruple:8630>,  "gtgear", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGt:830> ,  <gregtech:gt.meta.plateQuadruple:830> ,   "gtgear", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGt:500> ,  <gregtech:gt.meta.plateQuadruple:500> ,   "gtgear", 3);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGt:500> ,  <gregtech:gt.meta.plateQuadruple:500> ,   "gtgear", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGt:820> ,  <gregtech:gt.meta.plateQuadruple:820> ,   "gtgear", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGt:8636>, <gregtech:gt.meta.plateQuadruple:8636>,  "gtgear", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.gearGt:240> ,  <gregtech:gt.meta.plateQuadruple:240> ,   "gtgear",5);
@@ -97,7 +97,7 @@ mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.spring:290>,  <gregt
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.spring:8643>, <gregtech:gt.meta.stickLong:8643>, "gtspring", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.spring:8630>, <gregtech:gt.meta.stickLong:8630>, "gtspring", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.spring:830>,  <gregtech:gt.meta.stickLong:830>,  "gtspring", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.spring:500>,  <gregtech:gt.meta.stickLong:500>,  "gtspring", 3);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.spring:500>,  <gregtech:gt.meta.stickLong:500>,  "gtspring", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.spring:820>,  <gregtech:gt.meta.stickLong:820>,  "gtspring", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.spring:8636>, <gregtech:gt.meta.stickLong:8636>, "gtspring", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.spring:240>,  <gregtech:gt.meta.stickLong:240>,  "gtspring",5);
@@ -208,7 +208,7 @@ mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:290>,  <gregtec
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8643>, <gregtech:gt.meta.stick:8643>,  "gtring", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8630>, <gregtech:gt.meta.stick:8630>,  "gtring", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:830>,  <gregtech:gt.meta.stick:830>,   "gtring", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:500>,  <gregtech:gt.meta.stick:500>,   "gtring", 3);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:500>,  <gregtech:gt.meta.stick:500>,   "gtring", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:820>,  <gregtech:gt.meta.stick:820>,   "gtring", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:8636>, <gregtech:gt.meta.stick:8636>,  "gtring", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:240>,  <gregtech:gt.meta.stick:240>,   "gtring",5);
