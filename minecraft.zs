@@ -47,7 +47,7 @@ recipes.addShapeless(<minecraft:reeds>,[<terrafirmacraft:item.Seeds Sugarcane>,<
 
 //skull of skeleton
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 2048, 4000, 0, [10000],
-[<minecraft:dye:15>*32,<gregtech:gt.meta.stick:8684>],
+[<minecraft:dye:15>*32,<ore:stickIridium>],
 [<liquid:molten.calcium>*10000],
 [null],
 [<minecraft:skull>]);
