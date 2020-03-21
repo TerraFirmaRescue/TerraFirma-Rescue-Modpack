@@ -20,11 +20,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 256, 1000, 0, [10000],
 [<gregtech:gt.multitileentity:5536>,<gregtech:gt.multitileentity:18200>*4,<Avaritia:Triple_Craft>*9,<gregtech:gt.multiitem.technological:12009>*10],
 [<Avaritia:Dire_Crafting>]);
 
-MTUtilsGT.removeAllRecipes("gt.recipe.welder",<minecraft:nether_star>);
-MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 256, 200, 0, [10000],
-[<minecraft:skull:1>,<gregtech:gt.multiitem.technological:12145>*1,<gregtech:gt.multiitem.technological:30006>*4],
-[<minecraft:nether_star>]);
-
 recipes.remove(<Avaritia:Resource>);
 MTUtilsGT.removeAllRecipes("gt.recipe.laserengraver",<Avaritia:Resource>);
 MTUtilsGT.addCustomRecipe("gt.recipe.laserengraver", false, 4096, 20, 0, [10000],
@@ -163,11 +158,6 @@ MTUtilsGT.removeAllRecipes("gt.recipe.welder",<Avaritia:Dire_Crafting>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 256, 1000, 0, [10000],
 [<gregtech:gt.multitileentity:5536>,<gregtech:gt.multitileentity:18200>*4,<Avaritia:Triple_Craft>*9,<gregtech:gt.multiitem.technological:12009>*10],
 [<Avaritia:Dire_Crafting>]);
-
-MTUtilsGT.removeAllRecipes("gt.recipe.welder",<minecraft:nether_star>);
-MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 256, 200, 0, [10000],
-[<minecraft:skull:1>,<gregtech:gt.multiitem.technological:12145>*1,<gregtech:gt.multiitem.technological:30006>*4],
-[<minecraft:nether_star>]);
 
 recipes.remove(<Avaritia:Resource>);
 MTUtilsGT.removeAllRecipes("gt.recipe.laserengraver",<Avaritia:Resource>);
