@@ -905,11 +905,13 @@ recipes.addShaped(<gregtech:gt.multitileentity:17315>,
 
 
 //synthetic rubber
+/*
 MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 400 ,0,[10000],
 [<gregtech:gt.meta.dustSmall:160>],
 [<liquid:benzene>*150,<liquid:ethylene>*300],
 [null],
 [<gregtech:gt.meta.ingot:8217>]);
+*/
 
 MTUtilsGT.removeAllRecipes("gt.recipe.magneticseparator",<gregtech:gt.meta.crushedCentrifuged:9122>);
 MTUtilsGT.addCustomRecipe("gt.recipe.magneticseparator", false, 16, 400 ,0,[10000],
