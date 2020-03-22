@@ -911,4 +911,10 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 400 ,0,[10000],
 [null],
 [<gregtech:gt.meta.ingot:8217>]);
 
-
+MTUtilsGT.removeAllRecipes("gt.recipe.magneticseparator",<gregtech:gt.meta.crushedCentrifuged:9122>);
+MTUtilsGT.addCustomRecipe("gt.recipe.magneticseparator", false, 16, 400 ,0,[10000],
+[<gregtech:gt.meta.crushedCentrifuged:9122>],
+[null],
+[null],
+[<gregtech:gt.meta.dust:9122>,<gregtech:gt.meta.dustTiny:9143>]);
+//(Fe3O4)(V2O5)
