@@ -189,3 +189,59 @@ MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 16, 64 ,0,[10000],
 [n],
 [<gregtech:gt.multiitem.technological:30006>]);
 
+
+/*--Mainframe Clusters--*/
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 1000 ,0,[10000],
+[<moegadd:Mainframe1>*4,<gregtech:gt.meta.casingSmall:130>*6,<gregtech:gt.multiitem.technological:12001>,<gregtech:gt.multitileentity:29266>*4,<gregtech:gt.meta.rotor:8218>],
+[<liquid:plastic>*720],
+[n],
+[<moegadd:MainframeCluster1>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 1000 ,0,[10000],
+[<moegadd:Mainframe2>*4,<gregtech:gt.meta.casingSmall:130>*6,<gregtech:gt.multiitem.technological:12002>,<gregtech:gt.multitileentity:29266>*4,<gregtech:gt.meta.rotor:8218>],
+[<liquid:plastic>*720],
+[n],
+[<moegadd:MainframeCluster2>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 1000 ,0,[10000],
+[<moegadd:Mainframe3>*4,<gregtech:gt.meta.casingSmall:130>*6,<gregtech:gt.multiitem.technological:12003>,<gregtech:gt.multitileentity:29266>*4,<gregtech:gt.meta.rotor:8218>],
+[<liquid:plastic>*720],
+[n],
+[<moegadd:MainframeCluster3>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 1000 ,0,[10000],
+[<moegadd:Mainframe4>*4,<gregtech:gt.meta.casingSmall:130>*6,<gregtech:gt.multiitem.technological:12004>,<gregtech:gt.multitileentity:29266>*4,<gregtech:gt.meta.rotor:8218>],
+[<liquid:plastic>*720],
+[n],
+[<moegadd:MainframeCluster4>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 1000 ,0,[10000],
+[<moegadd:Mainframe5>*4,<gregtech:gt.meta.casingSmall:130>*6,<gregtech:gt.multiitem.technological:12005>,<gregtech:gt.multitileentity:29266>*4,<gregtech:gt.meta.rotor:8218>],
+[<liquid:plastic>*720],
+[n],
+[<moegadd:MainframeCluster5>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 1000 ,0,[10000],
+[<moegadd:Mainframe6>*4,<gregtech:gt.meta.casingSmall:130>*6,<gregtech:gt.multiitem.technological:12006>,<gregtech:gt.multitileentity:29266>*4,<gregtech:gt.meta.rotor:8218>],
+[<liquid:plastic>*720],
+[n],
+[<moegadd:MainframeCluster6>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 1000 ,0,[10000],
+[<moegadd:Mainframe7>*4,<gregtech:gt.meta.casingSmall:130>*6,<gregtech:gt.multiitem.technological:12007>,<gregtech:gt.multitileentity:29266>*4,<gregtech:gt.meta.rotor:8218>],
+[<liquid:plastic>*720],
+[n],
+[<moegadd:MainframeCluster7>]);
+
+/*--Aligner--*/
+recipes.remove(<gregtech:gt.multitileentity:18116>);
+recipes.addShaped(<gregtech:gt.multitileentity:18116>,
+[[<gregtech:gt.meta.lens:8001>,<gregtech:gt.meta.lens:8001>,<gregtech:gt.meta.lens:8001>],
+[<advancedRocketry:satellitePrimaryFunction>,<gregtech:gt.multitileentity:18002>,<advancedRocketry:satellitePrimaryFunction>],
+[<gregtech:gt.multiitem.technological:30303>,Wrench,<gregtech:gt.multiitem.technological:30303>]]);
+
+recipes.remove(<gregtech:gt.multitileentity:17122>);
+recipes.addShaped(<gregtech:gt.multitileentity:17122>,
+[[n,<advancedRocketry:satellitePrimaryFunction>,n],
+[<advancedRocketry:satellitePrimaryFunction>,<gregtech:gt.multitileentity:18116>,<advancedRocketry:satellitePrimaryFunction>],
+[Wrench,<advancedRocketry:satellitePrimaryFunction>,Screwdriver]]);
