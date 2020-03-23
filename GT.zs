@@ -901,7 +901,7 @@ recipes.remove(<gregtech:gt.multitileentity:17315>);
 recipes.addShaped(<gregtech:gt.multitileentity:17315>,
 [[<gregtech:gt.multitileentity:29615>,<gregtech:gt.multitileentity:29615>,<gregtech:gt.multitileentity:29615>],
 [<gregtech:gt.meta.stickLong:8686>,Wrench,<gregtech:gt.meta.stickLong:8686>],
-[<gregtech:gt.multiitem.technological:30502>,<gregtech:gt.multitileentity:18115>,<gregtech:gt.multiitem.technological:12106>]]);
+[<gregtech:gt.multiitem.technological:30502>,<gregtech:gt.multitileentity:18115>,<gregtech:gt.multitileentity:10044>]]);
 
 
 //synthetic rubber
