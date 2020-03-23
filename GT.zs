@@ -13,7 +13,7 @@ val n = null;
 //delete start
 
 //GT
-recipes.remove(<gregtech:gt.multitileentity:20201>);
+//recipes.remove(<gregtech:gt.multitileentity:20201>);
 recipes.remove(<gregtech:gt.multitileentity:20151>);
 recipes.remove(<gregtech:gt.multitileentity:10111>);
 recipes.remove(<terrafirmacraft:item.MetalNugget:7>);
