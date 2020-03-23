@@ -96,3 +96,82 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 64, 1000 ,0,[10000],
 [<liquid:epoxid>*1000],
 [n]);
 
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 120, 200 ,0,[10000],
+[<gregtech:gt.meta.plateTiny:8225>*4,<gregtech:gt.meta.foil:130>*4,<gregtech:gt.meta.wireFine:8640>],
+[<liquid:plastic>*144],
+[n],
+[<moegadd:PatchCapacitor>]);
+//tie pian dian rong
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 120, 400 ,0,[10000],
+[<gregtech:gt.meta.dustSmall:490>,<gregtech:gt.meta.dustSmall:310>,<gregtech:gt.meta.dustSmall:150>,<gregtech:gt.meta.plateGemTiny:140>*2],
+[<liquid:plastic>*144],
+[n],
+[<moegadd:PatchDiode>*32]);
+//tie pian er ji guan
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 120, 200 ,0,[10000],
+[<gregtech:gt.meta.dust:8001>,<gregtech:gt.meta.dust:470>,<gregtech:gt.meta.wireFine:8640>],
+[<liquid:plastic>*144],
+[n],
+[<moegadd:SMDResistor>*16]);
+//tie pian dian zu
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 120, 200 ,0,[10000],
+[<gregtech:gt.meta.plateGemTiny:320>,<gregtech:gt.meta.dustSmall:130>,<gregtech:gt.meta.dustSmall:150>,<gregtech:gt.meta.wireFine:8640>],
+[<liquid:plastic>*144],
+[n],
+[<moegadd:PatchTransistor>*16]);
+//tie pian jing ti guan
+
+MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 128, 100, 1000,[10000],
+[<gregtech:gt.meta.dust:140>],
+[<liquid:hydrochloricacid>*1000],
+[<liquid:silane>*1000,<liquid:chlorine>*500],
+[null]);
+//SiH4
+
+MTUtilsGT.addCustomRecipe("gt.recipe.distillery", false, 512, 200, 1000,[10000],
+[<gregtech:gt.meta.plateGemTiny:140>*0],
+[<liquid:silane>*1000],
+[null],
+[<moegadd:PolycrystallineSilicon>]);
+//duo jing gui
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 32, 100, 1000,[10000],
+[<moegadd:PolycrystallineSilicon>],
+[null],
+[null],
+[<moegadd:SeedCrystalSilicon>*9]);
+//zi jing
+
+MTUtilsGT.removeAllRecipes("gt.recipe.crystallisationcrucible",<gregtech:gt.meta.boule:140>);
+MTUtilsGT.addCustomRecipe("gt.recipe.crystallisationcrucible", false, 512, 65536, 1000,[10000],
+[<moegadd:SeedCrystalSilicon>],
+[<liquid:nitrogen>*1000,<liquid:molten.silicon>*1152],
+[null],
+[<gregtech:gt.meta.boule:140>]);
+//dan jing gui
+
+recipes.remove(<gregtech:gt.meta.plateGem:140>);
+MTUtilsGT.removeAllRecipes("gt.recipe.cutter",<gregtech:gt.meta.plateGem:140>);
+MTUtilsGT.addCustomRecipe("gt.recipe.cutter", false, 32, 200, 1000,[10000],
+[<gregtech:gt.meta.boule:140>],
+[<liquid:lubricant>*10],
+[null],
+[<gregtech:gt.meta.plateGem:140>*4]);
+//jie jing gui ban
+
+MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 32, 200, 1000,[10000],
+[<gregtech:gt.meta.plateGem:140>],
+[<liquid:oxygen>*100],
+[null],
+[<moegadd:RawWafer:1>.withTag({display: {Name: "Oxidized Crystal Element", Lore: ["You need", "Photoresist"]}})]);
+//chu bu yang hua jing yuan
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 32, 800, 1000,[10000],
+[<moegadd:RawWafer:1>],
+[<liquid:photoresist>*100],
+[null],
+[<moegadd:RawWafer>]);
+//dai guang ke jing yuan

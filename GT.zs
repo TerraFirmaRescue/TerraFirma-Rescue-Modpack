@@ -642,37 +642,37 @@ MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.wireFine:9175>)
 recipes.remove(<gregtech:gt.meta.wireFine:9175>);
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
 [<gregtech:gt.meta.dust:780>*0,<gregtech:gt.meta.stick:9174>],
-[<liquid:helium>*80],
+[<liquid:helium>*16],
 [null],
 [<gregtech:gt.meta.wireFine:9175>*8]);
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
 [<gregtech:gt.meta.dust:780>*0,<gregtech:gt.meta.stick:9174>],
-[<liquid:helium>*80],
+[<liquid:helium>*16],
 [null],
 [<gregtech:gt.meta.wireFine:9175>*8]);
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
 [<gregtech:gt.meta.dust:780>*0,<gregtech:gt.meta.stick:9174>],
-[<liquid:neon>*80],
+[<liquid:neon>*16],
 [null],
 [<gregtech:gt.meta.wireFine:9175>*8]);
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
 [<gregtech:gt.meta.dust:780>*0,<gregtech:gt.meta.stick:9174>],
-[<liquid:argon>*80],
+[<liquid:argon>*16],
 [null],
 [<gregtech:gt.meta.wireFine:9175>*8]);
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
 [<gregtech:gt.meta.dust:780>*0,<gregtech:gt.meta.stick:9174>],
-[<liquid:krypton>*80],
+[<liquid:krypton>*16],
 [null],
 [<gregtech:gt.meta.wireFine:9175>*8]);
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
 [<gregtech:gt.meta.dust:780>*0,<gregtech:gt.meta.stick:9174>],
-[<liquid:krypton>*80],
+[<liquid:krypton>*16],
 [null],
 [<gregtech:gt.meta.wireFine:9175>*8]);
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],
 [<gregtech:gt.meta.dust:780>*0,<gregtech:gt.meta.stick:9174>],
-[<liquid:xenon>*80],
+[<liquid:xenon>*16],
 [null],
 [<gregtech:gt.meta.wireFine:9175>*8]);
 //fine wire
@@ -920,3 +920,4 @@ MTUtilsGT.addCustomRecipe("gt.recipe.magneticseparator", false, 16, 400 ,0,[1000
 [null],
 [<gregtech:gt.meta.dust:9122>,<gregtech:gt.meta.dustTiny:9143>]);
 //(Fe3O4)(V2O5)
+
