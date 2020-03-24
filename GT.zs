@@ -921,3 +921,37 @@ MTUtilsGT.addCustomRecipe("gt.recipe.magneticseparator", false, 16, 400 ,0,[1000
 [<gregtech:gt.meta.dust:9122>,<gregtech:gt.meta.dustTiny:9143>]);
 //(Fe3O4)(V2O5)
 
+//Fusion reactor
+recipes.remove(<gregtech:gt.multitileentity:17198>);
+recipes.addShaped(<gregtech:gt.multitileentity:17198>,
+[[<moegadd:MainframeCluster5>,<gregtech:gt.multiitem.technological:12105>,<moegadd:MainframeCluster5>],
+[<gregtech:gt.multiitem.technological:12105>,<gregtech:gt.multitileentity:18003>,<gregtech:gt.multiitem.technological:12105>],
+[<moegadd:MainframeCluster5>,<gregtech:gt.multiitem.technological:12105>,<moegadd:MainframeCluster5>]]);
+
+//Partcile collider
+recipes.remove(<gregtech:gt.multitileentity:17200>);
+recipes.addShaped(<gregtech:gt.multitileentity:17200>,
+[[<moegadd:MainframeCluster7>,<gregtech:gt.multiitem.technological:12109>,<moegadd:MainframeCluster7>],
+[<gregtech:gt.multiitem.technological:12109>,<gregtech:gt.multitileentity:18014>,<gregtech:gt.multiitem.technological:12109>],
+[<moegadd:MainframeCluster7>,<gregtech:gt.multiitem.technological:12109>,<moegadd:MainframeCluster7>]]);
+
+//PUV1 emitter
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 4096, 400 ,0,[10000],
+[<gregtech:gt.multitileentity:29207>*10,<gregtech:gt.meta.plateDouble:8684>*2,<minecraft:nether_star>,<moegadd:Mainframe3>*2],
+[null],
+[null],
+[<gregtech:gt.multiitem.technological:12109>]);
+
+//UV emitter
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 3072, 400 ,0,[10000],
+[<gregtech:gt.multitileentity:29207>*8,<gregtech:gt.meta.plateDouble:8790>*2,<minecraft:nether_star>,<moegadd:Mainframe2>*2],
+[null],
+[null],
+[<gregtech:gt.multiitem.technological:12108>]);
+
+//ZPM emitter
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 2048, 400 ,0,[10000],
+[<gregtech:gt.multitileentity:29207>*6,<gregtech:gt.meta.plateDouble:760>*2,<minecraft:nether_star>,<moegadd:Mainframe1>*2],
+[null],
+[null],
+[<gregtech:gt.multiitem.technological:12107>]);
