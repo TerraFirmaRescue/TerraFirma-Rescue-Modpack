@@ -739,3 +739,10 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1536, 1600 ,0,[10000],
 [<moegadd:CPU_2GHz_16>]);
 
 /*----CPU ENDS------*/
+
+/*---Crystal Processors---*/
+recipes.remove(<gregtech:gt.multiitem.technological:30500>);
+recipes.addShaped(<gregtech:gt.multiitem.technological:30500>,
+[[<gregtech:gt.multiitem.technological:11006>,<ore:RAM2G>,<gregtech:gt.meta.screw:8636>],
+[<ore:CPU4G>,<moegadd:BasicProcessorMainboard>,<ore:CPU4G>],
+[Cutter,<ore:RAM2G>,Screwdriver]]);

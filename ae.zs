@@ -1,5 +1,15 @@
 import mods.MTUtilsGT;
 
+val Screwdriver = <ore:craftingToolScrewdriver>;
+val HHammer = <ore:craftingToolHardHammer>;
+val SHammer = <ore:craftingToolSoftHammer>;
+val Knife = <ore:craftingToolKnife>;
+val Saw = <ore:craftingToolSaw>;
+val Wrench = <ore:craftingToolWrench>;
+val Chisel = <ore:craftingToolChisel>;
+val Cutter = <ore:craftingToolWireCutter>;
+val n = null;
+
 recipes.addShaped(<appliedenergistics2:item.ToolCertusQuartzWrench>,
 [[<ore:itemCertusQuartz>, null,<ore:itemCertusQuartz>],
 [null,<ore:plateIridium>,null],
@@ -42,9 +52,9 @@ recipes.addShaped(<appliedenergistics2:tile.BlockInscriber>,
 
 recipes.remove(<appliedenergistics2:tile.BlockController>);
 recipes.addShaped(<appliedenergistics2:tile.BlockController>,
-[[<appliedenergistics2:tile.BlockSkyStone:1>,<gregtech:gt.multiitem.technological:30502>,<appliedenergistics2:tile.BlockSkyStone:1>],
-[<appliedenergistics2:item.ItemMultiMaterial:12>,<gregtech:gt.meta.machine:220>,<appliedenergistics2:item.ItemMultiMaterial:12>],
-[<appliedenergistics2:tile.BlockSkyStone:1>,<appliedenergistics2:item.ItemMultiMaterial:24>,<appliedenergistics2:tile.BlockSkyStone:1>]]);
+[[<appliedenergistics2:tile.BlockSkyStone:1>,Cutter,<appliedenergistics2:tile.BlockSkyStone:1>],
+[<appliedenergistics2:item.ItemMultiMaterial:12>,<ore:MF3>,<appliedenergistics2:item.ItemMultiMaterial:12>],
+[<appliedenergistics2:tile.BlockSkyStone:1>,Wrench,<appliedenergistics2:tile.BlockSkyStone:1>]]);
 
 recipes.remove(<appliedenergistics2:tile.BlockDrive>);
 recipes.addShaped(<appliedenergistics2:tile.BlockDrive>,
@@ -91,3 +101,30 @@ recipes.addShaped(,
 [],
 []]);
 */
+
+/*--Storage Cells--*/
+
+recipes.remove(<appliedenergistics2:tile.BlockCraftingStorage>);
+recipes.remove(<appliedenergistics2:tile.BlockCraftingStorage:1>);
+recipes.remove(<appliedenergistics2:tile.BlockCraftingStorage:2>);
+recipes.remove(<appliedenergistics2:tile.BlockCraftingStorage:3>);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockCraftingStorage>,
+[[<gregtech:gt.meta.screw:8636>,<ore:RAM256M>,<gregtech:gt.meta.ring:8636>],
+[null,<appliedenergistics2:tile.BlockCraftingUnit>,null],
+[<gregtech:gt.meta.screw:8636>,null,Screwdriver]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockCraftingStorage:1>,
+[[<gregtech:gt.meta.screw:8636>,<ore:RAM512M>,<gregtech:gt.meta.ring:8636>],
+[null,<appliedenergistics2:tile.BlockCraftingUnit>,null],
+[<gregtech:gt.meta.screw:8636>,null,Screwdriver]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockCraftingStorage:2>,
+[[<gregtech:gt.meta.screw:8636>,<ore:RAM1G>,<gregtech:gt.meta.ring:8636>],
+[null,<appliedenergistics2:tile.BlockCraftingUnit>,null],
+[<gregtech:gt.meta.screw:8636>,null,Screwdriver]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockCraftingStorage:3>,
+[[<gregtech:gt.meta.screw:8636>,<ore:RAM2G>,<gregtech:gt.meta.ring:8636>],
+[null,<appliedenergistics2:tile.BlockCraftingUnit>,null],
+[<gregtech:gt.meta.screw:8636>,null,Screwdriver]]);
