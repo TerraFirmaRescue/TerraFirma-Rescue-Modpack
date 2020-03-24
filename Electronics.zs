@@ -507,3 +507,235 @@ MTUtilsGT.addCustomRecipe("gt.recipe.fluidsolidifier", false, 16, 100 ,0,[10000]
 [n],
 [<moegadd:EpoxyPlate>]);
 
+/*--After Aligned Wafer to integrated circuits--*/
+MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 200 ,0,[10000],
+[<moegadd:Wafer1wm>],
+[<liquid:hydrogenfluoride>*80],
+[<liquid:hydrogen>*40],
+[<moegadd:CleanedWafer1wm>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 200 ,0,[10000],
+[<moegadd:Wafer200nm>],
+[<liquid:hydrogenfluoride>*80],
+[<liquid:hydrogen>*40],
+[<moegadd:CleanedWafer200nm>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 200 ,0,[10000],
+[<moegadd:Wafer60nm>],
+[<liquid:hydrogenfluoride>*80],
+[<liquid:hydrogen>*40],
+[<moegadd:CleanedWafer60nm>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 200 ,0,[10000],
+[<moegadd:Wafer20nm>],
+[<liquid:hydrogenfluoride>*80],
+[<liquid:hydrogen>*40],
+[<moegadd:CleanedWafer20nm>]);
+
+/*-------------- -------------- --------------*/
+
+MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8019>,<moegadd:CleanedWafer1wm>],
+[n],
+[n],
+[<moegadd:MonolayerWafer1wm>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8205>,<moegadd:CleanedWafer1wm>],
+[n],
+[n],
+[<moegadd:MonolayerWafer1wm>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8019>,<moegadd:CleanedWafer200nm>],
+[n],
+[n],
+[<moegadd:MonolayerWafer200nm>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8205>,<moegadd:CleanedWafer200nm>],
+[n],
+[n],
+[<moegadd:MonolayerWafer200nm>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8019>,<moegadd:CleanedWafer60nm>],
+[n],
+[n],
+[<moegadd:MonolayerWafer60nm>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8205>,<moegadd:CleanedWafer60nm>],
+[n],
+[n],
+[<moegadd:MonolayerWafer60nm>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8019>,<moegadd:CleanedWafer20nm>],
+[n],
+[n],
+[<moegadd:MonolayerWafer20nm>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8205>,<moegadd:CleanedWafer20nm>],
+[n],
+[n],
+[<moegadd:MonolayerWafer20nm>]);
+
+/*-------------- -------------- --------------*/
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 128, 400 ,0,[10000],
+[<moegadd:MonolayerWafer1wm>*4,<gregtech:gt.meta.foil:290>*4],
+[<liquid:sulfuricacid>*150],
+[n],
+[<moegadd:MultilayerWafer1wm>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 128, 400 ,0,[10000],
+[<moegadd:MonolayerWafer200nm>*4,<gregtech:gt.meta.foil:290>*4],
+[<liquid:sulfuricacid>*150],
+[n],
+[<moegadd:MultilayerWafer200nm>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 128, 400 ,0,[10000],
+[<moegadd:MonolayerWafer60nm>*4,<gregtech:gt.meta.foil:290>*4],
+[<liquid:sulfuricacid>*150],
+[n],
+[<moegadd:MultilayerWafer60nm>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 128, 400 ,0,[10000],
+[<moegadd:MonolayerWafer20nm>*4,<gregtech:gt.meta.foil:290>*4],
+[<liquid:sulfuricacid>*150],
+[n],
+[<moegadd:MultilayerWafer20nm>]);
+
+/*-------------- -------------- --------------*/
+
+MTUtilsGT.addCustomRecipe("gt.recipe.cutter", false, 16, 200 ,0,[10000],
+[<moegadd:MultilayerWafer1wm>],
+[<liquid:lubricant>*20],
+[n],
+[<moegadd:IntegratedCircuit256MHz>*6]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.cutter", false, 16, 200 ,0,[10000],
+[<moegadd:MultilayerWafer200nm>],
+[<liquid:lubricant>*20],
+[n],
+[<moegadd:IntegratedCircuit512MHz>*6]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.cutter", false, 16, 200 ,0,[10000],
+[<moegadd:MultilayerWafer60nm>],
+[<liquid:lubricant>*20],
+[n],
+[<moegadd:IntegratedCircuit1GHz>*6]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.cutter", false, 16, 200 ,0,[10000],
+[<moegadd:MultilayerWafer20nm>],
+[<liquid:lubricant>*20],
+[n],
+[<moegadd:IntegratedCircuit2GHz>*6]);
+
+/*-------------- CPUs --------------*/
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 300 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit256MHz>*2,<gregtech:gt.meta.bolt:290>*8,<gregtech:gt.meta.wireFine:790>*8],
+[<liquid:molten.solderingalloy>*30],
+[n],
+[<moegadd:CPU_256MHz_2>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 600 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit256MHz>*4,<gregtech:gt.meta.bolt:290>*16,<gregtech:gt.meta.wireFine:790>*8],
+[<liquid:molten.solderingalloy>*60],
+[n],
+[<moegadd:CPU_256MHz_4>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 1000 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit256MHz>*8,<gregtech:gt.meta.bolt:290>*24,<gregtech:gt.meta.wireFine:790>*8],
+[<liquid:molten.solderingalloy>*120],
+[n],
+[<moegadd:CPU_256MHz_8>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 1600 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit256MHz>*16,<gregtech:gt.meta.bolt:290>*32,<gregtech:gt.meta.wireFine:790>*8],
+[<liquid:molten.solderingalloy>*240],
+[n],
+[<moegadd:CPU_256MHz_16>]);
+
+//---
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 768, 300 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit512MHz>*2,<gregtech:gt.meta.bolt:290>*8,<gregtech:gt.meta.wireFine:790>*8],
+[<liquid:molten.solderingalloy>*30],
+[n],
+[<moegadd:CPU_512MHz_2>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 768, 600 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit512MHz>*4,<gregtech:gt.meta.bolt:290>*16,<gregtech:gt.meta.wireFine:790>*8],
+[<liquid:molten.solderingalloy>*60],
+[n],
+[<moegadd:CPU_512MHz_4>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 768, 1000 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit512MHz>*8,<gregtech:gt.meta.bolt:290>*24,<gregtech:gt.meta.wireFine:790>*8],
+[<liquid:molten.solderingalloy>*120],
+[n],
+[<moegadd:CPU_512MHz_8>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 768, 1600 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit512MHz>*16,<gregtech:gt.meta.bolt:290>*32,<gregtech:gt.meta.wireFine:790>*8],
+[<liquid:molten.solderingalloy>*240],
+[n],
+[<moegadd:CPU_512MHz_16>]);
+
+//--
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1024, 300 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit1GHz>*2,<gregtech:gt.meta.bolt:8640>*8,<gregtech:gt.meta.wireFine:780>*8],
+[<liquid:molten.solderingalloy>*30],
+[n],
+[<moegadd:CPU_1GHz_2>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1024, 600 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit1GHz>*4,<gregtech:gt.meta.bolt:8640>*16,<gregtech:gt.meta.wireFine:780>*8],
+[<liquid:molten.solderingalloy>*60],
+[n],
+[<moegadd:CPU_1GHz_4>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1024, 1000 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit1GHz>*8,<gregtech:gt.meta.bolt:8640>*24,<gregtech:gt.meta.wireFine:780>*8],
+[<liquid:molten.solderingalloy>*120],
+[n],
+[<moegadd:CPU_1GHz_8>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1024, 1600 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit1GHz>*16,<gregtech:gt.meta.bolt:8640>*32,<gregtech:gt.meta.wireFine:780>*8],
+[<liquid:molten.solderingalloy>*240],
+[n],
+[<moegadd:CPU_1GHz_16>]);
+
+//---
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1536, 300 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit2GHz>*2,<gregtech:gt.meta.bolt:8640>*8,<gregtech:gt.meta.wireFine:780>*8],
+[<liquid:molten.solderingalloy>*30],
+[n],
+[<moegadd:CPU_2GHz_2>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1536, 600 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit2GHz>*4,<gregtech:gt.meta.bolt:8640>*16,<gregtech:gt.meta.wireFine:780>*8],
+[<liquid:molten.solderingalloy>*60],
+[n],
+[<moegadd:CPU_2GHz_4>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1536, 1000 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit2GHz>*8,<gregtech:gt.meta.bolt:8640>*24,<gregtech:gt.meta.wireFine:780>*8],
+[<liquid:molten.solderingalloy>*120],
+[n],
+[<moegadd:CPU_2GHz_8>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1536, 1600 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:IntegratedCircuit2GHz>*16,<gregtech:gt.meta.bolt:8640>*32,<gregtech:gt.meta.wireFine:780>*8],
+[<liquid:molten.solderingalloy>*240],
+[n],
+[<moegadd:CPU_2GHz_16>]);
+
+/*----CPU ENDS------*/

@@ -103,4 +103,38 @@
 //AR
 <ore:fanSteel>.add(<gregtech:gt.meta.rotor:8630>);
 
+/*---CPU OreDict---*/
+<ore:CPU512M>.add(<moegadd:CPU_256MHz_2>);
+<ore:CPU1G>.add(<moegadd:CPU_256MHz_4>);
+<ore:CPU1G>.add(<moegadd:CPU_512MHz_2>);
+<ore:CPU2G>.add(<moegadd:CPU_256MHz_8>);
+<ore:CPU2G>.add(<moegadd:CPU_512MHz_4>);
+<ore:CPU2G>.add(<moegadd:CPU_1GHz_2>);
+<ore:CPU4G>.add(<moegadd:CPU_256MHz_16>);
+<ore:CPU4G>.add(<moegadd:CPU_512MHz_8>);
+<ore:CPU4G>.add(<moegadd:CPU_1GHz_4>);
+<ore:CPU4G>.add(<moegadd:CPU_2GHz_2>);
+<ore:CPU8G>.add(<moegadd:CPU_512MHz_16>);
+<ore:CPU8G>.add(<moegadd:CPU_1GHz_8>);
+<ore:CPU8G>.add(<moegadd:CPU_2GHz_4>);
+<ore:CPU16G>.add(<moegadd:CPU_1GHz_16>);
+<ore:CPU16G>.add(<moegadd:CPU_2GHz_8>);
+<ore:CPU32G>.add(<moegadd:CPU_2GHz_16>);
 
+/*---RAM OreDict---*/
+<ore:RAM256M>.add(<moegadd:RAM_128M_2>);
+<ore:RAM512M>.add(<moegadd:RAM_128M_4>);
+<ore:RAM512M>.add(<moegadd:RAM_256M_2>);
+<ore:RAM1G>.add(<moegadd:RAM_128M_8>);
+<ore:RAM1G>.add(<moegadd:RAM_256M_4>);
+<ore:RAM1G>.add(<moegadd:RAM_512M_2>);
+<ore:RAM2G>.add(<moegadd:RAM_128M_16>);
+<ore:RAM2G>.add(<moegadd:RAM_256M_8>);
+<ore:RAM2G>.add(<moegadd:RAM_512M_4>);
+<ore:RAM2G>.add(<moegadd:RAM_1G_2>);
+<ore:RAM4G>.add(<moegadd:RAM_256M_16>);
+<ore:RAM4G>.add(<moegadd:RAM_512M_8>);
+<ore:RAM4G>.add(<moegadd:RAM_1G_4>);
+<ore:RAM8G>.add(<moegadd:RAM_512M_16>);
+<ore:RAM8G>.add(<moegadd:RAM_1G_8>);
+<ore:RAM16G>.add(<moegadd:RAM_1G_16>);
