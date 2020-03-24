@@ -1,4 +1,6 @@
 import mods.MTUtilsGT;
+import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
 
 val Screwdriver = <ore:craftingToolScrewdriver>;
 val HHammer = <ore:craftingToolHardHammer>;
@@ -778,3 +780,233 @@ recipes.addShaped(<gregtech:gt.multitileentity:18204>,
 [[<gregtech:gt.multiitem.technological:30504>,<gregtech:gt.meta.screw:220>,n],
 [Cutter,<ore:MF5>,Screwdriver],
 [n,<gregtech:gt.meta.screw:220>,n]]);
+
+/*----Wafer----*/
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1024, 160 ,0,[10000],
+[<moegadd:PhotomaskFilm1>*0,<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl1>*0,<gregtech:gt.multiitem.technological:30501>*0],
+[n],
+[n],
+[<moegadd:Wafer1wm>]);
+//1wm
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 128, 40 ,0,[10000],
+[<moegadd:PhotomaskFilm1>*0,<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl1>*0,<moegadd:Mainframe3>*0],
+[n],
+[n],
+[<moegadd:Wafer1wm>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 128, 40 ,0,[10000],
+[<moegadd:PhotomaskFilm1>*0,<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl1>*0,<moegadd:Mainframe4>*0],
+[n],
+[n],
+[<moegadd:Wafer1wm>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 128, 40 ,0,[10000],
+[<moegadd:PhotomaskFilm1>*0,<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl1>*0,<moegadd:Mainframe5>*0],
+[n],
+[n],
+[<moegadd:Wafer1wm>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 128, 40 ,0,[10000],
+[<moegadd:PhotomaskFilm1>*0,<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl1>*0,<moegadd:Mainframe6>*0],
+[n],
+[n],
+[<moegadd:Wafer1wm>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 128, 40 ,0,[10000],
+[<moegadd:PhotomaskFilm1>*0,<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl1>*0,<moegadd:Mainframe7>*0],
+[n],
+[n],
+[<moegadd:Wafer1wm>]);
+//1wm too
+
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 256, 80 ,0,[10000],
+[<moegadd:PhotomaskFilm1>*0,<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl2>*0,<moegadd:Mainframe4>*0],
+[n],
+[n],
+[<moegadd:Wafer200nm>]);
+//200nm
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 256, 80 ,0,[10000],
+[<moegadd:PhotomaskFilm1>*0,<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl2>*0,<moegadd:Mainframe5>*0],
+[n],
+[n],
+[<moegadd:Wafer200nm>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 256, 80 ,0,[10000],
+[<moegadd:PhotomaskFilm1>*0,<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl2>*0,<moegadd:Mainframe6>*0],
+[n],
+[n],
+[<moegadd:Wafer200nm>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 256, 80 ,0,[10000],
+[<moegadd:PhotomaskFilm1>*0,<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl2>*0,<moegadd:Mainframe7>*0],
+[n],
+[n],
+[<moegadd:Wafer200nm>]);
+//200nm too
+
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 384, 160 ,0,[10000],
+[<moegadd:PhotomaskFilm1>*0,<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl3>*0,<moegadd:Mainframe5>*0],
+[n],
+[n],
+[<moegadd:Wafer60nm>]);
+//60nm
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 384, 160 ,0,[10000],
+[<moegadd:PhotomaskFilm1>*0,<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl3>*0,<moegadd:Mainframe6>*0],
+[n],
+[n],
+[<moegadd:Wafer60nm>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 384, 160 ,0,[10000],
+[<moegadd:PhotomaskFilm1>*0,<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl3>*0,<moegadd:Mainframe7>*0],
+[n],
+[n],
+[<moegadd:Wafer60nm>]);
+//60nm too
+
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 512, 320 ,0,[10000],
+[<moegadd:PhotomaskFilm1>*0,<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl4>*0,<moegadd:Mainframe6>*0],
+[n],
+[n],
+[<moegadd:Wafer20nm>]);
+//20nm
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 512, 320 ,0,[10000],
+[<moegadd:PhotomaskFilm1>*0,<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl4>*0,<moegadd:Mainframe7>*0],
+[n],
+[n],
+[<moegadd:Wafer20nm>]);
+//20nm
+//20nm too
+/*----Wafer End----*/
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 128, 160 ,0,[10000],
+[<gregtech:gt.meta.dustSmall:50>,<gregtech:gt.meta.dust:60>,<gregtech:gt.meta.stick:740>*2],
+[<liquid:glass>*144],
+[n],
+[<moegadd:PhotomaskRaw>]);
+//PhotomaskRaw
+
+/*----PhotomaskControl----*/
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 256 ,0,[10000],
+[<moegadd:PhotomaskRaw>,<gregtech:gt.meta.lens:8300>*0,<gregtech:gt.multiitem.technological:30501>*0],
+[<liquid:polyvinylchloride>*144],
+[n],
+[<moegadd:PhotomaskControl1>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 256 ,0,[10000],
+[<moegadd:PhotomaskRaw>,<gregtech:gt.meta.lens:8300>*0,<moegadd:Mainframe3>*0],
+[<liquid:polyvinylchloride>*144],
+[n],
+[<moegadd:PhotomaskControl1>]);
+//1
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 512 ,0,[10000],
+[<moegadd:PhotomaskRaw>,<gregtech:gt.meta.lens:8300>*0,<moegadd:Mainframe4>*0],
+[<liquid:polyvinylchloride>*144],
+[n],
+[<moegadd:PhotomaskControl2>]);
+//2
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 1024 ,0,[10000],
+[<moegadd:PhotomaskRaw>,<gregtech:gt.meta.lens:8300>*0,<moegadd:Mainframe5>*0],
+[<liquid:polyvinylchloride>*144],
+[n],
+[<moegadd:PhotomaskControl3>]);
+//3
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 2048 ,0,[10000],
+[<moegadd:PhotomaskRaw>,<gregtech:gt.meta.lens:8300>*0,<moegadd:Mainframe6>*0],
+[<liquid:polyvinylchloride>*144],
+[n],
+[<moegadd:PhotomaskControl4>]);
+//4
+/*----PhotomaskControl End----*/
+
+/*----Mainboard----*/
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 100 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>,<gregtech:gt.multiitem.technological:30001>,<moegadd:PatchTransistor>*4,<moegadd:SMDResistor>*4,<moegadd:PatchDiode>*4,<moegadd:PatchCapacitor>*4,<gregtech:gt.multiitem.technological:30501>*0,],
+[<liquid:molten.solderingalloy>*144],
+[n],
+[<moegadd:BasicProcessorMainboard>]);
+//1
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 200 ,0,[10000],
+[<moegadd:FabricStrengthenedCircuitBoard>,<gregtech:gt.multiitem.technological:30003>,<moegadd:PatchTransistor>*16,<moegadd:SMDResistor>*16,<moegadd:PatchDiode>*16,<moegadd:PatchCapacitor>*16,<moegadd:Mainframe4>*0],
+[<liquid:molten.solderingalloy>*288],
+[n],
+[<moegadd:IntermediateProcessorMainboard>]);
+//2
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1024, 400 ,0,[10000],
+[<moegadd:FabricStrengthenedCircuitBoard>,<gregtech:gt.multiitem.technological:30005>,<moegadd:PatchTransistor>*64,<moegadd:SMDResistor>*64,<moegadd:PatchDiode>*64,<moegadd:PatchCapacitor>*64,<moegadd:Mainframe6>*0],
+[<liquid:molten.solderingalloy>*576],
+[n],
+[<moegadd:AdvancedProcessorMainboard>]);
+//3
+/*----Mainboard End----*/
+
+/*----Mainframe----*/
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
+[<moegadd:CPU_256MHz_2>,<moegadd:RAM_128M_2>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<liquid:molten.solderingalloy>*288],
+[n],
+[<moegadd:Mainframe1>]);
+//1
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
+[<moegadd:CPU_512MHz_2>,<moegadd:RAM_128M_4>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<liquid:molten.solderingalloy>*288],
+[n],
+[<moegadd:Mainframe2>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
+[<moegadd:CPU_256MHz_4>,<moegadd:RAM_128M_4>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<liquid:molten.solderingalloy>*288],
+[n],
+[<moegadd:Mainframe2>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
+[<moegadd:CPU_256MHz_4>,<moegadd:RAM_256M_2>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<liquid:molten.solderingalloy>*288],
+[n],
+[<moegadd:Mainframe2>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
+[<moegadd:CPU_512MHz_2>,<moegadd:RAM_256M_2>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<liquid:molten.solderingalloy>*288],
+[n],
+[<moegadd:Mainframe2>]);
+//2
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
+[<moegadd:CPU_1GHz_2>,<moegadd:RAM_256M_4>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<liquid:molten.solderingalloy>*288],
+[n],
+[<moegadd:Mainframe3>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
+[<moegadd:CPU_1GHz_2>,<moegadd:RAM_128M_8>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<liquid:molten.solderingalloy>*288],
+[n],
+[<moegadd:Mainframe3>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
+[<moegadd:CPU_1GHz_2>,<moegadd:RAM_512M_2>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<liquid:molten.solderingalloy>*288],
+[n],
+[<moegadd:Mainframe3>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
+[<moegadd:CPU_256MHz_8>,<moegadd:RAM_256M_4>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<liquid:molten.solderingalloy>*288],
+[n],
+[<moegadd:Mainframe3>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
+[<moegadd:CPU_256MHz_8>,<moegadd:RAM_128M_8>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<liquid:molten.solderingalloy>*288],
+[n],
+[<moegadd:Mainframe3>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
+[<moegadd:CPU_256MHz_8>,<moegadd:RAM_512M_2>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<liquid:molten.solderingalloy>*288],
+[n],
+[<moegadd:Mainframe3>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
+[<moegadd:CPU_512MHz_4>,<moegadd:RAM_256M_4>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<liquid:molten.solderingalloy>*288],
+[n],
+[<moegadd:Mainframe3>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
+[<moegadd:CPU_512MHz_4>,<moegadd:RAM_128M_8>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<liquid:molten.solderingalloy>*288],
+[n],
+[<moegadd:Mainframe3>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
+[<moegadd:CPU_512MHz_4>,<moegadd:RAM_512M_2>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<liquid:molten.solderingalloy>*288],
+[n],
+[<moegadd:Mainframe3>]);
+//3
