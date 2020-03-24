@@ -26,11 +26,6 @@ recipes.remove(<gregtech:gt.multitileentity:28950>);
 recipes.addShapeless(<gregtech:gt.multitileentity:28950>,[<tfctech:item.Steel Wire>,<tfctech:item.Steel Wire>]);
 
 recipes.remove(<mo:isolinear_circuit>);
-recipes.remove(<gregtech:gt.multitileentity:28350>);
-recipes.addShaped(<gregtech:gt.multitileentity:28350>,
-[[<tfctech:item.Copper Wire>,null,null],
-[null,null,null],
-[null,null,null]]);
 
 recipes.addShaped(<tfctech:item.Circuit>,
 [[<minecraft:paper>,<minecraft:paper>,<minecraft:paper>],
