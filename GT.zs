@@ -955,3 +955,10 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 2048, 400 ,0,[10000],
 [null],
 [null],
 [<gregtech:gt.multiitem.technological:12107>]);
+
+//star platinum
+MTUtilsGT.addCustomRecipe("gt.recipe.ionizer", false, 8192, 2000 ,0,[5000],
+[<minecraft:nether_star>],
+[<liquid:molten.platinum>*1440],
+[null],
+[<moegadd:StarPlatinum>]);
