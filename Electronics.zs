@@ -128,15 +128,15 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 120, 200 ,0,[10000],
 //tie pian jing ti guan
 
 /*--Silicon--*/
-MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 128, 100, 1000,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 200, 1000,[10000],
 [<gregtech:gt.meta.dust:140>],
 [<liquid:hydrochloricacid>*1000],
 [<liquid:silane>*1000,<liquid:chlorine>*500],
 [null]);
 //SiH4
 
-MTUtilsGT.addCustomRecipe("gt.recipe.distillery", false, 512, 200, 1000,[10000],
-[<gregtech:gt.meta.plateGemTiny:140>*0],
+MTUtilsGT.addCustomRecipe("gt.recipe.distillery", false, 32, 3200, 1000,[10000],
+[<gregtech:gt.meta.nugget:140>*0],
 [<liquid:silane>*1000],
 [null],
 [<moegadd:PolycrystallineSilicon>]);
@@ -150,7 +150,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 32, 100, 1000,[10000],
 //zi jing
 
 MTUtilsGT.removeAllRecipes("gt.recipe.crystallisationcrucible",<gregtech:gt.meta.boule:140>);
-MTUtilsGT.addCustomRecipe("gt.recipe.crystallisationcrucible", false, 512, 65536, 1000,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.crystallisationcrucible", false, 16, 65536, 1000,[10000],
 [<moegadd:SeedCrystalSilicon>],
 [<liquid:nitrogen>*1000,<liquid:molten.silicon>*1152],
 [null],
@@ -1001,7 +1001,7 @@ for c, cpu6 in cpu06 {
 }
 //6
     MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
-[<moegadd:CPU_2GHz_16>,<moegadd:RAM_1G_16>,<moegadd:IntermediateProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<moegadd:CPU_2GHz_16>,<moegadd:RAM_1G_16>,<moegadd:AdvancedProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
 [<liquid:molten.solderingalloy>*288],
 [n],
 [<moegadd:Mainframe7>]);

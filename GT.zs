@@ -937,21 +937,21 @@ recipes.addShaped(<gregtech:gt.multitileentity:17200>,
 
 //PUV1 emitter
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 4096, 400 ,0,[10000],
-[<gregtech:gt.multitileentity:29207>*10,<gregtech:gt.meta.plateDouble:8684>*2,<minecraft:nether_star>,<moegadd:Mainframe3>*2],
+[<gregtech:gt.multitileentity:29207>*10,<gregtech:gt.meta.plateDouble:8684>*2,<moegadd:StarPlatinum>,<moegadd:Mainframe3>*2],
 [null],
 [null],
 [<gregtech:gt.multiitem.technological:12109>]);
 
 //UV emitter
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 3072, 400 ,0,[10000],
-[<gregtech:gt.multitileentity:29207>*8,<gregtech:gt.meta.plateDouble:8790>*2,<minecraft:nether_star>,<moegadd:Mainframe2>*2],
+[<gregtech:gt.multitileentity:29207>*8,<gregtech:gt.meta.plateDouble:8790>*2,<moegadd:StarPlatinum>,<moegadd:Mainframe2>*2],
 [null],
 [null],
 [<gregtech:gt.multiitem.technological:12108>]);
 
 //ZPM emitter
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 2048, 400 ,0,[10000],
-[<gregtech:gt.multitileentity:29207>*6,<gregtech:gt.meta.plateDouble:760>*2,<minecraft:nether_star>,<moegadd:Mainframe1>*2],
+[<gregtech:gt.multitileentity:29207>*6,<gregtech:gt.meta.plateDouble:760>*2,<moegadd:StarPlatinum>,<moegadd:Mainframe1>*2],
 [null],
 [null],
 [<gregtech:gt.multiitem.technological:12107>]);
