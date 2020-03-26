@@ -94,9 +94,17 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 64, 1000 ,0,[10000],
 
 MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 64, 1000 ,0,[10000],
 [<gregtech:gt.meta.dust:8268>*4],
-[<liquid:epichlorohydrin>*1000,<liquid:bisphenol>*1000],
+[<liquid:epichlorohydrin>*1000,<liquid:bisphenol>*1000,<liquid:phosphoricacid>*50],
 [<liquid:epoxid>*1000],
 [n]);
+
+/*--H3PO4---*/
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 500 ,0,[10000],
+[<gregtech:gt.meta.dust:8207>],
+[<liquid:hydrochloricacid>*3000],
+[<liquid:phosphoricacid>*1000,<liquid:chlorine>*2000],
+[n]);
+
 
 /*--Patches--*/
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 120, 200 ,0,[10000],
