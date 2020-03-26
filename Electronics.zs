@@ -946,22 +946,22 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
 var cpu04 = [<moegadd:CPU_512MHz_8>,<moegadd:CPU_256MHz_16>,<moegadd:CPU_1GHz_4>,<moegadd:CPU_2GHz_2>] as IItemStack[];
 for a, cpu4 in cpu04 {
     MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
-[cpu4,<moegadd:RAM_512M_4>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[cpu4,<moegadd:RAM_512M_4>,<moegadd:IntermediateProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
 [<liquid:molten.solderingalloy>*288],
 [n],
 [<moegadd:Mainframe4>]);
     MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
-[cpu4,<moegadd:RAM_256M_8>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[cpu4,<moegadd:RAM_256M_8>,<moegadd:IntermediateProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
 [<liquid:molten.solderingalloy>*288],
 [n],
 [<moegadd:Mainframe4>]);
     MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
-[cpu4,<moegadd:RAM_1G_2>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[cpu4,<moegadd:RAM_1G_2>,<moegadd:IntermediateProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
 [<liquid:molten.solderingalloy>*288],
 [n],
 [<moegadd:Mainframe4>]);
     MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
-[cpu4,<moegadd:RAM_128M_16>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[cpu4,<moegadd:RAM_128M_16>,<moegadd:IntermediateProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
 [<liquid:molten.solderingalloy>*288],
 [n],
 [<moegadd:Mainframe4>]);
@@ -970,17 +970,17 @@ for a, cpu4 in cpu04 {
 var cpu05 = [<moegadd:CPU_512MHz_16>,<moegadd:CPU_1GHz_8>,<moegadd:CPU_2GHz_4>] as IItemStack[];
 for b, cpu5 in cpu05 {
     MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
-[cpu5,<moegadd:RAM_256M_16>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[cpu5,<moegadd:RAM_256M_16>,<moegadd:IntermediateProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
 [<liquid:molten.solderingalloy>*288],
 [n],
 [<moegadd:Mainframe5>]);
     MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
-[cpu5,<moegadd:RAM_512M_8>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[cpu5,<moegadd:RAM_512M_8>,<moegadd:IntermediateProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
 [<liquid:molten.solderingalloy>*288],
 [n],
 [<moegadd:Mainframe5>]);
     MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
-[cpu5,<moegadd:RAM_1G_4>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[cpu5,<moegadd:RAM_1G_4>,<moegadd:IntermediateProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
 [<liquid:molten.solderingalloy>*288],
 [n],
 [<moegadd:Mainframe5>]);
@@ -989,23 +989,23 @@ for b, cpu5 in cpu05 {
 var cpu06 = [<moegadd:CPU_1GHz_16>,<moegadd:CPU_2GHz_8>] as IItemStack[];
 for c, cpu6 in cpu06 {
     MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
-[cpu6,<moegadd:RAM_1G_8>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[cpu6,<moegadd:RAM_1G_8>,<moegadd:IntermediateProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
 [<liquid:molten.solderingalloy>*288],
 [n],
 [<moegadd:Mainframe6>]);
     MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
-[cpu6,<moegadd:RAM_512M_16>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[cpu6,<moegadd:RAM_512M_16>,<moegadd:IntermediateProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
 [<liquid:molten.solderingalloy>*288],
 [n],
 [<moegadd:Mainframe6>]);
 }
 //6
     MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
-[<moegadd:CPU_2GHz_16>,<moegadd:RAM_1G_16>,<moegadd:BasicProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
+[<moegadd:CPU_2GHz_16>,<moegadd:RAM_1G_16>,<moegadd:IntermediateProcessorMainboard>,<gregtech:gt.multitileentity:28366>*2,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.screw:8636>,<gregtech:gt.meta.rotor:8218>,<gregtech:gt.multiitem.technological:12000>],
 [<liquid:molten.solderingalloy>*288],
 [n],
 [<moegadd:Mainframe7>]);
-<<<<<<< HEAD
+
 //7
 /*----Mainframe End----*/
 
