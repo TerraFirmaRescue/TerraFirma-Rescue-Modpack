@@ -1070,3 +1070,5 @@ for c, cpu6 in cpu06 {
 [<liquid:molten.solderingalloy>*288],
 [n],
 [<moegadd:Mainframe7>]);
+//7
+/*----Mainframe End----*/
