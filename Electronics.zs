@@ -328,7 +328,7 @@ recipes.remove(<gregtech:gt.multitileentity:18116>);
 recipes.addShaped(<gregtech:gt.multitileentity:18116>,
 [[<gregtech:gt.meta.lens:8001>,<gregtech:gt.meta.lens:8001>,<gregtech:gt.meta.lens:8001>],
 [<advancedRocketry:satellitePrimaryFunction>,<gregtech:gt.multitileentity:18002>,<advancedRocketry:satellitePrimaryFunction>],
-[<gregtech:gt.multiitem.technological:30303>,Wrench,<gregtech:gt.multiitem.technological:30303>]]);
+[<ore:gt:circuit3>,Wrench,<ore:gt:circuit3>]]);
 
 recipes.remove(<gregtech:gt.multitileentity:17122>);
 recipes.addShaped(<gregtech:gt.multitileentity:17122>,
