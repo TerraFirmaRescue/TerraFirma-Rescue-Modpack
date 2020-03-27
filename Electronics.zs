@@ -102,7 +102,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 64, 1000 ,0,[10000],
 MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 500 ,0,[10000],
 [<gregtech:gt.meta.dust:8207>],
 [<liquid:hydrochloricacid>*3000],
-[<liquid:phosphoricacid>*1000,<liquid:chlorine>*2000],
+[<liquid:phosphoricacid>*1000,<liquid:chlorine>*1000],
 [n]);
 
 
@@ -335,7 +335,7 @@ recipes.addShaped(<gregtech:gt.multitileentity:17122>,
 [[n,<advancedRocketry:satellitePrimaryFunction>,n],
 [<advancedRocketry:satellitePrimaryFunction>,<gregtech:gt.multitileentity:18116>,<advancedRocketry:satellitePrimaryFunction>],
 [Wrench,<advancedRocketry:satellitePrimaryFunction>,Screwdriver]]);
-
+c
 /*--RAM Photomasks--*/
 MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 512, 2000 ,0,[10000],
 [<gregtech:gt.meta.lens:8304>*0,<gregtech:gt.multiitem.technological:30306>*0,<moegadd:PhotomaskRaw>],
