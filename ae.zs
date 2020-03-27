@@ -110,14 +110,14 @@ recipes.remove(<appliedenergistics2:tile.BlockCraftingStorage:2>);
 recipes.remove(<appliedenergistics2:tile.BlockCraftingStorage:3>);
 
 recipes.addShaped(<appliedenergistics2:tile.BlockCraftingStorage>,
-[[<gregtech:gt.meta.screw:8636>,<ore:RAM256M>,<gregtech:gt.meta.ring:8636>],
+[[<gregtech:gt.meta.screw:8651>,<ore:RAM256M>,<gregtech:gt.meta.ring:8651>],
 [null,<appliedenergistics2:tile.BlockCraftingUnit>,null],
-[<gregtech:gt.meta.screw:8636>,null,Screwdriver]]);
+[<gregtech:gt.meta.screw:8651>,null,Screwdriver]]);
 
 recipes.addShaped(<appliedenergistics2:tile.BlockCraftingStorage:1>,
-[[<gregtech:gt.meta.screw:8636>,<ore:RAM512M>,<gregtech:gt.meta.ring:8636>],
+[[<gregtech:gt.meta.screw:130>,<ore:RAM512M>,<gregtech:gt.meta.ring:130>],
 [null,<appliedenergistics2:tile.BlockCraftingUnit>,null],
-[<gregtech:gt.meta.screw:8636>,null,Screwdriver]]);
+[<gregtech:gt.meta.screw:130>,null,Screwdriver]]);
 
 recipes.addShaped(<appliedenergistics2:tile.BlockCraftingStorage:2>,
 [[<gregtech:gt.meta.screw:8636>,<ore:RAM1G>,<gregtech:gt.meta.ring:8636>],
@@ -125,6 +125,6 @@ recipes.addShaped(<appliedenergistics2:tile.BlockCraftingStorage:2>,
 [<gregtech:gt.meta.screw:8636>,null,Screwdriver]]);
 
 recipes.addShaped(<appliedenergistics2:tile.BlockCraftingStorage:3>,
-[[<gregtech:gt.meta.screw:8636>,<ore:RAM2G>,<gregtech:gt.meta.ring:8636>],
+[[<gregtech:gt.meta.screw:240>,<ore:RAM2G>,<gregtech:gt.meta.ring:240>],
 [null,<appliedenergistics2:tile.BlockCraftingUnit>,null],
-[<gregtech:gt.meta.screw:8636>,null,Screwdriver]]);
+[<gregtech:gt.meta.screw:240>,null,Screwdriver]]);
