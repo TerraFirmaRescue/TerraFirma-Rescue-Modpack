@@ -272,7 +272,8 @@ MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 200 ,0,[10000],
 [<moegadd:EpoxyCircuitBoard>]);
 
 /*---Platinum circuit mainboard--*/
-MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 16, 64 ,0,[10000],
+MTUtilsGT.removeAllRecipes("gt.recipe.press", <gregtech:gt.multiitem.technological:30006>);
+MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 64 ,0,[10000],
 [<moegadd:EpoxyCircuitBoard>,<gregtech:gt.multiitem.technological:30005>],
 [n],
 [n],
