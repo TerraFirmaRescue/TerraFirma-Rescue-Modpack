@@ -1,3 +1,6 @@
+import minetweaker.item.IItemStack;
+
+
 //Ore Dictionary Change
 
 //deprecated
@@ -249,3 +252,10 @@
 <ore:MF6>.addAll(<ore:MF8>);
 
 <ore:MF7>.addAll(<ore:MF8>);
+
+var doors = [<terrafirmacraft:item.Oak Door>,<terrafirmacraft:item.Aspen Door>,<terrafirmacraft:item.Birch Door>,<terrafirmacraft:item.Chestnut Door>,<terrafirmacraft:item.Douglas Fir Door>,<terrafirmacraft:item.Hickory Door>,<terrafirmacraft:item.Maple Door>,<terrafirmacraft:item.Ash Door>,<terrafirmacraft:item.Pine Door>,<terrafirmacraft:item.Sequoia Door>,<terrafirmacraft:item.Spruce Door>,<terrafirmacraft:item.Sycamore Door>,<terrafirmacraft:item.White Cedar Door>,<terrafirmacraft:item.White Elm Door>,<terrafirmacraft:item.Willow Door>,<terrafirmacraft:item.Kapok Door>,<terrafirmacraft:item.Acacia Door>] as IItemStack[];
+
+for i, door in doors {
+    <ore:tfcDoor>.add(door);
+
+}

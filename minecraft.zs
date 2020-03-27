@@ -1,4 +1,16 @@
 import mods.MTUtilsGT;
+import minetweaker.item.IItemStack;
+import minetweaker.item.IIngredient;
+
+val Screwdriver = <ore:craftingToolScrewdriver>;
+val HHammer = <ore:craftingToolHardHammer>;
+val SHammer = <ore:craftingToolSoftHammer>;
+val Knife = <ore:craftingToolKnife>;
+val Saw = <ore:craftingToolSaw>;
+val Wrench = <ore:craftingToolWrench>;
+val Chisel = <ore:craftingToolChisel>;
+val Cutter = <ore:craftingToolWireCutter>;
+val n = null;
 
 //delete starts
 
@@ -66,3 +78,35 @@ MTUtilsGT.addCustomRecipe("gt.recipe.ionizer", false, 4096, 8000, 0, [10000],
 [<liquid:soulsandoil>*500],
 [null],
 [<minecraft:nether_star>]);
+
+/*---Vars---*/
+var singlePlanks = [<terrafirmacraft:item.SinglePlank>,<terrafirmacraft:item.SinglePlank:1>,<terrafirmacraft:item.SinglePlank:2>,<terrafirmacraft:item.SinglePlank:3>,<terrafirmacraft:item.SinglePlank:4>,<terrafirmacraft:item.SinglePlank:5>,<terrafirmacraft:item.SinglePlank:6>,<terrafirmacraft:item.SinglePlank:7>,<terrafirmacraft:item.SinglePlank:8>,<terrafirmacraft:item.SinglePlank:9>,<terrafirmacraft:item.SinglePlank:10>,<terrafirmacraft:item.SinglePlank:11>,<terrafirmacraft:item.SinglePlank:12>,<terrafirmacraft:item.SinglePlank:13>,<terrafirmacraft:item.SinglePlank:14>,<terrafirmacraft:item.SinglePlank:15>,<terrafirmacraft:item.SinglePlank:16>] as IItemStack[];
+var doors = [<terrafirmacraft:item.Oak Door>,<terrafirmacraft:item.Aspen Door>,<terrafirmacraft:item.Birch Door>,<terrafirmacraft:item.Chestnut Door>,<terrafirmacraft:item.Douglas Fir Door>,<terrafirmacraft:item.Hickory Door>,<terrafirmacraft:item.Maple Door>,<terrafirmacraft:item.Ash Door>,<terrafirmacraft:item.Pine Door>,<terrafirmacraft:item.Sequoia Door>,<terrafirmacraft:item.Spruce Door>,<terrafirmacraft:item.Sycamore Door>,<terrafirmacraft:item.White Cedar Door>,<terrafirmacraft:item.White Elm Door>,<terrafirmacraft:item.Willow Door>,<terrafirmacraft:item.Kapok Door>,<terrafirmacraft:item.Acacia Door>] as IItemStack[];
+
+for i, plank in singlePlanks {
+    var door = doors[i];
+
+    recipes.remove(door);
+    recipes.addShaped(door,
+    [[<gregtech:gt.meta.screw:8221>,<gregtech:gt.meta.ring:8221>,plank],
+    [<terrafirmacraft:item.stick>,plank,plank],
+    [Screwdriver,plank,plank]]);
+
+}
+
+recipes.addShapeless(<minecraft:stick>,[<terrafirmacraft:item.stick>]);
+recipes.addShapeless(<terrafirmacraft:item.stick>,[<minecraft:stick>]);
+recipes.addShapeless(<gregtech:gt.meta.ring:8221>,
+[<ore:woodLumber>,<ore:itemSaw>]);
+
+recipes.remove(<tfccellars:CellarDoorItem>);
+recipes.addShaped(<tfccellars:CellarDoorItem>,
+[[n,<terrafirmacraft:item.Straw>,n],
+[<terrafirmacraft:item.Clay>,<ore:tfcDoor>,<terrafirmacraft:item.Clay>],
+[n,<terrafirmacraft:item.Straw>,n]]);
+
+recipes.remove(<minecraft:wooden_door>);
+recipes.addShapeless(<minecraft:wooden_door>,[<ore:tfcDoor>]);
+
+
+
