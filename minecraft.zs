@@ -54,9 +54,6 @@ recipes.addShaped(<minecraft:crafting_table>,
 [<ore:stoneSmooth>,null,null],
 [null,null,null]]);
 
-recipes.addShapeless(<minecraft:reeds>,[<terrafirmacraft:item.Seeds Sugarcane>,<terrafirmacraft:item.Reeds>]);
-//sugar cane
-
 //skull of skeleton
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 2048, 4000, 0, [10000],
 [<minecraft:dye:15>*32,<gregtech:gt.meta.stick:770>],
@@ -79,7 +76,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.ionizer", false, 4096, 8000, 0, [10000],
 [null],
 [<minecraft:nether_star>]);
 
-/*---Vars---*/
+/*---Doors---*/
 var singlePlanks = [<terrafirmacraft:item.SinglePlank>,<terrafirmacraft:item.SinglePlank:1>,<terrafirmacraft:item.SinglePlank:2>,<terrafirmacraft:item.SinglePlank:3>,<terrafirmacraft:item.SinglePlank:4>,<terrafirmacraft:item.SinglePlank:5>,<terrafirmacraft:item.SinglePlank:6>,<terrafirmacraft:item.SinglePlank:7>,<terrafirmacraft:item.SinglePlank:8>,<terrafirmacraft:item.SinglePlank:9>,<terrafirmacraft:item.SinglePlank:10>,<terrafirmacraft:item.SinglePlank:11>,<terrafirmacraft:item.SinglePlank:12>,<terrafirmacraft:item.SinglePlank:13>,<terrafirmacraft:item.SinglePlank:14>,<terrafirmacraft:item.SinglePlank:15>,<terrafirmacraft:item.SinglePlank:16>] as IItemStack[];
 var doors = [<terrafirmacraft:item.Oak Door>,<terrafirmacraft:item.Aspen Door>,<terrafirmacraft:item.Birch Door>,<terrafirmacraft:item.Chestnut Door>,<terrafirmacraft:item.Douglas Fir Door>,<terrafirmacraft:item.Hickory Door>,<terrafirmacraft:item.Maple Door>,<terrafirmacraft:item.Ash Door>,<terrafirmacraft:item.Pine Door>,<terrafirmacraft:item.Sequoia Door>,<terrafirmacraft:item.Spruce Door>,<terrafirmacraft:item.Sycamore Door>,<terrafirmacraft:item.White Cedar Door>,<terrafirmacraft:item.White Elm Door>,<terrafirmacraft:item.Willow Door>,<terrafirmacraft:item.Kapok Door>,<terrafirmacraft:item.Acacia Door>] as IItemStack[];
 
@@ -107,6 +104,8 @@ recipes.addShaped(<tfccellars:CellarDoorItem>,
 
 recipes.remove(<minecraft:wooden_door>);
 recipes.addShapeless(<minecraft:wooden_door>,[<ore:tfcDoor>]);
+
+/*---Doors ends--*/
 
 
 
