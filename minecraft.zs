@@ -107,5 +107,19 @@ recipes.addShapeless(<minecraft:wooden_door>,[<ore:tfcDoor>]);
 
 /*---Doors ends--*/
 
+//Ender Pearl
+MTUtilsGT.addCustomRecipe("gt.recipe.fluidsolidifier", false, 128, 100, 0, [10000],
+[<gregtech:gt.multiitem.technological:10006>*0],
+[<liquid:molten.enderpearl>*144],
+[null],
+[<minecraft:ender_pearl>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 256, 144, 0, [10000],
+[n],
+[<liquid:molten.potassium>*72,<liquid:molten.beryllium>*18,<liquid:nitrogen>*90],
+[<liquid:molten.enderpearl>*180],
+[n]);
+
+
 
 
