@@ -993,3 +993,15 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 40 ,0,[10000],
 [null],
 [<gregtech:gt.multiitem.technological:12001>]);
 //LV dian ji
+
+recipes.remove(<gregtech:gt.multitileentity:9300>);
+recipes.addShaped(<gregtech:gt.multitileentity:9300>,
+[[<gregtech:gt.multiitem.technological:12024>,<ore:MF3>,null],
+[<IC2:blockAlloyGlass>,<gregtech:gt.meta.machine.dense:820>,<IC2:blockAlloyGlass>],
+[null,Wrench,null]]);
+recipes.remove(<gregtech:gt.multitileentity:9200>);
+recipes.addShaped(<gregtech:gt.multitileentity:9200>,
+[[<gregtech:gt.multiitem.technological:12024>,<ore:MF5>,<gregtech:gt.multiitem.technological:12024>],
+[<IC2:blockAlloyGlass>,<gregtech:gt.meta.machine.dense:820>,<IC2:blockAlloyGlass>],
+[<gregtech:gt.multiitem.technological:12024>,Wrench,<gregtech:gt.multiitem.technological:12024>]]);
+//fan ying dui
