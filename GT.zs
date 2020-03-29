@@ -962,3 +962,10 @@ MTUtilsGT.addCustomRecipe("gt.recipe.ionizer", false, 8192, 2000 ,0,[5000],
 [<liquid:molten.platinum>*1440],
 [null],
 [<moegadd:StarPlatinum>]);
+
+recipes.remove(<gregtech:gt.multitileentity:17215>);
+recipes.addShaped(<gregtech:gt.multitileentity:17215>,[
+[<gregtech:gt.meta.storage.plate:9175>,<gregtech:gt.meta.storage.plate:9175>,<gregtech:gt.meta.storage.plate:9175>],
+[<gregtech:gt.meta.storage.plate:9175>,<gregtech:gt.multitileentity:18033>,<gregtech:gt.meta.storage.plate:9175>],
+[<gregtech:gt.meta.storage.plate:9175>,<gregtech:gt.meta.storage.plate:9175>,<gregtech:gt.meta.storage.plate:9175>]]);
+//Titanium Niobium Carbide Steam Turbine
