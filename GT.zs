@@ -969,3 +969,10 @@ recipes.addShaped(<gregtech:gt.multitileentity:17215>,[
 [<gregtech:gt.meta.storage.plate:9175>,<gregtech:gt.multitileentity:18033>,<gregtech:gt.meta.storage.plate:9175>],
 [<gregtech:gt.meta.storage.plate:9175>,<gregtech:gt.meta.storage.plate:9175>,<gregtech:gt.meta.storage.plate:9175>]]);
 //Titanium Niobium Carbide Steam Turbine
+
+recipes.remove(<gregtech:gt.multitileentity:17225>);
+recipes.addShaped(<gregtech:gt.multitileentity:17225>,[
+[<gregtech:gt.meta.stickLong:27000>,Wrench,<gregtech:gt.meta.stickLong:27000>],
+[<gregtech:gt.multiitem.technological:30306>,<gregtech:gt.multitileentity:18033>,<gregtech:gt.multiitem.technological:30306>],
+[<gregtech:gt.meta.stickLong:27000>,<ore:gt:re-battery0>,<gregtech:gt.meta.stickLong:27000>]]);
+//Titanium Niobium Carbide Dynamo
