@@ -976,3 +976,20 @@ recipes.addShaped(<gregtech:gt.multitileentity:17225>,[
 [<gregtech:gt.multiitem.technological:30306>,<gregtech:gt.multitileentity:18033>,<gregtech:gt.multiitem.technological:30306>],
 [<gregtech:gt.meta.stickLong:27000>,<ore:gt:re-battery0>,<gregtech:gt.meta.stickLong:27000>]]);
 //Titanium Niobium Carbide Dynamo
+
+recipes.remove(<gregtech:gt.multitileentity:32701>);
+//zhu bi mu ju
+
+MTUtilsGT.addCustomRecipe("gt.recipe.cutter", false, 10, 20 ,0,[5000],
+[<minecraft:hardened_clay>],
+[<liquid:lubricant>*10],
+[null],
+[<gregtech:gt.meta.plate:8225>]);
+//tao ci ban
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 40 ,0,[10000],
+[<gregtech:gt.meta.stick:8645>,<gregtech:gt.meta.plateCurved:8651>*2,<gregtech:gt.meta.stick:8651>,<gregtech:gt.multitileentity:28350>*2,<gregtech:gt.multitileentity:28066>*2],
+[null],
+[null],
+[<gregtech:gt.multiitem.technological:12001>]);
+//LV dian ji
