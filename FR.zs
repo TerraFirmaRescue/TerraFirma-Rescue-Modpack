@@ -52,7 +52,7 @@ recipes.remove(<Forestry:factory2>);
 recipes.addShaped(<Forestry:factory2>,
  [[<mo:isolinear_circuit>,<ore:blockGlass>,<mo:isolinear_circuit>],
   [<gregtech:gt.multitileentity:28303>,<Forestry:sturdyMachine>,<gregtech:gt.multitileentity:28303>],
-  [<gregtech:gt.meta.plate:790>,<minecraft:chest>,<gregtech:gt.meta.plate:790>]]);
+  [<ore:plateGold>,<minecraft:chest>,<ore:plateGold>]]);
   
 //canning machine
 recipes.remove(<Forestry:factory>);
