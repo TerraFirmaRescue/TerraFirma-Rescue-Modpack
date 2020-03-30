@@ -25,3 +25,17 @@ recipes.addShaped(<IC2:itemRecipePart:5>,
 [[<gregtech:gt.meta.plate:8217>,<terrafirmacraft:item.Copper Sheet>,<ore:craftingToolWrench>],
 [<gregtech:gt.multitileentity:26100>,<gregtech:gt.multitileentity:26100>,<gregtech:gt.multitileentity:26100>],
 [<gregtech:gt.meta.plate:8217>,<terrafirmacraft:item.Copper Sheet>,<gregtech:gt.meta.plate:8217>]]);
+
+recipes.remove(<IC2:blockMachine:7>);
+recipes.addShaped(<IC2:blockMachine:7>,[
+[<ore:craftingToolWrench>,<ore:MF1>,<ore:craftingToolHardHammer>],
+[<gregtech:gt.multitileentity:25002>,<IC2:blockMachine>,<gregtech:gt.multitileentity:10>],
+[<IC2:blockMiningPipe>,<ore:gt:re-battery1>,<IC2:blockMiningPipe>]]);
+//cai kuang ji
+
+recipes.remove(<IC2:blockMachine2:11>);
+recipes.addShaped(<IC2:blockMachine2:11>,[
+[<gregtech:gt.multiitem.technological:12083>,<IC2:blockElectric:1>,<gregtech:gt.multitileentity:4010>],
+[<ore:MF5>,<IC2:blockMachine:12>,<gregtech:gt.multitileentity:25430>],
+[<IC2:blockMachine2>,<appliedenergistics2:item.ItemMultiPart:300>,<IC2:blockMachine2>]]);
+//gao ji cai kuang ji
