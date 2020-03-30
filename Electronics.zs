@@ -57,7 +57,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 400 ,0,[10000],
 
 MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 400 ,0,[10000],
 [n],
-[<liquid:vinylchloride>*1000,<liquid:titaniumtetrachloride>*10],
+[<liquid:allylchloride>*1000,<liquid:titaniumtetrachloride>*10],
 [<liquid:polyvinylchloride>*1000],
 [n]);
 
