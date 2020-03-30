@@ -1046,12 +1046,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 64 ,0,[10000],
 [n],
 [<gregtech:gt.multiitem.technological:30201>]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 64 ,0,[10000],
-[<gregtech:gt.multiitem.technological:30000>,<gregtech:gt.multiitem.technological:30001>,<gregtech:gt.multiitem.technological:30101>*4],
-[n],
-[n],
-[<gregtech:gt.multiitem.technological:30201>]);
-
 /**FR recipes for t1-t3 circuit part*/
 mods.forestry.ThermionicFabricator.addCast(<gregtech:gt.multiitem.technological:30101>*2, [
   [<moegadd:SimpleCapacitance>, <gregtech:gt.meta.wireFine:290>, <moegadd:Simpleresistance>],
