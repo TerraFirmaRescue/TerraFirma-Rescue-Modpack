@@ -97,8 +97,8 @@ MTUtilsGT.addCustomRecipe("gt.recipe.drying", false, 16, 600 ,0,[10000],
 recipes.remove(<advancedRocketry:rocketBuilder>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<advancedRocketry:rocketBuilder>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 2000 ,0,[10000],
-[<gregtech:gt.meta.machine.double:8794>, <gregtech:gt.multiitem.technological:30501>*2, <gregtech:gt.multiitem.technological:12084>*2,
-<gregtech:gt.multiitem.technological:12044>,<gregtech:gt.multiitem.technological:12064>*2,<gregtech:gt.multiitem.technological:11008>*4],
+[<gregtech:gt.meta.machine.double:8794>, <moegadd:CPU_256MHz_4>, <gregtech:gt.multiitem.technological:12084>*3,
+<gregtech:gt.multiitem.technological:12044>,<gregtech:gt.multitileentity:29016>*2,<gregtech:gt.multiitem.technological:11008>*4],
 [<liquid:molten.tin>*1000],
 [null],
 [<advancedRocketry:rocketBuilder>]);

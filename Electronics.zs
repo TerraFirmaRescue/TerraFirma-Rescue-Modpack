@@ -798,21 +798,21 @@ MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1024, 160 ,0,[10000],
 [<moegadd:Wafer1wm>]);
 //1wm
 
-MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 256, 80 ,0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1536, 80 ,0,[10000],
 [<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl2>*0],
 [n],
 [n],
 [<moegadd:Wafer200nm>]);
 //200nm
 
-MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 384, 160 ,0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 2048, 160 ,0,[10000],
 [<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl3>*0],
 [n],
 [n],
 [<moegadd:Wafer60nm>]);
 //60nm
 
-MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 512, 320 ,0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 3072, 320 ,0,[10000],
 [<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl4>*0],
 [n],
 [n],
@@ -1032,4 +1032,126 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
 [<liquid:ic2distilledwater>*144],
 [n],
 [<moegadd:BioCircuitBoard>]);
+
+/*----Simple Circuits (GT1-3Tiers)---*/
+MTUtilsGT.removeAllRecipes("gt.recipe.press",<gregtech:gt.multiitem.technological:30201>);
+MTUtilsGT.removeAllRecipes("gt.recipe.press",<gregtech:gt.multiitem.technological:30101>);
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multiitem.technological:30102>);
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multiitem.technological:30103>);
+
+/**T1 GT Circuit*/
+MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 64 ,0,[10000],
+[<tfctech:item.Circuit>,<gregtech:gt.multiitem.technological:30001>,<gregtech:gt.multiitem.technological:30101>*4],
+[n],
+[n],
+[<gregtech:gt.multiitem.technological:30201>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 64 ,0,[10000],
+[<gregtech:gt.multiitem.technological:30000>,<gregtech:gt.multiitem.technological:30001>,<gregtech:gt.multiitem.technological:30101>*4],
+[n],
+[n],
+[<gregtech:gt.multiitem.technological:30201>]);
+
+/**FR recipes for t1-t3 circuit part*/
+mods.forestry.ThermionicFabricator.addCast(<gregtech:gt.multiitem.technological:30101>*2, [
+  [<moegadd:SimpleCapacitance>, <gregtech:gt.meta.wireFine:290>, <moegadd:Simpleresistance>],
+  [<gregtech:gt.meta.wireFine:8708>, <gregtech:gt.meta.plateTiny:140>, <gregtech:gt.meta.wireFine:8708>],
+  [<moegadd:Simpletransistor>, <gregtech:gt.meta.wireFine:290>, <moegadd:Simpletransistor>]], 100, n);
+
+mods.forestry.ThermionicFabricator.addCast(<gregtech:gt.multiitem.technological:30101>*2, [
+  [<moegadd:SimpleCapacitance>, <gregtech:gt.meta.wireFine:290>, <moegadd:Simpleresistance>],
+  [<gregtech:gt.meta.wireFine:8660>, <gregtech:gt.meta.plateTiny:140>, <gregtech:gt.meta.wireFine:8660>],
+  [<moegadd:Simpletransistor>, <gregtech:gt.meta.wireFine:290>, <moegadd:Simpletransistor>]], 100, n);
+
+mods.forestry.ThermionicFabricator.addCast(<gregtech:gt.multiitem.technological:30102>*2, [
+  [<moegadd:SimpleCapacitance>, <gregtech:gt.meta.wireFine:8602>, <moegadd:Simpleresistance>],
+  [<gregtech:gt.meta.wireFine:8660>, <gregtech:gt.meta.plateGemTiny:140>, <gregtech:gt.meta.wireFine:8660>],
+  [<moegadd:Simpletransistor>, <gregtech:gt.meta.wireFine:8602>, <moegadd:Simpletransistor>]], 100, <gregtech:gt.multiitem.technological:30101>);
+
+mods.forestry.ThermionicFabricator.addCast(<gregtech:gt.multiitem.technological:30102>*2, [
+  [<moegadd:SimpleCapacitance>, <gregtech:gt.meta.wireFine:8602>, <moegadd:Simpleresistance>],
+  [<gregtech:gt.meta.wireFine:8708>, <gregtech:gt.meta.plateGemTiny:140>, <gregtech:gt.meta.wireFine:8708>],
+  [<moegadd:Simpletransistor>, <gregtech:gt.meta.wireFine:8602>, <moegadd:Simpletransistor>]], 100, <gregtech:gt.multiitem.technological:30101>);
+
+mods.forestry.ThermionicFabricator.addCast(<gregtech:gt.multiitem.technological:30103>*2, [
+  [<moegadd:SimpleCapacitance>, <gregtech:gt.meta.wireFine:8600>, <moegadd:Simpleresistance>],
+  [<gregtech:gt.meta.wireFine:8708>, <gregtech:gt.meta.plateGemTiny:140>, <gregtech:gt.meta.wireFine:8708>],
+  [<moegadd:Simpletransistor>, <gregtech:gt.meta.wireFine:8600>, <moegadd:Simpletransistor>]], 100, <gregtech:gt.multiitem.technological:30102>);
+
+//tui huo tong
+mods.forestry.ThermionicFabricator.addCast(<gregtech:gt.multiitem.technological:30101>*2, [
+  [<moegadd:SimpleCapacitance>, <gregtech:gt.meta.wireFine:8640>, <moegadd:Simpleresistance>],
+  [<gregtech:gt.meta.wireFine:8708>, <gregtech:gt.meta.plateTiny:140>, <gregtech:gt.meta.wireFine:8708>],
+  [<moegadd:Simpletransistor>, <gregtech:gt.meta.wireFine:8640>, <moegadd:Simpletransistor>]], 100, n);
+
+mods.forestry.ThermionicFabricator.addCast(<gregtech:gt.multiitem.technological:30101>*2, [
+  [<moegadd:SimpleCapacitance>, <gregtech:gt.meta.wireFine:8640>, <moegadd:Simpleresistance>],
+  [<gregtech:gt.meta.wireFine:8660>, <gregtech:gt.meta.plateTiny:140>, <gregtech:gt.meta.wireFine:8660>],
+  [<moegadd:Simpletransistor>, <gregtech:gt.meta.wireFine:8640>, <moegadd:Simpletransistor>]], 100, n);
+
+/**Assembler recipes for t1-t3 circuit part*/
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 40, 200 ,0,[10000],
+[<moegadd:SimpleCapacitance>,<moegadd:Simpleresistance>,<moegadd:Simpletransistor>*2,<gregtech:gt.meta.plateTiny:140>,<gregtech:gt.meta.wireFine:8660>,<gregtech:gt.meta.wireFine:290>],
+[n],
+[n],
+[<gregtech:gt.multiitem.technological:30101>*2]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 40, 200 ,0,[10000],
+[<moegadd:SimpleCapacitance>,<moegadd:Simpleresistance>,<moegadd:Simpletransistor>*2,<gregtech:gt.meta.plateTiny:140>,<gregtech:gt.meta.wireFine:8708>,<gregtech:gt.meta.wireFine:290>],
+[n],
+[n],
+[<gregtech:gt.multiitem.technological:30101>*2]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 40, 200 ,0,[10000],
+[<moegadd:SimpleCapacitance>,<moegadd:Simpleresistance>,<moegadd:Simpletransistor>*2,<gregtech:gt.meta.plateTiny:140>,<gregtech:gt.meta.wireFine:8660>,<gregtech:gt.meta.wireFine:8640>],
+[n],
+[n],
+[<gregtech:gt.multiitem.technological:30101>*2]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 40, 200 ,0,[10000],
+[<moegadd:SimpleCapacitance>,<moegadd:Simpleresistance>,<moegadd:Simpletransistor>*2,<gregtech:gt.meta.plateTiny:140>,<gregtech:gt.meta.wireFine:8708>,<gregtech:gt.meta.wireFine:8640>],
+[n],
+[n],
+[<gregtech:gt.multiitem.technological:30101>*2]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 140, 200 ,0,[10000],
+[<moegadd:SimpleCapacitance>,<moegadd:Simpleresistance>,<moegadd:Simpletransistor>*2,<gregtech:gt.meta.plateGemTiny:140>,<gregtech:gt.meta.wireFine:8660>,<gregtech:gt.meta.wireFine:8602>],
+[n],
+[n],
+[<gregtech:gt.multiitem.technological:30102>*2]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 200, 200 ,0,[10000],
+[<moegadd:SimpleCapacitance>,<moegadd:Simpleresistance>,<moegadd:Simpletransistor>*2,<gregtech:gt.meta.plateGemTiny:140>,<gregtech:gt.meta.wireFine:8708>,<gregtech:gt.meta.wireFine:8602>],
+[n],
+[n],
+[<gregtech:gt.multiitem.technological:30102>*2]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 200, 200 ,0,[10000],
+[<moegadd:SimpleCapacitance>,<moegadd:Simpleresistance>,<moegadd:Simpletransistor>*2,<gregtech:gt.meta.plateGemTiny:140>,<gregtech:gt.meta.wireFine:8708>,<gregtech:gt.meta.wireFine:8600>],
+[n],
+[n],
+[<gregtech:gt.multiitem.technological:30103>*2]);
+
+/**Simple R, C, and T*/
+
+val insulator = <minecraft:brick:1>.withTag({display: {Name: "Ceramic Insulator", Lore: ["You need it to craft simple electronics."]}});
+
+mods.Terrafirmacraft.Knapping.addClayWorkingRecipe(insulator, "#####", "# # #", "# # #", "# # #", "#####");
+
+recipes.addShaped(<moegadd:Simpleresistance>,
+[[n,<gregtech:gt.meta.wireFine:290>,n],
+[<minecraft:paper>,<ore:dustAnyCoalCarbon>,<minecraft:paper>],
+[n,<gregtech:gt.meta.wireFine:290>,Cutter]]);
+
+recipes.addShaped(<moegadd:SimpleCapacitance>,
+[[n,<gregtech:gt.meta.wireFine:290>,n],
+[<minecraft:paper>,<ore:itemClay>,<minecraft:paper>],
+[n,<gregtech:gt.meta.wireFine:290>,Cutter]]);
+
+recipes.addShaped(<moegadd:Simpletransistor>,
+[[n,<Forestry:thermionicTubes>,n],
+[n,<gregtech:gt.meta.plateTiny:140>,Cutter],
+[<gregtech:gt.meta.wireFine:290>,<gregtech:gt.meta.wireFine:290>,<gregtech:gt.meta.wireFine:290>]]);
+
+
 

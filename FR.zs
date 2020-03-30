@@ -13,6 +13,7 @@ val Wrench = <ore:craftingToolWrench>;
 recipes.remove(<Forestry:letters>);
 recipes.remove(<Forestry:letters:16>);
 recipes.remove(<Forestry:letters:32>);
+mods.forestry.Carpenter.removeRecipe(<minecraft:paper>, <liquid:water>);
 
 //delete ends
 
@@ -40,10 +41,11 @@ recipes.addShaped(<Forestry:ffarm>*2,
 
 //Sturdy machine
 recipes.remove(<Forestry:sturdyMachine>);
-recipes.addShaped(<Forestry:sturdyMachine>,
- [[<gregtech:gt.meta.screw:8610>,<gregtech:gt.meta.plateDouble:8610>,<gregtech:gt.meta.screw:8610>],
-  [<gregtech:gt.meta.plateDouble:8610>,<ore:craftingToolWrench>,<gregtech:gt.meta.plateDouble:8610>],
-  [<gregtech:gt.meta.screw:8610>,<gregtech:gt.meta.plateDouble:8610>,<gregtech:gt.meta.screw:8610>]]);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 32, 200 ,0,[10000],
+[<gregapi:gt.integrated_circuit:11>*0,<terrafirmacraft:item.Bronze Sheet>*8],
+[<liquid:molten.solderingalloy>*240],
+[null],
+[<Forestry:sturdyMachine>]);
   
 //hot electronic workbench
 recipes.remove(<Forestry:factory2>);

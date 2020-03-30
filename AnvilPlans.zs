@@ -17,6 +17,7 @@
 //Localization starts -----
 
 game.setLocalization("gui.plans.gtmachinehull", "GT Machine Hull");
+game.setLocalization("gui.plans.frmachinehull", "FR Machine Hull");
 game.setLocalization("gui.plans.gtring", "GT Ring");
 game.setLocalization("gui.plans.gtcasing", "GT Small Casing");
 game.setLocalization("gui.plans.gtgear", "GT Gear");
@@ -31,6 +32,7 @@ game.setLocalization("gui.plans.gtplatecurved", "GT Curved Plate");
 //Plan add starts ------
 
 mods.Terrafirmacraft.Anvil.addPlanRecipe("gtmachinehull", 3, 3, 1);
+mods.Terrafirmacraft.Anvil.addPlanRecipe("frmachinehull", 3, 1, 3);
 mods.Terrafirmacraft.Anvil.addPlanRecipe("gtring", 26, 26, 26);
 mods.Terrafirmacraft.Anvil.addPlanRecipe("gtcasing", 1, 1, 14);
 mods.Terrafirmacraft.Anvil.addPlanRecipe("gtgear", 2, 14, 26);

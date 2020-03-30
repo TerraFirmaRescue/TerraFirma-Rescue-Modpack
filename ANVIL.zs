@@ -231,6 +231,9 @@ mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:8661>, <greg
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:8636>, <gregtech:gt.meta.plateQuadruple:8636>, <gregtech:gt.meta.plateQuadruple:8636>, "gtmachinehull", 5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:830>, <gregtech:gt.meta.plateQuadruple:830>, <gregtech:gt.meta.plateQuadruple:830>, "gtmachinehull", 5);
 
+//FR machine hulls
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<Forestry:sturdyMachine>, <gregtech:gt.meta.plateQuadruple:8610>, <gregtech:gt.meta.plateQuadruple:8610>, "frmachinehull", 5);
+
 
 //WELDING
 //long rods
@@ -289,6 +292,8 @@ mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:8612>, <t
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:280>,  <terrafirmacraft:item.Nickel Sheet>,        <terrafirmacraft:item.Nickel Sheet>,         5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:790>,  <terrafirmacraft:item.Gold Sheet>,          <terrafirmacraft:item.Gold Sheet>,           5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:470>,  <terrafirmacraft:item.Silver Sheet>,        <terrafirmacraft:item.Silver Sheet>,         5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:500>,  <terrafirmacraft:item.Tin Sheet>,  <terrafirmacraft:item.Tin Sheet>,  5);
+
 
 //3-plates
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8661>, <gregtech:gt.meta.plate:8661>, <gregtech:gt.meta.plateDouble:8661>, 5);
@@ -319,6 +324,7 @@ mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8633>, <t
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8632>, <terrafirmacraft:item.Red Steel Sheet>, <terrafirmacraft:item.Red Steel Double Sheet>, 7);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:290> , <terrafirmacraft:item.Copper Sheet>, <terrafirmacraft:item.Copper Double Sheet>, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:830> , <terrafirmacraft:item.Bismuth Sheet>, <terrafirmacraft:item.Bismuth Double Sheet>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:500>,  <terrafirmacraft:item.Tin Sheet>,  <terrafirmacraft:item.Tin Double Sheet>,  5);
 
 
 //4-plates
@@ -331,6 +337,7 @@ mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8633>,
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8632>, <terrafirmacraft:item.Red Steel Double Sheet>, <terrafirmacraft:item.Red Steel Double Sheet>, 7);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:290> , <terrafirmacraft:item.Copper Double Sheet>, <terrafirmacraft:item.Copper Double Sheet>, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:830> , <terrafirmacraft:item.Bismuth Double Sheet>, <terrafirmacraft:item.Bismuth Double Sheet>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:500>,  <terrafirmacraft:item.Tin Double Sheet>,  <terrafirmacraft:item.Tin Double Sheet>,  5);
 
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8661>, <gregtech:gt.meta.plateDouble:8661>, <gregtech:gt.meta.plateDouble:8661>, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8610>, <gregtech:gt.meta.plateDouble:8610>, <gregtech:gt.meta.plateDouble:8610>, 5);
@@ -380,3 +387,4 @@ mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuintuple:8633>,
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuintuple:8632>, <gregtech:gt.meta.plateQuadruple:8632>, <terrafirmacraft:item.Red Steel Sheet>, 7);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuintuple:290> , <gregtech:gt.meta.plateQuadruple:290> , <terrafirmacraft:item.Copper Sheet>, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuintuple:830> , <gregtech:gt.meta.plateQuadruple:830> , <terrafirmacraft:item.Bismuth Sheet>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuintuple:500>,  <gregtech:gt.meta.plateQuadruple:500>,  <terrafirmacraft:item.Tin Sheet>,  5);
