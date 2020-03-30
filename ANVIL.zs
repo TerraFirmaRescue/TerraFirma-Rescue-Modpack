@@ -291,7 +291,35 @@ mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:790>,  <t
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateDouble:470>,  <terrafirmacraft:item.Silver Sheet>,        <terrafirmacraft:item.Silver Sheet>,         5);
 
 //3-plates
-mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:290>,  <terrafirmacraft:item.Copper Double Sheet>, <terrafirmacraft:item.Copper Sheet>,  5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8661>, <gregtech:gt.meta.plate:8661>, <gregtech:gt.meta.plateDouble:8661>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8610>, <gregtech:gt.meta.plate:8610>, <gregtech:gt.meta.plateDouble:8610>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:290>,  <gregtech:gt.meta.plate:290>,  <gregtech:gt.meta.plateDouble:290>,  5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8643>, <gregtech:gt.meta.plate:8643>, <gregtech:gt.meta.plateDouble:8643>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8630>, <gregtech:gt.meta.plate:8630>, <gregtech:gt.meta.plateDouble:8630>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:830>,  <gregtech:gt.meta.plate:830>,  <gregtech:gt.meta.plateDouble:830>,  5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:500>,  <gregtech:gt.meta.plate:500>,  <gregtech:gt.meta.plateDouble:500>,  5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:820>,  <gregtech:gt.meta.plate:820>,  <gregtech:gt.meta.plateDouble:820>,  5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8636>, <gregtech:gt.meta.plate:8636>, <gregtech:gt.meta.plateDouble:8636>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:240>,  <gregtech:gt.meta.plate:240>,  <gregtech:gt.meta.plateDouble:240>,  5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8620>, <gregtech:gt.meta.plate:8620>, <gregtech:gt.meta.plateDouble:8620>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8612>, <gregtech:gt.meta.plate:8612>, <gregtech:gt.meta.plateDouble:8612>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:270>,  <gregtech:gt.meta.plate:270>,  <gregtech:gt.meta.plateDouble:270>,  5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:320>,  <gregtech:gt.meta.plate:320>,  <gregtech:gt.meta.plateDouble:320>,  5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:280>,  <gregtech:gt.meta.plate:280>,  <gregtech:gt.meta.plateDouble:280>,  5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:130>,  <gregtech:gt.meta.plate:130>,  <gregtech:gt.meta.plateDouble:130>,  5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:790>,  <gregtech:gt.meta.plate:790>,  <gregtech:gt.meta.plateDouble:790>,  5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:470>,  <gregtech:gt.meta.plate:470>,  <gregtech:gt.meta.plateDouble:470>,  5);
+
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8630>, <terrafirmacraft:item.Steel Sheet>, <terrafirmacraft:item.Steel Double Sheet>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8610>, <terrafirmacraft:item.Bronze Sheet>, <terrafirmacraft:item.Bronze Double Sheet>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8643>, <terrafirmacraft:item.Wrought Iron Sheet>, <terrafirmacraft:item.Wrought Iron Double Sheet>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:820> , <terrafirmacraft:item.Lead Sheet>, <terrafirmacraft:item.Lead Double Sheet>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8631>, <terrafirmacraft:item.Black Steel Sheet>, <terrafirmacraft:item.Black Steel Double Sheet>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8633>, <terrafirmacraft:item.Blue Steel Sheet>, <terrafirmacraft:item.Blue Steel Double Sheet>, 7);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:8632>, <terrafirmacraft:item.Red Steel Sheet>, <terrafirmacraft:item.Red Steel Double Sheet>, 7);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:290> , <terrafirmacraft:item.Copper Sheet>, <terrafirmacraft:item.Copper Double Sheet>, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateTriple:830> , <terrafirmacraft:item.Bismuth Sheet>, <terrafirmacraft:item.Bismuth Double Sheet>, 5);
+
 
 //4-plates
 mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.plateQuadruple:8630>, <terrafirmacraft:item.Steel Double Sheet>, <terrafirmacraft:item.Steel Double Sheet>, 5);
