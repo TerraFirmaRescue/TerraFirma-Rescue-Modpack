@@ -134,8 +134,8 @@ mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Resource:5>,
   [null,null, null, <Avaritia:Singularity:1>, <Avaritia:Singularity>, <Avaritia:Singularity:3>, null,null,null],
   [null,null, null, <Avaritia:Singularity:5>,<gregtech:gt.meta.machine.quadruple:8800>, <Avaritia:Singularity:6>,null,null,null],
   [null,null, null, <Avaritia:Singularity:7>, <Avaritia:Singularity:8>,<Avaritia:Singularity:9>, null,null,null],
-  [null,null,<IC2:itemPartIridium>,<Avaritia:Resource:8>, <Avaritia:Resource:8>,<Avaritia:Resource:8>, <IC2:itemPartIridium>,null,null],
-  [null,null,<IC2:itemPartIridium>,<gregtech:gt.meta.plateDouble:8679>,<Avaritia:Resource:8>,<gregtech:gt.meta.plateDouble:8679>,<IC2:itemPartIridium>,null,null],
+  [null,null,<IC2:itemPartIridium>,<gregtech:gt.meta.ingotQuintuple:8706>,<gregtech:gt.meta.ingotQuintuple:8706>,<gregtech:gt.meta.ingotQuintuple:8706>,<IC2:itemPartIridium>,null,null],
+  [null,null,<IC2:itemPartIridium>,<gregtech:gt.meta.ingotQuintuple:8706>,<gregtech:gt.meta.ingotQuintuple:8706>,<gregtech:gt.meta.ingotQuintuple:8706>,<IC2:itemPartIridium>,null,null],
   [null,null,<IC2:itemPartIridium>,<IC2:itemPartIridium>,<gregtech:gt.multitileentity:1049>,<IC2:itemPartIridium>,<IC2:itemPartIridium>,null,null]]);
 
 

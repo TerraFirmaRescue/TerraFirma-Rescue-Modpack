@@ -321,3 +321,10 @@ MTUtilsGT.addCustomRecipe("gt.recipe.cryomixer", false, 64, 100 ,0,[10000],
 [<liquid:rocketfuel>*30],
 [null]);
 
+//holographic planetary chooser
+recipes.addShaped(<advancedRocketry:tile.planetHoloSelector>,
+[[<ore:craftingLensRed>,<ore:craftingLensBlue>,<ore:craftingLensPurple>],
+[<ore:craftingLensWhite>,<gregtech:gt.multiitem.technological:11003>,<ore:craftingLensGreen>],
+[<gregtech:gt.multitileentity:18008>,<gregtech:gt.multitileentity:18008>,<gregtech:gt.multitileentity:18008>]]);
+
+
