@@ -21,8 +21,8 @@ MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 128, 200, 1000,[10000],
 //allylchloride lv bing xi
 
 MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 128, 100, 1000,[10000],
-[<gregtech:gt.meta.dust:8268>,<gregtech:gt.meta.dust:470>*0],
-[<liquid:allylchloride>*1000,<liquid:water>*1000,<liquid:oxygen>*1000],
+[<gregapi:gt.integrated_circuit>*0,<gregtech:gt.meta.dust:8268>,<gregtech:gt.meta.dust:470>*0],
+[<liquid:allylchloride>*1000,<liquid:water>*1000,<liquid:air>*1000],
 [<liquid:acrylicacid>*1000,],
 [<terrafirmacraft:item.Powder:9>]);
 //acrylicacid bing xi suan
