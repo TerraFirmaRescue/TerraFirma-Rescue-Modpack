@@ -18,7 +18,7 @@ val n = null;
 /**Templates Starts
 var x = [] as IItemStack[];
 for i, x in x { }
-recipes.addShapless(,[]);
+recipes.addShapeless(,[]);
 recipes.addShaped(,[[],[],[]]);
 MTUtilsGT.removeAllRecipes("gt.recipe.",);
 MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
@@ -189,3 +189,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 32, 32, 1000,[10000],
 [<liquid:water>*1000],
 [null],
 [<terrafirmacraft:item.Mortar>*5]);
+
+//shear
+recipes.addShapeless(<terrafirmacraft:item.shears>,[<gregtech:gt.meta.toolHeadSword:8643>,<gregtech:gt.meta.toolHeadSword:8643>,HHammer]);

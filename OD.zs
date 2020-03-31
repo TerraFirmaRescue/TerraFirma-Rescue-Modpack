@@ -288,3 +288,13 @@ for i, door in doors {
     <ore:tfcDoor>.add(door);
 
 }
+
+<ore:ingotPeat>.add(<terrafirmacraft:Peat>);
+<ore:brickPeat>.add(<terrafirmacraft:Peat>);
+recipes.addShapeless(<Forestry:peat>,[<terrafirmacraft:Peat>]);
+
+<ore:cropPumpkin>.add(<terrafirmacraft:Pumpkin>);
+<ore:listAllveggie>.add(<terrafirmacraft:Pumpkin>);
+<ore:cropCactus>.add(<terrafirmacraft:Cactus>);
+
+<ore:dustAnyCalcite>.add(<terrafirmacraft:item.Powder>);

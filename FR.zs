@@ -73,7 +73,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 32, 200 ,0,[10000],
 //hot electronic workbench
 recipes.remove(<Forestry:factory2>);
 recipes.addShaped(<Forestry:factory2>,
- [[<mo:isolinear_circuit>,<ore:blockGlass>,<mo:isolinear_circuit>],
+ [[<advancedRocketry:circuitIC:4>,<advancedRocketry:circuitIC:3>,<advancedRocketry:circuitIC:5>],
   [<gregtech:gt.multitileentity:28303>,<Forestry:sturdyMachine>,<gregtech:gt.multitileentity:28303>],
   [<ore:plateGold>,<minecraft:chest>,<ore:plateGold>]]);
   

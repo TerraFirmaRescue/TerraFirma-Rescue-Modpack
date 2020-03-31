@@ -18,7 +18,8 @@ val n = null;
 /**Templates Starts
 var x = [] as IItemStack[];
 for i, x in x { }
-recipes.addShapless(,[]);
+recipes.remove();
+recipes.addShapeless(,[]);
 recipes.addShaped(,[[],[],[]]);
 MTUtilsGT.removeAllRecipes("gt.recipe.",);
 MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
@@ -35,6 +36,13 @@ MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
 //minecraft
 mods.Terrafirmacraft.Knapping.removeLeatherWorkingRecipe(<minecraft:saddle>, "## ##", "     ", "     ", "     ", "## ##");
 recipes.remove(<minecraft:paper>);
+recipes.remove(<terrafirmacraft:item.Glass Bottle>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<minecraft:glass>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<minecraft:glass>);
+mods.forestry.ThermionicFabricator.removeCast(<minecraft:glass>);
+furnace.remove(<minecraft:glass>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<minecraft:glass_bottle>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<terrafirmacraft:item.Glass Bottle>);
 
 //delete ends
 
@@ -46,6 +54,7 @@ recipes.addShaped(<minecraft:shears>,
 [null,null,null]]);
 
 recipes.addShapeless(<minecraft:glass_bottle>,[<terrafirmacraft:item.Glass Bottle>]);
+recipes.addShapeless(<terrafirmacraft:item.Glass Bottle>,[<minecraft:glass_bottle>]);
 recipes.addShapeless(<minecraft:sapling>,[<terrafirmacraft:item.Straw>,<ore:stickWood>]);
 recipes.addShapeless(<gregtech:gt.block.sapling:2>,[<ore:stickWood>,<minecraft:sapling>]);
 recipes.addShapeless(<gregtech:gt.block.sapling:7>,[<ore:stickWood>,<gregtech:gt.block.sapling:2>]);
@@ -66,11 +75,6 @@ recipes.addShaped(<minecraft:hopper>,
 [[<terrafirmacraft:item.Wrought Iron Sheet>,null,<terrafirmacraft:item.Wrought Iron Sheet>],
 [<terrafirmacraft:item.Wrought Iron Sheet>,<ore:chestWood>,<terrafirmacraft:item.Wrought Iron Sheet>],
 [null,<terrafirmacraft:item.Wrought Iron Sheet>,null]]);
-
-recipes.addShaped(<minecraft:crafting_table>,
-[[<ore:woodLumber>,null,null],
-[<ore:stoneSmooth>,null,null],
-[null,null,null]]);
 
 //skull of skeleton
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 2048, 4000, 0, [10000],
@@ -138,6 +142,129 @@ MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 256, 144, 0, [10000],
 [<liquid:molten.enderpearl>*180],
 [n]);
 
+//flower
+recipes.addShapeless(<minecraft:red_flower>,[<terrafirmacraft:Flowers2>]);
+recipes.addShapeless(<minecraft:brown_mushroom>,[<terrafirmacraft:Fungi>]);
+recipes.addShapeless(<minecraft:red_mushroom>,[<terrafirmacraft:Fungi:1>]);
 
+//book
+recipes.remove(<minecraft:book>);
+recipes.addShaped(<minecraft:book>,[[Knife,<minecraft:paper>,n],[<ore:leather>,<minecraft:paper>,<ore:materialString>],[n,<minecraft:paper>,n]]);
 
+//cactus and pumkin
+recipes.addShapeless(<minecraft:cactus>,[<terrafirmacraft:Cactus>]);
+recipes.addShapeless(<minecraft:pumpkin>,[<terrafirmacraft:Pumpkin>]);
+
+//more scientific glass making
+//primitive
+mods.forestry.ThermionicFabricator.addCast(<minecraft:glass>*9, [
+  [<gregtech:gt.meta.dustTiny:9139>,n,n],
+  [<ore:dustAnyCalcite>,n,n],
+  [n,n,n]], 9000, <gregtech:gt.multiitem.technological:10214>);
+
+mods.forestry.ThermionicFabricator.addCast(<terrafirmacraft:item.Glass Bottle>*9, [
+  [<gregtech:gt.meta.dustTiny:9139>,n,n],
+  [<ore:dustAnyCalcite>,n,n],
+  [n,n,n]], 9000, <gregtech:gt.multiitem.technological:10224>);
+
+mods.forestry.ThermionicFabricator.addCast(<gregtech:gt.meta.plateGem:8001>*9, [
+  [<gregtech:gt.meta.dustTiny:9139>,n,n],
+  [<ore:dustAnyCalcite>,n,n],
+  [n,n,n]], 9000, <gregtech:gt.multiitem.technological:10201>);
+
+//industrial
+for dust in <ore:dustAnyCalcite>.items {
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
+[<gregtech:gt.multiitem.technological:10214>*0,dust,<gregtech:gt.meta.dustTiny:9139>],
+[<liquid:glass>*9000],
+[n],
+[<minecraft:glass>*9]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
+[<gregtech:gt.multiitem.technological:10201>*0,dust,<gregtech:gt.meta.dustTiny:9139>],
+[<liquid:glass>*9000],
+[n],
+[<gregtech:gt.meta.plateGem:8001>*9]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
+[<gregtech:gt.multiitem.technological:10226>*0,dust,<gregtech:gt.meta.dustTiny:9139>],
+[<liquid:glass>*9000],
+[n],
+[<gregtech:gt.meta.gearGtSmall:8001>*9]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
+[<gregtech:gt.multiitem.technological:10223>*0,dust,<gregtech:gt.meta.dustTiny:9139>],
+[<liquid:glass>*8000],
+[n],
+[<gregtech:gt.meta.gearGt:8001>*2]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
+[<gregtech:gt.multiitem.technological:10227>*0,dust,<gregtech:gt.meta.dustTiny:9139>],
+[<liquid:glass>*9000],
+[n],
+[<gregtech:gt.meta.stick:8001>*18]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
+[<gregtech:gt.multiitem.technological:10202>*0,dust,<gregtech:gt.meta.dustTiny:9139>],
+[<liquid:glass>*9000],
+[n],
+[<gregtech:gt.meta.stickLong:8001>*9]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
+[<gregtech:gt.multiitem.technological:10203>*0,dust,<gregtech:gt.meta.dustTiny:9139>],
+[<liquid:glass>*1000],
+[n],
+[<gregtech:gt.meta.bolt:8001>*9]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
+[<gregtech:gt.multiitem.technological:10204>*0,dust,<gregtech:gt.meta.dustTiny:9139>],
+[<liquid:glass>*4000],
+[n],
+[<gregtech:gt.meta.ring:8001>*16]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
+[<gregtech:gt.multiitem.technological:10208>*0,dust,<gregtech:gt.meta.dustTiny:9139>],
+[<liquid:glass>*9000],
+[n],
+[<gregtech:gt.meta.casingSmall:8001>*18]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
+[<gregtech:gt.multiitem.technological:10205>*0,dust,<gregtech:gt.meta.dustTiny:9139>],
+[<liquid:glass>*9000],
+[n],
+[<gregtech:gt.meta.ring:8001>*27]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
+[<gregtech:gt.multiitem.technological:10224>*0,dust,<gregtech:gt.meta.dustTiny:9139>],
+[<liquid:glass>*9000],
+[n],
+[<terrafirmacraft:item.Glass Bottle>*9]);
+
+}
+
+//delete extruder of glass products
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<gregtech:gt.meta.plateGem:8001>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<gregtech:gt.meta.gearGtSmall:8001>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<gregtech:gt.meta.gearGt:8001>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<gregtech:gt.meta.stick:8001>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<gregtech:gt.meta.stickLong:8001>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<gregtech:gt.meta.bolt:8001>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<gregtech:gt.meta.ring:8001>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<gregtech:gt.meta.casingSmall:8001>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<gregtech:gt.meta.chemtube>);
+
+//crafting tables
+recipes.addShaped(<minecraft:crafting_table>,
+[[<ore:woodLumber>,<ore:woodLumber>,null],
+[<ore:stoneSmooth>,<ore:stoneSmooth>,null],
+[null,null,null]]);
+
+recipes.remove(<terrafirmacraft:Workbench>);
+recipes.addShaped(<terrafirmacraft:Workbench>,
+[[<ore:woodLumber>,<ore:woodLumber>,null],
+[<ore:blockGravel>,<ore:blockGravel>,null],
+[null,null,null]]);
+
+//gravel
+recipes.addShapeless(<minecraft:gravel>,[<ore:blockGravel>]);
 

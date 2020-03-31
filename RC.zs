@@ -91,7 +91,7 @@ recipes.addShaped(<Railcraft:machine.alpha:8>,
 //steam engine minke
 recipes.remove(<Railcraft:machine.beta:7>);
 recipes.addShaped(<Railcraft:machine.beta:7>,
-[[Wrench,<ore:blockGlass>,HHammer],
+[[Wrench,n,HHammer],
 [<ore:gearTin>,<minecraft:piston>,<gregtech:gt.meta.ring:500>],
 [<ore:plateGold>,<minecraft:brick_block>,Screwdriver]]);
 

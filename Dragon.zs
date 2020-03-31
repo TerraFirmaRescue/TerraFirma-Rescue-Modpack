@@ -68,3 +68,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 4096, 1024, 30000000
 [<liquid:molten.draconiumawakened>*10],
 [<liquid:oxygen>*100],
 [<DraconicEvolution:chaosFragment>]);
+
+//teleporter stand
+recipes.remove(<DraconicEvolution:teleporterStand>);
+recipes.addShaped(<DraconicEvolution:teleporterStand>,[[n,<minecraft:stone_pressure_plate>,n],[<gregtech:gt.meta.screw:8211>,<gregtech:gt.multiitem.technological:29994>,<gregtech:gt.meta.screw:8211>],[Screwdriver,<gregtech:gt.meta.plateDense:8635>,HHammer]]);
