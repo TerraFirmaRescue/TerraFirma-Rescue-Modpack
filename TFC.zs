@@ -104,17 +104,17 @@ MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 16, 16, 0, [10000],
 [null],
 [<minecraft:chest>]);
 
-//iron oven
+//iron bloomery
 recipes.remove(<terrafirmacraft:EarlyBloomery>);
 recipes.addShaped(<terrafirmacraft:EarlyBloomery>,
-[[<terrafirmacraft:item.Bronze Double Sheet>,HHammer,<terrafirmacraft:item.Bronze Double Sheet>],
-[<terrafirmacraft:item.Bronze Double Sheet>,Wrench,<terrafirmacraft:item.Bronze Double Sheet>],
-[null,<terrafirmacraft:item.Bronze Double Sheet>,null]]);
+[[<gregtech:gt.meta.stick:8610>,<terrafirmacraft:item.Bronze Double Sheet>,<gregtech:gt.meta.stick:8610>],
+[<gregtech:gt.meta.stick:8610>,<terrafirmacraft:item.Bronze Double Sheet>,<gregtech:gt.meta.stick:8610>],
+[HHammer,null,File]]);
 
 recipes.addShaped(<terrafirmacraft:EarlyBloomery>,
-[[<terrafirmacraft:item.Bismuth Bronze Double Sheet>,HHammer,<terrafirmacraft:item.Bismuth Bronze Double Sheet>],
-[<terrafirmacraft:item.Bismuth Bronze Double Sheet>,Wrench,<terrafirmacraft:item.Bismuth Bronze Double Sheet>],
-[null,<terrafirmacraft:item.Bismuth Bronze Double Sheet>,null]]);
+[[<gregtech:gt.meta.stick:8612>,<terrafirmacraft:item.Bismuth Bronze Double Sheet>,<gregtech:gt.meta.stick:8612>],
+[<gregtech:gt.meta.stick:8612>,<terrafirmacraft:item.Bismuth Bronze Double Sheet>,<gregtech:gt.meta.stick:8612>],
+[HHammer,null,File]]);
 
 //tfc blast furnace
 recipes.remove(<terrafirmacraft:Bloomery>);
@@ -192,3 +192,29 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 32, 32, 1000,[10000],
 
 //shear
 recipes.addShapeless(<terrafirmacraft:item.shears>,[<gregtech:gt.meta.toolHeadSword:8643>,<gregtech:gt.meta.toolHeadSword:8643>,HHammer]);
+
+//roasting
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 400, 1000,[10000],
+[<gregapi:gt.integrated_circuit>*0,<terrafirmacraft:item.Wrought Iron Double Ingot>*2],
+[n],
+[null],
+[<terrafirmacraft:Grill>]);
+
+//bellows
+//wooden round
+recipes.addShapeless(<gregtech:gt.meta.round:8221>*3,[<terrafirmacraft:item.stick>,File]);
+recipes.remove(<terrafirmacraft:Bellows>);
+recipes.addShaped(<terrafirmacraft:Bellows>,[[<gregtech:gt.block.planks:10>,<gregtech:gt.block.planks:10>,<gregtech:gt.meta.round:8222>],[<terrafirmacraft:item.TFC Leather>,<terrafirmacraft:item.TFC Leather>,<gregtech:gt.meta.stick:8222>],[<gregtech:gt.block.planks:10>,<gregtech:gt.block.planks:10>,<gregtech:gt.block.planks:10>]]);
+
+//chests
+var tfcChests = [<terrafirmacraft:Chest TFC>,<terrafirmacraft:Chest TFC:1>,<terrafirmacraft:Chest TFC:2>,<terrafirmacraft:Chest TFC:3>,<terrafirmacraft:Chest TFC:4>,<terrafirmacraft:Chest TFC:5>,<terrafirmacraft:Chest TFC:6>,<terrafirmacraft:Chest TFC:7>,<terrafirmacraft:Chest TFC:8>,<terrafirmacraft:Chest TFC:9>,<terrafirmacraft:Chest TFC:10>,<terrafirmacraft:Chest TFC:11>,<terrafirmacraft:Chest TFC:12>,<terrafirmacraft:Chest TFC:13>,<terrafirmacraft:Chest TFC:14>,<terrafirmacraft:Chest TFC:15>,<terrafirmacraft:Chest TFC:16>] as IItemStack[];
+var singlePlanks = [<terrafirmacraft:item.SinglePlank>,<terrafirmacraft:item.SinglePlank:1>,<terrafirmacraft:item.SinglePlank:2>,<terrafirmacraft:item.SinglePlank:3>,<terrafirmacraft:item.SinglePlank:4>,<terrafirmacraft:item.SinglePlank:5>,<terrafirmacraft:item.SinglePlank:6>,<terrafirmacraft:item.SinglePlank:7>,<terrafirmacraft:item.SinglePlank:8>,<terrafirmacraft:item.SinglePlank:9>,<terrafirmacraft:item.SinglePlank:10>,<terrafirmacraft:item.SinglePlank:11>,<terrafirmacraft:item.SinglePlank:12>,<terrafirmacraft:item.SinglePlank:13>,<terrafirmacraft:item.SinglePlank:14>,<terrafirmacraft:item.SinglePlank:15>,<terrafirmacraft:item.SinglePlank:16>] as IItemStack[];
+for i, chest in tfcChests {
+var p = singlePlanks[i];
+recipes.remove(chest);
+recipes.addShaped(chest,
+[[<gregtech:gt.meta.ring:8221>,p,p],
+[<terrafirmacraft:item.stick>,SHammer,n],
+[p,p,p]]);
+
+}

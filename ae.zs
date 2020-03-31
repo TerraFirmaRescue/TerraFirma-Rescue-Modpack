@@ -30,6 +30,10 @@ MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
 
 /** Scripts Starts */
 
+/**Deletes*/
+
+/**Deletes Ends*/
+
 recipes.addShaped(<appliedenergistics2:item.ToolCertusQuartzWrench>,
 [[<ore:itemCertusQuartz>, null,<ore:itemCertusQuartz>],
 [null,<ore:plateIridium>,null],

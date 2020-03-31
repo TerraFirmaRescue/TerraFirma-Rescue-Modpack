@@ -335,7 +335,12 @@ recipes.addShaped(<gregtech:gt.multitileentity:1005>,
 [<terrafirmacraft:item.Fire Brick:1>,HHammer,<terrafirmacraft:item.Fire Brick:1>],
 [<terrafirmacraft:item.Fire Brick:1>,<terrafirmacraft:item.Blue Steel Double Sheet>,<terrafirmacraft:item.Fire Brick:1>]]);
 
-//crucibles
+recipes.addShaped(<gregtech:gt.multitileentity:1005>,
+[[<terrafirmacraft:item.Fire Brick:1>,Chisel,<terrafirmacraft:item.Fire Brick:1>],
+[<terrafirmacraft:item.Fire Brick:1>,HHammer,<terrafirmacraft:item.Fire Brick:1>],
+[<terrafirmacraft:item.Fire Brick:1>,<terrafirmacraft:item.Red Steel Double Sheet>,<terrafirmacraft:item.Fire Brick:1>]]);
+
+//other crucibles
 recipes.addShaped(<gregtech:gt.multitileentity:1033>,
 [[<ore:plateChromium>,Chisel,<ore:plateChromium>],
 [<ore:plateChromium>,HHammer,<ore:plateChromium>],
@@ -345,6 +350,16 @@ recipes.addShaped(<gregtech:gt.multitileentity:1018>,
 [[<ore:gemAnyQuartz>,Chisel,<ore:gemAnyQuartz>],
 [<ore:gemAnyQuartz>,HHammer,<ore:gemAnyQuartz>],
 [<ore:gemAnyQuartz>,<terrafirmacraft:item.Blue Steel Double Sheet>,<ore:gemAnyQuartz>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1033>,
+[[<ore:plateChromium>,Chisel,<ore:plateChromium>],
+[<ore:plateChromium>,HHammer,<ore:plateChromium>],
+[<ore:plateChromium>,<terrafirmacraft:item.Red Steel Double Sheet>,<ore:plateChromium>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:1018>,
+[[<ore:gemAnyQuartz>,Chisel,<ore:gemAnyQuartz>],
+[<ore:gemAnyQuartz>,HHammer,<ore:gemAnyQuartz>],
+[<ore:gemAnyQuartz>,<terrafirmacraft:item.Red Steel Double Sheet>,<ore:gemAnyQuartz>]]);
 
 recipes.remove(<gregtech:gt.multitileentity:1855>);
 recipes.addShaped(<gregtech:gt.multitileentity:1855>,
@@ -1038,3 +1053,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 40 ,0,[10000],
 [null],
 [<gregtech:gt.meta.rotor:8218>]);
 //plastic motor welding
+
+//jumo zhayao
+recipes.addShapeless(<gregtech:gt.multitileentity:32713>*4,[<minecraft:tnt>,<minecraft:string>]);

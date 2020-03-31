@@ -266,6 +266,9 @@ mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:830>, <gregt
 //FR machine hulls
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<Forestry:sturdyMachine>, <gregtech:gt.meta.plateQuadruple:8610>, <gregtech:gt.meta.plateQuadruple:8610>, "frmachinehull", 5);
 
+//Others
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<minecraft:cauldron>, <gregtech:gt.meta.plateQuadruple:8643>, <gregtech:gt.meta.plateTriple:8643>, "bucket", 5);
+
 
 //WELDING
 //long rods

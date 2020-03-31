@@ -43,6 +43,10 @@ mods.forestry.ThermionicFabricator.removeCast(<minecraft:glass>);
 furnace.remove(<minecraft:glass>);
 MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<minecraft:glass_bottle>);
 MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<terrafirmacraft:item.Glass Bottle>);
+recipes.remove(<minecraft:cauldron>);
+recipes.remove(<minecraft:gunpowder>);
+recipes.remove(<minecraft:tnt>);
+
 
 //delete ends
 
@@ -268,3 +272,26 @@ recipes.addShaped(<terrafirmacraft:Workbench>,
 //gravel
 recipes.addShapeless(<minecraft:gravel>,[<ore:blockGravel>]);
 
+//clay
+recipes.addShaped(<minecraft:clay>,
+[[<terrafirmacraft:item.Clay>,<terrafirmacraft:item.Clay>,null],
+[<terrafirmacraft:item.Clay>,<terrafirmacraft:item.Clay>,null],
+[null,null,null]]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 400, 0, [10000],
+[<terrafirmacraft:item.Wrought Iron Sheet>*7,<gregapi:gt.integrated_circuit:7>],
+[n],
+[n],
+[<minecraft:cauldron>]);
+
+//gunpowder
+recipes.addShapeless(<minecraft:gunpowder>*4,[<ore:gemAnyCoalCarbon>,<ore:dustPotassiumNitrate>,<ore:dustSulfur>]);
+
+//tnt
+recipes.addShaped(<minecraft:tnt>*2,
+[[<ore:sand>,<minecraft:gunpowder>,<ore:sand>],
+[<minecraft:gunpowder>,<ore:sand>,<minecraft:gunpowder>],
+[<ore:sand>,<minecraft:gunpowder>,<ore:sand>]]);
+
+//button
+recipes.addShapeless(<minecraft:wooden_button>,[<terrafirmacraft:ButtonWood>]);
