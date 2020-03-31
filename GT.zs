@@ -8,6 +8,7 @@ val Saw = <ore:craftingToolSaw>;
 val Wrench = <ore:craftingToolWrench>;
 val Chisel = <ore:craftingToolChisel>;
 val Cutter = <ore:craftingToolWireCutter>;
+val File = <ore:craftingToolFile>;
 val n = null;
 
 //delete start
@@ -984,7 +985,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.cutter", false, 10, 20 ,0,[5000],
 [<minecraft:hardened_clay>],
 [<liquid:lubricant>*10],
 [null],
-[<gregtech:gt.meta.plate:8225>]);
+[<gregtech:gt.meta.plate:8225>*3]);
 //tao ci ban
 
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 40 ,0,[10000],
@@ -1005,3 +1006,16 @@ recipes.addShaped(<gregtech:gt.multitileentity:9200>,
 [<IC2:blockAlloyGlass>,<gregtech:gt.meta.machine.dense:820>,<IC2:blockAlloyGlass>],
 [<gregtech:gt.multiitem.technological:12024>,Wrench,<gregtech:gt.multiitem.technological:12024>]]);
 //fan ying dui
+
+recipes.addShaped(<gregtech:gt.meta.rotor:8218>,[
+[<gregtech:gt.meta.plateCurved:8218>,HHammer,<gregtech:gt.meta.plateCurved:8218>],
+[<gregtech:gt.meta.screw:8218>,<gregtech:gt.meta.ring:8218>,File],
+[<gregtech:gt.meta.plateCurved:8218>,Screwdriver,<gregtech:gt.meta.plateCurved:8218>]]);
+//plastic rotor
+
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 40 ,0,[10000],
+[<gregtech:gt.meta.ring:8218>,<gregtech:gt.meta.plateCurved:8218>*4],
+[null],
+[null],
+[<gregtech:gt.meta.rotor:8218>]);
+//plastic motor welding
