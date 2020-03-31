@@ -62,7 +62,7 @@ recipes.addShaped(<DraconicEvolution:reactorStabilizer>,
 [<DraconicEvolution:reactorCraftingPart:3>,<gregtech:gt.meta.machine.quadruple:8792>,<gregtech:gt.multitileentity:18200>]]);
 
 //Chaos fragment
-MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor", <gregtech:gt.meta.dustTiny:8791>);
+MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor", <DraconicEvolution:chaosFragment>);
 MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 4096, 1024, 300000000, [10000],
 [<gregtech:gt.meta.dustTiny:1520>],
 [<liquid:molten.draconiumawakened>*10],
