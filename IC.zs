@@ -68,3 +68,10 @@ recipes.addShaped(<IC2:blockMachine2:11>,[
 [<ore:MF5>,<IC2:blockMachine:12>,<gregtech:gt.multitileentity:25430>],
 [<IC2:blockMachine2>,<appliedenergistics2:item.ItemMultiPart:300>,<IC2:blockMachine2>]]);
 //gao ji cai kuang ji
+
+recipes.remove(<IC2:blockMachine2>);
+recipes.addShaped(<IC2:blockMachine2>,[
+[<gregtech:gt.multitileentity:14504>,<gregtech:gt.multiitem.technological:30504>,<gregtech:gt.multitileentity:10104>],
+[<appliedenergistics2:item.ItemMultiMaterial:41>,<IC2:blockMachine:12>,<gregtech:gt.multiitem.technological:12104>],
+[<gregtech:gt.multiitem.technological:12144>,<moegadd:MainframeCluster4>,<gregtech:gt.multiitem.technological:12124>]]);
+//chuan song ji
