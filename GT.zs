@@ -1015,7 +1015,7 @@ recipes.addShaped(<gregtech:gt.multitileentity:17225>,[
 recipes.remove(<gregtech:gt.multitileentity:32701>);
 //zhu bi mu ju
 
-MTUtilsGT.addCustomRecipe("gt.recipe.cutter", false, 10, 20 ,0,[5000],
+MTUtilsGT.addCustomRecipe("gt.recipe.cutter", false, 16, 20 ,0,[10000],
 [<minecraft:hardened_clay>],
 [<liquid:lubricant>*10],
 [null],
@@ -1056,3 +1056,40 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 40 ,0,[10000],
 
 //jumo zhayao
 recipes.addShapeless(<gregtech:gt.multitileentity:32713>*4,[<minecraft:tnt>,<minecraft:string>]);
+
+var output = [<gregtech:gt.multitileentity:10130>,<gregtech:gt.multitileentity:10131>,<gregtech:gt.multitileentity:10132>,<gregtech:gt.multitileentity:10133>,<gregtech:gt.multitileentity:10134>,<gregtech:gt.multitileentity:10135>,<gregtech:gt.multitileentity:10136>] as IItemStack[];
+var input1 = [<gregtech:gt.multiitem.technological:12100>,<gregtech:gt.multiitem.technological:12101>,<gregtech:gt.multiitem.technological:12102>,<gregtech:gt.multiitem.technological:12103>,<gregtech:gt.multiitem.technological:12104>,<gregtech:gt.multiitem.technological:12105>,<gregtech:gt.multiitem.technological:12106>] as IItemStack[];
+var input2 = [<gregtech:gt.meta.machine:8667>,<gregtech:gt.meta.machine:8651>,<gregtech:gt.meta.machine:130>,<gregtech:gt.meta.machine:8636>,<gregtech:gt.meta.machine:240>,<gregtech:gt.meta.machine:220>,<gregtech:gt.meta.machine:770>] as IItemStack[];
+var input3 = [<gregtech:gt.multitileentity:29950>,<gregtech:gt.multitileentity:29951>,<gregtech:gt.multitileentity:29953>,<gregtech:gt.multitileentity:29957>,<gregtech:gt.multitileentity:29961>,<gregtech:gt.multitileentity:29965>,<gregtech:gt.multitileentity:18046>] as IItemStack[];
+var output2 = [<gregtech:gt.multitileentity:10140>,<gregtech:gt.multitileentity:10141>,<gregtech:gt.multitileentity:10142>,<gregtech:gt.multitileentity:10143>,<gregtech:gt.multitileentity:10144>,<gregtech:gt.multitileentity:10145>,<gregtech:gt.multitileentity:10146>] as IItemStack[];
+var input4 = [] as IItemStack[];
+for i, y0 in output {
+recipes.remove(y0);
+var x01 = input1[i];
+var x02 = input2[i];
+var x03 = input3[i];
+var y02 = output2[i];
+recipes.addShaped(y0,[
+[<gregtech:gt.multiitem.technological:30503>,x01,<gregtech:gt.multiitem.technological:30503>],
+[x03,x02,x03],
+[<moegadd:MainframeCluster6>,x01,<gregtech:gt.multitileentity:24900>]]
+);
+recipes.addShaped(y0,[
+[<gregtech:gt.multiitem.technological:30503>,x01,<gregtech:gt.multiitem.technological:30503>],
+[x03,x02,x03],
+[<moegadd:MainframeCluster7>,x01,<gregtech:gt.multitileentity:24900>]]
+);
+//jing ti chong neng qi
+
+recipes.remove(y02);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[5000],
+[y0,x01 *4, x03 *4 , <moegadd:MainframeCluster7>,<gregtech:gt.multiitem.technological:30403>*4],
+[<liquid:ic2coolant>*1000],
+[null],
+[y02]);
+//big
+}
+
+
+
+

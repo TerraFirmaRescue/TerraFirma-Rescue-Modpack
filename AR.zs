@@ -328,7 +328,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
 //guidance computer
 recipes.remove(<advancedRocketry:tile.guidanceComputer>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 64, 1000 ,0,[10000],
-[<gregtech:gt.meta.plate:220>,<libVulpes:blockStructureBlock>,<advancedRocketry:circuitIC:1>*2,<gregtech:gt.multiitem.technological:30502>],
+[<gregtech:gt.meta.plate:220>,<libVulpes:blockStructureBlock>,<advancedRocketry:circuitIC:1>*2,<gregtech:gt.multiitem.technological:30306>],
 [<liquid:molten.tin>*144],
 [null],
 [<advancedRocketry:tile.guidanceComputer>]);
@@ -349,4 +349,5 @@ recipes.addShaped(<advancedRocketry:tile.planetHoloSelector>,
 [<ore:craftingLensWhite>,<gregtech:gt.multiitem.technological:11003>,<ore:craftingLensGreen>],
 [<gregtech:gt.multitileentity:18008>,<gregtech:gt.multitileentity:18008>,<gregtech:gt.multitileentity:18008>]]);
 
-
+recipes.addShapeless(<libVulpes:libVulpesmetal0:7>,[<gregtech:gt.meta.storage.solid:220>]);
+//GT Ti block -> AR Ti block
