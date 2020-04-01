@@ -644,54 +644,57 @@ MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 200 ,0,[10000],
 [<moegadd:CleanedWafer20nm>]);
 
 /*-------------- -------------- --------------*/
-
 MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
-[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8019>,<moegadd:CleanedWafer1wm>],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8008>,<moegadd:CleanedWafer1wm>],
+[n],
+[n],
+[<moegadd:MonolayerWafer1wm>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:310>,<moegadd:CleanedWafer1wm>],
+[n],
+[n],
+[<moegadd:MonolayerWafer1wm>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:490>,<moegadd:CleanedWafer1wm>],
 [n],
 [n],
 [<moegadd:MonolayerWafer1wm>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
-[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8205>,<moegadd:CleanedWafer1wm>],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8008>,<moegadd:CleanedWafer200nm>],
 [n],
 [n],
-[<moegadd:MonolayerWafer1wm>]);
-
+[<moegadd:MonolayerWafer200nm>]);
 MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
-[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8019>,<moegadd:CleanedWafer200nm>],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:310>,<moegadd:CleanedWafer200nm>],
 [n],
 [n],
 [<moegadd:MonolayerWafer200nm>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
-[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8205>,<moegadd:CleanedWafer200nm>],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:490>,<moegadd:CleanedWafer200nm>],
 [n],
 [n],
 [<moegadd:MonolayerWafer200nm>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
-[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8019>,<moegadd:CleanedWafer60nm>],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:490>,<moegadd:CleanedWafer60nm>],
 [n],
 [n],
 [<moegadd:MonolayerWafer60nm>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
-[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8205>,<moegadd:CleanedWafer60nm>],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:310>,<moegadd:CleanedWafer60nm>],
 [n],
 [n],
 [<moegadd:MonolayerWafer60nm>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
-[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8019>,<moegadd:CleanedWafer20nm>],
+[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:310>,<gregtech:gt.meta.dustTiny:490>,<moegadd:CleanedWafer20nm>],
 [n],
 [n],
 [<moegadd:MonolayerWafer20nm>]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
-[<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:8205>,<moegadd:CleanedWafer20nm>],
-[n],
-[n],
-[<moegadd:MonolayerWafer20nm>]);
 
 /*-------------- -------------- --------------*/
 
