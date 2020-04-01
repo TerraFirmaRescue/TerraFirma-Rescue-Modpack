@@ -244,6 +244,11 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
 [n],
 [<terrafirmacraft:item.Glass Bottle>*9]);
 
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
+[<gregtech:gt.multiitem.technological:10005>*0,dust,<gregtech:gt.meta.dustTiny:9139>],
+[<liquid:glass>*9000],
+[n],
+[<gregtech:gt.meta.chemtube>*27]);
 }
 
 //delete extruder of glass products

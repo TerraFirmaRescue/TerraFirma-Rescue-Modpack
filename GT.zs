@@ -1107,3 +1107,4 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mortar", false, 1, 1 ,0,[10000],
 [null],
 [null],
 [<gregtech:gt.meta.dust:9139>]);
+//peng sha
