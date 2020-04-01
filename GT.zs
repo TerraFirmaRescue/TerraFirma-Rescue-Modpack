@@ -1062,7 +1062,6 @@ var input1 = [<gregtech:gt.multiitem.technological:12100>,<gregtech:gt.multiitem
 var input2 = [<gregtech:gt.meta.machine:8667>,<gregtech:gt.meta.machine:8651>,<gregtech:gt.meta.machine:130>,<gregtech:gt.meta.machine:8636>,<gregtech:gt.meta.machine:240>,<gregtech:gt.meta.machine:220>,<gregtech:gt.meta.machine:770>] as IItemStack[];
 var input3 = [<gregtech:gt.multitileentity:29950>,<gregtech:gt.multitileentity:29951>,<gregtech:gt.multitileentity:29953>,<gregtech:gt.multitileentity:29957>,<gregtech:gt.multitileentity:29961>,<gregtech:gt.multitileentity:29965>,<gregtech:gt.multitileentity:18046>] as IItemStack[];
 var output2 = [<gregtech:gt.multitileentity:10140>,<gregtech:gt.multitileentity:10141>,<gregtech:gt.multitileentity:10142>,<gregtech:gt.multitileentity:10143>,<gregtech:gt.multitileentity:10144>,<gregtech:gt.multitileentity:10145>,<gregtech:gt.multitileentity:10146>] as IItemStack[];
-var input4 = [] as IItemStack[];
 for i, y0 in output {
 recipes.remove(y0);
 var x01 = input1[i];
@@ -1072,12 +1071,7 @@ var y02 = output2[i];
 recipes.addShaped(y0,[
 [<gregtech:gt.multiitem.technological:30503>,x01,<gregtech:gt.multiitem.technological:30503>],
 [x03,x02,x03],
-[<moegadd:MainframeCluster6>,x01,<gregtech:gt.multitileentity:24900>]]
-);
-recipes.addShaped(y0,[
-[<gregtech:gt.multiitem.technological:30503>,x01,<gregtech:gt.multiitem.technological:30503>],
-[x03,x02,x03],
-[<moegadd:MainframeCluster7>,x01,<gregtech:gt.multitileentity:24900>]]
+[<ore:MF7>,x01,<gregtech:gt.multitileentity:24900>]]
 );
 //jing ti chong neng qi
 
@@ -1090,6 +1084,26 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[5000],
 //big
 }
 
+var output3 = [<gregtech:gt.multitileentity:10121>,<gregtech:gt.multitileentity:10122>,<gregtech:gt.multitileentity:10123>,<gregtech:gt.multitileentity:10124>,<gregtech:gt.multitileentity:10125>] as IItemStack[];
+var input4 = [<gregtech:gt.multiitem.technological:12100>,<gregtech:gt.multiitem.technological:12101>,<gregtech:gt.multiitem.technological:12102>,<gregtech:gt.multiitem.technological:12103>,<gregtech:gt.multiitem.technological:12104>,<gregtech:gt.multiitem.technological:12105>]as IItemStack[];
+var input5 = [<gregtech:gt.multiitem.technological:12141>,<gregtech:gt.multiitem.technological:12141>,<gregtech:gt.multiitem.technological:12142>,<gregtech:gt.multiitem.technological:12143>,<gregtech:gt.multiitem.technological:12144>,<gregtech:gt.multiitem.technological:12145>]as IItemStack[];
+var input6 = [<gregtech:gt.multiitem.technological:12120>,<gregtech:gt.multiitem.technological:12121>,<gregtech:gt.multiitem.technological:12122>,<gregtech:gt.multiitem.technological:12123>,<gregtech:gt.multiitem.technological:12124>,<gregtech:gt.multiitem.technological:12125>]as IItemStack[];
+for i2 , y3 in output3{
+var y03 = output3[i2];
+var x04 = input4[i2];
+var x05 = input5[i2];
+var x06 = input6[i2];
+recipes.remove(y3);
+recipes.addShaped(y03,[
+[<gregtech:gt.multiitem.technological:30504>,<gregtech:gt.multiitem.technological:11004>,<gregtech:gt.multiitem.technological:30504>],
+[x04,<gregtech:gt.meta.machine:8682>,x04],
+[x05,<moegadd:MainframeCluster7>,x06]]
+);
+}
+//liang zi chong neng qi
 
-
-
+MTUtilsGT.addCustomRecipe("gt.recipe.mortar", false, 1, 1 ,0,[10000],
+[<terrafirmacraft:item.Ore:32>],
+[null],
+[null],
+[<gregtech:gt.meta.dust:9139>]);

@@ -894,28 +894,28 @@ recipes.addShaped(<gregtech:gt.multitileentity:18204>,
 [n,<gregtech:gt.meta.screw:220>,n]]);
 
 /*----Wafer----*/
-MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1024, 160 ,0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1024, 256 ,0,[10000],
 [<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl1>*0],
 [n],
 [n],
 [<moegadd:Wafer1wm>]);
 //1wm
 
-MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1536, 80 ,0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1536, 384 ,0,[10000],
 [<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl2>*0],
 [n],
 [n],
 [<moegadd:Wafer200nm>]);
 //200nm
 
-MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 2048, 160 ,0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 2048, 512 ,0,[10000],
 [<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl3>*0],
 [n],
 [n],
 [<moegadd:Wafer60nm>]);
 //60nm
 
-MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 3072, 320 ,0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 3072, 768 ,0,[10000],
 [<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:RawWafer>,<moegadd:PhotomaskControl4>*0],
 [n],
 [n],
@@ -1249,6 +1249,4 @@ recipes.addShaped(<moegadd:Simpletransistor>,
 [[n,<Forestry:thermionicTubes>,n],
 [n,<gregtech:gt.meta.plateTiny:140>,Cutter],
 [<gregtech:gt.meta.wireFine:290>,<gregtech:gt.meta.wireFine:290>,<gregtech:gt.meta.wireFine:290>]]);
-
-
 
