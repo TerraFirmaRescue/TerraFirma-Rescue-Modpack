@@ -109,7 +109,7 @@ MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",<moegadd:Wafer1wm>);
 MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",<moegadd:Wafer200nm>);
 MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",<moegadd:Wafer60nm>);
 MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",<moegadd:Wafer20nm>);
-
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<moegadd:PatchCapacitor>);
 
 /**----*/
 
@@ -211,7 +211,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 120, 200 ,0,[10000],
 [<gregtech:gt.meta.plateTiny:8225>*4,<gregtech:gt.meta.foil:130>*4,<gregtech:gt.meta.wireFine:8640>],
 [<liquid:plastic>*144],
 [n],
-[<moegadd:PatchCapacitor>]);
+[<moegadd:PatchCapacitor>*16]);
 //tie pian dian rong
 
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 120, 400 ,0,[10000],
