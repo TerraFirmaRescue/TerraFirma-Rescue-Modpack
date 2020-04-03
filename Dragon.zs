@@ -72,3 +72,10 @@ MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 4096, 1024, 30000000
 //teleporter stand
 recipes.remove(<DraconicEvolution:teleporterStand>);
 recipes.addShaped(<DraconicEvolution:teleporterStand>,[[n,<minecraft:stone_pressure_plate>,n],[<gregtech:gt.meta.screw:8211>,<gregtech:gt.multiitem.technological:29994>,<gregtech:gt.meta.screw:8211>],[Screwdriver,<gregtech:gt.meta.plateDense:8635>,HHammer]]);
+
+recipes.remove(<DraconicEvolution:draconicCore>);
+recipes.addShaped(<DraconicEvolution:draconicCore>,[
+[<gregtech:gt.multiitem.technological:30401>,<DraconicEvolution:draconiumIngot>,<gregtech:gt.meta.plateTiny:440>],
+[<DraconicEvolution:draconiumIngot>,<ore:CPU2G>,<DraconicEvolution:draconiumIngot>],
+[<gregtech:gt.meta.plateTiny:460>,<DraconicEvolution:draconiumIngot>,<gregtech:gt.meta.plateTiny:450>]]);
+//long xin

@@ -1108,3 +1108,17 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mortar", false, 1, 1 ,0,[10000],
 [null],
 [<gregtech:gt.meta.dust:9139>]);
 //peng sha
+
+recipes.remove(<gregtech:gt.multitileentity:32721>);
+recipes.addShaped(<gregtech:gt.multitileentity:32721>,[
+[Saw,<gregtech:gt.meta.stick:820>,HHammer],
+[<ore:plankAnyWood>,<gregtech:gt.meta.stick:820>,<ore:plankAnyWood>],
+[<ore:plankAnyWood>,<ore:plankAnyWood>,<ore:plankAnyWood>]]);
+//jin xi pen(wood)
+
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 40 ,0,[10000],
+[null],
+[<liquid:water>*1000,<liquid:ethylacrylate>*500],
+[<liquid:glue>*1000],
+[null]);
+//glue
