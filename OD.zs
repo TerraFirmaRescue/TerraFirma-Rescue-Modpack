@@ -298,3 +298,7 @@ recipes.addShapeless(<Forestry:peat>,[<terrafirmacraft:Peat>]);
 <ore:cropCactus>.add(<terrafirmacraft:Cactus>);
 
 <ore:dustAnyCalcite>.add(<terrafirmacraft:item.Powder>);
+
+<ore:dustFossil>.add(<terrafirmacraft:item.dyePowder:15>);
+<ore:dustBone>.add(<terrafirmacraft:item.dyePowder:15>);
+<ore:dyeMixableWhite>.add(<terrafirmacraft:item.dyePowder:15>);

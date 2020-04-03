@@ -300,3 +300,8 @@ recipes.addShaped(<minecraft:tnt>*2,
 
 //button
 recipes.addShapeless(<minecraft:wooden_button>,[<terrafirmacraft:ButtonWood>]);
+
+//bonemeal
+recipes.addShapeless(<minecraft:dye:15>,[<terrafirmacraft:item.dyePowder:15>]);
+recipes.addShapeless(<terrafirmacraft:item.dyePowder:15>,[<minecraft:dye:15>]);
+

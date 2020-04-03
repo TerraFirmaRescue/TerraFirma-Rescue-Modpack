@@ -37,6 +37,7 @@ recipes.remove(<tfctech:item.Circuit>);
 recipes.remove(<tfctech:item.Vulcanizing Agents>);
 MTUtilsGT.removeAllRecipes("gt.recipe.bath",<minecraft:paper>);
 MTUtilsGT.removeAllRecipes("gt.recipe.loom",<minecraft:paper>);
+MTUtilsGT.removeAllRecipes("gt.recipe.fermenter",<tfctech:item.Glue>);
 
 //delete ends
 
@@ -108,7 +109,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 100, 1000,[10000],
 //mu zhi
 recipes.addShapeless(<tfcprimitivetech:itemWoodenTwig>,[<terrafirmacraft:item.stick>,SHammer]);
 
-//paper fabric
+//More realistic paper production
 MTUtilsGT.removeAllRecipes("gt.recipe.bath",<tfcprimitivetech:itemCelluloseFibers>);
 MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 40, 1000,[10000],
 [<terrafirmacraft:item.Reeds>],
@@ -134,5 +135,22 @@ MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 100, 1000,[10000],
 [n],
 [<minecraft:paper>]);
 
+//glue
+MTUtilsGT.addCustomRecipe("gt.recipe.fermenter", false, 16, 64 ,0,[10000],
+[<minecraft:dye:15>],
+[<liquid:water>*200],
+[null],
+[<tfctech:item.Glue>]);
 
+MTUtilsGT.addCustomRecipe("gt.recipe.fermenter", false, 16, 64 ,0,[10000],
+[<minecraft:dye:15>],
+[<liquid:freshwater>*200],
+[null],
+[<tfctech:item.Glue>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.fermenter", false, 16, 64 ,0,[10000],
+[<minecraft:dye:15>],
+[<liquid:ic2distilledwater>*200],
+[null],
+[<tfctech:item.Glue>]);
 
