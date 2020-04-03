@@ -109,13 +109,14 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 100, 1000,[10000],
 recipes.addShapeless(<tfcprimitivetech:itemWoodenTwig>,[<terrafirmacraft:item.stick>,SHammer]);
 
 //paper fabric
-MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 16, 40, 1000,[10000],
+MTUtilsGT.removeAllRecipes("gt.recipe.bath",<tfcprimitivetech:itemCelluloseFibers>);
+MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 40, 1000,[10000],
 [<terrafirmacraft:item.Reeds>],
 [<liquid:basepotashliquor>*250],
 [n],
 [<tfcprimitivetech:itemCelluloseFibers>]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 16, 40, 1000,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 40, 1000,[10000],
 [<Forestry:woodPulp>],
 [<liquid:basepotashliquor>*250],
 [n],
