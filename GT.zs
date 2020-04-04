@@ -1122,3 +1122,9 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 40 ,0,[10000],
 [<liquid:glue>*1000],
 [null]);
 //glue
+
+recipes.addShaped(<gregtech:gt.multitileentity:20241>,[
+[Wrench,<gregtech:gt.multitileentity:1039>,HHammer],
+[<gregtech:gt.multitileentity:26142>,<gregtech:gt.meta.machine:8630>,<gregtech:gt.multitileentity:26142>],
+[<minecraft:brick_block>,<ore:plateDoubleCopper>,<minecraft:brick_block>]]);
+//ye hua lu (gang)
