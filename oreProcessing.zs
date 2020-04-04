@@ -14,6 +14,9 @@ val Chisel = <ore:craftingToolChisel>;
 val Cutter = <ore:craftingToolWireCutter>;
 val File = <ore:craftingToolFile>;
 val n = null;
+val w = <liquid:water>;
+val dw = <liquid:ic2distilledwater>;
+val fw = <liquid:freshwater>;
 
 /**Templates Starts
 var x = [] as IItemStack[];
@@ -190,3 +193,84 @@ MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 [<gregtech:gt.meta.crushed:9111>,<gregtech:gt.meta.dust:8500>]);
 
 
+//LiCl
+MTUtilsGT.removeAllRecipes("gt.recipe.sluice",<gregtech:gt.meta.crushedPurified:8203>);
+MTUtilsGT.removeAllRecipes("gt.recipe.sluice",<gregtech:gt.meta.crushedPurifiedTiny:8203>);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.sluice", false, 16, 144 ,0,[10000,300,300,300,300,300,300,300,300],
+[<gregtech:gt.meta.crushed:8203>],
+[w*900],
+[<liquid:sluicejuice>*900],
+[<gregtech:gt.meta.crushedPurified:8203>,<gregtech:gt.meta.crushedPurifiedTiny:8204>*9,<gregtech:gt.meta.crushedPurifiedTiny:8204>*9,<gregtech:gt.meta.crushedPurifiedTiny:8204>*9,<gregtech:gt.meta.crushedPurifiedTiny:8242>*9,<gregtech:gt.meta.crushedPurifiedTiny:8242>*9,<gregtech:gt.meta.crushedPurifiedTiny:8242>*9,<gregtech:gt.meta.crushedPurifiedTiny:8029>*9,<gregtech:gt.meta.crushedPurifiedTiny:8029>*9]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.sluice", false, 16, 144 ,0,[10000,300,300,300,300,300,300,300,300],
+[<gregtech:gt.meta.crushed:8203>],
+[dw*900],
+[<liquid:sluicejuice>*900],
+[<gregtech:gt.meta.crushedPurified:8203>,<gregtech:gt.meta.crushedPurifiedTiny:8204>*9,<gregtech:gt.meta.crushedPurifiedTiny:8204>*9,<gregtech:gt.meta.crushedPurifiedTiny:8204>*9,<gregtech:gt.meta.crushedPurifiedTiny:8242>*9,<gregtech:gt.meta.crushedPurifiedTiny:8242>*9,<gregtech:gt.meta.crushedPurifiedTiny:8242>*9,<gregtech:gt.meta.crushedPurifiedTiny:8029>*9,<gregtech:gt.meta.crushedPurifiedTiny:8029>*9]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.sluice", false, 16, 144 ,0,[10000,300,300,300,300,300,300,300,300],
+[<gregtech:gt.meta.crushed:8203>],
+[fw*900],
+[<liquid:sluicejuice>*900],
+[<gregtech:gt.meta.crushedPurified:8203>,<gregtech:gt.meta.crushedPurifiedTiny:8204>*9,<gregtech:gt.meta.crushedPurifiedTiny:8204>*9,<gregtech:gt.meta.crushedPurifiedTiny:8204>*9,<gregtech:gt.meta.crushedPurifiedTiny:8242>*9,<gregtech:gt.meta.crushedPurifiedTiny:8242>*9,<gregtech:gt.meta.crushedPurifiedTiny:8242>*9,<gregtech:gt.meta.crushedPurifiedTiny:8029>*9,<gregtech:gt.meta.crushedPurifiedTiny:8029>*9]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.sluice", false, 16, 16 ,0,[10000,300,300,300,300,300,300,300,300],
+[<gregtech:gt.meta.crushedTiny:8203>],
+[w*100],
+[<liquid:sluicejuice>*100],
+[<gregtech:gt.meta.crushedPurifiedTiny:8203>,<gregtech:gt.meta.crushedPurifiedTiny:8204>,<gregtech:gt.meta.crushedPurifiedTiny:8204>,<gregtech:gt.meta.crushedPurifiedTiny:8204>,<gregtech:gt.meta.crushedPurifiedTiny:8242>,<gregtech:gt.meta.crushedPurifiedTiny:8242>,<gregtech:gt.meta.crushedPurifiedTiny:8242>,<gregtech:gt.meta.crushedPurifiedTiny:8029>,<gregtech:gt.meta.crushedPurifiedTiny:8029>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.sluice", false, 16, 16 ,0,[10000,300,300,300,300,300,300,300,300],
+[<gregtech:gt.meta.crushedTiny:8203>],
+[dw*100],
+[<liquid:sluicejuice>*100],
+[<gregtech:gt.meta.crushedPurifiedTiny:8203>,<gregtech:gt.meta.crushedPurifiedTiny:8204>,<gregtech:gt.meta.crushedPurifiedTiny:8204>,<gregtech:gt.meta.crushedPurifiedTiny:8204>,<gregtech:gt.meta.crushedPurifiedTiny:8242>,<gregtech:gt.meta.crushedPurifiedTiny:8242>,<gregtech:gt.meta.crushedPurifiedTiny:8242>,<gregtech:gt.meta.crushedPurifiedTiny:8029>,<gregtech:gt.meta.crushedPurifiedTiny:8029>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.sluice", false, 16, 16 ,0,[10000,300,300,300,300,300,300,300,300],
+[<gregtech:gt.meta.crushedTiny:8203>],
+[fw*100],
+[<liquid:sluicejuice>*100],
+[<gregtech:gt.meta.crushedPurifiedTiny:8203>,<gregtech:gt.meta.crushedPurifiedTiny:8204>,<gregtech:gt.meta.crushedPurifiedTiny:8204>,<gregtech:gt.meta.crushedPurifiedTiny:8204>,<gregtech:gt.meta.crushedPurifiedTiny:8242>,<gregtech:gt.meta.crushedPurifiedTiny:8242>,<gregtech:gt.meta.crushedPurifiedTiny:8242>,<gregtech:gt.meta.crushedPurifiedTiny:8029>,<gregtech:gt.meta.crushedPurifiedTiny:8029>]);
+
+//Shi mian
+MTUtilsGT.removeAllRecipes("gt.recipe.sluice",<gregtech:gt.meta.crushedPurified:9161>);
+MTUtilsGT.removeAllRecipes("gt.recipe.sluice",<gregtech:gt.meta.crushedPurifiedTiny:9161>);
+val sm = <gregtech:gt.meta.crushedPurifiedTiny:9103>;
+val liu = <gregtech:gt.meta.crushedPurifiedTiny:160>;
+
+MTUtilsGT.addCustomRecipe("gt.recipe.sluice", false, 16, 144 ,0,[10000,300,300,300,300,300,300,300,300],
+[<gregtech:gt.meta.crushed:9161>],
+[w*900],
+[<liquid:sluicejuice>*900],
+[<gregtech:gt.meta.crushedPurified:9161>,sm*9,sm*9,sm*9,sm*9,liu*9,liu*9,liu*9,liu*9]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.sluice", false, 16, 144 ,0,[10000,300,300,300,300,300,300,300,300],
+[<gregtech:gt.meta.crushed:9161>],
+[fw*900],
+[<liquid:sluicejuice>*900],
+[<gregtech:gt.meta.crushedPurified:9161>,sm*9,sm*9,sm*9,sm*9,liu*9,liu*9,liu*9,liu*9]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.sluice", false, 16, 144 ,0,[10000,300,300,300,300,300,300,300,300],
+[<gregtech:gt.meta.crushed:9161>],
+[dw*900],
+[<liquid:sluicejuice>*900],
+[<gregtech:gt.meta.crushedPurified:9161>,sm*9,sm*9,sm*9,sm*9,liu*9,liu*9,liu*9,liu*9]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.sluice", false, 16, 16 ,0,[10000,300,300,300,300,300,300,300,300],
+[<gregtech:gt.meta.crushedTiny:9161>],
+[w*100],
+[<liquid:sluicejuice>*100],
+[<gregtech:gt.meta.crushedPurifiedTiny:9161>,sm,sm,sm,sm,liu,liu,liu,liu]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.sluice", false, 16, 16 ,0,[10000,300,300,300,300,300,300,300,300],
+[<gregtech:gt.meta.crushedTiny:9161>],
+[fw*100],
+[<liquid:sluicejuice>*100],
+[<gregtech:gt.meta.crushedPurifiedTiny:9161>,sm,sm,sm,sm,liu,liu,liu,liu]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.sluice", false, 16, 16 ,0,[10000,300,300,300,300,300,300,300,300],
+[<gregtech:gt.meta.crushedTiny:9161>],
+[dw*100],
+[<liquid:sluicejuice>*100],
+[<gregtech:gt.meta.crushedPurifiedTiny:9161>,sm,sm,sm,sm,liu,liu,liu,liu]);

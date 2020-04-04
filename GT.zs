@@ -14,6 +14,9 @@ val Chisel = <ore:craftingToolChisel>;
 val Cutter = <ore:craftingToolWireCutter>;
 val File = <ore:craftingToolFile>;
 val n = null;
+val w = <liquid:water>;
+val dw = <liquid:ic2distilledwater>;
+val fw = <liquid:freshwater>;
 
 /**Templates Starts
 var x = [] as IItemStack[];
