@@ -79,3 +79,10 @@ recipes.addShaped(<DraconicEvolution:draconicCore>,[
 [<DraconicEvolution:draconiumIngot>,<ore:CPU2G>,<DraconicEvolution:draconiumIngot>],
 [<gregtech:gt.meta.plateTiny:460>,<DraconicEvolution:draconiumIngot>,<gregtech:gt.meta.plateTiny:450>]]);
 //long xin
+
+recipes.remove(<DraconicEvolution:reactorCore>);
+recipes.addShaped(<DraconicEvolution:reactorCore>,[
+[<DraconicEvolution:chaosShard>,<DraconicEvolution:draconicIngot>,<DraconicEvolution:chaosShard>],
+[<DraconicEvolution:draconicIngot>,<gregtech:gt.multiitem.physics:1009>,<DraconicEvolution:draconicIngot>],
+[<DraconicEvolution:chaosShard>,<DraconicEvolution:draconicIngot>,<DraconicEvolution:chaosShard>]]);
+//fan ying dui he xin
