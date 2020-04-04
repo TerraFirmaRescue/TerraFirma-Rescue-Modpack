@@ -205,12 +205,12 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 4096, 400, 0, [10000],
 
 mods.avaritia.ExtremeCrafting.remove(<Avaritia:Resource:5>);
 mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Resource:5>,
-[[null,null,null,null,<DraconicEvolution:reactorEnergyInjector>,null,null,null,null],
-  [null,null,null,null,<DraconicEvolution:draconicBlock>,null,null,null,null],
-  [null,null,null, <ore:ingotTartarite>,<DraconicEvolution:chaosShard>,<ore:ingotTartarite> , null,null, null],
-  [null,null, null, <Avaritia:Singularity:1>, <Avaritia:Singularity>, <Avaritia:Singularity:3>, null,null,null],
-  [null,null, null, <Avaritia:Singularity:5>,<gregtech:gt.meta.machine.quadruple:8800>, <Avaritia:Singularity:6>,null,null,null],
-  [null,null, null, <Avaritia:Singularity:7>, <Avaritia:Singularity:8>,<Avaritia:Singularity:9>, null,null,null],
-  [null,<moegadd:MainframeCluster7>,<IC2:itemPartIridium>,<gregtech:gt.multiitem.physics:1005>,<gregtech:gt.multiitem.physics:1000>,<gregtech:gt.multiitem.physics:1001>, <IC2:itemPartIridium>,<moegadd:MainframeCluster7>,null],
-  [null,<moegadd:MainframeCluster7>,<IC2:itemPartIridium>,<gregtech:gt.multiitem.physics:1006>,<gregtech:gt.multiitem.physics:1002>,<gregtech:gt.multiitem.physics:1003>,<IC2:itemPartIridium>,<moegadd:MainframeCluster7>,null],
-  [null,<moegadd:MainframeCluster7>,<IC2:itemPartIridium>,<IC2:itemPartIridium>,<gregtech:gt.multitileentity:1049>,<IC2:itemPartIridium>,<IC2:itemPartIridium>,<moegadd:MainframeCluster7>,null]]);
+[[null,null,null,<IC2:itemPartIridium>,<gregtech:gt.multiitem.physics:1004>,<IC2:itemPartIridium>,null,null,null],
+  [null,null,null,<IC2:itemPartIridium>,<DraconicEvolution:chaosShard>,<IC2:itemPartIridium>,null,null,null],
+  [null,null,<IC2:itemPartIridium>,<gregtech:gt.meta.ingot:2210>,<DraconicEvolution:chaosShard>,<gregtech:gt.meta.ingot:2210>,<IC2:itemPartIridium>,null, null],
+  [null,null, <IC2:itemPartIridium>, <Avaritia:Singularity:1>, <Avaritia:Singularity>, <Avaritia:Singularity:3>,<IC2:itemPartIridium>,null,null],
+  [null,null, <IC2:itemPartIridium>, <Avaritia:Singularity:5>,<gregtech:gt.meta.machine.quadruple:8800>, <Avaritia:Singularity:6>,<IC2:itemPartIridium>,null,null],
+  [null,null, <IC2:itemPartIridium>, <Avaritia:Singularity:7>, <Avaritia:Singularity:8>,<Avaritia:Singularity:9>,<IC2:itemPartIridium>,null,null],
+  [null,<IC2:itemPartIridium>,<moegadd:MainframeCluster7>,<gregtech:gt.multiitem.physics:1005>,<gregtech:gt.multiitem.physics:1000>,<gregtech:gt.multiitem.physics:1001>,<moegadd:MainframeCluster7>,<IC2:itemPartIridium>,null],
+  [null,<IC2:itemPartIridium>,<moegadd:MainframeCluster7>,<gregtech:gt.multiitem.physics:1006>,<gregtech:gt.multiitem.physics:1002>,<gregtech:gt.multiitem.physics:1003>,<moegadd:MainframeCluster7>,<IC2:itemPartIridium>,null],
+  [null,<IC2:itemPartIridium>,<moegadd:MainframeCluster7>,<gregtech:gt.meta.ingotQuintuple:8706>,<gregtech:gt.meta.ingotQuintuple:8706>,<gregtech:gt.meta.ingotQuintuple:8706>,<moegadd:MainframeCluster7>,<IC2:itemPartIridium>,null]]);
