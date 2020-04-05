@@ -1166,3 +1166,10 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 40 ,0,[10000],
 [USBy0]);
 }
 //USB
+
+MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 16, 1000 ,0,[9950],
+[<gregtech:gt.meta.ingot:940>],
+[null],
+[<liquid:radon>*10],
+[<gregtech:gt.meta.dust:940>]);
+//Rn
