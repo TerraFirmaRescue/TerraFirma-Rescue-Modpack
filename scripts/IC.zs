@@ -59,18 +59,35 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 2048, 800, 0, [10000],
 recipes.remove(<IC2:reactorVent:1>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<IC2:reactorVent:1>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1024,256, 0, [10000], 
-[<gregtech:gt.meta.plate:2220>,<minecraft:iron_bars>*4,<IC2:itemRecipePart:1>], 
+[<gregtech:gt.multiitem.technological:12003>,<gregtech:gt.meta.rotor:8665>,<gregtech:gt.multiitem.technological:1022>], 
 [null],
 [null],
 [<IC2:reactorVent:1>]);
+//san re pian
+recipes.remove(<IC2:reactorVentGold:1>);
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<IC2:reactorVentGold:1>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512,20, 0, [10000], 
+[<gregtech:gt.multiitem.technological:12005>,<gregtech:gt.meta.rotor:8798>,<gregtech:gt.meta.chain:790>*4], 
+[null],
+[null],
+[<IC2:reactorVentGold:1>]);
+//chao pin san re pian
+recipes.remove(<IC2:reactorVentDiamond:1>);
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<IC2:reactorVentDiamond:1>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512,20, 0, [10000], 
+[<gregtech:gt.multiitem.technological:12004>,<gregtech:gt.meta.rotor:8797>,<gregtech:gt.meta.plateGem:8300>], 
+[null],
+[null],
+[<IC2:reactorVentDiamond:1>]);
+//gao ji san re pian
 
 recipes.remove(<IC2:itemupgradekit>);
-
 recipes.remove(<IC2:itemRecipePart:5>);
 recipes.addShaped(<IC2:itemRecipePart:5>,
 [[<gregtech:gt.meta.plate:8217>,<terrafirmacraft:item.Copper Sheet>,<ore:craftingToolWrench>],
 [<gregtech:gt.multitileentity:26100>,<gregtech:gt.multitileentity:26100>,<gregtech:gt.multitileentity:26100>],
 [<gregtech:gt.meta.plate:8217>,<terrafirmacraft:item.Copper Sheet>,<gregtech:gt.meta.plate:8217>]]);
+
 
 recipes.remove(<IC2:blockMachine:7>);
 recipes.addShaped(<IC2:blockMachine:7>,[
