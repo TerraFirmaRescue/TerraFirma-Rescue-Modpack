@@ -1,0 +1,15 @@
+<!--Author: ViKaleidoscope -->
+<!--Date: 2015/04/22-->
+<!--Version: rv2-beta-28-->
+<oo>
+    <tileentity id="BlockDrive">
+        <line>
+            return translate(gui.appliedenergistics2.Priority')+nbt['priority']
+        </line>
+    </tileentity>
+    <tileentity id="BlockChest">
+        <line>
+            return translate(gui.appliedenergistics2.Priority')+nbt['priority']
+        </line>
+    </tileentity>
+</oo>

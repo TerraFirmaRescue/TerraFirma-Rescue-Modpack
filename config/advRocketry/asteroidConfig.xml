@@ -1,0 +1,22 @@
+<Asteroids>
+<asteroid name="Tin Asteroid" distance="10" mass="800" massVariability="0.5" minLevel="0" probability="1" richness="0.8" richnessVariability="0.5">
+      <ore itemStack="libVulpes:libVulpesore0 5" chance="20" />
+	  <ore itemStack="advancedRocketry:tile.geode" chance="20" />
+    </asteroid>
+<asteroid name="Nickel Asteroid" distance="10" mass="600" massVariability="0.5" minLevel="0" probability="1" richness="0.8" richnessVariability="0.5">
+      <ore itemStack="gregtech:gt.meta.ore.normal.default 280" chance="15" />
+	  <ore itemStack="advancedRocketry:tile.geode" chance="25" />
+    </asteroid>
+<asteroid name="Copper Asteroid" distance="10" mass="1200" massVariability="0.5" minLevel="0" probability="1" richness="0.7" richnessVariability="0.5">
+      <ore itemStack="libVulpes:libVulpesore0 5" chance="25" />
+	  <ore itemStack="advancedRocketry:tile.geode" chance="20" />
+     </asteroid>
+<asteroid name="Cr Iron Asteroid" distance="10" mass="600" 	massVariability="0.5" minLevel="0" probability="1" richness="0.8" richnessVariability="0.5">
+      <ore itemStack="gregtech:gt.meta.ore.normal.default 9113" chance="20" />
+	  <ore itemStack="advancedRocketry:tile.geode" chance="25" />
+    </asteroid>
+<asteroid name="Manganese Asteroid" distance="10" mass="600" massVariability="0.5" minLevel="0" probability="1" richness="0.8" richnessVariability="0.5">
+      <ore itemStack="gregtech:gt.meta.ore.normal.default 9126" chance="20" />
+	  <ore itemStack="advancedRocketry:tile.geode" chance="25" />
+    </asteroid>
+</Asteroids>

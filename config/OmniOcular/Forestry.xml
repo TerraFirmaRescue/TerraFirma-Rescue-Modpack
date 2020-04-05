@@ -1,0 +1,134 @@
+<!--Author: ViKaleidoscope, EpixZhang -->
+<!--Date: 2015/2/8-->
+<!--Version: 3.1.1.274-unstable-->
+<oo>
+    <tileentity id="forestry.Analyzer">
+        <line displayname="fluid.honey">
+            return nbt['tanks'][0]['Amount']+" mB"
+        </line>
+    </tileentity>
+    <tileentity id="forestry.EngineTin">
+        <line displayname="hud.msg.energ">
+            return nbt['EnergyManager']['EnergyStorage']['Energy']+" RF"
+        </line>
+        <line displayname="hud.msg.energ">
+            return nbt['IC2BasicSink']['energy']+" EU"
+        </line>
+        <line displayname="for.gui.heat">
+            return nbt['EngineHeat']/10+20
+        </line>
+    </tileentity>
+    <tileentity id="forestry.EngineCopper">
+        <line displayname="hud.msg.energ">
+            return nbt['EnergyManager']['EnergyStorage']['Energy']+" RF"
+        </line>
+        <line displayname="hud.msg.vanilla.BurnTime">
+            return (nbt['EngineBurnTime']/20).toFixed(0)+" / "+(nbt['EngineTotalTime']/20).toFixed(0)+" Seconds"
+        </line>
+        <line displayname="for.gui.heat">
+            return nbt['EngineHeat']/10+20
+        </line>
+    </tileentity>
+    <tileentity id="forestry.EngineBronze">
+        <line displayname="hud.msg.energ">
+            return nbt['EnergyManager']['EnergyStorage']['Energy']+" RF"
+        </line>
+        <line displayname="for.gui.heat">
+            return nbt['EngineHeat']/10+20
+        </line>
+        <line displayname="hud.msg.fluid">
+            return nbt['tanks'][0]['FluidName']+"("+nbt['tanks'][0]['Amount']+" mB)"
+        </line>
+        <line displayname="hud.msg.fluid">
+            return nbt['tanks'][1]['FluidName']+"("+nbt['tanks'][1]['Amount']+" mB)"
+        </line>
+    </tileentity>
+    <tileentity id="forestry.EngineClockwork">
+        <line displayname="hud.msg.energ">
+            return nbt['EnergyManager']['EnergyStorage']['Energy']+" RF"
+        </line>
+        <line displayname="for.gui.heat">
+            return nbt['EngineHeat']/10+20
+        </line>
+    </tileentity>
+    <tileentity id="forestry.Generator">
+        <line displayname="hud.msg.energ">
+            return nbt['IC2BasicSource']['energy']+" EU"
+        </line>
+        <line displayname="Fuel">
+            return nbt['tanks'][0]['FluidName']+"("+nbt['tanks'][0]['Amount']+" mB)"
+        </line>
+        <line displayname="Fuel">
+            return nbt['tanks'][1]['FluidName']+"("+nbt['tanks'][1]['Amount']+" mB)"
+        </line>
+    </tileentity>
+    <tileentity id="forestry.Bottler">
+        <line displayname="hud.msg.energ">
+            return nbt['EnergyManager']['EnergyStorage']['Energy']+" RF"
+        </line>
+        <line displayname="hud.msg.fluid">
+            return nbt['tanks'][0]['FluidName']+"("+nbt['tanks'][0]['Amount']+" mB)"
+        </line>
+    </tileentity>
+    <tileentity id="forestry.Centrifuge">
+        <line displayname="hud.msg.energ">
+            return nbt['EnergyManager']['EnergyStorage']['Energy']+" RF"
+        </line>
+    </tileentity>
+    <tileentity id="forestry.Carpenter">
+        <line displayname="hud.msg.energ">
+            return nbt['EnergyManager']['EnergyStorage']['Energy']+" RF"
+        </line>
+        <line displayname="hud.msg.fluid">
+            return nbt['tanks'][0]['FluidName']+"("+nbt['tanks'][0]['Amount']+" mB)"
+        </line>
+    </tileentity>
+    <tileentity id="forestry.Fermenter">
+        <line displayname="hud.msg.energ">
+            return nbt['EnergyManager']['EnergyStorage']['Energy']+" RF"
+        </line>
+        <line displayname="hud.msg.fluid">
+            return nbt['tanks'][0]['FluidName']+"("+nbt['tanks'][0]['Amount']+" mB)"
+        </line>
+        <line displayname="hud.msg.fluid">
+            return nbt['tanks'][1]['FluidName']+"("+nbt['tanks'][1]['Amount']+" mB)"
+        </line>
+    </tileentity>
+    <tileentity id="forestry.Moistener">
+        <line displayname="hud.msg.fluid">
+            return nbt['tanks'][0]['FluidName']+"("+nbt['tanks'][0]['Amount']+" mB)"
+        </line>
+    </tileentity>
+    <tileentity id="forestry.Squeezer">
+        <line displayname="hud.msg.energ">
+            return nbt['EnergyManager']['EnergyStorage']['Energy']+" RF"
+        </line>
+        <line displayname="hud.msg.fluid">
+            return nbt['tanks'][0]['FluidName']+"("+nbt['tanks'][0]['Amount']+" mB)"
+        </line>
+    </tileentity>
+    <tileentity id="forestry.Still">
+        <line displayname="hud.msg.energ">
+            return nbt['EnergyManager']['EnergyStorage']['Energy']+" RF"
+        </line>
+        <line displayname="hud.msg.fluid">
+            return nbt['tanks'][0]['FluidName']+"("+nbt['tanks'][0]['Amount']+" mB)"
+        </line>
+        <line displayname="hud.msg.fluid">
+            return nbt['tanks'][1]['FluidName']+"("+nbt['tanks'][1]['Amount']+" mB)"
+        </line>
+    </tileentity>
+    <tileentity id="forestry.Raintank">
+        <line displayname="hud.msg.fluid">
+            return nbt['tanks'][0]['FluidName']+"("+nbt['tanks'][0]['Amount']+" mB)"
+        </line>
+    </tileentity>
+    <tileentity id="forestry.Fabricator">
+        <line displayname="hud.msg.energ">
+            return nbt['EnergyManager']['EnergyStorage']['Energy']+" RF"
+        </line>
+        <line displayname="fluid.glass">
+            return nbt['tanks'][0]['Amount']+" / 2000 mB"
+        </line>
+    </tileentity>
+</oo>

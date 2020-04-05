@@ -1,0 +1,1015 @@
+<!-- =================================================================
+     Custom Ore Generation "ElectriCraft" Module: This configuration
+     covers copper, tin, silver, nickel, aluminum, and platinum.
+     ================================================================= -->
+
+
+<!-- An expansion to Rotarycraft, this mod adds oregen appropriate to
+     the formation of various wires with different electrical
+     advantages/disadvantages. -->
+
+
+
+
+<!-- Is the "ElectriCraft" mod on the system?  Let's find out! -->
+<IfModInstalled name="ElectriCraft">
+
+    <!-- Starting Configuration for Custom Ore Generation. -->
+    <ConfigSection>
+
+
+
+
+
+        <!-- Setup Screen Configuration -->
+        <ConfigSection>
+            <OptionDisplayGroup name='groupElectriCraft' displayName='ElectriCraft' displayState='shown'>
+                <Description>
+                    Distribution options for ElectriCraft Ores.
+                </Description>
+            </OptionDisplayGroup>
+            <OptionChoice name='enableElectriCraft' displayName='Handle ElectriCraft Setup?' default='true' displayState='shown_dynamic' displayGroup='groupElectriCraft'>
+                <Description> Should Custom Ore Generation handle ElectriCraft ore generation? </Description>
+                <Choice value=':= ?true' displayValue='Yes' description='Use Custom Ore Generation to handle ElectriCraft ores.'/>
+                <Choice value=':= ?false' displayValue='No' description='ElectriCraft ores will be handled by the mod itself.'/>
+            </OptionChoice>
+
+            <!-- Copper Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='elcrCopperDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Controls how Copper is generated </Description>
+                    <DisplayName>ElectriCraft Copper</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='Layered Veins'>
+                        <Description>
+                            Small, fairly rare motherlodes with 2-4 horizontal veins each.
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='Vanilla'>
+                        <Description>
+                            Simulates Vanilla Minecraft.
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='Strategic Cloud'>
+                        <Description>
+                            Large irregular clouds filled lightly with ore.
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='None' description='Copper is not generated in the world.'/>
+                </OptionChoice>
+                <OptionNumeric name='elcrCopperFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Frequency multiplier for ElectriCraft Copper distributions </Description>
+                    <DisplayName>ElectriCraft Copper Freq.</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='elcrCopperSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Size multiplier for ElectriCraft Copper distributions </Description>
+                    <DisplayName>ElectriCraft Copper Size</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Copper Configuration UI Complete -->
+
+
+            <!-- Tin Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='elcrTinDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Controls how Tin is generated </Description>
+                    <DisplayName>ElectriCraft Tin</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='Layered Veins'>
+                        <Description>
+                            Small, fairly rare motherlodes with 2-4 horizontal veins each.
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='Vanilla'>
+                        <Description>
+                            Simulates Vanilla Minecraft.
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='Strategic Cloud'>
+                        <Description>
+                            Large irregular clouds filled lightly with ore.
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='None' description='Tin is not generated in the world.'/>
+                </OptionChoice>
+                <OptionNumeric name='elcrTinFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Frequency multiplier for ElectriCraft Tin distributions </Description>
+                    <DisplayName>ElectriCraft Tin Freq.</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='elcrTinSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Size multiplier for ElectriCraft Tin distributions </Description>
+                    <DisplayName>ElectriCraft Tin Size</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Tin Configuration UI Complete -->
+
+
+            <!-- Silver Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='elcrSilverDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Controls how Silver is generated </Description>
+                    <DisplayName>ElectriCraft Silver</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='Layered Veins'>
+                        <Description>
+                            Small, fairly rare motherlodes with 2-4 horizontal veins each.
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='Vanilla'>
+                        <Description>
+                            Simulates Vanilla Minecraft.
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='Strategic Cloud'>
+                        <Description>
+                            Large irregular clouds filled lightly with ore.
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='None' description='Silver is not generated in the world.'/>
+                </OptionChoice>
+                <OptionNumeric name='elcrSilverFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Frequency multiplier for ElectriCraft Silver distributions </Description>
+                    <DisplayName>ElectriCraft Silver Freq.</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='elcrSilverSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Size multiplier for ElectriCraft Silver distributions </Description>
+                    <DisplayName>ElectriCraft Silver Size</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Silver Configuration UI Complete -->
+
+
+            <!-- Nickel Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='elcrNickelDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Controls how Nickel is generated </Description>
+                    <DisplayName>ElectriCraft Nickel</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='Layered Veins'>
+                        <Description>
+                            Small, fairly rare motherlodes with 2-4 horizontal veins each.
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='Vanilla'>
+                        <Description>
+                            Simulates Vanilla Minecraft.
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='Strategic Cloud'>
+                        <Description>
+                            Large irregular clouds filled lightly with ore.
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='None' description='Nickel is not generated in the world.'/>
+                </OptionChoice>
+                <OptionNumeric name='elcrNickelFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Frequency multiplier for ElectriCraft Nickel distributions </Description>
+                    <DisplayName>ElectriCraft Nickel Freq.</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='elcrNickelSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Size multiplier for ElectriCraft Nickel distributions </Description>
+                    <DisplayName>ElectriCraft Nickel Size</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Nickel Configuration UI Complete -->
+
+
+            <!-- Aluminum Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='elcrAluminumDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Controls how Aluminum is generated </Description>
+                    <DisplayName>ElectriCraft Aluminum</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='Layered Veins'>
+                        <Description>
+                            Small, fairly rare motherlodes with 2-4 horizontal veins each.
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='Vanilla'>
+                        <Description>
+                            Simulates Vanilla Minecraft.
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='Strategic Cloud'>
+                        <Description>
+                            Large irregular clouds filled lightly with ore.
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='None' description='Aluminum is not generated in the world.'/>
+                </OptionChoice>
+                <OptionNumeric name='elcrAluminumFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Frequency multiplier for ElectriCraft Aluminum distributions </Description>
+                    <DisplayName>ElectriCraft Aluminum Freq.</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='elcrAluminumSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Size multiplier for ElectriCraft Aluminum distributions </Description>
+                    <DisplayName>ElectriCraft Aluminum Size</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Aluminum Configuration UI Complete -->
+
+
+            <!-- Platinum Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='elcrPlatinumDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Controls how Platinum is generated </Description>
+                    <DisplayName>ElectriCraft Platinum</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='Layered Veins'>
+                        <Description>
+                            Small, fairly rare motherlodes with 2-4 horizontal veins each.
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='Vanilla'>
+                        <Description>
+                            Simulates Vanilla Minecraft.
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='Strategic Cloud'>
+                        <Description>
+                            Large irregular clouds filled lightly with ore.
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='None' description='Platinum is not generated in the world.'/>
+                </OptionChoice>
+                <OptionNumeric name='elcrPlatinumFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Frequency multiplier for ElectriCraft Platinum distributions </Description>
+                    <DisplayName>ElectriCraft Platinum Freq.</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='elcrPlatinumSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+                    <Description> Size multiplier for ElectriCraft Platinum distributions </Description>
+                    <DisplayName>ElectriCraft Platinum Size</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Platinum Configuration UI Complete -->
+
+        </ConfigSection>
+        <!-- Setup Screen Complete -->
+
+        <IfCondition condition=':= ?enableElectriCraft'>
+
+
+
+
+            <!-- Overworld Setup Beginning -->
+
+            <IfCondition condition=':= ?COGActive'>
+
+                <!-- Starting Original "Overworld" Block Removal -->
+
+                <IfCondition condition=':= ?blockExists("minecraft:stone")'>
+                    <Substitute name='elcrOverworldBlockSubstitute0' block='minecraft:stone'>
+                        <Description>
+                            Replace vanilla-generated ore clusters.
+                        </Description>
+                        <Comment>
+                            The global option  deferredPopulationRange
+                            must be large  enough to catch all ore
+                            clusters (>=  32).
+                        </Comment>
+                        <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore")'> <Replaces block='ElectriCraft:electricraft_block_ore' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:1")'> <Replaces block='ElectriCraft:electricraft_block_ore:1' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:2")'> <Replaces block='ElectriCraft:electricraft_block_ore:2' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:3")'> <Replaces block='ElectriCraft:electricraft_block_ore:3' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:4")'> <Replaces block='ElectriCraft:electricraft_block_ore:4' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:5")'> <Replaces block='ElectriCraft:electricraft_block_ore:5' weight='1.0' /> </IfCondition>
+                    </Substitute>
+                </IfCondition>
+
+                <!-- Original "Overworld" Block Removal Complete -->
+
+                <!-- Adding blocks -->
+
+                <!-- Begin Copper Generation -->
+
+                <!-- Starting LayeredVeins Preset for Copper. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrCopperDist = "LayeredVeins"'>
+                        <Veins name='elcrCopperVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60BB6E30' drawBoundBox='false' boundBoxColor='0x60BB6E30'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore")'> <OreBlock block='ElectriCraft:electricraft_block_ore' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 1.226 * _default_ * elcrCopperFreq ' range=':= 1.226 * _default_ * elcrCopperFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 1.035 * _default_ * elcrCopperSize ' range=':= 1.035 * _default_ * elcrCopperSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 48 ' range=':= 16 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 1.107 * _default_ ' range=':= 1.107 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * elcrCopperSize ' range=':= _default_ * elcrCopperSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 1.052 * _default_ * elcrCopperSize ' range=':= 1.052 * _default_ * elcrCopperSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Copper is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Copper. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrCopperDist = "Vanilla"'>
+                        <StandardGen name='elcrCopperStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60BB6E30' drawBoundBox='false' boundBoxColor='0x60BB6E30'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore")'> <OreBlock block='ElectriCraft:electricraft_block_ore' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 6.000 * elcrCopperSize ' range=':= _default_ * elcrCopperSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 8.000 * elcrCopperFreq ' range=':= _default_ * elcrCopperFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 48 ' range=':= 16 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Copper is complete. -->
+
+
+                <!-- Starting Cloud Preset for Copper. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrCopperDist = "Cloud"'>
+                        <Cloud name='elcrCopperCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60BB6E30' drawBoundBox='false' boundBoxColor='0x60BB6E30'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore")'> <OreBlock block='ElectriCraft:electricraft_block_ore' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 1.036 * _default_ * elcrCopperSize ' range=':= 1.036 * _default_ * elcrCopperSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 1.036 * _default_ * elcrCopperSize ' range=':= 1.036 * _default_ * elcrCopperSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 1.073 * _default_ * elcrCopperFreq ' range=':= 1.073 * _default_ * elcrCopperFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 48 ' range=':= 16 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='elcrCopperHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60BB6E30' drawBoundBox='false' boundBoxColor='0x60BB6E30'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore")'> <OreBlock block='ElectriCraft:electricraft_block_ore' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Copper is complete. -->
+
+                <!-- End Copper Generation -->
+
+
+                <!-- Begin Tin Generation -->
+
+                <!-- Starting LayeredVeins Preset for Tin. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrTinDist = "LayeredVeins"'>
+                        <Veins name='elcrTinVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60A9C7CF' drawBoundBox='false' boundBoxColor='0x60A9C7CF'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:1")'> <OreBlock block='ElectriCraft:electricraft_block_ore:1' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 1.416 * _default_ * elcrTinFreq ' range=':= 1.416 * _default_ * elcrTinFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 1.060 * _default_ * elcrTinSize ' range=':= 1.060 * _default_ * elcrTinSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 60 ' range=':= 12 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 1.190 * _default_ ' range=':= 1.190 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * elcrTinSize ' range=':= _default_ * elcrTinSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 1.091 * _default_ * elcrTinSize ' range=':= 1.091 * _default_ * elcrTinSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Tin is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Tin. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrTinDist = "Vanilla"'>
+                        <StandardGen name='elcrTinStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60A9C7CF' drawBoundBox='false' boundBoxColor='0x60A9C7CF'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:1")'> <OreBlock block='ElectriCraft:electricraft_block_ore:1' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 8.000 * elcrTinSize ' range=':= _default_ * elcrTinSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 8.000 * elcrTinFreq ' range=':= _default_ * elcrTinFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 60 ' range=':= 12 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Tin is complete. -->
+
+
+                <!-- Starting Cloud Preset for Tin. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrTinDist = "Cloud"'>
+                        <Cloud name='elcrTinCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60A9C7CF' drawBoundBox='false' boundBoxColor='0x60A9C7CF'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:1")'> <OreBlock block='ElectriCraft:electricraft_block_ore:1' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 1.113 * _default_ * elcrTinSize ' range=':= 1.113 * _default_ * elcrTinSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 1.113 * _default_ * elcrTinSize ' range=':= 1.113 * _default_ * elcrTinSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 1.239 * _default_ * elcrTinFreq ' range=':= 1.239 * _default_ * elcrTinFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 60 ' range=':= 12 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='elcrTinHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60A9C7CF' drawBoundBox='false' boundBoxColor='0x60A9C7CF'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:1")'> <OreBlock block='ElectriCraft:electricraft_block_ore:1' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Tin is complete. -->
+
+                <!-- End Tin Generation -->
+
+
+                <!-- Begin Silver Generation -->
+
+                <!-- Starting LayeredVeins Preset for Silver. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrSilverDist = "LayeredVeins"'>
+                        <Veins name='elcrSilverVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60B6D2EA' drawBoundBox='false' boundBoxColor='0x60B6D2EA'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:2")'> <OreBlock block='ElectriCraft:electricraft_block_ore:2' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 0.867 * _default_ * elcrSilverFreq ' range=':= 0.867 * _default_ * elcrSilverFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 0.976 * _default_ * elcrSilverSize ' range=':= 0.976 * _default_ * elcrSilverSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 0.931 * _default_ ' range=':= 0.931 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * elcrSilverSize ' range=':= _default_ * elcrSilverSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 0.965 * _default_ * elcrSilverSize ' range=':= 0.965 * _default_ * elcrSilverSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Silver is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Silver. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrSilverDist = "Vanilla"'>
+                        <StandardGen name='elcrSilverStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60B6D2EA' drawBoundBox='false' boundBoxColor='0x60B6D2EA'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:2")'> <OreBlock block='ElectriCraft:electricraft_block_ore:2' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 6.000 * elcrSilverSize ' range=':= _default_ * elcrSilverSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 4.000 * elcrSilverFreq ' range=':= _default_ * elcrSilverFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Silver is complete. -->
+
+
+                <!-- Starting Cloud Preset for Silver. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrSilverDist = "Cloud"'>
+                        <Cloud name='elcrSilverCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60B6D2EA' drawBoundBox='false' boundBoxColor='0x60B6D2EA'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:2")'> <OreBlock block='ElectriCraft:electricraft_block_ore:2' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.871 * _default_ * elcrSilverSize ' range=':= 0.871 * _default_ * elcrSilverSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.871 * _default_ * elcrSilverSize ' range=':= 0.871 * _default_ * elcrSilverSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.758 * _default_ * elcrSilverFreq ' range=':= 0.758 * _default_ * elcrSilverFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 19 ' range=':= 13 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='elcrSilverHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60B6D2EA' drawBoundBox='false' boundBoxColor='0x60B6D2EA'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:2")'> <OreBlock block='ElectriCraft:electricraft_block_ore:2' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Silver is complete. -->
+
+                <!-- End Silver Generation -->
+
+
+                <!-- Begin Nickel Generation -->
+
+                <!-- Starting LayeredVeins Preset for Nickel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrNickelDist = "LayeredVeins"'>
+                        <Veins name='elcrNickelVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60D2D1B6' drawBoundBox='false' boundBoxColor='0x60D2D1B6'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:3")'> <OreBlock block='ElectriCraft:electricraft_block_ore:3' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 1.226 * _default_ * elcrNickelFreq ' range=':= 1.226 * _default_ * elcrNickelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 1.035 * _default_ * elcrNickelSize ' range=':= 1.035 * _default_ * elcrNickelSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 32 ' range=':= 16 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 1.107 * _default_ ' range=':= 1.107 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * elcrNickelSize ' range=':= _default_ * elcrNickelSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 1.052 * _default_ * elcrNickelSize ' range=':= 1.052 * _default_ * elcrNickelSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Nickel is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Nickel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrNickelDist = "Vanilla"'>
+                        <StandardGen name='elcrNickelStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60D2D1B6' drawBoundBox='false' boundBoxColor='0x60D2D1B6'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:3")'> <OreBlock block='ElectriCraft:electricraft_block_ore:3' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 8.000 * elcrNickelSize ' range=':= _default_ * elcrNickelSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 6.000 * elcrNickelFreq ' range=':= _default_ * elcrNickelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 32 ' range=':= 16 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Nickel is complete. -->
+
+
+                <!-- Starting Cloud Preset for Nickel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrNickelDist = "Cloud"'>
+                        <Cloud name='elcrNickelCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60D2D1B6' drawBoundBox='false' boundBoxColor='0x60D2D1B6'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:3")'> <OreBlock block='ElectriCraft:electricraft_block_ore:3' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 1.036 * _default_ * elcrNickelSize ' range=':= 1.036 * _default_ * elcrNickelSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 1.036 * _default_ * elcrNickelSize ' range=':= 1.036 * _default_ * elcrNickelSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 1.073 * _default_ * elcrNickelFreq ' range=':= 1.073 * _default_ * elcrNickelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 32 ' range=':= 16 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='elcrNickelHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60D2D1B6' drawBoundBox='false' boundBoxColor='0x60D2D1B6'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:3")'> <OreBlock block='ElectriCraft:electricraft_block_ore:3' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Nickel is complete. -->
+
+                <!-- End Nickel Generation -->
+
+
+                <!-- Begin Aluminum Generation -->
+
+                <!-- Starting LayeredVeins Preset for Aluminum. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrAluminumDist = "LayeredVeins"'>
+                        <Veins name='elcrAluminumVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60DAD9DB' drawBoundBox='false' boundBoxColor='0x60DAD9DB'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:4")'> <OreBlock block='ElectriCraft:electricraft_block_ore:4' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 1.583 * _default_ * elcrAluminumFreq ' range=':= 1.583 * _default_ * elcrAluminumFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 1.080 * _default_ * elcrAluminumSize ' range=':= 1.080 * _default_ * elcrAluminumSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 94 ' range=':= 34 ' type='uniform' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 1.258 * _default_ ' range=':= 1.258 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * elcrAluminumSize ' range=':= _default_ * elcrAluminumSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 1.122 * _default_ * elcrAluminumSize ' range=':= 1.122 * _default_ * elcrAluminumSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Aluminum is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Aluminum. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrAluminumDist = "Vanilla"'>
+                        <StandardGen name='elcrAluminumStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60DAD9DB' drawBoundBox='false' boundBoxColor='0x60DAD9DB'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:4")'> <OreBlock block='ElectriCraft:electricraft_block_ore:4' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 8.000 * elcrAluminumSize ' range=':= _default_ * elcrAluminumSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 10.000 * elcrAluminumFreq ' range=':= _default_ * elcrAluminumFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 94 ' range=':= 34 ' type='uniform' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Aluminum is complete. -->
+
+
+                <!-- Starting Cloud Preset for Aluminum. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrAluminumDist = "Cloud"'>
+                        <Cloud name='elcrAluminumCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60DAD9DB' drawBoundBox='false' boundBoxColor='0x60DAD9DB'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:4")'> <OreBlock block='ElectriCraft:electricraft_block_ore:4' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 1.177 * _default_ * elcrAluminumSize ' range=':= 1.177 * _default_ * elcrAluminumSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 1.177 * _default_ * elcrAluminumSize ' range=':= 1.177 * _default_ * elcrAluminumSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 1.385 * _default_ * elcrAluminumFreq ' range=':= 1.385 * _default_ * elcrAluminumFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 94 ' range=':= 34 ' type='uniform' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='elcrAluminumHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60DAD9DB' drawBoundBox='false' boundBoxColor='0x60DAD9DB'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:4")'> <OreBlock block='ElectriCraft:electricraft_block_ore:4' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Aluminum is complete. -->
+
+                <!-- End Aluminum Generation -->
+
+
+                <!-- Begin Platinum Generation -->
+
+                <!-- Starting LayeredVeins Preset for Platinum. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrPlatinumDist = "LayeredVeins"'>
+                        <Veins name='elcrPlatinumVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x602D84E7' drawBoundBox='false' boundBoxColor='0x602D84E7'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:5")'> <OreBlock block='ElectriCraft:electricraft_block_ore:5' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 0.500 * _default_ * elcrPlatinumFreq ' range=':= 0.500 * _default_ * elcrPlatinumFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 0.891 * _default_ * elcrPlatinumSize ' range=':= 0.891 * _default_ * elcrPlatinumSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 11 ' range=':= 5 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 0.707 * _default_ ' range=':= 0.707 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * elcrPlatinumSize ' range=':= _default_ * elcrPlatinumSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 0.841 * _default_ * elcrPlatinumSize ' range=':= 0.841 * _default_ * elcrPlatinumSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Platinum is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Platinum. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrPlatinumDist = "Vanilla"'>
+                        <StandardGen name='elcrPlatinumStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x602D84E7' drawBoundBox='false' boundBoxColor='0x602D84E7'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:5")'> <OreBlock block='ElectriCraft:electricraft_block_ore:5' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 4.000 * elcrPlatinumSize ' range=':= _default_ * elcrPlatinumSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 2.000 * elcrPlatinumFreq ' range=':= _default_ * elcrPlatinumFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 11 ' range=':= 5 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Platinum is complete. -->
+
+
+                <!-- Starting Cloud Preset for Platinum. -->
+                <ConfigSection>
+                    <IfCondition condition=':= elcrPlatinumDist = "Cloud"'>
+                        <Cloud name='elcrPlatinumCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x602D84E7' drawBoundBox='false' boundBoxColor='0x602D84E7'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:5")'> <OreBlock block='ElectriCraft:electricraft_block_ore:5' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.662 * _default_ * elcrPlatinumSize ' range=':= 0.662 * _default_ * elcrPlatinumSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.662 * _default_ * elcrPlatinumSize ' range=':= 0.662 * _default_ * elcrPlatinumSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.438 * _default_ * elcrPlatinumFreq ' range=':= 0.438 * _default_ * elcrPlatinumFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 11 ' range=':= 5 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='elcrPlatinumHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x602D84E7' drawBoundBox='false' boundBoxColor='0x602D84E7'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("ElectriCraft:electricraft_block_ore:5")'> <OreBlock block='ElectriCraft:electricraft_block_ore:5' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Platinum is complete. -->
+
+                <!-- End Platinum Generation -->
+
+                <!-- Finished adding blocks -->
+
+            </IfCondition>
+            <!-- Overworld Setup Complete -->
+
+
+
+        </IfCondition>
+
+    </ConfigSection>
+    <!-- Configuration for Custom Ore Generation Complete! -->
+
+</IfModInstalled>
+<!-- The "ElectriCraft" mod is now configured. -->
+
+
+
+
+
+<!-- =================================================================
+     This file was made using the Sprocket Configuration Generator.
+     If you wish to make your own configurations for a mod not
+     currently supported by Custom Ore Generation, and you don't want
+     the hassle of writing XML, you can find the generator script at
+     its GitHub page: http://https://github.com/reteo/Sprocket
+     ================================================================= -->

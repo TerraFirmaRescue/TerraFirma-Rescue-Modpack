@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LootGroup category="pyramidJungleChest" loading_mode="OVERRIDE" count_min="10" count_max="23">
+    <loot item="minecraft:diamond" damage="0" weight="3" count_min="1" count_max="3"/>
+    <loot item="minecraft:iron_ingot" damage="0" weight="10" count_min="1" count_max="5"/>
+    <loot item="minecraft:gold_ingot" damage="0" weight="15" count_min="2" count_max="7"/>
+    <loot item="minecraft:emerald" damage="0" weight="2" count_min="1" count_max="3"/>
+    <loot item="minecraft:bone" damage="0" weight="20" count_min="4" count_max="6"/>
+    <loot item="minecraft:rotten_flesh" damage="0" weight="16" count_min="3" count_max="7"/>
+    <loot item="minecraft:saddle" damage="0" weight="3" count_min="1" count_max="1"/>
+    <loot item="minecraft:iron_horse_armor" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="minecraft:golden_horse_armor" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="minecraft:diamond_horse_armor" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="minecraft:enchanted_book" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="IC2:itemToolBronzePickaxe" damage="0" weight="3" count_min="1" count_max="1"/>
+    <loot item="IC2:itemToolBronzeSword" damage="0" weight="3" count_min="1" count_max="1"/>
+    <loot item="IC2:itemArmorBronzeHelmet" damage="0" weight="3" count_min="1" count_max="1"/>
+    <loot item="IC2:itemArmorBronzeChestplate" damage="0" weight="3" count_min="1" count_max="1"/>
+    <loot item="IC2:itemArmorBronzeLegs" damage="0" weight="3" count_min="1" count_max="1"/>
+    <loot item="IC2:itemArmorBronzeBoots" damage="0" weight="3" count_min="1" count_max="1"/>
+    <loot item="IC2:itemIngot" damage="0" weight="9" count_min="2" count_max="6"/>
+    <loot item="IC2:itemIngot" damage="1" weight="8" count_min="1" count_max="5"/>
+    <loot item="Railcraft:tool.steel.sword" damage="0" weight="5" count_min="1" count_max="1"/>
+    <loot item="Railcraft:armor.steel.helmet" damage="0" weight="5" count_min="1" count_max="1"/>
+    <loot item="Railcraft:armor.steel.plate" damage="0" weight="5" count_min="1" count_max="1"/>
+    <loot item="Railcraft:armor.steel.legs" damage="0" weight="5" count_min="1" count_max="1"/>
+    <loot item="Railcraft:armor.steel.boots" damage="0" weight="5" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.dust" damage="8610" weight="3" count_min="4" count_max="16"/>
+    <loot item="terrafirmacraft:item.Bronze Ingot" damage="0" weight="3" count_min="4" count_max="16"/>
+    <loot item="terrafirmacraft:item.Bronze Sheet" damage="0" weight="3" count_min="4" count_max="16"/>
+    <loot item="gregtech:gt.meta.toolHeadArrow" damage="8610" weight="3" count_min="16" count_max="64"/>
+    <loot item="gregtech:gt.meta.toolHeadArrow" damage="1260" weight="1" count_min="4" count_max="16"/>
+    <loot item="terrafirmacraft:item.Ruby" damage="3" weight="2" count_min="2" count_max="8"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8328" weight="1" count_min="2" count_max="8"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8383" weight="1" count_min="2" count_max="8"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8315" weight="1" count_min="2" count_max="8"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8305" weight="1" count_min="2" count_max="8"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8314" weight="1" count_min="2" count_max="8"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8311" weight="2" count_min="2" count_max="8"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="9127" weight="4" count_min="2" count_max="8"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="9119" weight="4" count_min="2" count_max="8"/>
+    <loot item="gregtech:gt.multitileentity" damage="32700" nbt="{gt.coin.shape.0.9:1632s,gt.coin.shape.1.8:9156s,gt.coin.shape.1.9:14748s,gt.coin.shape.0.7:7224s,gt.coin.shape.1.6:14748s,gt.coin.shape.0.8:7224s,gt.coin.shape.1.7:9156s,gt.coin.shape.0.5:-28687s,gt.coin.shape.1.4:-26023s,gt.coin.shape.0.6:1632s,gt.coin.shape.1.5:-28663s,gt.coin.shape.0.3:-15997s,gt.coin.shape.1.2:-15421s,gt.coin.shape.0.4:-31327s,gt.coin.shape.1.3:-12685s,gt.coin.shape.0.1:-4081s,gt.coin.shape.0.14:-4081s,gt.coin.shape.1.0:-961s,gt.coin.shape.0.2:-16381s,gt.coin.shape.0.15:-961s,gt.coin.shape.1.1:-4081s,gt.coin.shape.0.12:-15997s,gt.coin.shape.0.0:-961s,gt.coin.shape.0.13:-16381s,gt.coin.shape.0.10:-28687s,gt.coin.shape.0.11:-31327s,gt.material:&quot;Gold&quot;,gt.coin.unique:1b,gt.coin.shape.1.15:-961s,gt.coin.shape.1.14:-4081s,gt.coin.shape.1.13:-15421s,gt.coin.shape.1.12:-12685s,gt.recycling.mats:{0:{a:72072000,i:790s},size:1},gt.coin.shape.1.11:-26023s,gt.coin.shape.1.10:-28663s}" weight="12" count_min="16" count_max="64"/>
+    <loot item="gregtech:gt.multitileentity" damage="32700" nbt="{gt.coin.shape.0.9:1632s,gt.coin.shape.1.8:9156s,gt.coin.shape.1.9:14748s,gt.coin.shape.0.7:7224s,gt.coin.shape.1.6:14748s,gt.coin.shape.0.8:7224s,gt.coin.shape.1.7:9156s,gt.coin.shape.0.5:-28687s,gt.coin.shape.1.4:-26023s,gt.coin.shape.0.6:1632s,gt.coin.shape.1.5:-28663s,gt.coin.shape.0.3:-15997s,gt.coin.shape.1.2:-15421s,gt.coin.shape.0.4:-31327s,gt.coin.shape.1.3:-12685s,gt.coin.shape.0.1:-4081s,gt.coin.shape.0.14:-4081s,gt.coin.shape.1.0:-961s,gt.coin.shape.0.2:-16381s,gt.coin.shape.0.15:-961s,gt.coin.shape.1.1:-4081s,gt.coin.shape.0.12:-15997s,gt.coin.shape.0.0:-961s,gt.coin.shape.0.13:-16381s,gt.coin.shape.0.10:-28687s,gt.coin.shape.0.11:-31327s,gt.material:&quot;Trinium&quot;,gt.coin.unique:1b,gt.coin.shape.1.15:-961s,gt.coin.shape.1.14:-4081s,gt.coin.shape.1.13:-15421s,gt.coin.shape.1.12:-12685s,gt.recycling.mats:{0:{a:72072000,i:1260s},size:1},gt.coin.shape.1.11:-26023s,gt.coin.shape.1.10:-28663s}" weight="1" count_min="16" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="0" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="1" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="2" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="3" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="4" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="5" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="6" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="7" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="8" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="9" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="10" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="11" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="12" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="13" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="14" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.lilypad.glowtus" damage="15" weight="1" count_min="32" count_max="64"/>
+    <loot item="gregtech:gt.block.sapling" damage="3" weight="6" count_min="2" count_max="8"/>
+    <loot item="gregtech:gt.block.sapling" damage="5" weight="6" count_min="2" count_max="8"/>
+    <loot item="gregtech:gt.block.sapling" damage="7" weight="1" count_min="2" count_max="8"/>
+</LootGroup>

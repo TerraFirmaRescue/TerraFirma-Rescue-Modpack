@@ -1,0 +1,158 @@
+<oo>
+    <tileentity id="RCCokeOvenTile">
+        <line displayname="所有者">
+            return nbt['owner']
+        </line>
+        <line displayname="炼制时间">
+            return nbt['cookTime']
+        </line>
+    </tileentity>
+    <tileentity id="RCBlastFurnaceTile">
+        <line displayname="燃烧时间">
+            return nbt['burnTime']
+        </line>
+        <line displayname="炼制时间">
+            return nbt['cookTime']
+        </line>
+        <line displayname="内置物品燃烧时间">
+            return nbt['currentItemBurnTime']
+        </line>
+        <line displayname="所有者">
+            return nbt['owner']
+        </line>
+    </tileentity>
+    <tileentity id="RCSteamOvenTile">
+        <line displayname="炼制时间">
+            return nbt['cookTime']
+        </line>
+        <line displayname="所有者">
+            return nbt['owner']
+        </line>
+    </tileentity>
+    <tileentity id="RCRollingMachineTile">
+        <line displayname="储存能量">
+            return nbt['powerProvider']['energyStored']
+        </line>
+        <line displayname="所有者">
+            return nbt['owner']
+        </line>
+    </tileentity>
+    <tileentity id="RCRockCrusherTIle">
+        <line displayname="储存能量">
+            return nbt['powerProvider']['energyStored']
+        </line>
+        <line displayname="所有者">
+            return nbt['owner']
+        </line>
+    </tileentity>
+    <tileentity id="RCWorldAnchorTile">
+        <line displayname="剩余时间">
+            return nbt['fuel']
+        </line>
+        <line displayname="所有者">
+            return nbt['owner']
+        </line>
+    </tileentity>
+    <tileentity id="RCPersonalAnchorTile">
+        <line displayname="剩余时间">
+            return nbt['fuel']
+        </line>
+        <line displayname="所有者">
+            return nbt['owner']
+        </line>
+    </tileentity>
+    <tileentity id="RCSteamTurbineTile">
+        <line displayname="储存能量">
+            return nbt['energy']
+        </line>
+        <line displayname="所有者">
+            return nbt['owner']
+        </line>
+        <line displayname="输出">
+            return nbt['output']
+        </line>
+    </tileentity>
+    <tileentity id="RCEngineSteamHobby">
+        <line displayname="储存能量">
+            return nbt['energy']
+        </line>
+        <line displayname="所有者">
+            return nbt['owner']
+        </line>
+        <line displayname="输出">
+            return nbt['currentoutput']
+        </line>
+        <line displayname="热量">
+            return nbt['heat']
+        </line>
+        <line displayname="燃烧时间">
+            return nbt['burnTime']
+        </line>
+    </tileentity>
+    <tileentity id="RCEngineSteamLow">
+        <line displayname="储存能量">
+            return nbt['energy']
+        </line>
+        <line displayname="所有者">
+            return nbt['owner']
+        </line>
+        <line displayname="输出">
+            return nbt['currentoutput']
+        </line>
+    </tileentity>
+    <tileentity id="RCEngineSteamHigh">
+        <line displayname="储存能量">
+            return nbt['energy']
+        </line>
+        <line displayname="所有者">
+            return nbt['owner']
+        </line>
+        <line displayname="输出">
+            return nbt['currentoutput']
+        </line>
+    </tileentity>
+    <tileentity id="RCBoilerFireboxLiquidTile">
+        <line displayname="所有者">
+            return nbt['owner']
+        </line>
+        <line displayname="物品剩余">
+            return nbt['currentItemBurnTime']
+        </line>
+        <line displayname="热量">
+            return nbt['heat']
+        </line>
+        <line displayname="燃烧时间">
+            return nbt['burnTime']
+        </line>
+    </tileentity>
+    <tileentity id="RCBoilerFireboxSoildTile">
+        <line displayname="所有者">
+            return nbt['owner']
+        </line>
+        <line displayname="物品剩余">
+            return nbt['currentItemBurnTime']
+        </line>
+        <line displayname="热量">
+            return nbt['heat']
+        </line>
+        <line displayname="燃烧时间">
+            return nbt['burnTime']
+        </line>
+    </tileentity>
+    <tileentity id="RCLoaderTileEnergy">
+        <line displayname="储存能量">
+            return nbt['energy']
+        </line>
+        <line displayname="所有者">
+            return nbt['owner']
+        </line>
+    </tileentity>
+    <tileentity id="RCUnloaderTileEnergy">
+        <line displayname="储存能量">
+            return nbt['energy']
+        </line>
+        <line displayname="所有者">
+            return nbt['owner']
+        </line>
+    </tileentity>
+</oo>

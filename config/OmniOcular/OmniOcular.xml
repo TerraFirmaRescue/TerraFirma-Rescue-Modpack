@@ -1,0 +1,8 @@
+<oo>
+    <setting id="displaynameTileentity">
+        "DISPLAYNAME" + TAB + ALIGNRIGHT + WHITE+ "RETURN"
+    </setting>
+    <!--<setting id="displaynameTileentity">-->
+        <!--YELLOW + "DISPLAYNAME" + " : "  + WHITE + "RETURN"-->
+    <!--</setting>-->
+</oo>

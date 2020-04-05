@@ -1,0 +1,23 @@
+<!--Author: EpixZhang-->
+<!--Date: 2015/2/8-->
+<!--Version: 1.7.10-->
+<oo>
+    <init>
+        function tick2second(n){return parseInt(n/20)}
+    </init>
+    <tileentity id="Furnace">
+        <line displayname="Burn Time">
+            return tick2second(nbt['BurnTime'])
+        </line>
+    </tileentity>
+    <entity id="Sheep">
+        <line displayname="Until next love">
+            tick2second(nbt['InLove'])
+        </line>
+    </entity>
+    <tooltip id="minecraft:skull">
+        <line displayname="OwnerName">
+            return nbt['SkullOwner']
+        </line>
+    </tooltip>
+</oo>

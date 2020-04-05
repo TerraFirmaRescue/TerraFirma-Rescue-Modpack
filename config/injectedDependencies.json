@@ -1,0 +1,199 @@
+[
+  {
+    "modId": "TFC-Tweaks",
+    "deps": [
+      {
+        "type": "after",
+        "target": "terrafirmacraft"
+      },
+      {
+        "type": "before",
+        "target": "neieasysearch"
+      },
+      {
+        "type": "before",
+        "target": "Waila"
+      },
+      {
+        "type": "before",
+        "target": "customnpcs"
+      },
+      {
+        "type": "before",
+        "target": "WailaHarvestability"
+      },
+      {
+        "type": "before",
+        "target": "fognerf"
+      },
+      {
+        "type": "before",
+        "target": "MemoryCleaner"
+      },
+      {
+        "type": "before",
+        "target": "ResourceLoader"
+      },
+      {
+        "type": "before",
+        "target": "MineTweaker3"
+      },
+      {
+        "type": "before",
+        "target": "gravestone"
+      },
+      {
+        "type": "before",
+        "target": "UnicodeFontFixer"
+      },
+      {
+        "type": "before",
+        "target": "cfm"
+      },
+      {
+        "type": "before",
+        "target": "gregapi"
+      },
+      {
+        "type": "before",
+        "target": "IC2"
+      },
+      {
+        "type": "before",
+        "target": "flammpfeil.slashblade"
+      },
+      {
+        "type": "before",
+        "target": "saligia"
+      },
+      {
+        "type": "before",
+        "target": "flammpfeil.slashblade.kamuy"
+      },
+      {
+        "type": "before",
+        "target": "flammpfeil.nihil"
+      },
+      {
+        "type": "before",
+        "target": "negorerouse"
+      },
+      {
+        "type": "before",
+        "target": "flammpfeil.slashblade.kirisaya"
+      },
+      {
+        "type": "before",
+        "target": "flammpfeil.slashblade.exsa"
+      },
+      {
+        "type": "before",
+        "target": "flammpfeil.fluorescentbar"
+      },
+      {
+        "type": "before",
+        "target": "flammpfeil.slashblade.splight"
+      },
+      {
+        "type": "before",
+        "target": "journeymap"
+      },
+      {
+        "type": "before",
+        "target": "dungeonpack"
+      },
+      {
+        "type": "before",
+        "target": "IronChest"
+      },
+      {
+        "type": "before",
+        "target": "CarpentersBlocks"
+      },
+      {
+        "type": "before",
+        "target": "CustomOreGen"
+      },
+      {
+        "type": "before",
+        "target": "gregapi_post"
+      },
+      {
+        "type": "before",
+        "target": "gregtech"
+      },
+      {
+        "type": "before",
+        "target": "InfernalMobs"
+      },
+      {
+        "type": "before",
+        "target": "TerraFirmaCraftNEIplugin"
+      },
+      {
+        "type": "before",
+        "target": "MerchantsTFC"
+      },
+      {
+        "type": "before",
+        "target": "ttfcapi"
+      },
+      {
+        "type": "before",
+        "target": "animalcrate"
+      },
+      {
+        "type": "before",
+        "target": "tfcprimitivetech"
+      },
+      {
+        "type": "before",
+        "target": "tfccellars"
+      },
+      {
+        "type": "before",
+        "target": "tfcudarymod"
+      },
+      {
+        "type": "before",
+        "target": "TooMuchTime"
+      },
+      {
+        "type": "before",
+        "target": "tfcm"
+      },
+      {
+        "type": "before",
+        "target": "lwstfc"
+      },
+      {
+        "type": "before",
+        "target": "terrafirmastuff"
+      },
+      {
+        "type": "before",
+        "target": "tfcmetals"
+      },
+      {
+        "type": "before",
+        "target": "tfcpewter"
+      },
+      {
+        "type": "before",
+        "target": "tfcautomatedbellows"
+      },
+      {
+        "type": "before",
+        "target": "TFCTweaker"
+      },
+      {
+        "type": "before",
+        "target": "kegare.bedrocklayer"
+      },
+      {
+        "type": "before",
+        "target": "bspkrsCore"
+      }
+    ]
+  }
+]

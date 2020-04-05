@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LootGroup category="mineshaftCorridor" loading_mode="OVERRIDE" count_min="6" count_max="13">
+    <loot item="minecraft:iron_ingot" damage="0" weight="10" count_min="1" count_max="5"/>
+    <loot item="minecraft:gold_ingot" damage="0" weight="5" count_min="1" count_max="3"/>
+    <loot item="minecraft:redstone" damage="0" weight="5" count_min="4" count_max="9"/>
+    <loot item="minecraft:dye" damage="4" weight="5" count_min="4" count_max="9"/>
+    <loot item="minecraft:diamond" damage="0" weight="3" count_min="1" count_max="2"/>
+    <loot item="minecraft:coal" damage="0" weight="10" count_min="3" count_max="8"/>
+    <loot item="minecraft:bread" damage="0" weight="15" count_min="1" count_max="3"/>
+    <loot item="minecraft:iron_pickaxe" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="minecraft:rail" damage="0" weight="1" count_min="4" count_max="8"/>
+    <loot item="minecraft:melon_seeds" damage="0" weight="10" count_min="2" count_max="4"/>
+    <loot item="minecraft:pumpkin_seeds" damage="0" weight="10" count_min="2" count_max="4"/>
+    <loot item="minecraft:saddle" damage="0" weight="3" count_min="1" count_max="1"/>
+    <loot item="minecraft:iron_horse_armor" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="minecraft:enchanted_book" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="IC2:itemToolBronzePickaxe" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="IC2:itemTinCanFilled" damage="0" weight="8" count_min="4" count_max="16"/>
+    <loot item="IC2:itemScrapbox" damage="0" weight="8" count_min="2" count_max="5"/>
+    <loot item="IC2:itemIngot" damage="0" weight="9" count_min="2" count_max="6"/>
+    <loot item="IC2:itemIngot" damage="1" weight="8" count_min="1" count_max="5"/>
+    <loot item="Railcraft:fluid.creosote.bottle" damage="0" weight="20" count_min="4" count_max="16"/>
+    <loot item="Railcraft:tool.crowbar" damage="0" weight="10" count_min="1" count_max="1"/>
+    <loot item="Railcraft:tool.steel.shears" damage="0" weight="5" count_min="1" count_max="1"/>
+    <loot item="Railcraft:tool.steel.shovel" damage="0" weight="5" count_min="1" count_max="1"/>
+    <loot item="Railcraft:tool.steel.pickaxe" damage="0" weight="5" count_min="1" count_max="1"/>
+    <loot item="Railcraft:tool.steel.axe" damage="0" weight="5" count_min="1" count_max="1"/>
+    <loot item="Railcraft:ingot" damage="0" weight="10" count_min="5" count_max="9"/>
+    <loot item="minecraft:minecart" damage="0" weight="10" count_min="1" count_max="1"/>
+    <loot item="minecraft:chest_minecart" damage="0" weight="10" count_min="1" count_max="1"/>
+    <loot item="minecraft:tnt_minecart" damage="0" weight="5" count_min="1" count_max="3"/>
+    <loot item="minecraft:rail" damage="0" weight="30" count_min="8" count_max="32"/>
+    <loot item="minecraft:hopper_minecart" damage="0" weight="5" count_min="1" count_max="1"/>
+    <loot item="Railcraft:part.tie" damage="0" weight="20" count_min="4" count_max="16"/>
+    <loot item="Railcraft:fuel.coke" damage="0" weight="20" count_min="4" count_max="16"/>
+    <loot item="Railcraft:part.gear" damage="3" weight="5" count_min="1" count_max="8"/>
+    <loot item="Railcraft:cube" damage="2" weight="5" count_min="1" count_max="1"/>
+    <loot item="Railcraft:cart.tnt.wood" damage="0" weight="5" count_min="1" count_max="3"/>
+    <loot item="Railcraft:cart.work" damage="0" weight="8" count_min="1" count_max="1"/>
+    <loot item="OpenBlocks:technicolorGlasses" damage="0" weight="2" count_min="1" count_max="1"/>
+    <loot item="adventurebackpack:adventureBackpack" damage="2" nbt="{wearableData:{type:2b}}" weight="12" count_min="1" count_max="1"/>
+    <loot item="appliedenergistics2:item.ItemMultiMaterial" damage="0" weight="2" count_min="1" count_max="4"/>
+    <loot item="appliedenergistics2:item.ItemMultiMaterial" damage="2" weight="2" count_min="1" count_max="4"/>
+    <loot item="mo:weapon_module_color" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="mo:weapon_module_color" damage="1" weight="1" count_min="1" count_max="1"/>
+    <loot item="mo:weapon_module_color" damage="2" weight="1" count_min="1" count_max="1"/>
+    <loot item="mo:weapon_module_color" damage="3" weight="1" count_min="1" count_max="1"/>
+    <loot item="mo:weapon_module_color" damage="4" weight="1" count_min="1" count_max="1"/>
+    <loot item="mo:weapon_module_color" damage="5" weight="1" count_min="1" count_max="1"/>
+    <loot item="mo:weapon_module_color" damage="6" weight="1" count_min="1" count_max="1"/>
+    <loot item="mo:weapon_module_color" damage="7" weight="1" count_min="1" count_max="1"/>
+    <loot item="mo:weapon_module_color" damage="8" weight="1" count_min="1" count_max="1"/>
+    <loot item="mo:weapon_module_color" damage="9" weight="1" count_min="1" count_max="1"/>
+    <loot item="mo:emergency_ration" damage="0" weight="6" count_min="1" count_max="8"/>
+    <loot item="mo:earl_gray_tea" damage="0" weight="2" count_min="1" count_max="2"/>
+    <loot item="mo:romulan_ale" damage="0" weight="2" count_min="1" count_max="2"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="32766" weight="2" count_min="8" count_max="16"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="32764" weight="2" count_min="8" count_max="16"/>
+    <loot item="gregtech:gt.multiitem.food" damage="31999" weight="1" count_min="1" count_max="2"/>
+    <loot item="terrafirmacraft:item.MetalNugget" damage="16" weight="4" count_min="9" count_max="36"/>
+    <loot item="terrafirmacraft:item.MetalNugget" damage="10" weight="1" count_min="9" count_max="36"/>
+    <loot item="terrafirmacraft:item.MetalNugget" damage="17" weight="2" count_min="9" count_max="36"/>
+    <loot item="terrafirmacraft:item.MetalNugget" damage="6" weight="2" count_min="9" count_max="36"/>
+    <loot item="gregtech:gt.meta.chunkGt" damage="470" weight="4" count_min="4" count_max="16"/>
+    <loot item="gregtech:gt.meta.chunkGt" damage="820" weight="1" count_min="4" count_max="16"/>
+    <loot item="gregtech:gt.meta.chunkGt" damage="8630" weight="2" count_min="4" count_max="16"/>
+    <loot item="gregtech:gt.meta.chunkGt" damage="8610" weight="2" count_min="4" count_max="16"/>
+    <loot item="terrafirmacraft:item.Silver Ingot" damage="0" weight="4" count_min="1" count_max="4"/>
+    <loot item="terrafirmacraft:item.Lead Ingot" damage="0" weight="1" count_min="1" count_max="4"/>
+    <loot item="terrafirmacraft:item.Steel Ingot" damage="0" weight="2" count_min="1" count_max="4"/>
+    <loot item="terrafirmacraft:item.Bronze Ingot" damage="0" weight="2" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8328" weight="1" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8383" weight="1" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8315" weight="1" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8305" weight="1" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8314" weight="1" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8311" weight="2" count_min="1" count_max="4"/>
+    <loot item="terrafirmacraft:item.Garnet" damage="3" weight="4" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="9135" weight="4" count_min="1" count_max="4"/>
+    <loot item="terrafirmacraft:item.Ruby" damage="3" weight="2" count_min="1" count_max="4"/>
+    <loot item="terrafirmacraft:item.Emerald" damage="3" weight="1" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8323" weight="1" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8324" weight="1" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8384" weight="1" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8385" weight="1" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8386" weight="1" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.toolHeadShovel" damage="8610" weight="5" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.toolHeadShovel" damage="8630" weight="3" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.toolHeadShovel" damage="8634" weight="1" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.toolHeadPickaxe" damage="8610" weight="5" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.toolHeadPickaxe" damage="8630" weight="3" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.meta.toolHeadPickaxe" damage="8634" weight="1" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.multiitem.randomtools" damage="5003" weight="20" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multitileentity" damage="32700" nbt="{gt.coin.shape.0.9:1632s,gt.coin.shape.1.8:9156s,gt.coin.shape.1.9:14748s,gt.coin.shape.0.7:7224s,gt.coin.shape.1.6:14748s,gt.coin.shape.0.8:7224s,gt.coin.shape.1.7:9156s,gt.coin.shape.0.5:-28687s,gt.coin.shape.1.4:-26023s,gt.coin.shape.0.6:1632s,gt.coin.shape.1.5:-28663s,gt.coin.shape.0.3:-15997s,gt.coin.shape.1.2:-15421s,gt.coin.shape.0.4:-31327s,gt.coin.shape.1.3:-12685s,gt.coin.shape.0.1:-4081s,gt.coin.shape.0.14:-4081s,gt.coin.shape.1.0:-961s,gt.coin.shape.0.2:-16381s,gt.coin.shape.0.15:-961s,gt.coin.shape.1.1:-4081s,gt.coin.shape.0.12:-15997s,gt.coin.shape.0.0:-961s,gt.coin.shape.0.13:-16381s,gt.coin.shape.0.10:-28687s,gt.coin.shape.0.11:-31327s,gt.material:&quot;Copper&quot;,gt.coin.unique:1b,gt.coin.shape.1.15:-961s,gt.coin.shape.1.14:-4081s,gt.coin.shape.1.13:-15421s,gt.coin.shape.1.12:-12685s,gt.recycling.mats:{0:{a:72072000,i:290s},size:1},gt.coin.shape.1.11:-26023s,gt.coin.shape.1.10:-28663s}" weight="12" count_min="16" count_max="64"/>
+    <loot item="gregtech:gt.block.sapling" damage="0" weight="6" count_min="2" count_max="8"/>
+    <loot item="gregtech:gt.multiitem.books" damage="32002" weight="6" count_min="1" count_max="2"/>
+</LootGroup>

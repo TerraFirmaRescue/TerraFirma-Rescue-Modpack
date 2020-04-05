@@ -1,0 +1,9 @@
+<!--Version: v3.3.6-->
+<!--Date: 2015/04/21-->
+<oo>
+	<tileentity id="TileEntityCarpenters.*">
+		<line>
+			return name(nbt['cbAttrList'][0])
+		</line>
+	</tileentity>
+</oo>

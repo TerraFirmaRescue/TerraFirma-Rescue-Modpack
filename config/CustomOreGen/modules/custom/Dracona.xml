@@ -1,0 +1,22 @@
+<ConfigSection>
+    <!--Dracona-->
+    <IfCondition condition=':= dimension.id = 16'>
+
+        <Cloud name='DraconiumCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='DraconicEvolution:draconiumOre' weight='1'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 1 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 1.2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':=30' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+
+    </IfCondition>
+
+</ConfigSection>

@@ -1,0 +1,35 @@
+<!--Author: ViKaleidoscope -->
+<!--Date: 2015/04/21-->
+<!--Version: 1.7.10-3.5.1-->
+<oo>
+    <tileentity id="Advanced Solar Panel">
+        <line>
+            return translate('gui.AdvancedSolarPanel.storage')+": "+WHITE+nbt['storage']+GRAY+" / "+WHITE+"32000 EU"
+        </line>
+    </tileentity>
+    <tileentity id="Hybrid Solar Panel">
+        <line>
+            return translate('gui.AdvancedSolarPanel.storage')+": "+WHITE+nbt['storage']+GRAY+" / "+WHITE+"100000 EU"
+        </line>
+    </tileentity>
+    <tileentity id="Ultimate Hybrid Solar Panel">
+        <line>
+            return translate('gui.AdvancedSolarPanel.storage')+": "+WHITE+nbt['storage']+GRAY+" / "+WHITE+"1000000 EU"
+        </line>
+    </tileentity>
+    <tileentity id="Quantum Solar Panel">
+        <line>
+            return translate('gui.AdvancedSolarPanel.storage')+": "+WHITE+nbt['storage']+GRAY+" / "+WHITE+"10000000 EU"
+        </line>
+    </tileentity>
+    <tileentity id="Quantum Generator">
+        <line>
+            return translate('gui.QuantumGenerator.power')+": "+WHITE+nbt['production']+" "+translate('gui.AdvancedSolarPanel.energyPerTick')
+        </line>
+    </tileentity>
+    <tileentity id="Molecular Transformer">
+        <line>
+            return translate('gui.MolecularTransformer.energyPerOperation')+": "+WHITE+nbt['lastRecipeEnergyUsed']+GRAY+" / "+WHITE+nbt['lastRecipeEnergyPerOperation']+" EU"
+        </line>
+    </tileentity>
+</oo>

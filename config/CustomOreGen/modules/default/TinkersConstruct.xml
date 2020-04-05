@@ -1,0 +1,1855 @@
+<!-- =================================================================
+     Custom Ore Generation "Tinkers Construct" Module: This
+     configuration covers copper, tin, aluminum, cobalt, ardite, iron
+     gravel, gold gravel, copper gravel, tin gravel, aluminum gravel,
+     and nether cobalt gravel.
+     ================================================================= -->
+
+
+<!-- A mod centering around tool manufacturing, the smelting of ores
+     plays a large part.  This mod also includes ores that are
+     embedded in gravel, rather than stone. -->
+
+
+
+
+<!-- Is the "Tinkers Construct" mod on the system?  Let's find out! -->
+<IfModInstalled name="TConstruct">
+
+    <!-- Starting Configuration for Custom Ore Generation. -->
+    <ConfigSection>
+
+
+
+
+
+        <!-- Setup Screen Configuration -->
+        <ConfigSection>
+            <OptionDisplayGroup name='groupTinkersConstruct' displayName='匠魂' displayState='shown'>
+                <Description>
+                    矿物的分布选项
+                </Description>
+            </OptionDisplayGroup>
+            <OptionChoice name='enableTinkersConstruct' displayName='处理匠魂矿物生成' default='true' displayState='shown_dynamic' displayGroup='groupTinkersConstruct'>
+                <Description> 让COG处理该模组的矿物生成么？ </Description>
+                <Choice value=':= ?true' displayValue='是' description='让COG处理该模组的矿物生成。'/>
+                <Choice value=':= ?false' displayValue='否' description='让该模组处理其自身的矿物生成。'/>
+            </OptionChoice>
+
+            <!-- Copper Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='ticoCopperDist'  displayState=':= if(?enableTinkersConstruct, "shown", "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 控制铜矿的生成 </Description>
+                    <DisplayName>铜矿</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description='抖M的开端'/>
+                </OptionChoice>
+                <OptionNumeric name='ticoCopperFreq' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的生成率将乘以这个数 </Description>
+                    <DisplayName> 矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='ticoCopperSize' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的规模将乘以这个数 </Description>
+                    <DisplayName>矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Copper Configuration UI Complete -->
+
+
+            <!-- Tin Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='ticoTinDist'  displayState=':= if(?enableTinkersConstruct, "shown", "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 控制锡矿的生成 </Description>
+                    <DisplayName> 锡矿</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开始'/>
+                </OptionChoice>
+                <OptionNumeric name='ticoTinFreq' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='ticoTinSize' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Tin Configuration UI Complete -->
+
+
+            <!-- Aluminum Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='ticoAluminumDist'  displayState=':= if(?enableTinkersConstruct, "shown", "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 控制铝矿的生成 </Description>
+                    <DisplayName> 铝矿</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开始'/>
+                </OptionChoice>
+                <OptionNumeric name='ticoAluminumFreq' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='ticoAluminumSize' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Aluminum Configuration UI Complete -->
+
+
+            <!-- Cobalt Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='ticoCobaltDist'  displayState=':= if(?enableTinkersConstruct, "shown", "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 控制钴矿的生成 </Description>
+                    <DisplayName> 钴矿</DisplayName>
+                    <Choice value='SmallDeposits' displayValue='小型'>
+                        <Description>
+                            小型的没有分支的矿脉
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开始'/>
+                </OptionChoice>
+                <OptionNumeric name='ticoCobaltFreq' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='ticoCobaltSize' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Cobalt Configuration UI Complete -->
+
+
+            <!-- Ardite Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='ticoArditeDist'  displayState=':= if(?enableTinkersConstruct, "shown", "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 控制阿迪特矿的生成 </Description>
+                    <DisplayName> 阿迪特矿</DisplayName>
+                    <Choice value='SmallDeposits' displayValue='小型'>
+                        <Description>
+                            小型的没有分支的矿脉
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开始'/>
+                </OptionChoice>
+                <OptionNumeric name='ticoArditeFreq' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='ticoArditeSize' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Ardite Configuration UI Complete -->
+
+
+            <!-- Iron Gravel Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='ticoIronGravelDist'  displayState=':= if(?enableTinkersConstruct, "shown", "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 控制铁矿砂砾的生成 </Description>
+                    <DisplayName> 铁矿砂砾</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开始'/>
+                </OptionChoice>
+                <OptionNumeric name='ticoIronGravelFreq' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='ticoIronGravelSize' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Iron Gravel Configuration UI Complete -->
+
+
+            <!-- Gold Gravel Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='ticoGoldGravelDist'  displayState=':= if(?enableTinkersConstruct, "shown", "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 控制金矿砂砾的生成 </Description>
+                    <DisplayName> 金矿砂砾</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开始'/>
+                </OptionChoice>
+                <OptionNumeric name='ticoGoldGravelFreq' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='ticoGoldGravelSize' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Gold Gravel Configuration UI Complete -->
+
+
+            <!-- Copper Gravel Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='ticoCopperGravelDist'  displayState=':= if(?enableTinkersConstruct, "shown", "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 控制铜矿砂砾的生成 </Description>
+                    <DisplayName> 铜矿砂砾</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开始'/>
+                </OptionChoice>
+                <OptionNumeric name='ticoCopperGravelFreq' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='ticoCopperGravelSize' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的规模将乘以这个数 </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Copper Gravel Configuration UI Complete -->
+
+
+            <!-- Tin Gravel Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='ticoTinGravelDist'  displayState=':= if(?enableTinkersConstruct, "shown", "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 控制锡矿砂砾的生成 </Description>
+                    <DisplayName> 锡矿砂砾</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开始'/>
+                </OptionChoice>
+                <OptionNumeric name='ticoTinGravelFreq' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的生成率将乘以这个数 </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='ticoTinGravelSize' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Tin Gravel Configuration UI Complete -->
+
+
+            <!-- Aluminum Gravel Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='ticoAluminumGravelDist'  displayState=':= if(?enableTinkersConstruct, "shown", "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 控制铝矿砂砾的生成 </Description>
+                    <DisplayName> 铝矿砂砾</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开始'/>
+                </OptionChoice>
+                <OptionNumeric name='ticoAluminumGravelFreq' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='ticoAluminumGravelSize' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Aluminum Gravel Configuration UI Complete -->
+
+
+            <!-- Nether Cobalt Gravel Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='ticoNetherCobaltGravelDist'  displayState=':= if(?enableTinkersConstruct, "shown", "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 控制下届钴矿砂砾的生成 </Description>
+                    <DisplayName> 下届钴矿砂砾</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开始'/>
+                </OptionChoice>
+                <OptionNumeric name='ticoNetherCobaltGravelFreq' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='ticoNetherCobaltGravelSize' default='1'  min='0' max='5' displayState=':= if(?enableTinkersConstruct, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupTinkersConstruct'>
+                    <Description> 矿脉的规模将乘以这个数 </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Nether Cobalt Gravel Configuration UI Complete -->
+
+        </ConfigSection>
+        <!-- Setup Screen Complete -->
+
+        <IfCondition condition=':= ?enableTinkersConstruct'>
+
+
+
+
+            <!-- Overworld Setup Beginning -->
+
+            <IfCondition condition=':= ?COGActive'>
+
+                <!-- Starting Original "Overworld" Block Removal -->
+
+                <IfCondition condition=':= ?blockExists("minecraft:gravel")'>
+                    <Substitute name='ticoOverworldBlockSubstitute0' block='minecraft:gravel'>
+                        <Description>
+                            Replace vanilla-generated ore clusters.
+                        </Description>
+                        <Comment>
+                            The global option  deferredPopulationRange
+                            must be large  enough to catch all ore
+                            clusters (>=  32).
+                        </Comment>
+                        <IfCondition condition=':= ?blockExists("TConstruct:GravelOre")'> <Replaces block='TConstruct:GravelOre' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:1")'> <Replaces block='TConstruct:GravelOre:1' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:2")'> <Replaces block='TConstruct:GravelOre:2' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:3")'> <Replaces block='TConstruct:GravelOre:3' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:4")'> <Replaces block='TConstruct:GravelOre:4' weight='1.0' /> </IfCondition>
+                    </Substitute>
+                </IfCondition>
+
+
+                <IfCondition condition=':= ?blockExists("minecraft:stone")'>
+                    <Substitute name='ticoOverworldBlockSubstitute1' block='minecraft:stone'>
+                        <Description>
+                            Replace vanilla-generated ore clusters.
+                        </Description>
+                        <Comment>
+                            The global option  deferredPopulationRange
+                            must be large  enough to catch all ore
+                            clusters (>=  32).
+                        </Comment>
+                        <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:3")'> <Replaces block='TConstruct:SearedBrick:3' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:4")'> <Replaces block='TConstruct:SearedBrick:4' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:5")'> <Replaces block='TConstruct:SearedBrick:5' weight='1.0' /> </IfCondition>
+                    </Substitute>
+                </IfCondition>
+
+                <!-- Original "Overworld" Block Removal Complete -->
+
+                <!-- Adding blocks -->
+
+                <!-- Begin Copper Generation -->
+
+                <!-- Starting LayeredVeins Preset for Copper. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoCopperDist = "LayeredVeins"'>
+                        <Veins name='ticoCopperVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60FF8E2B' drawBoundBox='false' boundBoxColor='0x60FF8E2B'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:3")'> <OreBlock block='TConstruct:SearedBrick:3' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 0.708 * _default_ * ticoCopperFreq ' range=':= 0.708 * _default_ * ticoCopperFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 0.944 * _default_ * ticoCopperSize ' range=':= 0.944 * _default_ * ticoCopperSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 40 ' range=':= 20 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 0.841 * _default_ ' range=':= 0.841 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * ticoCopperSize ' range=':= _default_ * ticoCopperSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 0.917 * _default_ * ticoCopperSize ' range=':= 0.917 * _default_ * ticoCopperSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Copper is complete. -->
+
+
+                <!-- Starting Cloud Preset for Copper. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoCopperDist = "Cloud"'>
+                        <Cloud name='ticoCopperCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60FF8E2B' drawBoundBox='false' boundBoxColor='0x60FF8E2B'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:3")'> <OreBlock block='TConstruct:SearedBrick:3' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.787 * _default_ * ticoCopperSize ' range=':= 0.787 * _default_ * ticoCopperSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.787 * _default_ * ticoCopperSize ' range=':= 0.787 * _default_ * ticoCopperSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.619 * _default_ * ticoCopperFreq ' range=':= 0.619 * _default_ * ticoCopperFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 40 ' range=':= 20 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='ticoCopperHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60FF8E2B' drawBoundBox='false' boundBoxColor='0x60FF8E2B'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:3")'> <OreBlock block='TConstruct:SearedBrick:3' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Copper is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Copper. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoCopperDist = "Vanilla"'>
+                        <StandardGen name='ticoCopperStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60FF8E2B' drawBoundBox='false' boundBoxColor='0x60FF8E2B'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:3")'> <OreBlock block='TConstruct:SearedBrick:3' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 8.000 * ticoCopperSize ' range=':= _default_ * ticoCopperSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 2.000 * ticoCopperFreq ' range=':= _default_ * ticoCopperFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 40 ' range=':= 20 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Copper is complete. -->
+
+                <!-- End Copper Generation -->
+
+
+                <!-- Begin Tin Generation -->
+
+                <!-- Starting LayeredVeins Preset for Tin. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoTinDist = "LayeredVeins"'>
+                        <Veins name='ticoTinVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60E8E8E8' drawBoundBox='false' boundBoxColor='0x60E8E8E8'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:4")'> <OreBlock block='TConstruct:SearedBrick:4' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 0.708 * _default_ * ticoTinFreq ' range=':= 0.708 * _default_ * ticoTinFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 0.944 * _default_ * ticoTinSize ' range=':= 0.944 * _default_ * ticoTinSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 23 ' range=':= 17 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 0.841 * _default_ ' range=':= 0.841 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * ticoTinSize ' range=':= _default_ * ticoTinSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 0.917 * _default_ * ticoTinSize ' range=':= 0.917 * _default_ * ticoTinSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Tin is complete. -->
+
+
+                <!-- Starting Cloud Preset for Tin. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoTinDist = "Cloud"'>
+                        <Cloud name='ticoTinCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60E8E8E8' drawBoundBox='false' boundBoxColor='0x60E8E8E8'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:4")'> <OreBlock block='TConstruct:SearedBrick:4' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.787 * _default_ * ticoTinSize ' range=':= 0.787 * _default_ * ticoTinSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.787 * _default_ * ticoTinSize ' range=':= 0.787 * _default_ * ticoTinSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.619 * _default_ * ticoTinFreq ' range=':= 0.619 * _default_ * ticoTinFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 23 ' range=':= 17 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='ticoTinHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60E8E8E8' drawBoundBox='false' boundBoxColor='0x60E8E8E8'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:4")'> <OreBlock block='TConstruct:SearedBrick:4' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Tin is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Tin. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoTinDist = "Vanilla"'>
+                        <StandardGen name='ticoTinStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60E8E8E8' drawBoundBox='false' boundBoxColor='0x60E8E8E8'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:4")'> <OreBlock block='TConstruct:SearedBrick:4' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 8.000 * ticoTinSize ' range=':= _default_ * ticoTinSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 2.000 * ticoTinFreq ' range=':= _default_ * ticoTinFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 23 ' range=':= 17 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Tin is complete. -->
+
+                <!-- End Tin Generation -->
+
+
+                <!-- Begin Aluminum Generation -->
+
+                <!-- Starting LayeredVeins Preset for Aluminum. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoAluminumDist = "LayeredVeins"'>
+                        <Veins name='ticoAluminumVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60EDEDED' drawBoundBox='false' boundBoxColor='0x60EDEDED'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:5")'> <OreBlock block='TConstruct:SearedBrick:5' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 0.751 * _default_ * ticoAluminumFreq ' range=':= 0.751 * _default_ * ticoAluminumFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 0.953 * _default_ * ticoAluminumSize ' range=':= 0.953 * _default_ * ticoAluminumSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 35 ' range=':= 29 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 0.866 * _default_ ' range=':= 0.866 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * ticoAluminumSize ' range=':= _default_ * ticoAluminumSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 0.931 * _default_ * ticoAluminumSize ' range=':= 0.931 * _default_ * ticoAluminumSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Aluminum is complete. -->
+
+
+                <!-- Starting Cloud Preset for Aluminum. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoAluminumDist = "Cloud"'>
+                        <Cloud name='ticoAluminumCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60EDEDED' drawBoundBox='false' boundBoxColor='0x60EDEDED'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:5")'> <OreBlock block='TConstruct:SearedBrick:5' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.810 * _default_ * ticoAluminumSize ' range=':= 0.810 * _default_ * ticoAluminumSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.810 * _default_ * ticoAluminumSize ' range=':= 0.810 * _default_ * ticoAluminumSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.657 * _default_ * ticoAluminumFreq ' range=':= 0.657 * _default_ * ticoAluminumFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 35 ' range=':= 29 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='ticoAluminumHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60EDEDED' drawBoundBox='false' boundBoxColor='0x60EDEDED'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:5")'> <OreBlock block='TConstruct:SearedBrick:5' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Aluminum is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Aluminum. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoAluminumDist = "Vanilla"'>
+                        <StandardGen name='ticoAluminumStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60EDEDED' drawBoundBox='false' boundBoxColor='0x60EDEDED'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:5")'> <OreBlock block='TConstruct:SearedBrick:5' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 6.000 * ticoAluminumSize ' range=':= _default_ * ticoAluminumSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 3.000 * ticoAluminumFreq ' range=':= _default_ * ticoAluminumFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 35 ' range=':= 29 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Aluminum is complete. -->
+
+                <!-- End Aluminum Generation -->
+
+
+                <!-- Begin Iron Gravel Generation -->
+
+                <!-- Starting LayeredVeins Preset for Iron Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoIronGravelDist = "LayeredVeins"'>
+                        <Veins name='ticoIronGravelVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60DDC2AF' drawBoundBox='false' boundBoxColor='0x60DDC2AF'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre")'> <OreBlock block='TConstruct:GravelOre' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 2.238 * _default_ * ticoIronGravelFreq ' range=':= 2.238 * _default_ * ticoIronGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 1.144 * _default_ * ticoIronGravelSize ' range=':= 1.144 * _default_ * ticoIronGravelSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 36 ' range=':= 31 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 1.496 * _default_ ' range=':= 1.496 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * ticoIronGravelSize ' range=':= _default_ * ticoIronGravelSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 1.223 * _default_ * ticoIronGravelSize ' range=':= 1.223 * _default_ * ticoIronGravelSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Iron Gravel is complete. -->
+
+
+                <!-- Starting Cloud Preset for Iron Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoIronGravelDist = "Cloud"'>
+                        <Cloud name='ticoIronGravelCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60DDC2AF' drawBoundBox='false' boundBoxColor='0x60DDC2AF'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre")'> <OreBlock block='TConstruct:GravelOre' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 1.399 * _default_ * ticoIronGravelSize ' range=':= 1.399 * _default_ * ticoIronGravelSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 1.399 * _default_ * ticoIronGravelSize ' range=':= 1.399 * _default_ * ticoIronGravelSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 1.958 * _default_ * ticoIronGravelFreq ' range=':= 1.958 * _default_ * ticoIronGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 36 ' range=':= 31 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='ticoIronGravelHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60DDC2AF' drawBoundBox='false' boundBoxColor='0x60DDC2AF'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("TConstruct:GravelOre")'> <OreBlock block='TConstruct:GravelOre' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Iron Gravel is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Iron Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoIronGravelDist = "Vanilla"'>
+                        <StandardGen name='ticoIronGravelStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60DDC2AF' drawBoundBox='false' boundBoxColor='0x60DDC2AF'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre")'> <OreBlock block='TConstruct:GravelOre' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 8.000 * ticoIronGravelSize ' range=':= _default_ * ticoIronGravelSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 20.000 * ticoIronGravelFreq ' range=':= _default_ * ticoIronGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 36 ' range=':= 31 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Iron Gravel is complete. -->
+
+                <!-- End Iron Gravel Generation -->
+
+
+                <!-- Begin Gold Gravel Generation -->
+
+                <!-- Starting LayeredVeins Preset for Gold Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoGoldGravelDist = "LayeredVeins"'>
+                        <Veins name='ticoGoldGravelVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60EAEF57' drawBoundBox='false' boundBoxColor='0x60EAEF57'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:1")'> <OreBlock block='TConstruct:GravelOre:1' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 0.708 * _default_ * ticoGoldGravelFreq ' range=':= 0.708 * _default_ * ticoGoldGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 0.944 * _default_ * ticoGoldGravelSize ' range=':= 0.944 * _default_ * ticoGoldGravelSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 19 ' range=':= 14 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 0.841 * _default_ ' range=':= 0.841 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * ticoGoldGravelSize ' range=':= _default_ * ticoGoldGravelSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 0.917 * _default_ * ticoGoldGravelSize ' range=':= 0.917 * _default_ * ticoGoldGravelSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Gold Gravel is complete. -->
+
+
+                <!-- Starting Cloud Preset for Gold Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoGoldGravelDist = "Cloud"'>
+                        <Cloud name='ticoGoldGravelCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60EAEF57' drawBoundBox='false' boundBoxColor='0x60EAEF57'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:1")'> <OreBlock block='TConstruct:GravelOre:1' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.787 * _default_ * ticoGoldGravelSize ' range=':= 0.787 * _default_ * ticoGoldGravelSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.787 * _default_ * ticoGoldGravelSize ' range=':= 0.787 * _default_ * ticoGoldGravelSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.619 * _default_ * ticoGoldGravelFreq ' range=':= 0.619 * _default_ * ticoGoldGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 19 ' range=':= 14 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='ticoGoldGravelHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60EAEF57' drawBoundBox='false' boundBoxColor='0x60EAEF57'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:1")'> <OreBlock block='TConstruct:GravelOre:1' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Gold Gravel is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Gold Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoGoldGravelDist = "Vanilla"'>
+                        <StandardGen name='ticoGoldGravelStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60EAEF57' drawBoundBox='false' boundBoxColor='0x60EAEF57'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:1")'> <OreBlock block='TConstruct:GravelOre:1' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 8.000 * ticoGoldGravelSize ' range=':= _default_ * ticoGoldGravelSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 2.000 * ticoGoldGravelFreq ' range=':= _default_ * ticoGoldGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 19 ' range=':= 14 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Gold Gravel is complete. -->
+
+                <!-- End Gold Gravel Generation -->
+
+
+                <!-- Begin Copper Gravel Generation -->
+
+                <!-- Starting LayeredVeins Preset for Copper Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoCopperGravelDist = "LayeredVeins"'>
+                        <Veins name='ticoCopperGravelVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60FF8E2B' drawBoundBox='false' boundBoxColor='0x60FF8E2B'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:2")'> <OreBlock block='TConstruct:GravelOre:2' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 1.583 * _default_ * ticoCopperGravelFreq ' range=':= 1.583 * _default_ * ticoCopperGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 1.080 * _default_ * ticoCopperGravelSize ' range=':= 1.080 * _default_ * ticoCopperGravelSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 40 ' range=':= 20 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 1.258 * _default_ ' range=':= 1.258 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * ticoCopperGravelSize ' range=':= _default_ * ticoCopperGravelSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 1.122 * _default_ * ticoCopperGravelSize ' range=':= 1.122 * _default_ * ticoCopperGravelSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Copper Gravel is
+                     complete. -->
+
+
+                <!-- Starting Cloud Preset for Copper Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoCopperGravelDist = "Cloud"'>
+                        <Cloud name='ticoCopperGravelCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60FF8E2B' drawBoundBox='false' boundBoxColor='0x60FF8E2B'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:2")'> <OreBlock block='TConstruct:GravelOre:2' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 1.177 * _default_ * ticoCopperGravelSize ' range=':= 1.177 * _default_ * ticoCopperGravelSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 1.177 * _default_ * ticoCopperGravelSize ' range=':= 1.177 * _default_ * ticoCopperGravelSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 1.385 * _default_ * ticoCopperGravelFreq ' range=':= 1.385 * _default_ * ticoCopperGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 40 ' range=':= 20 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='ticoCopperGravelHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60FF8E2B' drawBoundBox='false' boundBoxColor='0x60FF8E2B'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:2")'> <OreBlock block='TConstruct:GravelOre:2' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Copper Gravel is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Copper Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoCopperGravelDist = "Vanilla"'>
+                        <StandardGen name='ticoCopperGravelStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60FF8E2B' drawBoundBox='false' boundBoxColor='0x60FF8E2B'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:2")'> <OreBlock block='TConstruct:GravelOre:2' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 8.000 * ticoCopperGravelSize ' range=':= _default_ * ticoCopperGravelSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 10.000 * ticoCopperGravelFreq ' range=':= _default_ * ticoCopperGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 40 ' range=':= 20 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Copper Gravel is complete. -->
+
+                <!-- End Copper Gravel Generation -->
+
+
+                <!-- Begin Tin Gravel Generation -->
+
+                <!-- Starting LayeredVeins Preset for Tin Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoTinGravelDist = "LayeredVeins"'>
+                        <Veins name='ticoTinGravelVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60E8E8E8' drawBoundBox='false' boundBoxColor='0x60E8E8E8'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:3")'> <OreBlock block='TConstruct:GravelOre:3' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 1.416 * _default_ * ticoTinGravelFreq ' range=':= 1.416 * _default_ * ticoTinGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 1.060 * _default_ * ticoTinGravelSize ' range=':= 1.060 * _default_ * ticoTinGravelSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 38 ' range=':= 17 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 1.190 * _default_ ' range=':= 1.190 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * ticoTinGravelSize ' range=':= _default_ * ticoTinGravelSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 1.091 * _default_ * ticoTinGravelSize ' range=':= 1.091 * _default_ * ticoTinGravelSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Tin Gravel is complete. -->
+
+
+                <!-- Starting Cloud Preset for Tin Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoTinGravelDist = "Cloud"'>
+                        <Cloud name='ticoTinGravelCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60E8E8E8' drawBoundBox='false' boundBoxColor='0x60E8E8E8'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:3")'> <OreBlock block='TConstruct:GravelOre:3' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 1.113 * _default_ * ticoTinGravelSize ' range=':= 1.113 * _default_ * ticoTinGravelSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 1.113 * _default_ * ticoTinGravelSize ' range=':= 1.113 * _default_ * ticoTinGravelSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 1.239 * _default_ * ticoTinGravelFreq ' range=':= 1.239 * _default_ * ticoTinGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 38 ' range=':= 17 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='ticoTinGravelHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60E8E8E8' drawBoundBox='false' boundBoxColor='0x60E8E8E8'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:3")'> <OreBlock block='TConstruct:GravelOre:3' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Tin Gravel is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Tin Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoTinGravelDist = "Vanilla"'>
+                        <StandardGen name='ticoTinGravelStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60E8E8E8' drawBoundBox='false' boundBoxColor='0x60E8E8E8'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:3")'> <OreBlock block='TConstruct:GravelOre:3' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 8.000 * ticoTinGravelSize ' range=':= _default_ * ticoTinGravelSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 8.000 * ticoTinGravelFreq ' range=':= _default_ * ticoTinGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 38 ' range=':= 17 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Tin Gravel is complete. -->
+
+                <!-- End Tin Gravel Generation -->
+
+
+                <!-- Begin Aluminum Gravel Generation -->
+
+                <!-- Starting LayeredVeins Preset for Aluminum Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoAluminumGravelDist = "LayeredVeins"'>
+                        <Veins name='ticoAluminumGravelVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60EDEDED' drawBoundBox='false' boundBoxColor='0x60EDEDED'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:4")'> <OreBlock block='TConstruct:GravelOre:4' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 0.751 * _default_ * ticoAluminumGravelFreq ' range=':= 0.751 * _default_ * ticoAluminumGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 0.953 * _default_ * ticoAluminumGravelSize ' range=':= 0.953 * _default_ * ticoAluminumGravelSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 35 ' range=':= 29 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 0.866 * _default_ ' range=':= 0.866 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * ticoAluminumGravelSize ' range=':= _default_ * ticoAluminumGravelSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 0.931 * _default_ * ticoAluminumGravelSize ' range=':= 0.931 * _default_ * ticoAluminumGravelSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Aluminum Gravel is
+                     complete. -->
+
+
+                <!-- Starting Cloud Preset for Aluminum Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoAluminumGravelDist = "Cloud"'>
+                        <Cloud name='ticoAluminumGravelCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60EDEDED' drawBoundBox='false' boundBoxColor='0x60EDEDED'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:4")'> <OreBlock block='TConstruct:GravelOre:4' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.810 * _default_ * ticoAluminumGravelSize ' range=':= 0.810 * _default_ * ticoAluminumGravelSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.810 * _default_ * ticoAluminumGravelSize ' range=':= 0.810 * _default_ * ticoAluminumGravelSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.657 * _default_ * ticoAluminumGravelFreq ' range=':= 0.657 * _default_ * ticoAluminumGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 35 ' range=':= 29 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='ticoAluminumGravelHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60EDEDED' drawBoundBox='false' boundBoxColor='0x60EDEDED'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:4")'> <OreBlock block='TConstruct:GravelOre:4' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Aluminum Gravel is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Aluminum Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoAluminumGravelDist = "Vanilla"'>
+                        <StandardGen name='ticoAluminumGravelStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60EDEDED' drawBoundBox='false' boundBoxColor='0x60EDEDED'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:4")'> <OreBlock block='TConstruct:GravelOre:4' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 6.000 * ticoAluminumGravelSize ' range=':= _default_ * ticoAluminumGravelSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 3.000 * ticoAluminumGravelFreq ' range=':= _default_ * ticoAluminumGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 35 ' range=':= 29 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Aluminum Gravel is complete. -->
+
+                <!-- End Aluminum Gravel Generation -->
+
+                <!-- Finished adding blocks -->
+
+            </IfCondition>
+            <!-- Overworld Setup Complete -->
+
+
+
+
+
+            <!-- Nether Setup Beginning -->
+
+            <IfCondition condition=':= dimension.generator = "HellRandomLevelSource"'>
+
+                <!-- Starting Original "Nether" Block Removal -->
+
+                <IfCondition condition=':= ?blockExists("minecraft:gravel")'>
+                    <Substitute name='ticoNetherBlockSubstitute0' block='minecraft:gravel'>
+                        <Description>
+                            Replace vanilla-generated ore clusters.
+                        </Description>
+                        <Comment>
+                            The global option  deferredPopulationRange
+                            must be large  enough to catch all ore
+                            clusters (>=  32).
+                        </Comment>
+                        <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:5")'> <Replaces block='TConstruct:GravelOre:5' weight='1.0' /> </IfCondition>
+                    </Substitute>
+                </IfCondition>
+
+
+                <IfCondition condition=':= ?blockExists("minecraft:netherrack")'>
+                    <Substitute name='ticoNetherBlockSubstitute1' block='minecraft:netherrack'>
+                        <Description>
+                            Replace vanilla-generated ore clusters.
+                        </Description>
+                        <Comment>
+                            The global option  deferredPopulationRange
+                            must be large  enough to catch all ore
+                            clusters (>=  32).
+                        </Comment>
+                        <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:1")'> <Replaces block='TConstruct:SearedBrick:1' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:2")'> <Replaces block='TConstruct:SearedBrick:2' weight='1.0' /> </IfCondition>
+                    </Substitute>
+                </IfCondition>
+
+                <!-- Original "Nether" Block Removal Complete -->
+
+                <!-- Adding blocks -->
+
+                <!-- Begin Cobalt Generation -->
+
+                <!-- Starting SmallDeposits Preset for Cobalt. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoCobaltDist = "SmallDeposits"'>
+                        <Veins name='ticoCobaltVeins'  inherits='PresetSmallDeposits' drawWireframe='true' wireframeColor='0x601D62B8' drawBoundBox='false' boundBoxColor='0x601D62B8'>
+                            <Description>
+                                Small motherlodes without any
+                                branches.  Similar to the  deposits
+                                produced by StandardGen
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:1")'> <OreBlock block='TConstruct:SearedBrick:1' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:netherrack")'> <Replaces block='minecraft:netherrack' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 1.084 * _default_ * ticoCobaltFreq ' range=':= 1.084 * _default_ * ticoCobaltFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 1.014 * _default_ * ticoCobaltSize ' range=':= 1.014 * _default_ * ticoCobaltSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 64 ' range=':= 64 ' type='uniform' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 0 * _default_ ' range=':= 0 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * ticoCobaltSize ' range=':= _default_ * ticoCobaltSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 0 * _default_ * ticoCobaltSize ' range=':= 0 * _default_ * ticoCobaltSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- SmallDeposits Preset for Cobalt is complete. -->
+
+
+                <!-- Starting Cloud Preset for Cobalt. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoCobaltDist = "Cloud"'>
+                        <Cloud name='ticoCobaltCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x601D62B8' drawBoundBox='false' boundBoxColor='0x601D62B8'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:1")'> <OreBlock block='TConstruct:SearedBrick:1' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:netherrack")'> <Replaces block='minecraft:netherrack' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.871 * _default_ * ticoCobaltSize ' range=':= 0.871 * _default_ * ticoCobaltSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.871 * _default_ * ticoCobaltSize ' range=':= 0.871 * _default_ * ticoCobaltSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.758 * _default_ * ticoCobaltFreq ' range=':= 0.758 * _default_ * ticoCobaltFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 64 ' range=':= 64 ' type='uniform' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='ticoCobaltHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x601D62B8' drawBoundBox='false' boundBoxColor='0x601D62B8'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:1")'> <OreBlock block='TConstruct:SearedBrick:1' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Cobalt is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Cobalt. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoCobaltDist = "Vanilla"'>
+                        <StandardGen name='ticoCobaltStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x601D62B8' drawBoundBox='false' boundBoxColor='0x601D62B8'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:1")'> <OreBlock block='TConstruct:SearedBrick:1' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:netherrack")'> <Replaces block='minecraft:netherrack' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 3.000 * ticoCobaltSize ' range=':= _default_ * ticoCobaltSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 8.000 * ticoCobaltFreq ' range=':= _default_ * ticoCobaltFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 64 ' range=':= 64 ' type='uniform' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Cobalt is complete. -->
+
+                <!-- End Cobalt Generation -->
+
+
+                <!-- Begin Ardite Generation -->
+
+                <!-- Starting SmallDeposits Preset for Ardite. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoArditeDist = "SmallDeposits"'>
+                        <Veins name='ticoArditeVeins'  inherits='PresetSmallDeposits' drawWireframe='true' wireframeColor='0x60F48A00' drawBoundBox='false' boundBoxColor='0x60F48A00'>
+                            <Description>
+                                Small motherlodes without any
+                                branches.  Similar to the  deposits
+                                produced by StandardGen
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:2")'> <OreBlock block='TConstruct:SearedBrick:2' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:netherrack")'> <Replaces block='minecraft:netherrack' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 1.084 * _default_ * ticoArditeFreq ' range=':= 1.084 * _default_ * ticoArditeFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 1.014 * _default_ * ticoArditeSize ' range=':= 1.014 * _default_ * ticoArditeSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 64 ' range=':= 64 ' type='uniform' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 0 * _default_ ' range=':= 0 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * ticoArditeSize ' range=':= _default_ * ticoArditeSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 0 * _default_ * ticoArditeSize ' range=':= 0 * _default_ * ticoArditeSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- SmallDeposits Preset for Ardite is complete. -->
+
+
+                <!-- Starting Cloud Preset for Ardite. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoArditeDist = "Cloud"'>
+                        <Cloud name='ticoArditeCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60F48A00' drawBoundBox='false' boundBoxColor='0x60F48A00'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:2")'> <OreBlock block='TConstruct:SearedBrick:2' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:netherrack")'> <Replaces block='minecraft:netherrack' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.871 * _default_ * ticoArditeSize ' range=':= 0.871 * _default_ * ticoArditeSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.871 * _default_ * ticoArditeSize ' range=':= 0.871 * _default_ * ticoArditeSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.758 * _default_ * ticoArditeFreq ' range=':= 0.758 * _default_ * ticoArditeFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 64 ' range=':= 64 ' type='uniform' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='ticoArditeHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60F48A00' drawBoundBox='false' boundBoxColor='0x60F48A00'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:2")'> <OreBlock block='TConstruct:SearedBrick:2' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Ardite is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Ardite. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoArditeDist = "Vanilla"'>
+                        <StandardGen name='ticoArditeStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60F48A00' drawBoundBox='false' boundBoxColor='0x60F48A00'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:SearedBrick:2")'> <OreBlock block='TConstruct:SearedBrick:2' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:netherrack")'> <Replaces block='minecraft:netherrack' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 3.000 * ticoArditeSize ' range=':= _default_ * ticoArditeSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 8.000 * ticoArditeFreq ' range=':= _default_ * ticoArditeFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 64 ' range=':= 64 ' type='uniform' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Ardite is complete. -->
+
+                <!-- End Ardite Generation -->
+
+
+                <!-- Begin Nether Cobalt Gravel Generation -->
+
+                <!-- Starting LayeredVeins Preset for Nether Cobalt
+                     Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoNetherCobaltGravelDist = "LayeredVeins"'>
+                        <Veins name='ticoNetherCobaltGravelVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x601D62B8' drawBoundBox='false' boundBoxColor='0x601D62B8'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:5")'> <OreBlock block='TConstruct:GravelOre:5' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 0.867 * _default_ * ticoNetherCobaltGravelFreq ' range=':= 0.867 * _default_ * ticoNetherCobaltGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 0.976 * _default_ * ticoNetherCobaltGravelSize ' range=':= 0.976 * _default_ * ticoNetherCobaltGravelSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 64 ' range=':= 64 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 0.931 * _default_ ' range=':= 0.931 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * ticoNetherCobaltGravelSize ' range=':= _default_ * ticoNetherCobaltGravelSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 0.965 * _default_ * ticoNetherCobaltGravelSize ' range=':= 0.965 * _default_ * ticoNetherCobaltGravelSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Nether Cobalt Gravel is
+                     complete. -->
+
+
+                <!-- Starting Cloud Preset for Nether Cobalt Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoNetherCobaltGravelDist = "Cloud"'>
+                        <Cloud name='ticoNetherCobaltGravelCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x601D62B8' drawBoundBox='false' boundBoxColor='0x601D62B8'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:5")'> <OreBlock block='TConstruct:GravelOre:5' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.871 * _default_ * ticoNetherCobaltGravelSize ' range=':= 0.871 * _default_ * ticoNetherCobaltGravelSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.871 * _default_ * ticoNetherCobaltGravelSize ' range=':= 0.871 * _default_ * ticoNetherCobaltGravelSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.758 * _default_ * ticoNetherCobaltGravelFreq ' range=':= 0.758 * _default_ * ticoNetherCobaltGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 64 ' range=':= 64 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='ticoNetherCobaltGravelHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x601D62B8' drawBoundBox='false' boundBoxColor='0x601D62B8'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:5")'> <OreBlock block='TConstruct:GravelOre:5' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Nether Cobalt Gravel is
+                     complete. -->
+
+
+                <!-- Starting Vanilla Preset for Nether Cobalt Gravel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= ticoNetherCobaltGravelDist = "Vanilla"'>
+                        <StandardGen name='ticoNetherCobaltGravelStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x601D62B8' drawBoundBox='false' boundBoxColor='0x601D62B8'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("TConstruct:GravelOre:5")'> <OreBlock block='TConstruct:GravelOre:5' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 3.000 * ticoNetherCobaltGravelSize ' range=':= _default_ * ticoNetherCobaltGravelSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 8.000 * ticoNetherCobaltGravelFreq ' range=':= _default_ * ticoNetherCobaltGravelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 64 ' range=':= 64 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Nether Cobalt Gravel is
+                     complete. -->
+
+                <!-- End Nether Cobalt Gravel Generation -->
+
+                <!-- Finished adding blocks -->
+
+            </IfCondition>
+            <!-- Nether Setup Complete -->
+
+
+        </IfCondition>
+
+    </ConfigSection>
+    <!-- Configuration for Custom Ore Generation Complete! -->
+
+</IfModInstalled>
+<!-- The "Tinkers Construct" mod is now configured. -->
+
+
+
+
+
+<!-- =================================================================
+     This file was made using the Sprocket Configuration Generator.
+     If you wish to make your own configurations for a mod not
+     currently supported by Custom Ore Generation, and you don't want
+     the hassle of writing XML, you can find the generator script at
+     its GitHub page: http://https://github.com/reteo/Sprocket
+     ================================================================= -->

@@ -1,0 +1,859 @@
+<!-- =================================================================
+     Custom Ore Generation "Immersive Engineering" Module: This
+     configuration covers copper, bauxite, lead, silver, and nickel.
+     ================================================================= -->
+
+
+
+
+
+
+<!-- Is the "Immersive Engineering" mod on the system?  Let's find
+     out! -->
+<IfModInstalled name="ImmersiveEngineering">
+
+    <!-- Starting Configuration for Custom Ore Generation. -->
+    <ConfigSection>
+
+
+
+
+
+        <!-- Setup Screen Configuration -->
+        <ConfigSection>
+            <OptionDisplayGroup name='groupImmersiveEngineering' displayName='沉浸工艺' displayState='shown'>
+                <Description>
+                    矿物的分布选项
+                </Description>
+            </OptionDisplayGroup>
+            <OptionChoice name='enableImmersiveEngineering' displayName='处理沉浸工艺的矿物生成' default='true' displayState='shown_dynamic' displayGroup='groupImmersiveEngineering'>
+                <Description> 让COG处理该模组的矿物生成么？ </Description>
+                <Choice value=':= ?true' displayValue='是' description='让COG处理该模组的矿物生成。'/>
+                <Choice value=':= ?false' displayValue='否' description='让该模组处理其自身的矿物生成。'/>
+            </OptionChoice>
+
+            <!-- Copper Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='iengCopperDist'  displayState=':= if(?enableImmersiveEngineering, "shown", "hidden")' displayGroup='groupImmersiveEngineering'>
+                    <Description> 控制铜矿的生成 </Description>
+                    <DisplayName> 铜矿 </DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开端'/>
+                </OptionChoice>
+                <OptionNumeric name='iengCopperFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveEngineering, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveEngineering'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='iengCopperSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveEngineering, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveEngineering'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Copper Configuration UI Complete -->
+
+
+            <!-- Bauxite Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='iengBauxiteDist'  displayState=':= if(?enableImmersiveEngineering, "shown", "hidden")' displayGroup='groupImmersiveEngineering'>
+                    <Description> 控制铝土矿的生成 </Description>
+                    <DisplayName> 铝土矿</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开端'/>
+                </OptionChoice>
+                <OptionNumeric name='iengBauxiteFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveEngineering, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveEngineering'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='iengBauxiteSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveEngineering, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveEngineering'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Bauxite Configuration UI Complete -->
+
+
+            <!-- Lead Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='iengLeadDist'  displayState=':= if(?enableImmersiveEngineering, "shown", "hidden")' displayGroup='groupImmersiveEngineering'>
+                    <Description> 控制铅矿的生成 </Description>
+                    <DisplayName> 铅矿</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开端'/>
+                </OptionChoice>
+                <OptionNumeric name='iengLeadFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveEngineering, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveEngineering'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='iengLeadSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveEngineering, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveEngineering'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Lead Configuration UI Complete -->
+
+
+            <!-- Silver Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='iengSilverDist'  displayState=':= if(?enableImmersiveEngineering, "shown", "hidden")' displayGroup='groupImmersiveEngineering'>
+                    <Description> 控制银矿的生成 </Description>
+                    <DisplayName> 银矿</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开端'/>
+                </OptionChoice>
+                <OptionNumeric name='iengSilverFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveEngineering, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveEngineering'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='iengSilverSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveEngineering, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveEngineering'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Silver Configuration UI Complete -->
+
+
+            <!-- Nickel Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='iengNickelDist'  displayState=':= if(?enableImmersiveEngineering, "shown", "hidden")' displayGroup='groupImmersiveEngineering'>
+                    <Description> 控制镍矿的生成 </Description>
+                    <DisplayName> 镍矿</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开端'/>
+                </OptionChoice>
+                <OptionNumeric name='iengNickelFreq' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveEngineering, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveEngineering'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='iengNickelSize' default='1'  min='0' max='5' displayState=':= if(?enableImmersiveEngineering, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupImmersiveEngineering'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Nickel Configuration UI Complete -->
+
+        </ConfigSection>
+        <!-- Setup Screen Complete -->
+
+        <IfCondition condition=':= ?enableImmersiveEngineering'>
+
+
+
+
+            <!-- Overworld Setup Beginning -->
+
+            <IfCondition condition=':= ?COGActive'>
+
+                <!-- Starting Original "Overworld" Block Removal -->
+
+                <IfCondition condition=':= ?blockExists("minecraft:stone")'>
+                    <Substitute name='iengOverworldBlockSubstitute0' block='minecraft:stone'>
+                        <Description>
+                            Replace vanilla-generated ore clusters.
+                        </Description>
+                        <Comment>
+                            The global option  deferredPopulationRange
+                            must be large  enough to catch all ore
+                            clusters (>=  32).
+                        </Comment>
+                        <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:0")'> <Replaces block='ImmersiveEngineering:ore:0' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:1")'> <Replaces block='ImmersiveEngineering:ore:1' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:2")'> <Replaces block='ImmersiveEngineering:ore:2' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:3")'> <Replaces block='ImmersiveEngineering:ore:3' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:4")'> <Replaces block='ImmersiveEngineering:ore:4' weight='1.0' /> </IfCondition>
+                    </Substitute>
+                </IfCondition>
+
+                <!-- Original "Overworld" Block Removal Complete -->
+
+                <!-- Adding blocks -->
+
+                <!-- Begin Copper Generation -->
+
+                <!-- Starting LayeredVeins Preset for Copper. -->
+                <ConfigSection>
+                    <IfCondition condition=':= iengCopperDist = "LayeredVeins"'>
+                        <Veins name='iengCopperVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:0")'> <OreBlock block='ImmersiveEngineering:ore:0' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 1.416 * _default_ * iengCopperFreq ' range=':= 1.416 * _default_ * iengCopperFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 1.060 * _default_ * iengCopperSize ' range=':= 1.060 * _default_ * iengCopperSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 56 ' range=':= 16 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 1.190 * _default_ ' range=':= 1.190 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * iengCopperSize ' range=':= _default_ * iengCopperSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 1.091 * _default_ * iengCopperSize ' range=':= 1.091 * _default_ * iengCopperSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Copper is complete. -->
+
+
+                <!-- Starting Cloud Preset for Copper. -->
+                <ConfigSection>
+                    <IfCondition condition=':= iengCopperDist = "Cloud"'>
+                        <Cloud name='iengCopperCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:0")'> <OreBlock block='ImmersiveEngineering:ore:0' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 1.113 * _default_ * iengCopperSize ' range=':= 1.113 * _default_ * iengCopperSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 1.113 * _default_ * iengCopperSize ' range=':= 1.113 * _default_ * iengCopperSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 1.239 * _default_ * iengCopperFreq ' range=':= 1.239 * _default_ * iengCopperFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 56 ' range=':= 16 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='iengCopperHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:0")'> <OreBlock block='ImmersiveEngineering:ore:0' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Copper is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Copper. -->
+                <ConfigSection>
+                    <IfCondition condition=':= iengCopperDist = "Vanilla"'>
+                        <StandardGen name='iengCopperStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60E78125' drawBoundBox='false' boundBoxColor='0x60E78125'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:0")'> <OreBlock block='ImmersiveEngineering:ore:0' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 8.000 * iengCopperSize ' range=':= _default_ * iengCopperSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 8.000 * iengCopperFreq ' range=':= _default_ * iengCopperFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 56 ' range=':= 16 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Copper is complete. -->
+
+                <!-- End Copper Generation -->
+
+
+                <!-- Begin Bauxite Generation -->
+
+                <!-- Starting LayeredVeins Preset for Bauxite. -->
+                <ConfigSection>
+                    <IfCondition condition=':= iengBauxiteDist = "LayeredVeins"'>
+                        <Veins name='iengBauxiteVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:1")'> <OreBlock block='ImmersiveEngineering:ore:1' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * iengBauxiteFreq ' range=':= 1.001 * _default_ * iengBauxiteFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 1.000 * _default_ * iengBauxiteSize ' range=':= 1.000 * _default_ * iengBauxiteSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 62.5 ' range=':= 22.5 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 1.000 * _default_ ' range=':= 1.000 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * iengBauxiteSize ' range=':= _default_ * iengBauxiteSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 1.000 * _default_ * iengBauxiteSize ' range=':= 1.000 * _default_ * iengBauxiteSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Bauxite is complete. -->
+
+
+                <!-- Starting Cloud Preset for Bauxite. -->
+                <ConfigSection>
+                    <IfCondition condition=':= iengBauxiteDist = "Cloud"'>
+                        <Cloud name='iengBauxiteCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:1")'> <OreBlock block='ImmersiveEngineering:ore:1' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.936 * _default_ * iengBauxiteSize ' range=':= 0.936 * _default_ * iengBauxiteSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.936 * _default_ * iengBauxiteSize ' range=':= 0.936 * _default_ * iengBauxiteSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.876 * _default_ * iengBauxiteFreq ' range=':= 0.876 * _default_ * iengBauxiteFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 62.5 ' range=':= 22.5 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='iengBauxiteHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:1")'> <OreBlock block='ImmersiveEngineering:ore:1' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Bauxite is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Bauxite. -->
+                <ConfigSection>
+                    <IfCondition condition=':= iengBauxiteDist = "Vanilla"'>
+                        <StandardGen name='iengBauxiteStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60C0C7CA' drawBoundBox='false' boundBoxColor='0x60C0C7CA'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:1")'> <OreBlock block='ImmersiveEngineering:ore:1' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 4.000 * iengBauxiteSize ' range=':= _default_ * iengBauxiteSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 8.000 * iengBauxiteFreq ' range=':= _default_ * iengBauxiteFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 62.5 ' range=':= 22.5 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Bauxite is complete. -->
+
+                <!-- End Bauxite Generation -->
+
+
+                <!-- Begin Lead Generation -->
+
+                <!-- Starting LayeredVeins Preset for Lead. -->
+                <ConfigSection>
+                    <IfCondition condition=':= iengLeadDist = "LayeredVeins"'>
+                        <Veins name='iengLeadVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60636A81' drawBoundBox='false' boundBoxColor='0x60636A81'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:2")'> <OreBlock block='ImmersiveEngineering:ore:2' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 0.867 * _default_ * iengLeadFreq ' range=':= 0.867 * _default_ * iengLeadFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 0.976 * _default_ * iengLeadSize ' range=':= 0.976 * _default_ * iengLeadSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 22 ' range=':= 14 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 0.931 * _default_ ' range=':= 0.931 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * iengLeadSize ' range=':= _default_ * iengLeadSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 0.965 * _default_ * iengLeadSize ' range=':= 0.965 * _default_ * iengLeadSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Lead is complete. -->
+
+
+                <!-- Starting Cloud Preset for Lead. -->
+                <ConfigSection>
+                    <IfCondition condition=':= iengLeadDist = "Cloud"'>
+                        <Cloud name='iengLeadCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60636A81' drawBoundBox='false' boundBoxColor='0x60636A81'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:2")'> <OreBlock block='ImmersiveEngineering:ore:2' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.871 * _default_ * iengLeadSize ' range=':= 0.871 * _default_ * iengLeadSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.871 * _default_ * iengLeadSize ' range=':= 0.871 * _default_ * iengLeadSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.758 * _default_ * iengLeadFreq ' range=':= 0.758 * _default_ * iengLeadFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 22 ' range=':= 14 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='iengLeadHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60636A81' drawBoundBox='false' boundBoxColor='0x60636A81'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:2")'> <OreBlock block='ImmersiveEngineering:ore:2' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Lead is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Lead. -->
+                <ConfigSection>
+                    <IfCondition condition=':= iengLeadDist = "Vanilla"'>
+                        <StandardGen name='iengLeadStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60636A81' drawBoundBox='false' boundBoxColor='0x60636A81'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:2")'> <OreBlock block='ImmersiveEngineering:ore:2' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 6.000 * iengLeadSize ' range=':= _default_ * iengLeadSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 4.000 * iengLeadFreq ' range=':= _default_ * iengLeadFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 22 ' range=':= 14 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Lead is complete. -->
+
+                <!-- End Lead Generation -->
+
+
+                <!-- Begin Silver Generation -->
+
+                <!-- Starting LayeredVeins Preset for Silver. -->
+                <ConfigSection>
+                    <IfCondition condition=':= iengSilverDist = "LayeredVeins"'>
+                        <Veins name='iengSilverVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:3")'> <OreBlock block='ImmersiveEngineering:ore:3' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * iengSilverFreq ' range=':= 1.001 * _default_ * iengSilverFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 1.000 * _default_ * iengSilverSize ' range=':= 1.000 * _default_ * iengSilverSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 1.000 * _default_ ' range=':= 1.000 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * iengSilverSize ' range=':= _default_ * iengSilverSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 1.000 * _default_ * iengSilverSize ' range=':= 1.000 * _default_ * iengSilverSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Silver is complete. -->
+
+
+                <!-- Starting Cloud Preset for Silver. -->
+                <ConfigSection>
+                    <IfCondition condition=':= iengSilverDist = "Cloud"'>
+                        <Cloud name='iengSilverCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:3")'> <OreBlock block='ImmersiveEngineering:ore:3' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.936 * _default_ * iengSilverSize ' range=':= 0.936 * _default_ * iengSilverSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.936 * _default_ * iengSilverSize ' range=':= 0.936 * _default_ * iengSilverSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.876 * _default_ * iengSilverFreq ' range=':= 0.876 * _default_ * iengSilverFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='iengSilverHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:3")'> <OreBlock block='ImmersiveEngineering:ore:3' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Silver is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Silver. -->
+                <ConfigSection>
+                    <IfCondition condition=':= iengSilverDist = "Vanilla"'>
+                        <StandardGen name='iengSilverStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60E8F6FF' drawBoundBox='false' boundBoxColor='0x60E8F6FF'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:3")'> <OreBlock block='ImmersiveEngineering:ore:3' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 8.000 * iengSilverSize ' range=':= _default_ * iengSilverSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 4.000 * iengSilverFreq ' range=':= _default_ * iengSilverFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 24 ' range=':= 16 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Silver is complete. -->
+
+                <!-- End Silver Generation -->
+
+
+                <!-- Begin Nickel Generation -->
+
+                <!-- Starting LayeredVeins Preset for Nickel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= iengNickelDist = "LayeredVeins"'>
+                        <Veins name='iengNickelVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60D3D9C8' drawBoundBox='false' boundBoxColor='0x60D3D9C8'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:4")'> <OreBlock block='ImmersiveEngineering:ore:4' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 0.613 * _default_ * iengNickelFreq ' range=':= 0.613 * _default_ * iengNickelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 0.922 * _default_ * iengNickelSize ' range=':= 0.922 * _default_ * iengNickelSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 16 ' range=':= 8 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 0.783 * _default_ ' range=':= 0.783 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * iengNickelSize ' range=':= _default_ * iengNickelSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 0.885 * _default_ * iengNickelSize ' range=':= 0.885 * _default_ * iengNickelSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Nickel is complete. -->
+
+
+                <!-- Starting Cloud Preset for Nickel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= iengNickelDist = "Cloud"'>
+                        <Cloud name='iengNickelCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60D3D9C8' drawBoundBox='false' boundBoxColor='0x60D3D9C8'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:4")'> <OreBlock block='ImmersiveEngineering:ore:4' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.732 * _default_ * iengNickelSize ' range=':= 0.732 * _default_ * iengNickelSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.732 * _default_ * iengNickelSize ' range=':= 0.732 * _default_ * iengNickelSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.536 * _default_ * iengNickelFreq ' range=':= 0.536 * _default_ * iengNickelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 16 ' range=':= 8 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='iengNickelHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60D3D9C8' drawBoundBox='false' boundBoxColor='0x60D3D9C8'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:4")'> <OreBlock block='ImmersiveEngineering:ore:4' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Nickel is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Nickel. -->
+                <ConfigSection>
+                    <IfCondition condition=':= iengNickelDist = "Vanilla"'>
+                        <StandardGen name='iengNickelStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60D3D9C8' drawBoundBox='false' boundBoxColor='0x60D3D9C8'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("ImmersiveEngineering:ore:4")'> <OreBlock block='ImmersiveEngineering:ore:4' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 6.000 * iengNickelSize ' range=':= _default_ * iengNickelSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 2.000 * iengNickelFreq ' range=':= _default_ * iengNickelFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 16 ' range=':= 8 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Nickel is complete. -->
+
+                <!-- End Nickel Generation -->
+
+                <!-- Finished adding blocks -->
+
+            </IfCondition>
+            <!-- Overworld Setup Complete -->
+
+
+
+        </IfCondition>
+
+    </ConfigSection>
+    <!-- Configuration for Custom Ore Generation Complete! -->
+
+</IfModInstalled>
+<!-- The "Immersive Engineering" mod is now configured. -->
+
+
+
+
+
+<!-- =================================================================
+     This file was made using the Sprocket Configuration Generator.
+     If you wish to make your own configurations for a mod not
+     currently supported by Custom Ore Generation, and you don't want
+     the hassle of writing XML, you can find the generator script at
+     its GitHub page: http://https://github.com/reteo/Sprocket
+     ================================================================= -->

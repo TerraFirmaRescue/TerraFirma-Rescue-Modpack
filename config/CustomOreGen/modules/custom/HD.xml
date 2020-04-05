@@ -1,0 +1,498 @@
+<ConfigSection>
+    <!--HD-->
+    <IfCondition condition=':= dimension.id = 13'>
+        <Cloud name='PtCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='minecraft:stone' weight='0.2'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9116, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.5'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9212, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.25'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:770, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.05'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 0.3 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 35' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Veins name='PtHintVein'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+                <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                          nbt='{m:9116, id:"gt.MetaBlockTileEntity"}'
+                          weight='0.5'/>
+                <Setting name='MotherlodeHeight' avg=':= 55' range=':= 50'/>
+                <Setting name='MotherlodeFrequency' avg=':= 3 * _default_' range=':= _default_'/>
+            </Veins>
+        </Cloud>
+
+        <Cloud name='UCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='minecraft:stone' weight='0.2'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9134, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.4'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9155, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.39'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:940, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.01'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 0.5 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 50' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Veins name='UHintVein'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+                <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                          nbt='{m:9134, id:"gt.MetaBlockTileEntity"}'
+                          weight='0.5'/>
+                <Setting name='MotherlodeHeight' avg=':= 55' range=':= 50'/>
+                <Setting name='MotherlodeFrequency' avg=':= 3 * _default_' range=':= _default_'/>
+            </Veins>
+        </Cloud>
+
+        <Cloud name='ThCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='minecraft:stone' weight='0.2'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:900, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.6'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:40, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.2'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 1 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 30' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Veins name='ThHintVein'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+                <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                          nbt='{m:900, id:"gt.MetaBlockTileEntity"}'
+                          weight='0.5'/>
+                <Setting name='MotherlodeHeight' avg=':= 55' range=':= 50'/>
+                <Setting name='MotherlodeFrequency' avg=':= 3 * _default_' range=':= _default_'/>
+            </Veins>
+        </Cloud>
+
+        <Cloud name='TritaniumCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='minecraft:stone' weight='0.2'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:1250, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.6'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9199, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.2'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 0.5 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 15' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Veins name='TritaniumHintVein'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+                <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                          nbt='{m:1250, id:"gt.MetaBlockTileEntity"}'
+                          weight='0.5'/>
+                <Setting name='MotherlodeHeight' avg=':= 55' range=':= 50'/>
+                <Setting name='MotherlodeFrequency' avg=':= 3 * _default_' range=':= _default_'/>
+            </Veins>
+        </Cloud>
+
+        <Cloud name='CertusCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='minecraft:stone' weight='0.2'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:8347, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.5'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:8348, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.05'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:8445, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.25'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 1 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 40' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+
+        <Cloud name='AluminumGemsCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:8304, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.2'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:8323, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.2'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:8315, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.2'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:8383, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.2'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:8305, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.2'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 1 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 50' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+
+        <Cloud name='RestoneCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:8333, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.5'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:8302, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.2'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9114`, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.25'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9125, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.05'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 1 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 20' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+
+        <Cloud name='CrCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='gregtech:gt.stone.basalt' weight='0.1'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9113, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.7'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9135`, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.2'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 1 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 40' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+
+        <Cloud name='MnTaHaCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9126, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.7'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9148`, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.28'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:720`, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.02'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 1 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 35' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+
+        <Cloud name='RareEarthCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9144, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.4'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:600`, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.4'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9100`, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.2'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 1 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 15' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 4 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+
+        <Cloud name='NiCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9125, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.4'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9111, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.4'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:160, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.2'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 1 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 45' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+
+        <Cloud name='CoCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9115, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.4'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9145, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.4'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9130, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.2'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 1 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 40' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+
+        <Cloud name='LiCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:30, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.2'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9149, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.4'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9146, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.4'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 1 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 30' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+
+        <Cloud name='MoCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9123, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.6'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9124, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.15'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9136, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.15'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:420, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.1'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 1 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 50' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+
+        <Cloud name='PbAgCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9117, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.4'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9210, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.4'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:820, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.1'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:470, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.1'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 1 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 40' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+
+        <Cloud name='AuCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9125, id:"gt.MetaBlockTileEntity"}'
+                      weight='1'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 1 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 60' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+
+        <Cloud name='SnCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9213, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.4'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9214, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.4'/>
+            <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                      nbt='{m:9108, id:"gt.MetaBlockTileEntity"}'
+                      weight='0.2'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 1 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 60' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+
+        <Cloud name='NaKClCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+            <OreBlock block='gregtech:gt.block.rockores:2' weight='0.5'/>
+            <OreBlock block='gregtech:gt.block.rockores:3' weight='0.5'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 1 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 4 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 20' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 10 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+
+        <Cloud name='NqCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+                <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                nbt='{m:1740, id:"gt.MetaBlockTileEntity"}'
+                weight='1'/>
+                <Biome name='.*'  />
+                <Setting name='DistributionFrequency' avg=':= 0.2 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+                <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+                <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+                <Setting name='CloudHeight' avg=':= 60' range=':= 5' type='normal'/>
+                <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+                <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+                <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Cloud>
+
+            <Cloud name='KeCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+                <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                nbt='{m:1260, id:"gt.MetaBlockTileEntity"}'
+                weight='1'/>
+                <Biome name='.*'  />
+                <Setting name='DistributionFrequency' avg=':= 0.5 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+                <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+                <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+                <Setting name='CloudHeight' avg=':= 60' range=':= 5' type='normal'/>
+                <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+                <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+                <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Cloud>
+
+            <Cloud name='AdCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+                <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                nbt='{m:8784, id:"gt.MetaBlockTileEntity"}'
+                weight='1'/>
+                <Biome name='.*'  />
+                <Setting name='DistributionFrequency' avg=':= 0.05 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+                <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
+                <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+                <Setting name='CloudHeight' avg=':= 60' range=':= 5' type='normal'/>
+                <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                <Setting name='OreDensity' avg=':= 4 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+                <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+                <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Cloud>
+
+    </IfCondition>
+
+</ConfigSection>

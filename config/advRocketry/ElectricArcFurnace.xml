@@ -1,0 +1,76 @@
+<!-->
+	<Recipe timeRequired="NUMBER" power="NUMBER">
+		<input>
+			<fluidStack>FLUID NAME SIZE</fluidStack>
+			<itemStack>ITEM_NAME SIZE META</itemStack>
+			<oreDict>OREDICT_NAME SIZE</oreDict>
+        </input>
+		<output>
+			<fluidStack>FLUID_NAME SIZE</fluidStack>
+			<itemStack>ITEM_NAME SIZE META</itemStack>
+			<oreDict>OREDICT_NAME SIZE</oreDict>
+		</output>
+	</Recipe>
+	
+	Can have Multiple In/Outputs
+	Some Machines can only Accept either Fluids or Items
+	
+	timeRequired="NUMBER"	how long a Recipe takes, Unit is in Ticks.
+	power="NUMBER" how much Power the Recipes takes per Tick. Unit is in RF.
+	
+	The "useDefault" attribute will prevent loading of recipes if set to "false"
+<!-->
+<Recipes useDefault="false">
+	<Recipe timeRequired="12000" power ="1">
+		<input>
+			<oreDict>dustAnySiliconDioxide 1</oreDict>
+			<oreDict>dustAnyCoalCarbon 2</oreDict>
+		</input>
+		<output>
+			<itemStack>libVulpes:libVulpesproductingot 1 3</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="200" power ="64">
+		<input>
+			<itemStack>gregtech:gt.meta.dust 1 8014</itemStack>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.meta.ingot 2 8008</itemStack>
+		</output>
+	</Recipe>
+	    <Recipe timeRequired="2400" power ="256">
+		<input>
+			<oreDict>dustTungsten 1</oreDict>
+			<oreDict>dustCarbon 1</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.meta.ingot 2 8638</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="2400" power ="256">
+		<input>
+			<oreDict>dustTungsten 1</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.meta.ingot 1 740</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="400" power ="128">
+		<input>
+			<oreDict>dustAluminum 1</oreDict>
+			<oreDict>dustCopper 1</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.meta.ingot 2 8756</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="400" power ="128">
+		<input>
+			<oreDict>dustTin 1</oreDict>
+			<oreDict>dustCopper 3</oreDict>
+		</input>
+		<output>
+			<itemStack>terrafirmacraft:item.Bronze Ingot 4</itemStack>
+		</output>
+	</Recipe>
+</Recipes>

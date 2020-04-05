@@ -1,0 +1,448 @@
+<!--*************************  CustomOreGen Configuration **********************>
+*
+*   IMPORTANT: TO CUSTOMIZE THIS CONFIGURATION, COPY THIS FILE TO
+*              "CustomOreGen_Config.xml".
+*              THIS FILE WILL BE OVERWRITTEN EVERY TIME THE MOD LOADS.
+*
+*              To override the configuration for specific worlds,
+*              or specific dimensions, copy this file to the
+*              corresponding save directory.
+*   重要信息：拷贝该文档至CustomOreGen_Config.xml以完成自定义配置！
+*             该文档在每次载入时都会被覆盖。
+*             要修改特定世界，维度的配置，只需要拷贝该文档至对应存档。
+*
+*   CustomOreGen allows you to customize the generation of Ore within
+*   your worlds. This file contains a list of "distributions", which
+*   place a specific block according to a specific
+*   algorithm.  You can have as many distributions as you want, including
+*   multiple distributions for the same block type.
+*   
+*   There are four basic algorithms available:
+*   "StandardGen", "Susbstitute", "Veins", and "Cloud".
+*   四种可供选择的分布模型：
+*   标准式分布，替代式分布，矿脉式分布，云式分布。
+*
+*   This file is written in XML.
+*   Many names and values are ***CASE SENSISTIVE***.  
+*
+*   For details on how to edit this file, please see the online documentation:
+*   关于如何编辑本文档，请查看在线档案：
+*   原创特性档案 by JRoush:
+*       http://customoregen.shoutwiki.com/wiki/Main_Page
+*
+*   当前维护者加入的新特性档案 :
+*       https://github.com/lawremi/CustomOreGen/wiki/Documentation
+*
+******************************************************************************-->
+
+<Config>
+  
+    <!--************************   Global Config Options   *********************************
+    *   Below are options to control the general behavior of all distributions.
+    *************************************************************************************-->
+    <ConfigSection>
+      
+        <OptionDisplayGroup name='groupInternal' displayName=''
+                            displayState='hidden'>
+            <Description> 
+                Hidden, mostly internal options.
+            </Description>
+        </OptionDisplayGroup>
+
+        <OptionChoice name='COGActive'
+                      default=':= dimension.generator = "RandomLevelSource" | dimension.generator = "ATGLevelSource"'
+                      displayGroup='groupInternal'>
+            <Choice value='true' displayValue='开启'/>
+            <Choice value='false' displayValue='关闭'/>
+            <Comment>
+              Controls whether COG is active in the current
+              dimension. Copy this file to CustomOreGen_Config.xml and
+              modify the expression for the default value to control
+              where COG is active by default.
+            </Comment>
+        </OptionChoice>
+
+        <OptionDisplayGroup name='groupGeneral' displayName='常规' displayState='shown'>
+            <Description> 
+                对所有矿物生成生效的选项。
+            </Description>
+        </OptionDisplayGroup>
+        
+        <OptionNumeric name='oreFreq' default='1' min='0' max='5' displayState='shown' displayGroup='groupGeneral'>
+            <Description> 
+                全局参数，作用于所有矿物的矿脉生成几率。
+            </Description>
+            <DisplayName>矿脉生成率</DisplayName>
+        </OptionNumeric>
+        
+        <OptionNumeric name='oreSize' default='1' min='0' max='5' displayState='shown' displayGroup='groupGeneral'>
+            <Description> 
+                全局参数，作用于所有矿物的矿脉大小。	
+            </Description>
+            <DisplayName>矿脉规模</DisplayName>
+        </OptionNumeric> 
+       
+        <OptionChoice name='debugMode' default='false' displayState='shown_dynamic' displayGroup='groupGeneral'>
+            <Description> 
+                允许玩家在游戏内使用线框构架和控制台指令。同时影响高级选项的可见性。
+            </Description>
+            <Comment>           
+                This is a "magic" option - it has meaning outside of this file in the COG engine itelf.  You can change the value, obviously, but do not remove the option itself or change the possible values.
+            </Comment>
+            <DisplayName>调试模式</DisplayName>
+            <Choice value='true' displayValue='开启'/>
+            <Choice value='false' displayValue='关闭'/>
+        </OptionChoice> 
+        
+        <OptionNumeric name='deferredPopulationRange' default='16' displayGroup='groupGeneral'>
+            <Description> 
+			    区块的半径(以方块计数)必须在COG添加矿脉之前被设定好。
+            </Description>
+            <Comment>
+                This is a "magic" option - it has meaning outside of this file in the COG engine itelf.  You can change the value, but do not remove the option itself or change the allowed range.  Changing this value is really not recommended unless you know what you are doing.
+            </Comment>
+            <DisplayState>:= if(?debugMode,"shown","hidden")</DisplayState>
+            <DisplayName>默认区块半径</DisplayName>
+            <Min>0</Min>
+            <Max>128</Max>
+            <DisplayIncrement>16</DisplayIncrement>
+        </OptionNumeric> 
+
+        <OptionChoice name='vanillaOreGen' default=':=!?COGActive' displayGroup='groupGeneral'>
+            <Description> 
+                作用于煤，铁，金，红石，青金石，以及钻石。不包含绿宝石！
+            </Description>
+            <Comment>     
+                This is a "magic" option - it has meaning outside of this file in the COG engine itelf. You can change the value, but do not remove the option itself.  Recommended values are True/On for new worlds and False/Off for pre-1.4.2 worlds (for compatibility).
+            </Comment>
+            <Comment>
+                This option completely prevents these ores from being spawned by the vanilla terrain generator. It is more efficient than a Substitute distribution, which lets the generator place an ore and then removes it.  However, for technical reasons this option cannot disable vanilla emerald generation. It also has mixed results with mod generation - mods that recycle the vanilla generator get disabled, while those that use their own do not.  Finally, it is an "all-or-nothing" approach that doesn't distinguish between ore types or world properties.  For these reasons this option defaults to "true", and a Substitute distribution is used below to selectively remove the vanilla ore deposits as needed.
+            </Comment>
+            <DisplayState>:= if(?debugMode,"shown","hidden")</DisplayState>
+            <DisplayName>原版矿脉生成</DisplayName>
+            <Choice value='true' displayValue='开启'/>
+            <Choice value='false' displayValue='关闭'/>
+        </OptionChoice> 
+        
+        <OptionChoice name='drawWireframes' default='true' displayGroup='groupGeneral'>
+            <Description> 
+                用线条标示出矿脉分布的范围。需要Forge和COG支持，作弊模式，线框渲染模式。
+            </Description>
+            <Comment>    
+                Enabling this is only one of the requirements to actually use wireframes - debugging mode must be on and the client must have Forge and COG installed, cheats enabled, and the wireframe rendering mode set up.       
+            </Comment>
+            <DisplayState>:= if(?debugMode,"shown","hidden")</DisplayState>
+            <DisplayName>分布线框</DisplayName>
+            <Choice value='true' displayValue='开启'/>
+            <Choice value='false' displayValue='关闭'/>
+        </OptionChoice>     
+        
+        <OptionChoice name='debugDist' default='false' displayGroup='groupGeneral'>
+            <Description> 测试矿脉分布模型 </Description>
+            <DisplayState>:= if(?debugMode,"shown","hidden")</DisplayState>
+            <DisplayName>测试分布</DisplayName>
+            <Choice value='true' displayValue='开启'/>
+            <Choice value='false' displayValue='关闭'/>
+        </OptionChoice>   
+
+        <OptionChoice name='advOptions' default='false'
+                      displayState='shown_dynamic'
+                      displayGroup='groupGeneral'>
+          <Description> 
+            开启/关闭 所有矿物的独立生成率与规模 
+          </Description>
+          <DisplayName>高级选项</DisplayName>
+          <Choice value='true' displayValue='开启'/>
+          <Choice value='false' displayValue='关闭'/>
+        </OptionChoice>
+
+    </ConfigSection>
+    
+    <!--*******************************   Presets   ****************************************
+    *   Below are useful "preset" distributions.  These don't generate any ore by themselves, 
+    *   but they can be used as a base for other distributions.
+    *************************************************************************************-->
+    <ConfigSection>
+    
+        <StandardGenPreset name='PresetStandardGen'>   
+            <Description>
+                使矿脉分布标准化的一个主预设
+            </Description>
+            <Setting name='Size' avg=':= 8 * oreSize' range='0'/> 
+            <Setting name='Frequency' avg=':= 20 * oreFreq' range='0'/> 
+            <Setting name='Height' avg=':= 64/64 * dimension.groundLevel' range=':= 64/64 * dimension.groundLevel'/> 
+            <Setting name='ParentRangeLimit' avg='32' range='32' type='normal'/>
+            <ReplacesOre block='stone'/>
+            <Biome name='.*'/>
+        </StandardGenPreset>
+        
+        <VeinsPreset name='PresetLayeredVeins' branchType='Bezier'>  
+            <Description>
+                小型的、罕见的并伴随着2~4个分支的主矿脉。
+            </Description>
+            <Setting name='MotherlodeFrequency' avg=':= 0.025 * oreFreq'/>
+            <Setting name='MotherlodeSize' avg=':= 2.5 * oreSize' range=':= 1 * oreSize'/>
+            <Setting name='MotherlodeHeight' avg=':= 32/64 * dimension.groundLevel' range=':= 16/64 * dimension.groundLevel' type='normal'/>
+            <Setting name='MotherlodeRangeLimit' avg='32' range='32' type='normal'/>
+            <Setting name='BranchFrequency' avg='3' range='2'/> 
+            <Setting name='BranchInclination' avg='0' range='0.55'/> 
+            <Setting name='BranchLength' avg='120' range='60'/> 
+            <Setting name='BranchHeightLimit' avg='16'/> 
+            <Setting name='SegmentForkFrequency' avg='0.20'/>  
+            <Setting name='SegmentForkLengthMult' avg='0.75' range='0.25' /> 
+            <Setting name='SegmentLength' avg='15' range='6'/> 
+            <Setting name='SegmentAngle' avg='0.50' range='0.50'/> 
+            <Setting name='SegmentPitch' avg='0.50' range='0.50'/> 
+            <Setting name='SegmentRadius' avg=':= 0.5 * oreSize' range=':= 0.3 * oreSize'/>
+            <Setting name='OreDensity' avg='1' range='0'/> 
+            <Setting name='OreRadiusMult' avg='1.0' range='0.1'/> 
+            <ReplacesOre block='stone'/>
+            <Biome name='.*'/>
+        </VeinsPreset>
+        
+        <VeinsPreset name='PresetVerticalVeins' branchType='Bezier'>     
+            <Description> 
+                独立的，垂直的矿脉，不伴随主矿脉。
+            </Description>  
+            <Setting name='MotherlodeFrequency' avg=':= 0.080 * oreFreq'/>
+            <Setting name='MotherlodeSize' avg='0' range='0'/>
+            <Setting name='MotherlodeHeight' avg=':= 76/64 * dimension.groundLevel' range='4'/>
+            <Setting name='MotherlodeRangeLimit' avg='32' range='32' type='normal'/>
+            <Setting name='BranchFrequency' avg='1' range='0'/>
+            <Setting name='BranchInclination' avg='-1.31' range='0.22'/>
+            <Setting name='BranchLength' avg=':= 48/64 * dimension.groundLevel' range='16' type='normal'/> 
+            <Setting name='BranchHeightLimit' avg='1000'/> 
+            <Setting name='SegmentForkFrequency' avg='0.10'/>  
+            <Setting name='SegmentAngle' avg='0' range='0.3'/>
+            <Setting name='SegmentLength' avg='8' range='4' type='normal'/> 
+            <Setting name='SegmentRadius' avg=':= 0.30 * oreSize' range=':= 0.1 * oreSize'/> 
+            <Setting name='OreDensity' avg='1' range='0'/>
+            <Setting name='OreRadiusMult' avg='1.0' range='0.1'/> 
+            <ReplacesOre block='stone'/>
+            <Biome name='.*'/>
+        </VeinsPreset>
+        
+        <VeinsPreset name='PresetSmallDeposits'>
+            <Description> 
+                小型的没有分支的主矿脉。与标准分布相似。
+            </Description>        
+            <Setting name='MotherlodeFrequency' avg=':= 1.0 * oreFreq' range=':= 0.3 * oreFreq'/>
+            <Setting name='MotherlodeSize' avg=':= 0.9 * oreSize' range=':= 0.3 * oreSize'/>
+            <Setting name='MotherlodeHeight' avg=':= 32/64 * dimension.groundLevel' range=':= 16/64 * dimension.groundLevel' type='normal'/>
+            <Setting name='MotherlodeRangeLimit' avg='32' range='32' type='normal'/>
+            <Setting name='BranchFrequency' avg='0' range='0'/>
+            <Setting name='OreDensity' avg='1' range='0'/>
+            <Setting name='OreRadiusMult' avg='1.0' range='0.1'/> 
+            <ReplacesOre block='stone'/>
+            <Biome name='.*'/>
+        </VeinsPreset>
+        
+        <VeinsPreset name='PresetLavaDeposits'>
+            <Description> 
+				小型的没有分支的主矿脉。只生成在地图底部的岩浆池内。
+				影响到原版岩浆池生成的mod将会间接的影响到这类矿脉的生成。
+            </Description>          
+            <Setting name='MotherlodeFrequency' avg=':= 6.0 * oreFreq' range=':= 2.0 * oreFreq'/>
+            <Setting name='MotherlodeSize' avg=':= 1.5 * oreSize' range=':= 0.8 * oreSize'/>
+            <Setting name='MotherlodeHeight' avg='8' range='8' type='uniform'/>
+            <Setting name='MotherlodeRangeLimit' avg='32' range='32' type='normal'/>
+            <Setting name='BranchFrequency' avg='0' range='0'/> 
+            <Setting name='OreDensity' avg='1' range='0'/>
+            <Setting name='OreRadiusMult' avg='1.0' range='0.1'/> 
+            <Replaces block='minecraft:lava'/>
+            <Biome name='.*'/>
+        </VeinsPreset>
+        
+        <VeinsPreset name='PresetHugeVeins' branchType='Bezier'>
+            <Description>
+				非常大，很罕见的主矿脉。每一处主矿脉都会伴随数条细长的分支。
+				过于纤细的分支也许会没有矿物生成。长度惊人的分支使其难以完全隐藏在地下。
+				玩家一旦发现一处主矿脉，就能从中获取大量的矿物。对单人玩家而言，其罕见程度难免有些让人沮丧。
+				对于服务器而言，多人合作使其更容易被发现，一处矿脉足够让一支团队使用很久。可用于增加多人生存难度。
+				鸣谢：基于来自MC论坛的dyrewulf反馈设计。
+            </Description>  
+            <Setting name='MotherlodeFrequency' avg=':= 0.00025 * oreFreq'/>
+            <Setting name='MotherlodeSize' avg=':= 10 * oreSize' range=':= 6 * oreSize' type='normal'/>
+            <Setting name='MotherlodeHeight' avg=':= 45/64 * dimension.groundLevel' range=':= 9/64 * dimension.groundLevel' type='normal'/>
+            <Setting name='MotherlodeRangeLimit' avg='32' range='32' type='normal'/>
+            <Setting name='BranchFrequency' avg='8' range='4'/>
+            <Setting name='BranchInclination' avg='0.7' range='0.85'/>
+            <Setting name='BranchLength' avg=':= 500 * oreSize' range=':= 400 * oreSize' type='normal'/>
+            <Setting name='BranchHeightLimit' avg='1000'/>
+            <Setting name='SegmentForkFrequency' avg='0.02'/>
+            <Setting name='SegmentForkLengthMult' avg='0.5' range='0.25'/>
+            <Setting name='SegmentLength' avg=':= 30 * oreSize' range=':= 6 * oreSize' />
+            <Setting name='SegmentAngle' avg='0.30' range='0.30'/>
+            <Setting name='SegmentRadius' avg=':= 0.025 * oreSize' range=':= 0.2 * oreSize'/>
+            <Setting name='OreDensity' avg='1' range='0'/>
+            <Setting name='OreRadiusMult' avg='1' range='0.25'/>
+            <ReplacesOre block='stone'/>
+            <Replaces block='minecraft:grass'/>
+            <Replaces block='minecraft:dirt'/>
+            <Replaces block='minecraft:sand'/>
+            <Replaces block='minecraft:gravel'/>
+            <Replaces block='minecraft:sandstone'/>
+            <Biome name='.*'/>
+        </VeinsPreset>
+        
+        <VeinsPreset name='PresetHintVeins'>
+            <Description>
+				单个的矿物，通常散落在各个高度(密度约等于原版铁矿)，它们会替换掉泥土、砂砾和沙石(不包含草方块和沙子)。
+				它们更容易在接近地表的地方被发现。若不是作为一个大型的，罕见的沉积物的子分布的话，将会很难被发现。
+				它的生成率与高度成反比，而不与矿脉生成率挂钩。因为它假定其父分布的生成率将基于此放缩。
+            </Description>  
+            <Setting name='MotherlodeFrequency' avg=':= 80 * dimension.groundLevel/64' range=':= 30 * dimension.groundLevel/64'/>
+            <Setting name='MotherlodeSize' avg='0.6' range='0'/>
+            <Setting name='MotherlodeHeight' avg=':= 50/64 * dimension.groundLevel' range=':= 46/64 * dimension.groundLevel'/>
+            <Setting name='MotherlodeRangeLimit' avg=':= 45 * oreSize' range=':= 30 * oreSize' type='uniform'/>
+            <Setting name='BranchFrequency' avg='0' range='0'/> 
+            <Setting name='OreDensity' avg='1' range='0'/>
+            <Setting name='OreRadiusMult' avg='1.0' range='0'/> 
+            <ReplacesOre block='stone'/>
+            <Replaces block='minecraft:dirt'/>
+            <Replaces block='minecraft:gravel'/>
+            <Replaces block='minecraft:sandstone'/>
+            <Biome name='.*'/>
+        </VeinsPreset>
+        
+        <VeinsPreset name='PresetSparseVeins' branchType='Bezier'>     
+            <Description>
+				大型的，充填着少量矿物的矿脉。因为单位体积内的矿物较少，所以其整体会跨度较大。
+				你很难区分自己是在采集普通的散落的矿石，还是身处这样的矿脉中。它们很难被发现，也难以追踪。
+            </Description>
+            <Setting name='MotherlodeFrequency' avg=':= 0.0065 * oreFreq'/>            
+            <Setting name='MotherlodeSize' avg=':= 2.3 * oreSize' range=':= 0.5 * oreSize'/>
+            <Setting name='MotherlodeHeight' avg=':= 32/64 * dimension.groundLevel' range=':= 32/64 * dimension.groundLevel' type='uniform'/>
+            <Setting name='MotherlodeRangeLimit' avg='32' range='32' type='normal'/>
+            <Setting name='BranchFrequency' avg='1' range='0'/> 
+            <Setting name='BranchInclination' avg='0' range='0.75'/> 
+            <Setting name='BranchLength' avg='180' range='90'/> 
+            <Setting name='BranchHeightLimit' avg='1000'/>
+            <Setting name='SegmentForkFrequency' avg='0' range='0'/> 
+            <Setting name='SegmentForkLengthMult' avg='0' range='0'/> 
+            <Setting name='SegmentLength' avg='20' range='8'/>
+            <Setting name='SegmentAngle' avg='0.35' range='0.35'/> 
+            <Setting name='SegmentPitch' avg='0.35' range='0.35'/> 
+            <Setting name='SegmentRadius' avg=':= 2.0 * oreSize' range=':= 1.0 * oreSize'/> 
+            <Setting name='OreDensity' avg='0.04' range='0'/>
+            <Setting name='OreRadiusMult' avg='1.0' range='0.1'/> 
+            <ReplacesOre block='stone'/>
+            <Biome name='.*'/>
+        </VeinsPreset>
+
+        <VeinsPreset name='PresetPipeVeins' branchType='Bezier'>     
+            <Description>
+				始于地图底部，短小稀疏的，向上延伸的矿脉。
+            </Description>
+            <Setting name='MotherlodeFrequency' avg=':= 0.06 * oreFreq'/>            
+            <Setting name='MotherlodeSize' avg=':= 2.3 * oreSize' range=':= 0.5 * oreSize'/>
+            <Setting name='MotherlodeHeight' avg=':= 8/64 * dimension.groundLevel' range=':= 8/64 * dimension.groundLevel' type='uniform'/>
+            <Setting name='MotherlodeRangeLimit' avg='32' range='32' type='normal'/>
+            <Setting name='BranchFrequency' avg='1' range='0'/> 
+            <Setting name='BranchInclination' avg='0.75' range='0.7' type='normal'/>
+            <Setting name='BranchLength' avg='40' range='10'/>
+            <Setting name='BranchHeightLimit' avg='1000'/>
+            <Setting name='SegmentForkFrequency' avg='0' range='0'/> 
+            <Setting name='SegmentForkLengthMult' avg='0' range='0'/> 
+            <Setting name='SegmentLength' avg='8' range='3'/>
+            <Setting name='SegmentAngle' avg='0' range='0.25'/> 
+            <Setting name='SegmentPitch' avg='0' range='0.25'/> 
+            <Setting name='SegmentRadius' avg=':= 2.0 * oreSize' range=':= 0.5 * oreSize'/> 
+            <Setting name='OreDensity' avg='0.04' range='0'/>
+            <Setting name='OreRadiusMult' avg='1.0' range='0.1'/> 
+            <ReplacesOre block='stone'/>
+            <Biome name='.*'/>
+        </VeinsPreset>         
+
+        <CloudPreset name='PresetStrategicCloud'>
+            <Description>
+				大型的，较稀疏的，不规则的云状矿脉。
+				比较罕见的、它会跨越相邻的区块。
+				它拥有可调节的矿产总量，其较低的矿物密度将花费你很多时间与精力。
+				其存在的意义是让玩家主动探索然后花费时间获取半永久性的矿物储量。
+            </Description>
+            <Setting name='DistributionFrequency' avg=':= 0.001 * oreFreq'/>
+            <Setting name='ParentRangeLimit' avg='32' range='32' type='normal'/>
+            <Setting name='CloudRadius' avg=':= 25 * oreSize' range=':= 10 * oreSize'/>
+            <Setting name='CloudThickness' avg=':= 14 * oreSize' range=':= 6 * oreSize'/>
+            <Setting name='CloudSizeNoise' avg='0.2'/>
+            <Setting name='CloudHeight' avg='32' range='16'
+                     type='normal' scaleTo='sealevel'/>
+            <Setting name='CloudInclination' avg='0' range='0.35'/>
+            <Setting name='OreRadiusMult' avg='1' range='0.1'/>
+            <Setting name='OreDensity' avg='0.1'/>
+            <Setting name='OreVolumeNoiseCutoff' avg='0.5'/> 
+            <ReplacesOre block='stone'/>
+            <Biome name='.*'/>
+        </CloudPreset>
+        
+    </ConfigSection>
+
+    <!-- ******************** Import Standard Configs ********************** -->
+    <!--
+         NOTE: to override a default config, remove the corresponding
+         directive (and optionally add something to 'modules/custom')
+    -->
+
+    <!-- Vanilla minecraft should always be the first thing to load. -->
+    <Import file='modules/default/VanillaMinecraft.xml'/>
+
+    <!-- Then, the rest are free to come in. -->
+    <Import file='modules/default/AppliedEnergistics.xml'/>
+    <Import file='modules/default/ArsMagica2.xml'/>
+    <Import file='modules/default/BiomesOPlenty.xml'/>
+    <Import file='modules/default/Chisel2.xml'/>
+    <Import file='modules/default/Dartcraft.xml'/>
+    <!-- DO in particular NEEDS to be run after the vanilla config! -->
+    <Import file='modules/default/DenseOres.xml'/> 
+    <Import file='modules/default/ElectriCraft.xml'/>
+    <Import file='modules/default/ExtraCaves.xml'/>
+    <Import file='modules/default/Factorization.xml'/>
+    <Import file='modules/default/FlaxbeardsSteamcraft.xml'/>
+    <Import file='modules/default/Forestry.xml'/>
+    <Import file='modules/default/FossilsandArchaeology.xml'/>
+    <Import file='modules/default/Galacticraft.xml'/>
+    <Import file='modules/default/GeoStrata.xml'/>
+    <Import file='modules/default/ImmersiveEngineering.xml'/>
+    <Import file='modules/default/IndustrialCraft2.xml'/>
+    <Import file='modules/default/Mekanism.xml'/>
+    <Import file='modules/default/Metallurgy4.xml'/>
+    <Import file='modules/default/MineChem.xml'/>
+    <Import file='modules/default/MinecraftComesAlive.xml'/>
+    <Import file='modules/default/NetherOres.xml'/>
+    <Import file='modules/default/Netherrocks.xml'/>
+    <Import file='modules/default/PamsHarvestCraft.xml'/>
+    <Import file='modules/default/ProjectRed.xml'/>
+    <Import file='modules/default/RailCraft.xml'/>
+    <Import file='modules/default/ReactorCraft.xml'/>
+    <Import file='modules/default/SimpleOres.xml'/>
+    <Import file='modules/default/Thaumcraft4.xml'/>
+    <Import file='modules/default/ThermalFoundation.xml'/>
+    <Import file='modules/default/TinkersConstruct.xml'/>
+    <!-- Gregtech checks for other ores' oredict values.  It will need to be
+	 among the last default configurations to load. -->
+    <Import file='modules/default/Gregtech6.xml'/>
+    <Import file='modules/default/Gregtech.xml'/>
+
+    <!-- ***************** Import Mod-provided configs ********************* -->
+    <!-- NOTE: mods will overwrite these configs upon each load -->
+    <OptionalImport file='modules/mods/*.xml'/>
+    
+    <!-- ******************** Import Custom Configs ************************ -->
+    <OptionalImport file='modules/custom/*.xml'/>
+
+    <!-- Gregtech checks for other ores' oredict values.  Uncomment the
+	 the following to have it override custom configurations -->
+<!--    <Import file='modules/default/Gregtech6.xml'/>   -->
+<!--    <Import file='modules/default/Gregtech.xml'/>    -->
+    
+    <!--*************************   Testing & Debugging   *********************
+    *   I use this section for quick-and-dirty experiments
+    **************************************************************************-->
+    <IfChoice name='debugDist' value='true'>
+       
+        <!-- Experimental distributions should go here -->
+        
+    </IfChoice>
+    
+</Config>

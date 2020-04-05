@@ -1,0 +1,409 @@
+<!-- =================================================================
+     Custom Ore Generation "Factorization" Module: This configuration
+     covers silver and dark iron.
+     ================================================================= -->
+
+
+
+
+
+
+<!-- Is the "Factorization" mod on the system?  Let's find out! -->
+<IfModInstalled name="factorization">
+
+    <!-- Starting Configuration for Custom Ore Generation. -->
+    <ConfigSection>
+
+
+
+
+
+        <!-- Setup Screen Configuration -->
+        <ConfigSection>
+            <OptionDisplayGroup name='groupFactorization' displayName='因式分解' displayState='shown'>
+                <Description>
+                    矿物的分布选项
+                </Description>
+            </OptionDisplayGroup>
+            <OptionChoice name='enableFactorization' displayName='处理该模组矿物生成  ' default='true' displayState='shown_dynamic' displayGroup='groupFactorization'>
+                <Description>让COG处理该模组的矿物生成么？</Description>
+                <Choice value=':= ?true' displayValue='是' description='让COG处理该模组的矿物生成。  '/>
+                <Choice value=':= ?false' displayValue='否' description='  让该模组处理其自身的矿物生成。'/>
+            </OptionChoice>
+
+            <!-- Silver Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='fctrSilverDist'  displayState=':= if(?enableFactorization, "shown", "hidden")' displayGroup='groupFactorization'>
+                    <Description> 控制银矿的生成 </Description>
+                    <DisplayName> 银矿</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开端'/>
+                </OptionChoice>
+                <OptionNumeric name='fctrSilverFreq' default='1'  min='0' max='5' displayState=':= if(?enableFactorization, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupFactorization'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='fctrSilverSize' default='1'  min='0' max='5' displayState=':= if(?enableFactorization, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupFactorization'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Silver Configuration UI Complete -->
+
+
+            <!-- Dark Iron Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='fctrDarkIronDist'  displayState=':= if(?enableFactorization, "shown", "hidden")' displayGroup='groupFactorization'>
+                    <Description> 控制玄铁矿的生成 </Description>
+                    <DisplayName> 玄铁矿</DisplayName>
+                    <Choice value='SparseVeins' displayValue='稀疏'>
+                        <Description>
+                            大型的，充填着少量矿物的矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description='  抖M的开端'/>
+                </OptionChoice>
+                <OptionNumeric name='fctrDarkIronFreq' default='1'  min='0' max='5' displayState=':= if(?enableFactorization, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupFactorization'>
+                    <Description> 矿脉的生成率将乘以这个数   </Description>
+                    <DisplayName>   矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='fctrDarkIronSize' default='1'  min='0' max='5' displayState=':= if(?enableFactorization, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupFactorization'>
+                    <Description> 矿脉的规模将乘以这个数   </Description>
+                    <DisplayName>   矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Dark Iron Configuration UI Complete -->
+
+        </ConfigSection>
+        <!-- Setup Screen Complete -->
+
+        <IfCondition condition=':= ?enableFactorization'>
+
+
+
+
+            <!-- Overworld Setup Beginning -->
+
+            <IfCondition condition=':= ?COGActive'>
+
+                <!-- Starting Original "Overworld" Block Removal -->
+
+                <IfCondition condition=':= ?blockExists("minecraft:stone")'>
+                    <Substitute name='fctrOverworldBlockSubstitute2' block='minecraft:stone'>
+                        <Description>
+                            Replace vanilla-generated ore clusters.
+                        </Description>
+                        <Comment>
+                            The global option  deferredPopulationRange
+                            must be large  enough to catch all ore
+                            clusters (>=  32).
+                        </Comment>
+                        <IfCondition condition=':= ?blockExists("factorization:DarkIronOre")'> <Replaces block='factorization:DarkIronOre' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("factorization:ResourceBlock")'> <Replaces block='factorization:ResourceBlock' weight='1.0' /> </IfCondition>
+                    </Substitute>
+                </IfCondition>
+
+                <!-- Original "Overworld" Block Removal Complete -->
+
+                <!-- Adding blocks -->
+
+                <!-- Begin Silver Generation -->
+
+                <!-- Starting LayeredVeins Preset for Silver. -->
+                <ConfigSection>
+                    <IfCondition condition=':= fctrSilverDist = "LayeredVeins"'>
+                        <Veins name='fctrSilverVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x608C9EBE' drawBoundBox='false' boundBoxColor='0x608C9EBE'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("factorization:ResourceBlock")'> <OreBlock block='factorization:ResourceBlock' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 0.811 * _default_ * fctrSilverFreq ' range=':= 0.811 * _default_ * fctrSilverFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 0.966 * _default_ * fctrSilverSize ' range=':= 0.966 * _default_ * fctrSilverSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 25 ' range=':= 10 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 0.900 * _default_ ' range=':= 0.900 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * fctrSilverSize ' range=':= _default_ * fctrSilverSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 0.949 * _default_ * fctrSilverSize ' range=':= 0.949 * _default_ * fctrSilverSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Silver is complete. -->
+
+
+                <!-- Starting Cloud Preset for Silver. -->
+                <ConfigSection>
+                    <IfCondition condition=':= fctrSilverDist = "Cloud"'>
+                        <Cloud name='fctrSilverCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x608C9EBE' drawBoundBox='false' boundBoxColor='0x608C9EBE'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("factorization:ResourceBlock")'> <OreBlock block='factorization:ResourceBlock' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.842 * _default_ * fctrSilverSize ' range=':= 0.842 * _default_ * fctrSilverSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.842 * _default_ * fctrSilverSize ' range=':= 0.842 * _default_ * fctrSilverSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.709 * _default_ * fctrSilverFreq ' range=':= 0.709 * _default_ * fctrSilverFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 25 ' range=':= 10 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='fctrSilverHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x608C9EBE' drawBoundBox='false' boundBoxColor='0x608C9EBE'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("factorization:ResourceBlock")'> <OreBlock block='factorization:ResourceBlock' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Silver is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Silver. -->
+                <ConfigSection>
+                    <IfCondition condition=':= fctrSilverDist = "Vanilla"'>
+                        <StandardGen name='fctrSilverStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x608C9EBE' drawBoundBox='false' boundBoxColor='0x608C9EBE'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("factorization:ResourceBlock")'> <OreBlock block='factorization:ResourceBlock' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 7.000 * fctrSilverSize ' range=':= _default_ * fctrSilverSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 3.000 * fctrSilverFreq ' range=':= _default_ * fctrSilverFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 25 ' range=':= 10 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Silver is complete. -->
+
+                <!-- End Silver Generation -->
+
+
+                <!-- Begin Dark Iron Generation -->
+
+                <!-- Starting SparseVeins Preset for Dark Iron. -->
+                <ConfigSection>
+                    <IfCondition condition=':= fctrDarkIronDist = "SparseVeins"'>
+                        <Veins name='fctrDarkIronVeins'  inherits='PresetSparseVeins' drawWireframe='true' wireframeColor='0x60781CCB' drawBoundBox='false' boundBoxColor='0x60781CCB'>
+                            <Description>
+                                Large veins filled very lightly  with
+                                ore.  Because they contain  less ore
+                                per volume, these veins  are
+                                relatively wide and long.  Mining the
+                                ore from them is time  consuming
+                                compared to solid ore  veins.  They
+                                are also more  difficult to follow,
+                                since it is  harder to get an idea of
+                                their  direction while mining.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("factorization:DarkIronOre")'> <OreBlock block='factorization:DarkIronOre' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 0.433 * _default_ * fctrDarkIronFreq ' range=':= 0.433 * _default_ * fctrDarkIronFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 0 * _default_ * fctrDarkIronSize ' range=':= 0 * _default_ * fctrDarkIronSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 3 ' range=':= 2 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 0.658 * _default_ ' range=':= 0.658 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * fctrDarkIronSize ' range=':= _default_ * fctrDarkIronSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 0.811 * _default_ * fctrDarkIronSize ' range=':= 0.811 * _default_ * fctrDarkIronSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- SparseVeins Preset for Dark Iron is complete. -->
+
+
+                <!-- Starting Cloud Preset for Dark Iron. -->
+                <ConfigSection>
+                    <IfCondition condition=':= fctrDarkIronDist = "Cloud"'>
+                        <Cloud name='fctrDarkIronCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60781CCB' drawBoundBox='false' boundBoxColor='0x60781CCB'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("factorization:DarkIronOre")'> <OreBlock block='factorization:DarkIronOre' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.393 * _default_ * fctrDarkIronSize ' range=':= 0.393 * _default_ * fctrDarkIronSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.393 * _default_ * fctrDarkIronSize ' range=':= 0.393 * _default_ * fctrDarkIronSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.155 * _default_ * fctrDarkIronFreq ' range=':= 0.155 * _default_ * fctrDarkIronFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 3 ' range=':= 2 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='fctrDarkIronHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60781CCB' drawBoundBox='false' boundBoxColor='0x60781CCB'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("factorization:DarkIronOre")'> <OreBlock block='factorization:DarkIronOre' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Dark Iron is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Dark Iron. -->
+                <ConfigSection>
+                    <IfCondition condition=':= fctrDarkIronDist = "Vanilla"'>
+                        <StandardGen name='fctrDarkIronStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60781CCB' drawBoundBox='false' boundBoxColor='0x60781CCB'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("factorization:DarkIronOre")'> <OreBlock block='factorization:DarkIronOre' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:gravel")'> <Replaces block='minecraft:gravel' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 1.000 * fctrDarkIronSize ' range=':= _default_ * fctrDarkIronSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 1.000 * fctrDarkIronFreq ' range=':= _default_ * fctrDarkIronFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 3 ' range=':= 2 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Dark Iron is complete. -->
+
+                <!-- End Dark Iron Generation -->
+
+                <!-- Finished adding blocks -->
+
+            </IfCondition>
+            <!-- Overworld Setup Complete -->
+
+
+
+        </IfCondition>
+
+    </ConfigSection>
+    <!-- Configuration for Custom Ore Generation Complete! -->
+
+</IfModInstalled>
+<!-- The "Factorization" mod is now configured. -->
+
+
+
+
+
+<!-- =================================================================
+     This file was made using the Sprocket Configuration Generator.
+     If you wish to make your own configurations for a mod not
+     currently supported by Custom Ore Generation, and you don't want
+     the hassle of writing XML, you can find the generator script at
+     its GitHub page: http://https://github.com/reteo/Sprocket
+     ================================================================= -->

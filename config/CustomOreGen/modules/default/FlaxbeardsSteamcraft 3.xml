@@ -1,0 +1,397 @@
+<!-- =================================================================
+     Custom Ore Generation "Flaxbeards Steamcraft" Module: This
+     configuration covers copper and zinc.
+     ================================================================= -->
+
+
+
+
+
+
+<!-- Is the "Flaxbeards Steamcraft" mod on the system?  Let's find
+     out! -->
+<IfModInstalled name="Steamcraft">
+
+    <!-- Starting Configuration for Custom Ore Generation. -->
+    <ConfigSection>
+
+
+
+
+
+        <!-- Setup Screen Configuration -->
+        <ConfigSection>
+            <OptionDisplayGroup name='groupFlaxbeardsSteamcraft' displayName='蒸汽动力' displayState='shown'>
+                <Description>
+                    矿物的分布选项 
+                </Description>
+            </OptionDisplayGroup>
+            <OptionChoice name='enableFlaxbeardsSteamcraft' displayName='处理蒸汽动力的矿物生成 ' default='true' displayState='shown_dynamic' displayGroup='groupFlaxbeardsSteamcraft'>
+                <Description>让COG处理该模组的矿物生成么？</Description>
+                <Choice value=':= ?true' displayValue='是' description='让COG处理该模组的矿物生成。'/>
+                <Choice value=':= ?false' displayValue='否' description='让该模组处理其自身的矿物生成。'/>
+            </OptionChoice>
+
+            <!-- Copper Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='flxbCopperDist'  displayState=':= if(?enableFlaxbeardsSteamcraft, "shown", "hidden")' displayGroup='groupFlaxbeardsSteamcraft'>
+                    <Description> 控制铜矿的生成 </Description>
+                    <DisplayName> 铜矿</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开端'/>
+                </OptionChoice>
+                <OptionNumeric name='flxbCopperFreq' default='1'  min='0' max='5' displayState=':= if(?enableFlaxbeardsSteamcraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupFlaxbeardsSteamcraft'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='flxbCopperSize' default='1'  min='0' max='5' displayState=':= if(?enableFlaxbeardsSteamcraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupFlaxbeardsSteamcraft'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Copper Configuration UI Complete -->
+
+
+            <!-- Zinc Configuration UI Starting -->
+            <ConfigSection>
+                <OptionChoice name='flxbZincDist'  displayState=':= if(?enableFlaxbeardsSteamcraft, "shown", "hidden")' displayGroup='groupFlaxbeardsSteamcraft'>
+                    <Description> 控制锌矿的生成 </Description>
+                    <DisplayName> 锌矿</DisplayName>
+                    <Choice value='LayeredVeins' displayValue='层状'>
+                        <Description>
+                            小型的、罕见的并伴随着2~4个分支的主矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Cloud' displayValue='云状'>
+                        <Description>
+                            大型的，较稀疏的，不规则的云状矿脉。
+                        </Description>
+                    </Choice>
+                    <Choice value='Vanilla' displayValue='原版'>
+                        <Description>
+                            模拟原版矿物生成。
+                        </Description>
+                    </Choice>
+                    <Choice value='none' displayValue='禁止' description=' 抖M的开端'/>
+                </OptionChoice>
+                <OptionNumeric name='flxbZincFreq' default='1'  min='0' max='5' displayState=':= if(?enableFlaxbeardsSteamcraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupFlaxbeardsSteamcraft'>
+                    <Description> 矿脉的生成率将乘以这个数  </Description>
+                    <DisplayName>  矿脉的生成率</DisplayName>
+                </OptionNumeric>
+                <OptionNumeric name='flxbZincSize' default='1'  min='0' max='5' displayState=':= if(?enableFlaxbeardsSteamcraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupFlaxbeardsSteamcraft'>
+                    <Description> 矿脉的规模将乘以这个数  </Description>
+                    <DisplayName>  矿脉的规模</DisplayName>
+                </OptionNumeric>
+            </ConfigSection>
+            <!-- Zinc Configuration UI Complete -->
+
+        </ConfigSection>
+        <!-- Setup Screen Complete -->
+
+        <IfCondition condition=':= ?enableFlaxbeardsSteamcraft'>
+
+
+
+
+            <!-- Overworld Setup Beginning -->
+
+            <IfCondition condition=':= ?COGActive'>
+
+                <!-- Starting Original "Overworld" Block Removal -->
+
+                <IfCondition condition=':= ?blockExists("minecraft:stone")'>
+                    <Substitute name='flxbOverworldBlockSubstitute0' block='minecraft:stone'>
+                        <Description>
+                            Replace vanilla-generated ore clusters.
+                        </Description>
+                        <Comment>
+                            The global option  deferredPopulationRange
+                            must be large  enough to catch all ore
+                            clusters (>=  32).
+                        </Comment>
+                        <IfCondition condition=':= ?blockExists("Steamcraft:steamcraftOre")'> <Replaces block='Steamcraft:steamcraftOre' weight='1.0' /> </IfCondition>
+                        <IfCondition condition=':= ?blockExists("Steamcraft:steamcraftOre:1")'> <Replaces block='Steamcraft:steamcraftOre:1' weight='1.0' /> </IfCondition>
+                    </Substitute>
+                </IfCondition>
+
+                <!-- Original "Overworld" Block Removal Complete -->
+
+                <!-- Adding blocks -->
+
+                <!-- Begin Copper Generation -->
+
+                <!-- Starting LayeredVeins Preset for Copper. -->
+                <ConfigSection>
+                    <IfCondition condition=':= flxbCopperDist = "LayeredVeins"'>
+                        <Veins name='flxbCopperVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60D26B2F' drawBoundBox='false' boundBoxColor='0x60D26B2F'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("Steamcraft:steamcraftOre")'> <OreBlock block='Steamcraft:steamcraftOre' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 1.251 * _default_ * flxbCopperFreq ' range=':= 1.251 * _default_ * flxbCopperFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 1.038 * _default_ * flxbCopperSize ' range=':= 1.038 * _default_ * flxbCopperSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 42.5 ' range=':= 37.5 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 1.119 * _default_ ' range=':= 1.119 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * flxbCopperSize ' range=':= _default_ * flxbCopperSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 1.058 * _default_ * flxbCopperSize ' range=':= 1.058 * _default_ * flxbCopperSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Copper is complete. -->
+
+
+                <!-- Starting Cloud Preset for Copper. -->
+                <ConfigSection>
+                    <IfCondition condition=':= flxbCopperDist = "Cloud"'>
+                        <Cloud name='flxbCopperCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60D26B2F' drawBoundBox='false' boundBoxColor='0x60D26B2F'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("Steamcraft:steamcraftOre")'> <OreBlock block='Steamcraft:steamcraftOre' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 1.046 * _default_ * flxbCopperSize ' range=':= 1.046 * _default_ * flxbCopperSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 1.046 * _default_ * flxbCopperSize ' range=':= 1.046 * _default_ * flxbCopperSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 1.095 * _default_ * flxbCopperFreq ' range=':= 1.095 * _default_ * flxbCopperFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 42.5 ' range=':= 37.5 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='flxbCopperHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60D26B2F' drawBoundBox='false' boundBoxColor='0x60D26B2F'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("Steamcraft:steamcraftOre")'> <OreBlock block='Steamcraft:steamcraftOre' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Copper is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Copper. -->
+                <ConfigSection>
+                    <IfCondition condition=':= flxbCopperDist = "Vanilla"'>
+                        <StandardGen name='flxbCopperStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60D26B2F' drawBoundBox='false' boundBoxColor='0x60D26B2F'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("Steamcraft:steamcraftOre")'> <OreBlock block='Steamcraft:steamcraftOre' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 5.000 * flxbCopperSize ' range=':= _default_ * flxbCopperSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 10.000 * flxbCopperFreq ' range=':= _default_ * flxbCopperFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 42.5 ' range=':= 37.5 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Copper is complete. -->
+
+                <!-- End Copper Generation -->
+
+
+                <!-- Begin Zinc Generation -->
+
+                <!-- Starting LayeredVeins Preset for Zinc. -->
+                <ConfigSection>
+                    <IfCondition condition=':= flxbZincDist = "LayeredVeins"'>
+                        <Veins name='flxbZincVeins'  inherits='PresetLayeredVeins' drawWireframe='true' wireframeColor='0x60EAEAEA' drawBoundBox='false' boundBoxColor='0x60EAEAEA'>
+                            <Description>
+                                Small, fairly rare motherlodes  with
+                                2-4 horizontal veins each.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("Steamcraft:steamcraftOre:1")'> <OreBlock block='Steamcraft:steamcraftOre:1' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='MotherlodeFrequency' avg=':= 0.936 * _default_ * flxbZincFreq ' range=':= 0.936 * _default_ * flxbZincFreq ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeSize' avg=':= 0.989 * _default_ * flxbZincSize ' range=':= 0.989 * _default_ * flxbZincSize ' type='normal' />
+                            <Setting name='MotherlodeHeight' avg=':= 40 ' range=':= 35 ' type='normal' scaleTo='base' />
+                            <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='BranchLength' avg=':= 0.968 * _default_ ' range=':= 0.968 * _default_ ' type='normal' />
+                            <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentLength' avg=':= _default_ * flxbZincSize ' range=':= _default_ * flxbZincSize ' type='normal' />
+                            <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='SegmentRadius' avg=':= 0.984 * _default_ * flxbZincSize ' range=':= 0.984 * _default_ * flxbZincSize ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </Veins>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- LayeredVeins Preset for Zinc is complete. -->
+
+
+                <!-- Starting Cloud Preset for Zinc. -->
+                <ConfigSection>
+                    <IfCondition condition=':= flxbZincDist = "Cloud"'>
+                        <Cloud name='flxbZincCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60EAEAEA' drawBoundBox='false' boundBoxColor='0x60EAEAEA'>
+                            <Description>
+                                Large irregular clouds filled  lightly
+                                with ore.  These are  huge, spanning
+                                several adjacent  chunks, and
+                                consequently rather  rare.  They
+                                contain a sizeable  amount of ore, but
+                                it takes some  time and effort to mine
+                                due to  low density. The intent for
+                                strategic clouds is that the  player
+                                will need to actively  search for one
+                                and then set up a  semi-permanent
+                                mining base and  spend some time
+                                actually mining  the ore.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("Steamcraft:steamcraftOre:1")'> <OreBlock block='Steamcraft:steamcraftOre:1' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='CloudRadius' avg=':= 0.905 * _default_ * flxbZincSize ' range=':= 0.905 * _default_ * flxbZincSize ' type='normal' />
+                            <Setting name='CloudThickness' avg=':= 0.905 * _default_ * flxbZincSize ' range=':= 0.905 * _default_ * flxbZincSize ' type='normal' scaleTo='base' />
+                            <Setting name='DistributionFrequency' avg=':= 0.819 * _default_ * flxbZincFreq ' range=':= 0.819 * _default_ * flxbZincFreq ' type='normal' scaleTo='base' />
+                            <Setting name='CloudHeight' avg=':= 40 ' range=':= 35 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+                            <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                            <Veins name='flxbZincHintVeins'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60EAEAEA' drawBoundBox='false' boundBoxColor='0x60EAEAEA'>
+                                <Description>
+                                    Single blocks, generously
+                                    scattered through all heights
+                                    (density is about that of  vanilla
+                                    iron ore). They will  replace dirt
+                                    and sandstone  (but not grass or
+                                    sand), so  they can be found
+                                    nearer to  the surface than most
+                                    ores.  Intened to be used as a
+                                    child  distribution for large,
+                                    rare  strategic deposits that
+                                    would  otherwise be very difficult
+                                    to find.  Note that the  frequency
+                                    is multiplied by  ground level to
+                                    maintain a  constant density, but
+                                    not by  ore frequency because it
+                                    is  assumed that the frequency of
+                                    the parent distribution will
+                                    already be scaled by that.
+                                </Description>
+                                <IfCondition condition=':= ?blockExists("Steamcraft:steamcraftOre:1")'> <OreBlock block='Steamcraft:steamcraftOre:1' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:dirt")'> <Replaces block='minecraft:dirt' weight='1.0' /> </IfCondition>
+                                <IfCondition condition=':= ?blockExists("minecraft:sandstone")'> <Replaces block='minecraft:sandstone' weight='1.0' /> </IfCondition>
+                            </Veins>
+                        </Cloud>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Cloud Preset for Zinc is complete. -->
+
+
+                <!-- Starting Vanilla Preset for Zinc. -->
+                <ConfigSection>
+                    <IfCondition condition=':= flxbZincDist = "Vanilla"'>
+                        <StandardGen name='flxbZincStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60EAEAEA' drawBoundBox='false' boundBoxColor='0x60EAEAEA'>
+                            <Description>
+                                A master preset for standardgen  ore
+                                distributions.
+                            </Description>
+                            <IfCondition condition=':= ?blockExists("Steamcraft:steamcraftOre:1")'> <OreBlock block='Steamcraft:steamcraftOre:1' weight='1.0' /> </IfCondition>
+                            <IfCondition condition=':= ?blockExists("minecraft:stone")'> <Replaces block='minecraft:stone' weight='1.0' /> </IfCondition>
+                            <Biome name='.*'  />
+                            <Setting name='Size' avg=':= 4.000 * flxbZincSize ' range=':= _default_ * flxbZincSize ' type='normal' />
+                            <Setting name='Frequency' avg=':= 7.000 * flxbZincFreq ' range=':= _default_ * flxbZincFreq ' type='normal' scaleTo='base' />
+                            <Setting name='Height' avg=':= 40 ' range=':= 35 ' type='normal' scaleTo='base' />
+                            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                        </StandardGen>
+                    </IfCondition>
+                </ConfigSection>
+                <!-- Vanilla Preset for Zinc is complete. -->
+
+                <!-- End Zinc Generation -->
+
+                <!-- Finished adding blocks -->
+
+            </IfCondition>
+            <!-- Overworld Setup Complete -->
+
+
+
+        </IfCondition>
+
+    </ConfigSection>
+    <!-- Configuration for Custom Ore Generation Complete! -->
+
+</IfModInstalled>
+<!-- The "Flaxbeards Steamcraft" mod is now configured. -->
+
+
+
+
+
+<!-- =================================================================
+     This file was made using the Sprocket Configuration Generator.
+     If you wish to make your own configurations for a mod not
+     currently supported by Custom Ore Generation, and you don't want
+     the hassle of writing XML, you can find the generator script at
+     its GitHub page: http://https://github.com/reteo/Sprocket
+     ================================================================= -->
