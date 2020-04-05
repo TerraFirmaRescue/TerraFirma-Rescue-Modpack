@@ -39,10 +39,7 @@
                 weight='0.4'/>
                 <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
                 nbt='{m:9155, id:"gt.MetaBlockTileEntity"}'
-                weight='0.39'/>
-                <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
-                nbt='{m:940, id:"gt.MetaBlockTileEntity"}'
-                weight='0.01'/>
+                weight='0.4'/>
                 <Biome name='.*'  />
                 <Setting name='DistributionFrequency' avg=':= 0.5 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
                 <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
