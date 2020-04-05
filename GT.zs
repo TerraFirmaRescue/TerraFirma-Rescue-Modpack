@@ -1147,3 +1147,22 @@ recipes.addShaped(<gregtech:gt.multitileentity:20241>,[
 [<gregtech:gt.multitileentity:26142>,<gregtech:gt.meta.machine:8630>,<gregtech:gt.multitileentity:26142>],
 [<minecraft:brick_block>,<ore:plateDoubleCopper>,<minecraft:brick_block>]]);
 //ye hua lu (gang)
+
+var USBy = [<gregtech:gt.multiitem.technological:32021>,<gregtech:gt.multiitem.technological:32022>,<gregtech:gt.multiitem.technological:32023>,<gregtech:gt.multiitem.technological:32024>] as IItemStack[];
+var input7 = [<gregtech:gt.meta.plate:130>,<gregtech:gt.meta.plate:8636>,<gregtech:gt.meta.plate:240>,<gregtech:gt.meta.plate:220>] as IItemStack[];
+var input8 = [<gregtech:gt.multiitem.technological:30303>,<gregtech:gt.multiitem.technological:30304>,<gregtech:gt.multiitem.technological:30305>,<gregtech:gt.multiitem.technological:30306>] as IItemStack[];
+var input9 = [<moegadd:MemoryCell128M>,<moegadd:MemoryCell256M>,<moegadd:MemoryCell512M>,<moegadd:MemoryCell1G>] as IItemStack[];
+var USBx = [<gregtech:gt.multiitem.technological:32011>,<gregtech:gt.multiitem.technological:32012>,<gregtech:gt.multiitem.technological:32013>,<gregtech:gt.multiitem.technological:32014>,<gregtech:gt.multiitem.technological:32015>]as IItemStack[];
+for b ,USBy0 in USBy{
+var USBx0 = USBx[b];
+var x7 = input7[b];
+var x8 = input8[b];
+var x9 = input9[b];
+recipes.remove(USBy0);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 40 ,0,[10000],
+[USBx0,x7 *2,x9*4,x8,<gregtech:gt.multiitem.technological:11001>],
+[null],
+[null],
+[USBy0]);
+}
+//USB
