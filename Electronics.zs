@@ -250,7 +250,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.distillery", false, 32, 3200, 1000,[10000],
 [<moegadd:PolycrystallineSilicon>]);
 //duo jing gui
 
-MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 32, 100, 1000,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 200, 1000,[10000],
 [<moegadd:PolycrystallineSilicon>],
 [null],
 [null],
