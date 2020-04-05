@@ -1965,6 +1965,15 @@ advancedRocketry:tile.planks, Lightwood planks
 advancedRocketry:tile.gravityMachine, 重力控制器
 advancedRocketry:advancedRocketrymetal0:0, 钛铝合金 块
 advancedRocketry:advancedRocketrymetal0:1, 钛铱合金 块
+AdvancedSolarPanel:BlockMolecularTransformer, tile.null.name
+AdvancedSolarPanel:BlockAdvSolarPanel:0, Advanced Solar Panel
+AdvancedSolarPanel:BlockAdvSolarPanel:1, Hybrid Solar Panel
+AdvancedSolarPanel:BlockAdvSolarPanel:2, Ultimate Hybrid Solar Panel
+AdvancedSolarPanel:BlockAdvSolarPanel:3, Quantum Solar Panel
+AdvancedSolarPanel:BlockAdvSolarPanel:4, Quantum Generator
+adventurebackpack:blockBackpack, Adventure Backpacks
+adventurebackpack:blockSleepingBag, Sleeping Bag
+adventurebackpack:blockCampFire, CampFire
 appliedenergistics2:tile.OreQuartz, 赛特斯石英矿石
 appliedenergistics2:tile.OreQuartzCharged, 充能赛特斯石英矿石
 appliedenergistics2:tile.BlockMatrixFrame, 矩阵框架
@@ -2041,6 +2050,10 @@ appliedenergistics2:tile.ChiseledQuartzSlabBlock:0, 錾制赛特斯石英台阶
 appliedenergistics2:tile.ChiseledQuartzSlabBlock.double:0, 錾制赛特斯石英台阶
 appliedenergistics2:tile.QuartzPillarSlabBlock:0, 竖纹赛特斯石英台阶
 appliedenergistics2:tile.QuartzPillarSlabBlock.double:0, 竖纹赛特斯石英台阶
+ae2stuff:Encoder, 样板编码台
+ae2stuff:Grower, 晶体催生仓
+ae2stuff:Inscriber, 高级压印器
+ae2stuff:Wireless, 无线接入器 
 Avaritia:Double_Craft, 压缩工作台
 Avaritia:Triple_Craft, 二重压缩工作台
 Avaritia:Dire_Crafting, 终极工作台
@@ -2049,6 +2062,9 @@ Avaritia:Resource_Block:0, 中子态素块
 Avaritia:Resource_Block:1, 无尽之块
 Avaritia:Neutron_Collector, 中子态素收集器
 Avaritia:Neutronium_Compressor, 中子态素压缩机
+avaritiaddons:CompressedChest, Compressed Chest
+avaritiaddons:InfinityChest, Infinity Chest
+avaritiaddons:ExtremeAutoCrafter, Dire Autocrafting Table
 Forestry:core:0, 分析仪
 Forestry:core:1, 写字台
 Forestry:soil:0, 腐殖土
@@ -4061,6 +4077,7 @@ gendustry:Liquifier, 蛋白质液化机
 gendustry:Extractor, 基因提取机
 gendustry:Transposer, 基因转换机
 gendustry:Replicator, 基因复制机
+GraviSuite:BlockRelocatorPortal, tile.null.name
 OpenBlocks:ladder, 梯子活板门
 OpenBlocks:guide, 建筑指导仪
 OpenBlocks:builder_guide, Enhanced Building Guide
@@ -8707,6 +8724,14 @@ gregtech:gt.block.multitileentity.redstoneLight.stone.pickaxe.0.0.15.false.false
 gregtech:gt.block.multitileentity.redstoneLight.wood.axe.0.0.15.false.false, gt.block.multitileentity.redstoneLight.wood.axe.0.0.15.false.false.name
 gregtech:gt.block.multitileentity.redstoneLight.cloth.shears.0.0.15.false.false, gt.block.multitileentity.redstoneLight.cloth.shears.0.0.15.false.false.name
 gregtech:gt.block.multitileentity.rock.wood.scoop.0.0.15.false.false, gt.block.multitileentity.rock.wood.scoop.0.0.15.false.false.name
+IronChest:BlockIronChest:0, 铁箱子
+IronChest:BlockIronChest:1, 金箱子
+IronChest:BlockIronChest:2, 钻石箱子
+IronChest:BlockIronChest:3, 铜箱子
+IronChest:BlockIronChest:4, 银箱子
+IronChest:BlockIronChest:5, 水晶箱子
+IronChest:BlockIronChest:6, 黑曜石箱子
+IronChest:BlockIronChest:7, 泥箱子9000!
 moegadd:Flammableice, 可燃冰
 moegadd:MainframeCluster1, 低级巨型机组件
 moegadd:MainframeCluster2, 基础巨型机组件
@@ -10550,6 +10575,43 @@ advancedRocketry:advancedRocketryproductsheet:0, 钛铝合金 片
 advancedRocketry:advancedRocketryproductsheet:1, 钛铱合金 片
 advancedRocketry:advancedRocketryproductgear:0, 钛铝合金 齿轮
 advancedRocketry:advancedRocketryproductgear:1, 钛铱合金 齿轮
+AdvancedSolarPanel:advanced_solar_helmet, Advanced Solar Helmet
+AdvancedSolarPanel:hybrid_solar_helmet, Hybrid Solar Helmet
+AdvancedSolarPanel:ultimate_solar_helmet, Ultimate Solar Helmet
+AdvancedSolarPanel:asp_crafting_items:0, Sunnarium
+AdvancedSolarPanel:asp_crafting_items:1, Sunnarium Alloy
+AdvancedSolarPanel:asp_crafting_items:2, Irradiant Uranium
+AdvancedSolarPanel:asp_crafting_items:3, Enriched Sunnarium
+AdvancedSolarPanel:asp_crafting_items:4, Enriched Sunnarium Alloy
+AdvancedSolarPanel:asp_crafting_items:5, Irradiant Glass Pane
+AdvancedSolarPanel:asp_crafting_items:6, Iridium-Iron Plate
+AdvancedSolarPanel:asp_crafting_items:7, Reinforced Iridium-Iron Plate
+AdvancedSolarPanel:asp_crafting_items:8, Irradiant Reinforced Plate
+AdvancedSolarPanel:asp_crafting_items:9, Sunnarium Piece
+AdvancedSolarPanel:asp_crafting_items:10, Iridium Ingot
+AdvancedSolarPanel:asp_crafting_items:11, Uranium Ingot
+AdvancedSolarPanel:asp_crafting_items:12, MT Core
+AdvancedSolarPanel:asp_crafting_items:13, Quantum Core
+adventurebackpack:machete, 弯刀
+adventurebackpack:clockworkCrossbow, Clockwork Crossbow
+adventurebackpack:adventureHat, 探险者软呢帽
+adventurebackpack:adventureSuit, 探险者外套
+adventurebackpack:adventurePants, Adventurer's Pants
+adventurebackpack:pistonBoots, 活塞靴子
+adventurebackpack:copterPack, 
+adventurebackpack:coalJetpack, Coal Jetpack
+adventurebackpack:adventureBackpack, 探险背包
+adventurebackpack:backpackComponent:1, 睡袋
+adventurebackpack:backpackComponent:2, 储水箱
+adventurebackpack:backpackComponent:3, 软管喷嘴
+adventurebackpack:backpackComponent:4, 弯刀手柄.name
+adventurebackpack:backpackComponent:5, Two-Cylinder Diesel Engine
+adventurebackpack:backpackComponent:6, Copter Blades
+adventurebackpack:backpackComponent:7, Inflatable Boat
+adventurebackpack:backpackComponent:8, Inflatable Boat (Motorized)
+adventurebackpack:backpackComponent:9, Hydro Blades
+adventurebackpack:backpackHose, 背包软管
+adventurebackpack:melonJuiceBottle, Melon Juice Bottle
 appliedenergistics2:item.ToolCertusQuartzAxe, 赛特斯石英斧
 appliedenergistics2:item.ToolCertusQuartzHoe, 赛特斯石英锄
 appliedenergistics2:item.ToolCertusQuartzSpade, 赛特斯石英锹
@@ -12609,6 +12671,8 @@ appliedenergistics2:item.ItemMultiPart:220, ME存储总线
 appliedenergistics2:item.ItemMultiPart:400, ME存储监控器
 appliedenergistics2:item.ItemMultiPart:380, ME终端
 appliedenergistics2:item.ItemMultiPart:80, ME触发总线
+ae2stuff:WirelessKit, 无线设置工具
+ae2stuff:Visualiser, Network Visualisation Tool
 Avaritia:Resource:0, 钻石晶格
 Avaritia:Resource:1, 水晶矩阵锭
 Avaritia:Resource:2, 中子素尘埃
@@ -12644,6 +12708,62 @@ Avaritia:Matter_Cluster, 物质团
 Avaritia:Infinity_Bow, 天堂陨落长弓
 Avaritia:Infinity_Shovel, 星球吞噬之铲
 Avaritia:Infinity_Axe, 自然荒芜之斧
+Backpack:backpack:0, 小背包
+Backpack:backpack:1, 黑色小背包
+Backpack:backpack:2, 红色小背包
+Backpack:backpack:3, 绿色小背包
+Backpack:backpack:4, 棕色小背包
+Backpack:backpack:5, 蓝色小背包
+Backpack:backpack:6, 紫色小背包
+Backpack:backpack:7, 青色小背包
+Backpack:backpack:8, 浅灰色小背包
+Backpack:backpack:9, 灰色小背包
+Backpack:backpack:10, 粉红色小背包
+Backpack:backpack:11, 浅绿色小背包
+Backpack:backpack:12, 黄色小背包
+Backpack:backpack:13, 浅蓝色小背包
+Backpack:backpack:14, 紫色小背包
+Backpack:backpack:15, 橙色小背包
+Backpack:backpack:16, 白色小背包
+Backpack:backpack:100, 中背包
+Backpack:backpack:101, 黑色中背包
+Backpack:backpack:102, 红色中背包
+Backpack:backpack:103, 绿色中背包
+Backpack:backpack:104, 棕色中背包
+Backpack:backpack:105, 蓝色中背包
+Backpack:backpack:106, 紫色中背包
+Backpack:backpack:107, 青色中背包
+Backpack:backpack:108, 浅灰色中背包
+Backpack:backpack:109, 灰色中背包
+Backpack:backpack:110, 粉红色中背包
+Backpack:backpack:111, 浅绿色中背包
+Backpack:backpack:112, 黄色中背包
+Backpack:backpack:113, 浅蓝色中背包
+Backpack:backpack:114, 紫色中背包
+Backpack:backpack:115, 橙色中背包
+Backpack:backpack:116, 白色中背包
+Backpack:backpack:200, 大背包
+Backpack:backpack:201, 黑色大背包
+Backpack:backpack:202, 红色大背包
+Backpack:backpack:203, 绿色大背包
+Backpack:backpack:204, 棕色大背包
+Backpack:backpack:205, 蓝色大背包
+Backpack:backpack:206, 紫色大背包
+Backpack:backpack:207, 青色大背包
+Backpack:backpack:208, 浅灰色大背包
+Backpack:backpack:209, 灰色大背包
+Backpack:backpack:210, 粉红色大背包
+Backpack:backpack:211, 浅绿色大背包
+Backpack:backpack:212, 黄色大背包
+Backpack:backpack:213, 浅蓝色大背包
+Backpack:backpack:214, 紫色大背包
+Backpack:backpack:215, 橙色大背包
+Backpack:backpack:216, 白色大背包
+Backpack:backpack:31999, 末影背包
+Backpack:workbenchbackpack:17, 小工作台背包
+Backpack:workbenchbackpack:217, 大工作台背包
+Backpack:boundLeather, item.null.name
+Backpack:tannedLeather, item.null.name
 Forestry:fertilizerBio, 堆肥
 Forestry:fertilizerCompound, 肥料
 Forestry:apatite, 磷灰石
@@ -13762,6 +13882,10 @@ DraconicEvolution:chaosFragment:2, 大混乱片段
 DraconicEvolution:magnet:0, 物品错位器
 DraconicEvolution:magnet:1, 觉醒物品错位器
 DraconicEvolution:dezilsMarshmallow, Dezil的棉花糖
+enhancedlootbags:lootbag:1, LootBag (Sample Item group)
+enhancedlootbags:lootbag:1, LootBag (Sample Item group)
+enhancedlootbags:lootbag:0, LootBag (Default)
+enhancedlootbags:lootbag:0, LootBag (Default)
 gendustry:Labware, 基因药皿
 gendustry:Waste, 垃圾基因
 gendustry:GeneSampleBlank, 空白基因样本
@@ -13819,6 +13943,27 @@ gendustry:LiquidDNABucket, 液态基因桶
 gendustry:LiquidDNACan, 液态基因罐
 gendustry:ProteinBucket, 蛋白质桶
 gendustry:ProteinCan, 蛋白质罐
+GraviSuite:graviChestPlate, 重力胸甲
+GraviSuite:advNanoChestPlate, 进阶纳米重力胸甲
+GraviSuite:epicLappack, Epic Lappack
+GraviSuite:ultimateLappack, 终极兰波顿电池背包
+GraviSuite:advLappack, 进阶兰波顿电池背包
+GraviSuite:advJetpack, 进阶电力喷气背包
+GraviSuite:vajra, 金刚杵
+GraviSuite:graviTool, 万能重力工具
+GraviSuite:advDDrill, 进阶钻石电钻
+GraviSuite:advChainsaw, 进阶电锯
+GraviSuite:relocator, 定位器
+GraviSuite:sonicLauncher, Plasma Cannon [WIP]
+GraviSuite:itemSimpleItem:0, 超导体绝缘层
+GraviSuite:itemSimpleItem:1, 超导体
+GraviSuite:itemSimpleItem:2, 降温核心
+GraviSuite:itemSimpleItem:3, 重力引擎
+GraviSuite:itemSimpleItem:4, 磁控管
+GraviSuite:itemSimpleItem:5, 金刚杵核心
+GraviSuite:itemSimpleItem:6, 喷射引擎
+GraviSuite:itemSimpleItem:7, Antidote Nanobots [WIP]
+GraviSuite:itemPlasmaCell, Plasma Cell [WIP]
 OpenBlocks:hangglider, 滑翔翼
 OpenBlocks:generic:0, 滑翔翼
 OpenBlocks:generic:1, 连杆
@@ -35954,6 +36099,23 @@ gregtech:gt.meta.bulletGtLarge:9127, oredict.bulletGtLargePyrope.name
 gregtech:gt.meta.bulletGtLarge:9129, oredict.bulletGtLargeSpessartine.name
 gregtech:gt.meta.bulletGtLarge:9135, oredict.bulletGtLargeUvarovite.name
 gregtech:gt.meta.bulletGtLarge:27000, oredict.bulletGtLargeTitaniumNiobiumCarbide.name
+IronChest:ironGoldUpgrade, 升级：铁>金
+IronChest:goldDiamondUpgrade, 升级：金>钻石
+IronChest:copperSilverUpgrade, 升级：铜>银
+IronChest:silverGoldUpgrade, 升级：银>金
+IronChest:copperIronUpgrade, 升级：铜>铁
+IronChest:diamondCrystalUpgrade, 升级：钻石>水晶
+IronChest:woodIronUpgrade, 升级：木>铁
+IronChest:woodCopperUpgrade, 升级：木>铜
+IronChest:diamondObsidianUpgrade, 升级：钻石>黑曜石
+ironchestminecarts:minecart_chest_obsidian, 黑曜石箱子运输矿车
+ironchestminecarts:minecart_chest_diamond, 钻石箱子运输矿车
+ironchestminecarts:minecart_chest_gold, 金箱子运输矿车
+ironchestminecarts:minecart_chest_dirtchest9000, 泥土箱子运输矿车
+ironchestminecarts:minecart_chest_crystal, 水晶箱子运输矿车
+ironchestminecarts:minecart_chest_iron, 铁箱子运输矿车
+ironchestminecarts:minecart_chest_copper, 铜箱子运输矿车
+ironchestminecarts:minecart_chest_silver, 银箱子运输矿车
 moegadd:Simpleresistance, 简易电阻器
 moegadd:SimpleCapacitance, 简易电容
 moegadd:SeedCrystalSilicon, 硅籽晶
@@ -36051,6 +36213,11 @@ moegadd:Mainframe6, 究极电脑主机
 moegadd:Mainframe7, 终极电脑主机
 moegadd:StarPlatinum, 白金之星
 questbook:ItemQuestBook, Quest Book
+ae2wct:infinityBoosterCard, 量子增幅器
+ae2wct:infinityBoosterIcon, item.null.name
+ae2wct:wirelessCraftingTerminal, 无线合成终端
+ae2wct:magnetCard, 磁场增幅卡
+ae2wct:boosterBG, item.boosterBG.name
 Railcraft:backpack.trackman.t1, 铁路工背包
 Railcraft:backpack.trackman.t2, 编织的铁路工背包
 Railcraft:backpack.iceman.t1, 冰原旅者背包
