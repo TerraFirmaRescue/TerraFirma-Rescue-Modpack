@@ -357,18 +357,18 @@ recipes.addShapeless(<libVulpes:libVulpesmetal0:5>,[<gregtech:gt.meta.storage.so
 recipes.addShapeless(<libVulpes:libVulpesmetal0:4>,[<gregtech:gt.meta.storage.solid:290>]);
 //GT Plate block -> AR block
 
-//spacesuit
+//Space Suit
 //silk
-MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 64, 100 ,0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 32, 100 ,0,[10000],
 [<terrafirmacraft:item.WoolYarn>*6],
 [<liquid:seedoil>*100],
 [n],
 [<Forestry:craftingMaterial:3>]);
 
 recipes.remove(<advancedRocketry:item.spaceHelmet>);
-//recipes.remove(<advancedRocketry:item.spaceChest>);
-//recipes.remove(<advancedRocketry:item.spaceLeggings>);
-//recipes.remove(<advancedRocketry:item.spaceBoots>);
+recipes.remove(<advancedRocketry:item.spaceChest>);
+recipes.remove(<advancedRocketry:item.spaceLeggings>);
+recipes.remove(<advancedRocketry:item.spaceBoots>);
 
 val helmet1 = <gregtech:gt.armor.hazmat.frost.head:201>.withTag({display: {Name: "Spacesuit Helmet (Stage 1)", Lore: ["You need warm keeping!"]}});
 val helmet2 = <gregtech:gt.armor.hazmat.frost.head:202>.withTag({display: {Name: "Spacesuit Helmet (Stage 2)", Lore: ["You need cooling!"]}});
@@ -376,27 +376,23 @@ val helmet3 = <gregtech:gt.armor.hazmat.frost.head:203>.withTag({display: {Name:
 val helmet4 = <gregtech:gt.armor.hazmat.frost.head:204>.withTag({display: {Name: "Spacesuit Helmet (Stage 4)", Lore: ["You need heat resistance!"]}});
 val helmet5 = <gregtech:gt.armor.hazmat.frost.head:205>.withTag({display: {Name: "Spacesuit Helmet (Stage 5)", Lore: ["You need cosmic ray protection!"]}});
 
-val chest1 = <gregtech:gt.armor.hazmat.frost.head:201>.withTag({display: {Name: "Spacesuit Chest (Stage 1)", Lore: ["You need warm keeping!"]}});
-val chest2 = <gregtech:gt.armor.hazmat.frost.head:202>.withTag({display: {Name: "Spacesuit Chest (Stage 2)", Lore: ["You need cooling!"]}});
-val chest3 = <gregtech:gt.armor.hazmat.frost.head:203>.withTag({display: {Name: "Spacesuit Chest (Stage 3)", Lore: ["You need insulation!"]}});
-val chest4 = <gregtech:gt.armor.hazmat.frost.head:204>.withTag({display: {Name: "Spacesuit Chest (Stage 4)", Lore: ["You need heat resistance!"]}});
-val chest5 = <gregtech:gt.armor.hazmat.frost.head:205>.withTag({display: {Name: "Spacesuit Chest (Stage 5)", Lore: ["You need cosmic ray protection!"]}});
+val chest1 = <gregtech:gt.armor.hazmat.frost.chest:201>.withTag({display: {Name: "Spacesuit Chest (Stage 1)", Lore: ["You need warm keeping!"]}});
+val chest2 = <gregtech:gt.armor.hazmat.frost.chest:202>.withTag({display: {Name: "Spacesuit Chest (Stage 2)", Lore: ["You need cooling!"]}});
+val chest3 = <gregtech:gt.armor.hazmat.frost.chest:203>.withTag({display: {Name: "Spacesuit Chest (Stage 3)", Lore: ["You need insulation!"]}});
+val chest4 = <gregtech:gt.armor.hazmat.frost.chest:204>.withTag({display: {Name: "Spacesuit Chest (Stage 4)", Lore: ["You need heat resistance!"]}});
+val chest5 = <gregtech:gt.armor.hazmat.frost.chest:205>.withTag({display: {Name: "Spacesuit Chest (Stage 5)", Lore: ["You need cosmic ray protection!"]}});
 
-val legs1 = <gregtech:gt.armor.hazmat.frost.head:201>.withTag({display: {Name: "Spacesuit Leggings (Stage 1)", Lore: ["You need warm keeping!"]}});
-val legs2 = <gregtech:gt.armor.hazmat.frost.head:202>.withTag({display: {Name: "Spacesuit Leggings (Stage 2)", Lore: ["You need cooling!"]}});
-val legs3 = <gregtech:gt.armor.hazmat.frost.head:203>.withTag({display: {Name: "Spacesuit Leggings (Stage 3)", Lore: ["You need insulation!"]}});
-val legs4 = <gregtech:gt.armor.hazmat.frost.head:204>.withTag({display: {Name: "Spacesuit Leggings (Stage 4)", Lore: ["You need heat resistance!"]}});
-val legs5 = <gregtech:gt.armor.hazmat.frost.head:205>.withTag({display: {Name: "Spacesuit Leggings (Stage 5)", Lore: ["You need cosmic ray protection!"]}});
+val legs1 = <gregtech:gt.armor.hazmat.frost.legs:201>.withTag({display: {Name: "Spacesuit Leggings (Stage 1)", Lore: ["You need warm keeping!"]}});
+val legs2 = <gregtech:gt.armor.hazmat.frost.legs:202>.withTag({display: {Name: "Spacesuit Leggings (Stage 2)", Lore: ["You need cooling!"]}});
+val legs3 = <gregtech:gt.armor.hazmat.frost.legs:203>.withTag({display: {Name: "Spacesuit Leggings (Stage 3)", Lore: ["You need insulation!"]}});
+val legs4 = <gregtech:gt.armor.hazmat.frost.legs:204>.withTag({display: {Name: "Spacesuit Leggings (Stage 4)", Lore: ["You need heat resistance!"]}});
+val legs5 = <gregtech:gt.armor.hazmat.frost.legs:205>.withTag({display: {Name: "Spacesuit Leggings (Stage 5)", Lore: ["You need cosmic ray protection!"]}});
 
-val boots1 = <gregtech:gt.armor.hazmat.frost.head:201>.withTag({display: {Name: "Spacesuit Boots (Stage 1)", Lore: ["You need warm keeping!"]}});
-val boots2 = <gregtech:gt.armor.hazmat.frost.head:202>.withTag({display: {Name: "Spacesuit Boots (Stage 2)", Lore: ["You need cooling!"]}});
-val boots3 = <gregtech:gt.armor.hazmat.frost.head:203>.withTag({display: {Name: "Spacesuit Boots (Stage 3)", Lore: ["You need insulation!"]}});
-val boots4 = <gregtech:gt.armor.hazmat.frost.head:204>.withTag({display: {Name: "Spacesuit Boots (Stage 4)", Lore: ["You need heat resistance!"]}});
-val boots5 = <gregtech:gt.armor.hazmat.frost.head:205>.withTag({display: {Name: "Spacesuit Boots (Stage 5)", Lore: ["You need cosmic ray protection!"]}});
-
-val chest = <gregtech:gt.armor.hazmat.frost.chest>;
-val legs = <gregtech:gt.armor.hazmat.frost.legs>;
-val boots = <gregtech:gt.armor.hazmat.frost.boots>;
+val boots1 = <gregtech:gt.armor.hazmat.frost.boots:201>.withTag({display: {Name: "Spacesuit Boots (Stage 1)", Lore: ["You need warm keeping!"]}});
+val boots2 = <gregtech:gt.armor.hazmat.frost.boots:202>.withTag({display: {Name: "Spacesuit Boots (Stage 2)", Lore: ["You need cooling!"]}});
+val boots3 = <gregtech:gt.armor.hazmat.frost.boots:203>.withTag({display: {Name: "Spacesuit Boots (Stage 3)", Lore: ["You need insulation!"]}});
+val boots4 = <gregtech:gt.armor.hazmat.frost.boots:204>.withTag({display: {Name: "Spacesuit Boots (Stage 4)", Lore: ["You need heat resistance!"]}});
+val boots5 = <gregtech:gt.armor.hazmat.frost.boots:205>.withTag({display: {Name: "Spacesuit Boots (Stage 5)", Lore: ["You need cosmic ray protection!"]}});
 
 val cloth = <terrafirmacraft:item.WoolCloth>;
 val str = <ore:itemString>;
@@ -410,6 +406,7 @@ val glue = <gregtech:gt.multiitem.randomtools:12002>;
 val alf = <gregtech:gt.meta.foil:130>;
 val smb = <gregtech:gt.meta.plate:9103>;
 
+//Helmet
 recipes.addShaped(helmet1,
 [[cloth,cloth,cloth],
 [cloth,n,cloth],
@@ -439,3 +436,96 @@ recipes.addShaped(<advancedRocketry:item.spaceHelmet>,
 [[alf,alf,alf],
 [alf,helmet5,alf],
 [Cutter,<minecraft:glass_pane>,Knife]]);
+
+//Chest
+recipes.addShaped(chest1,
+[[cloth,Cutter,cloth],
+[cloth,cloth,cloth],
+[cloth,cloth,cloth]]);
+
+recipes.addShaped(chest2,
+[[silk,Cutter,silk],
+[silk,chest1,silk],
+[silk,silk,silk]]);
+
+recipes.addShaped(chest3,
+[[plasf,Screwdriver,plasf],
+[plasp,chest2,plasp],
+[<ore:gt:re-battery1>,pump,unit]]);
+
+recipes.addShaped(chest4,
+[[plasc,Cutter,plasc],
+[plasc,chest3,plasc],
+[plasc,glue,plasc]]);
+
+recipes.addShaped(chest5,
+[[smb,Cutter,smb],
+[smb,chest4,smb],
+[smb,smb,smb]]);
+
+recipes.addShaped(<advancedRocketry:item.spaceChest>,
+[[alf,Cutter,alf],
+[alf,chest5,alf],
+[alf,alf,alf]]);
+
+// Leggings
+recipes.addShaped(legs1,
+[[cloth,cloth,cloth],
+[cloth,Cutter,cloth],
+[cloth,Knife,cloth]]);
+
+recipes.addShaped(legs2,
+[[silk,legs1,silk],
+[silk,Cutter,silk],
+[silk,Knife,silk]]);
+
+recipes.addShaped(legs3,
+[[plasf,legs2,plasf],
+[plasp,unit,plasp],
+[plasf,pump,plasf]]);
+
+recipes.addShaped(legs4,
+[[plasc,legs3,plasc],
+[plasc,Cutter,plasc],
+[plasc,glue,plasc]]);
+
+recipes.addShaped(legs5,
+[[smb,legs4,smb],
+[smb,Cutter,smb],
+[smb,Knife,smb]]);
+
+recipes.addShaped(<advancedRocketry:item.spaceLeggings>,
+[[alf,legs5,alf],
+[alf,Cutter,alf],
+[alf,Knife,alf]]);
+
+//Boots
+recipes.addShaped(boots1,
+[[cloth,n,cloth],
+[cloth,n,cloth],
+[Cutter,n,Knife]]);
+
+recipes.addShaped(boots2,
+[[silk,n,silk],
+[silk,boots1,silk],
+[Cutter,n,Knife]]);
+
+recipes.addShaped(boots3,
+[[plasf,n,plasf],
+[plasp,boots2,plasp],
+[Screwdriver,pump,unit]]);
+
+recipes.addShaped(boots4,
+[[plasc,n,plasc],
+[plasc,boots3,plasc],
+[Cutter,glue,Knife]]);
+
+recipes.addShaped(boots5,
+[[smb,n,smb],
+[smb,boots4,smb],
+[Cutter,n,Knife]]);
+
+recipes.addShaped(<advancedRocketry:item.spaceBoots>,
+[[alf,n,alf],
+[alf,boots5,alf],
+[Cutter,n,Knife]]);
