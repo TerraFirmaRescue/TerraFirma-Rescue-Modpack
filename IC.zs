@@ -31,20 +31,37 @@ MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
 /** Scripts Starts */
 
 recipes.remove(<IC2:blockReactorChamber>);
-MTUtilsGT.removeAllRecipes("gt.recipe.welder", <IC2:blockReactorChamber>);
-MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 1024, 512, 0, [10000], 
-[<gregtech:gt.meta.plateDense:2220>, <gregtech:gt.meta.plateDense:820>*2, <gregtech:gt.meta.gearGt:220>*2], 
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler", <IC2:blockReactorChamber>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 2048, 400, 0, [10000], 
+[<gregtech:gt.multitileentity:18023>,<gregtech:gt.meta.plateDense:820>,<gregtech:gt.multitileentity:32615>*8], 
+[null],
+[null],
 [<IC2:blockReactorChamber>]);
+
 recipes.remove(<IC2:blockGenerator:5>);
-MTUtilsGT.removeAllRecipes("gt.recipe.welder", <IC2:blockGenerator:5>);
-MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 1024, 512, 0, [10000], 
-[<IC2:blockReactorChamber>, <gregtech:gt.meta.plateDense:2220>*4, <gregtech:gt.meta.gearGt:220>*4,<gregtech:gt.multiitem.technological:12146>
-,<gregtech:gt.multiitem.technological:12085>,<gregtech:gt.multiitem.technological:12127>,<gregtech:gt.multiitem.technological:30504>*2], 
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler", <IC2:blockGenerator:5>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 2048, 800, 0, [10000], 
+[<IC2:blockReactorChamber>,<moegadd:MainframeCluster6>,<gregtech:gt.multiitem.technological:30501>,<gregtech:gt.multiitem.technological:12146>,<gregtech:gt.multiitem.technological:12085>*2,<gregtech:gt.meta.plate:220>*6], 
+[null],
+[null],
 [<IC2:blockGenerator:5>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 2048, 800, 0, [10000], 
+[<IC2:blockReactorChamber>,<moegadd:MainframeCluster7>,<gregtech:gt.multiitem.technological:30501>,<gregtech:gt.multiitem.technological:12146>,<gregtech:gt.multiitem.technological:12085>*2,<gregtech:gt.meta.plate:220>*6], 
+[null],
+[null],
+[<IC2:blockGenerator:5>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 2048, 800, 0, [10000], 
+[<IC2:blockReactorChamber>,<moegadd:Mainframe7>,<gregtech:gt.multiitem.technological:30501>,<gregtech:gt.multiitem.technological:12146>,<gregtech:gt.multiitem.technological:12085>*2,<gregtech:gt.meta.plate:220>*6], 
+[null],
+[null],
+[<IC2:blockGenerator:5>]);
+
 recipes.remove(<IC2:reactorVent:1>);
-MTUtilsGT.removeAllRecipes("gt.recipe.welder",<IC2:reactorVent:1>);
-MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 1024,256, 0, [10000], 
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<IC2:reactorVent:1>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1024,256, 0, [10000], 
 [<gregtech:gt.meta.plate:2220>,<minecraft:iron_bars>*4,<IC2:itemRecipePart:1>], 
+[null],
+[null],
 [<IC2:reactorVent:1>]);
 
 recipes.remove(<IC2:itemupgradekit>);
