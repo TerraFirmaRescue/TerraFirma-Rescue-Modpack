@@ -29,10 +29,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
 **/
 
 /** Scripts Starts */
-MTUtilsGT.removeAllRecipes("gt.recipe.press",<mo:tritanium_ingot>*3);
-MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16,1024, 0, [10000], 
-[<gregtech:gt.meta.plate:790>, <gregtech:gt.meta.plate:270>, <Railcraft:part.plate:1>], 
-[<mo:tritanium_ingot>*3]);
 
 MTUtilsGT.removeAllRecipes("gt.recipe.canner",<mo:android_pill>);
 MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 16, 16, 0, [10000], 
