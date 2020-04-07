@@ -231,7 +231,7 @@ recipes.addShaped(<advancedRocketry:utilBlock>*2,
 //electric arc furnace
 recipes.remove(<advancedRocketry:tile.electricArcFurnace>);
 recipes.addShaped(<advancedRocketry:tile.electricArcFurnace>,
-[[<gregtech:gt.meta.stickLong:9175>,<advancedRocketry:miscpart>,<gregtech:gt.meta.stickLong:9175>],
+[[<gregtech:gt.meta.stick:9175>,<advancedRocketry:miscpart>,<gregtech:gt.meta.stick:9175>],
 [<ore:plateInvar>,<gregtech:gt.meta.machine.double:220>,<ore:plateInvar>],
 [<gregtech:gt.multiitem.technological:30304>,<ore:plateInvar>,<gregtech:gt.multiitem.technological:30304>]]);
 

@@ -109,6 +109,12 @@ MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",<moegadd:Wafer1wm>);
 MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",<moegadd:Wafer200nm>);
 MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",<moegadd:Wafer60nm>);
 MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",<moegadd:Wafer20nm>);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",<moegadd:MemoryCell128M>);
+MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",<moegadd:MemoryCell256M>);
+MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",<moegadd:MemoryCell512M>);
+MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",<moegadd:MemoryCell1G>);
+
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<moegadd:PatchCapacitor>);
 
 /**----*/
@@ -462,25 +468,25 @@ MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 512, 8000 ,0,[10000],
 [<moegadd:PhotomaskFilm4>]);
 
 /*--RAM Cells--*/
-MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 512, 1000 ,0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 512, 256 ,0,[10000],
 [<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:PhotomaskFilm1>*0,<moegadd:RawWafer>],
 [<liquid:helium>*40],
 [n],
 [<moegadd:MemoryCell128M>]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 768, 1000 ,0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 768, 384 ,0,[10000],
 [<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:PhotomaskFilm2>*0,<moegadd:RawWafer>],
 [<liquid:helium>*40],
 [n],
 [<moegadd:MemoryCell256M>]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1024, 1000 ,0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1024, 512 ,0,[10000],
 [<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:PhotomaskFilm3>*0,<moegadd:RawWafer>],
 [<liquid:helium>*40],
 [n],
 [<moegadd:MemoryCell512M>]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1536, 1000 ,0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1536, 768 ,0,[10000],
 [<moegadd:PhotomaskCentral>*0,<moegadd:PhotomaskWork>*0,<moegadd:PhotomaskFilm4>*0,<moegadd:RawWafer>],
 [<liquid:helium>*40],
 [n],
