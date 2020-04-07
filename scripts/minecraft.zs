@@ -305,3 +305,37 @@ recipes.addShapeless(<minecraft:wooden_button>,[<terrafirmacraft:ButtonWood>]);
 recipes.addShapeless(<minecraft:dye:15>,[<terrafirmacraft:item.dyePowder:15>]);
 recipes.addShapeless(<terrafirmacraft:item.dyePowder:15>,[<minecraft:dye:15>]);
 
+//water
+MTUtilsGT.removeAllRecipes("gt.recipe.drying",<gregtech:gt.block.log.1>);
+for log in <ore:logWood>.items {
+MTUtilsGT.addCustomRecipe("gt.recipe.drying", false, 16, 128, 0, [10000],
+[log],
+[n],
+[<liquid:ic2distilledwater>*200],
+[<gregtech:gt.block.log.1>]);
+}
+
+for sap in <ore:treeSapling>.items {
+MTUtilsGT.addCustomRecipe("gt.recipe.drying", false, 16, 128, 0, [10000],
+[sap],
+[n],
+[<liquid:ic2distilledwater>*200],
+[<minecraft:deadbush>]);
+}
+
+for fruit in <ore:listAllfruit>.items {
+MTUtilsGT.addCustomRecipe("gt.recipe.drying", false, 16, 128, 0, [10000],
+[fruit],
+[n],
+[<liquid:ic2distilledwater>*80],
+[<gregtech:gt.multiitem.food:242>]);
+}
+
+for leaf in <ore:treeLeaves>.items {
+MTUtilsGT.addCustomRecipe("gt.recipe.drying", false, 16, 128, 0, [10000],
+[leaf],
+[n],
+[<liquid:ic2distilledwater>*80],
+[<minecraft:stick>]);
+}
+

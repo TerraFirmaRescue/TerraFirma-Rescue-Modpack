@@ -14,11 +14,23 @@ val Chisel = <ore:craftingToolChisel>;
 val Cutter = <ore:craftingToolWireCutter>;
 val File = <ore:craftingToolFile>;
 val n = null;
+val SiM = <appliedenergistics2:item.ItemMultiMaterial:19>;
+val CalM = <appliedenergistics2:item.ItemMultiMaterial:13>;
+val EngM = <appliedenergistics2:item.ItemMultiMaterial:14>;
+val LogM = <appliedenergistics2:item.ItemMultiMaterial:15>;
+val SiC = <appliedenergistics2:item.ItemMultiMaterial:20>;
+val CalC = <appliedenergistics2:item.ItemMultiMaterial:16>;
+val EngC = <appliedenergistics2:item.ItemMultiMaterial:17>;
+val LogC = <appliedenergistics2:item.ItemMultiMaterial:18>;
+val a1k = <appliedenergistics2:item.ItemMultiMaterial:35>;
+val a4k = <appliedenergistics2:item.ItemMultiMaterial:36>;
+val a16k = <appliedenergistics2:item.ItemMultiMaterial:37>;
+val a64k = <appliedenergistics2:item.ItemMultiMaterial:38>;
 
 /**Templates Starts
 var x = [] as IItemStack[];
 for i, x in x { }
-recipes.addShapless(,[]);
+recipes.addShapeless(,[]);
 recipes.addShaped(,[[],[],[]]);
 MTUtilsGT.removeAllRecipes("gt.recipe.",);
 MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
@@ -69,10 +81,7 @@ recipes.addShaped(<appliedenergistics2:tile.BlockEnergyCell>,
 [<appliedenergistics2:item.ItemMultiMaterial>]]);
 
 recipes.remove(<appliedenergistics2:tile.BlockInscriber>);
-recipes.addShaped(<appliedenergistics2:tile.BlockInscriber>,
-[[<appliedenergistics2:item.ItemMultiMaterial:12>,<appliedenergistics2:item.ItemMultiPart:16>,<appliedenergistics2:item.ItemMultiPart:16>],
-[<appliedenergistics2:item.ItemMultiMaterial:12>,<gregtech:gt.multitileentity:20232>,<appliedenergistics2:item.ItemMultiMaterial:12>],
-[<appliedenergistics2:item.ItemMultiMaterial:12>,<appliedenergistics2:item.ItemMultiPart:16>,<appliedenergistics2:item.ItemMultiPart:16>]]);
+recipes.remove(<ae2stuff:Inscriber>);
 
 recipes.remove(<appliedenergistics2:tile.BlockController>);
 recipes.addShaped(<appliedenergistics2:tile.BlockController>,
@@ -126,7 +135,7 @@ recipes.addShaped(,
 []]);
 */
 
-/*--Storage Cells--*/
+/*--Crafting RAM Cells--*/
 
 recipes.remove(<appliedenergistics2:tile.BlockCraftingStorage>);
 recipes.remove(<appliedenergistics2:tile.BlockCraftingStorage:1>);
@@ -136,19 +145,101 @@ recipes.remove(<appliedenergistics2:tile.BlockCraftingStorage:3>);
 recipes.addShaped(<appliedenergistics2:tile.BlockCraftingStorage>,
 [[<gregtech:gt.meta.screw:8651>,<ore:RAM256M>,<gregtech:gt.meta.ring:8651>],
 [null,<appliedenergistics2:tile.BlockCraftingUnit>,null],
-[<gregtech:gt.meta.screw:8651>,null,Screwdriver]]);
+[<gregtech:gt.meta.screw:8651>,<appliedenergistics2:item.ItemMultiMaterial:35>,Screwdriver]]);
 
 recipes.addShaped(<appliedenergistics2:tile.BlockCraftingStorage:1>,
 [[<gregtech:gt.meta.screw:130>,<ore:RAM512M>,<gregtech:gt.meta.ring:130>],
 [null,<appliedenergistics2:tile.BlockCraftingUnit>,null],
-[<gregtech:gt.meta.screw:130>,null,Screwdriver]]);
+[<gregtech:gt.meta.screw:130>,<appliedenergistics2:item.ItemMultiMaterial:36>,Screwdriver]]);
 
 recipes.addShaped(<appliedenergistics2:tile.BlockCraftingStorage:2>,
 [[<gregtech:gt.meta.screw:8636>,<ore:RAM1G>,<gregtech:gt.meta.ring:8636>],
 [null,<appliedenergistics2:tile.BlockCraftingUnit>,null],
-[<gregtech:gt.meta.screw:8636>,null,Screwdriver]]);
+[<gregtech:gt.meta.screw:8636>,<appliedenergistics2:item.ItemMultiMaterial:37>,Screwdriver]]);
 
 recipes.addShaped(<appliedenergistics2:tile.BlockCraftingStorage:3>,
 [[<gregtech:gt.meta.screw:240>,<ore:RAM2G>,<gregtech:gt.meta.ring:240>],
 [null,<appliedenergistics2:tile.BlockCraftingUnit>,null],
-[<gregtech:gt.meta.screw:240>,null,Screwdriver]]);
+[<gregtech:gt.meta.screw:240>,<appliedenergistics2:item.ItemMultiMaterial:38>,Screwdriver]]);
+
+//AE2 basic circuits
+MTUtilsGT.removeAllRecipes("gt.recipe.press",SiC);
+MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",SiC);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1500, 100, 0, [10000],
+[<moegadd:MonolayerWafer1wm>,SiM*0,<moegadd:PhotomaskWork>*0,<moegadd:PhotomaskCentral>*0],
+[<liquid:helium>*50],
+[n],
+[SiC]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.press",CalC);
+MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",CalC);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1500, 100, 0, [10000],
+[<gregtech:gt.meta.plateGem:8347>,CalM*0,<moegadd:PhotomaskWork>*0,<moegadd:PhotomaskCentral>*0],
+[<liquid:helium>*50],
+[n],
+[CalC]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.press",CalC);
+MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",CalC);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1500, 100, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:10>,CalM*0,<moegadd:PhotomaskWork>*0,<moegadd:PhotomaskCentral>*0],
+[<liquid:helium>*50],
+[n],
+[CalC]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.press",EngC);
+MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",EngC);
+
+for plate in <ore:plateGemAnyDiamond>.items {
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1500, 100, 0, [10000],
+[plate,EngM*0,<moegadd:PhotomaskWork>*0,<moegadd:PhotomaskCentral>*0],
+[<liquid:helium>*50],
+[n],
+[EngC]);
+}
+
+MTUtilsGT.removeAllRecipes("gt.recipe.press",LogC);
+MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",LogC);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1500, 100, 0, [10000],
+[<terrafirmacraft:item.Gold Sheet>,LogM*0,<moegadd:PhotomaskWork>*0,<moegadd:PhotomaskCentral>*0],
+[<liquid:helium>*50],
+[n],
+[LogC]);
+
+// Storage Parts
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:35>);
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:36>);
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:37>);
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:38>);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",a1k);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1200, 100, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:16>*4,<appliedenergistics2:item.ItemMultiMaterial:22>,<gregtech:gt.meta.wireFine:8660>*8,<moegadd:PatchCapacitor>*2],
+[<liquid:molten.redalloy>*144],
+[n],
+[a1k]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",a4k);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1200, 100, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:16>*12,<appliedenergistics2:item.ItemMultiMaterial:23>,<gregtech:gt.meta.wireFine:8660>*32,<moegadd:PatchCapacitor>*8],
+[<liquid:molten.redalloy>*144],
+[n],
+[a4k]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",a16k);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1200, 100, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:16>*48,<appliedenergistics2:item.ItemMultiMaterial:24>,<gregtech:gt.meta.wireFine:8660>*64,<moegadd:PatchCapacitor>*32],
+[<liquid:molten.redalloy>*144],
+[n],
+[a16k]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",a64k);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1200, 100, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:16>*64,<appliedenergistics2:item.ItemMultiMaterial:16>*64,<appliedenergistics2:item.ItemMultiMaterial:16>*64,<appliedenergistics2:item.ItemMultiMaterial:16>*64,<appliedenergistics2:item.ItemMultiMaterial:24>,<gregtech:gt.meta.wireFine:8660>*64,<gregtech:gt.meta.wireFine:8660>*64,<moegadd:PatchCapacitor>*64],
+[<liquid:molten.redalloy>*144],
+[n],
+[a64k]);

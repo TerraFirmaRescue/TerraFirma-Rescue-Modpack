@@ -8818,30 +8818,6 @@ moegadd:MainframeCluster4, 高级巨型机组件
 moegadd:MainframeCluster5, 精英巨型机组件
 moegadd:MainframeCluster6, 究极巨型机组件
 moegadd:MainframeCluster7, 终极巨型机组件
-pressure:Pipe, 压力管道
-pressure:CheckValve, 高压遏制阀门
-pressure:PipeSensor, 压力管道感应器
-pressure:Pump, 高压泵
-pressure:Output, 高压输出接口
-pressure:Input, 高压输入接口
-pressure:Water, 无限水源块
-pressure:Creative, 创造液体源块
-pressure:Drain, 水库排液口
-pressure:Sluice, 水闸
-pressure:TankController, 水库主控器
-pressure:Router, 高压路由器
-pressure:TankBlock, 水库方块
-pressure:TankIndicator, 水库流体指示计
-pressure:TankFluidOutput, 水库流体输出接口
-pressure:TankFluidAutoOutput, 水库自动输出接口
-pressure:TankFluidInput, 水库流体输入接口
-pressure:TankFluidAccess, Tank Access Port
-pressure:TankPressureOutput, 水库高压输出接口
-pressure:TankPressureInput, 水库高压输入接口
-pressure:TankInterface, 水库端口
-pressure:TankFilter, 流体过滤器
-pressure:Sensor, 水库感应器
-pressure:TankDataPort, 水库数据接口
 animalcrate:blockcrate:0, 动物笼子
 tfcautomatedbellows:BellowsDriver:0, 风箱驱动器
 tfcautomatedbellows:SteamBoiler:0, 蒸汽炉
@@ -36589,13 +36565,6 @@ moegadd:Mainframe5, 精英电脑主机
 moegadd:Mainframe6, 究极电脑主机
 moegadd:Mainframe7, 终极电脑主机
 moegadd:StarPlatinum, 白金之星
-pressure:Debugger, 压力系统调试物品
-pressure:Interface, 压力系统端口
-pressure:TankWall, 水库外墙
-pressure:FluidInterface, 水库端口
-pressure:HandPump, 手压泵
-pressure:Canister, 金属罐
-pressure:Configurator, 流体过滤调置器
 questbook:ItemQuestBook, Quest Book
 ae2wct:infinityBoosterCard, 量子增幅器
 ae2wct:infinityBoosterIcon, item.null.name
