@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<LootGroup category="pyramidJungleDispenser" loading_mode="OVERRIDE" count_min="3" count_max="4">
-    <loot item="minecraft:arrow" damage="0" weight="30" count_min="2" count_max="7"/>
-    <loot item="minecraft:fire_charge" damage="0" weight="30" count_min="2" count_max="8"/>
-    <loot item="gregtech:gt.meta.arrowGtWood" damage="8634" nbt="{ench:[0:{lvl:5s,id:16s}],gt.u:1b}" weight="20" count_min="8" count_max="16"/>
-    <loot item="gregtech:gt.meta.arrowGtWood" damage="1260" nbt="{ench:[0:{lvl:6s,id:16s}],gt.u:1b}" weight="1" count_min="8" count_max="16"/>
-</LootGroup>

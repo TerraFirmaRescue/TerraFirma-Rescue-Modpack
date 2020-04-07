@@ -1,0 +1,33 @@
+<root>
+<!-- Chests to show the sorting modes buttons on -->
+   <chest class="com.bioxx.tfc.Containers.ContainerChestTFC" row_size="9" large_chest="false"/> 
+<!-- Other inventories to show just the options button on -->
+   <inventory class="com.bioxx.tfc.Containers.ContainerAnvil" disable_buttons="true"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerBarrel" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerBlastFurnace" disable_buttons="true"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerCrucible" disable_buttons="true"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerFirepit" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerFoodPrep" disable_buttons="true"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerForge" disable_buttons="true"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerGrill" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerHorseInventory" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerLargeVessel" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerLiquidVessel" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerLogPile" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerMold" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerNestBox" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerQuern" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerQuiver" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerSluice" disable_buttons="true"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerVessel" disable_buttons="false"/>
+      
+<!-- TFC Containers that will not allow inventory sorting
+   <inventory class="com.bioxx.tfc.Containers.ContainerBlueprint" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerCreativeTFC" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerPlanSelection" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerPlayerTFC" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerSkills" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerSpecialCrafting" disable_buttons="false"/>
+   <inventory class="com.bioxx.tfc.Containers.ContainerWorkbench" disable_buttons="false"/>
+-->
+</root>
