@@ -181,9 +181,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1500, 100, 0, [10000],
 [n],
 [CalC]);
 
-MTUtilsGT.removeAllRecipes("gt.recipe.press",CalC);
-MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",CalC);
-
 MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 1500, 100, 0, [10000],
 [<appliedenergistics2:item.ItemMultiMaterial:10>,CalM*0,<moegadd:PhotomaskWork>*0,<moegadd:PhotomaskCentral>*0],
 [<liquid:helium>*50],
