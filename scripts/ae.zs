@@ -26,12 +26,31 @@ val a1k = <appliedenergistics2:item.ItemMultiMaterial:35>;
 val a4k = <appliedenergistics2:item.ItemMultiMaterial:36>;
 val a16k = <appliedenergistics2:item.ItemMultiMaterial:37>;
 val a64k = <appliedenergistics2:item.ItemMultiMaterial:38>;
+val fcable = <appliedenergistics2:item.ItemMultiPart:16>;
+val fluix = <appliedenergistics2:item.ItemMultiMaterial:7>;
+val tiring = <gregtech:gt.meta.ring:220>;
+val tiscrew = <gregtech:gt.meta.screw:220>;
+val tirod = <gregtech:gt.meta.stick:220>;
+val tifoil = <gregtech:gt.meta.foil:220>;
+val ticasing = <gregtech:gt.meta.casingSmall:220>;
+val alcable = <gregtech:gt.multitileentity:29016>;
+val qglass = <appliedenergistics2:tile.BlockQuartzGlass>;
+val redcab = <gregtech:gt.meta.wireFine:8660>;
+val logic = <appliedenergistics2:item.ItemMultiMaterial:22>;
+val engin = <appliedenergistics2:item.ItemMultiMaterial:24>;
+val calc = <appliedenergistics2:item.ItemMultiMaterial:24>;
+val certus = <appliedenergistics2:item.ItemMultiMaterial>;
+val ecertus = <appliedenergistics2:item.ItemMultiMaterial:1>;
+val hcertus = <appliedenergistics2:item.ItemMultiMaterial:10>;
 
 /**Templates Starts
 var x = [] as IItemStack[];
 for i, x in x { }
 recipes.addShapeless(,[]);
-recipes.addShaped(,[[],[],[]]);
+recipes.addShaped(,
+[[],
+[],
+[]]);
 MTUtilsGT.removeAllRecipes("gt.recipe.",);
 MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
 [],
@@ -52,11 +71,31 @@ recipes.addShaped(<appliedenergistics2:item.ToolCertusQuartzWrench>,
 [<ore:itemCertusQuartz>,null,<ore:itemCertusQuartz>]]);
  
 //baocengxianlan
- recipes.addShapeless(<appliedenergistics2:item.ItemMultiPart:36>, [<gregtech:gt.meta.foil:8218>,<appliedenergistics2:item.ItemMultiPart:16>]);
-//zhimixianlan 
-MTUtilsGT.removeAllRecipes("gt.recipe.press",<appliedenergistics2:item.ItemMultiPart:76>);
-MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 16, 0, [10000], 
-[<appliedenergistics2:item.ItemMultiPart:36>*2,<gregtech:gt.multiitem.technological:30101>,<gregtech:gt.meta.foil:8709>],
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:36>);
+MTUtilsGT.addCustomRecipe("gt.recipe.laminator", false, 32, 64, 0, [10000],
+[fcable,<gregtech:gt.meta.foil:8218>*2],
+[null],[null],[<appliedenergistics2:item.ItemMultiPart:36>]);
+
+//zhimixianlan
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:76>);
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<appliedenergistics2:item.ItemMultiPart:76>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 64, 0, [10000],
+[<appliedenergistics2:item.ItemMultiPart:36>*3,<gregtech:gt.multiitem.technological:30101>,<gregtech:gt.meta.foil:8709>,<gregtech:gt.meta.foil:8660>],
+[null],[null],[<appliedenergistics2:item.ItemMultiPart:76>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 64, 0, [10000],
+[<appliedenergistics2:item.ItemMultiPart:36>*3,<gregtech:gt.multiitem.technological:30102>,<gregtech:gt.meta.foil:8709>,<gregtech:gt.meta.foil:8660>],
+[null],[null],[<appliedenergistics2:item.ItemMultiPart:76>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 64, 0, [10000],
+[<appliedenergistics2:item.ItemMultiPart:36>*3,<gregtech:gt.multiitem.technological:30103>,<gregtech:gt.meta.foil:8709>,<gregtech:gt.meta.foil:8660>],
+[null],[null],[<appliedenergistics2:item.ItemMultiPart:76>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 64, 0, [10000],
+[<appliedenergistics2:item.ItemMultiPart:36>*3,<gregtech:gt.multiitem.technological:30104>,<gregtech:gt.meta.foil:8709>,<gregtech:gt.meta.foil:8660>],
+[null],[null],[<appliedenergistics2:item.ItemMultiPart:76>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 64, 0, [10000],
+[<appliedenergistics2:item.ItemMultiPart:36>*3,<gregtech:gt.multiitem.technological:30105>,<gregtech:gt.meta.foil:8709>,<gregtech:gt.meta.foil:8660>],
+[null],[null],[<appliedenergistics2:item.ItemMultiPart:76>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 64, 0, [10000],
+[<appliedenergistics2:item.ItemMultiPart:36>*3,<gregtech:gt.multiitem.technological:30106>,<gregtech:gt.meta.foil:8709>,<gregtech:gt.meta.foil:8660>],
 [null],[null],[<appliedenergistics2:item.ItemMultiPart:76>]);
 
 //Quantum loop
@@ -240,3 +279,199 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1200, 100, 0, [10000],
 [<liquid:molten.redalloy>*144],
 [n],
 [a64k]);
+
+//quartz glass
+recipes.remove(<appliedenergistics2:tile.BlockQuartzGlass>);
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:140>);
+MTUtilsGT.removeAllRecipes("gt.recipe.mixer",<appliedenergistics2:item.ItemMultiPart:140>);
+MTUtilsGT.removeAllRecipes("gt.recipe.mixer",<appliedenergistics2:tile.BlockQuartzGlass>);
+
+mods.forestry.ThermionicFabricator.addCast(<appliedenergistics2:tile.BlockQuartzGlass>*8, [
+  [<gregtech:gt.meta.dustTiny:9139>,<ore:dustAnyQuartz>,<ore:dustAnyQuartz>],
+  [<ore:dustAnyQuartz>,<ore:dustAnyQuartz>,<ore:dustAnyQuartz>],
+  [<ore:dustAnyQuartz>,<ore:dustAnyQuartz>,<ore:dustAnyQuartz>]], 8000, <gregtech:gt.multiitem.technological:10201>);
+
+for item in <ore:dustAnyQuartz>.items {
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
+[<gregapi:gt.integrated_circuit:1>*0,<gregtech:gt.multiitem.technological:10214>*8,item*4,<gregtech:gt.meta.dustTiny:9139>],
+[<liquid:glass>*8000],
+[n],
+[<appliedenergistics2:tile.BlockQuartzGlass>*8]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
+[<gregapi:gt.integrated_circuit:1>*0,<gregtech:gt.multiitem.technological:10207>*0,item*4,<gregtech:gt.meta.dustTiny:9139>],
+[<liquid:glass>*8000],
+[n],
+[<appliedenergistics2:item.ItemMultiPart:140>*4]);
+}
+
+//fluix pearl
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<appliedenergistics2:item.ItemMultiMaterial:9>);
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:9>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 144, 0, [10000],
+[<gregapi:gt.integrated_circuit:1>*0,<minecraft:ender_pearl>,<appliedenergistics2:item.ItemMultiMaterial:8>*6],
+[<liquid:molten.redalloy>*144],
+[n],
+[<appliedenergistics2:item.ItemMultiMaterial:9>]);
+
+//fluix cable
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<appliedenergistics2:item.ItemMultiPart:16>);
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:16>);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 144, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:12>*2,<appliedenergistics2:item.ItemMultiPart:140>,<gregtech:gt.multitileentity:29000>],
+[n],
+[n],
+[fcable*4]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 144, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:7>*2,<appliedenergistics2:item.ItemMultiPart:140>,<gregtech:gt.multitileentity:29000>],
+[n],
+[n],
+[fcable*4]);
+
+//wireless
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:41>);
+recipes.addShaped(<appliedenergistics2:item.ItemMultiMaterial:41>,
+[[n,Screwdriver,n],
+[tiscrew,<appliedenergistics2:item.ItemMultiMaterial:9>,tiring],
+[<appliedenergistics2:item.ItemMultiPart:140>,<gregtech:gt.multiitem.technological:12145>,<appliedenergistics2:item.ItemMultiPart:140>]]);
+
+//storage casing
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:39>);
+recipes.addShaped(<appliedenergistics2:item.ItemMultiMaterial:39>,
+[[qglass,Screwdriver,qglass],
+[ticasing,n,ticasing],
+[redcab,ticasing,redcab]]);
+
+//wireless terminal
+recipes.remove(<appliedenergistics2:item.ToolWirelessTerminal>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 400, 0, [10000],
+[ticasing*4,<appliedenergistics2:item.ItemMultiPart:380>,<appliedenergistics2:item.ItemMultiMaterial:41>,<appliedenergistics2:tile.BlockDenseEnergyCell>,alcable*2],
+[n],
+[n],
+[<appliedenergistics2:item.ToolWirelessTerminal>]);
+
+//ram card
+recipes.remove(<appliedenergistics2:item.ToolMemoryCard>);
+recipes.addShapeless(<appliedenergistics2:item.ToolMemoryCard>,[<ore:RAM256M>]);
+
+//id card
+recipes.remove(<appliedenergistics2:item.ToolBiometricCard>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 400, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:24>,ticasing*2,redcab*4],
+[n],
+[n],
+[<appliedenergistics2:item.ToolBiometricCard>]);
+
+//empty template
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:52>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200, 0, [10000],
+[qglass*2,certus,ticasing*4],
+[<liquid:molten.lumium>*432],
+[n],
+[<appliedenergistics2:item.ItemMultiMaterial:52>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200, 0, [10000],
+[qglass*2,ecertus,ticasing*4],
+[<liquid:molten.lumium>*432],
+[n],
+[<appliedenergistics2:item.ItemMultiMaterial:52>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200, 0, [10000],
+[qglass*2,hcertus,ticasing*4],
+[<liquid:molten.lumium>*432],
+[n],
+[<appliedenergistics2:item.ItemMultiMaterial:52>]);
+
+//normal card
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:25>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200, 0, [10000],
+[calc,redcab*4,ticasing*4,<IC2:itemCasing:3>*2],
+[n],
+[n],
+[<appliedenergistics2:item.ItemMultiMaterial:25>]);
+
+//adv card
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:28>);
+for plate in <ore:plateGemAnyDiamond>.items {
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200, 0, [10000],
+[calc,redcab*4,ticasing*4,plate*2],
+[n],
+[n],
+[<appliedenergistics2:item.ItemMultiMaterial:28>]);
+}
+
+//destory and form cores
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:43>);
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:44>);
+for i in <ore:itemCertusQuartz>.items {
+MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 32, 100, 0, [10000],
+[i,<appliedenergistics2:item.ItemMultiMaterial:8>,logic],
+[n],
+[n],
+[<appliedenergistics2:item.ItemMultiMaterial:43>]);
+}
+
+MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 32, 100, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:11>,<appliedenergistics2:item.ItemMultiMaterial:8>,logic],
+[n],
+[n],
+[<appliedenergistics2:item.ItemMultiMaterial:44>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 32, 100, 0, [10000],
+[<minecraft:quartz>,<appliedenergistics2:item.ItemMultiMaterial:8>,logic],
+[n],
+[n],
+[<appliedenergistics2:item.ItemMultiMaterial:44>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 32, 100, 0, [10000],
+[<tfctech:item.Quartz>,<appliedenergistics2:item.ItemMultiMaterial:8>,logic],
+[n],
+[n],
+[<appliedenergistics2:item.ItemMultiMaterial:44>]);
+
+//dense energy
+recipes.remove(<appliedenergistics2:tile.BlockDenseEnergyCell>);
+recipes.addShaped(<appliedenergistics2:tile.BlockDenseEnergyCell>,
+[[<appliedenergistics2:tile.BlockEnergyCell>,<appliedenergistics2:tile.BlockEnergyCell>,<appliedenergistics2:tile.BlockEnergyCell>],
+[<appliedenergistics2:tile.BlockEnergyCell>,<gregtech:gt.multitileentity:10043>,<appliedenergistics2:tile.BlockEnergyCell>],
+[<appliedenergistics2:tile.BlockEnergyCell>,<appliedenergistics2:tile.BlockEnergyCell>,<appliedenergistics2:tile.BlockEnergyCell>]]);
+
+recipes.addShaped(<appliedenergistics2:tile.BlockDenseEnergyCell>,
+[[<appliedenergistics2:item.ItemMultiMaterial>],
+[<gregtech:gt.multitileentity:14044>],
+[<appliedenergistics2:item.ItemMultiMaterial>]]);
+
+//matter compresser
+recipes.remove(<appliedenergistics2:tile.BlockCondenser>);
+recipes.addShaped(<appliedenergistics2:tile.BlockCondenser>,
+[[<gregtech:gt.meta.spring:220>,<gregtech:gt.meta.plateQuintuple:220>,<gregtech:gt.multitileentity:32709>],
+[<gregtech:gt.meta.spring:220>,<gregtech:gt.meta.plateQuintuple:220>,Wrench],
+[<gregtech:gt.meta.spring:220>,<gregtech:gt.meta.plateQuintuple:220>,<gregtech:gt.meta.machine.double:220>]]);
+
+//p2p
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:460>);
+MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 32, 100, 0, [10000],
+[fluix*3,<appliedenergistics2:item.ItemMultiMaterial:8>,engin],
+[n],
+[n],
+[<appliedenergistics2:item.ItemMultiPart:460>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 32, 100, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:12>*3,<appliedenergistics2:item.ItemMultiMaterial:8>,engin],
+[n],
+[n],
+[<appliedenergistics2:item.ItemMultiPart:460>]);
+
+//craft unit
+recipes.remove(<appliedenergistics2:tile.BlockCraftingUnit>);
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200, 0, [10000],
+[logic,calc*2,fcable*2,<moegadd:EpoxyPlate>*6],
+[n],
+[n],
+[<appliedenergistics2:tile.BlockCraftingUnit>]);
+
+//crystal faster
+recipes.remove(<appliedenergistics2:tile.BlockQuartzGrowthAccelerator>);
+recipes.addShaped(<appliedenergistics2:tile.BlockQuartzGrowthAccelerator>,
+[[<gregtech:gt.multitileentity:28903>,alcable,<gregtech:gt.multitileentity:28903>],
+[fcable,<appliedenergistics2:tile.BlockFluix>,qglass],
+[<gregtech:gt.multitileentity:28903>,alcable,<gregtech:gt.multitileentity:28903>]]);

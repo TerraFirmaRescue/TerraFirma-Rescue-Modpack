@@ -179,7 +179,7 @@ mods.forestry.ThermionicFabricator.addCast(<gregtech:gt.meta.plateGem:8001>*9, [
 //industrial
 for dust in <ore:dustAnyCalcite>.items {
 MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
-[<gregtech:gt.multiitem.technological:10214>*0,dust,<gregtech:gt.meta.dustTiny:9139>],
+[<gregapi:gt.integrated_circuit>*0,<gregtech:gt.multiitem.technological:10214>*0,dust,<gregtech:gt.meta.dustTiny:9139>],
 [<liquid:glass>*9000],
 [n],
 [<minecraft:glass>*9]);
