@@ -59,6 +59,25 @@ mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <Railcraft:part.plate:2> , 958,     
 
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plate:8660> ,1100, 0.35);
 
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:8661>, 1716, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:8610>, 1057, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:290> , 1057, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:8643>, 1711, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:8630>, 1746, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:830> , 544,  0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:500> , 505,  0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:820> , 600,  0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:8636>, 1643, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:240> , 1880, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:8620>, 860,  0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:8612>, 736,  0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:270> , 1468, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:320> , 911,  0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:280> , 1528, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:130> , 633,  0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:790> , 1037, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateTriple:470> , 934,  0.35);
+
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateQuadruple:8661>, 1716, 0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateQuadruple:8610>, 1057, 0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateQuadruple:290> , 1057, 0.35);
@@ -96,7 +115,6 @@ mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateQuintuple:280
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateQuintuple:130> , 633,  0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateQuintuple:790> , 1037, 0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plateQuintuple:470> , 934,  0.35);
-
 
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.stick:8661>, 1716, 0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.stick:8610>, 1057, 0.35);
