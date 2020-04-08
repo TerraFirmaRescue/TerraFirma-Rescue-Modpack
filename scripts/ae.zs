@@ -120,7 +120,7 @@ recipes.addShaped(<appliedenergistics2:tile.BlockEnergyCell>,
 [<appliedenergistics2:item.ItemMultiMaterial>]]);
 
 recipes.remove(<appliedenergistics2:tile.BlockInscriber>);
-recipes.remove(<ae2stuff:Inscriber>);
+//recipes.remove(<ae2stuff:Inscriber>);
 
 recipes.remove(<appliedenergistics2:tile.BlockController>);
 recipes.addShaped(<appliedenergistics2:tile.BlockController>,
