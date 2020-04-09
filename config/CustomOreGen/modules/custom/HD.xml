@@ -20,7 +20,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Veins name='PtHintVein'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
@@ -51,7 +51,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Veins name='UHintVein'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
@@ -79,7 +79,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Veins name='ThHintVein'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
@@ -107,7 +107,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Veins name='TritaniumHintVein'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
@@ -138,7 +138,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
         </Cloud>
@@ -167,7 +167,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
         </Cloud>
@@ -193,7 +193,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
         </Cloud>
@@ -214,7 +214,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
         </Cloud>
@@ -237,7 +237,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
         </Cloud>
@@ -260,7 +260,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 4 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
         </Cloud>
@@ -283,7 +283,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
         </Cloud>
@@ -306,7 +306,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
         </Cloud>
@@ -329,7 +329,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
         </Cloud>
@@ -355,7 +355,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
         </Cloud>
@@ -381,7 +381,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
         </Cloud>
@@ -398,7 +398,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
         </Cloud>
@@ -421,7 +421,7 @@
             <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
             <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
             <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
             <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
         </Cloud>
@@ -450,13 +450,20 @@
                 <Setting name='DistributionFrequency' avg=':= 0.2 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
                 <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
                 <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
-                <Setting name='CloudHeight' avg=':= 60' range=':= 5' type='normal'/>
+                <Setting name='CloudHeight' avg=':= 20' range=':= 5' type='normal'/>
                 <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
                 <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
                 <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-                <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+                <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
                 <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
                 <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                <Veins name='AdHintVein'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+                    <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                          nbt='{m:1740, id:"gt.MetaBlockTileEntity"}'
+                          weight='1'/>
+                    <Setting name='MotherlodeHeight' avg=':= 70' range=':= 50'/>
+                    <Setting name='MotherlodeFrequency' avg=':= 3 * _default_' range=':= _default_'/>
+                </Veins>
             </Cloud>
 
             <Cloud name='KeCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
@@ -467,13 +474,20 @@
                 <Setting name='DistributionFrequency' avg=':= 0.5 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
                 <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
                 <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
-                <Setting name='CloudHeight' avg=':= 60' range=':= 5' type='normal'/>
+                <Setting name='CloudHeight' avg=':= 50' range=':= 5' type='normal'/>
                 <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
                 <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
                 <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-                <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+                <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
                 <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
                 <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                <Veins name='AdHintVein'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+                    <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                              nbt='{m:1260, id:"gt.MetaBlockTileEntity"}'
+                              weight='1'/>
+                    <Setting name='MotherlodeHeight' avg=':= 70' range=':= 50'/>
+                    <Setting name='MotherlodeFrequency' avg=':= 3 * _default_' range=':= _default_'/>
+                </Veins>
             </Cloud>
 
             <Cloud name='AdCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
@@ -484,13 +498,20 @@
                 <Setting name='DistributionFrequency' avg=':= 0.05 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
                 <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
                 <Setting name='CloudThickness' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
-                <Setting name='CloudHeight' avg=':= 60' range=':= 5' type='normal'/>
+                <Setting name='CloudHeight' avg=':= 30' range=':= 5' type='normal'/>
                 <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
                 <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
                 <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
-                <Setting name='OreDensity' avg=':= 4 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
+                <Setting name='OreDensity' avg=':= 2 * _default_ ' range=':= 1.2 * _default_ ' type='normal' scaleTo='base' />
                 <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
                 <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+                <Veins name='AdHintVein'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
+                    <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
+                              nbt='{m:8784, id:"gt.MetaBlockTileEntity"}'
+                              weight='1'/>
+                    <Setting name='MotherlodeHeight' avg=':= 70' range=':= 50'/>
+                    <Setting name='MotherlodeFrequency' avg=':= 3 * _default_' range=':= _default_'/>
+                </Veins>
             </Cloud>
 
     </IfCondition>
