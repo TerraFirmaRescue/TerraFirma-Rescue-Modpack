@@ -1,6 +1,5 @@
-/** Import Starts */
-import mods.MTUtilsGT;
 import minetweaker.item.IItemStack;
+import mods.MTUtilsGT;
 import minetweaker.item.IIngredient;
 
 /** Variables Starts */
@@ -21,7 +20,7 @@ val fw = <liquid:freshwater>;
 /**Templates Starts
 var x = [] as IItemStack[];
 for i, x in x { }
-recipes.addShapless(,[]);
+recipes.addShapeless(,[]);
 recipes.addShaped(,[[],[],[]]);
 MTUtilsGT.removeAllRecipes("gt.recipe.",);
 MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
@@ -66,8 +65,6 @@ recipes.remove(<gregtech:gt.multitileentity:32049>);
 recipes.remove(<gregtech:gt.multitileentity:32068>);
 recipes.remove(<gregtech:gt.multitileentity:32069>);
 
-
-//remove gt machine hulls by hand
 recipes.remove(<gregtech:gt.meta.machine:8630>);
 recipes.remove(<gregtech:gt.meta.machine:820>);
 recipes.remove(<gregtech:gt.meta.machine:8643>);

@@ -57,6 +57,8 @@ game.setLocalization("gui.plans.gtfoil", "GT Foil");
 game.setLocalization("gui.plans.gtspring", "GT Spring");
 game.setLocalization("gui.plans.gtspringsmall", "GT Small Spring");
 game.setLocalization("gui.plans.gtplatecurved", "GT Curved Plate");
+game.setLocalization("gui.plans.gtchain", "GT Chain");
+
 
 
 //localization ends -----
@@ -72,6 +74,7 @@ mods.Terrafirmacraft.Anvil.addPlanRecipe("gtfoil", 1, 1, 20);
 mods.Terrafirmacraft.Anvil.addPlanRecipe("gtspring", 1, 1, 32);
 mods.Terrafirmacraft.Anvil.addPlanRecipe("gtspringsmall", 1, 1, 32);
 mods.Terrafirmacraft.Anvil.addPlanRecipe("gtplatecurved", 2, 2, 2);
+mods.Terrafirmacraft.Anvil.addPlanRecipe("gtchain", 8, 8, 8);
 
 
 //plan add ends -------

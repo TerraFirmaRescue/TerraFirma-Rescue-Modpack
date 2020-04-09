@@ -253,16 +253,6 @@ mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:130>,  <gregtec
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:790>,  <gregtech:gt.meta.stick:790>,   "gtring",5);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.ring:470>,  <gregtech:gt.meta.stick:470>,   "gtring",5);
 
-//GT machine hulls
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:8630>, <gregtech:gt.meta.plateQuadruple:8630>, <gregtech:gt.meta.plateQuadruple:8630>, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:8610>, <gregtech:gt.meta.plateQuadruple:8610>, <gregtech:gt.meta.plateQuadruple:8610>, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:8643>, <gregtech:gt.meta.plateQuadruple:8643>, <gregtech:gt.meta.plateQuadruple:8643>, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:820>, <gregtech:gt.meta.plateQuadruple:820>, <gregtech:gt.meta.plateQuadruple:820>, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:290>, <gregtech:gt.meta.plateQuadruple:290>, <gregtech:gt.meta.plateQuadruple:290>, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:8661>, <gregtech:gt.meta.plateQuadruple:8661>, <gregtech:gt.meta.plateQuadruple:8661>, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:8636>, <gregtech:gt.meta.plateQuadruple:8636>, <gregtech:gt.meta.plateQuadruple:8636>, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:830>, <gregtech:gt.meta.plateQuadruple:830>, <gregtech:gt.meta.plateQuadruple:830>, "gtmachinehull", 5);
-
 //FR machine hulls
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<Forestry:sturdyMachine>, <gregtech:gt.meta.plateQuadruple:8610>, <gregtech:gt.meta.plateQuadruple:8610>, "frmachinehull", 5);
 
