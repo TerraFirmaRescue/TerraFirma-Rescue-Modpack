@@ -30,9 +30,15 @@ MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
 
 /** Scripts Starts */
 
-//TFC heating system
+//TFC ANVIL RECIPES
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.plateCurved:8660>,  <gregtech:gt.meta.plate:8660> ,   "gtplatecurved",5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.foil:8660>, <gregtech:gt.meta.plate:8660>,  "gtfoil",5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(<gregtech:gt.meta.stickLong:8660>, <gregtech:gt.meta.stick:8660>, <gregtech:gt.meta.stick:8660>, 5);
 
-val uk = <terrafirmacraft:item.Unknown Ingot>;
+//FR machine hulls
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<Forestry:sturdyMachine>, <gregtech:gt.meta.plateQuadruple:8610>, <gregtech:gt.meta.plateQuadruple:8610>, "frmachinehull", 5);
 
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk,<ore:stickLongRedAlloy>, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plate:8660> ,800, 0.35);
+//Cauldron
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<minecraft:cauldron>, <gregtech:gt.meta.plateQuadruple:8643>, <gregtech:gt.meta.plateTriple:8643>, "bucket", 5);
+
+

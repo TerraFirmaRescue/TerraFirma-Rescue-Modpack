@@ -147,24 +147,6 @@ val plateBro = <terrafirmacraft:item.Bronze Sheet>;
 val plateFe  = <terrafirmacraft:item.Wrought Iron Sheet>;
 val platePb  = <terrafirmacraft:item.Lead Sheet>;
 
-mods.railcraft.Rolling.removeRecipe(<ore:plateCopper>);
-mods.railcraft.Rolling.removeRecipe(plateSt );
-mods.railcraft.Rolling.removeRecipe(plateFe );
-mods.railcraft.Rolling.removeRecipe(platePb );
-
-mods.railcraft.Rolling.addShapeless(plateCu*2, [ingotCu, ingotCu, ingotCu]);
-mods.railcraft.Rolling.addShapeless(plateBiB*2, [ingotBiB, ingotBiB, ingotBiB]);
-mods.railcraft.Rolling.addShapeless(plateBlB*2, [ingotBlB, ingotBlB, ingotBlB]);
-mods.railcraft.Rolling.addShapeless(plateBSt*2, [ingotBSt, ingotBSt, ingotBSt]);
-mods.railcraft.Rolling.addShapeless(plateSt*2, [ingotSt, ingotSt, ingotSt]);
-mods.railcraft.Rolling.addShapeless(plateEl*2, [ingotEl, ingotEl, ingotEl]);
-mods.railcraft.Rolling.addShapeless(plateCup*2, [ingotCup, ingotCup, ingotCup]);
-mods.railcraft.Rolling.addShapeless(plateTin*2, [ingotTin, ingotTin, ingotTin]);
-mods.railcraft.Rolling.addShapeless(plateBro*2, [ingotBro, ingotBro, ingotBro]);
-mods.railcraft.Rolling.addShapeless(plateFe*2, [ingotFe, ingotFe, ingotFe]);
-mods.railcraft.Rolling.addShapeless(platePb*2, [ingotPb, ingotPb, ingotPb]);
-
-
 //RC blast furnace recipes
 mods.railcraft.BlastFurnace.addFuel(<terrafirmacraft:item.coal>);
 mods.railcraft.BlastFurnace.addFuel(<terrafirmacraft:item.coal:1>);

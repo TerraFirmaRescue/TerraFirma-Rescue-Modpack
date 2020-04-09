@@ -59,8 +59,6 @@ game.setLocalization("gui.plans.gtspringsmall", "GT Small Spring");
 game.setLocalization("gui.plans.gtplatecurved", "GT Curved Plate");
 game.setLocalization("gui.plans.gtchain", "GT Chain");
 
-
-
 //localization ends -----
 
 //Plan add starts ------

@@ -16,6 +16,7 @@ val n = null;
 val w = <liquid:water>;
 val dw = <liquid:ic2distilledwater>;
 val fw = <liquid:freshwater>;
+val uk = <terrafirmacraft:item.Unknown Ingot>;
 
 /**Templates Starts
 var x = [] as IItemStack[];
@@ -29,6 +30,13 @@ MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
 [],
 []);
 **/
+
+//remove original rolling machine recipes
+mods.railcraft.Rolling.removeRecipe(<ore:plateCopper>);
+mods.railcraft.Rolling.removeRecipe(<terrafirmacraft:item.Steel Sheet>);
+mods.railcraft.Rolling.removeRecipe(<terrafirmacraft:item.Wrought Iron Sheet>);
+mods.railcraft.Rolling.removeRecipe(<terrafirmacraft:item.Lead Sheet>);
+mods.railcraft.Rolling.removeRecipe(<Railcraft:part.plate:2>);
 
 //remove gt machine hulls by hand
 var machinehulls = [
@@ -713,7 +721,7 @@ var plate = [
 <gregtech:gt.meta.plate:220>,
 <gregtech:gt.meta.plate:8636>,
 <gregtech:gt.meta.plate:8665>,
-<gregtech:gt.meta.plate:8667>
+<Railcraft:part.plate:2>
 ] as IItemStack[];
 
 //Plate-2
@@ -909,7 +917,7 @@ var stickLong = [
 ] as IItemStack[];
 
 //Primitive Production of Machine Hulls 1, 2, and 4.
-var aMachine1 = [
+var machine1 = [
 //tfc
 <gregtech:gt.meta.machine:820>,
 <gregtech:gt.meta.machine:8630>,
@@ -940,7 +948,7 @@ var aMachine1 = [
 <gregtech:gt.meta.machine:8667>
 ] as IItemStack[];
 
-var aMachine2 = [
+var machine2 = [
 //tfc
 <gregtech:gt.meta.machine.double:820>,
 <gregtech:gt.meta.machine.double:8630>,
@@ -971,7 +979,7 @@ var aMachine2 = [
 <gregtech:gt.meta.machine.double:8667>
 ] as IItemStack[];
 
-var aMachine4 = [
+var machine4 = [
 //tfc
 <gregtech:gt.meta.machine.quadruple:820>,
 <gregtech:gt.meta.machine.quadruple:8630>,
@@ -1323,14 +1331,143 @@ var casingSmall = [
 <gregtech:gt.meta.casingSmall:8667>
 ] as IItemStack[];
 
-/*
-//GT machine hulls
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:8630>, <gregtech:gt.meta.plateQuadruple:8630>, <gregtech:gt.meta.plateQuadruple:8630>, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:8610>, <gregtech:gt.meta.plateQuadruple:8610>, <gregtech:gt.meta.plateQuadruple:8610>, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:8643>, <gregtech:gt.meta.plateQuadruple:8643>, <gregtech:gt.meta.plateQuadruple:8643>, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:820>, <gregtech:gt.meta.plateQuadruple:820>, <gregtech:gt.meta.plateQuadruple:820>, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:290>, <gregtech:gt.meta.plateQuadruple:290>, <gregtech:gt.meta.plateQuadruple:290>, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:8661>, <gregtech:gt.meta.plateQuadruple:8661>, <gregtech:gt.meta.plateQuadruple:8661>, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:8636>, <gregtech:gt.meta.plateQuadruple:8636>, <gregtech:gt.meta.plateQuadruple:8636>, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.machine:830>, <gregtech:gt.meta.plateQuadruple:830>, <gregtech:gt.meta.plateQuadruple:830>, "gtmachinehull", 5);
-*/
+//gtOnly plates and ingots
+var ingotGt = [
+<gregtech:gt.meta.ingot:8661>,
+<gregtech:gt.meta.ingot:320>,
+<gregtech:gt.meta.ingot:270>,
+<gregtech:gt.meta.ingot:8700>,
+<gregtech:gt.meta.ingot:130>,
+<gregtech:gt.meta.ingot:220>,
+<gregtech:gt.meta.ingot:8636>,
+<gregtech:gt.meta.ingot:8665>,
+<gregtech:gt.meta.ingot:8667>,
+] as IItemStack[];
+
+var ingotDoubleGt = [
+<gregtech:gt.meta.ingotDouble:8661>,
+<gregtech:gt.meta.ingotDouble:320>,
+<gregtech:gt.meta.ingotDouble:270>,
+<gregtech:gt.meta.ingotDouble:8700>,
+<gregtech:gt.meta.ingotDouble:130>,
+<gregtech:gt.meta.ingotDouble:220>,
+<gregtech:gt.meta.ingotDouble:8636>,
+<gregtech:gt.meta.ingotDouble:8665>,
+<gregtech:gt.meta.ingotDouble:8667>
+] as IItemStack[];
+
+var plateGt = [
+<gregtech:gt.meta.plate:8661>,
+<gregtech:gt.meta.plate:320>,
+<gregtech:gt.meta.plate:270>,
+<gregtech:gt.meta.plate:8700>,
+<gregtech:gt.meta.plate:130>,
+<gregtech:gt.meta.plate:220>,
+<gregtech:gt.meta.plate:8636>,
+<gregtech:gt.meta.plate:8665>,
+<Railcraft:part.plate:2>
+] as IItemStack[];
+
+var plateDoubleGt = [
+<gregtech:gt.meta.plateDouble:8661>,
+<gregtech:gt.meta.plateDouble:320>,
+<gregtech:gt.meta.plateDouble:270>,
+<gregtech:gt.meta.plateDouble:8700>,
+<gregtech:gt.meta.plateDouble:130>,
+<gregtech:gt.meta.plateDouble:220>,
+<gregtech:gt.meta.plateDouble:8636>,
+<gregtech:gt.meta.plateDouble:8665>,
+<gregtech:gt.meta.plateDouble:8667>
+] as IItemStack[];
+
+for i, aingotGt in ingotGt {
+var aingot2Gt = ingotDoubleGt[i];
+var aplateGt = plateGt[i];
+var aplate2Gt = plateDoubleGt[i];
+
+//HEATING
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingotGt, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot2Gt, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplateGt, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate2Gt, 800, 0.35);
+//ANVIL AND WELDING
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot2Gt, aingotGt, aingotGt, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate2Gt, aplateGt, aplateGt, 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(aplateGt, aingot2Gt, "sheet", 5);
+
+}
+
+//Universal Parts
+for i, aingot in ingot {
+var aingot2 = ingotDouble[i];
+var aingot3 = ingotTriple[i];
+var aingot4 = ingotQuadruple[i];
+var aingot5 = ingotQuintuple[i];
+var aplate = plate[i];
+var aplate2 = plateDouble[i];
+var aplate3 = plateTriple[i];
+var aplate4 = plateQuadruple[i];
+var aplate5 = plateQuintuple[i];
+var astick = stick[i];
+var astickLong = stickLong[i];
+var aplateCurved = plateCurved[i];
+var agearGtSmall = gearGtSmall[i];
+var agearGt = gearGt[i];
+var aspringSmall = springSmall[i];
+var aspring = spring[i];
+var aring = ring[i];
+var achain = chain[i];
+var afoil = foil[i];
+var acasingSmall = casingSmall[i];
+var amachine1 = machine1[i];
+var amachine2 = machine2[i];
+var amachine4 = machine4[i];
+
+//HEATING
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot3, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot4, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot5, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate3, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate4, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate5, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, astick, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, astickLong, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplateCurved, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, agearGtSmall, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, agearGt, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aspringSmall, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aspring, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aring, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, achain, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, afoil, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, acasingSmall, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, amachine1, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, amachine2, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, amachine4, 800, 0.35);
+
+//WELDING
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot3, aingot, aingot2, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot4, aingot, aingot3, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot5, aingot, aingot4, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate3, aplate, aplate2, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate4, aplate, aplate3, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate5, aplate, aplate4, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(astickLong, astick, astick, 5);
+//ANVIL
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(amachine1, aplate4, aplate4, "gtmachinehull", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(amachine2, amachine1, amachine1, "gtmachinehull", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(amachine4, amachine2, amachine2, "gtmachinehull", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(aring, astick, "gtring", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(acasingSmall, aplate, "gtcasing", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(agearGtSmall, aplate, astick, "gtgear", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(agearGt, aplate4, astick, "gtgear", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(afoil*2, aplate, "gtfoil", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(aspring, astickLong, "gtspring", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(aspringSmall, astick, "gtspringsmall", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(aplateCurved, aplate, "gtplatecurved", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(achain, astick, astick, "gtchain", 5);
+//RC_ROLLINGMACHINE
+mods.railcraft.Rolling.addShapeless(aplate*2, [aingot, aingot, aingot]);
+
+}
+
