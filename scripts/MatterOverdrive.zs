@@ -76,25 +76,25 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 32, 0, [10000],
 //MO circuits
 recipes.remove(<mo:isolinear_circuit>);
 MTUtilsGT.removeAllRecipes("gt.recipe.laserengraver",<mo:isolinear_circuit>);
-MTUtilsGT.addCustomRecipe("gt.recipe.laserengraver", false, 16, 32, 0, [10000], 
+MTUtilsGT.addCustomRecipe("gt.recipe.laserengraver", false, 1024, 32, 0, [10000],
 [<gregtech:gt.meta.lens:8317>*0,<gregtech:gt.meta.plateDouble:260>], 
 [<mo:isolinear_circuit>]);
 
 recipes.remove(<mo:isolinear_circuit:1>);
 MTUtilsGT.removeAllRecipes("gt.recipe.laserengraver",<mo:isolinear_circuit:1>);
-MTUtilsGT.addCustomRecipe("gt.recipe.laserengraver", false, 16, 32, 0, [10000], 
+MTUtilsGT.addCustomRecipe("gt.recipe.laserengraver", false, 1024, 32, 0, [10000],
 [<gregtech:gt.meta.lens:8317>*0,<gregtech:gt.meta.plateDouble:790>], 
 [<mo:isolinear_circuit:1>]);
 
 recipes.remove(<mo:isolinear_circuit:2>);
 MTUtilsGT.removeAllRecipes("gt.recipe.laserengraver",<mo:isolinear_circuit:2>);
-MTUtilsGT.addCustomRecipe("gt.recipe.laserengraver", false, 16, 32, 0, [10000], 
+MTUtilsGT.addCustomRecipe("gt.recipe.laserengraver", false, 1024, 32, 0, [10000],
 [<gregtech:gt.meta.lens:8317>*0,<gregtech:gt.meta.plateGem:8300>], 
 [<mo:isolinear_circuit:2>]);
 
 recipes.remove(<mo:isolinear_circuit:3>);
 MTUtilsGT.removeAllRecipes("gt.recipe.laserengraver",<mo:isolinear_circuit:3>);
-MTUtilsGT.addCustomRecipe("gt.recipe.laserengraver", false, 16, 32, 0, [10000], 
+MTUtilsGT.addCustomRecipe("gt.recipe.laserengraver", false, 1024, 32, 0, [10000],
 [<gregtech:gt.meta.lens:8317>*0,<gregtech:gt.meta.plateGem:8301>], 
 [<mo:isolinear_circuit:3>]);
 
@@ -125,7 +125,6 @@ recipes.addShaped(<mo:fusion_reactor_io>,
 [<gregtech:gt.multitileentity:26442>,<mo:machine_hull>,<gregtech:gt.multitileentity:26442>],
 [null,<gregtech:gt.multitileentity:26442>,null]]);
 
-
 recipes.remove(<mo:network_flash_drive>);
 recipes.addShaped(<mo:network_flash_drive>,
 [[<gregtech:gt.multitileentity:29800>],
@@ -141,7 +140,7 @@ recipes.addShaped(<mo:pattern_drive>,
 recipes.remove(<mo:matter_analyzer>);
 recipes.addShaped(<mo:matter_analyzer>,
 [[<gregtech:gt.multiitem.technological:11005>,<gregtech:gt.multiitem.technological:11005>,<gregtech:gt.multiitem.technological:11005>],
-[<gregtech:gt.multiitem.technological:11005>,<gregtech:gt.multitileentity:20423>,<gregtech:gt.multiitem.technological:11005>],
+[<gregtech:gt.multiitem.technological:11005>,<gregtech:gt.multitileentity:17117>,<gregtech:gt.multiitem.technological:11005>],
 [<mo:me_conversion_matrix>,<mo:pattern_drive>,<mo:network_flash_drive>]]);
 
 recipes.remove(<mo:network_pipe>);
