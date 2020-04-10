@@ -1385,11 +1385,6 @@ var aingot2Gt = ingotDoubleGt[i];
 var aplateGt = plateGt[i];
 var aplate2Gt = plateDoubleGt[i];
 
-//HEATING
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingotGt, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot2Gt, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplateGt, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate2Gt, 1000, 0.35);
 //ANVIL AND WELDING
 mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot2Gt, aingotGt, aingotGt, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate2Gt, aplateGt, aplateGt, 5);
@@ -1423,34 +1418,16 @@ var amachine1 = machine1[i];
 var amachine2 = machine2[i];
 var amachine4 = machine4[i];
 
-//HEATING
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot3, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot4, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot5, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate3, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate4, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate5, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, astick, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, astickLong, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplateCurved, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, agearGtSmall, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, agearGt, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aspringSmall, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aspring, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aring, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, achain, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, afoil, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, acasingSmall, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, amachine1, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, amachine2, 1000, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, amachine4, 1000, 0.35);
-
 //WELDING
 mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot3, aingot, aingot2, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot4, aingot, aingot3, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot4, aingot2, aingot2, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot5, aingot2, aingot3, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot5, aingot, aingot4, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate3, aplate, aplate2, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate4, aplate, aplate3, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate4, aplate2, aplate2, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate5, aplate2, aplate3, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate5, aplate, aplate4, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(astickLong, astick, astick, 5);
 //ANVIL
@@ -1468,6 +1445,30 @@ mods.Terrafirmacraft.Anvil.addAnvilRecipe(aplateCurved, aplate, "gtplatecurved",
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(achain, astick, astick, "gtchain", 5);
 //RC_ROLLINGMACHINE
 mods.railcraft.Rolling.addShapeless(aplate*2, [aingot, aingot, aingot]);
-
+//LASER WELDING
+MTUtilsGT.removeAllRecipes("gt.recipe.welder",aplate2);
+MTUtilsGT.removeAllRecipes("gt.recipe.welder",aplate3);
+MTUtilsGT.removeAllRecipes("gt.recipe.welder",aplate4);
+MTUtilsGT.removeAllRecipes("gt.recipe.welder",aplate5);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 128, 0, [10000],
+[aplate*2,<gregapi:gt.integrated_circuit:2>*0],
+[n],
+[n],
+[aplate2]);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 192, 0, [10000],
+[aplate*3,<gregapi:gt.integrated_circuit:3>*0],
+[n],
+[n],
+[aplate3]);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 256, 0, [10000],
+[aplate*4,<gregapi:gt.integrated_circuit:4>*0],
+[n],
+[n],
+[aplate4]);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 320, 0, [10000],
+[aplate*5,<gregapi:gt.integrated_circuit:5>*0],
+[n],
+[n],
+[aplate5]);
 }
 
