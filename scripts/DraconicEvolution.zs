@@ -39,14 +39,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 256, 320, 0, [10000],
 [null],
 [<minecraft:dragon_egg>]);
 
-//draconic evolution
-MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor", <gregtech:gt.meta.dustTiny:8791>);
-MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 4096, 1024, 200000000, [10000],
-[<gregtech:gt.meta.dustTiny:1520>],
-[<liquid:molten.draconium>*144], 
-[<liquid:molten.draconiumawakened>*144],
-[<gregtech:gt.meta.dustTiny:8791>]);
-
 //flow gate
 recipes.remove(<DraconicEvolution:flowGate:6>);
 recipes.addShaped(<DraconicEvolution:flowGate:6>,
@@ -60,14 +52,6 @@ recipes.addShaped(<DraconicEvolution:reactorStabilizer>,
 [[<DraconicEvolution:reactorCraftingPart:4>,<gregtech:gt.multitileentity:18201>,<gregtech:gt.multitileentity:18202>],
 [<DraconicEvolution:draconiumEnergyCore:1>,<DraconicEvolution:reactorCraftingPart>,<DraconicEvolution:chaoticCore>],
 [<DraconicEvolution:reactorCraftingPart:3>,<gregtech:gt.meta.machine.quadruple:8792>,<gregtech:gt.multitileentity:18200>]]);
-
-//Chaos fragment
-MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor", <DraconicEvolution:chaosFragment>);
-MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 4096, 1024, 300000000, [10000],
-[<gregtech:gt.meta.dustTiny:1520>],
-[<liquid:molten.draconiumawakened>*10],
-[<liquid:oxygen>*100],
-[<DraconicEvolution:chaosFragment>]);
 
 //teleporter stand
 recipes.remove(<DraconicEvolution:teleporterStand>);

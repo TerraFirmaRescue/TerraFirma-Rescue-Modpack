@@ -176,13 +176,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 256 ,0,[10000],
 [null],
 [<libVulpes:libVulpescoil0:2>]);
 
-//double-Li
-MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 265, 100000000,[10000],
-[<gregapi:gt.integrated_circuit:2>*0],
-[<liquid:molten.lithium>*144,<liquid:deuterium>*1000],
-[<liquid:hydrogen>*100],
-[<libVulpes:libVulpesproductdust>]);
-
 //motors
 recipes.remove(<libVulpes:tile.motor>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 256 ,0,[10000],

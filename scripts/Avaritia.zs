@@ -64,13 +64,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 4096, 100, 0, [10000],
 <gregtech:gt.multiitem.technological:30404>,<gregtech:gt.multiitem.technological:30403>,<minecraft:nether_star>*2],
 [<Avaritia:Resource:1>]);
 
-MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor",<Avaritia:Resource:2>);
-MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, -8192, 400, 24892415664, [10000],
-[null],
-[<liquid:molten.naquadria>*10,<liquid:molten.draconiumawakened>*10],
-[<liquid:water>*10],
-[<Avaritia:Resource:2>]);
-
 mods.avaritia.ExtremeCrafting.remove(<Avaritia:Neutron_Collector>);
 mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Neutron_Collector>,
  [[null,null,null,null,null,null,null,null,null],
@@ -151,12 +144,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 4096, 100, 0, [10000],
 [<Avaritia:Resource>,<gregtech:gt.multiitem.technological:30402>,
 <gregtech:gt.multiitem.technological:30404>,<gregtech:gt.multiitem.technological:30403>,<minecraft:nether_star>*2],
 [<Avaritia:Resource:1>]);
-
-MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 8192, 200, 400000000, [10000],
-[<gregapi:gt.integrated_circuit:24>*0],
-[<liquid:molten.naquadria>*10,<liquid:molten.draconiumawakened>*10],
-[<liquid:helium>*10],
-[<Avaritia:Resource:2>]);
 
 mods.avaritia.ExtremeCrafting.remove(<Avaritia:Neutron_Collector>);
 mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Neutron_Collector>,

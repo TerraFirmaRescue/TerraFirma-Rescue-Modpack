@@ -278,20 +278,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 2048, 1200,0,[10000],
 [<liquid:molten.lithium6>*10],
 [null]);
 
-MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor",<gregtech:gt.meta.dust:30>);
-MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 265, 100000000,[10000],
-[<gregtech:gt.meta.dust:30>],
-[<liquid:helium3>*144, <liquid:deuterium>*1000],
-[<liquid:molten.lithium6>*144],
-[<gregtech:gt.meta.dust:30>]);
-
-MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor",<gregtech:gt.meta.dustTiny:8761>);
-MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 265, 100000000,[10000],
-[<gregtech:gt.meta.dust:1740>],
-[<liquid:radon>*72],
-[<liquid:molten.adamantium>*72],
-[<gregtech:gt.meta.dustTiny:8761>]);
-
 MTUtilsGT.removeAllRecipes("gt.recipe.replicator",<gregtech:gt.meta.ingot:2220>);
 
 //lead rf generator
@@ -1171,3 +1157,158 @@ MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 16, 1000 ,0,[9950],
 [<liquid:radon>*10],
 [<gregtech:gt.meta.dust:940>]);
 //Rn
+
+//Superconductor wire
+var luvp = <gregtech:gt.multiitem.technological:12026>;
+var zpmp = <gregtech:gt.multiitem.technological:12027>;
+var uvp = <gregtech:gt.multiitem.technological:12028>;
+var pipe = <gregtech:gt.multitileentity:26220>;
+MTUtilsGT.removeAllRecipes("gt.recipe.welder",<gregtech:gt.multitileentity:29950>);
+MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multitileentity:29950>);
+
+//YBaCuO
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.multitileentity:29650>*12,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,luvp*3],
+[<liquid:nitrogen>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.multitileentity:29650>*12,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,zpmp*2],
+[<liquid:nitrogen>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.multitileentity:29650>*12,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,uvp*1],
+[<liquid:nitrogen>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.multitileentity:29650>*12,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,luvp*3],
+[<liquid:helium>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.multitileentity:29650>*12,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,zpmp*2],
+[<liquid:helium>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.multitileentity:29650>*12,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,uvp*1],
+[<liquid:helium>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.multitileentity:29650>*12,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,luvp*3],
+[<liquid:hydrogen>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.multitileentity:29650>*12,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,zpmp*2],
+[<liquid:hydrogen>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.multitileentity:29650>*12,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,uvp*1],
+[<liquid:hydrogen>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+//Nq
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.meta.wireFine:1740>*40,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,luvp*3],
+[<liquid:nitrogen>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.meta.wireFine:1740>*40,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,zpmp*2],
+[<liquid:nitrogen>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.meta.wireFine:1740>*40,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,uvp*1],
+[<liquid:nitrogen>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.meta.wireFine:1740>*40,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,luvp*3],
+[<liquid:helium>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.meta.wireFine:1740>*40,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,zpmp*2],
+[<liquid:helium>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.meta.wireFine:1740>*40,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,uvp*1],
+[<liquid:helium>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.meta.wireFine:1740>*40,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,luvp*3],
+[<liquid:hydrogen>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.meta.wireFine:1740>*40,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,zpmp*2],
+[<liquid:hydrogen>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.meta.wireFine:1740>*40,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,uvp*1],
+[<liquid:hydrogen>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+//NbTi
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.multitileentity:29550>*12,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,luvp*3],
+[<liquid:helium>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.multitileentity:29550>*12,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,zpmp*2],
+[<liquid:helium>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.multitileentity:29550>*12,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,uvp*1],
+[<liquid:helium>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.multitileentity:29550>*12,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,luvp*3],
+[<liquid:hydrogen>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.multitileentity:29550>*12,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,zpmp*2],
+[<liquid:hydrogen>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
+[<gregtech:gt.multitileentity:29550>*12,<gregtech:gt.meta.stickLong:8636>,pipe*6,<gregtech:gt.meta.ring:8217>*6,uvp*1],
+[<liquid:hydrogen>*6000],
+[null],
+[<gregtech:gt.multitileentity:29950>*12]);
