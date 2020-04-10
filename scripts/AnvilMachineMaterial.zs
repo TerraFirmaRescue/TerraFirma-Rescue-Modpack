@@ -1386,10 +1386,10 @@ var aplateGt = plateGt[i];
 var aplate2Gt = plateDoubleGt[i];
 
 //HEATING
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingotGt, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot2Gt, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplateGt, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate2Gt, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingotGt, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot2Gt, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplateGt, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate2Gt, 1000, 0.35);
 //ANVIL AND WELDING
 mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot2Gt, aingotGt, aingotGt, 5);
 mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate2Gt, aplateGt, aplateGt, 5);
@@ -1424,26 +1424,26 @@ var amachine2 = machine2[i];
 var amachine4 = machine4[i];
 
 //HEATING
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot3, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot4, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot5, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate3, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate4, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate5, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, astick, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, astickLong, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplateCurved, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, agearGtSmall, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, agearGt, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aspringSmall, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aspring, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aring, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, achain, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, afoil, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, acasingSmall, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, amachine1, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, amachine2, 800, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk, amachine4, 800, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot3, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot4, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aingot5, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate3, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate4, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplate5, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, astick, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, astickLong, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aplateCurved, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, agearGtSmall, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, agearGt, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aspringSmall, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aspring, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, aring, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, achain, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, afoil, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, acasingSmall, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, amachine1, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, amachine2, 1000, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk, amachine4, 1000, 0.35);
 
 //WELDING
 mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot3, aingot, aingot2, 5);
