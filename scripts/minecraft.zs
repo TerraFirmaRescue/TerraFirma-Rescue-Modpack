@@ -161,20 +161,20 @@ recipes.addShapeless(<minecraft:pumpkin>,[<terrafirmacraft:Pumpkin>]);
 
 //more scientific glass making
 //primitive
-mods.forestry.ThermionicFabricator.addCast(<minecraft:glass>*9, [
+mods.forestry.ThermionicFabricator.addCast(<minecraft:glass>*8, [
   [<gregtech:gt.meta.dustTiny:9139>,n,n],
   [<ore:dustAnyCalcite>,n,n],
-  [n,n,n]], 9000, <gregtech:gt.multiitem.technological:10214>);
+  [n,n,n]], 8000, <gregtech:gt.multiitem.technological:10214>);
 
-mods.forestry.ThermionicFabricator.addCast(<terrafirmacraft:item.Glass Bottle>*9, [
+mods.forestry.ThermionicFabricator.addCast(<terrafirmacraft:item.Glass Bottle>*8, [
   [<gregtech:gt.meta.dustTiny:9139>,n,n],
   [<ore:dustAnyCalcite>,n,n],
-  [n,n,n]], 9000, <gregtech:gt.multiitem.technological:10224>);
+  [n,n,n]], 8000, <gregtech:gt.multiitem.technological:10224>);
 
-mods.forestry.ThermionicFabricator.addCast(<gregtech:gt.meta.plateGem:8001>*9, [
+mods.forestry.ThermionicFabricator.addCast(<gregtech:gt.meta.plateGem:8001>*8, [
   [<gregtech:gt.meta.dustTiny:9139>,n,n],
   [<ore:dustAnyCalcite>,n,n],
-  [n,n,n]], 9000, <gregtech:gt.multiitem.technological:10201>);
+  [n,n,n]], 8000, <gregtech:gt.multiitem.technological:10201>);
 
 //industrial
 for dust in <ore:dustAnyCalcite>.items {
