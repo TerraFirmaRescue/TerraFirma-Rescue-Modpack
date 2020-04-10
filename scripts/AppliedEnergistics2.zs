@@ -358,7 +358,7 @@ recipes.addShapeless(<appliedenergistics2:item.ToolMemoryCard>,[<ore:RAM256M>]);
 
 //id card
 recipes.remove(<appliedenergistics2:item.ToolBiometricCard>);
-MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 400, 0, [10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 256, 400, 0, [10000],
 [<appliedenergistics2:item.ItemMultiMaterial:24>,ticasing*2,redcab*4],
 [n],
 [n],
