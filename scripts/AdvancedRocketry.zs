@@ -291,7 +291,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
 
 recipes.remove(<advancedRocketry:rocketmotor>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
-[<advancedRocketry:pressureTank:3>,<gregtech:gt.meta.ring:8756>*4,<gregtech:gt.meta.screw:8756>*4,<gregtech:gt.meta.rotor:8621>,<gregtech:gt.meta.plateCurved:8663>*4,<gregtech:gt.multiitem.technological:12023>,<gregtech:gt.multitileentity:26160>*4],
+[<advancedRocketry:pressureTank:3>,<gregtech:gt.meta.ring:8664>*4,<gregtech:gt.meta.screw:8664>*4,<gregtech:gt.meta.rotor:8621>,<gregtech:gt.meta.plateCurved:8663>*4,<gregtech:gt.multiitem.technological:12023>,<gregtech:gt.multitileentity:26160>*4],
 [<liquid:molten.tin>*144],
 [null],
 [<advancedRocketry:rocketmotor>]);
