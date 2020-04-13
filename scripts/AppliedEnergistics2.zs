@@ -293,7 +293,7 @@ mods.forestry.ThermionicFabricator.addCast(<appliedenergistics2:tile.BlockQuartz
 
 for item in <ore:dustAnyQuartz>.items {
 MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
-[<gregapi:gt.integrated_circuit:1>*0,<gregtech:gt.multiitem.technological:10214>*8,item*4,<gregtech:gt.meta.dustTiny:9139>],
+[<gregapi:gt.integrated_circuit:1>*0,<gregtech:gt.multiitem.technological:10214>*0,item*4,<gregtech:gt.meta.dustTiny:9139>],
 [<liquid:glass>*8000],
 [n],
 [<appliedenergistics2:tile.BlockQuartzGlass>*8]);
