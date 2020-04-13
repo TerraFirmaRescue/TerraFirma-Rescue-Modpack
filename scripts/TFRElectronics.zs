@@ -697,7 +697,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
 
 MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 64, 400 ,0,[10000],
 [<gregtech:gt.meta.dustTiny:8207>,<gregtech:gt.meta.dustTiny:310>,<gregtech:gt.meta.dustTiny:490>,<moegadd:CleanedWafer20nm>],
-[<liquid:radon>*10],
+[<liquid:radon>*500],
 [n],
 [<moegadd:MonolayerWafer20nm>]);
 
