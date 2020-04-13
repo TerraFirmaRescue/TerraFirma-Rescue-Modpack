@@ -1058,13 +1058,13 @@ var y02 = output2[i];
 recipes.addShaped(y0,[
 [<gregtech:gt.multiitem.technological:30503>,x01,<gregtech:gt.multiitem.technological:30503>],
 [x03,x02,x03],
-[<ore:MF7>,x01,<gregtech:gt.multitileentity:24900>]]
+[<ore:MF6>,x01,<gregtech:gt.multitileentity:24900>]]
 );
 //jing ti chong neng qi
 
 recipes.remove(y02);
-MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[5000],
-[y0,x01 *4, x03 *4 , <moegadd:MainframeCluster7>,<gregtech:gt.multiitem.technological:30403>*4],
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
+[y0,x01 *4, x03 *4 , <moegadd:MainframeCluster6>,<gregtech:gt.multiitem.technological:30403>*4],
 [<liquid:ic2coolant>*1000],
 [null],
 [y02]);
@@ -1154,7 +1154,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 40 ,0,[10000],
 MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 16, 1000 ,0,[9950],
 [<gregtech:gt.meta.ingot:940>],
 [null],
-[<liquid:radon>*10],
+[<liquid:radon>*100],
 [<gregtech:gt.meta.dust:940>]);
 //Rn
 
