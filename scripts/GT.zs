@@ -41,6 +41,7 @@ recipes.remove(<gregtech:gt.multitileentity:10111>);
 recipes.remove(<terrafirmacraft:item.MetalNugget:7>);
 recipes.remove(<gregtech:gt.meta.ingot:8336>);
 recipes.remove(<gregtech:gt.multitileentity:1086>);
+recipes.remove(<gregtech:gt.multitileentity:1786>);
 
 //remove gt anvils
 recipes.remove(<gregtech:gt.multitileentity:32025>);
