@@ -13,6 +13,8 @@ val Wrench = <ore:craftingToolWrench>;
 val Chisel = <ore:craftingToolChisel>;
 val Cutter = <ore:craftingToolWireCutter>;
 val File = <ore:craftingToolFile>;
+val Blade = <ore:craftingToolBlade>;
+val Shears = <ore:craftingToolShears>;
 val n = null;
 
 /**Templates Starts
@@ -302,3 +304,10 @@ recipes.addShapeless(<Forestry:peat>,[<terrafirmacraft:Peat>]);
 <ore:dustFossil>.add(<terrafirmacraft:item.dyePowder:15>);
 <ore:dustBone>.add(<terrafirmacraft:item.dyePowder:15>);
 <ore:dyeMixableWhite>.add(<terrafirmacraft:item.dyePowder:15>);
+
+HHammer.addAll(<ore:itemHammer>);
+Knife.addAll(<ore:itemKnife>);
+Chisel.addAll(<ore:itemChisel>);
+Blade.addAll(<ore:itemScythe>);
+Saw.addAll(<ore:itemSaw>);
+Shears.add(<terrafirmacraft:item.shears>);
