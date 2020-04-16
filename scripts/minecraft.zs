@@ -339,3 +339,20 @@ MTUtilsGT.addCustomRecipe("gt.recipe.drying", false, 16, 128, 0, [10000],
 [<minecraft:stick>]);
 }
 
+//String made with jute fiber
+recipes.addShaped(<minecraft:string>*3,
+[[null,null,null],
+[<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>],
+[null,null,null]]);
+
+recipes.addShaped(<minecraft:string>*3,
+[[<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>],
+[null,null,null],
+[null,null,null]]);
+
+recipes.addShaped(<minecraft:string>*3,
+[[null,null,null],
+[null,null,null],
+[<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>]]);
+
+

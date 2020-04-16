@@ -228,12 +228,21 @@ recipes.addShaped(<advancedRocketry:tile.electricArcFurnace>,
 [<ore:plateInvar>,<gregtech:gt.meta.machine.double:220>,<ore:plateInvar>],
 [<gregtech:gt.multiitem.technological:30304>,<ore:plateInvar>,<gregtech:gt.multiitem.technological:30304>]]);
 
-//lunar soil
-MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 128 ,0,[10000, 500, 1000, 3000, 4000, 9000],
+//lunar soil processing
+MTUtilsGT.removeAllRecipes("gt.recipe.centrifuge",<gregtech:gt.meta.dust:8514>);
+MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 128, 1024, 0, [9000],
 [<advancedRocketry:moonTurf>],
 [null],
 [<liquid:enderair>*200],
-[<gregtech:gt.meta.dustTiny:8504>, <gregtech:gt.meta.dustTiny:780>, <gregtech:gt.meta.dustTiny:9100>, <gregtech:gt.meta.dustTiny:9120>, <gregtech:gt.meta.dustTiny:8008>, <gregtech:gt.meta.dustSmall:8505>*3]);
+[<gregtech:gt.meta.dust:8514>]);
+
+//mars soil processing
+MTUtilsGT.removeAllRecipes("gt.recipe.centrifuge",<gregtech:gt.meta.dustTiny:9176>);
+MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 128, 1024, 0, [8000, 1000, 1000, 500, 500],
+[<advancedRocketry:blockHotTurf>],
+[null],
+[null],
+[<gregtech:gt.meta.dust:8505>,<gregtech:gt.meta.dustTiny:9176>,<gregtech:gt.meta.dustTiny:9140>,<gregtech:gt.meta.dustTiny:8311>,<gregtech:gt.meta.dustTiny:9104>]);
 
 //Asteroids rock
 MTUtilsGT.removeAllRecipes("gt.recipe.mixer",<gregtech:gt.meta.dust:8245>);

@@ -192,12 +192,6 @@ recipes.addShaped(<gregtech:gt.multiitem.randomtools:5007>,
 [<gregtech:gt.meta.plateCurved:8682>,<gregtech:gt.metatool.01:22>,<gregtech:gt.meta.plateCurved:8682>],
 [<gregtech:gt.meta.plateCurved:8682>,<gregtech:gt.meta.ring:8682>,<gregtech:gt.meta.plateCurved:8682>]]);
 
-//String made with grass
-recipes.addShaped(<minecraft:string>,
-[[null,null,null],
-[<terrafirmacraft:item.Straw>,<terrafirmacraft:item.Straw>,<terrafirmacraft:item.Straw>],
-[null,null,null]]);
-
 //ban RF-EU RF-LU
 recipes.remove(<gregtech:gt.multitileentity:11021>);
 recipes.remove(<gregtech:gt.multitileentity:11022>);
