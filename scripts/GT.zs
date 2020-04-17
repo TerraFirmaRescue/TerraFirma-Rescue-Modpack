@@ -21,7 +21,10 @@ val fw = <liquid:freshwater>;
 var x = [] as IItemStack[];
 for i, x in x { }
 recipes.addShapeless(,[]);
-recipes.addShaped(,[[],[],[]]);
+recipes.addShaped(,
+[[],
+[],
+[]]);
 MTUtilsGT.removeAllRecipes("gt.recipe.",);
 MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
 [],
@@ -1307,3 +1310,35 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 640, 0, [10000],
 [<liquid:hydrogen>*6000],
 [null],
 [<gregtech:gt.multitileentity:29950>*12]);
+
+//Nanofab
+recipes.remove(<gregtech:gt.multitileentity:20441>);
+recipes.remove(<gregtech:gt.multitileentity:20442>);
+recipes.remove(<gregtech:gt.multitileentity:20443>);
+recipes.remove(<gregtech:gt.multitileentity:20444>);
+recipes.remove(<gregtech:gt.multitileentity:20445>);
+
+recipes.addShaped(<gregtech:gt.multitileentity:20441>,
+[[<gregtech:gt.multiitem.technological:11004>,<gregtech:gt.multiitem.technological:11003>,<gregtech:gt.multiitem.technological:11005>],
+[<gregtech:gt.multiitem.technological:12141>,<gregtech:gt.meta.machine:8651>,<gregtech:gt.multiitem.technological:12121>],
+[<gregtech:gt.multiitem.technological:30306>,<ore:MF1>,<gregtech:gt.multiitem.technological:30306>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:20442>,
+[[<gregtech:gt.multiitem.technological:11004>,<gregtech:gt.multiitem.technological:11003>,<gregtech:gt.multiitem.technological:11005>],
+[<gregtech:gt.multiitem.technological:12142>,<gregtech:gt.meta.machine:130>,<gregtech:gt.multiitem.technological:12122>],
+[<gregtech:gt.multiitem.technological:30306>,<ore:MF2>,<gregtech:gt.multiitem.technological:30306>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:20443>,
+[[<gregtech:gt.multiitem.technological:11004>,<gregtech:gt.multiitem.technological:11003>,<gregtech:gt.multiitem.technological:11005>],
+[<gregtech:gt.multiitem.technological:12143>,<gregtech:gt.meta.machine:8636>,<gregtech:gt.multiitem.technological:12123>],
+[<gregtech:gt.multiitem.technological:30306>,<ore:MF3>,<gregtech:gt.multiitem.technological:30306>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:20444>,
+[[<gregtech:gt.multiitem.technological:11004>,<gregtech:gt.multiitem.technological:11003>,<gregtech:gt.multiitem.technological:11005>],
+[<gregtech:gt.multiitem.technological:12144>,<gregtech:gt.meta.machine:240>,<gregtech:gt.multiitem.technological:12124>],
+[<gregtech:gt.multiitem.technological:30306>,<ore:MF4>,<gregtech:gt.multiitem.technological:30306>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:20445>,
+[[<gregtech:gt.multiitem.technological:11004>,<gregtech:gt.multiitem.technological:11003>,<gregtech:gt.multiitem.technological:11005>],
+[<gregtech:gt.multiitem.technological:12145>,<gregtech:gt.meta.machine:220>,<gregtech:gt.multiitem.technological:12125>],
+[<gregtech:gt.multiitem.technological:30306>,<ore:MF5>,<gregtech:gt.multiitem.technological:30306>]]);

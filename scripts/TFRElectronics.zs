@@ -507,25 +507,25 @@ MTUtilsGT.addCustomRecipe("gt.recipe.maskaligner", false, 512, 1000 ,0,[10000],
 
 /*--RAMs--*/
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 300 ,0,[10000],
-[<moegadd:CCL>,<moegadd:MemoryCell128M>*2,<gregtech:gt.meta.wireFine:290>,<gregtech:gt.meta.wireFine:790>,<gregtech:gt.multiitem.technological:30306>*0],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:MemoryCell128M>*2,<gregtech:gt.meta.wireFine:290>,<gregtech:gt.meta.wireFine:790>,<gregtech:gt.multiitem.technological:30306>*0],
 [<liquid:molten.solderingalloy>*30],
 [n],
 [<moegadd:RAM_128M_2>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 600 ,0,[10000],
-[<moegadd:CCL>,<moegadd:MemoryCell128M>*4,<gregtech:gt.meta.wireFine:290>,<gregtech:gt.meta.wireFine:790>,<moegadd:Mainframe1>*0],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:MemoryCell128M>*4,<gregtech:gt.meta.wireFine:290>,<gregtech:gt.meta.wireFine:790>,<moegadd:Mainframe1>*0],
 [<liquid:molten.solderingalloy>*30],
 [n],
 [<moegadd:RAM_128M_4>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 1000 ,0,[10000],
-[<moegadd:CCL>,<moegadd:MemoryCell128M>*8,<gregtech:gt.meta.wireFine:290>,<gregtech:gt.meta.wireFine:790>,<moegadd:Mainframe2>*0],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:MemoryCell128M>*8,<gregtech:gt.meta.wireFine:290>,<gregtech:gt.meta.wireFine:790>,<moegadd:Mainframe2>*0],
 [<liquid:molten.solderingalloy>*30],
 [n],
 [<moegadd:RAM_128M_8>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 1600 ,0,[10000],
-[<moegadd:CCL>,<moegadd:MemoryCell128M>*16,<gregtech:gt.meta.wireFine:290>,<gregtech:gt.meta.wireFine:790>,<moegadd:Mainframe3>*0],
+[<moegadd:EpoxyCircuitBoard>,<moegadd:MemoryCell128M>*16,<gregtech:gt.meta.wireFine:290>,<gregtech:gt.meta.wireFine:790>,<moegadd:Mainframe3>*0],
 [<liquid:molten.solderingalloy>*30],
 [n],
 [<moegadd:RAM_128M_16>]);
