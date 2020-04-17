@@ -190,14 +190,18 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 4096, 400, 0, [10000],
 [null],
 [<Avaritia:Resource:9>]);
 
+
+val PI = <IC2:itemPartIridium>;
+val MC7 = <moegadd:MainframeCluster7>;
+val sj = <gregtech:gt.meta.ingot:2210>;
 mods.avaritia.ExtremeCrafting.remove(<Avaritia:Resource:5>);
 mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Resource:5>,
-[[null,null,null,<IC2:itemPartIridium>,<gregtech:gt.multiitem.physics:1004>,<IC2:itemPartIridium>,null,null,null],
-  [null,null,null,<IC2:itemPartIridium>,<DraconicEvolution:chaosShard>,<IC2:itemPartIridium>,null,null,null],
-  [null,null,<IC2:itemPartIridium>,<gregtech:gt.meta.ingot:2210>,<DraconicEvolution:chaosShard>,<gregtech:gt.meta.ingot:2210>,<IC2:itemPartIridium>,null, null],
-  [null,null, <IC2:itemPartIridium>, <Avaritia:Singularity:1>, <Avaritia:Singularity>, <Avaritia:Singularity:3>,<IC2:itemPartIridium>,null,null],
-  [null,null, <IC2:itemPartIridium>, <Avaritia:Singularity:5>,<gregtech:gt.meta.machine.quadruple:8800>, <Avaritia:Singularity:6>,<IC2:itemPartIridium>,null,null],
-  [null,null, <IC2:itemPartIridium>, <Avaritia:Singularity:7>, <Avaritia:Singularity:8>,<Avaritia:Singularity:9>,<IC2:itemPartIridium>,null,null],
-  [null,<IC2:itemPartIridium>,<moegadd:MainframeCluster7>,<gregtech:gt.multiitem.physics:1005>,<gregtech:gt.multiitem.physics:1000>,<gregtech:gt.multiitem.physics:1001>,<moegadd:MainframeCluster7>,<IC2:itemPartIridium>,null],
-  [null,<IC2:itemPartIridium>,<moegadd:MainframeCluster7>,<gregtech:gt.multiitem.physics:1006>,<gregtech:gt.multiitem.physics:1002>,<gregtech:gt.multiitem.physics:1003>,<moegadd:MainframeCluster7>,<IC2:itemPartIridium>,null],
-  [null,<IC2:itemPartIridium>,<moegadd:MainframeCluster7>,<gregtech:gt.meta.ingotQuintuple:8706>,<gregtech:gt.meta.ingotQuintuple:8706>,<gregtech:gt.meta.ingotQuintuple:8706>,<moegadd:MainframeCluster7>,<IC2:itemPartIridium>,null]]);
+[[n,n,n,n,n,n,n,n,n],
+  [n,n,n,n,n,n,n,n,n],
+  [n,n,MC7,<gregtech:gt.multiitem.physics:1004>,<gregtech:gt.multiitem.physics:1002>,<gregtech:gt.multiitem.physics:1003>,MC7,n,n],
+  [n,n,PI, <Avaritia:Singularity:1>, <Avaritia:Singularity>, <Avaritia:Singularity:3>,PI,n,n],
+  [n,n,PI, <Avaritia:Singularity:5>,<DraconicEvolution:chaosFragment:2>,<Avaritia:Singularity:6>,PI,n,n],
+  [n,n,PI, <Avaritia:Singularity:7>, <Avaritia:Singularity:8>,<Avaritia:Singularity:9>,PI,n,n],
+  [n,n,MC7,<gregtech:gt.multiitem.physics:1005>,<gregtech:gt.multiitem.physics:1000>,<gregtech:gt.multiitem.physics:1001>,MC7,n,n],
+  [n,n,n,n,n,n,n,n,n],
+  [n,n,n,n,n,n,n,n,n]]);

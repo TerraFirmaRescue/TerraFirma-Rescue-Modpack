@@ -176,7 +176,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "有五种基本的粘土物品;粘土罐、粘土壶、粘土模具、粘土碗和粘土大缸。使用类似于打制石器的方式创建黏土GUI。要打开这个GUI，您必须手持5个或更多的黏土右键单击。粘土必须首先被烧制变成陶瓷才有作用。粘土在窑中烧制。\n\n要创造一个陶窑，你需要先用刀或镰刀来收集干草。干草也是精制谷物的副产品。\r\n\r\n挖一个深坑。\r\n\r\n放置4个你想放进去的物品。\r\n\r\n注意:不要把陶器扔进洞里。必须潜行右击放置陶器。\r\n\r\n把8根干草放在同一方块里，直到方块半满。(瞄准地面，而不是物品)\r\n\r\n注意:不要把干草扔进洞里。必须用右键放置。\r\n\r\n把8根木头放在干草上，直到方块装满，然后用火点燃。\r\n\r\n注意:不要把木头扔进洞里。必须用鼠标右键单击它。\r\n\r\n一旦火焰燃烧完毕，你就可以空手来收集你的陶瓷物品，或者简单地打破这个方块来收集所有的东西。\r\n\r\n重要的是:在陶窑上燃烧的火焰会点燃附近易燃的方块。出于这个原因，建议不要在用木头、干草或其他易燃材料制成的房子里烧窑。然而，陶窑不会被雨水扑灭。"
+          "desc:8": "使用类似于打制石器的方式创建黏土GUI。要打开这个GUI，您必须手持5个或更多的黏土右键单击。粘土必须首先被烧制变成陶瓷才有作用。粘土在窑中烧制。\n\n要创造一个陶窑，你需要先用刀或镰刀来收集干草。干草也是精制谷物的副产品。\r\n\r\n挖一个深坑。\r\n\r\n放置4个你想放进去的物品。\r\n\r\n注意:不要把陶器扔进洞里。必须潜行右击放置陶器。\r\n\r\n把8根干草放在同一方块里，直到方块半满。(瞄准地面，而不是物品)\r\n\r\n注意:不要把干草扔进洞里。必须用右键放置。\r\n\r\n把8根木头放在干草上，直到方块装满，然后用火点燃。\r\n\r\n注意:不要把木头扔进洞里。必须用鼠标右键单击它。\r\n\r\n一旦火焰燃烧完毕，你就可以空手来收集你的陶瓷物品，或者简单地打破这个方块来收集所有的东西。\r\n\r\n重要的是:在陶窑上燃烧的火焰会点燃附近易燃的方块。出于这个原因，建议不要在用木头、干草或其他易燃材料制成的房子里烧窑。然而，陶窑不会被雨水扑灭。"
         }
       },
       "tasks:9": {
@@ -196,6 +196,18 @@
             },
             "1:10": {
               "id:8": "terrafirmacraft:item.Mold",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "terrafirmacraft:item.Pick Mold",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "terrafirmacraft:item.Saw Mold",
               "Count:3": 1,
               "Damage:2": 1,
               "OreDict:8": ""
@@ -385,7 +397,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "\n使用石砧，你可以开始锻造金属了。\n但是低等级的砧能加工的金属很少，所以请用石砧焊接铜锭，并制作铜砧。\n\n接下来的任务你只需要制作任意一种青铜砧即可解锁下一个任务"
+          "desc:8": "\n使用石砧，你可以开始锻造金属了。\n\n但是低等级的砧能加工的金属很少，所以请用石砧焊接铜锭，并制作铜砧。\n\n有许多不同的砧，分成不同的等级。每一等级都能比以前的等级进行更复杂的金属加工。砧能将高一等级的锭焊接在一起，形成双锭。所有其他的锻造必须在相等或更高级的砧上完成。\r\n\r\n例如:石砧只能焊接铜锭。铜砧能焊铜锭和铜合金锭。\n\n接下来的任务你只需要制作任意一种青铜砧即可解锁下一个任务"
         }
       },
       "tasks:9": {
@@ -585,7 +597,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "\n用镐子挖掉一个石头周围相邻的4个石头，石头会掉落。\n将其放下，并用石锤子右键，一个石砧就成型了。"
+          "desc:8": "石砧是用锤子在侵入岩、火成岩方块右击获得,它的高度比其他石头低。右击砧打开GUI，把锤子放在里面，这样砧就不会变成普通的石块。\n\n\r侵入岩：闪长岩、辉长岩、花岗岩\r\n火成岩：安山岩，玄武岩、英安岩、流纹岩"
         }
       },
       "tasks:9": {
@@ -601,7 +613,7 @@
               "id:8": "terrafirmacraft:item.Stone Hammer",
               "Count:3": 1,
               "Damage:2": 0,
-              "OreDict:8": "itemHammer"
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -696,7 +708,7 @@
     "10:10": {
       "questID:3": 10,
       "preRequisites:11": [
-        2
+        369
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1847,7 +1859,7 @@
     "28:10": {
       "questID:3": 28,
       "preRequisites:11": [
-        12
+        17
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1905,7 +1917,7 @@
     "29:10": {
       "questID:3": 29,
       "preRequisites:11": [
-        12
+        27
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1957,7 +1969,7 @@
     "30:10": {
       "questID:3": 30,
       "preRequisites:11": [
-        12
+        27
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2009,7 +2021,7 @@
     "31:10": {
       "questID:3": 31,
       "preRequisites:11": [
-        12
+        17
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3303,8 +3315,7 @@
     "56:10": {
       "questID:3": 56,
       "preRequisites:11": [
-        27,
-        34
+        27
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3491,7 +3502,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "\n\n\n 更便捷的木炭烧制."
+          "desc:8": "可以用原版桶将杂酚油取出，右击放入浸洗盆中，即可制作防腐木板等。\n\n更便捷的木炭烧制"
         }
       },
       "tasks:9": {
@@ -4358,7 +4369,7 @@
     "75:10": {
       "questID:3": 75,
       "preRequisites:11": [
-        12
+        17
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4654,7 +4665,7 @@
     "80:10": {
       "questID:3": 80,
       "preRequisites:11": [
-        12
+        27
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4705,7 +4716,7 @@
     "81:10": {
       "questID:3": 81,
       "preRequisites:11": [
-        12
+        27
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4807,8 +4818,7 @@
     "83:10": {
       "questID:3": 83,
       "preRequisites:11": [
-        27,
-        34
+        27
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -5020,7 +5030,9 @@
     },
     "87:10": {
       "questID:3": 87,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        15
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -5732,7 +5744,7 @@
     "98:10": {
       "questID:3": 98,
       "preRequisites:11": [
-        210
+        61
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -5778,6 +5790,48 @@
               "id:8": "gregtech:gt.multitileentity",
               "Count:3": 1,
               "Damage:2": 10112,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.meta.machine.double",
+              "Count:3": 1,
+              "Damage:2": 130,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "gregtech:gt.meta.stick",
+              "Count:3": 4,
+              "Damage:2": 130,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "gregtech:gt.meta.foil",
+              "Count:3": 2,
+              "Damage:2": 290,
+              "OreDict:8": ""
+            },
+            "5:10": {
+              "id:8": "gregtech:gt.meta.stick",
+              "Count:3": 1,
+              "Damage:2": 8646,
+              "OreDict:8": ""
+            },
+            "6:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 16,
+              "Damage:2": 28350,
+              "OreDict:8": ""
+            },
+            "7:10": {
+              "id:8": "gregtech:gt.meta.plateCurved",
+              "Count:3": 2,
+              "Damage:2": 130,
+              "OreDict:8": ""
+            },
+            "8:10": {
+              "id:8": "gregtech:gt.multiitem.technological",
+              "Count:3": 2,
+              "Damage:2": 30301,
               "OreDict:8": ""
             }
           },
@@ -6958,9 +7012,9 @@
     "119:10": {
       "questID:3": 119,
       "preRequisites:11": [
-        128,
         129,
-        212
+        212,
+        131
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -7268,11 +7322,11 @@
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "我不做人了！！！",
+          "name:8": "人类的能力是有极限的",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "我不做人了！！！"
         }
       },
       "tasks:9": {
@@ -7859,7 +7913,9 @@
     },
     "132:10": {
       "questID:3": 132,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        3
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -8079,7 +8135,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -8097,7 +8153,9 @@
     },
     "137:10": {
       "questID:3": 137,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        3
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -8120,7 +8178,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "如果你在进行多人游戏，你可以打开物品栏左上角有一个地图的图标，打开它可以认领区块。\\n地图图标上面的绿色小人可以加好友给权限."
+          "desc:8": "如果你在进行多人游戏，你可以打开物品栏左上角有一个地图的图标，打开它可以认领区块。\n\n地图图标上面的绿色小人可以加好友给权限."
         }
       },
       "tasks:9": {
@@ -8252,7 +8310,7 @@
     "140:10": {
       "questID:3": 140,
       "preRequisites:11": [
-        116
+        257
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8903,7 +8961,8 @@
     "154:10": {
       "questID:3": 154,
       "preRequisites:11": [
-        258
+        366,
+        364
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8927,7 +8986,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "将原子核融合"
         }
       },
       "tasks:9": {
@@ -8943,6 +9002,54 @@
               "id:8": "gregtech:gt.multitileentity",
               "Count:3": 1,
               "Damage:2": 17198,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 3,
+              "Damage:2": 18200,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 12,
+              "Damage:2": 18201,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 4,
+              "Damage:2": 18202,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 50,
+              "Damage:2": 18299,
+              "OreDict:8": ""
+            },
+            "5:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 144,
+              "Damage:2": 18045,
+              "OreDict:8": ""
+            },
+            "6:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 576,
+              "Damage:2": 18003,
+              "OreDict:8": ""
+            },
+            "7:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 36,
+              "Damage:2": 18002,
+              "OreDict:8": ""
+            },
+            "8:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 53,
+              "Damage:2": 18008,
               "OreDict:8": ""
             }
           },
@@ -8986,7 +9093,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -9465,7 +9572,9 @@
     },
     "163:10": {
       "questID:3": 163,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        10
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -9493,7 +9602,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "不再如同你熟悉的地球或格雷星球，群峦星的矿物生成变得十分奇特。\n首先，这里的地壳很厚，厚达130-150米。其次，矿物在岩层中以矿脉形式生成：\n\n石墨在变质岩和沉积岩生成\n高岭石在变质岩和沉积岩生成\n钻石在玄武岩 辉长岩 闪长岩中生成\n锡 和 铀 在所有岩浆喷出,侵入岩中生成\n\n石子和它们下面顶层的石头有着相同的纹理。\r\n\r\n如果附近有矿脉，松散的岩石就有可能产生一小块矿石而不是岩石。\n\n这些矿物石子代表以其为y轴的附近地下有对应矿脉生成。\n\n金红石，钨酸盐，锆石等矿物并没有在贫瘠的群峦星被发现，你需要制作火箭前往其卫星获得。"
+          "desc:8": "不同于你熟悉的原版世界，群峦星的地下世界变得更加复杂且真实。\n\n岩层是由大量同种类岩石形成的。这里的地壳很厚，厚达130-150米。\n\n岩石在三个不同的垂直岩层产生。沉积岩只能在顶层找到。变质岩存在于顶层和中层。所有三层都有侵入岩和火成岩。每一层都独立于其他层，因此，表面上的石头变化并不一定意味着另外两层的石头变化。\n\n侵入岩：闪长岩、辉长岩、花岗岩\n\n火成岩：安山岩，玄武岩、英安岩、流纹岩\n\n沉积岩：白垩岩、黑硅岩、粘土岩、砾岩、白云岩、石灰石、岩盐、页岩\n\n变质岩：片麻岩、大理石、千枚岩、硅岩、片岩、板岩\n\n能制作助焊剂的岩石（碳酸钙为主要成分的）：白云岩、石灰石、白垩岩、大理石\n\n能制作盐的岩石（氯化钠为主要成分的）：岩盐\n\n矿物在岩层中以矿脉形式生成：\n\n石子和它们下面顶层的石头有着相同的纹理。如果附近有矿脉，松散的岩石就有可能产生一小块矿石而不是岩石。这些矿物石子代表以其为y轴的附近地下有对应矿脉生成。\n\n石墨在变质岩和沉积岩生成；高岭石在变质岩和沉积岩生成；钻石在玄武岩、辉长岩和闪长岩中生成；锡和铀在所有火成岩和侵入岩中生成。\n\n其他矿物的位置需要你自己探索。\n\n金红石，钨酸盐，锆石等矿物并没有在贫瘠的群峦星被发现，你需要制作火箭前往其卫星获得。"
         }
       },
       "tasks:9": {
@@ -9506,7 +9615,9 @@
     },
     "164:10": {
       "questID:3": 164,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        7
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -11474,7 +11585,7 @@
     "201:10": {
       "questID:3": 201,
       "preRequisites:11": [
-        12
+        17
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11894,8 +12005,7 @@
     "210:10": {
       "questID:3": 210,
       "preRequisites:11": [
-        61,
-        79
+        90
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11906,20 +12016,20 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.multiitem.technological",
+            "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 30301,
+            "Damage:2": 17000,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "低级电子电路",
+          "name:8": "自动化木炭生产",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "格雷的最低级的电路板，并不比做LV发电机的电路板难做多少。"
+          "desc:8": "当你拥有一个林业的多方块农场（详见农业任务线）源源不断产出原木的时候，你就可以制作大量焦炉来烧制木炭了。\n\n焦炉底部可以接格雷科技的管道自动输出杂酚油，也可以接料斗自动输出木炭，顶部可以用料斗或者物品管道输入原木。\n\n总而言之，他是个完全支持自动化的设备。\n\n再制作三个焦炉以及相应的自动化设备足以支撑一个蒸汽时代的工厂。\n\n§c注意这个任务有3页"
         }
       },
       "tasks:9": {
@@ -11932,16 +12042,81 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:gt.multiitem.technological",
-              "Count:3": 1,
-              "Damage:2": 30301,
+              "id:8": "terrafirmacraft:item.Fire Brick",
+              "Count:3": 156,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:sand",
+              "Count:3": 156,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 75,
+              "Damage:2": 18000,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 3,
+              "Damage:2": 17000,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "2:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 2,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 8,
+              "Damage:2": 8009,
               "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 3,
+              "Damage:2": 6998,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 32,
+              "Damage:2": 26003,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "211:10": {
       "questID:3": 211,
@@ -12022,11 +12197,8 @@
     "212:10": {
       "questID:3": 212,
       "preRequisites:11": [
-        116,
-        115,
-        112,
-        117,
-        258
+        258,
+        364
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12378,7 +12550,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "兽皮由猪、牛、鹿和剪去羊毛的绵羊所掉落，并有三种大小:小的、中等的和大的。每只动物只掉一张皮，但更大的动物会掉落更大的兽。\n\n把兽皮变成浸泡皮革，需要一桶石灰水。一旦装满你想要的量，把兽皮放在桶里，然后密封它。在整个过程完成之前，你将无法打开桶。一旦完成，桶里就会出现浸泡皮革。\n\n刮制浸泡皮革需要一个皮革架。首先，需要横放的原木。然后，通过右击可以将浸泡皮革放在原木上。用刀把每一部分刮干净。最后，可以从原木上取下皮革。\n\n把刮制皮革变成预制皮革，需要一桶水。一旦填满你想要的量，把兽皮放到桶里，然后密封。在整个过程完成之前，你将无法打开桶。一旦完成，桶里就会出现预制皮革。\n\n预制皮革用于制造皮革。这需要一桶鞣酸。填入所需的量，将预制皮革放入桶内并密封。在整个过程完成之前，你将无法打开桶。一旦完成，桶里就会有皮革。更大的皮革需要更多的鞣酸，但会产生更多的皮革。\n\n注意并非所有原木都能制作鞣酸"
+          "desc:8": "兽皮由猪、牛、鹿和剪去羊毛的绵羊所掉落，并有三种大小:小的、中等的和大的。每只动物只掉一张皮，但更大的动物会掉落更大的兽。\n\n把兽皮变成浸泡皮革，需要一桶石灰水。一旦装满你想要的量，把兽皮放在桶里，然后密封它。在整个过程完成之前，你将无法打开桶。一旦完成，桶里就会出现浸泡皮革。\n\n刮制浸泡皮革需要一个皮革架。首先，需要横放的原木。然后，通过右击可以将浸泡皮革放在原木上（放在原木的顶部，而不是侧面或者底面！）。用刀把每一部分刮干净。最后，可以从原木上取下皮革。\n\n把刮制皮革变成预制皮革，需要一桶水。一旦填满你想要的量，把兽皮放到桶里，然后密封。在整个过程完成之前，你将无法打开桶。一旦完成，桶里就会出现预制皮革。\n\n预制皮革用于制造皮革。这需要一桶鞣酸。填入所需的量，将预制皮革放入桶内并密封。在整个过程完成之前，你将无法打开桶。一旦完成，桶里就会有皮革。更大的皮革需要更多的鞣酸，但会产生更多的皮革。\n\n注意并非所有原木都能制作鞣酸"
         }
       },
       "tasks:9": {
@@ -12418,7 +12590,9 @@
     "219:10": {
       "questID:3": 219,
       "preRequisites:11": [
-        218
+        218,
+        320,
+        59
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -13493,7 +13667,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -14777,7 +14951,7 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "moegadd:Mainframe2",
+            "id:8": "moegadd:Mainframe1",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -14803,7 +14977,7 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "moegadd:Mainframe2",
+              "id:8": "moegadd:Mainframe1",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -14817,7 +14991,8 @@
     "258:10": {
       "questID:3": 258,
       "preRequisites:11": [
-        257
+        248,
+        366
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -14837,7 +15012,7 @@
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "升级",
+          "name:8": "终极提升",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
@@ -14846,8 +15021,21 @@
       },
       "tasks:9": {
         "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
           "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "moegadd:Mainframe7",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       },
       "rewards:9": {}
@@ -15787,7 +15975,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "要想真正制作出玻璃，你需要去挖掘硼砂和碳酸盐类矿物（助焊剂）。\r\n\n将熔融玻璃与其混合并铸模，你就能获得玻璃制品了。"
+          "desc:8": "要想真正制作出玻璃，你需要去挖掘硼砂和碳酸盐类矿物（助焊剂）。\r\n\n将熔融玻璃与其混合并铸模，你就能获得玻璃制品了。\n\n原版沙子可以通过无序合成获得"
         }
       },
       "tasks:9": {
@@ -15801,7 +15989,25 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "minecraft:glass",
-              "Count:3": 9,
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.dustTiny",
+              "Count:3": 1,
+              "Damage:2": 9139,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "terrafirmacraft:item.Powder",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "dustAnyCalcite"
+            },
+            "3:10": {
+              "id:8": "minecraft:sand",
+              "Count:3": 8,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -15978,7 +16184,9 @@
     },
     "281:10": {
       "questID:3": 281,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        3
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -16035,11 +16243,11 @@
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "微波炉",
+          "name:8": "超级焙烧炉",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "这玩意可以超速加工食物"
+          "desc:8": "这玩意可以超速加工硫化矿物"
         }
       },
       "tasks:9": {
@@ -16356,7 +16564,9 @@
     },
     "288:10": {
       "questID:3": 288,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        3
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -16405,7 +16615,9 @@
     },
     "289:10": {
       "questID:3": 289,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        349
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -16633,7 +16845,9 @@
     },
     "293:10": {
       "questID:3": 293,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        3
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -16788,7 +17002,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -17505,7 +17719,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "(你想多了就错了)\n\n地窖能避免你辛辛苦苦收获的食物变质坏掉。\n\n用冰窖墙方块制作一个外部高度为4米内部高度为2米的中空长方体结构。\n\n冰窖门需要有两层，冰窖门所在的位置需要突出墙体本身一格，而且周围也要有冰窖墙方块。\n\n地窖内部底面其中一个方块需要为冰窖核心，内部需要放入冰锯挖掘的TFC的冰块才能使冰窖开始运行。\n\n开始运行时打开冰窖核心的GUI右上角能看到温度。\n\n食物只能放在冰窖架里。冰窖内不能有除了冰窖架之外的任何方块。\n\n冰窖的墙壁四周不能有任何方块接触，只能底面与地面接触。\n\n这是一个俯视图：\n\nX：墙\nD：门\n\nXXXXX\nX   X\nX   X\nXXDXX\n XDX"
+          "desc:8": "§4按F3打开区块边界显示：确保你的冰窖在一个区块内，否则不会工作。\n\n地窖能避免你辛辛苦苦收获的食物变质坏掉。\n\n用冰窖墙方块制作一个外部高度为4米内部高度为2米的中空长方体结构。\n\n冰窖门需要有两层，冰窖门所在的位置需要突出墙体本身一格，而且周围也要有冰窖墙方块。\n\n地窖内部底面其中一个方块需要为冰窖核心，内部需要放入冰锯挖掘的TFC的冰块才能使冰窖开始运行。\n\n开始运行时打开冰窖核心的GUI右上角能看到温度。\n\n食物只能放在冰窖架里。冰窖内不能有除了冰窖架之外的任何方块。\n\n冰窖的墙壁四周不能有任何方块接触，只能底面与地面接触。\n\n这是一个俯视图：\n\nX：墙\nD：门\n\nXXXXX\nX   X\nX   X\nXXDXX\n XDX"
         }
       },
       "tasks:9": {
@@ -17837,7 +18051,6 @@
     "311:10": {
       "questID:3": 311,
       "preRequisites:11": [
-        308,
         314,
         320
       ],
@@ -18372,7 +18585,7 @@
           "rewards:9": {
             "0:10": {
               "id:8": "IC2:itemHarz",
-              "Count:3": 10,
+              "Count:3": 32,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -18656,7 +18869,7 @@
     "324:10": {
       "questID:3": 324,
       "preRequisites:11": [
-        12
+        17
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -19642,7 +19855,7 @@
     "339:10": {
       "questID:3": 339,
       "preRequisites:11": [
-        319
+        363
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -19662,11 +19875,11 @@
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "",
+          "name:8": "绿宝石灌木",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": ""
+          "desc:8": "生产绿宝石"
         }
       },
       "tasks:9": {
@@ -19712,7 +19925,7 @@
     "340:10": {
       "questID:3": 340,
       "preRequisites:11": [
-        319
+        363
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -19732,11 +19945,11 @@
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "",
+          "name:8": "原油浆果",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": ""
+          "desc:8": "生产原油"
         }
       },
       "tasks:9": {
@@ -19788,7 +20001,7 @@
     "341:10": {
       "questID:3": 341,
       "preRequisites:11": [
-        319
+        363
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -19808,11 +20021,11 @@
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "",
+          "name:8": "银叶草",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": ""
+          "desc:8": "生产银叶子"
         }
       },
       "tasks:9": {
@@ -19858,7 +20071,7 @@
     "342:10": {
       "questID:3": 342,
       "preRequisites:11": [
-        319
+        363
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -19878,11 +20091,11 @@
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "",
+          "name:8": "锡叶藤",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": ""
+          "desc:8": "生产锡细枝"
         }
       },
       "tasks:9": {
@@ -19928,7 +20141,7 @@
     "343:10": {
       "questID:3": 343,
       "preRequisites:11": [
-        79
+        111
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -19995,6 +20208,220 @@
       "rewards:9": {}
     },
     "344:10": {
+      "questID:3": 344,
+      "preRequisites:11": [
+        363
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "terrafirmacraft:item.Lead Ingot",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": ""
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.plantGtTwig",
+              "Count:3": 10,
+              "Damage:2": 500,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.ingot",
+              "Count:3": 10,
+              "Damage:2": 8636,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.ingot",
+              "Count:3": 10,
+              "Damage:2": 8651,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "345:10": {
+      "questID:3": 345,
+      "preRequisites:11": [
+        363
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:diamond",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "钻石草",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "生产钻石粉"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "IC2:itemCropSeed",
+              "Count:3": 1,
+              "tag:10": {
+                "owner:8": "gregtech",
+                "name:8": "diareed"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.ingot",
+              "Count:3": 10,
+              "Damage:2": 8636,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.ingot",
+              "Count:3": 10,
+              "Damage:2": 8651,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "346:10": {
+      "questID:3": 346,
+      "preRequisites:11": [
+        363
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:gold_ingot",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "金叶草",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "生产金子"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.plantGtBerry",
+              "Count:3": 10,
+              "Damage:2": 8301,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.ingot",
+              "Count:3": 10,
+              "Damage:2": 8636,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.ingot",
+              "Count:3": 10,
+              "Damage:2": 8651,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "347:10": {
       "questID:3": 347,
       "preRequisites:11": [
         332
@@ -20070,7 +20497,7 @@
         }
       }
     },
-    "345:10": {
+    "348:10": {
       "questID:3": 348,
       "preRequisites:11": [
         271
@@ -20128,7 +20555,7 @@
         }
       }
     },
-    "346:10": {
+    "349:10": {
       "questID:3": 349,
       "preRequisites:11": [
         136
@@ -20179,7 +20606,83 @@
       },
       "rewards:9": {}
     },
-    "347:10": {
+    "350:10": {
+      "questID:3": 350,
+      "preRequisites:11": [
+        363
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.meta.plantGtFiber",
+            "Count:3": 1,
+            "Damage:2": 290,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "铜棉",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "生产生铜丝"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.plantGtFiber",
+              "Count:3": 10,
+              "Damage:2": 290,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.ingot",
+              "Count:3": 10,
+              "Damage:2": 8636,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.ingot",
+              "Count:3": 10,
+              "Damage:2": 8651,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "terrafirmacraft:item.Diamond",
+              "Count:3": 4,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "351:10": {
       "questID:3": 351,
       "preRequisites:11": [
         216
@@ -20226,6 +20729,1174 @@
             }
           },
           "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "352:10": {
+      "questID:3": 352,
+      "preRequisites:11": [
+        319
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:diamond_sword",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "和平手段",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "不想出门打怪？或是不想养殖牛获得皮革？或是不想搭建刷怪塔？杂交帮你忙！"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "353:10": {
+      "questID:3": 353,
+      "preRequisites:11": [
+        352
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:rotten_flesh",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "死尸之草",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "生产腐肉"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "IC2:itemCropSeed",
+              "Count:3": 1,
+              "tag:10": {
+                "owner:8": "gregtech",
+                "name:8": "corpseplant"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.plate",
+              "Count:3": 5,
+              "Damage:2": 130,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "terrafirmacraft:item.Steel Sheet",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "terrafirmacraft:item.Copper Ingot",
+              "Count:3": 15,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "354:10": {
+      "questID:3": 354,
+      "preRequisites:11": [
+        352
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spider_eye",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "蜘蛛草",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "生产蜘蛛产物"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "IC2:itemCropSeed",
+              "Count:3": 1,
+              "tag:10": {
+                "owner:8": "gregtech",
+                "name:8": "spidernip"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.plate",
+              "Count:3": 5,
+              "Damage:2": 130,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "terrafirmacraft:item.Steel Sheet",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "terrafirmacraft:item.Copper Ingot",
+              "Count:3": 15,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "355:10": {
+      "questID:3": 355,
+      "preRequisites:11": [
+        352
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:blaze_powder",
+            "Count:3": 2,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "烈焰芦苇",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "生产烈焰粉"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "IC2:itemCropSeed",
+              "Count:3": 1,
+              "tag:10": {
+                "owner:8": "gregtech",
+                "name:8": "blazereed"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.plate",
+              "Count:3": 5,
+              "Damage:2": 130,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "terrafirmacraft:item.Steel Sheet",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "terrafirmacraft:item.Copper Ingot",
+              "Count:3": 15,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "356:10": {
+      "questID:3": 356,
+      "preRequisites:11": [
+        319
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "IC2:blockCrop",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "杂交值得吗？",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "杂交是一个长线任务。一般来说，如果你从游戏中前期就开始杂交，你在后期的时候就能更加轻松地度过资源短缺时期。\n这依旧是你自己的选择。我安排了很多任务奖励激励你进行杂交。"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "357:10": {
+      "questID:3": 357,
+      "preRequisites:11": [
+        352
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:skull",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "凋零者之花",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "生产凋零产物"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "IC2:itemCropSeed",
+              "Count:3": 1,
+              "tag:10": {
+                "owner:8": "gregtech",
+                "name:8": "withereed"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.plate",
+              "Count:3": 5,
+              "Damage:2": 130,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "terrafirmacraft:item.Steel Sheet",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "terrafirmacraft:item.Copper Ingot",
+              "Count:3": 15,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "358:10": {
+      "questID:3": 358,
+      "preRequisites:11": [
+        352
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:slime_ball",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "粘液草",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "生产粘液球"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "IC2:itemCropSeed",
+              "Count:3": 1,
+              "tag:10": {
+                "owner:8": "gregtech",
+                "name:8": "slimeplant"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.plate",
+              "Count:3": 5,
+              "Damage:2": 130,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "terrafirmacraft:item.Steel Sheet",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "terrafirmacraft:item.Copper Ingot",
+              "Count:3": 15,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "359:10": {
+      "questID:3": 359,
+      "preRequisites:11": [
+        352
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:gunpowder",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "爆炸草",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "生产火药"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "IC2:itemCropSeed",
+              "Count:3": 1,
+              "tag:10": {
+                "owner:8": "gregtech",
+                "name:8": "creeperweed"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.plate",
+              "Count:3": 5,
+              "Damage:2": 130,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "terrafirmacraft:item.Steel Sheet",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "terrafirmacraft:item.Copper Ingot",
+              "Count:3": 15,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "360:10": {
+      "questID:3": 360,
+      "preRequisites:11": [
+        352
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:ender_pearl",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "加强末影百合",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "生产末影珍珠"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "IC2:itemCropSeed",
+              "Count:3": 1,
+              "tag:10": {
+                "owner:8": "gregtech",
+                "name:8": "enderbloom"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.plate",
+              "Count:3": 5,
+              "Damage:2": 130,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "terrafirmacraft:item.Steel Sheet",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "terrafirmacraft:item.Copper Ingot",
+              "Count:3": 15,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "361:10": {
+      "questID:3": 361,
+      "preRequisites:11": [
+        352
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:leather",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "皮革花",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "生产皮革"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "IC2:itemCropSeed",
+              "Count:3": 1,
+              "tag:10": {
+                "owner:8": "gregtech",
+                "name:8": "corium"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.plate",
+              "Count:3": 5,
+              "Damage:2": 130,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "terrafirmacraft:item.Steel Sheet",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "terrafirmacraft:item.Copper Ingot",
+              "Count:3": 15,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "362:10": {
+      "questID:3": 362,
+      "preRequisites:11": [
+        352
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:ghast_tear",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "泪之花",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "生产恶魂之泪"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "IC2:itemCropSeed",
+              "Count:3": 1,
+              "tag:10": {
+                "owner:8": "gregtech",
+                "name:8": "tearstalks"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.plate",
+              "Count:3": 5,
+              "Damage:2": 130,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "terrafirmacraft:item.Steel Sheet",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "terrafirmacraft:item.Copper Ingot",
+              "Count:3": 15,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "363:10": {
+      "questID:3": 363,
+      "preRequisites:11": [
+        319
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:diamond_pickaxe",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "矿物农场",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "不想出门挖矿？不想寻找石油？杂交帮你忙！"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "364:10": {
+      "questID:3": 364,
+      "preRequisites:11": [
+        116,
+        115,
+        117,
+        112
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 18200,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "四核处理器",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "性能强大的处理器核心，用于制作聚变反应堆和粒子加速器结构"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "365:10": {
+      "questID:3": 365,
+      "preRequisites:11": [
+        257
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "moegadd:Mainframe2",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "硬件升级",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "moegadd:Mainframe2",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "moegadd:Mainframe3",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "366:10": {
+      "questID:3": 366,
+      "preRequisites:11": [
+        244,
+        365
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "moegadd:Mainframe4",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "跟进一步",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "moegadd:Mainframe4",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "moegadd:Mainframe5",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "moegadd:Mainframe6",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "367:10": {
+      "questID:3": 367,
+      "preRequisites:11": [
+        154
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "DraconicEvolution:draconiumDust",
+            "Count:3": 10,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "开始做大事",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "通过跃迁引擎前往德拉科纳星，那里的地下深处有龙矿的存在。"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "368:10": {
+      "questID:3": 368,
+      "preRequisites:11": [
+        334,
+        335,
+        336,
+        190
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "advancedRocketry:blockHotTurf",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "抵达Duck Egg C",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "你第一个应该前往的行星是Duck Egg C"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "advancedRocketry:blockHotTurf",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multiitem.technological",
+              "Count:3": 10,
+              "Damage:2": 30306,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "369:10": {
+      "questID:3": 369,
+      "preRequisites:11": [
+        2
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "terrafirmacraft:item.Small Ore",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "寻找矿物石子",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "地面上有些石头比较特殊，你寻找着原生铜粒、小型黝铜矿、或者小型孔雀石——他们是铜矿粒，每个有10单位铜。\n\n请拾起至少十个铜矿粒。\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
         }
       },
       "rewards:9": {}
@@ -20293,7 +21964,7 @@
         "8:10": {
           "sizeX:3": 24,
           "x:3": 60,
-          "y:3": 360,
+          "y:3": 372,
           "id:3": 10,
           "sizeY:3": 24
         },
@@ -20320,8 +21991,8 @@
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": 360,
+          "x:3": 264,
+          "y:3": 180,
           "id:3": 59,
           "sizeY:3": 24
         },
@@ -20334,8 +22005,8 @@
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": -300,
-          "y:3": 276,
+          "x:3": 0,
+          "y:3": 204,
           "id:3": 87,
           "sizeY:3": 24
         },
@@ -20348,8 +22019,8 @@
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": -228,
-          "y:3": 204,
+          "x:3": -156,
+          "y:3": 264,
           "id:3": 132,
           "sizeY:3": 24
         },
@@ -20362,8 +22033,8 @@
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": -252,
-          "y:3": 228,
+          "x:3": -192,
+          "y:3": 336,
           "id:3": 137,
           "sizeY:3": 24
         },
@@ -20383,22 +22054,22 @@
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": -276,
-          "y:3": 300,
+          "x:3": 24,
+          "y:3": 396,
           "id:3": 163,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": -300,
+          "x:3": -108,
           "y:3": 228,
           "id:3": 164,
           "sizeY:3": 24
         },
         "23:10": {
           "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": 288,
+          "x:3": 264,
+          "y:3": 300,
           "id:3": 168,
           "sizeY:3": 24
         },
@@ -20418,15 +22089,15 @@
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": 216,
-          "y:3": 240,
+          "x:3": 168,
+          "y:3": 204,
           "id:3": 218,
           "sizeY:3": 24
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": 264,
-          "y:3": 240,
+          "x:3": 108,
+          "y:3": 180,
           "id:3": 219,
           "sizeY:3": 24
         },
@@ -20461,14 +22132,14 @@
         "32:10": {
           "sizeX:3": 24,
           "x:3": 204,
-          "y:3": 288,
+          "y:3": 276,
           "id:3": 262,
           "sizeY:3": 24
         },
         "33:10": {
           "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": 324,
+          "x:3": 264,
+          "y:3": 348,
           "id:3": 270,
           "sizeY:3": 24
         },
@@ -20495,86 +22166,86 @@
         },
         "37:10": {
           "sizeX:3": 24,
-          "x:3": -276,
-          "y:3": 204,
+          "x:3": -156,
+          "y:3": 336,
           "id:3": 281,
           "sizeY:3": 24
         },
         "38:10": {
           "sizeX:3": 24,
-          "x:3": -252,
-          "y:3": 276,
+          "x:3": -192,
+          "y:3": 264,
           "id:3": 288,
           "sizeY:3": 24
         },
         "39:10": {
           "sizeX:3": 24,
-          "x:3": -204,
-          "y:3": 276,
+          "x:3": 360,
+          "y:3": 336,
           "id:3": 289,
           "sizeY:3": 24
         },
         "40:10": {
           "sizeX:3": 24,
-          "x:3": -204,
-          "y:3": 228,
-          "id:3": 290,
+          "x:3": 204,
+          "y:3": 240,
+          "id:3": 291,
           "sizeY:3": 24
         },
         "41:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 192,
-          "id:3": 291,
-          "sizeY:3": 24
-        },
-        "42:10": {
-          "sizeX:3": 24,
-          "x:3": -228,
+          "x:3": -192,
           "y:3": 300,
           "id:3": 293,
           "sizeY:3": 24
         },
-        "43:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": 384,
           "id:3": 295,
           "sizeY:3": 24
         },
-        "44:10": {
+        "43:10": {
           "sizeX:3": 24,
           "x:3": 264,
           "y:3": 456,
           "id:3": 307,
           "sizeY:3": 24
         },
-        "45:10": {
+        "44:10": {
           "sizeX:3": 24,
           "x:3": 108,
           "y:3": 240,
           "id:3": 320,
           "sizeY:3": 24
         },
-        "46:10": {
+        "45:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": 420,
           "id:3": 348,
           "sizeY:3": 24
         },
-        "47:10": {
+        "46:10": {
           "sizeX:3": 24,
           "x:3": 360,
           "y:3": 372,
           "id:3": 349,
           "sizeY:3": 24
         },
-        "48:10": {
+        "47:10": {
           "sizeX:3": 24,
           "x:3": 108,
           "y:3": 360,
           "id:3": 351,
+          "sizeY:3": 24
+        },
+        "48:10": {
+          "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": 336,
+          "id:3": 369,
           "sizeY:3": 24
         }
       },
@@ -20726,89 +22397,96 @@
         },
         "19:10": {
           "sizeX:3": 24,
+          "x:3": 168,
+          "y:3": 0,
+          "id:3": 210,
+          "sizeY:3": 24
+        },
+        "20:10": {
+          "sizeX:3": 24,
           "x:3": 264,
           "y:3": -36,
           "id:3": 260,
           "sizeY:3": 24
         },
-        "20:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": 24,
           "id:3": 269,
           "sizeY:3": 24
         },
-        "21:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": 72,
           "y:3": 132,
           "id:3": 278,
           "sizeY:3": 24
         },
-        "22:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": 24,
           "y:3": 36,
           "id:3": 279,
           "sizeY:3": 24
         },
-        "23:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": 132,
           "id:3": 284,
           "sizeY:3": 24
         },
-        "24:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 312,
           "id:3": 285,
           "sizeY:3": 24
         },
-        "25:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": 204,
           "y:3": 276,
           "id:3": 286,
           "sizeY:3": 24
         },
-        "26:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": 84,
           "id:3": 294,
           "sizeY:3": 24
         },
-        "27:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": 300,
           "y:3": 180,
           "id:3": 296,
           "sizeY:3": 24
         },
-        "28:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": 300,
           "y:3": 132,
           "id:3": 297,
           "sizeY:3": 24
         },
-        "29:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": 168,
           "y:3": 36,
           "id:3": 316,
           "sizeY:3": 24
         },
-        "30:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 288,
           "y:3": 312,
           "id:3": 321,
           "sizeY:3": 24
         },
-        "31:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 348,
           "y:3": 132,
@@ -20838,203 +22516,217 @@
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": 132,
+          "x:3": 144,
           "y:3": -84,
           "id:3": 16,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": 120,
-          "y:3": -48,
+          "x:3": -48,
+          "y:3": 0,
           "id:3": 17,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
           "x:3": 144,
-          "y:3": 64,
+          "y:3": 60,
           "id:3": 18,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": 132,
+          "x:3": 144,
           "y:3": -120,
           "id:3": 20,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": 84,
+          "x:3": 96,
           "y:3": -120,
           "id:3": 23,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": 112,
-          "y:3": 112,
+          "x:3": 144,
+          "y:3": 168,
           "id:3": 24,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": 64,
-          "y:3": -32,
+          "x:3": 96,
+          "y:3": -84,
           "id:3": 26,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": -48,
+          "x:3": 336,
+          "y:3": 0,
           "id:3": 27,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": 216,
-          "y:3": 0,
+          "x:3": -24,
+          "y:3": -60,
           "id:3": 28,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": 216,
-          "y:3": 36,
+          "x:3": 360,
+          "y:3": 60,
           "id:3": 29,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": 216,
-          "y:3": 72,
+          "x:3": 312,
+          "y:3": 60,
           "id:3": 30,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": 216,
-          "y:3": 108,
+          "x:3": -24,
+          "y:3": 60,
           "id:3": 31,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
           "x:3": 144,
-          "y:3": 112,
+          "y:3": 108,
           "id:3": 32,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": 80,
-          "y:3": 96,
+          "x:3": 192,
+          "y:3": 60,
           "id:3": 35,
           "sizeY:3": 24
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": 72,
+          "x:3": 96,
+          "y:3": 108,
           "id:3": 36,
           "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
           "x:3": 192,
-          "y:3": -48,
+          "y:3": -24,
           "id:3": 39,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 112,
-          "y:3": 144,
+          "x:3": 228,
+          "y:3": 168,
           "id:3": 53,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": 80,
-          "y:3": 144,
+          "x:3": 60,
+          "y:3": 168,
           "id:3": 54,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": 176,
-          "y:3": 112,
-          "id:3": 58,
+          "x:3": 360,
+          "y:3": -60,
+          "id:3": 56,
           "sizeY:3": 24
         },
         "20:10": {
           "sizeX:3": 24,
-          "x:3": 80,
-          "y:3": 32,
-          "id:3": 75,
+          "x:3": 192,
+          "y:3": 108,
+          "id:3": 58,
           "sizeY:3": 24
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": -48,
-          "id:3": 76,
+          "x:3": -72,
+          "y:3": 60,
+          "id:3": 75,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": 24,
-          "id:3": 77,
+          "x:3": 96,
+          "y:3": -24,
+          "id:3": 76,
           "sizeY:3": 24
         },
         "23:10": {
           "sizeX:3": 24,
-          "x:3": 252,
-          "y:3": -24,
-          "id:3": 80,
+          "x:3": -72,
+          "y:3": 96,
+          "id:3": 77,
           "sizeY:3": 24
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": 228,
-          "y:3": -48,
-          "id:3": 81,
+          "x:3": 396,
+          "y:3": -36,
+          "id:3": 80,
           "sizeY:3": 24
         },
         "25:10": {
           "sizeX:3": 24,
-          "x:3": 80,
-          "y:3": 0,
-          "id:3": 201,
+          "x:3": 396,
+          "y:3": 36,
+          "id:3": 81,
           "sizeY:3": 24
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": 80,
-          "y:3": 64,
-          "id:3": 214,
+          "x:3": 312,
+          "y:3": -60,
+          "id:3": 83,
           "sizeY:3": 24
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": 156,
-          "y:3": -84,
-          "id:3": 280,
+          "x:3": -72,
+          "y:3": -60,
+          "id:3": 201,
           "sizeY:3": 24
         },
         "28:10": {
           "sizeX:3": 24,
-          "x:3": 156,
-          "y:3": -120,
-          "id:3": 287,
+          "x:3": 96,
+          "y:3": 60,
+          "id:3": 214,
           "sizeY:3": 24
         },
         "29:10": {
           "sizeX:3": 24,
-          "x:3": 264,
+          "x:3": 192,
+          "y:3": -84,
+          "id:3": 280,
+          "sizeY:3": 24
+        },
+        "30:10": {
+          "sizeX:3": 24,
+          "x:3": 192,
+          "y:3": -120,
+          "id:3": 287,
+          "sizeY:3": 24
+        },
+        "31:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
           "y:3": 0,
           "id:3": 324,
           "sizeY:3": 24
@@ -21286,162 +22978,141 @@
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 36,
-          "id:3": 56,
-          "sizeY:3": 24
-        },
-        "3:10": {
-          "sizeX:3": 24,
           "x:3": 96,
           "y:3": 120,
           "id:3": 57,
           "sizeY:3": 24
         },
-        "4:10": {
+        "3:10": {
           "sizeX:3": 24,
           "x:3": 24,
           "y:3": 180,
           "id:3": 60,
           "sizeY:3": 24
         },
-        "5:10": {
+        "4:10": {
           "sizeX:3": 24,
           "x:3": 96,
           "y:3": 180,
           "id:3": 61,
           "sizeY:3": 24
         },
-        "6:10": {
+        "5:10": {
           "sizeX:3": 24,
           "x:3": 192,
           "y:3": 180,
           "id:3": 62,
           "sizeY:3": 24
         },
-        "7:10": {
-          "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 48,
-          "id:3": 83,
-          "sizeY:3": 24
-        },
-        "8:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": 24,
-          "y:3": 96,
+          "y:3": 84,
           "id:3": 84,
           "sizeY:3": 24
         },
-        "9:10": {
+        "7:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 84,
+          "x:3": 24,
+          "y:3": 36,
           "id:3": 85,
           "sizeY:3": 24
         },
-        "10:10": {
+        "8:10": {
           "sizeX:3": 24,
           "x:3": 192,
           "y:3": 108,
           "id:3": 92,
           "sizeY:3": 24
         },
-        "11:10": {
+        "9:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 180,
           "id:3": 93,
           "sizeY:3": 24
         },
-        "12:10": {
+        "10:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 108,
           "id:3": 94,
           "sizeY:3": 24
         },
-        "13:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": 240,
           "id:3": 95,
           "sizeY:3": 24
         },
-        "14:10": {
+        "12:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": 180,
           "id:3": 96,
           "sizeY:3": 24
         },
-        "15:10": {
+        "13:10": {
           "sizeX:3": 24,
           "x:3": 96,
-          "y:3": 300,
+          "y:3": 240,
           "id:3": 98,
           "sizeY:3": 24
         },
-        "16:10": {
+        "14:10": {
           "sizeX:3": 24,
           "x:3": 192,
           "y:3": 60,
           "id:3": 102,
           "sizeY:3": 24
         },
-        "17:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": 144,
           "y:3": 60,
           "id:3": 103,
           "sizeY:3": 24
         },
-        "18:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": 288,
           "y:3": 108,
           "id:3": 104,
           "sizeY:3": 24
         },
-        "19:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": 180,
           "id:3": 182,
           "sizeY:3": 24
         },
-        "20:10": {
-          "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 240,
-          "id:3": 210,
-          "sizeY:3": 24
-        },
-        "21:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": 192,
           "y:3": 144,
           "id:3": 213,
           "sizeY:3": 24
         },
-        "22:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": 12,
           "id:3": 282,
           "sizeY:3": 24
         },
-        "23:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": 96,
-          "y:3": 360,
+          "y:3": 300,
           "id:3": 322,
           "sizeY:3": 24
         },
-        "24:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": 96,
-          "y:3": 408,
+          "y:3": 360,
           "id:3": 323,
           "sizeY:3": 24
         }
@@ -21461,28 +23132,28 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": 240,
+          "x:3": 168,
           "y:3": -36,
           "id:3": 38,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": -72,
+          "x:3": 72,
+          "y:3": -36,
           "id:3": 64,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": 240,
+          "x:3": 228,
           "y:3": -144,
           "id:3": 69,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": 204,
+          "x:3": 120,
           "y:3": -36,
           "id:3": 72,
           "sizeY:3": 24
@@ -21496,8 +23167,8 @@
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": 0,
+          "x:3": 228,
+          "y:3": -36,
           "id:3": 79,
           "sizeY:3": 24
         },
@@ -21510,14 +23181,14 @@
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": 312,
+          "x:3": 336,
           "y:3": -36,
           "id:3": 111,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": 204,
+          "x:3": 108,
           "y:3": 216,
           "id:3": 112,
           "sizeY:3": 24
@@ -21531,42 +23202,42 @@
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": -108,
+          "x:3": 156,
+          "y:3": -84,
           "id:3": 114,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
           "x:3": 108,
-          "y:3": 216,
+          "y:3": 192,
           "id:3": 115,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
           "x:3": 108,
-          "y:3": 168,
+          "y:3": 144,
           "id:3": 116,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": 156,
-          "y:3": 216,
+          "x:3": 108,
+          "y:3": 168,
           "id:3": 117,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": 216,
+          "x:3": 108,
+          "y:3": 72,
           "id:3": 140,
           "sizeY:3": 24
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": 204,
+          "x:3": 72,
           "y:3": -144,
           "id:3": 221,
           "sizeY:3": 24
@@ -21580,36 +23251,36 @@
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 312,
-          "y:3": 0,
+          "x:3": 372,
+          "y:3": 12,
           "id:3": 236,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": 348,
+          "x:3": 408,
           "y:3": -36,
           "id:3": 237,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": -72,
+          "x:3": 228,
+          "y:3": -84,
           "id:3": 240,
           "sizeY:3": 24
         },
         "20:10": {
           "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": 36,
+          "x:3": 312,
+          "y:3": 72,
           "id:3": 243,
           "sizeY:3": 24
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": 12,
-          "y:3": 216,
+          "x:3": 60,
+          "y:3": 72,
           "id:3": 244,
           "sizeY:3": 24
         },
@@ -21636,36 +23307,36 @@
         },
         "25:10": {
           "sizeX:3": 24,
-          "x:3": -36,
-          "y:3": 216,
+          "x:3": 12,
+          "y:3": 72,
           "id:3": 248,
           "sizeY:3": 24
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": 312,
-          "y:3": 36,
+          "x:3": 372,
+          "y:3": 72,
           "id:3": 249,
           "sizeY:3": 24
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": 312,
-          "y:3": 72,
+          "x:3": 372,
+          "y:3": 120,
           "id:3": 252,
           "sizeY:3": 24
         },
         "28:10": {
           "sizeX:3": 24,
-          "x:3": 252,
-          "y:3": 72,
+          "x:3": 312,
+          "y:3": 120,
           "id:3": 253,
           "sizeY:3": 24
         },
         "29:10": {
           "sizeX:3": 24,
           "x:3": 312,
-          "y:3": 120,
+          "y:3": 168,
           "id:3": 254,
           "sizeY:3": 24
         },
@@ -21692,15 +23363,15 @@
         },
         "33:10": {
           "sizeX:3": 24,
-          "x:3": 108,
-          "y:3": 120,
+          "x:3": 12,
+          "y:3": 108,
           "id:3": 258,
           "sizeY:3": 24
         },
         "34:10": {
           "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": -108,
+          "x:3": 72,
+          "y:3": -84,
           "id:3": 266,
           "sizeY:3": 24
         },
@@ -21709,6 +23380,27 @@
           "x:3": 276,
           "y:3": -72,
           "id:3": 267,
+          "sizeY:3": 24
+        },
+        "36:10": {
+          "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": 180,
+          "id:3": 364,
+          "sizeY:3": 24
+        },
+        "37:10": {
+          "sizeX:3": 24,
+          "x:3": 108,
+          "y:3": 108,
+          "id:3": 365,
+          "sizeY:3": 24
+        },
+        "38:10": {
+          "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": 108,
+          "id:3": 366,
           "sizeY:3": 24
         }
       },
@@ -21741,8 +23433,8 @@
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -180,
-          "y:3": -132,
+          "x:3": -240,
+          "y:3": -180,
           "id:3": 128,
           "sizeY:3": 24
         },
@@ -21895,8 +23587,8 @@
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": -144,
+          "x:3": -84,
+          "y:3": -108,
           "id:3": 273,
           "sizeY:3": 24
         },
@@ -21916,15 +23608,15 @@
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": -72,
+          "x:3": -192,
+          "y:3": -180,
           "id:3": 291,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": -180,
+          "x:3": -84,
+          "y:3": -72,
           "id:3": 298,
           "sizeY:3": 24
         },
@@ -21979,14 +23671,14 @@
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": -108,
+          "x:3": -156,
+          "y:3": -144,
           "id:3": 312,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": -48,
+          "x:3": -192,
           "y:3": -144,
           "id:3": 313,
           "sizeY:3": 24
@@ -22084,37 +23776,149 @@
         },
         "36:10": {
           "sizeX:3": 24,
-          "x:3": -312,
-          "y:3": -72,
+          "x:3": -288,
+          "y:3": 108,
           "id:3": 339,
           "sizeY:3": 24
         },
         "37:10": {
           "sizeX:3": 24,
-          "x:3": -312,
-          "y:3": -108,
+          "x:3": -276,
+          "y:3": 72,
           "id:3": 340,
           "sizeY:3": 24
         },
         "38:10": {
           "sizeX:3": 24,
-          "x:3": -312,
-          "y:3": -36,
+          "x:3": -348,
+          "y:3": 72,
           "id:3": 341,
           "sizeY:3": 24
         },
         "39:10": {
           "sizeX:3": 24,
-          "x:3": -312,
-          "y:3": 0,
+          "x:3": -276,
+          "y:3": 36,
           "id:3": 342,
           "sizeY:3": 24
         },
         "40:10": {
           "sizeX:3": 24,
+          "x:3": -348,
+          "y:3": 36,
+          "id:3": 344,
+          "sizeY:3": 24
+        },
+        "41:10": {
+          "sizeX:3": 24,
+          "x:3": -336,
+          "y:3": 108,
+          "id:3": 345,
+          "sizeY:3": 24
+        },
+        "42:10": {
+          "sizeX:3": 24,
+          "x:3": -312,
+          "y:3": 72,
+          "id:3": 346,
+          "sizeY:3": 24
+        },
+        "43:10": {
+          "sizeX:3": 24,
           "x:3": -12,
           "y:3": -216,
           "id:3": 347,
+          "sizeY:3": 24
+        },
+        "44:10": {
+          "sizeX:3": 24,
+          "x:3": -312,
+          "y:3": 36,
+          "id:3": 350,
+          "sizeY:3": 24
+        },
+        "45:10": {
+          "sizeX:3": 24,
+          "x:3": -312,
+          "y:3": -144,
+          "id:3": 352,
+          "sizeY:3": 24
+        },
+        "46:10": {
+          "sizeX:3": 24,
+          "x:3": -348,
+          "y:3": -180,
+          "id:3": 353,
+          "sizeY:3": 24
+        },
+        "47:10": {
+          "sizeX:3": 24,
+          "x:3": -312,
+          "y:3": -180,
+          "id:3": 354,
+          "sizeY:3": 24
+        },
+        "48:10": {
+          "sizeX:3": 24,
+          "x:3": -276,
+          "y:3": -180,
+          "id:3": 355,
+          "sizeY:3": 24
+        },
+        "49:10": {
+          "sizeX:3": 24,
+          "x:3": -300,
+          "y:3": -72,
+          "id:3": 356,
+          "sizeY:3": 24
+        },
+        "50:10": {
+          "sizeX:3": 24,
+          "x:3": -276,
+          "y:3": -216,
+          "id:3": 357,
+          "sizeY:3": 24
+        },
+        "51:10": {
+          "sizeX:3": 24,
+          "x:3": -312,
+          "y:3": -216,
+          "id:3": 358,
+          "sizeY:3": 24
+        },
+        "52:10": {
+          "sizeX:3": 24,
+          "x:3": -348,
+          "y:3": -216,
+          "id:3": 359,
+          "sizeY:3": 24
+        },
+        "53:10": {
+          "sizeX:3": 24,
+          "x:3": -348,
+          "y:3": -252,
+          "id:3": 360,
+          "sizeY:3": 24
+        },
+        "54:10": {
+          "sizeX:3": 24,
+          "x:3": -312,
+          "y:3": -252,
+          "id:3": 361,
+          "sizeY:3": 24
+        },
+        "55:10": {
+          "sizeX:3": 24,
+          "x:3": -276,
+          "y:3": -252,
+          "id:3": 362,
+          "sizeY:3": 24
+        },
+        "56:10": {
+          "sizeX:3": 24,
+          "x:3": -312,
+          "y:3": 0,
+          "id:3": 363,
           "sizeY:3": 24
         }
       },
@@ -22294,9 +24098,16 @@
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -252,
+          "x:3": -264,
           "y:3": -96,
           "id:3": 337,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 24,
+          "x:3": -324,
+          "y:3": -96,
+          "id:3": 368,
           "sizeY:3": 24
         }
       },
@@ -22606,7 +24417,15 @@
       "order:3": 15
     },
     "16:10": {
-      "quests:9": {},
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 24,
+          "x:3": -120,
+          "y:3": -108,
+          "id:3": 367,
+          "sizeY:3": 24
+        }
+      },
       "lineID:3": 16,
       "properties:10": {
         "betterquesting:10": {

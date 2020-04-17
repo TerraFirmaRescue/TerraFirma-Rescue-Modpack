@@ -1,7 +1,7 @@
 #################################Quests#################################
 
-tfr.quest0.name=石器
-tfr.quest0.desc=使用TFC的石子打制技术，你可以制作四种基础工具。稿子和锯子等高级工具需要金属制作。
+tfr.quest0.name=Stone Tools
+tfr.quest0.desc=Using TFC's stone tool making method, you can craft four basic tools. Pickaxe and Saw and other tools needs metal to forge. 
 
 ##################################Line##################################
 
