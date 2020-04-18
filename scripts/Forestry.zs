@@ -95,7 +95,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.extruder", false, 16, 16, 0, [10000],
 recipes.remove(<Forestry:factory:1>);
 recipes.addShaped(<Forestry:factory:1>,
  [[<gregtech:gt.multiitem.technological:12001>,<gregtech:gt.meta.toolHeadBuzzSaw:8610>,<ore:craftingToolWrench>],
-  [<gregtech:gt.meta.plate:8610>,<Forestry:sturdyMachine>,<gregtech:gt.meta.plate:8610>],
+  [<ore:plateBronze>,<Forestry:sturdyMachine>,<ore:plateBronze>],
   [<gregtech:gt.multiitem.technological:12001>,<gregtech:gt.meta.toolHeadBuzzSaw:8610>,<gregtech:gt.multitileentity:28066>]]);
   
 //fermenter
@@ -124,7 +124,7 @@ recipes.remove(<Forestry:factory:6>);
 recipes.addShaped(<Forestry:factory:6>,
  [[<gregtech:gt.multitileentity:26160>,<ore:craftingToolWrench>,<gregtech:gt.multitileentity:26160>],
   [<gregtech:gt.multitileentity:26160>,<Forestry:sturdyMachine>,<gregtech:gt.multitileentity:26160>],
-  [<gregtech:gt.multitileentity:28303>,<gregtech:gt.meta.plateDouble:290>,<gregtech:gt.multitileentity:28303>]]);
+  [<gregtech:gt.multitileentity:28303>,<ore:plateDoubleCopper>,<gregtech:gt.multitileentity:28303>]]);
   
 //rain creator
 recipes.remove(<Forestry:factory:7>);
@@ -188,7 +188,7 @@ recipes.addShaped(<Forestry:engine:2>,
 
 recipes.remove(<Forestry:engine:4>);
 recipes.addShaped(<Forestry:engine:4>,
- [[<gregtech:gt.multitileentity:1512>,<gregtech:gt.multitileentity:11111>,<gregtech:gt.meta.chain:290>],
+ [[<gregtech:gt.meta.chain:290>,<gregtech:gt.multitileentity:11111>,<gregtech:gt.meta.chain:290>],
   [<gregtech:gt.meta.gearGt:290>,<ore:craftingToolWrench>,<ore:plateCopper>],
   [<gregtech:gt.meta.gearGtSmall:290>,<ore:craftingToolHardHammer>,<ore:plateCopper>]]);
   

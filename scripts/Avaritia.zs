@@ -93,11 +93,11 @@ mods.avaritia.Compressor.add(<gregtech:gt.meta.ingotDouble:8791>,1,<gregtech:gt.
 mods.avaritia.ExtremeCrafting.remove(<Avaritia:Skull_Sword>);
 mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Skull_Sword>,
  [[null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,<Avaritia:Resource:1>,<gregtech:gt.meta.ingot:470>,null],
-  [null,null,null, null,null, <Avaritia:Resource:1>, <gregtech:gt.meta.ingot:470>,<Avaritia:Resource:1>, null],
-  [null,null, null, null, <Avaritia:Resource:1>, <gregtech:gt.meta.ingot:470>, <Avaritia:Resource:1>,null,null],
-  [null,null, null, <Avaritia:Resource:1>, <gregtech:gt.meta.ingot:470>, <Avaritia:Resource:1>,null,null,null],
-  [null,<gregtech:gt.meta.plate:8635>, <Avaritia:Resource:1>, <gregtech:gt.meta.ingot:470>, <Avaritia:Resource:1>,null, null,null,null],
+  [null,null,null,null,null,null,<Avaritia:Resource:1>,<terrafirmacraft:item.Silver Ingot>,null],
+  [null,null,null, null,null, <Avaritia:Resource:1>,<terrafirmacraft:item.Silver Ingot>,<Avaritia:Resource:1>, null],
+  [null,null, null, null, <Avaritia:Resource:1>, <terrafirmacraft:item.Silver Ingot>, <Avaritia:Resource:1>,null,null],
+  [null,null, null, <Avaritia:Resource:1>, <terrafirmacraft:item.Silver Ingot>, <Avaritia:Resource:1>,null,null,null],
+  [null,<gregtech:gt.meta.plate:8635>, <Avaritia:Resource:1>, <terrafirmacraft:item.Silver Ingot>, <Avaritia:Resource:1>,null, null,null,null],
   [null,null,<gregtech:gt.meta.plateDouble:8635>,<Avaritia:Resource:1>, null,null, null,null,null],
   [null,<gregtech:gt.meta.stickLong:8635>,null,<gregtech:gt.meta.plate:8635>,null,null,null,null,null],
   [<minecraft:nether_star>,null,null,null,null,null,null,null,null]]);
@@ -170,18 +170,6 @@ mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Neutronium_Compressor>,
   [null,null,null,null,null,null,null,null,null]]);
 
 mods.avaritia.Compressor.add(<gregtech:gt.meta.ingotDouble:8791>,1,<gregtech:gt.meta.ingotQuintuple:2220>);
-
-mods.avaritia.ExtremeCrafting.remove(<Avaritia:Skull_Sword>);
-mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Skull_Sword>,
- [[null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,<Avaritia:Resource:1>,<gregtech:gt.meta.ingot:470>,null],
-  [null,null,null, null,null, <Avaritia:Resource:1>, <gregtech:gt.meta.ingot:470>,<Avaritia:Resource:1>, null],
-  [null,null, null, null, <Avaritia:Resource:1>, <gregtech:gt.meta.ingot:470>, <Avaritia:Resource:1>,null,null],
-  [null,null, null, <Avaritia:Resource:1>, <gregtech:gt.meta.ingot:470>, <Avaritia:Resource:1>,null,null,null],
-  [null,<gregtech:gt.meta.plate:8635>, <Avaritia:Resource:1>, <gregtech:gt.meta.ingot:470>, <Avaritia:Resource:1>,null, null,null,null],
-  [null,null,<gregtech:gt.meta.plateDouble:8635>,<Avaritia:Resource:1>, null,null, null,null,null],
-  [null,<gregtech:gt.meta.stickLong:8635>,null,<gregtech:gt.meta.plate:8635>,null,null,null,null,null],
-  [<minecraft:nether_star>,null,null,null,null,null,null,null,null]]);
 
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",<Avaritia:Resource:9>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 4096, 400, 0, [10000],
