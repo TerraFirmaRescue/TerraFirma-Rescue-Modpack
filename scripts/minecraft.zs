@@ -355,4 +355,8 @@ recipes.addShaped(<minecraft:string>*3,
 [null,null,null],
 [<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>]]);
 
+//slimeball
+recipes.addShapeless(<minecraft:slime_ball>,[<tfctech:item.Glue>,<tfctech:item.Glue>,<tfctech:item.Glue>,<tfctech:item.Glue>]);
+
+
 

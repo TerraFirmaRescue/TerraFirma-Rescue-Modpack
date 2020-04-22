@@ -1342,3 +1342,59 @@ recipes.addShaped(<gregtech:gt.multitileentity:20445>,
 [[<gregtech:gt.multiitem.technological:11004>,<gregtech:gt.multiitem.technological:11003>,<gregtech:gt.multiitem.technological:11005>],
 [<gregtech:gt.multiitem.technological:12145>,<gregtech:gt.meta.machine:220>,<gregtech:gt.multiitem.technological:12125>],
 [<gregtech:gt.multiitem.technological:30306>,<ore:MF5>,<gregtech:gt.multiitem.technological:30306>]]);
+
+//crafting lower tier circuits
+recipes.addShapeless(<gregtech:gt.multiitem.technological:30301>,[<gregtech:gt.multiitem.technological:30302>]);
+recipes.addShapeless(<gregtech:gt.multiitem.technological:30302>,[<gregtech:gt.multiitem.technological:30303>]);
+recipes.addShapeless(<gregtech:gt.multiitem.technological:30303>,[<gregtech:gt.multiitem.technological:30304>]);
+recipes.addShapeless(<gregtech:gt.multiitem.technological:30304>,[<gregtech:gt.multiitem.technological:30305>]);
+recipes.addShapeless(<gregtech:gt.multiitem.technological:30305>,[<gregtech:gt.multiitem.technological:30306>]);
+
+//infinite water tier 1
+recipes.addShaped(<gregtech:gt.multitileentity:32763>.withTag({"gt.spring": {FluidName: "water", Amount: 100}, display: {Name: "Infinite Water Source Tier-1", Lore: ["Output 1000L of water", "every 5 second"]}}),
+[[<gregtech:gt.multiitem.technological:12022>,<gregtech:gt.multiitem.technological:30302>,<gregtech:gt.multiitem.technological:12022>],
+[<gregtech:gt.multitileentity:26062>,<gregtech:gt.meta.machine:130>,<gregtech:gt.multitileentity:26062>],
+[<gregtech:gt.multiitem.technological:12022>,<gregtech:gt.multitileentity:26062>,<gregtech:gt.multiitem.technological:12022>]]);
+
+//infinite water tier 2
+recipes.addShaped(<gregtech:gt.multitileentity:32763>.withTag({"gt.spring": {FluidName: "water", Amount: 80}, display: {Name: "Infinite Water Source Tier-2", Lore: ["Output 1000L of water", "every 4 second"]}}),
+[[<gregtech:gt.multiitem.technological:12023>,<gregtech:gt.multiitem.technological:30303>,<gregtech:gt.multiitem.technological:12023>],
+[<gregtech:gt.multitileentity:26063>,<gregtech:gt.meta.machine:8636>,<gregtech:gt.multitileentity:26063>],
+[<gregtech:gt.multiitem.technological:12023>,<gregtech:gt.multitileentity:26063>,<gregtech:gt.multiitem.technological:12023>]]);
+
+//infinite water tier 3
+recipes.addShaped(<gregtech:gt.multitileentity:32763>.withTag({"gt.spring": {FluidName: "water", Amount: 60}, display: {Name: "Infinite Water Source Tier-3", Lore: ["Output 1000L of water", "every 3 second"]}}),
+[[<gregtech:gt.multiitem.technological:12024>,<gregtech:gt.multiitem.technological:30304>,<gregtech:gt.multiitem.technological:12024>],
+[<gregtech:gt.multitileentity:26064>,<gregtech:gt.meta.machine:240>,<gregtech:gt.multitileentity:26064>],
+[<gregtech:gt.multiitem.technological:12024>,<gregtech:gt.multitileentity:26064>,<gregtech:gt.multiitem.technological:12024>]]);
+
+//infinite water tier 4
+recipes.addShaped(<gregtech:gt.multitileentity:32763>.withTag({"gt.spring": {FluidName: "water", Amount: 40}, display: {Name: "Infinite Water Source Tier-4", Lore: ["Output 1000L of water", "every 2 second"]}}),
+[[<gregtech:gt.multiitem.technological:12025>,<gregtech:gt.multiitem.technological:30305>,<gregtech:gt.multiitem.technological:12025>],
+[<gregtech:gt.multitileentity:26072>,<gregtech:gt.meta.machine:220>,<gregtech:gt.multitileentity:26072>],
+[<gregtech:gt.multiitem.technological:12025>,<gregtech:gt.multitileentity:26072>,<gregtech:gt.multiitem.technological:12025>]]);
+
+//infinite water tier 5
+recipes.addShaped(<gregtech:gt.multitileentity:32763>.withTag({"gt.spring": {FluidName: "water", Amount: 20}, display: {Name: "Infinite Water Source Tier-5", Lore: ["Output 1000L of water", "every second"]}}),
+[[<gregtech:gt.multiitem.technological:12026>,<gregtech:gt.multiitem.technological:30306>,<gregtech:gt.multiitem.technological:12026>],
+[<gregtech:gt.multitileentity:26073>,<gregtech:gt.meta.machine:770>,<gregtech:gt.multitileentity:26073>],
+[<gregtech:gt.multiitem.technological:12026>,<gregtech:gt.multitileentity:26073>,<gregtech:gt.multiitem.technological:12026>]]);
+
+//infinite water tier 6
+recipes.addShaped(<gregtech:gt.multitileentity:32763>.withTag({"gt.spring": {FluidName: "water", Amount: 4}, display: {Name: "Infinite Water Source Tier-6", Lore: ["Output 5000L of water", "every second"]}}),
+[[<gregtech:gt.multiitem.technological:12027>,<ore:MF1>,<gregtech:gt.multiitem.technological:12027>],
+[<gregtech:gt.multitileentity:26074>,<gregtech:gt.meta.machine:760>,<gregtech:gt.multitileentity:26074>],
+[<gregtech:gt.multiitem.technological:12027>,<gregtech:gt.multitileentity:26074>,<gregtech:gt.multiitem.technological:12027>]]);
+
+//infinite water tier 7
+recipes.addShaped(<gregtech:gt.multitileentity:32763>.withTag({"gt.spring": {FluidName: "water", Amount: 2}, display: {Name: "Infinite Water Source Tier-7", Lore: ["Output 10000L of water", "every second"]}}),
+[[<gregtech:gt.multiitem.technological:12028>,<ore:MF2>,<gregtech:gt.multiitem.technological:12028>],
+[<gregtech:gt.multitileentity:26075>,<gregtech:gt.meta.machine:8790>,<gregtech:gt.multitileentity:26075>],
+[<gregtech:gt.multiitem.technological:12028>,<gregtech:gt.multitileentity:26075>,<gregtech:gt.multiitem.technological:12028>]]);
+
+//infinite water tier 8
+recipes.addShaped(<gregtech:gt.multitileentity:32763>.withTag({"gt.spring": {FluidName: "water", Amount: 1}, display: {Name: "Infinite Water Source Tier-8", Lore: ["Output 20000L of water", "every second"]}}),
+[[<gregtech:gt.multiitem.technological:12029>,<ore:MF3>,<gregtech:gt.multiitem.technological:12029>],
+[<gregtech:gt.multitileentity:26076>,<gregtech:gt.meta.machine:8684>,<gregtech:gt.multitileentity:26076>],
+[<gregtech:gt.multiitem.technological:12029>,<gregtech:gt.multitileentity:26076>,<gregtech:gt.multiitem.technological:12029>]]);
+
