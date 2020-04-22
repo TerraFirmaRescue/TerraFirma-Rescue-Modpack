@@ -311,3 +311,8 @@ Chisel.addAll(<ore:itemChisel>);
 Blade.addAll(<ore:itemScythe>);
 Saw.addAll(<ore:itemSaw>);
 Shears.add(<terrafirmacraft:item.shears>);
+
+<ore:ingotIron>.remove(<terrafirmacraft:item.Wrought Iron Ingot>);
+<ore:plateIron>.remove(<terrafirmacraft:item.Wrought Iron Sheet>);
+<ore:plateDoubleIron>.remove(<terrafirmacraft:item.Wrought Iron Double Sheet>);
+//remove wrought irom from common iron
