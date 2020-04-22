@@ -117,101 +117,6 @@ MTUtilsGT.removeAllRecipes("gt.recipe.maskaligner",<moegadd:MemoryCell1G>);
 
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<moegadd:PatchCapacitor>);
 
-/**----*/
-
-MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 128, 200, 1000,[10000],
-[null],
-[<liquid:propylene>*1000,<liquid:chlorine>*1000],
-[<liquid:hydrochloricacid>*1000,<liquid:allylchloride>*1000],
-[null]);
-//allylchloride lv bing xi
-
-MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 128, 100, 1000,[10000],
-[<gregapi:gt.integrated_circuit>*0,<gregtech:gt.meta.dust:8268>,<gregtech:gt.meta.dust:470>*0],
-[<liquid:allylchloride>*1000,<liquid:water>*1000,<liquid:air>*1000],
-[<liquid:acrylicacid>*1000,],
-[<terrafirmacraft:item.Powder:9>]);
-//acrylicacid bing xi suan
-
-MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 128, 400, 1000,[10000],
-[null],
-[<liquid:acrylicacid>*1000,<liquid:bioethanol>*1000,<liquid:sulfuricacid>*1000],
-[<liquid:ethylacrylate>*1000,<liquid:sulfuricacid>*800],
-[null]);
-//ethylacrylate bing xi suan yi zhi
-
-MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 256, 200, 1000,[10000],
-[<gregtech:gt.meta.dust:290>*0,<gregtech:gt.meta.dust:780>*0],
-[<liquid:ethylene>*1000,<liquid:benzene>*1000],
-[<liquid:styrene>*1000],
-[null]);
-//styrene ben yi xi
-
-MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 256, 400, 1000,[10000],
-[<gregtech:gt.meta.dust:8234>*0],
-[<liquid:ethylacrylate>*1000,<liquid:styrene>*1000,<liquid:titaniumtetrachloride>*10],
-[<liquid:photoresist>*1000],
-[null]);
-//guang ke jiao
-
-// poly-C2H3Cl
-MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 400 ,0,[10000],
-[null],
-[<liquid:ethylene>*1000,<liquid:chlorine>*1000],
-[<liquid:vinylchloride>*1000,<liquid:hydrochloricacid>*1000],
-[null]);
-
-MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 400 ,0,[10000],
-[n],
-[<liquid:allylchloride>*1000,<liquid:titaniumtetrachloride>*10],
-[<liquid:polyvinylchloride>*1000],
-[n]);
-
-// epoxid
-MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 64, 800 ,0,[10000],
-[<gregtech:gt.meta.dust:8018>*0],
-[<liquid:glycerol>*1000,<liquid:hydrochloricacid>*1000],
-[<liquid:dichloroisopropanol>*1000],
-[n]);
-
-MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 64, 1000 ,0,[10000],
-[<gregtech:gt.meta.dust:8015>*0],
-[<liquid:dichloroisopropanol>*1000],
-[<liquid:epichlorohydrin>*500],
-[n]);
-
-MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 64, 800 ,0,[10000],
-[<gregtech:gt.meta.dust:8008>*0],
-[<liquid:benzene>*1000,<liquid:propylene>*1000],
-[<liquid:cumene>*1000],
-[n]);
-
-MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 64, 800 ,0,[10000],
-[n],
-[<liquid:cumene>*1000,<liquid:oxygen>*1000,<liquid:sulfuricacid>*1000],
-[<liquid:phenol>*500,<liquid:acetone>*500],
-[n]);
-
-MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 64, 1000 ,0,[10000],
-[n],
-[<liquid:phenol>*1000,<liquid:acetone>*1000],
-[<liquid:bisphenol>*1000],
-[n]);
-
-MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 64, 1000 ,0,[10000],
-[<gregtech:gt.meta.dust:8268>*4],
-[<liquid:epichlorohydrin>*1000,<liquid:bisphenol>*1000,<liquid:phosphoricacid>*50],
-[<liquid:epoxid>*1000],
-[n]);
-
-/*--H3PO4---*/
-MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 500 ,0,[10000],
-[<gregtech:gt.meta.dust:8207>],
-[<liquid:hydrochloricacid>*3000],
-[<liquid:phosphoricacid>*1000,<liquid:chlorine>*1000],
-[n]);
-
-
 /*--Patches--*/
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 120, 200 ,0,[10000],
 [<gregtech:gt.meta.plateTiny:8225>*4,<gregtech:gt.meta.foil:130>*4,<gregtech:gt.meta.wireFine:8640>],
@@ -835,25 +740,25 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1024, 1600 ,0,[10000],
 //---
 
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1536, 300 ,0,[10000],
-[<moegadd:BioCircuitBoard>,<moegadd:IntegratedCircuit2GHz>*2,<gregtech:gt.meta.bolt:8640>*8,<gregtech:gt.meta.wireFine:780>*8,<moegadd:Mainframe3>*0],
+[<moegadd:FabricStrengthenedCircuitBoard>,<moegadd:IntegratedCircuit2GHz>*2,<gregtech:gt.meta.bolt:8640>*8,<gregtech:gt.meta.wireFine:780>*8,<moegadd:Mainframe3>*0],
 [<liquid:molten.solderingalloy>*30],
 [n],
 [<moegadd:CPU_2GHz_2>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1536, 600 ,0,[10000],
-[<moegadd:BioCircuitBoard>,<moegadd:IntegratedCircuit2GHz>*4,<gregtech:gt.meta.bolt:8640>*16,<gregtech:gt.meta.wireFine:780>*8,<moegadd:Mainframe4>*0],
+[<moegadd:FabricStrengthenedCircuitBoard>,<moegadd:IntegratedCircuit2GHz>*4,<gregtech:gt.meta.bolt:8640>*16,<gregtech:gt.meta.wireFine:780>*8,<moegadd:Mainframe4>*0],
 [<liquid:molten.solderingalloy>*60],
 [n],
 [<moegadd:CPU_2GHz_4>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1536, 1000 ,0,[10000],
-[<moegadd:BioCircuitBoard>,<moegadd:IntegratedCircuit2GHz>*8,<gregtech:gt.meta.bolt:8640>*24,<gregtech:gt.meta.wireFine:780>*8,<moegadd:Mainframe5>*0],
+[<moegadd:FabricStrengthenedCircuitBoard>,<moegadd:IntegratedCircuit2GHz>*8,<gregtech:gt.meta.bolt:8640>*24,<gregtech:gt.meta.wireFine:780>*8,<moegadd:Mainframe5>*0],
 [<liquid:molten.solderingalloy>*120],
 [n],
 [<moegadd:CPU_2GHz_8>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1536, 1600 ,0,[10000],
-[<moegadd:BioCircuitBoard>,<moegadd:IntegratedCircuit2GHz>*16,<gregtech:gt.meta.bolt:8640>*32,<gregtech:gt.meta.wireFine:780>*8,<moegadd:Mainframe6>*0],
+[<moegadd:FabricStrengthenedCircuitBoard>,<moegadd:IntegratedCircuit2GHz>*16,<gregtech:gt.meta.bolt:8640>*32,<gregtech:gt.meta.wireFine:780>*8,<moegadd:Mainframe6>*0],
 [<liquid:molten.solderingalloy>*240],
 [n],
 [<moegadd:CPU_2GHz_16>]);
@@ -980,7 +885,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 200 ,0,[10000],
 [<moegadd:IntermediateProcessorMainboard>]);
 //2
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1024, 400 ,0,[10000],
-[<moegadd:BioCircuitBoard>,<gregtech:gt.multiitem.technological:30005>,<moegadd:PatchTransistor>*64,<moegadd:SMDResistor>*64,<moegadd:PatchDiode>*64,<moegadd:PatchCapacitor>*64,<moegadd:Mainframe4>*0],
+[<moegadd:FabricStrengthenedCircuitBoard>,<gregtech:gt.multiitem.technological:30005>,<moegadd:PatchTransistor>*64,<moegadd:SMDResistor>*64,<moegadd:PatchDiode>*64,<moegadd:PatchCapacitor>*64,<moegadd:Mainframe4>*0],
 [<liquid:molten.solderingalloy>*576],
 [n],
 [<moegadd:AdvancedProcessorMainboard>]);
@@ -1134,13 +1039,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 200 ,0,[10000],
 [<liquid:epoxid>*144],
 [n],
 [<moegadd:FabricStrengthenedCircuitBoard>]);
-
-/*---Bio board---*/
-MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 200 ,0,[10000],
-[<moegadd:FabricStrengthenedCircuitBoard>,<gregtech:gt.meta.chemtube:9700>,<gregtech:gt.multiitem.technological:12141>,<gregtech:gt.multiitem.technological:12021>],
-[<liquid:ic2distilledwater>*144],
-[n],
-[<moegadd:BioCircuitBoard>]);
 
 /*----Simple Circuits (GT1-3Tiers)---*/
 MTUtilsGT.removeAllRecipes("gt.recipe.press",<gregtech:gt.multiitem.technological:30201>);

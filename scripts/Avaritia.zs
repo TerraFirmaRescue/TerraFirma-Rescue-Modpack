@@ -103,7 +103,6 @@ mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Skull_Sword>,
   [<minecraft:nether_star>,null,null,null,null,null,null,null,null]]);
 
 mods.avaritia.ExtremeCrafting.remove(<Avaritia:Endest_Pearl>);
-mods.avaritia.ExtremeCrafting.remove(<Avaritia:Resource:5>);
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",<Avaritia:Resource:9>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 4096, 400, 0, [10000],
 [<gregtech:gt.meta.gearGt:2220>,<DraconicEvolution:draconiumEnergyCore:1>,<Avaritia:Resource_Block>*4],
@@ -173,7 +172,7 @@ mods.avaritia.Compressor.add(<gregtech:gt.meta.ingotDouble:8791>,1,<gregtech:gt.
 
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",<Avaritia:Resource:9>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 4096, 400, 0, [10000],
-[<gregtech:gt.meta.gearGt:2220>,<DraconicEvolution:draconiumEnergyCore:1>,<Avaritia:Resource_Block>*4],
+[<gregtech:gt.meta.gearGt:2220>,<DraconicEvolution:draconiumEnergyCore:1>,<Avaritia:Resource_Block>*2],
 [<liquid:molten.draconiumawakened>*288],
 [null],
 [<Avaritia:Resource:9>]);
@@ -193,3 +192,41 @@ mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Resource:5>,
   [n,n,MC7,<gregtech:gt.multiitem.physics:1005>,<gregtech:gt.multiitem.physics:1000>,<gregtech:gt.multiitem.physics:1001>,MC7,n,n],
   [n,n,n,n,n,n,n,n,n],
   [n,n,n,n,n,n,n,n,n]]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<gregtech:gt.meta.stick:8800>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<gregtech:gt.meta.gearGt:8800>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<gregtech:gt.meta.plate:8800>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<gregtech:gt.meta.plateCurved:8800>);
+MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<gregtech:gt.meta.stickLong:8800>);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.extruder", false, 2048, 2000, 0, [10000],
+[<Avaritia:Resource:4>,<gregtech:gt.multiitem.technological:10027>*0],
+[n],
+[null],
+[<gregtech:gt.meta.stick:8800>*2]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.extruder", false, 2048, 8000, 0, [10000],
+[<Avaritia:Resource:4>*4,<gregtech:gt.multiitem.technological:10023>*0],
+[n],
+[null],
+[<gregtech:gt.meta.gearGt:8800>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.extruder", false, 2048, 2000, 0, [10000],
+[<Avaritia:Resource:4>,<gregtech:gt.multiitem.technological:10001>*0],
+[n],
+[null],
+[<gregtech:gt.meta.plate:8800>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.extruder", false, 2048, 2000, 0, [10000],
+[<Avaritia:Resource:4>,<gregtech:gt.multiitem.technological:10025>*0],
+[n],
+[null],
+[<gregtech:gt.meta.plateCurved:8800>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.extruder", false, 2048, 2000, 0, [10000],
+[<Avaritia:Resource:4>,<gregtech:gt.multiitem.technological:10002>*0],
+[n],
+[null],
+[<gregtech:gt.meta.stickLong:8800>]);
+
+
