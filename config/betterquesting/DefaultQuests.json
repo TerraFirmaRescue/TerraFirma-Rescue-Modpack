@@ -5,8 +5,7 @@
     "0:10": {
       "questID:3": 0,
       "preRequisites:11": [
-        7,
-        223
+        7
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -30,7 +29,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "使用TFC的石子打制技术，你可以制作四种基础工具。稿子和锯子等高级工具需要金属制作。"
+          "desc:8": "使用的石子打制技术，你可以制作四种基础工具。"
         }
       },
       "tasks:9": {
@@ -43,22 +42,57 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "id:8": "terrafirmacraft:item.Sed Stone Axe Head",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "itemAxeStoneHead"
+            },
+            "1:10": {
+              "id:8": "terrafirmacraft:item.IgIn Stone Shovel Head",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "itemShovelStoneHead"
+            },
+            "2:10": {
+              "id:8": "terrafirmacraft:item.IgIn Stone Hoe Head",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "itemHoeStoneHead"
+            },
+            "3:10": {
+              "id:8": "terrafirmacraft:item.Stone Knife Blade",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "terrafirmacraft:item.IgIn Stone Shovel",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "itemShovelStone"
+            },
+            "1:10": {
               "id:8": "terrafirmacraft:item.IgIn Stone Axe",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "itemAxeStone"
             },
-            "1:10": {
+            "2:10": {
               "id:8": "terrafirmacraft:item.IgIn Stone Hoe",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "itemHoeStone"
-            },
-            "2:10": {
-              "id:8": "terrafirmacraft:item.Sed Stone Shovel",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "itemShovelStone"
             },
             "3:10": {
               "id:8": "terrafirmacraft:item.Stone Knife",
@@ -88,7 +122,8 @@
     "1:10": {
       "questID:3": 1,
       "preRequisites:11": [
-        0
+        0,
+        223
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -176,7 +211,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "使用类似于打制石器的方式创建黏土GUI。要打开这个GUI，您必须手持5个或更多的黏土右键单击。粘土必须首先被烧制变成陶瓷才有作用。粘土在窑中烧制。\n\n要创造一个陶窑，你需要先用刀或镰刀来收集干草。干草也是精制谷物的副产品。\r\n\r\n挖一个深坑。\r\n\r\n放置4个你想放进去的物品。\r\n\r\n注意:不要把陶器扔进洞里。必须潜行右击放置陶器。\r\n\r\n把8根干草放在同一方块里，直到方块半满。(瞄准地面，而不是物品)\r\n\r\n注意:不要把干草扔进洞里。必须用右键放置。\r\n\r\n把8根木头放在干草上，直到方块装满，然后用火点燃。\r\n\r\n注意:不要把木头扔进洞里。必须用鼠标右键单击它。\r\n\r\n一旦火焰燃烧完毕，你就可以空手来收集你的陶瓷物品，或者简单地打破这个方块来收集所有的东西。\r\n\r\n重要的是:在陶窑上燃烧的火焰会点燃附近易燃的方块。出于这个原因，建议不要在用木头、干草或其他易燃材料制成的房子里烧窑。然而，陶窑不会被雨水扑灭。"
+          "desc:8": "使用类似于打制石器的方式创建黏土GUI。要打开这个GUI，您必须手持5个或更多的黏土右键单击。\n\n粘土制品必须首先被烧制变成陶瓷才有作用。怎么烧制呢？你需要一个「陶窑」。\n\n步骤：\n1. 挖一个1x1x1的泥土坑，然后潜行右击放置4个你想烧制的物品，重复潜行右击可以拾起。\n\n2. 手持8根干草右击该泥土坑底部，直到方块半满。(瞄准地面，而不是物品)\n\n3. 手持8根木头右击干草上，直到方块装满，然后用起火工具点燃。\n\n4. 一旦火焰燃烧完毕，你就可以空手来收集你的陶瓷物品，或者简单地打破这个方块来收集所有的东西。\n\n重要的是:在陶窑上燃烧的火焰会点燃附近易燃的方块。出于这个原因，建议不要在用木头、干草或其他易燃材料制成的房子里烧窑。然而，陶窑不会被雨水扑灭。"
         }
       },
       "tasks:9": {
@@ -189,26 +224,64 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "terrafirmacraft:item.Small Vessel",
+              "id:8": "terrafirmacraft:item.Pick Mold",
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "terrafirmacraft:item.Mold",
+              "id:8": "terrafirmacraft:item.Saw Mold",
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             },
             "2:10": {
+              "id:8": "terrafirmacraft:item.Small Vessel",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "terrafirmacraft:item.Jug",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
               "id:8": "terrafirmacraft:item.Pick Mold",
               "Count:3": 1,
               "Damage:2": 1,
               "OreDict:8": ""
             },
-            "3:10": {
+            "1:10": {
               "id:8": "terrafirmacraft:item.Saw Mold",
               "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "terrafirmacraft:item.Small Vessel",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "terrafirmacraft:item.Jug",
+              "Count:3": 1,
+              "tag:10": {
+                "blowTime:4": 5142236
+              },
               "Damage:2": 1,
               "OreDict:8": ""
             }
@@ -360,8 +433,8 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "terrafirmacraft:item.Log",
-              "Count:3": 6,
+              "id:8": "terrafirmacraft:item.IgIn Stone Axe",
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -397,7 +470,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "\n使用石砧，你可以开始锻造金属了。\n\n但是低等级的砧能加工的金属很少，所以请用石砧焊接铜锭，并制作铜砧。\n\n有许多不同的砧，分成不同的等级。每一等级都能比以前的等级进行更复杂的金属加工。砧能将高一等级的锭焊接在一起，形成双锭。所有其他的锻造必须在相等或更高级的砧上完成。\r\n\r\n例如:石砧只能焊接铜锭。铜砧能焊铜锭和铜合金锭。\n\n接下来的任务你只需要制作任意一种青铜砧即可解锁下一个任务"
+          "desc:8": "\n使用石砧，你可以开始锻造金属了。\n\n但是低等级的砧能加工的金属很少，所以请用石砧焊接铜锭，并制作铜砧。\n\n有许多不同的砧，分成不同的等级。每一等级都能比以前的等级进行更复杂的金属加工。砧能将高一等级的锭焊接在一起，形成双锭。所有其他的锻造必须在相等或更高级的砧上完成。\r\n\r\n例如:石砧只能焊接铜锭。铜砧能焊铜锭和铜合金锭。\n\n§6§n接下来的任务你只需要制作任意一种青铜砧即可解锁下一个任务"
         }
       },
       "tasks:9": {
@@ -502,7 +575,7 @@
     "7:10": {
       "questID:3": 7,
       "preRequisites:11": [
-        3
+        370
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -522,12 +595,12 @@
           "repeatTime:3": -1,
           "globalShare:1": 1,
           "questLogic:8": "AND",
-          "name:8": "技术人员进入\"新西伯利亚\"",
+          "name:8": "想要砍树？",
           "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "你已经找好了家的位置了吧,接下来就是开始发展科技的时候了.\n\n打制石器是用两块石子来创建石头工具头的过程。打制石器目前使用与计划相同的模式。当你拿着两颗或更多的石子的时候，右击会启动一个GUI来将一块石头敲成工具头。然后，工具头可以附着在一个木棍上，以创建一个石头工具。\n\n小贴士:石头工具不能堆叠，但是工具头能叠加到4。\n\n警告:盔甲、凿子、狼牙棒、镐子、勘矿镐、锯子、镰刀和剑都不能用石头制造。\n\n一些类型的石头会做出比其他石头更耐用的石头工具。这并不是显而易见的，因为所有的石头工具图标看起来都一样。\r\n\r\n为耐久增加:沉积岩、变质岩、侵入岩、火成岩。\n\n凿石方式请查看NEI"
+          "desc:8": "有了石头，你就能进入旧石器时代了。想要砍树，你需要一把石斧头，而不是用手。\n\n打制石器是用两块石子来创建石头工具头的过程。当你拿着两颗或更多的石子的时候，右击会启动一个GUI来将一块石头敲成工具头。然后，工具头可以附着在一个木棍上，以创建一个石头工具。凿石方式请查看NEI\n\n盔甲、凿子、狼牙棒、镐子、勘矿镐、锯子、镰刀和剑都不能用石头制造。"
         }
       },
       "tasks:9": {
@@ -540,12 +613,6 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "terrafirmacraft:item.LooseRock",
-              "Count:3": 10,
-              "Damage:2": 17,
-              "OreDict:8": "itemRock"
-            },
-            "1:10": {
               "id:8": "terrafirmacraft:item.Sed Stone Axe Head",
               "Count:3": 1,
               "Damage:2": 0,
@@ -748,7 +815,7 @@
               "id:8": "terrafirmacraft:item.Copper Pick",
               "Count:3": 1,
               "Damage:2": 0,
-              "OreDict:8": ""
+              "OreDict:8": "itemPick"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -949,7 +1016,7 @@
             },
             "1:10": {
               "id:8": "terrafirmacraft:item.Steel Ingot",
-              "Count:3": 16,
+              "Count:3": 8,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -1195,7 +1262,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "蒸汽锅炉干烧是会爆炸的，所以你要往里加水...\n加水有两种方法，手动加水和自动加水。\n手动加水非常麻烦，你需要一个装置自动向锅炉中加水。\n把排液口接在一个容量大于1000mb的液体容器上(包括管道)，就可以把排液口对着的水源抽进管道。§k§k\n本来到这里就结束了的，但是这里是群峦。排液口从群峦的水里抽出来的是群峦的水，不能灌进锅炉。你需要做个原版的桶，捞起群峦的水再放下来就能得到原版的水\n*我推荐把排液口殷钢流体管道或大型青铜流体管道上。至于运水的管道嘛...木流体管道就够了\n\n由于你直接用排液口在河道里抽到的是淡水，而锅炉至少需要原版的水或者蒸馏水才能使用，所以我送给你一个转换器。\n他可以将淡水直接转换为原版水。如果不想用的话就做台干燥器吧，那样还能避免钙化。"
+          "desc:8": "蒸汽锅炉干烧是会爆炸的，所以你要往里加水...\n加水有两种方法，手动加水和自动加水。手动加水你需要一个原版的铁桶，他很好造。\n但是非常麻烦，你需要一个装置自动向锅炉中加水。\n\n首先你可以用蓄水器，一个可能不够，多做几个吧。\n\n普通水会导致锅炉钙化，建议用干燥器生产蒸馏水。"
         }
       },
       "tasks:9": {
@@ -1208,9 +1275,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:gt.multiitem.technological",
-              "Count:3": 1,
-              "Damage:2": 1020,
+              "id:8": "Railcraft:machine.alpha",
+              "Count:3": 26,
+              "Damage:2": 14,
               "OreDict:8": ""
             }
           },
@@ -1223,9 +1290,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "gregtech:gt.multitileentity",
-              "Count:3": 1,
-              "Damage:2": 22001,
+              "id:8": "Railcraft:machine.alpha",
+              "Count:3": 26,
+              "Damage:2": 14,
               "OreDict:8": ""
             }
           }
@@ -1339,7 +1406,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "terrafirmacraft:item.Steel Sheet",
-              "Count:3": 10,
+              "Count:3": 32,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -1395,7 +1462,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "\n制作胶水和陶土等混合物，右键进行搅拌。\n\n§制做凿子搜凿子头,前期推荐各种工具用青铜制造.\n便宜耐用.\n"
+          "desc:8": "制作胶水和陶土等混合物，右键进行搅拌。\n\n§o便宜耐用.\n\n制作粘土砖的时候注意不要制作那个制作火焰的配方，先竖着雕刻，否则会导致闪退。\n"
         }
       },
       "tasks:9": {
@@ -1435,7 +1502,7 @@
     "20:10": {
       "questID:3": 20,
       "preRequisites:11": [
-        16
+        12
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2098,7 +2165,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "\n挺有用的，多产点吧。\n用于制作机器."
+          "desc:8": "要制作不锈钢你需要铬，锰，镍，和铁。\n\n前期通过铬铁矿洗矿可以获得铬和锰，镍通过硅镁镍矿获得。\n\n在你进入电力时代后可以通过铝热反应大量获得铬。\n\n挺有用的，多产点吧。\n用于制作机器."
         }
       },
       "tasks:9": {
@@ -2333,7 +2400,8 @@
     "37:10": {
       "questID:3": 37,
       "preRequisites:11": [
-        8
+        8,
+        276
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3478,7 +3546,7 @@
     "59:10": {
       "questID:3": 59,
       "preRequisites:11": [
-        19
+        261
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -5056,11 +5124,11 @@
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "公司医学部门研究报告",
+          "name:8": "营养-目前可以透露的情报",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "公司员工迫降的星球，群峦星，并非一片友好之地。\n首先，旧世界的食物迅速腐烂。而且，打开物品栏右侧你可以看到你的五种营养成分值——谷物，蔬菜，蛋白质，奶制品，水果。损失营养成分会逐渐减少你的最大生命值，而保持高营养成分或获取经验可以增加最大生命值。而你需要去收集地表生成的各种野生作物进行种植，捕杀野生动物获取蛋白质，寻找果树，养殖奶牛。保持饱腹感和水分能让你避免各种负面效果。"
+          "desc:8": "群峦星，并非一片友好之地。\n首先，旧世界的食物迅速腐烂。而且，打开物品栏右侧你可以看到你的五种营养成分值——谷物，蔬菜，蛋白质，奶制品，水果。损失营养成分会逐渐减少你的最大生命值，而保持高营养成分或获取经验可以增加最大生命值。而你需要去收集地表生成的各种野生作物进行种植，捕杀野生动物获取蛋白质，寻找果树，养殖奶牛。保持饱腹感和水分能让你避免各种负面效果。"
         }
       },
       "tasks:9": {
@@ -5843,7 +5911,8 @@
     "99:10": {
       "questID:3": 99,
       "preRequisites:11": [
-        136
+        136,
+        349
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -9085,7 +9154,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "将铜矿和锡矿以近似9单位:1单位的比例放进花瓶烧可以冶炼青铜。\n具体比例请看NEI。\n如果您是非洲无锡人，请选择黑青铜(铜金银)或铋青铜(铜铋锌)"
+          "desc:8": "将铜矿和锡矿以近似9单位:1单位的比例放进花瓶烧可以冶炼青铜。\n具体比例请看NEI。\n如果您是非洲无锡人，请选择黑青铜(铜金银)或铋青铜(铜铋锌)\n\n使用同样的方法制作双重锭，再合成为砧。如果暂时做不出来别着急，先去发展农业。\n\n完成这项任务后你将真正进入金属锻造时代。"
         }
       },
       "tasks:9": {
@@ -9189,7 +9258,7 @@
     "157:10": {
       "questID:3": 157,
       "preRequisites:11": [
-        2
+        369
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -9229,7 +9298,7 @@
               "id:8": "terrafirmacraft:item.Copper Saw",
               "Count:3": 1,
               "Damage:2": 0,
-              "OreDict:8": ""
+              "OreDict:8": "itemSaw"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -9598,11 +9667,11 @@
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "前沿地质探测小队报告",
+          "name:8": "地质探测-目前可以透露的情报",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "不同于你熟悉的原版世界，群峦星的地下世界变得更加复杂且真实。\n\n岩层是由大量同种类岩石形成的。这里的地壳很厚，厚达130-150米。\n\n岩石在三个不同的垂直岩层产生。沉积岩只能在顶层找到。变质岩存在于顶层和中层。所有三层都有侵入岩和火成岩。每一层都独立于其他层，因此，表面上的石头变化并不一定意味着另外两层的石头变化。\n\n侵入岩：闪长岩、辉长岩、花岗岩\n\n火成岩：安山岩，玄武岩、英安岩、流纹岩\n\n沉积岩：白垩岩、黑硅岩、粘土岩、砾岩、白云岩、石灰石、岩盐、页岩\n\n变质岩：片麻岩、大理石、千枚岩、硅岩、片岩、板岩\n\n能制作助焊剂的岩石（碳酸钙为主要成分的）：白云岩、石灰石、白垩岩、大理石\n\n能制作盐的岩石（氯化钠为主要成分的）：岩盐\n\n矿物在岩层中以矿脉形式生成：\n\n石子和它们下面顶层的石头有着相同的纹理。如果附近有矿脉，松散的岩石就有可能产生一小块矿石而不是岩石。这些矿物石子代表以其为y轴的附近地下有对应矿脉生成。\n\n石墨在变质岩和沉积岩生成；高岭石在变质岩和沉积岩生成；钻石在玄武岩、辉长岩和闪长岩中生成；锡和铀在所有火成岩和侵入岩中生成。\n\n其他矿物的位置需要你自己探索。\n\n金红石，钨酸盐，锆石等矿物并没有在贫瘠的群峦星被发现，你需要制作火箭前往其卫星获得。"
+          "desc:8": "§o不同于你熟悉的原版世界，群峦星的地下世界变得更加复杂且真实。\n\n§r岩层是由大量同种类岩石形成的。这里的地壳很厚，厚达130-150米。\n\n岩石在三个不同的垂直岩层产生。沉积岩只能在顶层找到。变质岩存在于顶层和中层。所有三层都有侵入岩和火成岩。每一层都独立于其他层，因此，表面上的石头变化并不一定意味着另外两层的石头变化。\n\n§3侵入岩：闪长岩、辉长岩、花岗岩\n\n§4火成岩：安山岩，玄武岩、英安岩、流纹岩\n\n§6沉积岩：白垩岩、黑硅岩、粘土岩、砾岩、白云岩、石灰石、岩盐、页岩\n\n§e§7§d变质岩：片麻岩、大理石、千枚岩、硅岩、片岩、板岩\n\n§r§o能制作助焊剂的岩石（碳酸钙为主要成分的）：§a白云岩、石灰石、白垩岩、大理石\n\n§r能制作盐的岩石（氯化钠为主要成分的）：岩盐\n\n§r矿物在岩层中以矿脉形式生成：\n\n石子和它们下面顶层的石头有着相同的纹理。如果附近有矿脉，松散的岩石就有可能产生一小块矿石而不是岩石。这些矿物石子代表以其为y轴的附近地下有对应矿脉生成。\n\n石墨在变质岩和沉积岩生成；高岭石在变质岩和沉积岩生成；钻石在玄武岩、辉长岩和闪长岩中生成；锡和铀在所有火成岩和侵入岩中生成。\n\n其他矿物的位置需要你自己探索。\n\n金红石，钨酸盐，锆石等矿物并没有在贫瘠的群峦星被发现，你需要制作火箭前往其卫星获得。"
         }
       },
       "tasks:9": {
@@ -9616,7 +9685,7 @@
     "164:10": {
       "questID:3": 164,
       "preRequisites:11": [
-        7
+        261
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -9641,7 +9710,7 @@
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "格雷气象气球检测报告",
+          "name:8": "气候-目前可以透露的情报",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
@@ -9821,7 +9890,8 @@
     "168:10": {
       "questID:3": 168,
       "preRequisites:11": [
-        19
+        19,
+        372
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12435,7 +12505,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "不必惊讶。我添加了原版工作台的合成，毕竟群峦的工作台有时再多人游戏会消失。\n\n你问我石头怎么得到？用稿子挖掉一个岩石相邻的六个方块，他就自己掉下来了。"
+          "desc:8": "经历千辛万苦，你终于制作了这个原版生存里一分钟就能做出的物品。恭喜！\n\n这个工作台和你背包内的工作台一样，不过可以右键使用。\n\n你问我石头怎么得到？用稿子挖掉一个岩石相邻的六个方块，他就自己掉下来了。"
         }
       },
       "tasks:9": {
@@ -12526,7 +12596,8 @@
     "218:10": {
       "questID:3": 218,
       "preRequisites:11": [
-        217
+        217,
+        351
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12592,7 +12663,8 @@
       "preRequisites:11": [
         218,
         320,
-        59
+        59,
+        371
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12680,7 +12752,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "本章节和其余章节为平行关系，因为吃饭这事，并不是科技线的一部分嘛。\n\n野生作物：\n\r\n在野生环境中，作物会随机产生，每一种类型的作物都包含在8x8区块。这意味着玩家需要探索相当的距离来收集每一种作物。野生作物只在春季和夏末之间产生，而且每年都有机会再生。\r\n\r\n种子：\n\r\n收获一种作物将会至少掉下一粒种子，同时增加玩家的稼穑技巧。玩家的稼穑技巧越高，越有可能获得第二个种子，从而推进农场的扩张。\r\n\n作物类型：\r\n\r\n种植作物模拟真实的生命，在它们能收获之前生长多长时间。但是要注意的是，这些值已经被缩放到符合TFC年份的长度，默认情况下为96天。\r\n\r\n使用\r：\n\r\n收获的大部分产品都可以被玩家直接吃掉，这使它们成为可再生的食物来源。\r\r\n\r\n目前，下列谷物产品可用于饲养动物：\n\n大麦粒，大米粒，黑麦粒，小麦粒，燕麦粒\n\n\n世界里有许多野生作物，去收集一些作物种子吧！"
+          "desc:8": "你开局有1000滴血，你估计已经发现上限正在下降了。如果不好好发展农业，上限会很快下降的。\n\n世界里有许多野生作物，去收集一些作物种子吧！\n\n§l§o再三强调，这个章节十分重要。如果主线推累了，就来发展发展这里吧。"
         }
       },
       "tasks:9": {
@@ -12715,6 +12787,12 @@
               "id:8": "terrafirmacraft:BerryBush",
               "Count:3": 3,
               "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -12826,7 +12904,7 @@
     "223:10": {
       "questID:3": 223,
       "preRequisites:11": [
-        3
+        4
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12850,7 +12928,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "§0§0§0§f§0收集树枝的主要方法是打破树叶。叶子大约有三分之一的几率会掉落木棍。使用镰刀可以以破坏的块为中心破坏一个3x3x3区域的叶子方块，使其更有效率，，但掉落率将会降低到十分之一。注意:如果你在收割树叶前砍下一棵树，树叶就会消失，不会掉落木棍。\r\n\r\n§0用锤子砸一根木头会掉1 - 3根棍子。\n\n要创建一个篝火，往一个方块上抛出(默认按键:Q)3个木棍，然后用一个起火器或打火石点燃这个方块的顶部。\n\n起火器可以用来点燃TFC中几种类型的火焰，包括篝火、木炭坑和坑窑。当点火时，起火器可能需要多次使用才能成功地点燃火焰，而且根据随机的机会，可能需要更多的起火器。\r\n\r\n此外，起火器可以激活一个锻铁炉或高炉。如果满足要求，这将始终是成功的。注意: 起火器右击任何方块表面将被解释为尝试生成一个篝火，并将失败，从而消耗耐久。"
+          "desc:8": "如果已经晚上了的话，再来看这个任务吧。\n\n收集树枝的主要方法是打破树叶。叶子大约有三分之一的几率会掉落木棍。使用镰刀可以以破坏的块为中心破坏一个3x3x3区域的叶子方块，使其更有效率，但掉落率将会降低到十分之一。用锤子砸一根木头会掉1 - 3根棍子。\n\n要创建一个篝火，往一个方块上抛出(默认按键:Q)3个木棍，然后用一个起火器或打火石持续右键点燃这个方块的顶部。\n\n起火器可以用来点燃TFC中几种类型的火焰，包括篝火、木炭坑和坑窑。当点火时，起火器可能需要多次使用才能成功地点燃火焰，而且根据随机的机会，可能需要更多的起火器。\n\n此外，起火器可以激活一个锻铁炉或高炉。"
         }
       },
       "tasks:9": {
@@ -12867,12 +12945,6 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "terrafirmacraft:item.stick",
-              "Count:3": 10,
-              "Damage:2": 0,
-              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -12883,7 +12955,7 @@
     "224:10": {
       "questID:3": 224,
       "preRequisites:11": [
-        1
+        2
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -13659,7 +13731,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "如果您是非洲无锡人，请选择黑青铜(铜金银)或铋青铜(铜铋锌)"
+          "desc:8": "如果您是非洲无锡人，请选择黑青铜(铜金银)或铋青铜(铜铋锌)\n\n使用同样的方法制作双重锭，再合成为砧。如果暂时做不出来别着急，先去发展农业。\n\n完成这项任务后你将真正进入金属锻造时代。"
         }
       },
       "tasks:9": {
@@ -14439,8 +14511,12 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "moegadd:BioCircuitBoard",
+            "id:8": "betterquesting:placeholder",
             "Count:3": 1,
+            "tag:10": {
+              "orig_meta:3": 0,
+              "orig_id:8": "moegadd:BioCircuitBoard"
+            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -14465,8 +14541,12 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "moegadd:BioCircuitBoard",
+              "id:8": "betterquesting:placeholder",
               "Count:3": 1,
+              "tag:10": {
+                "orig_meta:3": 0,
+                "orig_id:8": "moegadd:BioCircuitBoard"
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -15174,11 +15254,23 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "id:8": "terrafirmacraft:item.Powder",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "terrafirmacraft:Sand",
+              "Count:3": 4,
+              "Damage:2": 10,
+              "OreDict:8": "sand"
+            },
+            "2:10": {
               "id:8": "terrafirmacraft:item.Mortar",
               "Count:3": 64,
               "Damage:2": 0,
@@ -15407,7 +15499,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "一台利用RF的机器，是你在这个时期制作电子元件需要的加工台"
+          "desc:8": "一台利用RF的机器，是你在这个时期制作电子元件需要的加工台\n\n有的时候在你放入物品后它依旧不工作，注意检查是否有熔融玻璃，右上角的需求物品，和能量供应。如果还是不行，将其中所有物品拿出重新放进去一遍。"
         }
       },
       "tasks:9": {
@@ -15736,7 +15828,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "篝火是由掉在地面上的三根棍子用一个引火器或燧石在他们下面的方块右击创建的。使用引火器可能需要多次尝试，才能成功点燃。把一根稻草扔进去会让火更容易点燃。\r\n\r\n直接暴露于降水中的篝火将不会消耗燃料，最终会熄灭。为了防止这种情况发生，应该把一个方块放在篝火之上来保护它。\r\n\r\n一旦它被点燃，它很快就会燃尽，除非增加更多的燃料。为了重新点燃它，至少有一块燃料在燃料槽里，再用起火器或打火石右键点击篝火。\n\n篝火用于制造火把，烹饪食物，加热初级物品"
+          "desc:8": "篝火是由掉在地面上的三根棍子用一个引火器或燧石在他们下面的方块右击创建的。使用引火器可能需要多次尝试，才能成功点燃。把一根稻草扔进去会让火更容易点燃。\r\n\r\n直接暴露于降水中的篝火将不会消耗燃料，最终会熄灭。为了防止这种情况发生，应该把一个方块放在篝火之上来保护它。\r\n\r\n一旦它被点燃，它很快就会燃尽，除非增加更多的燃料（原木）。为了重新点燃它，至少有一块燃料在燃料槽里，再用起火器或打火石右键点击篝火。\n\n篝火用于制造火把，烹饪食物，加热初级物品"
         }
       },
       "tasks:9": {
@@ -15887,7 +15979,7 @@
     "276:10": {
       "questID:3": 276,
       "preRequisites:11": [
-        4
+        272
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -15911,7 +16003,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "木炭坑是通过创建一个不通风的原木堆结构，并使用一个掉落的火把点燃。注:只有填满的原木堆可以有另一个原木堆放在上面，所以要相应地计划高度。木炭坑最小的版本是一堆木头，里面有四根原木，以保证至少有一块木炭产生。\r\n\r\n木炭坑需要在每一面被完全覆盖，使其在没有空气的情况下燃烧。\n\n如果任何一堆木头碰到一个空气方块，整个结构就会着火。\r\n\r\n玩家把火把扔到地上后，将会有大约10秒钟的时间。一旦它着火，木炭坑必须盖住任何不易燃的固体块。任何暴露的原木堆将会燃烧并最终掉落原木，导致点火失败。如果点火成功，将从被覆盖的坑中释放出烟雾粒子。在游戏时间18个小时后，烟雾粒子将会消散，而原木堆会变成炭块，可以用铲子一次收获一份。\r\n\r\n如果坑里有一个受重力影响的块，比如泥土或圆石，这些方块就会坍塌，因为原木变成木炭出现了空气方块。大多数较大的木炭坑是用石头和砖砌成的，以提供更持久的结构。"
+          "desc:8": "（如果你现在没安家，等会再来做这个任务吧）\n\n木炭怎么制作呢？你需要一个木炭坑。\n\n手持原木潜行右击地面获得原木堆，空手打开可以放进最多16根原木。\n\n木炭坑最小的版本是一堆木头（最大无限）里面有四根原木，以保证至少有一块木炭产生。\n\n用泥土或者石头等方块使得原木堆不接触空气，在顶部开个口，丢进去一个火把点燃，然后用泥土封住口。\n\n玩家把火把扔到地上后，将会有大约10秒钟的时间。一旦它着火，木炭坑必须盖住任何不易燃的固体块。任何暴露的原木堆将会燃烧并最终掉落原木，导致点火失败。如果点火成功，将从被覆盖的坑中释放出烟雾粒子。在游戏时间18个小时后，烟雾粒子将会消散，而原木堆会变成炭块，可以用铲子一次收获一份。\n\n注:只有填满的原木堆可以有另一个原木堆放在上面，所以要相应地计划高度。\n\r\n如果坑里有一个受重力影响的块，比如泥土或圆石，这些方块就会坍塌，因为原木变成木炭出现了空气方块。大多数较大的木炭坑是用石头和砖砌成的，以提供更持久的结构。"
         }
       },
       "tasks:9": {
@@ -16994,7 +17086,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "如果您是非洲无锡人，请选择黑青铜(铜金银)或铋青铜(铜铋锌)"
+          "desc:8": "如果您是非洲无锡人，请选择黑青铜(铜金银)或铋青铜(铜铋锌)\n\n使用同样的方法制作双重锭，再合成为砧。如果暂时做不出来别着急，先去发展农业。\n\n完成这项任务后你将真正进入金属锻造时代。"
         }
       },
       "tasks:9": {
@@ -17198,26 +17290,13 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "一种粮食"
+          "desc:8": "野生作物：在野生环境中，作物会随机产生，每一种类型的作物都包含在8x8区块。这意味着玩家需要探索相当的距离来收集每一种作物。野生作物只在春季和夏末之间产生，而且每年都有机会再生。\r\n\r\n种子：收获一种作物将会至少掉下一粒种子，同时增加玩家的稼穑技巧。玩家的稼穑技巧越高，越有可能获得第二个种子，从而推进农场的扩张。\r\n\n作物类型：种植作物模拟真实的生命，在它们能收获之前生长多长时间。但是要注意的是，这些值已经被缩放到符合TFC年份的长度，默认情况下为96天。\r\n\r\n使用：收获的大部分产品都可以被玩家直接吃掉，这使它们成为可再生的食物来源。\r\n\r\n下列谷物产品可用于饲养动物：大麦粒，大米粒，黑麦粒，小麦粒，燕麦粒"
         }
       },
       "tasks:9": {
         "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "minecraft:wheat_seeds",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:checkbox"
         }
       },
       "rewards:9": {
@@ -18382,7 +18461,7 @@
     "316:10": {
       "questID:3": 316,
       "preRequisites:11": [
-        162
+        160
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -21900,6 +21979,430 @@
         }
       },
       "rewards:9": {}
+    },
+    "370:10": {
+      "questID:3": 370,
+      "preRequisites:11": [
+        3
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:stick",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "你所记得的一切在这里都不适用",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "这是一个完全修改了原版世界的整合包！\n你所记忆的关于MC生存模式的一切在这里都不适用。\n请记住，任务书永远是你最好的帮手，当你遇到什么问题，请找找任务书内有没有答案。\n\n想致富，先捡一些地上的石头和木棍吧！ 任意石头都可以提交任务"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "terrafirmacraft:item.stick",
+              "Count:3": 5,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "terrafirmacraft:item.LooseRock",
+              "Count:3": 5,
+              "Damage:2": 0,
+              "OreDict:8": "itemRock"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "terrafirmacraft:item.Wheat Bread",
+              "Count:3": 1,
+              "tag:10": {
+                "foodWeight:5": 10.0
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "371:10": {
+      "questID:3": 371,
+      "preRequisites:11": [
+        351
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multiitem.randomtools",
+            "Count:3": 1,
+            "Damage:2": 2000,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "铜板加强木桶",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "这也是一种桶，但是能将杂酚油从焦炉中取出来，这样你就能右击浸洗盆将杂酚油放进浸洗盆了。\n\n如果你不能制作铜板，先去推主线任务。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multiitem.randomtools",
+              "Count:3": 1,
+              "Damage:2": 2000,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "372:10": {
+      "questID:3": 372,
+      "preRequisites:11": [
+        216
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "terrafirmacraft:item.Quern",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "石磨",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "可以将谷物磨成粉，也可以将高龄石，石磨等矿物磨成粉。\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "terrafirmacraft:item.Quern",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "terrafirmacraft:Quern",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "373:10": {
+      "questID:3": 373,
+      "preRequisites:11": [
+        61
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "tag:10": {
+              "gt.spring:10": {
+                "FluidName:8": "water",
+                "Amount:3": 100
+              },
+              "display:10": {
+                "Lore:9": {
+                  "0:8": "Output 1000L of water",
+                  "1:8": "every 5 second"
+                },
+                "Name:8": "Infinite Water Source Tier-1"
+              }
+            },
+            "Damage:2": 32763,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "基础无限水",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "你可以制作一个低级的水泉，为你提供无限的水源"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "tag:10": {
+                "gt.spring:10": {
+                  "FluidName:8": "water",
+                  "Amount:3": 100
+                },
+                "display:10": {
+                  "Lore:9": {
+                    "0:8": "Output 1000L of water",
+                    "1:8": "every 5 second"
+                  },
+                  "Name:8": "Infinite Water Source Tier-1"
+                }
+              },
+              "Damage:2": 32763,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "374:10": {
+      "questID:3": 374,
+      "preRequisites:11": [
+        13
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "Railcraft:machine.alpha",
+            "Count:3": 1,
+            "Damage:2": 14,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "积攒雨水",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "你可能已经注意到了，这里的水不是无限的。所以，你需要一个蓄水器来为你积攒雨水。\n\n这个蓄水器每秒为你提供5L的水，根据你的需求你可以多建造几台。\n\n在任何壁板接管道都可以输出水。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "Railcraft:machine.alpha",
+              "Count:3": 26,
+              "Damage:2": 14,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "375:10": {
+      "questID:3": 375,
+      "preRequisites:11": [
+        12
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 16001,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "虽然有限但是还是很多",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "如果你家附近刚好有一个很大的淡水湖，你可以试试旋转泵。把旋转泵安装在高于湖底1格的地方，用扳手把正面调整为朝下，然后在背面通过蒸汽涡轮机输入RU能量。\n\n旋转泵四周有四个孔可以输出抽到的水，用管道接上来即可。\n\n本来到这里就结束了的，但是这里是群峦。旋转泵从群峦的水里抽出来的是群峦的水，不能灌进锅炉。\n\n而锅炉至少需要原版的水或者蒸馏水才能使用，所以我送给你一个转换器。可以将淡水直接转换为原版水。如果不想用的话就做台干燥器吧，那样还能避免钙化。\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 16001,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 22001,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "376:10": {
+      "questID:3": 376,
+      "preRequisites:11": [
+        373
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multiitem.technological",
+            "Count:3": 1,
+            "Damage:2": 1020,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "无限水源抽取",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "当你获得无限水源后（进入电力时代之后），你可以用排液口抽取水源。\n\n你至少需要一个1000L容量以上的管道才能将排液口放在上面。将它对准无限水方块顶部即可。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multiitem.technological",
+              "Count:3": 1,
+              "Damage:2": 1020,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
     }
   },
   "questLines:9": {
@@ -21907,147 +22410,147 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -60,
+          "x:3": -84,
           "y:3": 300,
           "id:3": 0,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": 0,
+          "x:3": -36,
           "y:3": 300,
           "id:3": 1,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": 60,
+          "x:3": 24,
           "y:3": 300,
           "id:3": 2,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -156,
+          "x:3": -228,
           "y:3": 300,
           "id:3": 3,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": 240,
+          "x:3": -84,
+          "y:3": 360,
           "id:3": 4,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": 264,
-          "y:3": 420,
+          "x:3": 252,
+          "y:3": 300,
           "id:3": 5,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": -108,
-          "y:3": 264,
+          "x:3": -132,
+          "y:3": 300,
           "id:3": 7,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": 420,
+          "x:3": 132,
+          "y:3": 360,
           "id:3": 8,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": 372,
+          "x:3": 72,
+          "y:3": 360,
           "id:3": 10,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": 0,
+          "x:3": -36,
           "y:3": 240,
           "id:3": 15,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": 324,
+          "x:3": 288,
+          "y:3": 264,
           "id:3": 19,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": 420,
+          "x:3": 192,
+          "y:3": 360,
           "id:3": 37,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": 264,
-          "y:3": 180,
+          "x:3": 288,
+          "y:3": 96,
           "id:3": 59,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": 420,
+          "x:3": 252,
+          "y:3": 360,
           "id:3": 78,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 204,
+          "x:3": -36,
+          "y:3": 180,
           "id:3": 87,
           "sizeY:3": 24
         },
         "15:10": {
           "sizeX:3": 48,
-          "x:3": 408,
-          "y:3": 408,
+          "x:3": 384,
+          "y:3": 336,
           "id:3": 99,
           "sizeY:3": 48
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": -156,
+          "x:3": -228,
           "y:3": 264,
           "id:3": 132,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 360,
-          "y:3": 420,
+          "x:3": 336,
+          "y:3": 360,
           "id:3": 136,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": -192,
+          "x:3": -276,
           "y:3": 336,
           "id:3": 137,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": 312,
-          "y:3": 456,
+          "x:3": 288,
+          "y:3": 300,
           "id:3": 155,
           "sizeY:3": 24
         },
         "20:10": {
           "sizeX:3": 24,
-          "x:3": 60,
+          "x:3": 72,
           "y:3": 240,
           "id:3": 157,
           "sizeY:3": 24
@@ -22055,197 +22558,211 @@
         "21:10": {
           "sizeX:3": 24,
           "x:3": 24,
-          "y:3": 396,
+          "y:3": 360,
           "id:3": 163,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": -108,
-          "y:3": 228,
+          "x:3": 348,
+          "y:3": 180,
           "id:3": 164,
           "sizeY:3": 24
         },
         "23:10": {
           "sizeX:3": 24,
-          "x:3": 264,
-          "y:3": 300,
+          "x:3": 252,
+          "y:3": 264,
           "id:3": 168,
           "sizeY:3": 24
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": 108,
+          "x:3": 132,
           "y:3": 300,
           "id:3": 216,
           "sizeY:3": 24
         },
         "25:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 240,
+          "x:3": 216,
+          "y:3": 216,
           "id:3": 217,
           "sizeY:3": 24
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 204,
+          "x:3": 216,
+          "y:3": 168,
           "id:3": 218,
           "sizeY:3": 24
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": 108,
-          "y:3": 180,
+          "x:3": 216,
+          "y:3": 96,
           "id:3": 219,
           "sizeY:3": 24
         },
         "28:10": {
           "sizeX:3": 24,
-          "x:3": -108,
-          "y:3": 336,
+          "x:3": -36,
+          "y:3": 360,
           "id:3": 223,
           "sizeY:3": 24
         },
         "29:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 360,
+          "x:3": 24,
+          "y:3": 240,
           "id:3": 224,
           "sizeY:3": 24
         },
         "30:10": {
           "sizeX:3": 24,
-          "x:3": 312,
-          "y:3": 420,
+          "x:3": 288,
+          "y:3": 360,
           "id:3": 234,
           "sizeY:3": 24
         },
         "31:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 312,
+          "x:3": 288,
+          "y:3": 216,
           "id:3": 261,
           "sizeY:3": 24
         },
         "32:10": {
           "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": 276,
+          "x:3": 348,
+          "y:3": 216,
           "id:3": 262,
           "sizeY:3": 24
         },
         "33:10": {
           "sizeX:3": 24,
-          "x:3": 264,
-          "y:3": 348,
+          "x:3": 348,
+          "y:3": 264,
           "id:3": 270,
           "sizeY:3": 24
         },
         "34:10": {
           "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": 360,
+          "x:3": -84,
+          "y:3": 240,
           "id:3": 271,
           "sizeY:3": 24
         },
         "35:10": {
           "sizeX:3": 24,
-          "x:3": -108,
-          "y:3": 396,
+          "x:3": 24,
+          "y:3": 408,
           "id:3": 272,
           "sizeY:3": 24
         },
         "36:10": {
           "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": 180,
+          "x:3": 192,
+          "y:3": 408,
           "id:3": 276,
           "sizeY:3": 24
         },
         "37:10": {
           "sizeX:3": 24,
-          "x:3": -156,
+          "x:3": -228,
           "y:3": 336,
           "id:3": 281,
           "sizeY:3": 24
         },
         "38:10": {
           "sizeX:3": 24,
-          "x:3": -192,
+          "x:3": -276,
           "y:3": 264,
           "id:3": 288,
           "sizeY:3": 24
         },
         "39:10": {
           "sizeX:3": 24,
-          "x:3": 360,
-          "y:3": 336,
+          "x:3": 396,
+          "y:3": 264,
           "id:3": 289,
           "sizeY:3": 24
         },
         "40:10": {
           "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": 240,
-          "id:3": 291,
-          "sizeY:3": 24
-        },
-        "41:10": {
-          "sizeX:3": 24,
-          "x:3": -192,
+          "x:3": -276,
           "y:3": 300,
           "id:3": 293,
           "sizeY:3": 24
         },
+        "41:10": {
+          "sizeX:3": 24,
+          "x:3": 288,
+          "y:3": 336,
+          "id:3": 295,
+          "sizeY:3": 24
+        },
         "42:10": {
           "sizeX:3": 24,
-          "x:3": 312,
-          "y:3": 384,
-          "id:3": 295,
+          "x:3": 216,
+          "y:3": 324,
+          "id:3": 307,
           "sizeY:3": 24
         },
         "43:10": {
           "sizeX:3": 24,
-          "x:3": 264,
-          "y:3": 456,
-          "id:3": 307,
+          "x:3": 132,
+          "y:3": 96,
+          "id:3": 320,
           "sizeY:3": 24
         },
         "44:10": {
           "sizeX:3": 24,
-          "x:3": 108,
-          "y:3": 240,
-          "id:3": 320,
+          "x:3": -84,
+          "y:3": 180,
+          "id:3": 348,
           "sizeY:3": 24
         },
         "45:10": {
           "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": 420,
-          "id:3": 348,
+          "x:3": 336,
+          "y:3": 312,
+          "id:3": 349,
           "sizeY:3": 24
         },
         "46:10": {
           "sizeX:3": 24,
-          "x:3": 360,
-          "y:3": 372,
-          "id:3": 349,
+          "x:3": 168,
+          "y:3": 216,
+          "id:3": 351,
           "sizeY:3": 24
         },
         "47:10": {
           "sizeX:3": 24,
-          "x:3": 108,
-          "y:3": 360,
-          "id:3": 351,
+          "x:3": 72,
+          "y:3": 300,
+          "id:3": 369,
           "sizeY:3": 24
         },
         "48:10": {
           "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": 336,
-          "id:3": 369,
+          "x:3": -180,
+          "y:3": 300,
+          "id:3": 370,
+          "sizeY:3": 24
+        },
+        "49:10": {
+          "sizeX:3": 24,
+          "x:3": 168,
+          "y:3": 132,
+          "id:3": 371,
+          "sizeY:3": 24
+        },
+        "50:10": {
+          "sizeX:3": 24,
+          "x:3": 216,
+          "y:3": 264,
+          "id:3": 372,
           "sizeY:3": 24
         }
       },
@@ -22264,233 +22781,240 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": 264,
-          "y:3": 228,
+          "x:3": 324,
+          "y:3": 84,
           "id:3": 11,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": 24,
+          "x:3": -60,
           "y:3": 84,
           "id:3": 13,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": 72,
+          "x:3": -12,
           "y:3": 84,
           "id:3": 14,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": 264,
-          "y:3": 24,
+          "x:3": 180,
+          "y:3": -48,
           "id:3": 21,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 168,
+          "x:3": -36,
+          "y:3": 132,
           "id:3": 22,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": 228,
-          "y:3": 180,
+          "x:3": 276,
+          "y:3": 132,
           "id:3": 51,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": 324,
-          "y:3": 228,
+          "x:3": 456,
+          "y:3": 84,
           "id:3": 65,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": 384,
-          "y:3": 228,
+          "x:3": 492,
+          "y:3": 84,
           "id:3": 66,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": 324,
-          "y:3": 276,
+          "x:3": 360,
+          "y:3": 132,
           "id:3": 68,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": 216,
-          "y:3": 24,
+          "x:3": 180,
+          "y:3": 228,
           "id:3": 90,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": 216,
-          "y:3": -36,
+          "x:3": 276,
+          "y:3": 228,
           "id:3": 91,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": -36,
+          "x:3": 84,
+          "y:3": 264,
           "id:3": 100,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": 228,
+          "x:3": 324,
+          "y:3": 36,
           "id:3": 101,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": 120,
+          "x:3": 36,
           "y:3": 84,
           "id:3": 158,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": 228,
+          "x:3": 216,
           "y:3": 132,
           "id:3": 159,
           "sizeY:3": 24
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": 264,
+          "x:3": 180,
           "y:3": 84,
           "id:3": 160,
           "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 216,
+          "x:3": 132,
           "y:3": 84,
           "id:3": 161,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 168,
+          "x:3": 84,
           "y:3": 84,
           "id:3": 162,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": 120,
+          "x:3": 36,
           "y:3": 132,
           "id:3": 167,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 0,
+          "x:3": 84,
+          "y:3": 228,
           "id:3": 210,
           "sizeY:3": 24
         },
         "20:10": {
           "sizeX:3": 24,
-          "x:3": 264,
-          "y:3": -36,
+          "x:3": 276,
+          "y:3": 264,
           "id:3": 260,
           "sizeY:3": 24
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": 312,
-          "y:3": 24,
+          "x:3": 144,
+          "y:3": -48,
           "id:3": 269,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": 72,
-          "y:3": 132,
+          "x:3": -36,
+          "y:3": 36,
           "id:3": 278,
           "sizeY:3": 24
         },
         "23:10": {
           "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 36,
+          "x:3": -108,
+          "y:3": 84,
           "id:3": 279,
           "sizeY:3": 24
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": -24,
+          "x:3": -84,
           "y:3": 132,
           "id:3": 284,
           "sizeY:3": 24
         },
         "25:10": {
           "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": 312,
+          "x:3": 324,
+          "y:3": 132,
           "id:3": 285,
           "sizeY:3": 24
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": 276,
+          "x:3": 396,
+          "y:3": 36,
           "id:3": 286,
           "sizeY:3": 24
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": -24,
-          "y:3": 84,
+          "x:3": -84,
+          "y:3": 36,
           "id:3": 294,
           "sizeY:3": 24
         },
         "28:10": {
           "sizeX:3": 24,
-          "x:3": 300,
-          "y:3": 180,
+          "x:3": 276,
+          "y:3": 36,
           "id:3": 296,
           "sizeY:3": 24
         },
         "29:10": {
           "sizeX:3": 24,
-          "x:3": 300,
-          "y:3": 132,
+          "x:3": 216,
+          "y:3": 36,
           "id:3": 297,
           "sizeY:3": 24
         },
         "30:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 36,
+          "x:3": 132,
+          "y:3": 132,
           "id:3": 316,
           "sizeY:3": 24
         },
         "31:10": {
           "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": 312,
+          "x:3": 360,
+          "y:3": 36,
           "id:3": 321,
           "sizeY:3": 24
         },
         "32:10": {
           "sizeX:3": 24,
-          "x:3": 348,
-          "y:3": 132,
+          "x:3": 252,
+          "y:3": 84,
           "id:3": 325,
+          "sizeY:3": 24
+        },
+        "33:10": {
+          "sizeX:3": 24,
+          "x:3": 12,
+          "y:3": 36,
+          "id:3": 374,
           "sizeY:3": 24
         }
       },
@@ -22730,6 +23254,13 @@
           "y:3": 0,
           "id:3": 324,
           "sizeY:3": 24
+        },
+        "32:10": {
+          "sizeX:3": 24,
+          "x:3": 144,
+          "y:3": -156,
+          "id:3": 375,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 2,
@@ -22952,7 +23483,7 @@
       "lineID:3": 11,
       "properties:10": {
         "betterquesting:10": {
-          "name:8": "Tier 4 - 石化革命",
+          "name:8": "Tier 3.5 - 石化革命",
           "bg_image:8": "",
           "bg_size:3": 256,
           "desc:8": "与电力一同在第二次工业革命中出现，是制造便宜储罐和电路板的重要过程(你喜欢的话也可以拿来烧)"
@@ -23115,12 +23646,26 @@
           "y:3": 360,
           "id:3": 323,
           "sizeY:3": 24
+        },
+        "22:10": {
+          "sizeX:3": 24,
+          "x:3": 144,
+          "y:3": 240,
+          "id:3": 373,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "sizeX:3": 24,
+          "x:3": 192,
+          "y:3": 240,
+          "id:3": 376,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 3,
       "properties:10": {
         "betterquesting:10": {
-          "name:8": "Tier 5 - 电力时代",
+          "name:8": "Tier 4 - 基础电力时代",
           "bg_image:8": "",
           "bg_size:3": 256,
           "desc:8": "电力时代！~~~"
@@ -23407,7 +23952,7 @@
       "lineID:3": 4,
       "properties:10": {
         "betterquesting:10": {
-          "name:8": "Tier 6 - 半导体工业",
+          "name:8": "Tier 5 - 半导体工业",
           "bg_image:8": "",
           "bg_size:3": 256,
           "desc:8": "§9属于电路板的工业."
@@ -23484,7 +24029,7 @@
       "lineID:3": 7,
       "properties:10": {
         "betterquesting:10": {
-          "name:8": "Tier 7 - 物理学革命",
+          "name:8": "Tier 6 - 物理学革命",
           "bg_image:8": "",
           "bg_size:3": 256,
           "desc:8": "在太空探索和生产发展的同时，基础科学也发生了突破"
@@ -23493,34 +24038,6 @@
       "order:3": 7
     },
     "8:10": {
-      "quests:9": {
-        "0:10": {
-          "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": -48,
-          "id:3": 131,
-          "sizeY:3": 24
-        },
-        "1:10": {
-          "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": -48,
-          "id:3": 292,
-          "sizeY:3": 24
-        }
-      },
-      "lineID:3": 12,
-      "properties:10": {
-        "betterquesting:10": {
-          "name:8": "Shop - Shuaibi的小商店",
-          "bg_image:8": "",
-          "bg_size:3": 256,
-          "desc:8": "欢迎来到Shuaibi的商店.\n请问您需要些什么?\n"
-        }
-      },
-      "order:3": 8
-    },
-    "9:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -23931,9 +24448,9 @@
           "desc:8": "关于你作为一个碳基生物在这个星球活下去的帮助\n基于群峦传说，工业时代2，和格雷科技。"
         }
       },
-      "order:3": 9
+      "order:3": 8
     },
-    "10:10": {
+    "9:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -23987,9 +24504,9 @@
           "desc:8": "关于格雷科技的管道，存储，和传输系统。"
         }
       },
-      "order:3": 10
+      "order:3": 9
     },
-    "11:10": {
+    "10:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -24008,9 +24525,9 @@
           "desc:8": "虽然你是一介凡夫，但是学好物理能让你上天入地。关于武器与装备"
         }
       },
-      "order:3": 11
+      "order:3": 10
     },
-    "12:10": {
+    "11:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -24120,9 +24637,9 @@
           "desc:8": "载人航天，小行星采矿，气体行星开发——基于高级火箭"
         }
       },
-      "order:3": 12
+      "order:3": 11
     },
-    "13:10": {
+    "12:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -24337,9 +24854,9 @@
           "desc:8": "增加耗能的同时增加产能"
         }
       },
-      "order:3": 13
+      "order:3": 12
     },
-    "14:10": {
+    "13:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -24358,9 +24875,9 @@
           "desc:8": "一种神奇的蓝色水晶-赛特斯-将允许你通过建造一种名为ME的网络,开启一个潜能无限的自动化工厂——基于应用能源2\n"
         }
       },
-      "order:3": 14
+      "order:3": 13
     },
-    "15:10": {
+    "14:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -24414,9 +24931,9 @@
           "desc:8": "钛金和双锂允许你获得强大的武器和巨量的红石通量能源——基于超能物质"
         }
       },
-      "order:3": 15
+      "order:3": 14
     },
-    "16:10": {
+    "15:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -24435,9 +24952,9 @@
           "desc:8": "德拉克纳星深处有一种能量强大的紫色矿石，等待着觉醒。提供大量的红石通量，工具，和武器。——基于龙之进化"
         }
       },
-      "order:3": 16
+      "order:3": 15
     },
-    "17:10": {
+    "16:10": {
       "quests:9": {},
       "lineID:3": 0,
       "properties:10": {
@@ -24448,9 +24965,9 @@
           "desc:8": "关于蜜蜂的养殖与杂交——基于格雷科技，林业，基因工程。"
         }
       },
-      "order:3": 17
+      "order:3": 16
     },
-    "18:10": {
+    "17:10": {
       "quests:9": {},
       "lineID:3": 18,
       "properties:10": {
@@ -24461,7 +24978,7 @@
           "desc:8": "证明你的实力吧（指杀敌数）"
         }
       },
-      "order:3": 18
+      "order:3": 17
     }
   },
   "questSettings:10": {
