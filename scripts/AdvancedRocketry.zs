@@ -531,3 +531,10 @@ recipes.addShaped(<advancedRocketry:item.spaceBoots>,
 [[alf,n,alf],
 [alf,boots5,alf],
 [Cutter,n,Knife]]);
+
+recipes.remove(<advancedRocketry:tile.sawBlade>);
+recipes.addShaped(<advancedRocketry:tile.sawBlade>,[
+[<ore:stickAnyIronOrSteel>,null,<ore:stickAnyIronOrSteel>],
+[<ore:plateAnyIronOrSteel>,<advancedRocketry:sawBlade>,<ore:plateAnyIronOrSteel>],
+[<ore:plateAnyIronOrSteel>,null,<ore:plateAnyIronOrSteel>]]);
+//dian ju
