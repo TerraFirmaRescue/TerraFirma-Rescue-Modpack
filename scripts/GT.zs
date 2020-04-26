@@ -1392,3 +1392,59 @@ recipes.addShaped(<gregtech:gt.multitileentity:32763>.withTag({"gt.spring": {Flu
 [<gregtech:gt.multitileentity:26076>,<gregtech:gt.meta.machine:8684>,<gregtech:gt.multitileentity:26076>],
 [<gregtech:gt.multiitem.technological:12029>,<gregtech:gt.multitileentity:26076>,<gregtech:gt.multiitem.technological:12029>]]);
 
+//neutronium rotor
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.rotor:3800>);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 8192, 4250, 0, [10000],
+[<gregapi:gt.integrated_circuit:4>*0],
+[<liquid:molten.neutronium>*612],
+[null],
+[<gregtech:gt.meta.rotor:3800>]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.gearGt:3800>);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 8192, 4000, 0, [10000],
+[<gregapi:gt.integrated_circuit:5>*0],
+[<liquid:molten.neutronium>*576],
+[null],
+[<gregtech:gt.meta.gearGt:3800>]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.plate:3800>);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 8192, 1000, 0, [10000],
+[<gregapi:gt.integrated_circuit:0>*0],
+[<liquid:molten.neutronium>*144],
+[null],
+[<gregtech:gt.meta.plate:3800>]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.plateCurved:3800>);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 8192, 1000, 0, [10000],
+[<gregapi:gt.integrated_circuit:1>*0],
+[<liquid:molten.neutronium>*144],
+[null],
+[<gregtech:gt.meta.plateCurved:3800>]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.stickLong:3800>);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 8192, 1000, 0, [10000],
+[<gregapi:gt.integrated_circuit:2>*0],
+[<liquid:molten.neutronium>*144],
+[null],
+[<gregtech:gt.meta.stickLong:3800>]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.stick:3800>);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 8192, 500, 0, [10000],
+[<gregapi:gt.integrated_circuit:3>*0],
+[<liquid:molten.neutronium>*72],
+[null],
+[<gregtech:gt.meta.stick:3800>]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.casingSmall:3800>);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 8192, 500, 0, [10000],
+[<gregapi:gt.integrated_circuit:6>*0],
+[<liquid:molten.neutronium>*72],
+[null],
+[<gregtech:gt.meta.casingSmall:3800>]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.ring:3800>);
+MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 8192, 250, 0, [10000],
+[<gregapi:gt.integrated_circuit:7>*0],
+[<liquid:molten.neutronium>*36],
+[null],
+[<gregtech:gt.meta.ring:3800>]);

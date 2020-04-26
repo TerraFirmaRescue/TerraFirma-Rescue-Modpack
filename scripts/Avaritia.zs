@@ -30,20 +30,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
 
 /** Scripts Starts */
 
-/*
-mods.avaritia.ExtremeCrafting.remove();
-mods.avaritia.ExtremeCrafting.addShaped (,
-[[null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null],
-  [null,null,null, null,null, null, null,null, null],
-  [null,null, null, null, null, null, null,null,null],
-  [null,null, null, null, <zhong xin>, null,null,null,null],
-  [null,null, null, null, null,null, null,null,null],
-  [null,null,null,null, null,null, null,null,null],
-  [null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null]]);
-  */
-
 recipes.remove(<Avaritia:Dire_Crafting>);
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",<Avaritia:Dire_Crafting>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 256, 1000, 0, [10000],
@@ -109,20 +95,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 4096, 400, 0, [10000],
 [<liquid:molten.draconiumawakened>*288],
 [null],
 [<Avaritia:Resource:9>]);
-
-/*
-mods.avaritia.ExtremeCrafting.remove();
-mods.avaritia.ExtremeCrafting.addShaped (,
-[ [null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,zxxx,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null]]);
-*/
 
 recipes.remove(<Avaritia:Dire_Crafting>);
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",<Avaritia:Dire_Crafting>);
@@ -293,7 +265,8 @@ var zzth = <gregtech:gt.meta.spring:8800>;
 var stxw = <IC2:itemPartCarbonFibre>;
 var cwjg = <gregtech:gt.meta.stickLong:8801>;
 var sjpl = <gregtech:gt.meta.plate:8799>;
-var puvp = <gregtech:gt.multiitem.technological:12069>;
+var puvi = <gregtech:gt.multiitem.technological:12069>;
+var puvp = <gregtech:gt.multiitem.technological:12029>;
 
 mods.avaritia.ExtremeCrafting.remove(<Avaritia:Infinity_Bow>);
 mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Infinity_Bow>,
@@ -310,9 +283,9 @@ mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Infinity_Bow>,
 mods.avaritia.ExtremeCrafting.remove(<Avaritia:Infinity_Shovel>);
 mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Infinity_Shovel>,
 [ [null,null,null,null,null,null,ifp1,if11,ifp1],
-  [null,null,null,null,null,puvp,if11,zzsg,if11],
+  [null,null,null,null,null,puvi,if11,zzsg,if11],
   [null,null,null,null,null,ivbt,sjjz,if11,ifp1],
-  [null,null,null,null,null,bioc,ivbt,puvp,null],
+  [null,null,null,null,null,bioc,ivbt,puvi,null],
   [null,null,null,null,ns11,null,null,null,null],
   [null,null,null,ns11,null,null,null,null,null],
   [null,null,ns11,null,null,null,null,null,null],
@@ -330,3 +303,86 @@ mods.avaritia.ExtremeCrafting.addShaped(<Avaritia:Infinity_Axe>,
   [null,null,ns11,null,null,null,null,null,null],
   [null,ns11,null,null,null,null,null,null,null],
   [ns11,null,null,null,null,null,null,null,null]]);
+
+var qunh = <IC2:itemArmorQuantumHelmet:27>;
+var unih = <gregtech:gt.armor.hazmat.universal.head>;
+var zzcp = <gregtech:gt.meta.plateCurved:8800>;
+var zzpl = <gregtech:gt.meta.plate:8800>;
+var tfk1 = <gregtech:gt.multiitem.technological:1022>;
+var ency = <DraconicEvolution:energyCrystal:5>;
+var higg = <gregtech:gt.multiitem.physics:1008>;
+var jgjs = <gregtech:gt.multitileentity:10155>;
+
+mods.avaritia.ExtremeCrafting.remove(<Avaritia:Infinity_Helm>);
+mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Infinity_Helm>,
+[ [null,null,null,null,null,null,null,null,null],
+  [null,null,null,null,ency,null,null,null,null],
+  [null,null,null,zzpl,ifp1,zzpl,null,null,null],
+  [null,null,ifp1,bioc,unih,bioc,ifp1,null,null],
+  [null,null,zzcp,null,higg,null,zzcp,null,null],
+  [null,null,ifp1,sjjz,qunh,sjjz,ifp1,null,null],
+  [null,null,ifp1,tfk1,nlsj,tfk1,ifp1,null,null],
+  [null,null,null,null,gxxx,null,null,null,null],
+  [null,null,null,null,null,null,null,null,null]]);
+
+var qunc = <IC2:itemArmorQuantumChestplate:27>;
+var unic = <gregtech:gt.armor.hazmat.universal.chest>;
+var mk11 = <gregtech:gt.multitileentity:17198>;
+var cdxq = <gregtech:gt.multitileentity:18046>;
+var ntcp = <gregtech:gt.meta.plateCurved:3800>;
+
+mods.avaritia.ExtremeCrafting.remove(<Avaritia:Infinity_Chest>);
+mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Infinity_Chest>,
+[ [null,null,null,null,null,null,null,null,null],
+  [null,null,null,zzpl,null,zzpl,null,null,null],
+  [null,ifp1,zzpl,gxxx,ency,gxxx,zzpl,ifp1,null],
+  [null,gxxx,gxxx,bioc,higg,bioc,gxxx,gxxx,null],
+  [null,ifp1,ntcp,nlsj,unic,nlsj,ntcp,ifp1,null],
+  [null,null,ntcp,cdxq,mk11,cdxq,ntcp,null,null],
+  [null,jgjs,ifp1,sjjz,qunc,sjjz,ifp1,jgjs,null],
+  [null,puvm,ntcp,zzcp,ifp1,zzcp,ntcp,puvm,null],
+  [null,zzsr,null,null,null,null,null,zzsr,null]]);
+
+var qunp = <IC2:itemArmorQuantumLegs:27>;
+var unip = <gregtech:gt.armor.hazmat.universal.legs>;
+var qunb = <IC2:itemArmorQuantumBoots:27>;
+var unib = <gregtech:gt.armor.hazmat.universal.boots>;
+var ptfe = <gregtech:gt.meta.plateDense:27006>;
+
+mods.avaritia.ExtremeCrafting.remove(<Avaritia:Infinity_Pants>);
+mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Infinity_Pants>,
+[ [null,null,null,null,null,null,null,null,null],
+  [null,zzpl,szsg,bioc,qunp,bioc,szsg,zzpl,null],
+  [null,zzsg,puvm,gxxx,higg,gxxx,puvm,zzsg,null],
+  [null,zzpl,jgjs,nlsj,unip,nlsj,jgjs,zzpl,null],
+  [null,zzpl,supc,zzpl,null,zzpl,supc,zzpl,null],
+  [null,ifp1,supc,ifp1,null,ifp1,supc,ifp1,null],
+  [null,ifp1,supc,ifp1,null,ifp1,supc,ifp1,null],
+  [null,zzpl,puvp,zzpl,null,zzpl,puvp,zzpl,null],
+  [null,null,null,null,null,null,null,null,null]]);
+
+mods.avaritia.ExtremeCrafting.remove(<Avaritia:Infinity_Shoes>);
+mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Infinity_Shoes>,
+[ [null,null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,null,null],
+  [null,null,supc,bioc,higg,bioc,supc,null,null],
+  [null,null,supc,ifp1,nlsj,ifp1,supc,null,null],
+  [null,null,supc,zzpl,null,zzpl,supc,null,null],
+  [null,zzpl,puvi,ifp1,null,ifp1,puvi,zzpl,null],
+  [null,zzpl,ifp1,szsg,null,szsg,ifp1,zzpl,null],
+  [null,null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,null,null]]);
+
+/*
+mods.avaritia.ExtremeCrafting.remove();
+mods.avaritia.ExtremeCrafting.addShaped (,
+[ [null,null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,null,null],
+  [null,null,null,null,zxxx,null,null,null,null],
+  [null,null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,null,null]]);
+*/
