@@ -19,7 +19,10 @@ val n = null;
 var x = [] as IItemStack[];
 for i, x in x { }
 recipes.addShapless(,[]);
-recipes.addShaped(,[[],[],[]]);
+recipes.addShaped(,
+[[],
+[],
+[]]);
 MTUtilsGT.removeAllRecipes("gt.recipe.",);
 MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
 [],
@@ -165,3 +168,24 @@ recipes.addShaped(<Railcraft:machine.alpha:14>*6,
 [[<terrafirmacraft:item.SinglePlank>,<ore:plateAnyIronOrSteel>,<terrafirmacraft:item.SinglePlank>],
 [<tfctech:item.Glue>,<ore:screwAnyIronOrSteel>,<tfctech:item.Glue>],
 [<terrafirmacraft:item.SinglePlank>,<ore:plateAnyIronOrSteel>,<terrafirmacraft:item.SinglePlank>]]);
+
+//remove other ways of rails
+recipes.remove(<Railcraft:part.rail>);
+recipes.remove(<minecraft:rail>);
+recipes.remove(<minecraft:golden_rail>);
+mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rail>);
+mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rail:1>);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.welder",<minecraft:rail>);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 64, 0, [10000],
+[<Railcraft:part.rail>*6,<Railcraft:part.railbed>],
+[n],
+[n],
+[<minecraft:rail>*32]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.welder",<minecraft:golden_rail>);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 64, 0, [10000],
+[<Railcraft:part.rail:1>*6,<Railcraft:part.railbed>,<gregtech:gt.meta.stick:8660>],
+[n],
+[n],
+[<minecraft:golden_rail>*16]);

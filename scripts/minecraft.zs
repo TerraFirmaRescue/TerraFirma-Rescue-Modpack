@@ -20,7 +20,10 @@ var x = [] as IItemStack[];
 for i, x in x { }
 recipes.remove();
 recipes.addShapeless(,[]);
-recipes.addShaped(,[[],[],[]]);
+recipes.addShaped(,
+[[],
+[],
+[]]);
 MTUtilsGT.removeAllRecipes("gt.recipe.",);
 MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
 [],
@@ -69,6 +72,10 @@ recipes.addShapeless(<minecraft:string>,[<terrafirmacraft:item.WoolYarn>]);
 recipes.addShapeless(<minecraft:clay_ball>,[<terrafirmacraft:item.Clay>]);
 recipes.addShapeless(<minecraft:dirt>,[<ore:blockDirt>]);
 recipes.addShapeless(<minecraft:coal>,[<terrafirmacraft:item.coal>]);
+recipes.addShapeless(<minecraft:stone>,[<ore:stone>]);
+recipes.addShapeless(<minecraft:log>,[<ore:logWood>]);
+recipes.addShapeless(<terrafirmacraft:item.Log>,[<minecraft:log:*>]);
+recipes.addShapeless(<minecraft:fence_gate>,[<ore:fenceGate>]);
 
 
 MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 100, 1000,[10000],
@@ -365,5 +372,87 @@ recipes.addShaped(<minecraft:ender_chest>,
 [<IC2:itemDensePlates:7>,<gregtech:gt.meta.gearGtSmall:8319>,<IC2:itemDensePlates:7>],
 [<IC2:itemDensePlates:7>,<IC2:itemDensePlates:7>,<IC2:itemDensePlates:7>]]);
 
+/*-----Redstone Tab -----*/
 
+var stp = <gregtech:gt.meta.plate:8500>;
+var rs = <ore:itemRedstone>;
+var rsc = <gregtech:gt.multitileentity:27000>;
+var rst = <minecraft:redstone_torch>;
+var stk = <ore:stickAnyWoodOrPlastic>;
 
+recipes.remove(<minecraft:repeater>);
+recipes.remove(<minecraft:comparator>);
+recipes.remove(<minecraft:redstone_lamp>);
+recipes.remove(<minecraft:tripwire_hook>);
+recipes.remove(<minecraft:fence_gate>);
+recipes.remove(<minecraft:trapdoor>);
+recipes.remove(<minecraft:stone_button>);
+recipes.remove(<minecraft:stone_pressure_plate>);
+recipes.remove(<minecraft:daylight_detector>);
+recipes.remove(<minecraft:iron_door>);
+recipes.remove(<minecraft:piston>);
+recipes.remove(<minecraft:noteblock>);
+recipes.remove(<minecraft:dispenser>);
+recipes.remove(<minecraft:dropper>);
+
+recipes.addShaped(<minecraft:repeater>,
+[[rst,Cutter,rst],
+[n,rsc,n],
+[stp,stp,stp]]);
+
+recipes.addShaped(<minecraft:repeater>,
+[[rs,Cutter,rs],
+[stk,rsc,stk],
+[stp,stp,stp]]);
+
+recipes.addShaped(<minecraft:comparator>,
+[[Cutter,rsc,n],
+[rst,<ore:craftingQuartz>,rst],
+[stp,stp,stp]]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.welder",<minecraft:redstone_lamp>);
+MTUtilsGT.removeAllRecipes("gt.recipe.press",<minecraft:redstone_lamp>);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 128, 0, [10000],
+[rsc*4,<gregtech:gt.meta.plate:8709>*4,],
+[n],
+[n],
+[<minecraft:redstone_lamp>]);
+
+recipes.addShaped(<minecraft:tripwire_hook>,
+[[n,<gregtech:gt.multitileentity:27000>,n],
+[Cutter,<ore:ringAnyIronOrSteel>,n],
+[<ore:plankAnyWood>,stk,<ore:plankAnyWood>]]);
+
+recipes.addShaped(<minecraft:trapdoor>,
+[[<gregtech:gt.meta.ring:8221>,stk,<gregtech:gt.meta.ring:8221>],
+[<ore:woodLumber>,<ore:woodLumber>,<ore:woodLumber>],
+[Screwdriver,<gregtech:gt.meta.screw:8221>,SHammer]]);
+
+recipes.addShapeless(<minecraft:stone_button>,[<ore:stone>,File]);
+
+recipes.addShaped(<minecraft:stone_pressure_plate>,
+[[stp,stp,HHammer],
+[n,n,n],
+[n,n,n]]);
+
+recipes.addShaped(<minecraft:daylight_detector>,
+[[<advancedRocketry:satellitePrimaryFunction>,<gregtech:gt.multiitem.technological:12141>,<advancedRocketry:satellitePrimaryFunction>],
+[<gregtech:gt.meta.wireFine:8660>,<gregtech:gt.meta.wireFine:8660>,<gregtech:gt.meta.wireFine:8660>],
+[<ore:plankWood>,<ore:plankWood>,<ore:plankWood>]]);
+
+recipes.addShaped(<minecraft:piston>,
+[[<ore:woodLumber>,<ore:woodLumber>,<ore:woodLumber>],
+[stp,<ore:craftingPistonIngot>,stp],
+[stp,rs,stp]]);
+
+recipes.addShaped(<minecraft:noteblock>,
+[[<ore:plankWood>,<gregtech:gt.meta.wireFine:290>,<ore:plankWood>],
+[Wrench,<gregtech:gt.meta.screw:770>,<gregtech:gt.meta.plateCurved:8630>],
+[<ore:plankWood>,<ore:plankWood>,<ore:plankWood>]]);
+
+recipes.addShapeless(<minecraft:dispenser>,[<minecraft:dropper>,<terrafirmacraft:item.bow>]);
+
+recipes.addShaped(<minecraft:dropper>,
+[[stp,stp,stp],
+[stp,rs,<gregtech:gt.meta.spring:8610>],
+[stp,stp,stp]]);

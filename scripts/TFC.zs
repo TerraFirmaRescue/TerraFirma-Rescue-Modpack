@@ -14,6 +14,9 @@ val Chisel = <ore:craftingToolChisel>;
 val Cutter = <ore:craftingToolWireCutter>;
 val File = <ore:craftingToolFile>;
 val n = null;
+val w = <liquid:water>;
+val dw = <liquid:ic2distilledwater>;
+val fw = <liquid:freshwater>;
 
 /**Templates Starts
 var x = [] as IItemStack[];
@@ -224,3 +227,36 @@ mods.Terrafirmacraft.Quern.addRecipe(<terrafirmacraft:item.Powder:4> * 4, <terra
 
 //KNO3 produce ice
 mods.Terrafirmacraft.Barrel.addItemConversion(<tfccellars:Ice>*10, <terrafirmacraft:item.Powder:4>, <liquid:freshwater> * 1000, 0, true, 1, true);
+
+//Lumber production
+var logs = [<terrafirmacraft:item.Log>,<terrafirmacraft:item.Log:1>,<terrafirmacraft:item.Log:2>,<terrafirmacraft:item.Log:3>,<terrafirmacraft:item.Log:4>,<terrafirmacraft:item.Log:5>,<terrafirmacraft:item.Log:6>,<terrafirmacraft:item.Log:7>,<terrafirmacraft:item.Log:8>,<terrafirmacraft:item.Log:9>,<terrafirmacraft:item.Log:10>,<terrafirmacraft:item.Log:11>,<terrafirmacraft:item.Log:12>,<terrafirmacraft:item.Log:13>,<terrafirmacraft:item.Log:14>,<terrafirmacraft:item.Log:15>,<terrafirmacraft:item.Log:16>] as IItemStack[];
+
+for i, plank in singlePlanks {
+var log = logs[i];
+
+MTUtilsGT.removeAllRecipes("gt.recipe.cutter",plank);
+MTUtilsGT.addCustomRecipe("gt.recipe.cutter", false, 16, 512, 0, [10000],
+[log],
+[w*16],
+[n],
+[plank*24,<ExtraTrees:misc:2>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.cutter", false, 16, 512, 0, [10000],
+[log],
+[fw*16],
+[n],
+[plank*24,<ExtraTrees:misc:2>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.cutter", false, 16, 512, 0, [10000],
+[log],
+[dw*12],
+[n],
+[plank*24,<ExtraTrees:misc:2>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.cutter", false, 16, 512, 0, [10000],
+[log],
+[<liquid:lubricant>*4],
+[n],
+[plank*24,<ExtraTrees:misc:2>]);
+
+}

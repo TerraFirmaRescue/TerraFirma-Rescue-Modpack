@@ -1386,9 +1386,9 @@ var aplateGt = plateGt[i];
 var aplate2Gt = plateDoubleGt[i];
 
 //ANVIL AND WELDING
-mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot2Gt, aingotGt, aingotGt, 5);
-mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate2Gt, aplateGt, aplateGt, 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(aplateGt, aingot2Gt, "sheet", 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot2Gt, aingotGt, aingotGt, 4);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate2Gt, aplateGt, aplateGt, 4);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(aplateGt, aingot2Gt, "sheet", 4);
 
 }
 
@@ -1419,30 +1419,30 @@ var amachine2 = machine2[i];
 var amachine4 = machine4[i];
 
 //WELDING
-mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot3, aingot, aingot2, 5);
-mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot4, aingot, aingot3, 5);
-mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot4, aingot2, aingot2, 5);
-mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot5, aingot2, aingot3, 5);
-mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot5, aingot, aingot4, 5);
-mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate3, aplate, aplate2, 5);
-mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate4, aplate, aplate3, 5);
-mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate4, aplate2, aplate2, 5);
-mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate5, aplate2, aplate3, 5);
-mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate5, aplate, aplate4, 5);
-mods.Terrafirmacraft.Anvil.addWeldRecipe(astickLong, astick, astick, 5);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot3, aingot, aingot2, 4);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot4, aingot, aingot3, 4);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot4, aingot2, aingot2, 4);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot5, aingot2, aingot3, 4);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aingot5, aingot, aingot4, 4);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate3, aplate, aplate2, 4);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate4, aplate, aplate3, 4);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate4, aplate2, aplate2, 4);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate5, aplate2, aplate3, 4);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(aplate5, aplate, aplate4, 4);
+mods.Terrafirmacraft.Anvil.addWeldRecipe(astickLong, astick, astick, 4);
 //ANVIL
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(amachine1, aplate4, aplate4, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(amachine2, amachine1, amachine1, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(amachine4, amachine2, amachine2, "gtmachinehull", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(aring, astick, "gtring", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(acasingSmall, aplate, "gtcasing", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(agearGtSmall, aplate, astick, "gtgear", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(agearGt, aplate4, astick, "gtgear", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(afoil*2, aplate, "gtfoil", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(aspring, astickLong, "gtspring", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(aspringSmall, astick, "gtspringsmall", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(aplateCurved, aplate, "gtplatecurved", 5);
-mods.Terrafirmacraft.Anvil.addAnvilRecipe(achain, astick, astick, "gtchain", 5);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(amachine1, aplate4, aplate4, "gtmachinehull", 4);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(amachine2, amachine1, amachine1, "gtmachinehull", 4);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(amachine4, amachine2, amachine2, "gtmachinehull", 4);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(aring, astick, "gtring", 4);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(acasingSmall, aplate, "gtcasing", 4);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(agearGtSmall, aplate, astick, "gtgear", 4);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(agearGt, aplate4, astick, "gtgear", 4);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(afoil*2, aplate, "gtfoil", 4);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(aspring, astickLong, "gtspring", 4);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(aspringSmall, astick, "gtspringsmall", 4);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(aplateCurved, aplate, "gtplatecurved", 4);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(achain, astick, astick, "gtchain", 4);
 //RC_ROLLINGMACHINE
 mods.railcraft.Rolling.addShapeless(aplate*2, [aingot, aingot, aingot]);
 //LASER WELDING
