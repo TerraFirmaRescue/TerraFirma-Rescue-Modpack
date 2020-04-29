@@ -18,7 +18,7 @@ val n = null;
 /**Templates Starts
 var x = [] as IItemStack[];
 for i, x in x { }
-recipes.addShapless(,[]);
+recipes.addShapeless(,[]);
 recipes.addShaped(,[[],[],[]]);
 MTUtilsGT.removeAllRecipes("gt.recipe.",);
 MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
@@ -158,3 +158,17 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 32, 400, 0, [10000],
 
 }
 
+//Looming in GT
+MTUtilsGT.removeAllRecipes("gt.recipe.loom",<terrafirmacraft:item.WoolCloth>);
+MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 100, 0, [10000],
+[<gregapi:gt.integrated_circuit:16>*0,<terrafirmacraft:item.WoolYarn>*16],
+[n],
+[n],
+[<terrafirmacraft:item.WoolCloth>]);
+
+MTUtilsGT.removeAllRecipes("gt.recipe.loom",<terrafirmacraft:item.BurlapCloth>);
+MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 100, 0, [10000],
+[<gregapi:gt.integrated_circuit:12>*0,<terrafirmacraft:item.Jute Fibre>*12],
+[n],
+[n],
+[<terrafirmacraft:item.BurlapCloth>]);
