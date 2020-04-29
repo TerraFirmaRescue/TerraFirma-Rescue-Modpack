@@ -1448,3 +1448,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 8192, 250, 0, [10000],
 [<liquid:molten.neutronium>*36],
 [null],
 [<gregtech:gt.meta.ring:3800>]);
+
+//endereye gear
+recipes.addShapeless(<gregtech:gt.meta.gearGtSmall:8319>,[<gregtech:gt.meta.plateGem:8319>,HHammer]);

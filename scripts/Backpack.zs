@@ -40,7 +40,7 @@ recipes.remove(<Backpack:backpack:200>);
 mods.Terrafirmacraft.Loom.addRecipe(<Backpack:backpack>, <terrafirmacraft:item.TFC Leather> * 8);
 
 recipes.addShaped(<Backpack:backpack:100>,
-[[<terrafirmacraft:item.TFC Leather>,<terrafirmacraft:item.TFC Leather>,<terrafirmacraft:item.TFC Leather>],
+[[<terrafirmacraft:item.TFC Leather>, Screwdriver,<terrafirmacraft:item.TFC Leather>],
 [<gregtech:gt.meta.screw:8610>, <Backpack:backpack>, <gregtech:gt.meta.screw:8610>],
 [<terrafirmacraft:item.TFC Leather>,<terrafirmacraft:item.TFC Leather>,<terrafirmacraft:item.TFC Leather>]]);
 
@@ -65,3 +65,23 @@ MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 200, 0, [10000],
 [n],
 [n],
 [<Backpack:boundLeather>]);
+
+recipes.remove(<Backpack:backpack:31999>);
+MTUtilsGT.removeAllRecipes("gt.recipe.welder",<Backpack:backpack:31999>);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 400, 0, [10000],
+[<gregtech:gt.meta.foil:27008>*12,<gregtech:gt.multiitem.technological:30303>,<gregtech:gt.meta.gearGtSmall:8319>*4],
+[n],
+[n],
+[<Backpack:backpack:31999>]);
+
+recipes.remove(<Backpack:backpack:17>);
+recipes.addShaped(<Backpack:backpack:17>,
+[[Wrench,HHammer,Screwdriver],
+[<terrafirmacraft:item.Bronze Sheet>,<Backpack:backpack>,<terrafirmacraft:item.Bronze Sheet>],
+[<terrafirmacraft:item.Bronze Sheet>,<minecraft:crafting_table>,<terrafirmacraft:item.Bronze Sheet>]]);
+
+recipes.remove(<Backpack:backpack:217>);
+recipes.addShaped(<Backpack:backpack:217>,
+[[Wrench,HHammer,Screwdriver],
+[<terrafirmacraft:item.Steel Sheet>,<Backpack:backpack:200>,<terrafirmacraft:item.Steel Sheet>],
+[<terrafirmacraft:item.Steel Sheet>,<minecraft:crafting_table>,<terrafirmacraft:item.Steel Sheet>]]);

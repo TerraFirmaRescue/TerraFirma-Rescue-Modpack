@@ -131,7 +131,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.extruder", false, 16, 160, 0, [10000],
 //ice for cellars
 MTUtilsGT.addCustomRecipe("gt.recipe.freezer", false, 16, 128, 0, [10000],
 [<gregapi:gt.integrated_circuit:10>*0],
-[<liquid:water>],
+[<liquid:water>*100],
 [null],
 [<tfccellars:Ice>]);
 
@@ -218,3 +218,9 @@ recipes.addShaped(chest,
 [p,p,p]]);
 
 }
+
+//KNO3 dust
+mods.Terrafirmacraft.Quern.addRecipe(<terrafirmacraft:item.Powder:4> * 4, <terrafirmacraft:item.Ore:29>);
+
+//KNO3 produce ice
+mods.Terrafirmacraft.Barrel.addItemConversion(<tfccellars:Ice>*10, <terrafirmacraft:item.Powder:4>, <liquid:freshwater> * 1000, 0, true, 1, true);

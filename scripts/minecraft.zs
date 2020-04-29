@@ -358,5 +358,12 @@ recipes.addShaped(<minecraft:string>*3,
 //slimeball
 recipes.addShapeless(<minecraft:slime_ball>,[<tfctech:item.Glue>,<tfctech:item.Glue>,<tfctech:item.Glue>,<tfctech:item.Glue>]);
 
+//ender chest
+recipes.remove(<minecraft:ender_chest>);
+recipes.addShaped(<minecraft:ender_chest>,
+[[<IC2:itemDensePlates:7>,<IC2:itemDensePlates:7>,<IC2:itemDensePlates:7>],
+[<IC2:itemDensePlates:7>,<gregtech:gt.meta.gearGtSmall:8319>,<IC2:itemDensePlates:7>],
+[<IC2:itemDensePlates:7>,<IC2:itemDensePlates:7>,<IC2:itemDensePlates:7>]]);
+
 
 
