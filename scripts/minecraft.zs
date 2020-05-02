@@ -50,21 +50,11 @@ recipes.remove(<minecraft:cauldron>);
 recipes.remove(<minecraft:gunpowder>);
 recipes.remove(<minecraft:tnt>);
 
-
 //delete ends
 
-//shears
-recipes.remove(<minecraft:shears>);
-recipes.addShaped(<minecraft:shears>,
-[[<gregtech:gt.metatool.01:12>,<ore:plateAnyIron>,null],
-[<ore:plateAnyIron>,<gregtech:gt.metatool.01:18>,null],
-[null,null,null]]);
-
+//conversion
 recipes.addShapeless(<minecraft:glass_bottle>,[<terrafirmacraft:item.Glass Bottle>]);
 recipes.addShapeless(<terrafirmacraft:item.Glass Bottle>,[<minecraft:glass_bottle>]);
-recipes.addShapeless(<minecraft:sapling>,[<terrafirmacraft:item.Straw>,<ore:stickWood>]);
-recipes.addShapeless(<gregtech:gt.block.sapling:2>,[<ore:stickWood>,<minecraft:sapling>]);
-recipes.addShapeless(<gregtech:gt.block.sapling:7>,[<ore:stickWood>,<gregtech:gt.block.sapling:2>]);
 recipes.addShapeless(<minecraft:coal:1>,[<terrafirmacraft:item.coal:1>]);
 recipes.addShapeless(<minecraft:coal>,[<terrafirmacraft:item.coal>]);
 recipes.addShapeless(<minecraft:sand>,[<ore:sand>]);
@@ -74,9 +64,18 @@ recipes.addShapeless(<minecraft:dirt>,[<ore:blockDirt>]);
 recipes.addShapeless(<minecraft:coal>,[<terrafirmacraft:item.coal>]);
 recipes.addShapeless(<minecraft:stone>,[<ore:stone>]);
 recipes.addShapeless(<minecraft:log>,[<ore:logWood>]);
-recipes.addShapeless(<terrafirmacraft:item.Log>,[<minecraft:log:*>]);
+recipes.addShapeless(<terrafirmacraft:item.Log>*2,[<minecraft:log:*>,<minecraft:log:*>]);
 recipes.addShapeless(<minecraft:fence_gate>,[<ore:fenceGate>]);
+recipes.addShapeless(<minecraft:cobblestone>,[<ore:cobblestone>]);
+recipes.addShapeless(<terrafirmacraft:item.Straw>,[<gregtech:gt.multiitem.food:12001>]);
+recipes.addShapeless(<gregtech:gt.multiitem.food:12001>,[<terrafirmacraft:item.Straw>]);
 
+//shears
+recipes.remove(<minecraft:shears>);
+recipes.addShaped(<minecraft:shears>,
+[[<gregtech:gt.metatool.01:12>,<ore:plateAnyIron>,null],
+[<ore:plateAnyIron>,<gregtech:gt.metatool.01:18>,null],
+[null,null,null]]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 100, 1000,[10000],
 [<terrafirmacraft:item.WoolYarn>*4],
@@ -456,3 +455,37 @@ recipes.addShaped(<minecraft:dropper>,
 [[stp,stp,stp],
 [stp,rs,<gregtech:gt.meta.spring:8610>],
 [stp,stp,stp]]);
+
+/*---Vanilla Tree---*/
+//OutputStack, InputArray, InputFluid, Time in Ticks, BoxStack
+mods.forestry.Carpenter.addRecipe(<minecraft:sapling> * 1, [[null, <Forestry:mulch>, null],
+                                                            [<Forestry:mulch>, <terrafirmacraft:sapling>, <Forestry:mulch>],
+                                                            [null, <Forestry:mulch>, null]], <liquid:seedoil> * 100, 400);
+
+mods.forestry.Carpenter.addRecipe(<minecraft:sapling:2> * 1, [[null, <Forestry:mulch>, null],
+                                                            [<Forestry:mulch>, <terrafirmacraft:sapling:2>, <Forestry:mulch>],
+                                                            [null, <Forestry:mulch>, null]], <liquid:seedoil> * 100, 400);
+
+mods.forestry.Carpenter.addRecipe(<gregtech:gt.block.sapling:2> * 1, [[null, <Forestry:mulch>, null],
+                                                            [<Forestry:mulch>, <terrafirmacraft:sapling:14>, <Forestry:mulch>],
+                                                            [null, <Forestry:mulch>, null]], <liquid:seedoil> * 100, 400);
+
+mods.forestry.Carpenter.addRecipe(<gregtech:gt.block.sapling:4> * 1, [[<minecraft:sapling:2>, <Forestry:mulch>, <minecraft:sapling:2>],
+                                                            [<Forestry:mulch>, <minecraft:sapling:2>, <Forestry:mulch>],
+                                                            [<minecraft:sapling:2>, <Forestry:mulch>, <minecraft:sapling:2>]], <liquid:seedoil> * 500, 400);
+
+mods.forestry.Carpenter.addRecipe(<gregtech:gt.block.sapling:7> * 1, [[<minecraft:sapling:2>, <Forestry:mulch>, <gregtech:gt.block.sapling:4>],
+                                                            [<Forestry:mulch>, <Genetics:misc:1>, <Forestry:mulch>],
+                                                            [<gregtech:gt.block.sapling:2>, <Forestry:mulch>, <minecraft:sapling>]], <liquid:seedoil> * 500, 400);
+
+recipes.remove(<minecraft:planks:2>);
+recipes.remove(<minecraft:planks>);
+recipes.remove(<gregtech:gt.block.planks:7>);
+recipes.remove(<gregtech:gt.block.planks:2>);
+recipes.remove(<gregtech:gt.block.planks:4>);
+
+recipes.addShapeless(<minecraft:planks:2>,[<minecraft:log:2>,Saw]);
+recipes.addShapeless(<minecraft:planks>,[<minecraft:log>,Saw]);
+recipes.addShapeless(<minecraft:planks:7>,[<gregtech:gt.block.log.b:3>,Saw]);
+recipes.addShapeless(<minecraft:planks:2>,[<gregtech:gt.block.log.a:2>,Saw]);
+recipes.addShapeless(<minecraft:planks:4>,[<gregtech:gt.block.log.b>,Saw]);

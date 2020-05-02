@@ -53,13 +53,13 @@ recipes.addShaped(<IronChest:BlockIronChest:4>,
 [<ore:plateDoubleSilver>,<ore:plateDoubleSilver>,<ore:plateDoubleSilver>]]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 400, 0, [10000],
-[<gregtech:gt.multitileentity:18006>,<gregtech:gt.meta.plateGem:8300>*8],
+[<gregtech:gt.multitileentity:18006>,<gregtech:gt.meta.plateGem:8300>*8,<gregapi:gt.integrated_circuit:8>],
 [n],
 [n],
 [<IronChest:BlockIronChest:2>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 400, 0, [10000],
-[<gregtech:gt.multitileentity:18006>,<gregtech:gt.meta.plateGem:8300>*8],
+[<gregtech:gt.multitileentity:18006>,<gregtech:gt.meta.plateGem:8300>*8,<gregapi:gt.integrated_circuit:16>],
 [<liquid:glass>*1000],
 [n],
 [<IronChest:BlockIronChest:5>]);
@@ -69,3 +69,12 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 256, 400, 0, [10000],
 [n],
 [n],
 [<IronChest:BlockIronChest:6>]);
+
+//Upgrades
+recipes.remove(<IronChest:woodCopperUpgrade>);
+recipes.remove(<IronChest:ironGoldUpgrade>);
+recipes.remove(<IronChest:diamondCrystalUpgrade>);
+recipes.remove(<IronChest:woodIronUpgrade>);
+recipes.remove(<IronChest:silverGoldUpgrade>);
+recipes.remove(<IronChest:diamondObsidianUpgrade>);
+recipes.remove(<IronChest:goldDiamondUpgrade>);

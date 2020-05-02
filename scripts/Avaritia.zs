@@ -18,7 +18,7 @@ val n = null;
 /**Templates Starts
 var x = [] as IItemStack[];
 for i, x in x { }
-recipes.addShapless(,[]);
+recipes.addShapeless(,[]);
 recipes.addShaped(,[[],[],[]]);
 MTUtilsGT.removeAllRecipes("gt.recipe.",);
 MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
@@ -372,6 +372,14 @@ mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Infinity_Shoes>,
   [null,zzpl,ifp1,szsg,null,szsg,ifp1,zzpl,null],
   [null,null,null,null,null,null,null,null,null],
   [null,null,null,null,null,null,null,null,null]]);
+
+recipes.remove(<avaritiaddons:CompressedChest>);
+MTUtilsGT.removeAllRecipes("gt.recipe.welder",<avaritiaddons:CompressedChest>);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 256, 640, 0, [10000],
+[<gregtech:gt.meta.plateGem:8300>*32,<gregtech:gt.meta.machine.double:740>],
+[n],
+[n],
+[<avaritiaddons:CompressedChest>]);
 
 /*
 mods.avaritia.ExtremeCrafting.remove();
