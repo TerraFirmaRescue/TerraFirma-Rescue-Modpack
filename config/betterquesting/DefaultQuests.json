@@ -483,12 +483,6 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "terrafirmacraft:item.Copper Double Ingot",
-              "Count:3": 7,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
               "id:8": "terrafirmacraft:Anvil",
               "Count:3": 1,
               "Damage:2": 1,
@@ -799,7 +793,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "陶罐可以用来冶炼原生铜、黝铜矿或孔雀石得到纯铜。为了做到这一点，要将矿石装入罐子 (不同矿石可以放在同一罐子中)，然后在陶窑中加热。\n\r\n烧制后，从窑中取回罐子并右击它以打开它的GUI。现在你会看到界面不是通常的4个槽，这个罐子只有一个槽，包含了描述它包含的金属数量的文本。在烧制完成后，这种金属将保持大约10分钟的液体状态。如果里面的金属凝固了，你必须再把它放到陶窑里熔化。\r\n注:内部有熔化金属的罐子将有白色的“液体”提示。\n\n拿着花瓶右键，将镐模具或其他模具放入，你就可以获得金属镐头了！\n\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\n陶罐也可以用来制造青铜、黑青铜和铋青铜。\r\n\r\n烧制前:将必要的矿石放入陶瓷罐子中，以适当的比例制成所需的铜合金。例如，如果你想要制造普通的青铜，那么你就可以把铜矿石(任何原生铜、孔雀石或黝铜矿)和锡精矿放入罐子中。对于每种合金，都有一定比例范围来产生所需的合金，所以只要在范围之内，你不必达到精确的百分比。"
+          "desc:8": "陶瓷花瓶(又称陶罐)可以用来冶炼原生铜、黝铜矿或孔雀石得到纯铜。为了做到这一点，要将矿石装入罐子 (不同矿石可以放在同一罐子中)，然后在陶窑中加热。\n\r\n烧制后，从窑中取回罐子并右击它以打开它的GUI。现在你会看到界面不是通常的4个槽，这个罐子只有一个槽，包含了描述它包含的金属数量的文本。在烧制完成后，这种金属将保持大约10分钟的液体状态。如果里面的金属凝固了，你必须再把它放到陶窑里熔化。\r\n注:内部有熔化金属的罐子将有白色的“液体”提示。\n\n拿着花瓶右键，将镐模具或其他模具放入，你就可以获得金属镐头了！\n\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\n陶瓷花瓶也可以用来制造青铜、黑青铜和铋青铜。\r\n\r\n烧制前:将必要的矿石放入陶瓷罐子中，以适当的比例制成所需的铜合金。例如，如果你想要制造普通的青铜，那么你就可以把铜矿石(任何原生铜、孔雀石或黝铜矿)和锡精矿放入陶瓷花瓶中。对于每种合金，都有一定比例范围来产生所需的合金，所以只要在范围之内，你不必达到精确的百分比。"
         }
       },
       "tasks:9": {
@@ -988,7 +982,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "你这趟旅途中的第一台蒸汽生产设备.该是提高生产力的时候了！\n"
+          "desc:8": "你这趟旅途中的第一台蒸汽生产设备.该是提高生产力的时候了！\n\n§5虽然你完成黑钢砧之后就能进入蒸汽时代，但我还是建议你完成红钢砧或者蓝钢砧的任务线，这样你才能获得GT坩锅，一个极强的增产工具，否则你在蒸汽时代会极度缺乏材料。\n"
         }
       },
       "tasks:9": {
@@ -1099,6 +1093,12 @@
             "0:10": {
               "id:8": "terrafirmacraft:item.Log",
               "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "terrafirmacraft:item.Wrought Iron Hammer",
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -1345,7 +1345,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "对于现在的你来说蒸汽引擎是一台重要的机器,把它的输出口对准坩埚后启动它可以把空气泵入坩埚内.\n别想着青铜蒸汽引擎了，直接用钢的"
+          "desc:8": "对于现在的你来说蒸汽引擎是一台重要的机器,把它的输出口对准坩埚后启动它可以把空气泵入坩埚内."
         }
       },
       "tasks:9": {
@@ -1385,7 +1385,8 @@
     "18:10": {
       "questID:3": 18,
       "preRequisites:11": [
-        12
+        17,
+        76
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1393,7 +1394,7 @@
           "taskLogic:8": "AND",
           "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
-          "isMain:1": 1,
+          "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "terrafirmacraft:item.Steel Sheet",
@@ -1404,7 +1405,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
           "globalShare:1": 1,
-          "questLogic:8": "AND",
+          "questLogic:8": "OR",
           "name:8": "量产钢铁！",
           "isGlobal:1": 0,
           "lockedProgress:1": 0,
@@ -1682,6 +1683,12 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "tfctech:item.Wrought Iron Drawplate",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -1744,7 +1751,8 @@
     "24:10": {
       "questID:3": 24,
       "preRequisites:11": [
-        32
+        35,
+        405
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1775,7 +1783,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "硫酸非常重要，他可以制作盐酸，氢氟酸，处理矿物等。为了制作他你需要制作至少两台青铜搅拌机。\n\n第一台需要一个通风口输入空气，输入你在焙烧炉获得的二氧化硫，以及一个铂粉或者五氧化二钒（不消耗）制作三氧化硫\n\n第二个搅拌机输入三氧化硫和水，制作硫酸。越多越好！§4"
+          "desc:8": "硫酸非常重要，他可以制作盐酸，氢氟酸，处理矿物等。为了制作他你需要制作至少两台青铜搅拌机。\n\n第一台需要一个通风口输入空气，输入你在焙烧炉获得的二氧化硫，以及一个铂粉或者五氧化二钒（不消耗）制作三氧化硫\n\n第二个搅拌机输入三氧化硫和水，制作硫酸。越多越好！§4\n\n§r提交任务你需要制作一个蓄水槽，蓄水槽贴在机器的输出口就可以得到液体。蓄水槽也可以放在机器的自动输入口输入流体，所以不用担心浪费。这里你需要提交16000mb的液体。"
         }
       },
       "tasks:9": {
@@ -1887,7 +1895,7 @@
           "taskLogic:8": "AND",
           "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
@@ -1904,7 +1912,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "消耗SU(蒸汽)产生RU\n从侧面输出蒸馏水，若没有可用的流体容器或管道，蒸馏水会自动被销毁。\n如果正面朝上，生物站在上面会自己转"
+          "desc:8": "消耗SU(蒸汽)产生RU\n从侧面输出蒸馏水，若没有可用的流体容器或管道，蒸馏水会自动被销毁。\n如果正面朝上，生物站在上面会自己转\n\n注意了，只有王冠形状的任务是主线任务，换句话说其他的机器是选做的。"
         }
       },
       "tasks:9": {
@@ -1952,7 +1960,7 @@
           "taskLogic:8": "AND",
           "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
@@ -1969,7 +1977,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "破碎机能自动把原矿破碎成粉碎矿石，产出是你用锤子打碎矿石的两倍。\n\n然而它要用钻石来做，加油寻找金伯利岩矿脉吧。\n\n金伯利岩挖掘时有几率掉落不同品质的钻石，而其本身可以破碎机加工为粉碎钻石矿。"
+          "desc:8": "矿物处理的第一台机器。必做。\nTFC的小型矿石可以通过RC碎石机获得，但是他们不能直接在GT坩锅熔炼。所以你需要进一步处理他们。\n破碎机可以自动把小型矿石破碎成粉碎矿石或者把原矿破碎成粉碎矿石，产出是你用锤子打碎矿石的两倍。无论怎样，他都能为你提供几乎八倍的增产。（告别原始时代吧）\n\n然而它要用钻石来做，加油寻找金伯利岩矿脉吧。\n\n金伯利岩挖掘时有几率掉落不同品质的钻石，而其本身可以破碎机加工为粉碎钻石矿。粉碎钻石矿可以洗净后在筛滤台筛滤出不同品质的钻石。"
         }
       },
       "tasks:9": {
@@ -2010,7 +2018,7 @@
           "taskLogic:8": "AND",
           "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
@@ -2027,7 +2035,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "矿物处理的第二台机器。必做。\n将粉碎矿石洗涤为洗净矿石，洗净矿石丢进坩锅才不会有石头残渣。\n可以进一步配合研磨机或者离心机增产。"
         }
       },
       "tasks:9": {
@@ -2049,7 +2057,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "30:10": {
       "questID:3": 30,
@@ -2062,7 +2089,7 @@
           "taskLogic:8": "AND",
           "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
@@ -2079,7 +2106,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "把你的洗净矿磨成粉，比研钵磨得多一点。研磨出来的粉是1/72粉，如果没有能自动整理这些粉的储物桶，最好慎用研磨机。"
+          "desc:8": "矿物处理的第三台机器。必做。\n把你的洗净矿石磨成粉，比研钵磨得多一点。研磨出来的粉是1/72粉。建议用木质储物桶装上1份的粉，然后用漏斗或者物流管道将1/72粉输入进去，就可以自动整理为1份的粉。\n如果嫌慢，可以制作钢材质的。"
         }
       },
       "tasks:9": {
@@ -2126,7 +2153,7 @@
           "repeatTime:3": -1,
           "globalShare:1": 1,
           "questLogic:8": "AND",
-          "name:8": "筛滤",
+          "name:8": "筛滤机",
           "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
@@ -2158,7 +2185,9 @@
     "32:10": {
       "questID:3": 32,
       "preRequisites:11": [
-        18
+        29,
+        403,
+        412
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2177,7 +2206,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
           "globalShare:1": 1,
-          "questLogic:8": "AND",
+          "questLogic:8": "OR",
           "name:8": "不锈钢",
           "isGlobal:1": 0,
           "lockedProgress:1": 0,
@@ -2314,7 +2343,8 @@
     "35:10": {
       "questID:3": 35,
       "preRequisites:11": [
-        18
+        30,
+        402
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2333,13 +2363,13 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
           "globalShare:1": 1,
-          "questLogic:8": "AND",
+          "questLogic:8": "OR",
           "name:8": "焙烧炉",
           "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "焙烧炉可以处理研磨机处理后的矿物粉，这些矿物大多是硫化合物，所以你可以得到二氧化硫，用于制作硫酸。\n不过，焙烧炉需要空气或者氧气运行。你需要制作一个通风口贴在他的流体输入口获得空气。"
         }
       },
       "tasks:9": {
@@ -2356,6 +2386,12 @@
               "Count:3": 1,
               "Damage:2": 20171,
               "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.multiitem.technological",
+              "Count:3": 1,
+              "Damage:2": 1022,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -2366,7 +2402,8 @@
     "36:10": {
       "questID:3": 36,
       "preRequisites:11": [
-        214
+        214,
+        35
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2391,7 +2428,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": ""
         }
       },
       "tasks:9": {
@@ -2898,7 +2935,9 @@
     },
     "46:10": {
       "questID:3": 46,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        27
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -2908,29 +2947,68 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 20111,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
           "globalShare:1": 1,
           "questLogic:8": "AND",
-          "name:8": "New Quest",
+          "name:8": "辊压机",
           "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "解放你的双手！将锭压为板。"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20111,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "47:10": {
       "questID:3": 47,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        27
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -2940,25 +3018,62 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 20041,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
           "globalShare:1": 1,
           "questLogic:8": "AND",
-          "name:8": "New Quest",
+          "name:8": "车床",
           "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "更高效地生产螺丝钉，我强烈建议做蒸馏塔之前做一台。"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20041,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "48:10": {
       "questID:3": 48,
@@ -3188,7 +3303,9 @@
     },
     "52:10": {
       "questID:3": 52,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        27
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -3198,25 +3315,62 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 20121,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
           "globalShare:1": 1,
           "questLogic:8": "AND",
-          "name:8": "New Quest",
+          "name:8": "辊弯机",
           "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "解放你的双手！将板弯曲。"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20121,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "53:10": {
       "questID:3": 53,
@@ -3252,7 +3406,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "盐酸的获取不算难，你只需要将硫酸和盐/岩盐搅拌就可以了。\n\n提交任务你需要制作一个蓄水槽，蓄水槽贴在机器的输出口就可以得到液体。蓄水槽也可以放在机器的自动输入口输入流体，所以不用担心浪费。这里你需要提交16000mb的液体。"
         }
       },
       "tasks:9": {
@@ -3316,7 +3470,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "氟化氢的获取有些难度，你需要将硫酸和氟石搅拌就可以了。以后你也可以通过电解的方式获取氟气。\n\n氟石的获取方式有很多，最方便的应该就是洗锡石矿了。\n\n提交任务你需要制作一个蓄水槽，蓄水槽贴在机器的输出口就可以得到液体。蓄水槽也可以放在机器的自动输入口输入流体，所以不用担心浪费。这里你需要提交8000mb的液体。"
         }
       },
       "tasks:9": {
@@ -3334,7 +3488,7 @@
               "tag:10": {
                 "tank:10": {
                   "FluidName:8": "hydrogenfluoride",
-                  "Amount:3": 16000
+                  "Amount:3": 8000
                 }
               },
               "Damage:2": 0,
@@ -3401,7 +3555,8 @@
     "56:10": {
       "questID:3": 56,
       "preRequisites:11": [
-        27
+        27,
+        32
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3409,7 +3564,7 @@
           "taskLogic:8": "AND",
           "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
@@ -3426,7 +3581,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "搅拌机是生产很多金属及其原料必备的机器：\n生产铝你至少需要三台搅拌机用来生产六氟硅酸，氟化铝，冰晶石\n生产钛你不需要搅拌机\n生产钨你需要一台搅拌机用来将三氧化钨和氢气搅拌还原为钨单质"
+          "desc:8": "搅拌机是生产各种酸性溶液，如硫酸和盐酸，以及很多金属及其原料必备的机器。必做。\n生产铝你至少需要三台搅拌机用来生产六氟硅酸，氟化铝，冰晶石（这是后话了）。"
         }
       },
       "tasks:9": {
@@ -3516,7 +3671,7 @@
           "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.meta.ingot",
+            "id:8": "gregtech:gt.meta.machine",
             "Count:3": 1,
             "Damage:2": 8651,
             "OreDict:8": ""
@@ -3530,7 +3685,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "镀锌钢的零件是通过钢零件在盛有熔融锌的不锈钢浸洗盆制作的（木质浸洗盆无法承受高温）。\n你需要一个坩锅浇筑口贴在坩锅侧面，浇筑口下面放置浸洗盆，坩锅内锌融化后右键浇筑口将熔融锌导入浸洗盆。\n然后将钢零件右键放入浸洗盆不断右键获得镀锌钢零件。\n\n镀锌钢机械外壳是LV电力机器所需要的。进入电力时代的最后冲刺！"
         }
       },
       "tasks:9": {
@@ -3543,7 +3698,25 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:gt.meta.machine",
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 32708,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 1705,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.meta.machine.double",
+              "Count:3": 1,
+              "Damage:2": 8630,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "gregtech:gt.meta.machine.double",
               "Count:3": 1,
               "Damage:2": 8651,
               "OreDict:8": ""
@@ -3680,7 +3853,8 @@
     "61:10": {
       "questID:3": 61,
       "preRequisites:11": [
-        57
+        57,
+        54
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3732,7 +3906,8 @@
     "62:10": {
       "questID:3": 62,
       "preRequisites:11": [
-        57
+        57,
+        53
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4213,7 +4388,9 @@
     },
     "70:10": {
       "questID:3": 70,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        27
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -4223,24 +4400,62 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 20061,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
-          "globalShare:1": 0,
+          "globalShare:1": 1,
           "questLogic:8": "AND",
-          "name:8": "New Quest",
+          "name:8": "圆锯",
+          "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "功能很多，包括切宝石，单晶硅，也可以增产木材。"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20061,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "71:10": {
       "questID:3": 71,
@@ -4480,7 +4695,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "用来将块或者9个板压缩成压缩板。压缩板用途广泛，包括致密锅炉，致密壁板，致密机械外壳等。\n必做机器。"
         }
       },
       "tasks:9": {
@@ -4532,7 +4747,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "比青铜引擎更好，吃更多的蒸汽并产生更多KU"
         }
       },
       "tasks:9": {
@@ -4572,7 +4787,8 @@
     "77:10": {
       "questID:3": 77,
       "preRequisites:11": [
-        75
+        75,
+        409
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4591,13 +4807,13 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
           "globalShare:1": 1,
-          "questLogic:8": "AND",
+          "questLogic:8": "OR",
           "name:8": "致密板材",
           "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": ""
         }
       },
       "tasks:9": {
@@ -4822,11 +5038,11 @@
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "线缆压制",
+          "name:8": "线缆轧制机",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "高效生产线缆"
+          "desc:8": "一台重要的增产机器。\n比钢软的金属可以直接用钢压模器做成线缆，但是比钢硬的就不行了。"
         }
       },
       "tasks:9": {
@@ -4841,7 +5057,7 @@
             "0:10": {
               "id:8": "gregtech:gt.multitileentity",
               "Count:3": 1,
-              "Damage:2": 20152,
+              "Damage:2": 20151,
               "OreDict:8": ""
             }
           },
@@ -5159,7 +5375,9 @@
     },
     "88:10": {
       "questID:3": 88,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        27
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -5169,24 +5387,62 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 20081,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
-          "globalShare:1": 0,
+          "globalShare:1": 1,
           "questLogic:8": "AND",
-          "name:8": "New Quest",
+          "name:8": "离心机",
+          "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "一台多功能机器，可以用作矿物处理，也可以投入橡胶生产。"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20081,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "89:10": {
       "questID:3": 89,
@@ -7101,7 +7357,7 @@
       "preRequisites:11": [
         129,
         212,
-        131
+        128
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8315,7 +8571,7 @@
     "139:10": {
       "questID:3": 139,
       "preRequisites:11": [
-        26
+        27
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8328,18 +8584,19 @@
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 9200,
+            "Damage:2": 20211,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
-          "globalShare:1": 0,
+          "globalShare:1": 1,
           "questLogic:8": "AND",
-          "name:8": "想来op家看看吗?",
+          "name:8": "织布机",
+          "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "这个服务器的管理员们也像普通玩家一样肝着游戏，他们的设备也具有一定的参考价值，有什么不会的可以去他们家看看。\n传送指令/warp a\n在从前这样做是没有问题的，但是现在不行了。管理员家为了解决能源危机，制造了功率高达上万eu/t的核电，周围寸草不生...\n你可能需要一套防辐射服才能过去参观，在这送你一套。"
+          "desc:8": "代替手动织布机的工具！也可以制作各种高级背包。"
         }
       },
       "tasks:9": {
@@ -8349,13 +8606,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "IC2:itemPlates",
-              "Count:3": 16,
-              "Damage:2": 6,
-              "OreDict:8": "plateLead"
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20291,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -8367,27 +8624,15 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "gregtech:gt.armor.hazmat.radiation.head",
-              "Count:3": 1,
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "gregtech:gt.armor.hazmat.radiation.chest",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "id:8": "gregtech:gt.armor.hazmat.radiation.legs",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "3:10": {
-              "id:8": "gregtech:gt.armor.hazmat.radiation.boots",
-              "Count:3": 1,
-              "Damage:2": 0,
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
               "OreDict:8": ""
             }
           }
@@ -8460,7 +8705,9 @@
     },
     "141:10": {
       "questID:3": 141,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        27
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -8470,24 +8717,62 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 20551,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
-          "globalShare:1": 0,
+          "globalShare:1": 1,
           "questLogic:8": "AND",
-          "name:8": "New Quest",
+          "name:8": "剥皮机",
+          "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "没有什么卵用的机器，能获得树皮。"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20551,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "142:10": {
       "questID:3": 142,
@@ -9172,7 +9457,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "将铜矿和锡矿以近似9单位:1单位的比例放进花瓶烧可以冶炼青铜。\n具体比例请看NEI。\n如果您是非洲无锡人，请选择黑青铜(铜金银)或铋青铜(铜铋锌)\n\n使用同样的方法制作双重锭，再合成为砧。如果暂时做不出来别着急，先去发展农业。\n\n完成这项任务后你将真正进入金属锻造时代。"
+          "desc:8": "将铜矿和锡矿以近似9单位:1单位的比例放进花瓶烧可以冶炼青铜。\n具体比例请看NEI。\n如果您是非洲无锡人，请选择黑青铜(铜金银)或铋青铜(铜铋锌)\n\n使用同样的方法制作双重锭，再合成为砧。如果暂时做不出来别着急，先去发展农业。\n\n完成这项任务后你将真正进入金属锻造时代。\n\n§6你只需要制作任意一种青铜砧即可解锁下一个任务"
         }
       },
       "tasks:9": {
@@ -11622,7 +11907,7 @@
     "200:10": {
       "questID:3": 200,
       "preRequisites:11": [
-        199
+        414
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11681,7 +11966,7 @@
           "taskLogic:8": "AND",
           "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
@@ -11697,7 +11982,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "在蒸汽时代用不到，等到RF时代你就知道它有什么用了"
+          "desc:8": "可以制作AR电路板，进入电力时代必须要做的机器。"
         }
       },
       "tasks:9": {
@@ -11724,7 +12009,8 @@
     "202:10": {
       "questID:3": 202,
       "preRequisites:11": [
-        201
+        221,
+        413
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11787,7 +12073,7 @@
     "203:10": {
       "questID:3": 203,
       "preRequisites:11": [
-        221
+        202
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11876,8 +12162,7 @@
     "205:10": {
       "questID:3": 205,
       "preRequisites:11": [
-        202,
-        203
+        202
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12061,7 +12346,9 @@
     },
     "209:10": {
       "questID:3": 209,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        27
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -12071,24 +12358,62 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 20511,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
-          "globalShare:1": 0,
+          "globalShare:1": 1,
           "questLogic:8": "AND",
-          "name:8": "New Quest",
+          "name:8": "砂轮",
+          "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "解放你的双手！可以自动刮制皮革，而不需要你用小刀。是手动打磨石的替代品。"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20511,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "210:10": {
       "questID:3": 210,
@@ -12395,7 +12720,7 @@
     "214:10": {
       "questID:3": 214,
       "preRequisites:11": [
-        18
+        11
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12436,7 +12761,7 @@
               "id:8": "gregtech:gt.meta.ingot",
               "Count:3": 1,
               "Damage:2": 8661,
-              "OreDict:8": ""
+              "OreDict:8": "ingotInvar"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -12820,7 +13145,7 @@
     "221:10": {
       "questID:3": 221,
       "preRequisites:11": [
-        160
+        162
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -13611,7 +13936,9 @@
     },
     "232:10": {
       "questID:3": 232,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        162
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -13621,36 +13948,56 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 32703,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "New Quest",
+          "name:8": "打磨石",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "可以刮制皮革，而不需要你用小刀。需要放置一个沙子才可以用。"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 32703,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
-              "id:8": "terrafirmacraft:item.Egg Cooked",
-              "Count:3": 1,
-              "tag:10": {
-                "foodWeight:5": 160.0,
-                "foodDecay:5": -24.0
-              },
-              "Damage:2": 0,
+              "id:8": "terrafirmacraft:item.Ore",
+              "Count:3": 10,
+              "Damage:2": 46,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 4,
+              "Damage:2": 26101,
               "OreDict:8": ""
             }
           }
@@ -13749,7 +14096,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "如果您是非洲无锡人，请选择黑青铜(铜金银)或铋青铜(铜铋锌)\n\n使用同样的方法制作双重锭，再合成为砧。如果暂时做不出来别着急，先去发展农业。\n\n完成这项任务后你将真正进入金属锻造时代。"
+          "desc:8": "如果您是非洲无锡人，请选择黑青铜(铜金银)或铋青铜(铜铋锌)\n\n使用同样的方法制作双重锭，再合成为砧。如果暂时做不出来别着急，先去发展农业。\n\n完成这项任务后你将真正进入金属锻造时代。\n\n§6你只需要制作任意一种青铜砧即可解锁下一个任务"
         }
       },
       "tasks:9": {
@@ -14529,12 +14876,8 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "betterquesting:placeholder",
+            "id:8": "moegadd:AdvancedProcessorMainboard",
             "Count:3": 1,
-            "tag:10": {
-              "orig_meta:3": 0,
-              "orig_id:8": "moegadd:BioCircuitBoard"
-            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -14542,7 +14885,7 @@
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "生物神经基板",
+          "name:8": "高阶电脑主板",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
@@ -14559,12 +14902,8 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "betterquesting:placeholder",
+              "id:8": "moegadd:AdvancedProcessorMainboard",
               "Count:3": 1,
-              "tag:10": {
-                "orig_meta:3": 0,
-                "orig_id:8": "moegadd:BioCircuitBoard"
-              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -14936,7 +15275,7 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
               "id:8": "moegadd:RAM_128M_2",
@@ -15140,7 +15479,9 @@
     },
     "259:10": {
       "questID:3": 259,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        35
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -15150,41 +15491,42 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "gregtech:gt.metatool.01",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 20,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "New Quest",
+          "name:8": "撬棍",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "如果你的通风口按错地方了，可以用这个撬下来。"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {
+      "tasks:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
-          "rewards:9": {
+          "consume:1": 0,
+          "requiredItems:9": {
             "0:10": {
-              "id:8": "terrafirmacraft:item.Wooden Bucket Milk",
+              "id:8": "gregtech:gt.metatool.01",
               "Count:3": 1,
-              "tag:10": {
-                "foodWeight:5": 20.0,
-                "foodDecay:5": 0.0
-              },
-              "Damage:2": 0,
+              "Damage:2": 20,
               "OreDict:8": ""
             }
-          }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
-      }
+      },
+      "rewards:9": {}
     },
     "260:10": {
       "questID:3": 260,
@@ -15385,7 +15727,9 @@
     },
     "263:10": {
       "questID:3": 263,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        39
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -15395,24 +15739,62 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 20112,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
-          "globalShare:1": 0,
+          "globalShare:1": 1,
           "questLogic:8": "AND",
-          "name:8": "New Quest",
+          "name:8": "辊压机+",
+          "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "解放你的双手！将锭压为板。"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20112,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "264:10": {
       "questID:3": 264,
@@ -16490,7 +16872,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "储罐是相对便宜并且可以有效存储液体和气体的选择。\n\n在前期，我们只能制作容量为8000L的简易木储罐。其实只需要用一个骨头做出的胶水在搅拌盆中加水搅拌一下，再用玻璃瓶右键就可以取出胶水瓶。\n\n当我们可以制取不锈钢之后，可以选择适量制作几个不锈钢储罐，性价比优秀，容量64000L，不漏气（可以存储液体），抗腐蚀（可以存储硫酸等腐蚀性液体）。\n\n性价比最高的储罐是塑料储罐，塑料来自石油分馏。将六个锭的量的塑料放入压模器，并且放入一个钢制的低温处理模具（小型单元模具），供能即可制成塑料储罐，容量32000L，不漏气。\n\n 注：储罐有耐温上限，请不要盛装过高温度的液体，否则将会罐毁人亡。\n"
+          "desc:8": "储罐是相对便宜并且可以有效存储液体和气体的选择。\n\n在前期，我们只能制作容量为8000L的简易木储罐。其实只需要用一个骨头做出的胶水在搅拌盆中加水搅拌一下，再用玻璃瓶右键就可以取出胶水瓶。\n\n当我们可以制取不锈钢之后，可以选择适量制作几个不锈钢储罐，性价比优秀，容量64000L，不漏气（可以存储液体），抗腐蚀（可以存储硫酸等腐蚀性液体）。\n\n性价比最高的储罐是塑料储罐，塑料来自石油分馏。将六个锭的量的塑料放入压模器，并且放入一个钢制的低温处理模具（小型单元模具），供能即可制成塑料储罐，容量32000L，不漏气。\n\n 注：储罐有耐温上限，请不要盛装过高温度的液体，否则将会罐毁人亡。\n\n有一件事你需要注意，那就是你现在无法制造玻璃瓶，除非你完成红石时代的任务。你可以完成蓝红钢砧后面的一个任务获取一瓶伏特加，喝掉它获得玻璃瓶。\n"
         }
       },
       "tasks:9": {
@@ -17075,7 +17457,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "tfctech:HeveaS",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "IC2:itemHarz",
+              "Count:3": 10,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "295:10": {
       "questID:3": 295,
@@ -17104,7 +17505,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "如果您是非洲无锡人，请选择黑青铜(铜金银)或铋青铜(铜铋锌)\n\n使用同样的方法制作双重锭，再合成为砧。如果暂时做不出来别着急，先去发展农业。\n\n完成这项任务后你将真正进入金属锻造时代。"
+          "desc:8": "如果您是非洲无锡人，请选择黑青铜(铜金银)或铋青铜(铜铋锌)\n\n使用同样的方法制作双重锭，再合成为砧。如果暂时做不出来别着急，先去发展农业。\n\n完成这项任务后你将真正进入金属锻造时代。\n\n§6你只需要制作任意一种青铜砧即可解锁下一个任务"
         }
       },
       "tasks:9": {
@@ -18479,7 +18880,7 @@
     "316:10": {
       "questID:3": 316,
       "preRequisites:11": [
-        160
+        162
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -19036,7 +19437,8 @@
     "325:10": {
       "questID:3": 325,
       "preRequisites:11": [
-        297
+        297,
+        159
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -19055,7 +19457,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
           "globalShare:1": 0,
-          "questLogic:8": "AND",
+          "questLogic:8": "OR",
           "name:8": "CCCP",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
@@ -20318,16 +20720,16 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "terrafirmacraft:item.Lead Ingot",
+            "id:8": "gregtech:gt.meta.plantGtBlossom",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 820,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
           "globalShare:1": 0,
           "questLogic:8": "AND",
-          "name:8": "",
+          "name:8": "铅叶子",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
@@ -20344,9 +20746,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:gt.meta.plantGtTwig",
+              "id:8": "gregtech:gt.meta.plantGtBlossom",
               "Count:3": 10,
-              "Damage:2": 500,
+              "Damage:2": 820,
               "OreDict:8": ""
             }
           },
@@ -21709,7 +22111,8 @@
         116,
         115,
         117,
-        112
+        112,
+        366
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -21736,7 +22139,25 @@
           "desc:8": "性能强大的处理器核心，用于制作聚变反应堆和粒子加速器结构"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 18200,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
     "365:10": {
@@ -22150,7 +22571,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "可以将谷物磨成粉，也可以将高龄石，石磨等矿物磨成粉。\n"
+          "desc:8": "可以将谷物磨成粉，也可以将高龄石，石墨等矿物磨成粉。\n\n怎么制作光滑石头？将锤子放在快捷栏中，手持凿子右键任意岩石方块就可以变成光滑石头，然后用镐挖下来即可。可以在控制中调整快捷键。\n"
         }
       },
       "tasks:9": {
@@ -22311,7 +22732,7 @@
     "375:10": {
       "questID:3": 375,
       "preRequisites:11": [
-        12
+        27
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -23598,6 +24019,1394 @@
           }
         }
       }
+    },
+    "391:10": {
+      "questID:3": 391,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20152,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "线缆轧制机+",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "一台重要的增产机器。\n比钢软的金属可以直接用钢压模器做成线缆，但是比钢硬的就不行了。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20152,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "392:10": {
+      "questID:3": 392,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20122,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "辊弯机+",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "解放你的双手！将板弯曲。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20122,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "393:10": {
+      "questID:3": 393,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20042,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "车床+",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "更高效地生产螺丝钉，我强烈建议做蒸馏塔之前做一台。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20042,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "394:10": {
+      "questID:3": 394,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20142,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "多辊式压机+",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "高效生产箔"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20142,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "395:10": {
+      "questID:3": 395,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20082,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "离心机+",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "一台多功能机器，可以用作矿物处理，也可以投入橡胶生产。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20082,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "396:10": {
+      "questID:3": 396,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20512,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "砂轮+",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "解放你的双手！可以自动刮制皮革，而不需要你用小刀。是手动打磨石的替代品。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20512,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "397:10": {
+      "questID:3": 397,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20552,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "剥皮机+",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "没有什么卵用的机器，能获得树皮。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20552,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "398:10": {
+      "questID:3": 398,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20212,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "织布机+",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "代替手动织布机的工具！也可以制作各种高级背包。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20212,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "399:10": {
+      "questID:3": 399,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 16002,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "虽然有限但是还是很多+",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "如果你家附近刚好有一个很大的淡水湖，你可以试试旋转泵。把旋转泵安装在高于湖底1格的地方，用扳手把正面调整为朝下，然后在背面通过蒸汽涡轮机输入RU能量。\n\n旋转泵四周有四个孔可以输出抽到的水，用管道接上来即可。\n\n本来到这里就结束了的，但是这里是群峦。旋转泵从群峦的水里抽出来的是群峦的水，不能灌进锅炉。\n\n而锅炉至少需要原版的水或者蒸馏水才能使用，所以我送给你一个转换器。可以将淡水直接转换为原版水。如果不想用的话就做台干燥器吧，那样还能避免钙化。\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 16002,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 22001,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "400:10": {
+      "questID:3": 400,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20062,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "圆锯+",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "功能很多，包括切宝石，单晶硅，也可以增产木材。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20062,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "401:10": {
+      "questID:3": 401,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20522,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "燃烧反应室+",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "燃烧反应室内加入熔融方解石 金红石 碳粉，可以生产四氯化钛，制备钛的重要原料。你问我熔融方解石怎么做？当然是坩锅导出（如果你嫌麻烦还是用液化炉吧"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20522,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "402:10": {
+      "questID:3": 402,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20012,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "研磨机+",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "矿物处理的第三台机器。必做。\n把你的洗净矿石磨成粉，比研钵磨得多一点。研磨出来的粉是1/72粉。建议用木质储物桶装上1份的粉，然后用漏斗或者物流管道将1/72粉输入进去，就可以自动整理为1份的粉。\n如果嫌慢，可以制作钢材质的。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20012,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "403:10": {
+      "questID:3": 403,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20292,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "洗矿机+",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "矿物处理的第二台机器。必做。\n将粉碎矿石洗涤为洗净矿石，洗净矿石丢进坩锅才不会有石头残渣。\n可以进一步配合研磨机或者离心机增产。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20292,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point1",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.stickLong",
+              "Count:3": 2,
+              "Damage:2": 8610,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "404:10": {
+      "questID:3": 404,
+      "preRequisites:11": [
+        32,
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20182,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "搅拌机+",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "搅拌机是生产各种酸性溶液，如硫酸和盐酸，以及很多金属及其原料必备的机器。必做。\n生产铝你至少需要三台搅拌机用来生产六氟硅酸，氟化铝，冰晶石（这是后话了）。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20182,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "405:10": {
+      "questID:3": 405,
+      "preRequisites:11": [
+        56,
+        404
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregapi:gt.display.fluid",
+            "Count:3": 1,
+            "tag:10": {
+              "s:1": 1,
+              "f:8": "sulfurtrioxide",
+              "h:2": 300
+            },
+            "Damage:2": 605,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "OR",
+          "name:8": "搅拌机用来制作三氧化硫和硫酸",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "搅拌机用来制作三氧化硫和硫酸"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "406:10": {
+      "questID:3": 406,
+      "preRequisites:11": [
+        17
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20051,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "榨汁机",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "没什么可说的，榨汁而已。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20051,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "407:10": {
+      "questID:3": 407,
+      "preRequisites:11": [
+        76
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20022,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "破碎机",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "矿物处理的第一台机器。必做。\nTFC的小型矿石可以通过RC碎石机获得，但是他们不能直接在GT坩锅熔炼。所以你需要进一步处理他们。\n破碎机可以自动把小型矿石破碎成粉碎矿石或者把原矿破碎成粉碎矿石，产出是你用锤子打碎矿石的两倍。无论怎样，他都能为你提供几乎八倍的增产。（告别原始时代吧）\n\n然而它要用钻石来做，加油寻找金伯利岩矿脉吧。\n\n金伯利岩挖掘时有几率掉落不同品质的钻石，而其本身可以破碎机加工为粉碎钻石矿。粉碎钻石矿可以洗净后在筛滤台筛滤出不同品质的钻石。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20022,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {}
+        }
+      }
+    },
+    "408:10": {
+      "questID:3": 408,
+      "preRequisites:11": [
+        76
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20232,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "阿姨压一压+",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "可以制作AR电路板，进入电力时代必须要做的机器。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20232,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "409:10": {
+      "questID:3": 409,
+      "preRequisites:11": [
+        76
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20102,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "压缩机",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "用来将块或者9个板压缩成压缩板。压缩板用途广泛，包括致密锅炉，致密壁板，致密机械外壳等。\n必做机器。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20102,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "410:10": {
+      "questID:3": 410,
+      "preRequisites:11": [
+        76
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20072,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "榨汁机",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "没什么可说的，榨汁而已。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20072,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "411:10": {
+      "questID:3": 411,
+      "preRequisites:11": [
+        76
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 20052,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 1,
+          "questLogic:8": "AND",
+          "name:8": "筛滤机",
+          "isGlobal:1": 0,
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "§9筛滤盐类，煤炭类，宝石类洗净矿石可以获得更多物品，尤其是精致宝石"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 20052,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "412:10": {
+      "questID:3": 412,
+      "preRequisites:11": [
+        28,
+        407
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.meta.crushed",
+            "Count:3": 1,
+            "Damage:2": 8436,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "OR",
+          "name:8": "Break Down! Break Down!",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "粉碎机用来粉碎矿石"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "413:10": {
+      "questID:3": 413,
+      "preRequisites:11": [
+        201,
+        408
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "tfctech:item.Circuit",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "OR",
+          "name:8": "初级电路预备机器",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "准备开启AR机器时代吧。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "tfctech:item.Circuit",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "414:10": {
+      "questID:3": 414,
+      "preRequisites:11": [
+        205,
+        199,
+        204,
+        206,
+        24
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "advancedRocketry:circuitplate",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "高级电路板",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "实际上这玩意并不高级，但是足够控制发电机了。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "advancedRocketry:circuitplate",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
     }
   },
   "questLines:9": {
@@ -24116,96 +25925,110 @@
         },
         "20:10": {
           "sizeX:3": 24,
+          "x:3": 396,
+          "y:3": 132,
+          "id:3": 214,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": 36,
+          "id:3": 232,
+          "sizeY:3": 24
+        },
+        "22:10": {
+          "sizeX:3": 24,
           "x:3": 276,
           "y:3": 264,
           "id:3": 260,
           "sizeY:3": 24
         },
-        "21:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": 144,
           "y:3": -48,
           "id:3": 269,
           "sizeY:3": 24
         },
-        "22:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": -36,
           "y:3": 36,
           "id:3": 278,
           "sizeY:3": 24
         },
-        "23:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": 84,
           "id:3": 279,
           "sizeY:3": 24
         },
-        "24:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": -84,
           "y:3": 132,
           "id:3": 284,
           "sizeY:3": 24
         },
-        "25:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": 324,
           "y:3": 132,
           "id:3": 285,
           "sizeY:3": 24
         },
-        "26:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": 396,
           "y:3": 36,
           "id:3": 286,
           "sizeY:3": 24
         },
-        "27:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": -84,
           "y:3": 36,
           "id:3": 294,
           "sizeY:3": 24
         },
-        "28:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": 276,
           "y:3": 36,
           "id:3": 296,
           "sizeY:3": 24
         },
-        "29:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 216,
           "y:3": 36,
           "id:3": 297,
           "sizeY:3": 24
         },
-        "30:10": {
+        "32:10": {
           "sizeX:3": 24,
-          "x:3": 132,
+          "x:3": 84,
           "y:3": 132,
           "id:3": 316,
           "sizeY:3": 24
         },
-        "31:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 360,
           "y:3": 36,
           "id:3": 321,
           "sizeY:3": 24
         },
-        "32:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": 84,
           "id:3": 325,
           "sizeY:3": 24
         },
-        "33:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": 36,
@@ -24236,218 +26059,442 @@
         "1:10": {
           "sizeX:3": 24,
           "x:3": 144,
-          "y:3": -84,
+          "y:3": -36,
           "id:3": 16,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -48,
-          "y:3": 0,
+          "x:3": -60,
+          "y:3": -132,
           "id:3": 17,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 60,
+          "x:3": -60,
+          "y:3": 0,
           "id:3": 18,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": -120,
+          "x:3": 180,
+          "y:3": 0,
           "id:3": 20,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": -120,
+          "x:3": 216,
+          "y:3": 0,
           "id:3": 23,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 168,
+          "x:3": 504,
+          "y:3": 0,
           "id:3": 24,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": -84,
+          "x:3": 144,
+          "y:3": 36,
           "id:3": 26,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": 336,
-          "y:3": 0,
+          "x:3": 348,
+          "y:3": -132,
           "id:3": 27,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": -24,
-          "y:3": -60,
+          "x:3": 36,
+          "y:3": -132,
           "id:3": 28,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": 360,
-          "y:3": 60,
+          "x:3": 348,
+          "y:3": -48,
           "id:3": 29,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": 312,
-          "y:3": 60,
+          "x:3": 552,
+          "y:3": -168,
           "id:3": 30,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -24,
-          "y:3": 60,
+          "x:3": -12,
+          "y:3": -180,
           "id:3": 31,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 108,
+          "x:3": 348,
+          "y:3": 0,
           "id:3": 32,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": 60,
+          "x:3": 552,
+          "y:3": 0,
           "id:3": 35,
           "sizeY:3": 24
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 108,
+          "x:3": 588,
+          "y:3": -48,
           "id:3": 36,
           "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": -24,
+          "x:3": 348,
+          "y:3": 132,
           "id:3": 39,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 228,
-          "y:3": 168,
-          "id:3": 53,
+          "x:3": 252,
+          "y:3": -132,
+          "id:3": 46,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": 168,
-          "id:3": 54,
+          "x:3": 252,
+          "y:3": -240,
+          "id:3": 47,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": 360,
-          "y:3": -60,
-          "id:3": 56,
+          "x:3": 252,
+          "y:3": -204,
+          "id:3": 52,
           "sizeY:3": 24
         },
         "20:10": {
           "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": 108,
-          "id:3": 58,
+          "x:3": 468,
+          "y:3": 48,
+          "id:3": 53,
           "sizeY:3": 24
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": 60,
-          "id:3": 75,
+          "x:3": 468,
+          "y:3": -48,
+          "id:3": 54,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": -24,
-          "id:3": 76,
+          "x:3": 444,
+          "y:3": -108,
+          "id:3": 56,
           "sizeY:3": 24
         },
         "23:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": 96,
-          "id:3": 77,
+          "x:3": 396,
+          "y:3": 0,
+          "id:3": 58,
           "sizeY:3": 24
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": 396,
-          "y:3": -36,
-          "id:3": 80,
+          "x:3": 444,
+          "y:3": -240,
+          "id:3": 70,
           "sizeY:3": 24
         },
         "25:10": {
           "sizeX:3": 24,
-          "x:3": 396,
-          "y:3": 36,
-          "id:3": 81,
+          "x:3": -108,
+          "y:3": -84,
+          "id:3": 75,
           "sizeY:3": 24
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": 312,
-          "y:3": -60,
-          "id:3": 83,
+          "x:3": -60,
+          "y:3": 132,
+          "id:3": 76,
           "sizeY:3": 24
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": -60,
-          "id:3": 201,
+          "x:3": -108,
+          "y:3": 0,
+          "id:3": 77,
           "sizeY:3": 24
         },
         "28:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 60,
-          "id:3": 214,
+          "x:3": 252,
+          "y:3": -276,
+          "id:3": 80,
           "sizeY:3": 24
         },
         "29:10": {
           "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": -84,
-          "id:3": 280,
+          "x:3": 252,
+          "y:3": -168,
+          "id:3": 81,
           "sizeY:3": 24
         },
         "30:10": {
           "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": -120,
-          "id:3": 287,
+          "x:3": 444,
+          "y:3": -204,
+          "id:3": 83,
           "sizeY:3": 24
         },
         "31:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": -156,
+          "x:3": 372,
+          "y:3": -276,
+          "id:3": 88,
+          "sizeY:3": 24
+        },
+        "32:10": {
+          "sizeX:3": 24,
+          "x:3": 408,
+          "y:3": -276,
+          "id:3": 139,
+          "sizeY:3": 24
+        },
+        "33:10": {
+          "sizeX:3": 24,
+          "x:3": 324,
+          "y:3": -276,
+          "id:3": 141,
+          "sizeY:3": 24
+        },
+        "34:10": {
+          "sizeX:3": 24,
+          "x:3": -156,
+          "y:3": -132,
+          "id:3": 201,
+          "sizeY:3": 24
+        },
+        "35:10": {
+          "sizeX:3": 24,
+          "x:3": 288,
+          "y:3": -276,
+          "id:3": 209,
+          "sizeY:3": 24
+        },
+        "36:10": {
+          "sizeX:3": 24,
+          "x:3": 588,
+          "y:3": 48,
+          "id:3": 259,
+          "sizeY:3": 24
+        },
+        "37:10": {
+          "sizeX:3": 24,
+          "x:3": 252,
+          "y:3": 132,
+          "id:3": 263,
+          "sizeY:3": 24
+        },
+        "38:10": {
+          "sizeX:3": 24,
+          "x:3": 108,
+          "y:3": 0,
+          "id:3": 280,
+          "sizeY:3": 24
+        },
+        "39:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": 0,
+          "id:3": 287,
+          "sizeY:3": 24
+        },
+        "40:10": {
+          "sizeX:3": 24,
+          "x:3": 444,
+          "y:3": -276,
           "id:3": 375,
+          "sizeY:3": 24
+        },
+        "41:10": {
+          "sizeX:3": 24,
+          "x:3": 252,
+          "y:3": 168,
+          "id:3": 391,
+          "sizeY:3": 24
+        },
+        "42:10": {
+          "sizeX:3": 24,
+          "x:3": 252,
+          "y:3": 204,
+          "id:3": 392,
+          "sizeY:3": 24
+        },
+        "43:10": {
+          "sizeX:3": 24,
+          "x:3": 252,
+          "y:3": 240,
+          "id:3": 393,
+          "sizeY:3": 24
+        },
+        "44:10": {
+          "sizeX:3": 24,
+          "x:3": 252,
+          "y:3": 276,
+          "id:3": 394,
+          "sizeY:3": 24
+        },
+        "45:10": {
+          "sizeX:3": 24,
+          "x:3": 372,
+          "y:3": 276,
+          "id:3": 395,
+          "sizeY:3": 24
+        },
+        "46:10": {
+          "sizeX:3": 24,
+          "x:3": 288,
+          "y:3": 276,
+          "id:3": 396,
+          "sizeY:3": 24
+        },
+        "47:10": {
+          "sizeX:3": 24,
+          "x:3": 324,
+          "y:3": 276,
+          "id:3": 397,
+          "sizeY:3": 24
+        },
+        "48:10": {
+          "sizeX:3": 24,
+          "x:3": 408,
+          "y:3": 276,
+          "id:3": 398,
+          "sizeY:3": 24
+        },
+        "49:10": {
+          "sizeX:3": 24,
+          "x:3": 444,
+          "y:3": 276,
+          "id:3": 399,
+          "sizeY:3": 24
+        },
+        "50:10": {
+          "sizeX:3": 24,
+          "x:3": 444,
+          "y:3": 240,
+          "id:3": 400,
+          "sizeY:3": 24
+        },
+        "51:10": {
+          "sizeX:3": 24,
+          "x:3": 444,
+          "y:3": 204,
+          "id:3": 401,
+          "sizeY:3": 24
+        },
+        "52:10": {
+          "sizeX:3": 24,
+          "x:3": 552,
+          "y:3": 168,
+          "id:3": 402,
+          "sizeY:3": 24
+        },
+        "53:10": {
+          "sizeX:3": 24,
+          "x:3": 348,
+          "y:3": 48,
+          "id:3": 403,
+          "sizeY:3": 24
+        },
+        "54:10": {
+          "sizeX:3": 24,
+          "x:3": 444,
+          "y:3": 108,
+          "id:3": 404,
+          "sizeY:3": 24
+        },
+        "55:10": {
+          "sizeX:3": 24,
+          "x:3": 444,
+          "y:3": 0,
+          "id:3": 405,
+          "sizeY:3": 24
+        },
+        "56:10": {
+          "sizeX:3": 24,
+          "x:3": -108,
+          "y:3": -180,
+          "id:3": 406,
+          "sizeY:3": 24
+        },
+        "57:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": 132,
+          "id:3": 407,
+          "sizeY:3": 24
+        },
+        "58:10": {
+          "sizeX:3": 24,
+          "x:3": -156,
+          "y:3": 132,
+          "id:3": 408,
+          "sizeY:3": 24
+        },
+        "59:10": {
+          "sizeX:3": 24,
+          "x:3": -108,
+          "y:3": 84,
+          "id:3": 409,
+          "sizeY:3": 24
+        },
+        "60:10": {
+          "sizeX:3": 24,
+          "x:3": -108,
+          "y:3": 180,
+          "id:3": 410,
+          "sizeY:3": 24
+        },
+        "61:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 180,
+          "id:3": 411,
+          "sizeY:3": 24
+        },
+        "62:10": {
+          "sizeX:3": 24,
+          "x:3": 300,
+          "y:3": 0,
+          "id:3": 412,
+          "sizeY:3": 24
+        },
+        "63:10": {
+          "sizeX:3": 24,
+          "x:3": -156,
+          "y:3": 0,
+          "id:3": 413,
           "sizeY:3": 24
         }
       },
@@ -24480,22 +26527,22 @@
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -168,
-          "y:3": 0,
+          "x:3": -204,
+          "y:3": -12,
           "id:3": 198,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -216,
-          "y:3": 0,
+          "x:3": -168,
+          "y:3": -12,
           "id:3": 199,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": -216,
-          "y:3": 48,
+          "x:3": -168,
+          "y:3": 108,
           "id:3": 200,
           "sizeY:3": 24
         },
@@ -24515,29 +26562,29 @@
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": 0,
+          "x:3": -132,
+          "y:3": -12,
           "id:3": 204,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": -216,
-          "y:3": -48,
+          "x:3": -240,
+          "y:3": -12,
           "id:3": 205,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": -48,
+          "x:3": -96,
+          "y:3": -12,
           "id:3": 206,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
           "x:3": -168,
-          "y:3": 48,
+          "y:3": 144,
           "id:3": 207,
           "sizeY:3": 24
         },
@@ -24568,6 +26615,13 @@
           "y:3": -120,
           "id:3": 277,
           "sizeY:3": 24
+        },
+        "15:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": 72,
+          "id:3": 414,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 5,
@@ -24593,7 +26647,7 @@
         "1:10": {
           "sizeX:3": 24,
           "x:3": -12,
-          "y:3": 132,
+          "y:3": 144,
           "id:3": 71,
           "sizeY:3": 24
         },
@@ -24620,36 +26674,36 @@
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": 24,
+          "x:3": -12,
+          "y:3": -36,
           "id:3": 241,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": -36,
-          "y:3": 48,
+          "x:3": -60,
+          "y:3": 0,
           "id:3": 242,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 84,
+          "x:3": 24,
+          "y:3": 48,
           "id:3": 250,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": 24,
+          "x:3": -48,
           "y:3": 48,
           "id:3": 251,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": -12,
+          "x:3": 36,
+          "y:3": -36,
           "id:3": 264,
           "sizeY:3": 24
         },
@@ -25159,8 +27213,8 @@
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -240,
-          "y:3": -180,
+          "x:3": -180,
+          "y:3": -132,
           "id:3": 128,
           "sizeY:3": 24
         },

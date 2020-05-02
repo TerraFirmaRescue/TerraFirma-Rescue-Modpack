@@ -1451,3 +1451,17 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 8192, 250, 0, [10000],
 
 //endereye gear
 recipes.addShapeless(<gregtech:gt.meta.gearGtSmall:8319>,[<gregtech:gt.meta.plateGem:8319>,HHammer]);
+
+
+//straw rope
+recipes.remove(<gregtech:gt.multitileentity:32013>);
+recipes.addShaped(<gregtech:gt.multitileentity:32013>*2,
+[[<terrafirmacraft:item.Straw>,<terrafirmacraft:item.Straw>,<terrafirmacraft:item.Straw>],
+[n,<terrafirmacraft:item.Straw>,n],
+[<terrafirmacraft:item.Straw>,<terrafirmacraft:item.Straw>,<terrafirmacraft:item.Straw>]]);
+
+recipes.addShaped(<gregtech:gt.multitileentity:32013>*4,
+[[<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>],
+[n,<terrafirmacraft:item.Jute Fibre>,n],
+[<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>]]);
+
