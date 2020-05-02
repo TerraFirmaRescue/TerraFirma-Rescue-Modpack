@@ -109,3 +109,10 @@ recipes.addShaped(<IC2:blockMachine2>,[
 [<appliedenergistics2:item.ItemMultiMaterial:41>,<IC2:blockMachine:12>,<gregtech:gt.multiitem.technological:12104>],
 [<gregtech:gt.multiitem.technological:12144>,<moegadd:MainframeCluster4>,<gregtech:gt.multiitem.technological:12124>]]);
 //chuan song ji
+
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 64, 0, [10000],
+[<gregtech:gt.multitileentity:32607>,<gregtech:gt.meta.plateCurved:500>,<gregtech:gt.meta.foil:27006>*2,],
+[<liquid:glass>*144],
+[null],
+[<IC2:itemFluidCell>]);
+//tong yong liu ti dan yuan
