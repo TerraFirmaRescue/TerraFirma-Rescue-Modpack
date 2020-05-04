@@ -94,13 +94,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16,  1200,0,[10000],
 [<tfctech:item.Circuit>,<gregtech:gt.meta.wireFine:290>*4,<gregtech:gt.meta.wireFine:8708>*4],
 [<advancedRocketry:circuitIC:3>]);
 
-MTUtilsGT.removeAllRecipes("gt.recipe.generifier",<gregtech:gt.meta.lens:8301>);
-MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 16,  1200,0,[10000], 
-[<gregtech:gt.meta.lens:8311>],
-[null],
-[null],
-[<gregtech:gt.meta.lens:8301>]);
-
 recipes.remove(<advancedRocketry:precisionassemblingmachine>);
 recipes.addShaped(<advancedRocketry:precisionassemblingmachine>,
 [[<advancedRocketry:tile.energyPipe>,<advancedRocketry:miscpart>, <advancedRocketry:tile.energyPipe>],
@@ -249,11 +242,11 @@ MTUtilsGT.removeAllRecipes("gt.recipe.mixer",<gregtech:gt.meta.dust:8245>);
 MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 [<advancedRocketry:tile.geode>],
 [<gregtech:gt.meta.dust:8247>]);
-MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 256 ,0,[7000, 1500, 3000],
+MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 256 ,0,[7000, 1500],
 [<gregtech:gt.meta.dust:8247>],
 [null],
 [null],
-[<gregtech:gt.meta.dust:260>,<gregtech:gt.meta.dust:8649>,<gregtech:gt.meta.dustSmall:770>*2]);
+[<gregtech:gt.meta.dust:260>,<gregtech:gt.meta.dust:8649>]);
 
 //space station assembler
 recipes.remove(<advancedRocketry:tile.stationAssembler>);
