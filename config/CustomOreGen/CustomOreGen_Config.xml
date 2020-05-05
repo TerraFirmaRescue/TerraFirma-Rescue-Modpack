@@ -401,7 +401,6 @@
          NOTE: to override a default config, remove the corresponding
          directive (and optionally add something to 'modules/custom')
     -->
-    <Import file='modules/default/Gregtech6.xml'/>
    
     <!-- ******************** Import Custom Configs ************************ -->
     <OptionalImport file='modules/custom/duckEggB.xml'/>

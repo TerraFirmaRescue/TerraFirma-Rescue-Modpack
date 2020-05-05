@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LootGroups>
+    <LootGroup GroupMetaID="0" GroupName="Trash" Rarity="0" MinItems="1" MaxItems="1" CombineTrashGroup="false">
+        <Loot Identifier="52d168d1-98ac-46a7-86b6-2d29f6102a39" ItemName="minecraft:experience_bottle" Amount="16" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="true"/>
+        <Loot Identifier="25f6196c-0487-4f5d-bebb-8fd605ba869b" ItemName="minecraft:lever" Amount="6" NBTTag="" Chance="65" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="251e45c9-f571-4ad3-a8cd-504b4463d0d2" ItemName="minecraft:string" Amount="8" NBTTag="" Chance="65" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="253fbe89-0e4b-48f1-bea7-3c3fdaa1644d" ItemName="terrafirmacraft:item.arrow" Amount="16" NBTTag="" Chance="50" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="275da512-1cb2-4c9b-ae64-d9c0e7d3ba75" ItemName="terrafirmacraft:item.bow" Amount="1" NBTTag="" Chance="40" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="6ee96087-4a4d-4607-86e6-9a5ba3334b85" ItemName="minecraft:ender_pearl" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="50817d0e-d1d9-472b-b034-2cde100003b1" ItemName="minecraft:heavy_weighted_pressure_plate" Amount="1" NBTTag="" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="ac6c8fee-9d0c-472e-8674-107252eb5303" ItemName="terrafirmacraft:Cactus" Amount="1" NBTTag="" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="ebcc9720-6f6f-491b-bfbc-a5793d5159eb" ItemName="terrafirmacraft:item.helmetCloth" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="3e5182d5-b44c-4a08-a5bf-9b62dab2c1db" ItemName="terrafirmacraft:item.coal" Amount="8" NBTTag="" Chance="45" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="7f38c3dd-5522-4a5e-a5ad-f63c1c3cca1b" ItemName="terrafirmacraft:Fence" Amount="8" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="148bbcdd-3527-4396-bf58-580d25446dcc" ItemName="minecraft:rail" Amount="8" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="c7886a3c-eb79-4f80-b1ae-c9bdef2080f0" ItemName="minecraft:gold_block" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="cd03240c-376f-4539-82d0-d44dfa23f408" ItemName="terrafirmacraft:Torch" Amount="32" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="true"/>
+        <Loot Identifier="63f787bd-d8bc-4dfd-97eb-72c805fea669" ItemName="terrafirmacraft:sapling" Amount="1" NBTTag="" Chance="12" ItemGroup="saplings_normal" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="63e371d5-46dc-484a-b08d-869588bf69be" ItemName="minecraft:paper" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="6b110a41-4749-4590-8fb6-0b8db93a38b6" ItemName="terrafirmacraft:sapling:2" Amount="1" NBTTag="" Chance="12" ItemGroup="saplings_normal" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="6c339f36-da8e-4282-8c4a-39abd8a6c5f3" ItemName="terrafirmacraft:item.Diamond:4" Amount="1" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="52e704a6-ecf9-43dd-af0e-ceb58111ce66" ItemName="terrafirmacraft:item.IgIn Stone Javelin" Amount="3" NBTTag="" Chance="7" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="33c3858a-04b4-49a0-9516-8c11a2eef3dc" ItemName="minecraft:redstone_torch" Amount="16" NBTTag="" Chance="45" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="8cc9f39b-058d-454f-8fe4-143ab2e8e6c3" ItemName="terrafirmacraft:sapling:sapling:3" Amount="1" NBTTag="" Chance="12" ItemGroup="saplings_normal" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="fb9e57fb-c876-4bd9-b254-66fd39e74df3" ItemName="terrafirmacraft:sapling:sapling:4" Amount="1" NBTTag="" Chance="12" ItemGroup="saplings_normal" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="500f1b62-b911-4dc1-adf1-19678e8ed6ab" ItemName="terrafirmacraft:item.dyePowder:4" Amount="3" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="066d8f49-25a5-421b-814e-4fdf6190eb28" ItemName="terrafirmacraft:item.Diamond:2" Amount="1" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="eac9eb71-8d25-47dc-b8c4-47c397634794" ItemName="terrafirmacraft:item.bootsCloth" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="dbed1bec-31e6-4631-9bff-8d98767bdf00" ItemName="minecraft:stone_pressure_plate" Amount="4" NBTTag="" Chance="55" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="e7e24491-4390-46d7-a61c-e7e38b9f3679" ItemName="minecraft:feather" Amount="16" NBTTag="" Chance="22" ItemGroup="" LimitedDropCount="0" RandomAmount="true"/>
+        <Loot Identifier="9306a28c-933d-4712-ae9a-dd4bbe3fc246" ItemName="terrafirmacraft:sapling:sapling:5" Amount="1" NBTTag="" Chance="12" ItemGroup="saplings_normal" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="a33d072c-19ff-4f14-a503-4e8ec39d9aef" ItemName="minecraft:leather" Amount="4" NBTTag="" Chance="50" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="a0c1d59c-0a76-477d-9251-c99d60c407a8" ItemName="minecraft:dye:15" Amount="8" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="true"/>
+        <Loot Identifier="0a96830a-a4b1-4327-af9f-951a9c84fd7d" ItemName="minecraft:bone" Amount="8" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="true"/>
+        <Loot Identifier="8e9a8ca2-fd35-41b2-b2b5-458ae99947f4" ItemName="terrafirmacraft:item.coal:1" Amount="8" NBTTag="" Chance="55" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="f776e50c-39f5-4535-ab72-95ebf21cbe6b" ItemName="minecraft:light_weighted_pressure_plate" Amount="1" NBTTag="" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="9d418fe6-4b8c-4dac-b980-0b0053a88438" ItemName="minecraft:redstone_block" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="0cdbaa2e-7e1f-457c-a258-19ca364af149" ItemName="minecraft:slime_ball" Amount="8" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="true"/>
+        <Loot Identifier="033df610-7d5b-47df-8a65-b54955274101" ItemName="minecraft:glass_pane" Amount="16" NBTTag="" Chance="40" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="0afd76c7-0909-4159-93c5-b7e4979c8c71" ItemName="terrafirmacraft:Torch" Amount="16" NBTTag="" Chance="65" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="0d1ca62a-86db-4a99-8ef2-e8189d8903f2" ItemName="terrafirmacraft:FenceGate" Amount="8" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="f7d574a0-3b08-431b-8601-a85c989650d8" ItemName="minecraft:glowstone" Amount="1" NBTTag="" Chance="8" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="87a4b870-a75c-4ffc-88cc-27261a7c318e" ItemName="terrafirmacraft:item.FruitSapling:7" Amount="1" NBTTag="" Chance="12" ItemGroup="saplings_normal" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="e12cd73a-2a34-40cf-a5eb-e7e9a2b281bd" ItemName="terrafirmacraft:Chest TFC" Amount="4" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="61de4109-9f3d-4294-a2a6-a4a55087bef6" ItemName="minecraft:wooden_pressure_plate" Amount="4" NBTTag="" Chance="65" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="393df73a-d543-4d3f-b8c9-f01713dcb619" ItemName="minecraft:gunpowder" Amount="4" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="496adaa5-30fd-4ebd-bc1b-56f961ab9493" ItemName="minecraft:spider_eye" Amount="4" NBTTag="" Chance="6" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="d4509e63-ec6d-4705-baba-a3b6ef73822e" ItemName="terrafirmacraft:item.Emerald:2" Amount="2" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="50f6e907-038c-4e5f-b3bd-ba623d1df3c7" ItemName="minecraft:sponge" Amount="1" NBTTag="" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="32944b0a-dcbe-4fd1-83d5-e288c5f4ea01" ItemName="minecraft:book" Amount="1" NBTTag="" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="1ce78971-c458-4ba3-901a-c0cbcfbd9f36" ItemName="minecraft:dye:15" Amount="8" NBTTag="" Chance="45" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="5a68859e-f94d-481f-83d0-440772174e5d" ItemName="minecraft:obsidian" Amount="10" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="0806ab6a-cd59-44e4-b71d-080628a57887" ItemName="gregtech:gt.multitileentity:32013" Amount="20" NBTTag="" Chance="45" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="f1fd9c07-979c-4154-8500-5acb813d7e5d" ItemName="minecraft:glowstone_dust" Amount="1" NBTTag="" Chance="6" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="bread_small" ItemName="terrafirmacraft:item.Wheat Bread" Amount="1" NBTTag="{foodWeight: 10.0 as float}" Chance="65" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="bread_med" ItemName="terrafirmacraft:item.Wheat Bread" Amount="1" NBTTag="{foodWeight: 30.0 as float}" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="bread_large" ItemName="terrafirmacraft:item.Wheat Bread" Amount="1" NBTTag="{foodWeight: 60.0 as float}" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Lemon_small" ItemName="terrafirmacraft:item.Lemon" Amount="1" NBTTag="{foodWeight: 10.0 as float}" Chance="65" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Lemon_med" ItemName="terrafirmacraft:item.Lemon" Amount="1" NBTTag="{foodWeight: 30.0 as float}" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Lemon_large" ItemName="terrafirmacraft:item.Lemon" Amount="1" NBTTag="{foodWeight: 60.0 as float}" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Mutton_small" ItemName="terrafirmacraft:item.Mutton" Amount="1" NBTTag="{foodWeight: 10.0 as float}" Chance="65" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Mutton_med" ItemName="terrafirmacraft:item.Mutton" Amount="1" NBTTag="{foodWeight: 30.0 as float}" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Mutton_large" ItemName="terrafirmacraft:item.Mutton" Amount="1" NBTTag="{foodWeight: 60.0 as float}" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Cabbage_small" ItemName="terrafirmacraft:item.Cabbage" Amount="1" NBTTag="{foodWeight: 10.0 as float}" Chance="65" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Cabbage_med" ItemName="terrafirmacraft:item.Cabbage" Amount="1" NBTTag="{foodWeight: 30.0 as float}" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Cabbage_large" ItemName="terrafirmacraft:item.Cabbage" Amount="1" NBTTag="{foodWeight: 60.0 as float}" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Cheese_med" ItemName="terrafirmacraft:item.Cheese" Amount="1" NBTTag="{foodWeight: 30.0 as float}" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Rye" ItemName="terrafirmacraft:item.Seeds Rye" Amount="5" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Tomato" ItemName="terrafirmacraft:item.Seeds Tomato" Amount="5" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Rice" ItemName="terrafirmacraft:item.Seeds Rice" Amount="5" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Garlic" ItemName="terrafirmacraft:item.Seeds Garlic" Amount="5" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Sugarcane" ItemName="terrafirmacraft:item.Seeds Sugarcane" Amount="5" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Jute" ItemName="terrafirmacraft:item.Seeds Jute" Amount="5" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Reeds" ItemName="terrafirmacraft:item.Reeds" Amount="5" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="ptFireStarter" ItemName="gregtech:gt.multiitem.randomtools:5009" Amount="1" NBTTag="" Chance="1" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+    </LootGroup>
+
+    <LootGroup GroupMetaID="1" GroupName="Tier 0" Rarity="0" MinItems="1" MaxItems="2" CombineTrashGroup="true">
+        <Loot Identifier="SmoothStone" ItemName="terrafirmacraft:StoneIgInSmooth:2" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Stone" ItemName="terrafirmacraft:StoneIgIn" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="LooseRock" ItemName="terrafirmacraft:item.LooseRock" Amount="10" NBTTag="" Chance="60" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Log0" ItemName="terrafirmacraft:item.Log" Amount="8" NBTTag="" Chance="55" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Log1" ItemName="terrafirmacraft:item.Log:1" Amount="8" NBTTag="" Chance="55" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Log12" ItemName="terrafirmacraft:item.Log:12" Amount="8" NBTTag="" Chance="55" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Log16" ItemName="terrafirmacraft:item.Log:16" Amount="8" NBTTag="" Chance="55" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Log0" ItemName="terrafirmacraft:item.Log" Amount="32" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Log1" ItemName="terrafirmacraft:item.Log:1" Amount="32" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Log12" ItemName="terrafirmacraft:item.Log:12" Amount="32" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Log16" ItemName="terrafirmacraft:item.Log:16" Amount="32" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Straw" ItemName="terrafirmacraft:item.Straw" Amount="32" NBTTag="" Chance="45" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Thatch" ItemName="terrafirmacraft:Thatch" Amount="16" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="blockcrate" ItemName="animalcrate:blockcrate" Amount="1" NBTTag="" Chance="12" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="chestmc" ItemName="minecraft:chest" Amount="4" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="chestcopper" ItemName="IronChest:BlockIronChest:3" Amount="2" NBTTag="" Chance="14" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="chestcopper" ItemName="minecraft:flint" Amount="16" NBTTag="" Chance="40" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="bomb" ItemName="gregtech:gt.multitileentity:32712" Amount="16" NBTTag="" Chance="22" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="door" ItemName="terrafirmacraft:item.Oak Door" Amount="2" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+    </LootGroup>
+
+    <LootGroup GroupMetaID="2" GroupName="Tier 1" Rarity="0" MinItems="1" MaxItems="2" CombineTrashGroup="true">
+        <Loot Identifier="SmoothStone1" ItemName="terrafirmacraft:StoneIgInSmooth:2" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+    </LootGroup>
+
+    <LootGroup GroupMetaID="3" GroupName="Tier 2" Rarity="0" MinItems="1" MaxItems="2" CombineTrashGroup="true">
+        <Loot Identifier="SmoothStone2" ItemName="terrafirmacraft:StoneIgInSmooth:2" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+    </LootGroup>
+
+    <LootGroup GroupMetaID="4" GroupName="Tier 3" Rarity="0" MinItems="1" MaxItems="2" CombineTrashGroup="true">
+        <Loot Identifier="SmoothStone3" ItemName="terrafirmacraft:StoneIgInSmooth:2" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+    </LootGroup>
+
+    <LootGroup GroupMetaID="5" GroupName="Tier 4" Rarity="0" MinItems="1" MaxItems="2" CombineTrashGroup="true">
+        <Loot Identifier="SmoothStone4" ItemName="terrafirmacraft:StoneIgInSmooth:2" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+    </LootGroup>
+
+    <LootGroup GroupMetaID="6" GroupName="Tier 5" Rarity="0" MinItems="1" MaxItems="2" CombineTrashGroup="true">
+        <Loot Identifier="SmoothStone5" ItemName="terrafirmacraft:StoneIgInSmooth:2" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+    </LootGroup>
+
+    <LootGroup GroupMetaID="7" GroupName="Tier 6" Rarity="0" MinItems="1" MaxItems="2" CombineTrashGroup="true">
+        <Loot Identifier="SmoothStone6" ItemName="terrafirmacraft:StoneIgInSmooth:2" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+    </LootGroup>
+
+</LootGroups>
