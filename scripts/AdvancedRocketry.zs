@@ -531,3 +531,10 @@ recipes.addShaped(<advancedRocketry:tile.sawBlade>,[
 [<ore:plateAnyIronOrSteel>,<advancedRocketry:sawBlade>,<ore:plateAnyIronOrSteel>],
 [<ore:plateAnyIronOrSteel>,null,<ore:plateAnyIronOrSteel>]]);
 //dian ju
+
+recipes.remove(<libVulpes:item.holoProjector>);
+recipes.addShaped(<libVulpes:item.holoProjector>,
+[[<advancedRocketry:satellitePrimaryFunction>,<gregtech:gt.meta.wireFine:8660>,<advancedRocketry:satellitePrimaryFunction>],
+[<gregtech:gt.meta.wireFine:8660>,<advancedRocketry:circuitIC:3>,<gregtech:gt.meta.wireFine:8660>],
+[<moegadd:Simpleresistance>,<moegadd:SimpleCapacitance>,<moegadd:Simpletransistor>]]);
+//tou ying yi

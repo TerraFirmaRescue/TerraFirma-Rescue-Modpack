@@ -489,3 +489,12 @@ recipes.addShapeless(<minecraft:planks>,[<minecraft:log>,Saw]);
 recipes.addShapeless(<minecraft:planks:7>,[<gregtech:gt.block.log.b:3>,Saw]);
 recipes.addShapeless(<minecraft:planks:2>,[<gregtech:gt.block.log.a:2>,Saw]);
 recipes.addShapeless(<minecraft:planks:4>,[<gregtech:gt.block.log.b>,Saw]);
+
+recipes.addShapeless(<IC2:itemPlates:4>,[<terrafirmacraft:item.Wrought Iron Sheet>]);
+//tie ban
+
+recipes.addShaped(<minecraft:anvil>,[
+[<ore:blockSoildIron>,<ore:blockSoildIron>,<ore:blockSoildIron>],
+[null,<ore:ingotAnyIron>,null],
+[<ore:ingotAnyIron>,<ore:ingotAnyIron>,<ore:ingotAnyIron>]]);
+//Iron Anvil

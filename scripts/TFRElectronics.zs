@@ -1154,3 +1154,16 @@ recipes.addShaped(<moegadd:Simpletransistor>,
 [n,<gregtech:gt.meta.plateTiny:140>,Cutter],
 [<gregtech:gt.meta.wireFine:290>,<gregtech:gt.meta.wireFine:290>,<gregtech:gt.meta.wireFine:290>]]);
 
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 200 ,0,[10000],
+[<moegadd:IntegratedCircuit1GHz>,<moegadd:MemoryCell512M>,<moegadd:SMDResistor>,<moegadd:PatchCapacitor>,<moegadd:PatchDiode>,<moegadd:PatchTransistor>,<gregtech:gt.meta.casingSmall:8218>,<gregtech:gt.meta.wireFine:780>],
+[n],
+[n],
+[<moegadd:Microchip>*2]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 200 ,0,[10000],
+[<moegadd:IntegratedCircuit2GHz>,<moegadd:MemoryCell1G>,<moegadd:SMDResistor>,<moegadd:PatchCapacitor>,<moegadd:PatchDiode>,<moegadd:PatchTransistor>,<gregtech:gt.meta.casingSmall:8218>,<gregtech:gt.meta.wireFine:780>],
+[n],
+[n],
+[<moegadd:Microchip>*4]);
+//mini chip
+

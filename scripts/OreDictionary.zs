@@ -316,3 +316,6 @@ Shears.add(<terrafirmacraft:item.shears>);
 <ore:plateIron>.remove(<terrafirmacraft:item.Wrought Iron Sheet>);
 <ore:plateDoubleIron>.remove(<terrafirmacraft:item.Wrought Iron Double Sheet>);
 //remove wrought irom from common iron
+
+<ore:gt:circuit6>.add(<moegadd:Microchip>);
+//wei xing xin pian
