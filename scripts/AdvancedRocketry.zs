@@ -112,7 +112,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.drying", false, 16, 600 ,0,[10000],
 recipes.remove(<advancedRocketry:rocketBuilder>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<advancedRocketry:rocketBuilder>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 2000 ,0,[10000],
-[<gregtech:gt.meta.machine.double:8794>, <moegadd:CPU_256MHz_2>, <gregtech:gt.multiitem.technological:12084>*3,
+[<gregtech:gt.meta.machine.double:8794>, <gregtech:gt.multiitem.technological:30306>*8, <gregtech:gt.multiitem.technological:12084>*3,
 <gregtech:gt.multiitem.technological:12044>,<gregtech:gt.multitileentity:29016>*2,<gregtech:gt.multiitem.technological:11008>*4],
 [<liquid:molten.tin>*1000],
 [null],
@@ -323,7 +323,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
 //guidance computer
 recipes.remove(<advancedRocketry:tile.guidanceComputer>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 64, 1000 ,0,[10000],
-[<gregtech:gt.meta.plate:220>,<libVulpes:blockStructureBlock>,<advancedRocketry:circuitIC:1>*2,<gregtech:gt.multiitem.technological:30306>],
+[<gregtech:gt.meta.plate:220>,<libVulpes:blockStructureBlock>,<moegadd:Mainframe1>,<gregtech:gt.multiitem.technological:30306>],
 [<liquid:molten.tin>*144],
 [null],
 [<advancedRocketry:tile.guidanceComputer>]);
@@ -538,3 +538,10 @@ recipes.addShaped(<libVulpes:item.holoProjector>,
 [<gregtech:gt.meta.wireFine:8660>,<advancedRocketry:circuitIC:3>,<gregtech:gt.meta.wireFine:8660>],
 [<moegadd:Simpleresistance>,<moegadd:SimpleCapacitance>,<moegadd:Simpletransistor>]]);
 //tou ying yi
+
+//satellite builder
+recipes.remove(<advancedRocketry:blockSatelliteBuilder>);
+recipes.addShaped(<advancedRocketry:blockSatelliteBuilder>,
+[[<ore:gt:circuit6>,<gregtech:gt.meta.plateDouble:220>,<ore:gt:circuit6>],
+[<ore:gt:circuit6>,<advancedRocketry:rocketBuilder>,<ore:gt:circuit6>],
+[<libVulpes:tile.motor>,Screwdriver,<advancedRocketry:tile.sawBlade>]]);
