@@ -10,6 +10,17 @@ MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
 []);
 */
 
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 64, 0, [10000],
+[<terrafirmacraft:item.Small Ore:2>],
+[null],
+[null],
+[<moegadd:CrushedPlatinumOre>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.sluice", false, 16, 64, 0, [10000],
+[<moegadd:CrushedPlatinumOre>],
+[null],
+[null],
+[<moegadd:WashedPlatinumOre>]);
+//Pt ore
 
 MTUtilsGT.addCustomRecipe("gt.recipe.heatmixer", false, 256, 256, 0, [10000],
 [<gregtech:gt.meta.dust:9104>*0],
@@ -225,3 +236,16 @@ MTUtilsGT.addCustomRecipe("gt.recipe.roaster", false, 512, 128, 0, [10000],
 [<liquid:hydrochloricacid>*1000],
 [<gregtech:gt.meta.dust:770>,<moegadd:dustNH4Cl>]);
 //Ir
+
+/*---------remove---------*/
+MTUtilsGT.removeAllRecipes("gt.recipe.crusher",<gregtech:gt.meta.crushed:9116>);
+MTUtilsGT.removeAllRecipes("gt.recipe.crusher",<gregtech:gt.meta.crushed:770>);
+MTUtilsGT.removeAllRecipes("gt.recipe.bath",<gregtech:gt.meta.crushedPurified:9116>);
+MTUtilsGT.removeAllRecipes("gt.recipe.bath",<gregtech:gt.meta.crushedPurifiedTiny:9116>);
+MTUtilsGT.removeAllRecipes("gt.recipe.bath",<gregtech:gt.meta.crushedPurified:770>);
+MTUtilsGT.removeAllRecipes("gt.recipe.bath",<gregtech:gt.meta.crushedPurifiedTiny:770>);
+MTUtilsGT.removeAllRecipes("gt.recipe.sluice",<gregtech:gt.meta.crushedPurified:9116>);
+MTUtilsGT.removeAllRecipes("gt.recipe.sluice",<gregtech:gt.meta.crushedPurifiedTiny:9116>);
+MTUtilsGT.removeAllRecipes("gt.recipe.sluice",<gregtech:gt.meta.crushedPurified:770>);
+MTUtilsGT.removeAllRecipes("gt.recipe.sluice",<gregtech:gt.meta.crushedPurifiedTiny:770>);
+/*---------end---------*/
