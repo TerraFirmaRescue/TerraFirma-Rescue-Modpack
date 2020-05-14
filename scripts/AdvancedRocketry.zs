@@ -545,3 +545,13 @@ recipes.addShaped(<advancedRocketry:blockSatelliteBuilder>,
 [[<ore:gt:circuit6>,<gregtech:gt.meta.plateDouble:220>,<ore:gt:circuit6>],
 [<ore:gt:circuit6>,<advancedRocketry:rocketBuilder>,<ore:gt:circuit6>],
 [<libVulpes:tile.motor>,Screwdriver,<advancedRocketry:tile.sawBlade>]]);
+
+recipes.remove(<advancedRocketry:lens>);
+MTUtilsGT.removeAllRecipes("gt.recipe.sharpener",<advancedRocketry:lens>);
+MTUtilsGT.addCustomRecipe("gt.recipe.sharpener", false, 16, 64, 0, [10000],
+[<minecraft:glass_pane>],
+[n],
+[n],
+[<advancedRocketry:lens>]);
+
+recipes.addShapeless(<gregtech:gt.meta.plate:8500>, [File,<terrafirmacraft:item.ItemStoneBrick>,<terrafirmacraft:item.ItemStoneBrick>]);
