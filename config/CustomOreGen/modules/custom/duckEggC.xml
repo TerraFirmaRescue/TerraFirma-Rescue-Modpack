@@ -3,15 +3,16 @@
     <IfCondition condition=':= dimension.id = 12'>
             <Cloud name='PtCloud' inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60212121' drawBoundBox='false' boundBoxColor='0x60212121'>
                 <OreBlock block='minecraft:stone' weight='0.2'/>
-                <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
-                nbt='{m:9116, id:"gt.MetaBlockTileEntity"}'
-                weight='0.5'/>
-                <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
-                nbt='{m:9212, id:"gt.MetaBlockTileEntity"}'
-                weight='0.25'/>
-                <OreBlock block='gregtech:gt.meta.ore.normal.default:2'
-                nbt='{m:770, id:"gt.MetaBlockTileEntity"}'
-                weight='0.05'/>
+                <OreBlock block='moegadd:PlacerPlatinumOre'
+                          weight='0.2'/>
+                <OreBlock block='moegadd:MasloviteOre'
+                          weight='0.2'/>
+                <OreBlock block='moegadd:AtokiteOre'
+                          weight='0.15'/>
+                <OreBlock block='moegadd:OsmiridiumOre'
+                          weight='0.05'/>
+                <OreBlock block='moegadd:BraggiteOre'
+                          weight='0.2'/>
                 <Biome name='.*'  />
                 <Setting name='DistributionFrequency' avg=':= 0.3 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
                 <Setting name='CloudRadius' avg=':= 0.7 * _default_ ' range=':= 1.9 * _default_ ' type='normal' />
