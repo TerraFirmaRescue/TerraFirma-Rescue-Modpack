@@ -74,14 +74,14 @@ mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore>, true, false, [<
 //poor
 mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:52>, true, false, [<terrafirmacraft:item.Small Ore:3>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
 mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:54>, true, false, [<terrafirmacraft:item.Small Ore:5>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:56>, true, false, [<terrafirmacraft:item.Small Ore:6>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:57>, true, false, [<terrafirmacraft:item.Small Ore:7>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:58>, true, false, [<terrafirmacraft:item.Small Ore:8>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:59>, true, false, [<terrafirmacraft:item.Small Ore:9>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:60>, true, false, [<terrafirmacraft:item.Small Ore:10>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:61>, true, false, [<terrafirmacraft:item.Small Ore:11>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:62>, true, false, [<terrafirmacraft:item.Small Ore:12>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:63>, true, false, [<terrafirmacraft:item.Small Ore:13>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
+mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:55>, true, false, [<terrafirmacraft:item.Small Ore:6>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
+mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:56>, true, false, [<terrafirmacraft:item.Small Ore:7>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
+mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:57>, true, false, [<terrafirmacraft:item.Small Ore:8>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
+mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:58>, true, false, [<terrafirmacraft:item.Small Ore:9>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
+mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:59>, true, false, [<terrafirmacraft:item.Small Ore:10>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
+mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:60>, true, false, [<terrafirmacraft:item.Small Ore:11>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
+mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:61>, true, false, [<terrafirmacraft:item.Small Ore:12>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
+mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:62>, true, false, [<terrafirmacraft:item.Small Ore:13>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
 mods.railcraft.RockCrusher.addRecipe(<tfctech:item.Ore:2>, true, false, [<tfctech:item.Small Ore>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
 mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:50>, true, false, [<terrafirmacraft:item.Small Ore:1>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);
 mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:51>, true, false, [<terrafirmacraft:item.Small Ore:2>*3,<gregtech:gt.meta.dust:8500>], [1,0.2]);

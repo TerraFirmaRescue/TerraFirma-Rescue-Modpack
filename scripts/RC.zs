@@ -157,9 +157,11 @@ mods.railcraft.BlastFurnace.addFuel(<terrafirmacraft:item.coal:1>);
 furnace.setFuel(<terrafirmacraft:item.coal>, 4000);
 furnace.setFuel(<terrafirmacraft:item.coal:1>, 4000);
 
-mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.Small Ore:11>, false, false, 400, <terrafirmacraft:item.MetalNugget:9>*2);
-mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.Small Ore:3>, false, false, 400, <terrafirmacraft:item.MetalNugget:9>*2);
-mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.Small Ore:10>, false, false, 400, <terrafirmacraft:item.MetalNugget:9>*2);
+recipes.addShapeless(<moegadd:BlastPreparedIronOre>,[<terrafirmacraft:item.Small Ore:11>,<terrafirmacraft:item.Powder>]);
+recipes.addShapeless(<moegadd:BlastPreparedIronOre>,[<terrafirmacraft:item.Small Ore:10>,<terrafirmacraft:item.Powder>]);
+recipes.addShapeless(<moegadd:BlastPreparedIronOre>,[<terrafirmacraft:item.Small Ore:3>,<terrafirmacraft:item.Powder>]);
+
+mods.railcraft.BlastFurnace.addRecipe(<moegadd:BlastPreparedIronOre>, false, false, 400, <terrafirmacraft:item.MetalNugget:9>*2);
 mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.MetalNugget:9>, false, false, 200, <terrafirmacraft:item.MetalNugget:17>);
 
 //water reservoir
@@ -189,3 +191,11 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 64, 0, [10000],
 [n],
 [n],
 [<minecraft:golden_rail>*16]);
+
+// remove recycling of some parts
+mods.railcraft.RockCrusher.removeRecipe(<Railcraft:machine.alpha:7>);
+mods.railcraft.RockCrusher.removeRecipe(<Railcraft:machine.alpha:12>);
+mods.railcraft.RockCrusher.removeRecipe(<Railcraft:machine.alpha>);
+mods.railcraft.RockCrusher.removeRecipe(<Railcraft:machine.alpha:2>);
+mods.railcraft.RockCrusher.removeRecipe(<Railcraft:machine.alpha:13>);
+mods.railcraft.RockCrusher.removeRecipe(<minecraft:gravel>);
