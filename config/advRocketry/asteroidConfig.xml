@@ -19,4 +19,21 @@
       <ore itemStack="gregtech:gt.meta.ore.normal.default 9126" chance="20" />
 	  <ore itemStack="advancedRocketry:tile.geode" chance="25" />
     </asteroid>
+	<asteroid name="Titanium Asteroid" distance="10" mass="600" massVariability="0.5" minLevel="0" probability="1" richness="0.8" richnessVariability="0.5">
+      <ore itemStack="gregtech:gt.meta.ore.normal.default 9120" chance="10" />
+	  <ore itemStack="gregtech:gt.meta.ore.normal.default 9192" chance="40" />
+    </asteroid>
+		<asteroid name="Titanium Asteroid" distance="10" mass="700" massVariability="0.5" minLevel="0" probability="1" richness="0.8" richnessVariability="0.5">
+      <ore itemStack="gregtech:gt.meta.ore.normal.default 9128" chance="10" />
+	  <ore itemStack="gregtech:gt.meta.ore.normal.default 9133" chance="10" />
+	  <ore itemStack="gregtech:gt.meta.ore.normal.default 9194" chance="10" />
+	  <ore itemStack="gregtech:gt.meta.ore.normal.default 9195" chance="10" />
+	  <ore itemStack="gregtech:gt.meta.ore.normal.default 9217" chance="10" />
+    </asteroid>
+		<asteroid name="Titanium Asteroid" distance="10" mass="400" massVariability="0.5" minLevel="0" probability="1" richness="0.8" richnessVariability="0.5">
+      <ore itemStack="moegadd:MasloviteOre" chance="10" />
+	  <ore itemStack="moegadd:AtokiteOre" chance="10" />
+	  <ore itemStack="moegadd:BraggiteOre" chance="10" />
+	  <ore itemStack="moegadd:PlacerPlatinumOre" chance="10" />
+    </asteroid>
 </Asteroids>
