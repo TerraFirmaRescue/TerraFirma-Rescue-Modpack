@@ -167,9 +167,9 @@ mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.MetalNugget:9>, fals
 //water reservoir
 recipes.remove(<Railcraft:machine.alpha:14>);
 recipes.addShaped(<Railcraft:machine.alpha:14>*6,
-[[<terrafirmacraft:item.SinglePlank>,<ore:plateAnyIronOrSteel>,<terrafirmacraft:item.SinglePlank>],
+[[<ore:woodLumber>,<ore:plateAnyIronOrSteel>,<ore:woodLumber>],
 [<tfctech:item.Glue>,<ore:screwAnyIronOrSteel>,<tfctech:item.Glue>],
-[<terrafirmacraft:item.SinglePlank>,<ore:plateAnyIronOrSteel>,<terrafirmacraft:item.SinglePlank>]]);
+[<ore:woodLumber>,<ore:plateAnyIronOrSteel>,<ore:woodLumber>]]);
 
 //remove other ways of rails
 recipes.remove(<Railcraft:part.rail>);
