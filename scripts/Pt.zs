@@ -199,7 +199,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.smelter", false, 16, 40, 0, [10000],
 MTUtilsGT.removeAllRecipes("gt.recipe.mixer",<moegadd:dustNH4Cl>);
 MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 50, 0, [10000],
 [null],
-[<liquid:hydrogen>*1000,<liquid:hydrochloricacid>*1000],
+[<liquid:ammonia>*1000,<liquid:hydrochloricacid>*1000],
 [<liquid:water>*1000],
 [<moegadd:dustNH4Cl>]);
 //NH4Cl
