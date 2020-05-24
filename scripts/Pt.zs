@@ -283,7 +283,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 256, 0, [4096],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.roaster",<gregtech:gt.meta.crushedCentrifuged:460>);
 MTUtilsGT.addCustomRecipe("gt.recipe.roaster", false, 128, 320, 0, [10000],
-[<moegadd:dustAmmoniumChloroPlatate>],
+[<moegadd:dustPalladiumDichloride>],
 [<liquid:hydrogen>*1000],
 [null],
 [<gregtech:gt.meta.crushedCentrifuged:460>,<moegadd:dustNH4Cl>*2]);

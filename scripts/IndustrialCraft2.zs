@@ -107,7 +107,7 @@ recipes.remove(<IC2:blockMachine2>);
 recipes.addShaped(<IC2:blockMachine2>,[
 [<gregtech:gt.multitileentity:14504>,<gregtech:gt.multiitem.technological:30504>,<gregtech:gt.multitileentity:10104>],
 [<appliedenergistics2:item.ItemMultiMaterial:41>,<IC2:blockMachine:12>,<gregtech:gt.multiitem.technological:12104>],
-[<gregtech:gt.multiitem.technological:12144>,<moegadd:MainframeCluster4>,<gregtech:gt.multiitem.technological:12124>]]);
+[<gregtech:gt.multiitem.technological:12144>,<ore:MF5>,<gregtech:gt.multiitem.technological:12124>]]);
 //chuan song ji
 
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 64, 0, [10000],
