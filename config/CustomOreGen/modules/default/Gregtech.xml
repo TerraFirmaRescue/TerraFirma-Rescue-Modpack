@@ -20,24 +20,24 @@
     <OptionChoice name='GregtechActive'
                   default=':= dimension.generator = "RandomLevelSource" | dimension.generator = "ATGLevelSource"'
                   displayGroup='groupInternal'>
-      <Choice value='true' displayValue='开启'/>
-      <Choice value='false' displayValue='关闭'/>
+      <Choice value='true' displayValue='On'/>
+      <Choice value='false' displayValue='Off'/>
       <Comment>
         Controls whether Gregtech is active in the current dimension. By default, it is active in the overworld and Mystcraft ages. To disable for a specific dimension, set this to false in the CustomOreGen_Options.txt found in the dimension directory (preferably before visiting it).
       </Comment>
     </OptionChoice>
 
-    <OptionDisplayGroup name='groupGregtechOres' displayName='格雷矿物'
+    <OptionDisplayGroup name='groupGregtechOres' displayName='Gregtech Ores'
                         displayState='shown'> 
       <Description> 
-		开启/关闭 特定的金属和其他物质。
+        Enable/disable ores for certain metals and other substances.
       </Description>
     </OptionDisplayGroup>
 
-    <OptionDisplayGroup name='groupGregtech' displayName='格雷成分'
+    <OptionDisplayGroup name='groupGregtech' displayName='Gregtech Forms'
                         displayState='shown'> 
       <Description> 
-		开启/关闭 格雷矿物成分
+        Enable/disable Gregtech ore formations.
       </Description>
     </OptionDisplayGroup>
 
@@ -45,11 +45,11 @@
                  displayState='shown_dynamic'
                  displayGroup='groupGregtechOres'>
       <Description>
-        生成格雷矿物成分
+        Generate Gregtech ore formations
       </Description>
-      <DisplayName>格雷矿物</DisplayName>
-      <Choice value='true' displayValue='开启'/>
-      <Choice value='false' displayValue='关闭'/>
+      <DisplayName>Gregtech ores</DisplayName>
+      <Choice value='true' displayValue='On'/>
+      <Choice value='false' displayValue='Off'/>
     </OptionChoice>
 
     <ConfigSection> <!-- Biome Sets -->
@@ -125,231 +125,231 @@
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-		  用覆盖对应的原版或其他模组的矿物的方式生成格雷矿物。这同样适用于COG引擎。等同于格雷科技的配置文件中相关的选项。
+          Override the corresponding generation from vanilla or other mods when we generate an equivalent GT ore. It is most efficient, but not necessary, to also (or alternatively) disable the COG generation of these ores, as well as generation options in mod configurations.
         </Description>
-        <DisplayName>覆盖原版/其他模组的矿物</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Override vanilla/mod ores</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
       
       <OptionChoice name='GregtechGenCoal' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          煤炭的生成分布
+          Generate distributions of coal
         </Description>
-        <DisplayName>煤炭</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Coal</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenIron' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          铁矿的生成分布(含褐铁、磁铁)
+          Generate distributions of iron (hematite, magnetite)
         </Description>
-        <DisplayName>铁矿</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Iron</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenGold' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-		  金矿的生成分布(不会作用于其他矿脉次级矿物中的金矿)
+          Generate distributions of gold. Note that even if this is disabled, some gold will still be present in association with certain ores.
         </Description>
-        <DisplayName>金矿</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Gold</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenDiamond' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-		  钻石的生成分布(金伯利岩管式，和嵌入石墨沉积物式)
+          Generate distributions of diamonds, as kimberlite pipes, and embedded within certain graphite deposits.
         </Description>
-        <DisplayName>钻石</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Diamond</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenLapis' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          天青石与青金石的生成分布
+          Generate lapis gems and related minerals (lazurite, sodalite).
         </Description>
-        <DisplayName>青金石</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Lapis Lazuli</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
       
       <OptionChoice name='GregtechGenCopper' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          铜矿的生成分布(黄铜)
+          Generate distributions of copper ore (chalcopyrite)
         </Description>
-        <DisplayName>铜矿(黄铜)</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Copper (Chalcopyrite)</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenTin' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          锡矿的生成分布(锡石矿)
+          Generate distributions of tin ore (cassiterite)
         </Description>
-        <DisplayName>锡矿(锡石矿)</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Tin (Cassiterite)</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenAluminum' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          铝矿的生成分布(铝土矿)
+          Generate distributions of aluminium ore (bauxite).
         </Description>
-        <DisplayName>铝矿(铝土矿)</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Aluminium (Bauxite)</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenMercury' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          水银的生成分布(朱砂)
+          Generate distributions of mercury ore (cinnabar).
         </Description>
-        <DisplayName>汞(朱砂)</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Mercury (Cinnabar)</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenLeadZinc' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          铅矿和锌矿的生成分布(闪锌矿，方铅矿)
+          Generate distributions of zinc and lead ore (sphalerite, galena).
         </Description>
-        <DisplayName>铅矿/锌矿</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Lead/Zinc</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenTungsten' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          钨的生成分布(白钨矿，黑钨矿)
+          Generate distributions of tungsten ore (scheelite, wolframite).
         </Description>
-        <DisplayName>钨</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Tungsten</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
       
       <OptionChoice name='GregtechGenNickel' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          镍的生成分布(镍黄铁矿，硅镁镍矿)
+          Generate distributions of nickel ore (pentlandite, garnierite).
         </Description>
-        <DisplayName>镍(镍黄铁矿)</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Nickel (Pentlandite)</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenChromium' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          铬的生成分布(铬铁矿)
+          Generate distributions of chromium ore (chromite).
         </Description>
-        <DisplayName>铬(铬铁矿)</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Chromium (Chromite)</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenTitanium' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          钛的生成分布(钛铁矿)
+          Generate distributions of titanium ore (ilmenite).
         </Description>
-        <DisplayName>钛(钛铁矿)</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Titanium (ilmenite)</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenMolybdenum' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          钼的生成分布(辉钼矿)
+          Generate distributions of molybdenum ore (molybdenite).
         </Description>
-        <DisplayName>钼(辉钼矿)</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Molybdenum (Molybdenite)</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenManganese' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          锰的生成分布(软锰矿)
+          Generate distributions of manganese ore (pyrolusite).
         </Description>
-        <DisplayName>锰(软锰矿)</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Manganese (Pyrolusite)</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
       
       <OptionChoice name='GregtechGenUranium' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          铀矿的生成分布(晶质铀矿)
+          Generate distributions of uranium ore (uraninite).
         </Description>
-        <DisplayName>铀矿(晶质铀矿)</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Uranium (Uraninite)</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenApatite' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          磷酸盐的生成分布(磷灰石)
+          Generate distributions of apatite (phosphate ore).
         </Description>
-        <DisplayName>磷酸盐(磷灰石)</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Phosphate (Apatite)</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
       
       <OptionChoice name='GregtechGenSalt' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          盐矿的生成分布(盐岩)
+          Generate distributions of salt ore (halite).
         </Description>
-        <DisplayName>盐矿(盐岩)</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Salt (Halite)</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenQuartz' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
         <Description>
-          石英的生成分布
+          Generate distributions of quartz.
         </Description>
-        <DisplayName>石英</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <DisplayName>Quartz</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
     </ConfigSection>
@@ -360,154 +360,154 @@
                     default=':=?GregtechGenOres &amp; ?GregtechGenIron'
                     displayState=':=if(?GregtechGenOres &amp; ?GregtechGenIron, "shown", "hidden")'
                     displayGroup='groupGregtech'>
-        <Description>带状铁(含有褐铁以及一些磁铁)的生成分布</Description>
-        <DisplayName>带状铁</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate sedimentary banded iron formations, primarily of hematite, with some recoverable magnetite.</Description>
+        <DisplayName>Banded Iron Formations</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenSandOres' default=':=?GregtechGenOres'
                       displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                       displayGroup='groupGregtech'>
-        <Description>铁、锡、石榴石的砂矿(如果你禁止了原版铁矿的话建议开启这个)</Description>
-        <DisplayName>砂矿</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate placer deposits (iron, tin, garnet). This is recommended if you disable vanilla iron.</Description>
+        <DisplayName>Placer deposits</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenVolcanic' default=':=?GregtechGenOres'
                       displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                       displayGroup='groupGregtech'>
-        <Description>明矾，灰烬，珍珠岩，浮石和沸石</Description>
-        <DisplayName>火山沉积物</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate volcanic ore deposits including alunite, ash, perlite, pumice and zeolite.</Description>
+        <DisplayName>Volcanic deposits</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenSerpVeins' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtech'>
-        <Description>皂石，菱镁矿，铬铁矿和石棉</Description>
-        <DisplayName>蛇纹岩</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate serpentinite veins that are rich in soapstone, magnesite, chromite and chrysotile.</Description>
+        <DisplayName>Serpentinite veins</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenLaterites' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtech'>
-        <Description>沼泽和热带红土中的沉积物(铝土矿，褐铁矿，硅镁镍矿)</Description>
-        <DisplayName>沼泽/红土矿</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate ore deposits in bogs and tropical lateritic soils (bauxite, limonite, garnierite).</Description>
+        <DisplayName>Bog/lateritic ores</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenIgVeins' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtech'>
-        <Description>钛铁矿，铬铁矿，磁铁矿，黄铜矿</Description>
-        <DisplayName>火成岩中的矿脉</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate ore veins in igneous rock (ilmenite, chromite, magnetite, chalcopyrite, ...)</Description>
+        <DisplayName>Ore veins in igneous rock</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenIgIntrusion' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtech'>
-        <Description>磁铁矿，菱镁矿，镍黄铁矿，钛铁矿，和铬铁矿</Description>
-        <DisplayName>侵入岩</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate igneous intrusions where mafic rock has penetrated the upper reaches of the crust. Contain large deposits of magnetite, magnesite, pentlandite, ilmenite, and chromite.</Description>
+        <DisplayName>Igneous intrusions</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenEvaporite' default=':=?GregtechGenOres'
                       displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                       displayGroup='groupGregtech'>
-        <Description>富含石膏和岩盐的海洋蒸发沉积物</Description>
-        <DisplayName>蒸发沉积物</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate marine evaporite deposits rich in gypsum and rock salt.</Description>
+        <DisplayName>Evaporite deposits</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenVMS' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtech'>
-        <Description>含有丰富的硫化物矿石像闪锌矿，方铅矿，和黄铜矿</Description>
-        <DisplayName>火山成因块状硫化物沉积物</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate Volcagenic Massive Sulfide deposits, rich in sulfide ores like sphalerite, galena, and chalcopyrite.</Description>
+        <DisplayName>VMS deposits</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenSEDEX' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtech'>
-        <Description>富含闪锌矿，方铅矿，白钨矿，和黄铜矿</Description>
-        <DisplayName>喷流沉积沉积物</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate SEDimentary EXhalative deposits rich in sphalerite, galena, scheelite, and chalcopyrite.</Description>
+        <DisplayName>SEDEX deposits</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenPegmatite' default=':=?GregtechGenOres'
                       displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                       displayGroup='groupGregtech'>
-        <Description>矿物种类丰富</Description>
-        <DisplayName>伟晶岩</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate pegmatite veins with a rich assortment of minerals.</Description>
+        <DisplayName>Pegmatite veins</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenCarbonate' default=':=?GregtechGenOres'
                       displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                       displayGroup='groupGregtech'>
-        <Description>菱镁矿，滑石，闪锌矿，方铅矿</Description>
-        <DisplayName>碳酸盐</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate carbonate deposits with minerals like magnesite, soapstone, sphalerite and galena.</Description>
+        <DisplayName>Carbonate ore deposits</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenBarite' default=':=?GregtechGenOres'
                       displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                       displayGroup='groupGregtech'>
-        <Description>重晶石的生成分布</Description>
-        <DisplayName>重晶石</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate barite deposits.</Description>
+        <DisplayName>Barite deposits</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenMarine' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtech'>
-        <Description>海洋相关沉积物的生成分布</Description>
-        <DisplayName>海洋相关沉积物</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate marine-related deposits.</Description>
+        <DisplayName>Marine-related deposits</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenGraphite' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtech'>
-        <Description>多种形式的石墨沉积物</Description>
-        <DisplayName>石墨沉积物</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate graphite deposits in various patterns.</Description>
+        <DisplayName>Graphite deposits</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenClay' default='false'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtech'>
-        <Description>膨润土，漂白土和高岭石</Description>
-        <DisplayName>矿物粘土沉积</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate mineral clay deposits, including bentonite, Fuller's earth and kaolinite.</Description>
+        <DisplayName>Mineral clay deposits</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
 
       <OptionChoice name='GregtechGenNativeOres' default=':=?GregtechGenOres'
                     displayState=':=if(?GregtechGenOres, "shown", "hidden")'
                     displayGroup='groupGregtechOres'>
-        <Description>原生金，银，金银合金和铜</Description>
-        <DisplayName>原生金属</DisplayName>
-        <Choice value='true' displayValue='开启'/>
-        <Choice value='false' displayValue='关闭'/>
+        <Description>Generate deposits of native gold, silver, electrum and copper.</Description>
+        <DisplayName>Native metals</DisplayName>
+        <Choice value='true' displayValue='On'/>
+        <Choice value='false' displayValue='Off'/>
       </OptionChoice>
     </ConfigSection>
     
@@ -1802,7 +1802,7 @@
             <IfChoice name='GregtechGenCopper' value='true'>
               <Then block='gregtech:gt.blockores' weight='0.2'
                     nbt='{m:855, n:1, id:"GT_TileEntity_Ores"}'/>
-              <Else block='minecraft:gravel'/>
+              <Else block='minecraft:gravel' weight='0.2'/>
             </IfChoice>
           </OreBlock>
           <OreBlock weight='0.10'>

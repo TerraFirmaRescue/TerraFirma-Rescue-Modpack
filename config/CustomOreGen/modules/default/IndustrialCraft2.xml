@@ -1,440 +1,1380 @@
-<!--*********************  CustomOreGen IndustrialCraft Ores Module ******************************
-*
-*   This file contains Presets, Options, and Distributions for the 4 IndustrialCraft^2 ores:
-*       Copper, Tin, Lead and Uranium.
-*
-***********************************************************************************************-->
+<!-- =================================================================
+     Custom Ore Generation "IndustrialCraft 2" Module: This
+     configuration covers copper, mountain copper, tin, mountain tin,
+     uranium, mountain uranium, lead, and mountain lead.
+     ================================================================= -->
+
+
+<!-- Configuration by Reteo. -->
+
+
+
+
+<!-- Is the "IndustrialCraft 2" mod on the system?  Let's find out! -->
 <IfModInstalled name="IC2">
 
-    <!--***************************   Options + Symbols   ***********************************
-    *
-    *   Below are options and symbols for each ore, similar to those for the standard ores.
-    *
-    *************************************************************************************-->
-    <ConfigSection>                
-    
-        <OptionDisplayGroup name='groupIC2' displayName='工业2' displayState='shown'>
-            <Description> 
-                矿物的分布选项
+  <!-- Starting Configuration for Custom Ore Generation. -->
+  <ConfigSection>
+
+
+
+
+
+    <!-- Setup Screen Configuration -->
+    <ConfigSection>
+      <OptionDisplayGroup name='groupIndustrialCraft2' displayName='IndustrialCraft 2' displayState='shown'>
+        <Description>
+          Distribution options for IndustrialCraft 2 Ores.
+        </Description>
+      </OptionDisplayGroup>
+      <OptionChoice name='enableIndustrialCraft2' displayName='Handle IndustrialCraft 2 Setup?' default='true' displayState='shown_dynamic' displayGroup='groupIndustrialCraft2'>
+        <Description> Should Custom Ore Generation handle IndustrialCraft 2 ore generation? </Description>
+        <Choice value=':= ?true' displayValue='Yes' description='Use Custom Ore Generation to handle IndustrialCraft 2 ores.'/>
+        <Choice value=':= ?false' displayValue='No' description='IndustrialCraft 2 ores will be handled by the mod itself.'/>
+      </OptionChoice>
+      <OptionChoice name='cleanUpIndustrialCraft2' displayName='Use IndustrialCraft 2 Cleanup?' default='true' displayState='shown_dynamic' displayGroup='groupIndustrialCraft2'>
+        <Description> Should Custom Ore Generation use the Substitution Pass to remove all instances of IndustrialCraft 2 ore from the world?  If the mod's oregen can be turned off in its configuration, then it's recommended to do so, as the substitution pass can slow the game significantly.  If this option is disabled without disabling the mod's own ore generation, you'll end up with two oregens working at once, flooding the world with ore.  Enabled by default to ensure the ores are completely removed. </Description>
+        <Choice value=':= ?true' displayValue='Yes' description='Use the substitution pass to clean up IndustrialCraft 2 ores.'/>
+        <Choice value=':= ?false' displayValue='No' description='IndustrialCraft 2 ores do not need to be cleaned up by a substitution pass.'/>
+      </OptionChoice>
+
+      <!-- Copper Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='ic2CopperDist'  displayState=':= if(?enableIndustrialCraft2, "shown", "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Controls how Copper is generated </Description>
+          <DisplayName>IndustrialCraft 2 Copper</DisplayName>
+          <IfCondition condition=':= (?blockExists("IC2:blockOreCopper")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
             </Description>
-        </OptionDisplayGroup>
-        
-        <!--*******************   Copper   *********************-->
-        <ConfigSection>
-            
-            <OptionChoice name='ic2CopperDist' displayState=':= if(blockExists("IC2:blockOreCopper"),"shown","hidden")' displayGroup='groupIC2'>
-                <Description> 控制铜矿的生成 </Description>
-                <DisplayName> 铜矿 </DisplayName>
-                <Default>:= if(blockExists("IC2:blockOreCopper"),"layeredVeins","disabled")</Default>
-                <Choice value='layeredVeins' displayValue='矿脉'>
-                    <Description> 
-						从基岩至地表1/3处，狭而长。出现在丛林的可能性更高。
-                    </Description>
-                </Choice>
-                <Choice value='strategicClouds' displayValue='云状'>
-                    <Description> 
-						延伸至多个区块，罕见而稀疏。只出现在丛林。
-                    </Description>
-                </Choice>
-                <Choice value='vanillaStdGen' displayValue='簇状'>
-                    <Description> 
-						从基岩至地表1/3处，小型簇状矿脉。IC2默认配置。
-                    </Description>
-                </Choice>
-                <Choice value='none' displayValue='禁止' description=' 抖M的开端'/>
-            </OptionChoice>
-            
-            <OptionNumeric name='ic2CopperFreq' default='1'  min='0' max='5'
-                           displayState=':= if(?advOptions &amp; ic2CopperDist != "disabled","shown","hidden")'
-                           displayGroup='groupIC2'>
-                <Description> 矿脉的生成率将乘以这个数  </Description>
-                <DisplayName>  矿脉的生成率</DisplayName>
-            </OptionNumeric>
-            
-            <OptionNumeric name='ic2CopperSize' default='1'  min='0' max='5' displayState=':= if(?advOptions &amp; ic2CopperDist != "disabled","shown","hidden")' displayGroup='groupIC2'>
-                <Description> 矿脉的规模将乘以这个数  </Description>
-                <DisplayName>  矿脉的规模</DisplayName>
-            </OptionNumeric>
-            
-        </ConfigSection>           
-        
-        <!--********************   Tin   ***********************-->
-        <ConfigSection>
-            
-            <OptionChoice name='ic2TinDist' displayState=':= if(blockExists("IC2:blockOreTin"),"shown","hidden")' displayGroup='groupIC2'>
-                <Description> 控制锡矿的生成 </Description>
-                <DisplayName> 锡矿 </DisplayName>
-                <Default>:= if(blockExists("IC2:blockOreTin"),"layeredVeins","disabled")</Default>
-                <Choice value='layeredVeins' displayValue='矿脉'>
-                    <Description> 
-						从基岩至地表1/2处，狭而长。出现在平原的可能性更高。
-                    </Description>
-                </Choice>
-                <Choice value='strategicClouds' displayValue='云状'>
-                    <Description> 
-                        延伸至多个区块，罕见而稀疏。只出现在丛林。
-                    </Description>
-                </Choice>
-                <Choice value='vanillaStdGen' displayValue='簇状'>
-                    <Description> 
-						从基岩至地表2/3处，小型簇状矿脉。IC2默认配置。
-                    </Description>
-                </Choice>
-                <Choice value='none' displayValue='禁止' description=' 抖M的开端'/>
-            </OptionChoice>
-            
-            <OptionNumeric name='ic2TinFreq' default='1'  min='0' max='5' displayState=':= if(?advOptions &amp; ic2TinDist != "disabled","shown","hidden")' displayGroup='groupIC2'>
-                <Description> 矿脉的生成率将乘以这个数  </Description>
-                <DisplayName>  矿脉的生成率</DisplayName>
-            </OptionNumeric>
-            
-            <OptionNumeric name='ic2TinSize' default='1'  min='0' max='5' displayState=':= if(?advOptions &amp; ic2TinDist != "disabled","shown","hidden")' displayGroup='groupIC2'>
-                <Description> 矿脉的规模将乘以这个数  </Description>
-                <DisplayName>  矿脉的规模</DisplayName>
-            </OptionNumeric>  
-            
-        </ConfigSection>           
-        
-        <!--******************   Uranium   *********************-->
-        <ConfigSection>
-        
-            <OptionChoice name='ic2UraniumDist' displayState=':= if(blockExists("IC2:blockOreUran"),"shown","hidden")' displayGroup='groupIC2'>
-                <Description> 控制铀矿的生成 </Description>
-                <DisplayName> 铀矿 </DisplayName>
-                <Default>:= if(blockExists("IC2:blockOreUran"),"layeredVeins","disabled")</Default>
-                <Choice value='layeredVeins' displayValue='矿脉'>
-                    <Description> 
-                        从基岩到地表的2/3处，孤立稀疏的矿脉。出现在荒地的可能性更高。
-                    </Description>
-                </Choice>
-                <Choice value='strategicClouds' displayValue='云状'>
-                    <Description> 
-						罕见而稀疏的矿脉，延伸1~2个区块。出现在荒地的可能性更高。
-                    </Description>
-                </Choice>
-                <Choice value='vanillaStdGen' displayValue='簇状'>
-                    <Description> 
-						孤立的小型簇状矿脉。IC2默认配置。
-                    </Description>
-                </Choice>
-                <Choice value='none' displayValue='禁止' description=' 抖M的开端'/>
-            </OptionChoice>
-            
-            <OptionNumeric name='ic2UraniumFreq' default='1'  min='0' max='5' displayState=':= if(?advOptions &amp; ic2UraniumDist != "disabled","shown","hidden")' displayGroup='groupIC2'>
-                <Description> 矿脉的生成率将乘以这个数  </Description>
-                <DisplayName>  矿脉的生成率</DisplayName>
-            </OptionNumeric>
-            
-            <OptionNumeric name='ic2UraniumSize' default='1'  min='0' max='5' displayState=':= if(?advOptions &amp; ic2UraniumDist != "disabled","shown","hidden")' displayGroup='groupIC2'>
-                <Description> 矿脉的规模将乘以这个数  </Description>
-                <DisplayName>  矿脉的规模</DisplayName>
-            </OptionNumeric>
-            
-        </ConfigSection>           
+          </Choice>
+          </IfCondition>
 
-        <!--*******************   Lead   *********************-->
-        <ConfigSection>
-            
-            <OptionChoice name='ic2LeadDist' displayState=':= if(blockExists("IC2:blockOreLead"),"shown","hidden")' displayGroup='groupIC2'>
-                <Description> 控制铅矿的生成 </Description>
-                <DisplayName> 铅矿 </DisplayName>
-                <Default>:= if(blockExists("IC2:blockOreLead"),"layeredVeins","disabled")</Default>
-                <Choice value='layeredVeins' displayValue='矿脉'>
-                    <Description> 
-						从基岩至地表1/3处，狭而长。出现在丛林的可能性更高。
-                    </Description>
-                </Choice>
-                <Choice value='strategicClouds' displayValue='云状'>
-                    <Description> 
-                        罕见而稀疏的矿脉，延伸1~2个区块。出现在丛林的可能性更高。
-                    </Description>
-                </Choice>
-                <Choice value='vanillaStdGen' displayValue='簇状'>
-                    <Description> 
-						从基岩至地表1/3处，小型簇状矿脉。IC2默认配置。
-                    </Description>
-                </Choice>
-                <Choice value='none' displayValue='禁止' description=' 抖M的开端'/>
-            </OptionChoice>
-            
-            <OptionNumeric name='ic2LeadFreq' default='1'  min='0' max='5' displayState=':= if(?advOptions &amp; ic2LeadDist != "disabled","shown","hidden")' displayGroup='groupIC2'>
-                <Description> 矿脉的生成率将乘以这个数  </Description>
-                <DisplayName>  矿脉的生成率</DisplayName>
-            </OptionNumeric>
-            
-            <OptionNumeric name='ic2LeadSize' default='1'  min='0' max='5' displayState=':= if(?advOptions &amp; ic2LeadDist != "disabled","shown","hidden")' displayGroup='groupIC2'>
-                <Description> 矿脉的规模将乘以这个数  </Description>
-                <DisplayName>  矿脉的规模</DisplayName>
-            </OptionNumeric>
-            
-        </ConfigSection>           
+          <IfCondition condition=':= (?blockExists("IC2:blockOreCopper")) '>
 
-     </ConfigSection>    
-   
-    <!--*****************************   Distributions   *************************************
-    *   
-    *   Below are the actual distributions for the overworld and mystcraft ages.
-    *
-    *************************************************************************************-->
-    <IfCondition condition=':= ?COGActive'>
-        
-        <Substitute name='IC2Substitute' block='minecraft:stone'>
-            <Description> 
-                Replace IC2-generated ore clusters with stone.   
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
             </Description>
-            <Comment>  
-                The global option deferredPopulationRange must be large enough to catch all ore clusters (>= 32).
-            </Comment>
-            <Replaces block='IC2:blockOreCopper'/> 
-            <Replaces block='IC2:blockOreTin'/> 
-            <Replaces block='IC2:blockOreUran'/>
-            <Replaces block='IC2:blockOreLead'/>
-        </Substitute>
-        
-        <!--*******************   Copper   *********************-->            
-        <ConfigSection>
-        
-            <IfCondition condition=':= if(age, age.ic2CopperClusters > 0, ic2CopperDist = "vanillaStdGen")'>
-                <StandardGen name='IC2CopperStandard' block='IC2:blockOreCopper' inherits='PresetStandardGen'> 
-                    <Description> Equivalent to regular IC2 copper distribution </Description>
-                    <DrawWireframe>:=drawWireframes</DrawWireframe>
-                    <WireframeColor>0x40773300</WireframeColor> 
-                    <Setting name='Size' avg=':= 1.25 * ic2CopperSize * _default_'/> 
-                    <Setting name='Frequency' avg=':= 0.75 * ic2CopperFreq * if(age,age.ic2CopperClusters,1) * _default_' 
-                                                range=':= 4 * ic2CopperFreq * if(age,age.ic2CopperClusters,1)'/>
-                    <Setting name='Height' avg=':= 40/64 * dimension.groundLevel' range=':= 30/64 * dimension.groundLevel' type='normal'/> 
-                </StandardGen>
-            </IfCondition>   
-            
-            <IfCondition condition=':= if(age, age.ic2CopperVeins > 0, ic2CopperDist = "layeredVeins")'>             
-                <Veins name='IC2CopperVeins' block='IC2:blockOreCopper' inherits='PresetLayeredVeins'>
-                    <Description>  Average veins in the 30-50 range. </Description> 
-                    <DrawWireframe>:=drawWireframes</DrawWireframe>
-                    <WireframeColor>0x40773300</WireframeColor> 
-                    <Setting name='MotherlodeFrequency' avg=':= 1.15 * ic2CopperFreq * if(age,age.ic2CopperVeins,1) * _default_'/>
-                    <Setting name='MotherlodeSize' avg=':= ic2CopperSize * _default_' range=':= ic2CopperSize * _default_'/>
-                    <Setting name='MotherlodeHeight' avg=':= 40/64 * dimension.groundLevel' range=':= 12/64 * dimension.groundLevel' type='normal'/>
-                    <Setting name='BranchFrequency' avg=':= 0.6 * _default_' range=':= 0.6 * _default_'/>
-                    <Setting name='BranchLength' avg=':= 1.2 * _default_'/>
-                    <Setting name='BranchHeightLimit' avg='12'/>
-                    <Setting name='SegmentRadius' avg=':= ic2CopperSize * _default_' range=':= ic2CopperSize * _default_'/>
-                </Veins>                
-                <Veins name='IC2CopperVeinsJungle' inherits='IC2CopperVeins'>
-                    <Description> This roughly triples the chance of finding Copper in jungle biomes. </Description> 
-                    <Setting name='MotherlodeFrequency' avg=':= 2 * _default_'/>
-                    <Setting name='MotherlodeHeight' avg=':=_default_' range=':= 2 * _default_'/>
-                    <Setting name='BranchHeightLimit' avg=':= 2 * _default_'/>  
-                    <BiomeType name='Jungle'/>
-                </Veins>   
-            </IfCondition>     
-            
-            <IfCondition condition=':= if(age, age.ic2CopperClouds > 0, ic2CopperDist = "strategicClouds")'>
-                <Cloud name='IC2CopperCloud' block='IC2:blockOreCopper' inherits='PresetStrategicCloud'>
-                    <Description>  
-                        Diffuse copper cloud surrounded by single-block "hint" veins, found in jungle biomes.
-                    </Description> 
-                    <DrawWireframe>:=drawWireframes</DrawWireframe>
-                    <WireframeColor>0x40773300</WireframeColor> 
-                    <Setting name='DistributionFrequency' avg=':= 3.5 * ic2CopperFreq * if(age,age.ic2CopperClouds,1) * _default_'/>
-                    <Setting name='CloudRadius' avg=':= 1.1 * ic2CopperSize * _default_' range=':= ic2CopperSize * _default_'/>
-                    <Setting name='CloudThickness' avg=':= 1.1 * ic2CopperSize * _default_' range=':= ic2CopperSize * _default_'/> 
-                    <BiomeType name='Jungle'/>
-                    <Veins name='IC2CopperHintVeins' block='IC2:blockOreCopper' inherits='PresetHintVeins'>
-                        <DrawWireframe>:=drawWireframes</DrawWireframe>
-                        <WireframeColor>0x40773300</WireframeColor> 
-                        <Setting name='MotherlodeFrequency' avg=':= _default_' range=':= _default_'/>   
-                        <Setting name='MotherlodeRangeLimit' avg=':= ic2CopperSize * _default_' range=':= ic2CopperSize * _default_'/>              
-                    </Veins>
-                </Cloud>
-            </IfCondition>  
-            
-        </ConfigSection>
-        
-        <!--********************   Tin   ***********************-->            
-        <ConfigSection>
-        
-            <IfCondition condition=':= if(age, age.ic2TinClusters > 0, ic2TinDist = "vanillaStdGen")'>            
-                <StandardGen name='IC2TinStandard' block='IC2:blockOreTin' inherits='PresetStandardGen'> 
-                    <Description> Equivalent to regular IC2 tin distribution </Description>
-                    <DrawWireframe>:=drawWireframes</DrawWireframe>
-                    <WireframeColor>0x40FFFFFF</WireframeColor> 
-                    <Setting name='Size' avg=':= 0.75 * ic2TinSize * _default_'/> 
-                    <Setting name='Frequency' avg=':= 1.25 * ic2TinFreq * if(age,age.ic2TinClusters,1) * _default_' 
-                                                range=':= 5 * ic2TinFreq * if(age,age.ic2TinClusters,1)'/>
-                    <Setting name='Height' avg=':= 20/64 * dimension.groundLevel' range=':= 20/64 * dimension.groundLevel' type='uniform'/> 
-                </StandardGen>
-            </IfCondition>   
-            
-            <IfCondition condition=':= if(age, age.ic2TinVeins > 0, ic2TinDist = "layeredVeins")'>    
-                <Veins name='IC2TinVeins' block='IC2:blockOreTin' inherits='PresetLayeredVeins'>
-                    <Description> 
-                        Average veins in the 20-40 range.
-                    </Description> 
-                    <DrawWireframe>:=drawWireframes</DrawWireframe>
-                    <WireframeColor>0x40FFFFFF</WireframeColor> 
-                    <Setting name='MotherlodeFrequency' avg=':= 1.10 * ic2TinFreq * if(age,age.ic2TinVeins,1) * _default_'/>
-                    <Setting name='MotherlodeSize' avg=':= ic2TinSize * _default_' range=':= ic2TinSize * _default_'/>
-                    <Setting name='MotherlodeHeight' avg=':= 30/64 * dimension.groundLevel' range=':= 11/64 * dimension.groundLevel' type='normal'/>
-                    <Setting name='BranchHeightLimit' avg='11'/>
-                    <Setting name='BranchLength' avg=':= 0.8 * _default_'/>
-                    <Setting name='SegmentRadius' avg=':= ic2TinSize * _default_' range=':= ic2TinSize * _default_'/>
-                </Veins>
-                <Veins name='IC2TinVeinsPlains' inherits='IC2TinVeins'>
-                    <Description> This roughly triples the chance of finding tin in plains biomes. </Description> 
-                    <Setting name='MotherlodeFrequency' avg=':= 2 * _default_'/>
-                    <Setting name='MotherlodeHeight' avg=':=_default_' range=':= 2 * _default_'/>
-                    <Setting name='BranchHeightLimit' avg=':= 2 * _default_'/>  
-                    <BiomeType name='Plains'/>
-                </Veins>
-            </IfCondition>     
-            
-            <IfCondition condition=':= if(age, age.ic2TinClouds > 0, ic2TinDist = "strategicClouds")'>
-                <Cloud name='IC2TinCloud' block='IC2:blockOreTin' inherits='PresetStrategicCloud'>
-                    <Description>  
-                        Diffuse tin cloud surrounded by single-block "hint" veins, found in plains biomes.
-                    </Description> 
-                    <DrawWireframe>:=drawWireframes</DrawWireframe>
-                    <WireframeColor>0x40FFFFFF</WireframeColor> 
-                    <Setting name='DistributionFrequency' avg=':= 4 * ic2TinFreq * if(age,age.ic2TinClouds,1) * _default_'/>
-                    <Setting name='CloudRadius' avg=':= 0.9 * ic2TinSize * _default_' range=':= ic2TinSize * _default_'/>
-                    <Setting name='CloudThickness' avg=':= 0.9 * ic2TinSize * _default_' range=':= ic2TinSize * _default_'/> 
-                    <BiomeType name='Plains'/>
-                    <Veins name='IC2TinHintVeins' block='IC2:blockOreTin' inherits='PresetHintVeins'>
-                        <DrawWireframe>:=drawWireframes</DrawWireframe>
-                        <WireframeColor>0x40FFFFFF</WireframeColor> 
-                        <Setting name='MotherlodeFrequency' avg=':= _default_' range=':= _default_'/>   
-                        <Setting name='MotherlodeRangeLimit' avg=':= ic2TinSize * _default_' range=':= ic2TinSize * _default_'/>              
-                    </Veins>
-                </Cloud>
-            </IfCondition>  
-            
-        </ConfigSection>
-        
-        <!--******************   Uranium   *********************-->            
-        <ConfigSection>
-        
-            <IfCondition condition=':= if(age, age.ic2UraniumClusters > 0, ic2UraniumDist = "vanillaStdGen")'>
-                <StandardGen name='IC2UraniumStandard' block='IC2:blockOreUran' inherits='PresetStandardGen'> 
-                    <Description> Equivalent to regular IC2 uranium distribution </Description>
-                    <DrawWireframe>:=drawWireframes</DrawWireframe>
-                    <WireframeColor>0x4080FF00</WireframeColor> 
-                    <Setting name='Size' avg=':= 0.375 * ic2UraniumSize * _default_'/> 
-                    <Setting name='Frequency' avg=':= 1.0 * ic2UraniumFreq * if(age,age.ic2UraniumClusters,1) * _default_' 
-                                               range=':= 4.5 * ic2UraniumFreq * if(age,age.ic2UraniumClusters,1)'/>
-                    <Setting name='Height' avg=':= 32/64 * dimension.groundLevel' range=':= 32/64 * dimension.groundLevel' type='uniform'/> 
-                </StandardGen>
-            </IfCondition>   
-            
-            <IfCondition condition=':= if(age, age.ic2UraniumVeins > 0, ic2UraniumDist = "layeredVeins")'>    
-                <Veins name='IC2UraniumVeins' block='IC2:blockOreUran' inherits='PresetSparseVeins'>    
-                    <Description>
-                        Sparse veins in the 10-30 range.
-                    </Description>
-                    <DrawWireframe>:=drawWireframes</DrawWireframe>
-                    <WireframeColor>0x4080FF00</WireframeColor>
-                    <Setting name='MotherlodeFrequency' avg=':= 3.0 * ic2UraniumFreq * if(age,age.ic2UraniumVeins,1) * _default_'/>
-                    <Setting name='MotherlodeSize' avg=':= 0.6 * ic2UraniumSize * _default_' range=':= 0.6 * ic2UraniumSize * _default_'/>
-                    <Setting name='MotherlodeHeight' avg=':= 20/64 * dimension.groundLevel' range=':= 10/64 * dimension.groundLevel'/>
-                    <Setting name='BranchLength' avg=':= 0.75 * _default_' range=':= 0.75 * _default_'/>
-                    <Setting name='BranchInclination' avg='0' range='0.35'/>
-                    <Setting name='BranchHeightLimit' avg='12'/>
-                    <Setting name='SegmentRadius' avg=':= 0.6 * ic2UraniumSize * _default_' range=':= 0.6 * ic2UraniumSize * _default_'/>
-                    <Setting name='OreDensity' avg=':= 1.85 * _default_' range=':= _default_'/>
-                </Veins>
-                <Veins name='IC2UraniumVeinsWasteland' inherits='IC2UraniumVeins'>
-                    <Description>  This roughly triples the chance of finding uranium in an wasteland. </Description>      
-                    <Setting name='MotherlodeFrequency' avg=':= 2 * _default_'/>
-                    <Setting name='MotherlodeHeight' avg=':= _default_' range=':= 2 * _default_'/>
-                    <Setting name='BranchHeightLimit' avg=':= 2 * _default_'/>
-                    <BiomeType name='Wasteland'/>
-                </Veins>
-            </IfCondition>     
-            
-            <IfCondition condition=':= if(age, age.ic2UraniumClouds > 0, ic2UraniumDist = "strategicClouds")'>
-                <Cloud name='IC2UraniumCloud' block='IC2:blockOreUran' inherits='PresetStrategicCloud'>
-                    <Description>  
-                        Diffuse uranium cloud surrounded by single-block "hint" veins, found mostly in wasteland biomes.
-                    </Description> 
-                    <DrawWireframe>:=drawWireframes</DrawWireframe>
-                    <WireframeColor>0x4044FF00</WireframeColor> 
-                    <Setting name='DistributionFrequency' avg=':= 4 * ic2UraniumFreq * if(age,age.ic2UraniumClouds,1) * _default_'/>
-                    <Setting name='CloudRadius' avg=':= 0.5 * ic2UraniumSize * _default_' range=':= 0.5 * ic2UraniumSize * _default_'/>
-                    <Setting name='CloudThickness' avg=':= 0.5 * ic2UraniumSize * _default_' range=':= 0.5 * ic2UraniumSize * _default_'/>                
-                    <Setting name='OreVolumeNoiseCutoff' avg='0'/>
-                    <Setting name='OreDensity' avg=':= 1.1 * _default_'/>
-                    <Biome name='.*' weight='0.2'/>
-                    <BiomeType name='Wasteland'/>
-                    <Veins name='IC2UraniumHintVeins' block='IC2:blockOreUran' inherits='PresetHintVeins'>
-                        <DrawWireframe>:=drawWireframes</DrawWireframe>
-                        <WireframeColor>0x4080FF00</WireframeColor>
-                        <Setting name='MotherlodeFrequency' avg=':= _default_' range=':= _default_'/>   
-                        <Setting name='MotherlodeRangeLimit' avg=':= 0.5 * ic2UraniumSize * _default_' range=':= 0.5 * ic2UraniumSize * _default_'/>              
-                    </Veins>
-                </Cloud>
-            </IfCondition>  
-            
-        </ConfigSection>
+          </Choice>
+          </IfCondition>
 
-        <!--*******************   Lead   *********************-->            
+          <IfCondition condition=':= (?blockExists("IC2:blockOreCopper")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Copper is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='ic2CopperFreq' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Frequency multiplier for IndustrialCraft 2 Copper distributions </Description>
+          <DisplayName>IndustrialCraft 2 Copper Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='ic2CopperSize' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Size multiplier for IndustrialCraft 2 Copper distributions </Description>
+          <DisplayName>IndustrialCraft 2 Copper Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Copper Configuration UI Complete -->
+
+
+      <!-- Mountain Copper Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='ic2MountainCopperDist'  displayState=':= if(?enableIndustrialCraft2, "shown", "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Controls how Mountain Copper is generated </Description>
+          <DisplayName>IndustrialCraft 2 Mountain Copper</DisplayName>
+          <IfCondition condition=':= (?blockExists("IC2:blockOreCopper")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("IC2:blockOreCopper")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("IC2:blockOreCopper")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Mountain Copper is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='ic2MountainCopperFreq' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Frequency multiplier for IndustrialCraft 2 Mountain Copper distributions </Description>
+          <DisplayName>IndustrialCraft 2 Mountain Copper Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='ic2MountainCopperSize' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Size multiplier for IndustrialCraft 2 Mountain Copper distributions </Description>
+          <DisplayName>IndustrialCraft 2 Mountain Copper Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Mountain Copper Configuration UI Complete -->
+
+
+      <!-- Tin Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='ic2TinDist'  displayState=':= if(?enableIndustrialCraft2, "shown", "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Controls how Tin is generated </Description>
+          <DisplayName>IndustrialCraft 2 Tin</DisplayName>
+          <IfCondition condition=':= (?blockExists("IC2:blockOreTin")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("IC2:blockOreTin")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("IC2:blockOreTin")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Tin is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='ic2TinFreq' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Frequency multiplier for IndustrialCraft 2 Tin distributions </Description>
+          <DisplayName>IndustrialCraft 2 Tin Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='ic2TinSize' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Size multiplier for IndustrialCraft 2 Tin distributions </Description>
+          <DisplayName>IndustrialCraft 2 Tin Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Tin Configuration UI Complete -->
+
+
+      <!-- Mountain Tin Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='ic2MountainTinDist'  displayState=':= if(?enableIndustrialCraft2, "shown", "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Controls how Mountain Tin is generated </Description>
+          <DisplayName>IndustrialCraft 2 Mountain Tin</DisplayName>
+          <IfCondition condition=':= (?blockExists("IC2:blockOreTin")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("IC2:blockOreTin")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("IC2:blockOreTin")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Mountain Tin is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='ic2MountainTinFreq' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Frequency multiplier for IndustrialCraft 2 Mountain Tin distributions </Description>
+          <DisplayName>IndustrialCraft 2 Mountain Tin Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='ic2MountainTinSize' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Size multiplier for IndustrialCraft 2 Mountain Tin distributions </Description>
+          <DisplayName>IndustrialCraft 2 Mountain Tin Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Mountain Tin Configuration UI Complete -->
+
+
+      <!-- Uranium Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='ic2UraniumDist'  displayState=':= if(?enableIndustrialCraft2, "shown", "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Controls how Uranium is generated </Description>
+          <DisplayName>IndustrialCraft 2 Uranium</DisplayName>
+          <IfCondition condition=':= (?blockExists("IC2:blockOreUran")) '>
+
+          <Choice value='SparseVeins' displayValue='Sparse Veins'>
+            <Description>
+              Large veins filled very lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("IC2:blockOreUran")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("IC2:blockOreUran")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Uranium is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='ic2UraniumFreq' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Frequency multiplier for IndustrialCraft 2 Uranium distributions </Description>
+          <DisplayName>IndustrialCraft 2 Uranium Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='ic2UraniumSize' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Size multiplier for IndustrialCraft 2 Uranium distributions </Description>
+          <DisplayName>IndustrialCraft 2 Uranium Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Uranium Configuration UI Complete -->
+
+
+      <!-- Mountain Uranium Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='ic2MountainUraniumDist'  displayState=':= if(?enableIndustrialCraft2, "shown", "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Controls how Mountain Uranium is generated </Description>
+          <DisplayName>IndustrialCraft 2 Mountain Uranium</DisplayName>
+          <IfCondition condition=':= (?blockExists("IC2:blockOreUran")) '>
+
+          <Choice value='SparseVeins' displayValue='Sparse Veins'>
+            <Description>
+              Large veins filled very lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("IC2:blockOreUran")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("IC2:blockOreUran")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Mountain Uranium is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='ic2MountainUraniumFreq' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Frequency multiplier for IndustrialCraft 2 Mountain Uranium distributions </Description>
+          <DisplayName>IndustrialCraft 2 Mountain Uranium Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='ic2MountainUraniumSize' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Size multiplier for IndustrialCraft 2 Mountain Uranium distributions </Description>
+          <DisplayName>IndustrialCraft 2 Mountain Uranium Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Mountain Uranium Configuration UI Complete -->
+
+
+      <!-- Lead Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='ic2LeadDist'  displayState=':= if(?enableIndustrialCraft2, "shown", "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Controls how Lead is generated </Description>
+          <DisplayName>IndustrialCraft 2 Lead</DisplayName>
+          <IfCondition condition=':= (?blockExists("IC2:blockOreLead")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("IC2:blockOreLead")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("IC2:blockOreLead")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Lead is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='ic2LeadFreq' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Frequency multiplier for IndustrialCraft 2 Lead distributions </Description>
+          <DisplayName>IndustrialCraft 2 Lead Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='ic2LeadSize' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Size multiplier for IndustrialCraft 2 Lead distributions </Description>
+          <DisplayName>IndustrialCraft 2 Lead Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Lead Configuration UI Complete -->
+
+
+      <!-- Mountain Lead Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='ic2MountainLeadDist'  displayState=':= if(?enableIndustrialCraft2, "shown", "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Controls how Mountain Lead is generated </Description>
+          <DisplayName>IndustrialCraft 2 Mountain Lead</DisplayName>
+          <IfCondition condition=':= (?blockExists("IC2:blockOreLead")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("IC2:blockOreLead")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("IC2:blockOreLead")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Mountain Lead is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='ic2MountainLeadFreq' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Frequency multiplier for IndustrialCraft 2 Mountain Lead distributions </Description>
+          <DisplayName>IndustrialCraft 2 Mountain Lead Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='ic2MountainLeadSize' default='1'  min='0' max='5' displayState=':= if(?enableIndustrialCraft2, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupIndustrialCraft2'>
+          <Description> Size multiplier for IndustrialCraft 2 Mountain Lead distributions </Description>
+          <DisplayName>IndustrialCraft 2 Mountain Lead Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Mountain Lead Configuration UI Complete -->
+
+    </ConfigSection>
+    <!-- Setup Screen Complete -->
+
+    <IfCondition condition=':= ?enableIndustrialCraft2'>
+
+
+
+
+      <!-- Overworld Setup Beginning -->
+
+      <IfCondition condition=':= ?COGActive'>
+
+        <!-- Starting Original "Overworld" Block Removal -->
+
+        <IfCondition condition=':= ?cleanUpIndustrialCraft2'>
+          <IfCondition condition=':= ?blockExists("minecraft:stone")'>
+            <Substitute name='ic2OverworldBlockSubstitute0' block='minecraft:stone'>
+              <Description>
+                Replace vanilla-generated ore clusters.
+              </Description>
+              <Comment>
+                The global option  deferredPopulationRange must be
+                large enough to catch all ore  clusters (>= 32).
+              </Comment>
+              <Replaces block='IC2:blockOreCopper' weight='1.0' />
+              <Replaces block='IC2:blockOreLead' weight='1.0' />
+              <Replaces block='IC2:blockOreTin' weight='1.0' />
+              <Replaces block='IC2:blockOreUran' weight='1.0' />
+            </Substitute>
+          </IfCondition>
+        </IfCondition>
+
+        <!-- Original "Overworld" Block Removal Complete -->
+
+        <!-- Adding blocks -->
+
+        <!-- Begin Copper Generation -->
+
+        <!-- Starting LayeredVeins Preset for Copper. -->
         <ConfigSection>
-        
-            <IfCondition condition=':= if(age, age.ic2LeadClusters > 0, ic2LeadDist = "vanillaStdGen")'>
-                <StandardGen name='IC2LeadStandard' block='IC2:blockOreLead' inherits='PresetStandardGen'> 
-                    <Description> Equivalent? to regular IC2 lead distribution </Description>
-                    <DrawWireframe>:=drawWireframes</DrawWireframe>
-                    <WireframeColor>0x40222222</WireframeColor> 
-                    <Setting name='Size' avg=':= 1.25 * ic2LeadSize * _default_'/> 
-                    <Setting name='Frequency' avg=':= 0.75 * ic2LeadFreq * if(age,age.ic2LeadClusters,1) * _default_' 
-                                                range=':= 4 * ic2LeadFreq * if(age,age.ic2LeadClusters,1)'/>
-                    <Setting name='Height' avg=':= 40/64 * dimension.groundLevel' range=':= 30/64 * dimension.groundLevel' type='normal'/> 
-                </StandardGen>
-            </IfCondition>   
-            
-            <IfCondition condition=':= if(age, age.ic2LeadVeins > 0, ic2LeadDist = "layeredVeins")'>             
-                <Veins name='IC2LeadVeins' block='IC2:blockOreLead' inherits='PresetLayeredVeins'>
-                    <Description>  Average veins in the 30-50 range;
-                    more common in deserts. </Description> 
-                    <DrawWireframe>:=drawWireframes</DrawWireframe>
-                    <WireframeColor>0x40222222</WireframeColor> 
-                    <Setting name='MotherlodeFrequency' avg=':= 1.15 * ic2LeadFreq * if(age,age.ic2LeadVeins,1) * _default_'/>
-                    <Setting name='MotherlodeSize' avg=':= ic2LeadSize * _default_' range=':= ic2LeadSize * _default_'/>
-                    <Setting name='MotherlodeHeight' avg=':= 40/64 * dimension.groundLevel' range=':= 12/64 * dimension.groundLevel' type='normal'/>
-                    <Setting name='BranchFrequency' avg=':= 0.6 * _default_' range=':= 0.6 * _default_'/>
-                    <Setting name='BranchLength' avg=':= 1.2 * _default_'/>
-                    <Setting name='BranchHeightLimit' avg='12'/>
-                    <Setting name='SegmentRadius' avg=':= ic2LeadSize * _default_' range=':= ic2LeadSize * _default_'/>
-                </Veins>                
-                <Veins name='IC2LeadVeinsDesert' inherits='IC2LeadVeins'>
-                    <Description> This roughly triples the chance of finding Lead in desert biomes. </Description> 
-                    <Setting name='MotherlodeFrequency' avg=':= 2 * _default_'/>
-                    <Setting name='MotherlodeHeight' avg=':=_default_' range=':= 2 * _default_'/>
-                    <Setting name='BranchHeightLimit' avg=':= 2 * _default_'/>  
-                    <BiomeType name='Sandy'/>
-                </Veins>   
-            </IfCondition>     
-            
-            <IfCondition condition=':= if(age, age.ic2LeadClouds > 0, ic2LeadDist = "strategicClouds")'>
-                <Cloud name='IC2LeadCloud' block='IC2:blockOreLead' inherits='PresetStrategicCloud'>
-                    <Description>  
-                        Diffuse copper cloud surrounded by single-block "hint" veins, found in desert biomes.
-                    </Description> 
-                    <DrawWireframe>:=drawWireframes</DrawWireframe>
-                    <WireframeColor>0x40773300</WireframeColor> 
-                    <Setting name='DistributionFrequency' avg=':= 3.5 * ic2LeadFreq * if(age,age.ic2LeadClouds,1) * _default_'/>
-                    <Setting name='CloudRadius' avg=':= 1.1 * ic2LeadSize * _default_' range=':= ic2LeadSize * _default_'/>
-                    <Setting name='CloudThickness' avg=':= 1.1 * ic2LeadSize * _default_' range=':= ic2LeadSize * _default_'/> 
-                    <BiomeType name='Sandy'/>
-                    <Veins name='IC2LeadHintVeins' block='IC2:blockOreLead' inherits='PresetHintVeins'>
-                        <DrawWireframe>:=drawWireframes</DrawWireframe>
-                        <WireframeColor>0x40222222</WireframeColor> 
-                        <Setting name='MotherlodeFrequency' avg=':= _default_' range=':= _default_'/>   
-                        <Setting name='MotherlodeRangeLimit' avg=':= ic2LeadSize * _default_' range=':= ic2LeadSize * _default_'/>              
-                    </Veins>
-                </Cloud>
-            </IfCondition>  
-            
+          <IfCondition condition=':= ic2CopperDist = "LayeredVeins"'>
+            <Veins name='ic2CopperVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe='true' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='IC2:blockOreCopper' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * ic2CopperFreq ' range=':= 2.167 * _default_ * ic2CopperFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.138 * _default_ * ic2CopperSize ' range=':= 1.138 * _default_ * ic2CopperSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 40 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.472 * _default_ ' range=':= 1.472 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * ic2CopperSize ' range=':= _default_ * ic2CopperSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.213 * _default_ * ic2CopperSize ' range=':= 1.213 * _default_ * ic2CopperSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
         </ConfigSection>
+        <!-- LayeredVeins Preset for Copper is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Copper. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2CopperDist = "StrategicClouds"'>
+            <Cloud name='ic2CopperCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='IC2:blockOreCopper' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.573 * _default_ * ic2CopperSize ' range=':= 1.573 * _default_ * ic2CopperSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.573 * _default_ * ic2CopperSize ' range=':= 1.573 * _default_ * ic2CopperSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.474 * _default_ * ic2CopperFreq ' range=':= 2.474 * _default_ * ic2CopperFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 40 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='ic2CopperHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='IC2:blockOreCopper' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * ic2CopperFreq  * 0.1 ' range=':= 2.167 * _default_ * ic2CopperFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Copper is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Copper. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2CopperDist = "Vanilla"'>
+            <StandardGen name='ic2CopperStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='IC2:blockOreCopper' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='Size' avg=':= 6.667 * ic2CopperSize ' range=':= 3.33 * ic2CopperSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 10.0 * ic2CopperFreq ' range=':= 5.0 * ic2CopperFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 40 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Copper is complete. -->
+
+        <!-- End Copper Generation -->
+
+
+        <!-- Begin Mountain Copper Generation -->
+
+        <!-- Starting LayeredVeins Preset for Mountain Copper. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2MountainCopperDist = "LayeredVeins"'>
+            <Veins name='ic2MountainCopperVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe='true' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='IC2:blockOreCopper' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * ic2MountainCopperFreq ' range=':= 2.167 * _default_ * ic2MountainCopperFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.138 * _default_ * ic2MountainCopperSize ' range=':= 1.138 * _default_ * ic2MountainCopperSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 184 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.472 * _default_ ' range=':= 1.472 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * ic2MountainCopperSize ' range=':= _default_ * ic2MountainCopperSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.213 * _default_ * ic2MountainCopperSize ' range=':= 1.213 * _default_ * ic2MountainCopperSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Mountain Copper is  complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Mountain  Copper. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2MountainCopperDist = "StrategicClouds"'>
+            <Cloud name='ic2MountainCopperCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='IC2:blockOreCopper' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='CloudRadius' avg=':= 1.573 * _default_ * ic2MountainCopperSize ' range=':= 1.573 * _default_ * ic2MountainCopperSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.573 * _default_ * ic2MountainCopperSize ' range=':= 1.573 * _default_ * ic2MountainCopperSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.474 * _default_ * ic2MountainCopperFreq ' range=':= 2.474 * _default_ * ic2MountainCopperFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 184 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='ic2MountainCopperHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='IC2:blockOreCopper' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * ic2MountainCopperFreq  * 0.1 ' range=':= 2.167 * _default_ * ic2MountainCopperFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Mountain Copper is  complete. -->
+
+
+        <!-- Starting Vanilla Preset for Mountain Copper. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2MountainCopperDist = "Vanilla"'>
+            <StandardGen name='ic2MountainCopperStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60C4733C' drawBoundBox='false' boundBoxColor='0x60C4733C'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='IC2:blockOreCopper' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='Size' avg=':= 6.667 * ic2MountainCopperSize ' range=':= 3.33 * ic2MountainCopperSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 10.0 * ic2MountainCopperFreq ' range=':= 5.0 * ic2MountainCopperFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 184 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Mountain Copper is complete. -->
+
+        <!-- End Mountain Copper Generation -->
+
+
+        <!-- Begin Tin Generation -->
+
+        <!-- Starting LayeredVeins Preset for Tin. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2TinDist = "LayeredVeins"'>
+            <Veins name='ic2TinVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe='true' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='IC2:blockOreTin' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * ic2TinFreq ' range=':= 2.167 * _default_ * ic2TinFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.138 * _default_ * ic2TinSize ' range=':= 1.138 * _default_ * ic2TinSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 20 ' range=':= 20 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.472 * _default_ ' range=':= 1.472 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * ic2TinSize ' range=':= _default_ * ic2TinSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.213 * _default_ * ic2TinSize ' range=':= 1.213 * _default_ * ic2TinSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Tin is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Tin. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2TinDist = "StrategicClouds"'>
+            <Cloud name='ic2TinCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='IC2:blockOreTin' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.573 * _default_ * ic2TinSize ' range=':= 1.573 * _default_ * ic2TinSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.573 * _default_ * ic2TinSize ' range=':= 1.573 * _default_ * ic2TinSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.474 * _default_ * ic2TinFreq ' range=':= 2.474 * _default_ * ic2TinFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 20 ' range=':= 20 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='ic2TinHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='IC2:blockOreTin' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * ic2TinFreq  * 0.1 ' range=':= 2.167 * _default_ * ic2TinFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Tin is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Tin. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2TinDist = "Vanilla"'>
+            <StandardGen name='ic2TinStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='IC2:blockOreTin' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='Size' avg=':= 4.0 * ic2TinSize ' range=':= 2.0 * ic2TinSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 16.667 * ic2TinFreq ' range=':= 8.33 * ic2TinFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 20 ' range=':= 20 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Tin is complete. -->
+
+        <!-- End Tin Generation -->
+
+
+        <!-- Begin Mountain Tin Generation -->
+
+        <!-- Starting LayeredVeins Preset for Mountain Tin. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2MountainTinDist = "LayeredVeins"'>
+            <Veins name='ic2MountainTinVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe='true' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='IC2:blockOreTin' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * ic2MountainTinFreq ' range=':= 2.167 * _default_ * ic2MountainTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.138 * _default_ * ic2MountainTinSize ' range=':= 1.138 * _default_ * ic2MountainTinSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 124 ' range=':= 60 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.472 * _default_ ' range=':= 1.472 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * ic2MountainTinSize ' range=':= _default_ * ic2MountainTinSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.213 * _default_ * ic2MountainTinSize ' range=':= 1.213 * _default_ * ic2MountainTinSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Mountain Tin is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Mountain Tin. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2MountainTinDist = "StrategicClouds"'>
+            <Cloud name='ic2MountainTinCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='IC2:blockOreTin' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='CloudRadius' avg=':= 1.573 * _default_ * ic2MountainTinSize ' range=':= 1.573 * _default_ * ic2MountainTinSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.573 * _default_ * ic2MountainTinSize ' range=':= 1.573 * _default_ * ic2MountainTinSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 2.474 * _default_ * ic2MountainTinFreq ' range=':= 2.474 * _default_ * ic2MountainTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 124 ' range=':= 60 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='ic2MountainTinHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='IC2:blockOreTin' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 2.167 * _default_ * ic2MountainTinFreq  * 0.1 ' range=':= 2.167 * _default_ * ic2MountainTinFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Mountain Tin is  complete. -->
+
+
+        <!-- Starting Vanilla Preset for Mountain Tin. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2MountainTinDist = "Vanilla"'>
+            <StandardGen name='ic2MountainTinStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60CDCDCD' drawBoundBox='false' boundBoxColor='0x60CDCDCD'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='IC2:blockOreTin' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='Size' avg=':= 4.0 * ic2MountainTinSize ' range=':= 2.0 * ic2MountainTinSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 16.667 * ic2MountainTinFreq ' range=':= 8.33 * ic2MountainTinFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 124 ' range=':= 60 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Mountain Tin is complete. -->
+
+        <!-- End Mountain Tin Generation -->
+
+
+        <!-- Begin Uranium Generation -->
+
+        <!-- Starting SparseVeins Preset for Uranium. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2UraniumDist = "SparseVeins"'>
+            <Veins name='ic2UraniumVeins'  inherits='PresetSparseVeins' branchType='Bezier' drawWireframe='true' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+              <Description>
+                Large veins filled very lightly  with ore.  Because
+                they contain  less ore per volume, these veins  are
+                relatively wide and long.  Mining the ore from them is
+                time  consuming compared to solid ore  veins.  They
+                are also more  difficult to follow, since it is
+                harder to get an idea of their  direction while
+                mining.
+              </Description>
+              <OreBlock block='IC2:blockOreUran' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='MotherlodeFrequency' avg=':= 3.355 * _default_ * ic2UraniumFreq ' range=':= 3.355 * _default_ * ic2UraniumFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0 * _default_ * ic2UraniumSize ' range=':= 0 * _default_ * ic2UraniumSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 30 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.832 * _default_ ' range=':= 1.832 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * ic2UraniumSize ' range=':= _default_ * ic2UraniumSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.353 * _default_ * ic2UraniumSize ' range=':= 1.353 * _default_ * ic2UraniumSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- SparseVeins Preset for Uranium is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Uranium. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2UraniumDist = "StrategicClouds"'>
+            <Cloud name='ic2UraniumCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='IC2:blockOreUran' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.251 * _default_ * ic2UraniumSize ' range=':= 1.251 * _default_ * ic2UraniumSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.251 * _default_ * ic2UraniumSize ' range=':= 1.251 * _default_ * ic2UraniumSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.565 * _default_ * ic2UraniumFreq ' range=':= 1.565 * _default_ * ic2UraniumFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 30 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='ic2UraniumHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='IC2:blockOreUran' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 3.355 * _default_ * ic2UraniumFreq  * 0.1 ' range=':= 3.355 * _default_ * ic2UraniumFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Uranium is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Uranium. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2UraniumDist = "Vanilla"'>
+            <StandardGen name='ic2UraniumStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='IC2:blockOreUran' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='Size' avg=':= 2.0 * ic2UraniumSize ' range=':= 1.0 * ic2UraniumSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 13.333 * ic2UraniumFreq ' range=':= 6.67 * ic2UraniumFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 30 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Uranium is complete. -->
+
+        <!-- End Uranium Generation -->
+
+
+        <!-- Begin Mountain Uranium Generation -->
+
+        <!-- Starting SparseVeins Preset for Mountain Uranium. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2MountainUraniumDist = "SparseVeins"'>
+            <Veins name='ic2MountainUraniumVeins'  inherits='PresetSparseVeins' branchType='Bezier' drawWireframe='true' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+              <Description>
+                Large veins filled very lightly  with ore.  Because
+                they contain  less ore per volume, these veins  are
+                relatively wide and long.  Mining the ore from them is
+                time  consuming compared to solid ore  veins.  They
+                are also more  difficult to follow, since it is
+                harder to get an idea of their  direction while
+                mining.
+              </Description>
+              <OreBlock block='IC2:blockOreUran' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='MotherlodeFrequency' avg=':= 3.355 * _default_ * ic2MountainUraniumFreq ' range=':= 3.355 * _default_ * ic2MountainUraniumFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 0 * _default_ * ic2MountainUraniumSize ' range=':= 0 * _default_ * ic2MountainUraniumSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.832 * _default_ ' range=':= 1.832 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * ic2MountainUraniumSize ' range=':= _default_ * ic2MountainUraniumSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.353 * _default_ * ic2MountainUraniumSize ' range=':= 1.353 * _default_ * ic2MountainUraniumSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- SparseVeins Preset for Mountain Uranium is  complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Mountain  Uranium. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2MountainUraniumDist = "StrategicClouds"'>
+            <Cloud name='ic2MountainUraniumCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='IC2:blockOreUran' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='CloudRadius' avg=':= 1.251 * _default_ * ic2MountainUraniumSize ' range=':= 1.251 * _default_ * ic2MountainUraniumSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.251 * _default_ * ic2MountainUraniumSize ' range=':= 1.251 * _default_ * ic2MountainUraniumSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.565 * _default_ * ic2MountainUraniumFreq ' range=':= 1.565 * _default_ * ic2MountainUraniumFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='ic2MountainUraniumHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='IC2:blockOreUran' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 3.355 * _default_ * ic2MountainUraniumFreq  * 0.1 ' range=':= 3.355 * _default_ * ic2MountainUraniumFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Mountain Uranium is  complete. -->
+
+
+        <!-- Starting Vanilla Preset for Mountain Uranium. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2MountainUraniumDist = "Vanilla"'>
+            <StandardGen name='ic2MountainUraniumStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x606AC312' drawBoundBox='false' boundBoxColor='0x606AC312'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='IC2:blockOreUran' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='Size' avg=':= 2.0 * ic2MountainUraniumSize ' range=':= 1.0 * ic2MountainUraniumSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 13.333 * ic2MountainUraniumFreq ' range=':= 6.67 * ic2MountainUraniumFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Mountain Uranium is complete. -->
+
+        <!-- End Mountain Uranium Generation -->
+
+
+        <!-- Begin Lead Generation -->
+
+        <!-- Starting LayeredVeins Preset for Lead. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2LeadDist = "LayeredVeins"'>
+            <Veins name='ic2LeadVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe='true' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='IC2:blockOreLead' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * ic2LeadFreq ' range=':= 1.001 * _default_ * ic2LeadFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.000 * _default_ * ic2LeadSize ' range=':= 1.000 * _default_ * ic2LeadSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 30 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.000 * _default_ ' range=':= 1.000 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * ic2LeadSize ' range=':= _default_ * ic2LeadSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.000 * _default_ * ic2LeadSize ' range=':= 1.000 * _default_ * ic2LeadSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Lead is complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Lead. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2LeadDist = "StrategicClouds"'>
+            <Cloud name='ic2LeadCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='IC2:blockOreLead' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='CloudRadius' avg=':= 1.069 * _default_ * ic2LeadSize ' range=':= 1.069 * _default_ * ic2LeadSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.069 * _default_ * ic2LeadSize ' range=':= 1.069 * _default_ * ic2LeadSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * ic2LeadFreq ' range=':= 1.143 * _default_ * ic2LeadFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 30 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='ic2LeadHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='IC2:blockOreLead' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * ic2LeadFreq  * 0.1 ' range=':= 1.001 * _default_ * ic2LeadFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Lead is complete. -->
+
+
+        <!-- Starting Vanilla Preset for Lead. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2LeadDist = "Vanilla"'>
+            <StandardGen name='ic2LeadStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='IC2:blockOreLead' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+              <Setting name='Size' avg=':= 2.667 * ic2LeadSize ' range=':= 1.33 * ic2LeadSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 5.333 * ic2LeadFreq ' range=':= 2.67 * ic2LeadFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 30 ' range=':= 30 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Lead is complete. -->
+
+        <!-- End Lead Generation -->
+
+
+        <!-- Begin Mountain Lead Generation -->
+
+        <!-- Starting LayeredVeins Preset for Mountain Lead. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2MountainLeadDist = "LayeredVeins"'>
+            <Veins name='ic2MountainLeadVeins'  inherits='PresetLayeredVeins' branchType='Bezier' drawWireframe='true' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+              <Description>
+                Small, fairly rare motherlodes  with 2-4 horizontal
+                veins each.
+              </Description>
+              <OreBlock block='IC2:blockOreLead' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * ic2MountainLeadFreq ' range=':= 1.001 * _default_ * ic2MountainLeadFreq ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeSize' avg=':= 1.000 * _default_ * ic2MountainLeadSize ' range=':= 1.000 * _default_ * ic2MountainLeadSize ' type='normal' />
+              <Setting name='MotherlodeHeight' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='MotherlodeRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='BranchLength' avg=':= 1.000 * _default_ ' range=':= 1.000 * _default_ ' type='normal' />
+              <Setting name='BranchHeightLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='SegmentForkFrequency' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentForkLengthMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentLength' avg=':= _default_ * ic2MountainLeadSize ' range=':= _default_ * ic2MountainLeadSize ' type='normal' />
+              <Setting name='SegmentAngle' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentPitch' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='SegmentRadius' avg=':= 1.000 * _default_ * ic2MountainLeadSize ' range=':= 1.000 * _default_ * ic2MountainLeadSize ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </Veins>
+          </IfCondition>
+        </ConfigSection>
+        <!-- LayeredVeins Preset for Mountain Lead is  complete. -->
+
+
+        <!-- Starting StrategicClouds Preset for Mountain  Lead. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2MountainLeadDist = "StrategicClouds"'>
+            <Cloud name='ic2MountainLeadCloud'  inherits='PresetStrategicCloud' drawWireframe='true' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+              <Description>
+                Large irregular clouds filled  lightly with ore.
+                These are  huge, spanning several adjacent  chunks,
+                and consequently rather  rare.  They contain a
+                sizeable  amount of ore, but it takes some  time and
+                effort to mine due to  low density. The intent for
+                strategic clouds is that the  player will need to
+                actively  search for one and then set up a  semi-
+                permanent mining base and  spend some time actually
+                mining  the ore.
+              </Description>
+              <OreBlock block='IC2:blockOreLead' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='CloudRadius' avg=':= 1.069 * _default_ * ic2MountainLeadSize ' range=':= 1.069 * _default_ * ic2MountainLeadSize ' type='normal' />
+              <Setting name='CloudThickness' avg=':= 1.069 * _default_ * ic2MountainLeadSize ' range=':= 1.069 * _default_ * ic2MountainLeadSize ' type='normal' scaleTo='base' />
+              <Setting name='DistributionFrequency' avg=':= 1.143 * _default_ * ic2MountainLeadFreq ' range=':= 1.143 * _default_ * ic2MountainLeadFreq ' type='normal' scaleTo='base' />
+              <Setting name='CloudHeight' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreDensity' avg=':= _default_ ' range=':= _default_ ' type='normal' scaleTo='base' />
+              <Setting name='OreVolumeNoiseCutoff' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+              <Veins name='ic2MountainLeadHintVeins' branchType='Bezier'  inherits='PresetHintVeins' drawWireframe='true' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+                <Description>
+                  Single blocks, generously  scattered through all
+                  heights  (density is about that of  vanilla iron
+                  ore). They will  replace dirt and sandstone  (but
+                  not grass or sand), so  they can be found nearer to
+                  the surface than most ores.  Intened to be used as a
+                  child  distribution for large, rare  strategic
+                  deposits that would  otherwise be very difficult  to
+                  find.  Note that the  frequency is multiplied by
+                  ground level to maintain a  constant density, but
+                  not by  ore frequency because it is  assumed that
+                  the frequency of  the parent distribution will
+                  already be scaled by that.
+                </Description>
+                <OreBlock block='IC2:blockOreLead' weight='1.0' />
+                <Replaces block='minecraft:dirt' weight='1.0' />
+                <Replaces block='minecraft:sandstone' weight='1.0' />
+                <ReplacesOre block='stone' weight='1.0' />
+                <Replaces block='minecraft:gravel' weight='1.0' />
+                <Setting name='MotherlodeFrequency' avg=':= 1.001 * _default_ * ic2MountainLeadFreq  * 0.1 ' range=':= 1.001 * _default_ * ic2MountainLeadFreq  * 0.1 ' type='normal' scaleTo='base' />
+              </Veins>
+            </Cloud>
+          </IfCondition>
+        </ConfigSection>
+        <!-- StrategicClouds Preset for Mountain Lead is  complete. -->
+
+
+        <!-- Starting Vanilla Preset for Mountain Lead. -->
+        <ConfigSection>
+          <IfCondition condition=':= ic2MountainLeadDist = "Vanilla"'>
+            <StandardGen name='ic2MountainLeadStandard'  inherits='PresetStandardGen' drawWireframe='true' wireframeColor='0x60829199' drawBoundBox='false' boundBoxColor='0x60829199'>
+              <Description>
+                A master preset for standardgen  ore distributions.
+              </Description>
+              <OreBlock block='IC2:blockOreLead' weight='1.0' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <BiomeType name='Mountain'  />
+              <Setting name='Size' avg=':= 2.667 * ic2MountainLeadSize ' range=':= 1.33 * ic2MountainLeadSize ' type='normal' />
+              <Setting name='Frequency' avg=':= 5.333 * ic2MountainLeadFreq ' range=':= 2.67 * ic2MountainLeadFreq ' type='normal' scaleTo='base' />
+              <Setting name='Height' avg=':= 154 ' range=':= 90 ' type='normal' scaleTo='base' />
+              <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            </StandardGen>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Vanilla Preset for Mountain Lead is complete. -->
+
+        <!-- End Mountain Lead Generation -->
+
+        <!-- Finished adding blocks -->
+
+      </IfCondition>
+      <!-- Overworld Setup Complete -->
 
     </IfCondition>
-    
+
+  </ConfigSection>
+  <!-- Configuration for Custom Ore Generation Complete! -->
+
 </IfModInstalled>
+<!-- The "IndustrialCraft 2" mod is now configured. -->
+
+
+
+
+
+<!-- =================================================================
+     This file was made using the Sprocket Advanced Configuration
+     Generator.  If you wish to make your own configurations for a mod
+     not currently supported by Custom Ore Generation, and you don't
+     want the hassle of writing XML, you can find the generator script
+     at its GitHub page: http://https://github.com/reteo/Sprocket
+     ================================================================= -->

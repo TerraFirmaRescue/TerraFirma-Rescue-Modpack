@@ -1,9 +1,40 @@
 ﻿3.2.2.3
 
 
-3.2.2.2
-新铂族矿物处理方法完成
+3.3.0.0
+模组变化：
+升级gregtech 6.14.00
+升级TerraFirmaCraft-TFR 0.79.36-v2
+AdvancedRocketry-TFR 2.0.0
+StandardExpansion-3.0.181
+questbook-3.0.0
+OpenModsLib-0.10.1
+OpenComputers-1.7.5.1290
+OpenBlocks-1.6
+GT6TweakerInMTUtils-1.8
+ModTweaker2-0.9.6
+IC2CropPlugin-1.3.1
+HardcoreDarkness-1.7
+ExtraCells-2.3.14b200
+CustomOreGen-1.2.26
+Chisel-2.9.5.11
+Carpenter's Blocks-3.3.8.2
+BetterQuesting-3.0.328
+降级
+OmniOcular-1.0build103
+industrialcraft-2-2.2.827-experimental
+forestry-4.2.16.64
+国际CF版以下模组版本较低:
+Railcraft-9.12.2.0
+ae2stuff-0.5.1.61
+appliedenergistics2-rv3-beta-6
+
+内容变化：
+完全修改了原有的铂系金属矿物处理方式
 修复了钻石箱子和水晶箱子合成冲突
+修复AR投影仪合成
+修复铁砧合成
+修复蓄水槽只能橡木合成
 更改无尽套合成
 更改喷气背包，电力喷气背包合成
 更改大部分背包的合成
@@ -16,19 +47,27 @@
 更改了卫星建造机，火箭组装机，导航电脑合成
 更改了RC高炉中铁矿的冶炼方法
 更改了外星球铂矿的生成
+下调传送机造价
 添加中子素零件合成
 添加P2P-RF合成
 添加硝石造冰合成
 添加GT织布机制作TGC织布机的配方
 添加GT切割机制作木材
 添加原版木头与TFC原木无序合成转换
-添加了TFC软锰矿
-取消了除GT辊压机之外的导轨合成
-取消了手合原版木板
-取消了所有GT矿石在主世界的生成
+添加了TFC软锰矿及破碎
+添加奖励袋子系统
 添加了原版橡木树苗，白桦树苗，GT柳树树苗，榛子树苗，彩虹树苗合成
 添加水井和海水井
 添加了五种铂系矿物
+添加TFC铬铁矿处理为粉碎矿
+添加AE2和MO的任务
+添加微型电路
+添加怪物支线任务
+添加了几种小行星
+添加了维纳斯星
+取消了除GT辊压机之外的导轨合成
+取消了手合原版木板
+取消了所有GT矿石在主世界的生成
 
 3.2.2.1
 修复任务书bug

@@ -396,16 +396,16 @@ recipes.remove(<minecraft:dropper>);
 
 recipes.addShaped(<minecraft:repeater>,
 [[rst,Cutter,rst],
-[n,rsc,n],
+[n,rs,n],
 [stp,stp,stp]]);
 
 recipes.addShaped(<minecraft:repeater>,
 [[rs,Cutter,rs],
-[stk,rsc,stk],
+[stk,rs,stk],
 [stp,stp,stp]]);
 
 recipes.addShaped(<minecraft:comparator>,
-[[Cutter,rsc,n],
+[[Cutter,rs,n],
 [rst,<ore:craftingQuartz>,rst],
 [stp,stp,stp]]);
 

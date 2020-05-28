@@ -53,7 +53,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 400, 0, [10000],
 
 MTUtilsGT.removeAllRecipes("gt.recipe.loom",<Backpack:backpack:200>);
 MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 400, 0, [10000],
-[<Backpack:tannedLeather>*8,<terrafirmacraft:item.WoolCloth>*2,<gregtech:gt.meta.screw:27008>*4,<gregtech:gt.meta.ring:27008>*4],
+[<Backpack:tannedLeather>*8,<terrafirmacraft:item.WoolCloth>*2,<gregtech:gt.meta.screw:8610>*4,<gregtech:gt.meta.ring:8610>*4],
 [n],
 [n],
 [<Backpack:backpack:200>]);
@@ -69,7 +69,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 200, 0, [10000],
 recipes.remove(<Backpack:backpack:31999>);
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",<Backpack:backpack:31999>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 400, 0, [10000],
-[<gregtech:gt.meta.foil:27008>*12,<gregtech:gt.multiitem.technological:30303>,<gregtech:gt.meta.gearGtSmall:8319>*4],
+[<gregtech:gt.meta.foil:15402>*12,<gregtech:gt.multiitem.technological:30303>,<gregtech:gt.meta.gearGtSmall:8319>*4],
 [n],
 [n],
 [<Backpack:backpack:31999>]);
