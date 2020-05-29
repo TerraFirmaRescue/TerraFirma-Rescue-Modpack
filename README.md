@@ -2,7 +2,13 @@
 
 Version 3.3.0.0 is out 29.05.2020
 
-Terrafirma-Rescue Modpack; MoegAddon Mod at https://github.com/yuesha-yc/MoegAddon; MCBBS https://www.mcbbs.net/thread-977365-1-1.html
+1. [CURSEFORGE](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
+2. [MCBBS](https://www.mcbbs.net/thread-977365-1-1.html)
+3. [OFFICIAL WIKI](http://www.terrafirmarescue.com:11004/)
+4. [SOURCE](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack)
+5. [ISSUES](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues)
+6. [LICENSE](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE)
+
 
 ## What is Terra Firma Rescue?
 
@@ -30,3 +36,6 @@ Have you imagined the coexistence of GregTech and Terra Firma Craft? In case! 
   
 ***Quests***<BR>
   This modpack contains more than 600 quests, over 20,000 words of introduction, these quests will guide you to easily pass this technology tree based on TFC and GT. These tasks will tell you the step-by-step development process. With it, you don’t have to frequently check NEI, because you only need to click on the items in the task book, the recipes displayed by NEI will automatically pop up, and you don’t have to frequently look for tutorials. The customized reward bag system and the Intergalatica Credit Point System provide you with an interesting and exciting experience, allowing you to trade items with various NPCs in the game, so that redundant products in your factory are no longer discarded.
+  
+## Related Projects:
+All projects held by TFR Team are at https://github.com/TerraFirmaRescue/
