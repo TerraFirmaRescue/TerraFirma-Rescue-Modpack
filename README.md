@@ -11,13 +11,13 @@ Have you imagined the coexistence of GregTech and Terra Firma Craft? In case! 
 ## What does this pack have to offer?
  
 ***Game Process***<BR>
-# Level 0 Stone Age-Ceramic Age-Bronze Age- TFC, GT, Backpack
-#Level 1# Gray Iron Age-Steel Age-Blue Steel Age- TFC, Expansions of TFC, Railway, Gray Technology, Chisel
-#Level 2# The Steam Age- GT, Expansions of TFC
-#Level 3# Redstone era- Railcraft, Advanced Rocketry, Forestry
-#Level 4# Electricity Age- GT, Applied Energistics 2, Gendustry
-#Level 5# Semiconductor Industry- GT, MoegAddon, Advanced Rocketry (First-Space Age)
-#Level 6# The Age of Physics- GT, MoegAddon, Advanced Rocketry (Post-Space Age), Draconic Evolution, Avaritia
+### Level 0 Stone Age-Ceramic Age-Bronze Age- TFC, GT, Backpack
+### Level 1 Gray Iron Age-Steel Age-Blue Steel Age- TFC, Expansions of TFC, Railway, Gray Technology, Chisel
+### Level 2 The Steam Age- GT, Expansions of TFC
+### Level 3 Redstone era- Railcraft, Advanced Rocketry, Forestry
+### Level 4 Electricity Age- GT, Applied Energistics 2, Gendustry
+### Level 5 Semiconductor Industry- GT, MoegAddon, Advanced Rocketry (First-Space Age)
+### Level 6 The Age of Physics- GT, MoegAddon, Advanced Rocketry (Post-Space Age), Draconic Evolution, Avaritia
 
 ***Technology***<BR>
   Abandon your prejudice against technology-it's not just the electronics around us. We use MTUtils and TFCTweaker to base the recipes of most modules on the development of TFC and GT. You have to start with a primitive man from the Paleolithic age, make stoneware, fire ceramics, and smelt bronze. You have metal tools! The next step is to smelt those different iron ores. Steam age-liberation of hands; Redstone age-modern dawn; Electricity age-automation; semiconductor age-electronic equipment (no kidding, you can make a PC here); space age-star sea; physics age-do what God should do!
