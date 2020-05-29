@@ -28,6 +28,7 @@
 TerraFirmaCraft-TFR 0.79.36-v2
 AdvancedRocketry-TFR 2.0.0
 TFRTech-0.3.0
+LibVulpes-0.2.8-37-universal
 StandardExpansion-3.0.181
 questbook-3.0.0
 OpenModsLib-0.10.1
