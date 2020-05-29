@@ -1511,31 +1511,3 @@ recipes.addShaped(<gregtech:gt.multitileentity:32013>*6,
 [[<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>],
 [n,<terrafirmacraft:item.Jute Fibre>,n],
 [<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>]]);
-
-/*
-var spring0 = <gregtech:gt.multitileentity:32763>.withTag({"gt.spring": {FluidName: "gas_natural_gas", Amount: 3000}});
-var spring1 = <gregtech:gt.multitileentity:32763>.withTag({"gt.spring": {FluidName: "gas_natural_gas", Amount: 100}, display: {Name: "Tier-1 Compressed Natural Gas Spring", Lore: ["Output 1000L of Gas", "every 5 second"]}});
-var spring2 = <gregtech:gt.multitileentity:32763>.withTag({"gt.spring": {FluidName: "gas_natural_gas", Amount: 10}, display: {Name: "Tier-2 Compressed Natural Gas Spring", Lore: ["Output 1000L of Gas", "every 0.5 second"]}});
-var spring3 = <gregtech:gt.multitileentity:32763>.withTag({"gt.spring": {FluidName: "gas_natural_gas", Amount: 1}, display: {Name: "Tier-3 Compressed Natural Gas Spring", Lore: ["Output 1000L of Gas", "every 0.05 second"]}});
-
-MTUtilsGT.removeAllRecipes("gt.recipe.generifier",spring1);
-MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
-[spring0*30],
-[null],
-[null],
-[spring1]);
-
-//MTUtilsGT.removeAllRecipes("gt.recipe.generifier", spring2);
-MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
-[spring1*10],
-[null],
-[null],
-[spring2]);
-
-//MTUtilsGT.removeAllRecipes("gt.recipe.generifier", spring3);
-MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
-[spring2*10],
-[null],
-[null],
-[spring3]);
-*/
