@@ -9,10 +9,26 @@ Version 3.3.1.1 is out 30.05.2020
 5. [ISSUES](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues)
 6. [LICENSE](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE)
 
+## Storyline
+
+***After countless hours, we reached the target galaxy-Terrafirma B. What wakes me up is not the call of my teammates. It was a harsh alarm. I looked aside, a glass was inserted in the chest of my teammate, and I heard him say in a mosquito-like voice: "Come on, this ship is about to crash. I have the key to the escape bin and the company's technology guide . I hope you can live well. " Then he closed his eyes forever, and I laid his body flat on the ground and took his key and guide. Sit on the escape cabin and come to this unknown world. This is my story. --- Alexander Steve II***
+ 
 
 ## What is Terra Firma Rescue?
 
-Have you imagined the coexistence of GregTech and Terra Firma Craft? In case! GregTech 6 cannot overturn your worldview! In case! Terra Firma Craft cannot satisfy your technological development! Then! This modpack of TFR is best for you! That's right! This modpack includes GregTech6U, Terra Firma Craft, AdvancedRocketry, Railcraft, DraconicEvolution, Applied Energistics, OpenBlocks, Forestry and other 53+ Mods, as well as 600+ quests awaiting for you to complete! Of course! This modpack also includes a GregTech6 extension Mod made by the author of the integration package and used an unofficial version of GT6 developed for this modpack! Let this modpack take you once again to the limit of the 1.7.10 Mod Complex, intoxicated by it for at least half a year!
+Have you imagined the coexistence of GregTech and Terra Firma Craft? This is not a dream anymore. 
+
+In case! GregTech 6 cannot overturn your worldview!
+
+In case! Terra Firma Craft cannot satisfy your technological development!
+
+Then! TFR is best for you!
+
+That's right! This modpack includes GregTech6U, Terra Firma Craft, AdvancedRocketry, Railcraft, DraconicEvolution, Applied Energistics, OpenBlocks, Forestry and other 53+ Mods, as well as 600+ quests awaiting for you to complete!
+
+Of course! This modpack also includes Original Mods and Tweaked Mods made for this modpack!
+
+Let this modpack take you once again to the limit of the 1.7.10 Mod Complexity, intoxicated by it for at least half a year!
 
 ## What does this pack have to offer?
  
