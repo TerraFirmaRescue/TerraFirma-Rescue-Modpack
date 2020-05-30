@@ -1,6 +1,6 @@
 <galaxy>
     <star name="Da Shuai Bi α" temp="100" x="0" y="0" numPlanets="0" numGasGiants="0">
-        <planet name="Duck Egg" DIMID="10" customIcon="GasGiantBlue">
+      <planet name="Duck Egg" DIMID="10" customIcon="GasGiantBlue">
             <fogColor>0x000080</fogColor>
             <skyColor>0x000080</skyColor>
             <atmosphereDensity>40</atmosphereDensity>
@@ -9,61 +9,50 @@
             <orbitalTheta>180</orbitalTheta>
             <orbitalPhi>90</orbitalPhi>
             <rotationalPeriod>24000</rotationalPeriod>
-            <hasRings>true</hasRings>
             <isKnown>true</isKnown>
-            <GasGiant>true</GasGiant>
+		<GasGiant>true</GasGiant>
             <gas>methane</gas>
-            <gas>hydrogen</gas>
-            <planet name="Terrafirma" DIMID="0" dimMapping="" customIcon="EarthLike" >
-                <orbitalDistance>120</orbitalDistance>
-                <orbitalTheta>150</orbitalTheta>
-                <rotationalPeriod>41000</rotationalPeriod>
-            </planet>
-            <planet name="Duck Egg B" DIMID="11" customIcon="Moon">
-                <atmosphereDensity>0</atmosphereDensity>
-                <gravitationalMultiplier>30</gravitationalMultiplier>
-                <orbitalDistance>60</orbitalDistance>
-                <orbitalTheta>60</orbitalTheta>
-                <rotationalPeriod>41000</rotationalPeriod>
-            </planet>
-            <planet name="Duck Egg C" DIMID="12" customIcon="IceWorld">
-                <fogColor>0x4169E1</fogColor>
-                <skyColor>0x4169E1</skyColor>
-                <biomeIds>140</biomeIds>
-                <atmosphereDensity>45</atmosphereDensity>
-                <gravitationalMultiplier>50</gravitationalMultiplier>
-                <orbitalDistance>100</orbitalDistance>
-                <orbitalTheta>290</orbitalTheta>
-                <orbitalPhi>90</orbitalPhi>
-                <rotationalPeriod>48000</rotationalPeriod>
-                <isKnown>true</isKnown>
-            </planet>
-        </planet>
-        <planet name="H D" DIMID="13" customIcon="MarsLike">
+		<gas>hydrogen</gas>
+		<planet name="Terrafirma" DIMID="0" dimMapping="" customIcon="EarthLike" >
+                  <orbitalDistance>150</orbitalDistance>
+			<orbitalTheta>150</orbitalTheta>
+                  <rotationalPeriod>41000</rotationalPeriod>
+			</planet>
+		<planet name="Duck Egg B" DIMID="11" customIcon="Moon">
+		      <atmosphereDensity>0</atmosphereDensity>
+			<gravitationalMultiplier>30</gravitationalMultiplier>
+			<orbitalDistance>60</orbitalDistance>
+		      <orbitalTheta>60</orbitalTheta>
+            <rotationalPeriod>41000</rotationalPeriod>
+			</planet>
+		<planet name="Duck Egg C" DIMID="12" customIcon="IceWorld">
+                  <fogColor>0x4169E1</fogColor>
+                  <skyColor>0x4169E1</skyColor>
+			<biomeIds>140</biomeIds>
+                  <atmosphereDensity>45</atmosphereDensity>
+                  <gravitationalMultiplier>50</gravitationalMultiplier>
+                  <orbitalDistance>120</orbitalDistance>
+                  <orbitalTheta>290</orbitalTheta>
+                  <orbitalPhi>90</orbitalPhi>
+                  <rotationalPeriod>48000</rotationalPeriod>
+                  <isKnown>true</isKnown>
+			</planet>
+	</planet>
+	<planet name="H D" DIMID="13" customIcon="MarsLike">
             <fogColor>0.85,0.32,0</fogColor>
             <skyColor>0.93,0.9,0.69</skyColor>
+		<seaLevel>68</seaLevel>
+		<oceanBlock>advancedRocketry:blockHotTurf</oceanBlock>	
             <atmosphereDensity>0</atmosphereDensity>
             <gravitationalMultiplier>70</gravitationalMultiplier>
-            <orbitalDistance>90</orbitalDistance>
+            <orbitalDistance>80</orbitalDistance>
             <orbitalTheta>160</orbitalTheta>
             <orbitalPhi>90</orbitalPhi>
             <rotationalPeriod>36000</rotationalPeriod>>
-            <isKnown>true</isKnown>
-            <biomeIds>92</biomeIds>
-        </planet>
-        <planet name="Venus" DIMID="18" customIcon="VENUS">
-            <fogColor>0xFFD700</fogColor>
-            <skyColor>0xFFD700</skyColor>
-            <atmosphereDensity>0</atmosphereDensity>
-            <gravitationalMultiplier>70</gravitationalMultiplier>
-            <orbitalDistance>70</orbitalDistance>
-            <orbitalTheta>160</orbitalTheta>
-            <orbitalPhi>360</orbitalPhi>
-            <rotationalPeriod>1728000</rotationalPeriod>>
-            <isKnown>true</isKnown>
-            <biomeIds>120</biomeIds>
-        </planet>
-        <planet name="Evan" DIMID="14" customIcon="GasGiantRed">
+            <isKnown>true</isKnown>	
+          <biomeIds>92</biomeIds>			
+	</planet>
+	<planet name="Evan" DIMID="14" customIcon="GasGiantRed">
             <fogColor>0.85,0.32,0</fogColor>
             <skyColor>0.93,0.9,0.69</skyColor>
             <orbitalDistance>155</orbitalDistance>
@@ -72,24 +61,24 @@
             <rotationalPeriod>24000</rotationalPeriod>
             <hasRings>true</hasRings>
             <isKnown>true</isKnown>
-            <GasGiant>true</GasGiant>
+		<GasGiant>true</GasGiant>
             <gas>helium</gas>
-            <gas>hydrogen</gas>
-        </planet>
-        <planet name="Saturn" DIMID="15" customIcon="GasGiantBrown">
+		<gas>hydrogen</gas>
+	</planet>
+	<planet name="Big duck Egg" DIMID="15" customIcon="GasGiantBlue">
             <fogColor>0xB0C4DE</fogColor>
             <skyColor>0xB0C4DE</skyColor>
+		<biomeIds>140</biomeIds>
             <atmosphereDensity>20</atmosphereDensity>
             <orbitalDistance>180</orbitalDistance>
             <orbitalTheta>290</orbitalTheta>
             <orbitalPhi>120</orbitalPhi>
             <rotationalPeriod>48000</rotationalPeriod>
             <isKnown>true</isKnown>
-            <GasGiant>true</GasGiant>
-        </planet>
+	</planet>
     </star>
     <star name="Da Shuai Bi β" temp="1000" x="100" y="100" numPlanets="0" numGasGiants="0">
-        <planet name="Dracona" DIMID="16" customIcon="Moon">
+      <planet name="Dracona" DIMID="16" customIcon="Moon">
             <fogColor>0xEE82EE</fogColor>
             <skyColor>0xEE82EE</skyColor>
             <atmosphereDensity>70</atmosphereDensity>
@@ -100,8 +89,8 @@
             <rotationalPeriod>30000</rotationalPeriod>
             <isKnown>true</isKnown>
             <fillerBlock>minecraft:end_stone</fillerBlock>
-        </planet>
-        <planet name="Endest" DIMID="17" customIcon="Moon">
+      </planet>
+      <planet name="Endest" DIMID="17" customIcon="Moon">
             <atmosphereDensity>0</atmosphereDensity>
             <gravitationalMultiplier>80</gravitationalMultiplier>
             <orbitalDistance>150</orbitalDistance>
@@ -110,6 +99,6 @@
             <rotationalPeriod>45000</rotationalPeriod>
             <isKnown>true</isKnown>
             <fillerBlock>minecraft:end_stone</fillerBlock>
-        </planet>
+      </planet>
     </star>
 </galaxy>
