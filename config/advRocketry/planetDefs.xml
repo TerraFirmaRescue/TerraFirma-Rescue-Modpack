@@ -84,7 +84,7 @@
             <orbitalPhi>120</orbitalPhi>
             <rotationalPeriod>48000</rotationalPeriod>
             <isKnown>true</isKnown>
-			<hasRings>true</hasRings>
+            <hasRings>true</hasRings>
             <GasGiant>true</GasGiant>
         </planet>
     </star>
