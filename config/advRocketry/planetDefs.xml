@@ -1,8 +1,8 @@
 <galaxy>
-    <star name="Da Shuai Bi α" temp="100" x="0" y="0" numPlanets="0" numGasGiants="0">
+    <star name="Da Shuai Bi a" temp="10" x="0" y="0" numPlanets="0" numGasGiants="0">
         <planet name="Duck Egg" DIMID="10" customIcon="GasGiantBlue">
-            <fogColor>0x000080</fogColor>
-            <skyColor>0x000080</skyColor>
+            <fogColor>0,0,1</fogColor>
+            <skyColor>0,0,1</skyColor>
             <atmosphereDensity>40</atmosphereDensity>
             <gravitationalMultiplier>90</gravitationalMultiplier>
             <orbitalDistance>120</orbitalDistance>
@@ -26,8 +26,8 @@
                 <rotationalPeriod>41000</rotationalPeriod>
             </planet>
             <planet name="Duck Egg C" DIMID="12" customIcon="IceWorld">
-                <fogColor>0x4169E1</fogColor>
-                <skyColor>0x4169E1</skyColor>
+                <fogColor>0,0,1</fogColor>
+                <skyColor>0,0,1</skyColor>
                 <biomeIds>140</biomeIds>
                 <atmosphereDensity>45</atmosphereDensity>
                 <gravitationalMultiplier>50</gravitationalMultiplier>
@@ -51,15 +51,15 @@
             <biomeIds>92</biomeIds>
         </planet>
         <planet name="Venus" DIMID="18" customIcon="VENUS">
-            <fogColor>0xFFD700</fogColor>
-            <skyColor>0xFFD700</skyColor>
-            <atmosphereDensity>0</atmosphereDensity>
+            <fogColor>0,0,1</fogColor>
+            <skyColor>0,0,1</skyColor>
             <gravitationalMultiplier>70</gravitationalMultiplier>
             <orbitalDistance>70</orbitalDistance>
             <orbitalTheta>160</orbitalTheta>
             <orbitalPhi>360</orbitalPhi>
             <rotationalPeriod>1728000</rotationalPeriod>>
             <isKnown>true</isKnown>
+			<atmosphereDensity>20</atmosphereDensity>
             <biomeIds>120</biomeIds>
         </planet>
         <planet name="Evan" DIMID="14" customIcon="GasGiantRed">
@@ -88,10 +88,10 @@
             <GasGiant>true</GasGiant>
         </planet>
     </star>
-    <star name="Da Shuai Bi β" temp="1000" x="100" y="100" numPlanets="0" numGasGiants="0">
+    <star name="Da Shuai Bi b" temp="1000" x="100" y="100" numPlanets="0" numGasGiants="0">
         <planet name="Dracona" DIMID="16" customIcon="Moon">
-            <fogColor>0xEE82EE</fogColor>
-            <skyColor>0xEE82EE</skyColor>
+            <fogColor>0,0,1</fogColor>
+            <skyColor>0,0,1</skyColor>
             <atmosphereDensity>70</atmosphereDensity>
             <gravitationalMultiplier>120</gravitationalMultiplier>
             <orbitalDistance>100</orbitalDistance>
