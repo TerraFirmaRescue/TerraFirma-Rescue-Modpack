@@ -88,7 +88,6 @@ recipes.addShaped(<IC2:itemRecipePart:5>,
 [<gregtech:gt.multitileentity:26100>,<gregtech:gt.multitileentity:26100>,<gregtech:gt.multitileentity:26100>],
 [<gregtech:gt.meta.plate:8217>,<terrafirmacraft:item.Copper Sheet>,<gregtech:gt.meta.plate:8217>]]);
 
-
 recipes.remove(<IC2:blockMachine:7>);
 recipes.addShaped(<IC2:blockMachine:7>,[
 [<ore:craftingToolWrench>,<ore:MF1>,<ore:craftingToolHardHammer>],
@@ -111,7 +110,7 @@ recipes.addShaped(<IC2:blockMachine2>,[
 //chuan song ji
 
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 64, 0, [10000],
-[<gregtech:gt.multitileentity:32607>,<gregtech:gt.meta.plateCurved:500>,<gregtech:gt.meta.foil:27006>*2,],
+[<gregtech:gt.multitileentity:32607>,<gregtech:gt.meta.plateCurved:500>,<gregtech:gt.meta.foil:15402>*2,],
 [<liquid:glass>*144],
 [null],
 [<IC2:itemFluidCell>]);
