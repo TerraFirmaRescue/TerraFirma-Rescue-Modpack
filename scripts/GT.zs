@@ -1511,3 +1511,24 @@ recipes.addShaped(<gregtech:gt.multitileentity:32013>*6,
 [[<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>],
 [n,<terrafirmacraft:item.Jute Fibre>,n],
 [<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>,<terrafirmacraft:item.Jute Fibre>]]);
+
+//large mass fab
+recipes.remove(<gregtech:gt.multitileentity:17199>);
+recipes.addShaped(<gregtech:gt.multitileentity:17199>,
+[[<moegadd:MainframeCluster6>,<gregtech:gt.multiitem.technological:12106>,<moegadd:MainframeCluster6>],
+[<gregtech:gt.multiitem.technological:12106>,<gregtech:gt.multitileentity:18117>,<gregtech:gt.multiitem.technological:12106>],
+[<moegadd:MainframeCluster6>,<gregtech:gt.multiitem.technological:12106>,<moegadd:MainframeCluster6>]]);
+
+//large replicator
+recipes.remove(<gregtech:gt.multitileentity:17118>);
+recipes.addShaped(<gregtech:gt.multitileentity:17118>,
+[[<moegadd:MainframeCluster6>,<gregtech:gt.multiitem.technological:12106>,<moegadd:MainframeCluster6>],
+[<gregtech:gt.multiitem.technological:12126>,<gregtech:gt.multitileentity:18117>,<gregtech:gt.multiitem.technological:12126>],
+[<moegadd:MainframeCluster6>,<gregtech:gt.multiitem.technological:12106>,<moegadd:MainframeCluster6>]]);
+
+//large molecular scanner
+recipes.remove(<gregtech:gt.multitileentity:17117>);
+recipes.addShaped(<gregtech:gt.multitileentity:17117>,
+[[<gregtech:gt.multiitem.technological:12146>,<gregtech:gt.multiitem.technological:12146>,<gregtech:gt.multiitem.technological:12146>],
+[<gregtech:gt.multiitem.technological:12146>,<moegadd:MainframeCluster6>,<gregtech:gt.multiitem.technological:12146>],
+[<gregtech:gt.multiitem.technological:12146>,<gregtech:gt.multiitem.technological:12146>,<gregtech:gt.multiitem.technological:12146>]]);
