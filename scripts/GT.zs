@@ -21,6 +21,7 @@ val fw = <liquid:freshwater>;
 var x = [] as IItemStack[];
 for i, x in x { }
 recipes.addShapeless(,[]);
+recipes.remove();
 recipes.addShaped(,
 [[],
 [],
@@ -1532,3 +1533,17 @@ recipes.addShaped(<gregtech:gt.multitileentity:17117>,
 [[<gregtech:gt.multiitem.technological:12146>,<gregtech:gt.multiitem.technological:12146>,<gregtech:gt.multiitem.technological:12146>],
 [<gregtech:gt.multiitem.technological:12146>,<moegadd:MainframeCluster6>,<gregtech:gt.multiitem.technological:12146>],
 [<gregtech:gt.multiitem.technological:12146>,<gregtech:gt.multiitem.technological:12146>,<gregtech:gt.multiitem.technological:12146>]]);
+
+//distillation tower
+recipes.remove(<gregtech:gt.multitileentity:17101>);
+recipes.addShaped(<gregtech:gt.multitileentity:17101>,
+[[<gregtech:gt.multitileentity:26166>,<gregtech:gt.multitileentity:26166>,<gregtech:gt.multitileentity:26166>],
+[<gregtech:gt.multitileentity:26166>,<gregtech:gt.multitileentity:18102>,<gregtech:gt.multitileentity:26166>],
+[<ore:gt:circuit0>,<gregtech:gt.multitileentity:26166>,<ore:gt:circuit0>]]);
+
+//cracking tower
+recipes.remove(<gregtech:gt.multitileentity:17115>);
+recipes.addShaped(<gregtech:gt.multitileentity:17115>,
+[[<gregtech:gt.multitileentity:26166>,<gregtech:gt.multitileentity:26166>,<gregtech:gt.multitileentity:26166>],
+[<gregtech:gt.multitileentity:26166>,<gregtech:gt.multitileentity:18113>,<gregtech:gt.multitileentity:26166>],
+[<ore:gt:circuit0>,<gregtech:gt.multitileentity:26166>,<ore:gt:circuit0>]]);

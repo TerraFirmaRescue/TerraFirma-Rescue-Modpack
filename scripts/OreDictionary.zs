@@ -319,3 +319,14 @@ Shears.add(<terrafirmacraft:item.shears>);
 
 <ore:gt:circuit6>.add(<moegadd:Microchip>);
 //wei xing xin pian
+
+//advanced craftbenches
+<ore:earlyAdvCraftbench>.add(<gregtech:gt.multitileentity:5000>);
+<ore:earlyAdvCraftbench>.add(<gregtech:gt.multitileentity:5016>);
+<ore:earlyAdvCraftbench>.add(<gregtech:gt.multitileentity:5047>);
+<ore:earlyAdvCraftbench>.add(<gregtech:gt.multitileentity:5009>);
+<ore:earlyAdvCraftbench>.add(<gregtech:gt.multitileentity:5022>);
+<ore:earlyAdvCraftbench>.add(<gregtech:gt.multitileentity:5008>);
+<ore:earlyAdvCraftbench>.add(<gregtech:gt.multitileentity:5010>);
+<ore:earlyAdvCraftbench>.add(<gregtech:gt.multitileentity:5003>);
+<ore:earlyAdvCraftbench>.add(<gregtech:gt.multitileentity:5002>);
