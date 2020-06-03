@@ -115,3 +115,14 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 64, 0, [10000],
 [null],
 [<IC2:itemFluidCell>]);
 //tong yong liu ti dan yuan
+
+recipes.remove(<IC2:itemPartCircuit>);
+recipes.remove(<IC2:itemPartCircuitAdv>);
+//remove ic 2 circuits
+
+recipes.remove(<IC2:itemPartIridium>);
+recipes.remove(<IC2:itemPartCoalBall>);
+recipes.remove(<IC2:itemPartCoalChunk>);
+//remove ic 2 parts
+
+//todo: ban ic2 cables and add their needed recipes.

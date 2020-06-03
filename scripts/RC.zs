@@ -163,6 +163,7 @@ recipes.addShapeless(<moegadd:BlastPreparedIronOre>,[<terrafirmacraft:item.Small
 
 mods.railcraft.BlastFurnace.addRecipe(<moegadd:BlastPreparedIronOre>, false, false, 400, <terrafirmacraft:item.MetalNugget:9>*2);
 mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.MetalNugget:9>, false, false, 200, <terrafirmacraft:item.MetalNugget:17>);
+//TODO: Add powdered iron ore to produce iron, blast prepared iron ore to produce steel, 600ticks and 800ticks respectively
 
 //water reservoir
 recipes.remove(<Railcraft:machine.alpha:14>);
