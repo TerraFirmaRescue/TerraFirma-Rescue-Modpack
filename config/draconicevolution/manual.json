@@ -4,10 +4,10 @@
     "images":[],
     "content":
     [
-      "The very basis of Draconic Research.",
-      "This ore can be found in the overworld below y-level 8 as well as in The Nether at any y-level, although it is extremely rare in both. ",
-      "You can also find it in much larger quantities in The End, both in the main island and in the comets that randomly spawn throughout The End.",
-      "Drops 1 - 3 Draconium Dust when mined. This can be increased up to 4 - 12 with the Fortune III enchantment."
+      "对龙之进化的基础.",
+      "这种矿石在地图第8层以下生成，但是都是极其罕见. ",
+      "在主岛和彗星中随机产生, 你可以找到更大的数量.",
+      "开采1-3块龙矿时. 时运三附魔可以增加4-12的数量."
     ]
   },
   {
@@ -15,7 +15,7 @@
     "images":[],
     "content":
     [
-      "This is the dust dropped when mining Draconium Ore. It can be smelted into Draconium Ingots."
+      "挖掘龙矿会掉落龙尘，龙尘可以熔炼成龙锭."
     ]
   },
   {
@@ -23,7 +23,7 @@
     "images":[],
     "content":
     [
-      "This item is now deprecated and will be removed in 1.0.2. If you still have some you should smelt it into Draconium Ingots before you update to 1.0.2."
+      "这个物品现在已经没用，将会在1.0.2删除。如果你有你应该冶炼成龙锭 更新到1.0.2之前仍然有."
     ]
   },
   {
@@ -31,30 +31,30 @@
     "images":[],
     "content":
     [
-      "The product of smelting Draconium Dust in a furnace. Used in most Draconic Evolution recipes.",
+      "将龙尘放到熔炉里烧一烧，用于合成龙之工具",
       "[c]item.draconicevolution:draconiumIngot:0"
     ]
   },
   {
     "name":"tile.draconicevolution:draconium",
-    "nameL":"Draconium Block",
+    "nameL":"龙块",
     "meta":0,
     "images":[],
     "content":
     [
-      "A storage block for draconium.",
+      "一个龙之能量方块.",
       "[c]tile.draconicevolution:draconium:0",
-      "This block is resistant to the wither."
+      "这个方块很硬，可以抵御爆炸，甚至连凋零也无法破坏。汉化组发现这物品可以无限刷的BUG！你觉得我会告诉你吗？"
     ]
   },
   {
     "name":"tile.draconicevolution:draconium",
-    "nameL":"Charged Draconium Block",
+    "nameL":"充能龙块",
     "meta":2,
     "images":[],
     "content":
     [
-      "Used in the Ritual of Draconic Resurrection and the Ritual of Awakening. Place a Draconium Block in a charging device and 100 million RF later you have a Charged Draconium Block!",
+      "用于龙的复活仪式和觉醒仪式，将一个龙块放进拥有1亿能量的能量注入器后你就会获得一个充能龙块！这可能需要很长时间。",
       "[c]tile.draconicevolution:draconium:2"
     ]
   },
@@ -63,7 +63,7 @@
     "images":[],
     "content":
     [
-      "This is the first tier component used in many Draconic Evolution recipes.",
+      "这是基础的龙芯，用于制作大部分基础的机器和工具.",
       "[c]item.draconicevolution:draconicCore:0"
     ]
   },
@@ -72,20 +72,20 @@
     "images":[],
     "content":
     [
-      "This is a higher tier version of the Draconic Core that can be used to craft more advanced recipes.",
+      "这是一个高级的龙芯，用于制作更高级的装备.",
       "[c]item.draconicevolution:wyvernCore:0"
     ]
   },
   {
-    "name":"info.Tool Config GUI",
+    "name":"info.工具配置界面",
     "images":[],
     "content":
     [
-      "This GUI is used to configure most Draconic Evolution tools and armor.",
-      "The default key to open this gui is 'C'",
-      "When you open the GUI you will see all the items in your inventory. Items that can be configured will be highlighted. When you click on one of the highlighted items you will see a list of adjustable settings specific to that item.",
-      "You can also use this GUI to apply and remove enchantments. In the list of options for the item there is an inventory button. This will open a new GUI in which you will have access to your inventory.",
-      "Enchantment slots can be found the right. If the item has any additional inventory slots such as the obliteration filter for the Draconic tools those slots will show at the top of the GUI."
+      "该界面用于配置最强大的龙之工具和盔甲.",
+      "打开这个图形用户界面的默认键是'C'",
+      "当你打开这个图形用户界面时，你会看到所有的物品在你的库存。可配置的物品将被高亮显示。当你点击一个突出的项目，你会看到一个可调整的设置列表，具体到该项目。",
+      "你也可以使用这个GUI应用和删除的魔法。在该项目的选项列表中有一个库存按钮。这将打开一个新的图形用户界面，您将访问您的库存。",
+      "魔法槽可以找到合适的。如果项目有任何额外的物品如闭塞滤波器为龙的工具这些槽将在GUI上显示。"
     ]
   },
   {
@@ -93,10 +93,10 @@
     "images":[],
     "content":
     [
-      "Tired of your slow, old diamond pick? Maybe it's time to upgrade! Wyvern tools run on RF and never break.",
-      "All mining tools have an option to adjust mining speed, Dig AoE and AoE safe mode.",
-      "Dig AoE: Allows you to adjust the mining AoE of the tool. Wyvern AoE: 1x1 and 3x3 (Upgradable)",
-      "AoE Safe mode: If enabled the tool will check for any tile entities in the AoE and if it finds any the tool will not mine.",
+      "厌倦了你缓慢的挖掘速度，总是使用钻石制品？是时候升级了！双足飞龙工具使用RF能量，效率高！而且永远用不坏！",
+      "所有的龙之镐都可以快速挖掘、范围挖掘和单方块挖掘",
+      "挖掘范围：你可以调整工具的挖掘范围，1X1和3X3，可升级",
+      "范围挖掘安全模式：很安全 开启该模式后，如果工具挖掘范围不是单个方块的话，安全模式就会检测所挖掘的对象，然后该范围内的方块只有被挖掘的方块被挖掘",
       "[c]item.draconicevolution:wyvernPickaxe:0"
     ]
   },
@@ -105,10 +105,10 @@
     "images":[],
     "content":
     [
-      "Tired of your slow, old diamond shovel? Maybe it's time to upgrade! Wyvern tools run on RF and never break.",
-      "All mining tools have an option to adjust mining speed, Dig AoE and AoE safe mode.",
-      "Dig AoE: Allows you to adjust the digging area of the tool. Wyvern AoE: 1x1 and 3x3 (Upgradable)",
-      "AoE Safe mode: If enabled the shovel will check for any tile entities in the AoE and if it finds any it will not dig.",
+      "厌倦了你缓慢的挖掘速度，总是使用钻石制品？是时候升级了！双足飞龙工具使用RF能量，效率极高！而且永远用不坏！",
+      "所有的铲子都可以快速挖掘、范围挖掘和单方块挖掘",
+      "挖掘范围：允许您调整工具的挖掘范围，1X1和3X3，更高级的镐字也会有更大的挖掘范围，可升级",
+      "范围挖掘安全模式：很安全 开启该模式后，如果工具挖掘范围不是单个方块的话，安全模式就会检测所挖掘的对象，然后该范围内的方块只有被挖掘的方块被挖掘",
       "[c]item.draconicevolution:wyvernShovel:0"
     ]
   },
@@ -117,10 +117,10 @@
     "images":[],
     "content":
     [
-      "Ordinary weaponry not good enough anymore? Using draconic knowledge you have found a way to imbue an ordinary diamond sword with the power of Draconium.",
-      "+20 Attack damage (Upgradable)",
-      "+10% Mob Health (Adds 10% of the mob's own health to the attack damage)",
-      "3x3 AoE Attack (Upgradable)",
+      "普通的武器不够好？使用龙力，你已经找到一种方法来强化普通的钻石剑，双足飞龙剑！",
+      "+20攻击伤害，可升级",
+      "+10% 生物生命值",
+      "3×3攻击范围，可升级",
       "[c]item.draconicevolution:wyvernSword:0"
     ]
   },
@@ -129,56 +129,56 @@
     "images":[],
     "content":
     [
-      "Looking for a more powerful bow with some fancy features? This is the one for you.",
-      "Adjustable Settings:",
-      "-[Base Damage] This multiplied by the arrows velocity on impact determines the inflicted damage",
-      "-[Arrow Velocity Modifier] +0 is equivalent to a vanilla bow.",
-      "-[Auto Fire] The bow will automatically fire when it reaches full draw.",
-      "-[Explosive Power] Exactly what it sounds like!",
-      "-[Magnification] Allows you to zoom in on your target for better accuracy.",
-      "The RF cost per shot if determined by multiplying the settings for Damage Velocity and Explosion power. This means that simply setting everything to Max requires exponentially more power then setting say damage to maximum.",
-      "Energy Capacity, Draw Speed, Arrow Velocity and Base Damage can all be upgraded",
-      "This bow is 10X more accurate then a vanilla bow. Meaning the arrow will land closer to where you were actually aiming and wont drift as much in flight",
+      "寻找一个更强大的弓与一些奇特的功能？这个给你。",
+      "可调整的设置：",
+      "-[基本伤害] 箭头击中目标的速度越大，伤害加成越大。",
+      "-[箭头速度调整器] 原版弓的数值是+0。",
+      "-[自动开火] 弓会在被拉满以后自动射击。",
+      "-[爆炸性的力量] 和它的字面意思一样！",
+      "-[放大] 可以让你放大来射得更准。",
+      "每射一次所消耗的RF取决于设置中的攻击速度和爆炸力量的倍数。这意味着只要把所有设置调到最大需要指数型增长的更多的能量。",
+      "能源容量，拉弓速度，箭头速度和基本伤害都可以升级。",
+      "这把弓比原版的弓精确十几倍。意味着箭头会射的比你瞄准的地方更近，箭头在飞行过程中不会偏移太多。",
+	  
       "[c]item.draconicevolution:wyvernBow:0"
     ]
   },
   {
     "name":"item.draconicevolution:draconiumFluxCapacitor",
-    "nameL":"Wyvern Flux Capacitor",
+    "nameL":"双足飞龙通量电容器",
     "meta":0,
     "images":[],
     "content":
     [
-      "Tired of your tools and armor running out of energy when you need them most, you have figured out how to create an item capable of storing an immense amount of energy and transferring it to your items as they need it.",
+      "厌倦了你的工具和护甲的能量在你最需要它们的时候,你已经找到了如何创建一个物品能够存储大量的能量,将它转移到你的工具和护甲,因为工具和护甲需要它.",
       "[c]item.draconicevolution:draconiumFluxCapacitor:0"
     ]
   },
   {
     "name":"item.draconicevolution:draconiumEnergyCore",
-    "nameL":"Wyvern Energy Core",
+    "nameL":"双足飞龙的能量核心",
     "meta":0,
     "images":[],
     "content":
     [
-      "This component is used in devices that need to be able to store energy.",
+      "这是个能量储存器的材料.",
       "[c]item.draconicevolution:draconiumFluxCapacitor:0"
     ]
   },
   {
     "name":"item.draconicevolution:magnet",
-    "nameL":"Item Dislocator",
+    "nameL":"物品错位器",
     "meta":1,
     "images":[],
     "content":
     [
-      "Item Dislocator",
-      "You have found by combining the unique powers of the Dislocator and a simple magnet you can create a way to easily pick up items dropped on the ground.",
+      "物品错位器",
+      "你发现了把独特的能量和错位器集合起来会创造出一个能轻松捡起掉在地上的物品的小磁铁。",
       "[c]item.draconicevolution:magnet:0",
       "",
-      "Awakened Item Dislocator",
-      "Further testing has revealed that upgrading the Item dislocator with a bit of power and Awakened Draconium can greatly increase the range and effectiveness.",
-      "[c]item.draconicevolution:magnet:1",
-      "Sneaking will temporarily disable ether Item Dislocator."
+      "觉醒的物品错位器",
+      "进一步的测试揭示出用觉醒龙力和一点点的能量可以大大的改进它的范围和功效。",
+      "[c]item.draconicevolution:magnet:1"
     ]
   },
   {
@@ -186,9 +186,9 @@
     "images":[],
     "content":
     [
-      "Stronger than diamond - you can now withstand even greater blows.",
-      "A full set gives total fire immunity.",
-      "+20 Base Shield Capacity",
+      "比钻石更坚硬，现在你能够承受住更多伤害.",
+      "火焰保护.",
+      "+20 基本护甲",
       "[c]item.draconicevolution:wyvernHelm:0"
     ]
   },
@@ -197,9 +197,9 @@
     "images":[],
     "content":
     [
-      "Infusing the armor with Draconium, you vastly improve its resistance.",
-      "A full set gives total fire immunity.",
-      "+80 Base Shield Capacity",
+      "注入龙力的盔甲，大大增强了防御力.",
+      "火焰保护.",
+      "+80 基本护甲",
       "[c]item.draconicevolution:wyvernChest:0"
     ]
   },
@@ -208,10 +208,10 @@
     "images":[],
     "content":
     [
-      "You feel even stronger and faster now that you have infused diamond leggings with Draconium.",
-      "A full set gives total fire immunity.",
-      "+ Speed boost",
-      "+80 Base Shield Capacity",
+      "你能感觉到注入龙力的护腿使你的防御力更强，速度更快.",
+      "火焰保护.",
+      "速度.",
+      "+80 基本护甲",
       "[c]item.draconicevolution:wyvernLeggs:0"
     ]
   },
@@ -220,11 +220,11 @@
     "images":[],
     "content":
     [
-      "You learn to improve diamond boots. Draconium seems to have given you greater agility.",
-      "A full set gives total fire immunity.",
-      "+ Reduced fall damage",
-      "+ Jump boost",
-      "+20 Base Shield Capacity",
+      "你学会了增强钻石靴子。龙力似乎让你更加敏捷.",
+      "火焰保护",
+      "摔落保护",
+      "跳跃提升",
+      "+20 基本护甲",
       "[c]item.draconicevolution:wyvernBoots:0"
     ]
   },
@@ -233,9 +233,9 @@
     "images":[],
     "content":
     [
-      "You have managed to infuse the powers of The End with your knowledge of the Draconic to create a basic teleporter, but at a cost.",
-      "The energies binding them are unstable and only last for 10 uses and will take some of your life energy with each use ",
-      "It can only be linked to a single location, but works across dimensions. Once used up, you must create a new one.",
+      "你要设法运用末影能量和你关于龙的知识来创造一个基础传送点，这是有代价的.",
+      "绑定能量总是不稳定，它只能用20次并且每次使用都会扣血.",
+      "它只能绑定1个点，但它能够跨世界传送，可惜用完就要重新做.",
       "[c]item.draconicevolution:teleporterMKI:0"
     ]
   },
@@ -244,15 +244,15 @@
     "images":[],
     "content":
     [
-      "Learning how draconic powers interact with the powers of the endermen, you have created the ultimate teleporter.",
-      "You can now store up to 100 locations and use the endermen’s own pearls as fuel.",
-      "This device can teleport you extreme distances - even across dimensions - at will.",
-      "Shift + right click to open the GUI. Most functionality should be self explanatory.",
-      "On the left is the destination list. Each destination has a lock button that prevents you from accidentally overwriting or deleting it.",
-      "On the right, starting from the top, you have information about the selected destination, an option to rename the selected destination, an option to change the selected destination to your current coordinates and an option to delete the selected destination.",
-      "Under that is the fuel, an option to teleport to the selected destination, an option to add your current location as a new destination and an option to add Ender Pearls from your inventory to be used as fuel (shift + click to add a stack).",
-      "You can also shift + scroll with the item in your hand to cycle through the destinations without opening the GUI or right-click to teleport to the current destination.",
-      "You can also teleport players and mobs by left-clicking them - however players must be holding shift and mobs can not be teleported across dimensions.",
+      "通过学习龙力与末影之力之间的相互作用，你做出了高级传送石。.",
+      "你现在可以储存多达100个的传送点，而且可以用末影珍珠做燃料.",
+      "这块传送石可以帮助你随心所欲地在任何世界的任何地点进行传送，只要你去过.",
+      "Shift + 右键来打开界面，大部分的功能已经标注说明.",
+      "左边是目的地列表，每个目的地都有一个锁定按钮，可以防止你手滑修改或删除掉.",
+      "右边从上往下你可以看到目的地信息、修改选项、把坐标修改到你当前位置和删除的选项.",
+      "在那些东西的下面是燃料、传送按钮、把当前坐标添加为新的传送点和从背包里添加末影珍珠作为燃料的选项 Shift + 左键添加一组.",
+      "你也可以在游戏界面对着传送石Shift + 鼠标滚轮来选择目的地，右键传送.",
+      "你还可以左键把玩家和生物传送走，然而传送玩家要按住Shift键，生物不能跨越世界传送.",
       "[c]item.draconicevolution:teleporterMKII:0"
     ]
   },
@@ -261,12 +261,12 @@
     "images":[],
     "content":
     [
-      "You have figured out how to create a simple pedestal on which you can place your Basic or Advanced Charms of Dislocation.",
-      "Simply right-click with a Charm in your hand to place it on the pedestal, then right-click the pedestal to teleport.",
-      "The advantage of this is that the Charms won't take damage or use fuel. The disadvantage is you cannot bring them with you to your destination.",
-      "To remove the charm from the pedestal simply shift + right-click with an empty hand.",
-      "When it is holding a Basic Charm of Dislocation that has been renamed in an anvil or an Advanced Charm of Dislocation with a destination set either the name or destination will be displayed above the pedestal respectively.",
-      "If you hold shift all names will be hidden except the one you are looking at. (Shift behavior can be reversed in the config)",
+      "你已经知道了怎样制作一个可以放基础或高级传送宝石的底座.",
+      "把宝石拿在手里右键底座就能把它放上去，然后右键底座传送.",
+      "底座的优点是宝石不会掉耐久和使用燃料，缺点是你不能把宝石带到目的地去.",
+      "空手Shift + 右键底座可以把宝石拿下来.",
+      "当在铁砧里改过名后的基础或高级传送宝石放在底座上时，宝石的名字和目的地都会在底座上方显示出来.",
+      "如果你按住Shift，除了你看着的底座外，所有名字都会隐藏 Shift键的作用可以在config里改成相反的",
       "[c]tile.draconicevolution:teleporterStand:0"
     ]
   },
@@ -275,36 +275,36 @@
     "images":[],
     "content":
     [
-      "You have discovered that by combining one of the strongest blocks in existence with the power of Draconium you can create a block that no creature can destroy.",
-      "This block has twice the explosion and mining resistance of Obsidian. It also requires a stronger pickaxe.",
+      "结合龙块的坚硬这一特点，你发现将龙力注入黑曜石后可以创造出一个没人能打破的新方块，就连末影龙和凋零也没辙.",
+      "这个方块的防爆性和挖掘时间是黑曜石的两倍，挖掘它也需要一个更好的镐子.",
       "",
-      "You wonder what other uses this block could have...",
+      "你想知道这个方块还有什么其他的用途......",
       "[c]tile.draconicevolution:infusedObsidian:0"
     ]
   },
   {
     "name":"tile.draconicevolution:dislocatorReceptacle",
-    "nameL":"Draconic Portal",
+    "nameL":"龙之门",
     "images":["https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/dislocatorReceptical.png"],
     "content":
     [
-      "Like Obsidian, Infused Obsidian can be used to create a magical portal, but with some big differences. This portal can be any size between 1x1 and 150x150 blocks and using a dislocator to set the destination this portal can send you to any location.",
-      "To build a portal build a rectangular structure similar to a Nether portal, but any dimensions you like up to 150x150. Then replace any of the structural blocks (excluding the corners) with a Dislocator Receptacle.",
-      "To activate the portal simply right-click the Receptacle with a Basic or Advanced Charm of Dislocation that is bound to a location.",
-      "You can also pipe Dislocators in and out of the Receptacle with hoppers or other methods of automation.",
-      "The portal can be either horizontal or vertical.",
+      "就像黑曜石，注入龙力的黑曜石也可以做一个神奇的传送门，它的大小可以从1X1到150X150，可以用传送石来设置目的地.",
+      "制作转送门的方法和地狱门一样，但是最大可以盖到150x150格，然后用龙之门传送器替换掉其中一个方块.",
+      "激活传送门只需用已绑定位置的基础或高级传送宝石右键传送容器.",
+      "你也可以用漏斗或其他自动的方法把传送器放进或拿出传送容器.",
+      "门的方向随意，可横可竖.",
       "https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/dislocatorReceptical.png",
       "[c]tile.draconicevolution:dislocatorReceptacle:0"
     ]
   },
   {
     "name":"tile.draconicevolution:draconium",
-    "nameL":"Resurrection Stone",
+    "nameL":"复活石",
     "meta":1,
     "images":[],
     "content":
     [
-      "The key component in the Ritual of Draconic Resurrection.",
+      "龙复活仪式中的关键零件.",
       "[c]tile.draconicevolution:draconium:1"
     ]
   },
@@ -313,10 +313,10 @@
     "images":[],
     "content":
     [
-      "Perhaps not your brightest idea... You found a way to travel even longer distances using ender pearls by strapping them to the end of an arrow.",
-      "This, of course, makes the arrow a lot heavier. Too heavy for a regular bow. Leaving you no choice but to use either a Wyvern or Draconic Bow.",
-      "So, what could go wrong, you ask? Well, as I'm sure you are aware, ender pearls on their own are a rather painful way to travel. Now add the power of a Wyvern - or worse - a Draconic Bow to that and you have a recipe for extreme pain.",
-      "Be sure to wear your best fall protection. And just hope it's enough.",
+      "这也许不是最明智的办法......用末影珍珠装在在箭头上来传送的更远的方法.",
+      "这当然会使箭更重，以至于一个正常的弓不能射出去，除了双足飞龙弓或龙之弓外你别无选择.",
+      "所以，你会问什么东西有问题？好吧，你一定察觉到了用末影珍珠瞬移很痛。现在加上双足飞龙弓，或者更糟的龙之弓，你得到了一个极端痛苦的合成方法.",
+      "一定要穿上你最好的摔落保护装备，希望它能承受的住.",
       "[c]item.draconicevolution:enderArrow.name:0"
     ]
   },
@@ -325,7 +325,7 @@
     "images":[],
     "content":
     [
-      "You notice that with Draconic Weapons you can now occasionally steal the souls of the things you kill."
+      "你现在注意到了用龙之武器可以偶尔偷走你所杀之物的灵魂."
     ]
   },
   {
@@ -333,13 +333,13 @@
     "images":[],
     "content":
     [
-      "Dropped by the Ender Dragon and Draconic Dragon. It is your belief that this immensely powerful item may hold the key to unlocking the true power of Draconium using an ancient ritual known as the Ritual of Awakening.",
-      "The Ritual:",
-      "1. Drop a Dragon Heart on the ground and activate it with an explosion.",
-      "2. Drop 4 to 16 Draconic Cores on the ground near the activated heart (4 per Charged Draconium Block). A few seconds after its initial activation it will draw all nearby items toward it. Anything that is not a Draconic Core will be destroyed.",
-      "3. Now quickly place 1 to 4 (depending on how many Cores you dropped) Charged Draconium Blocks near the heart.",
-      "4. You will know it's working when you see the heart's energy targeting the Charged Draconium Blocks. Now stand back and watch the magic happen.",
-      "You can only do this ritual once per heart so you best make the most of it."
+      "末影龙和梦幻龙的掉落物。这个有着巨大能量的物品可能是用古代的苏醒仪式揭开龙力真正力量的钥匙.",
+      "复活仪式:",
+      "1. 把龙的心脏扔在地上，用一场爆炸将它激活.",
+      "2. 把4-16个龙之核心放置到激活的龙心旁 每个充能龙力方块4个龙芯。几秒后的初次激活会把附近除了龙之核心以外的所有方块吸进去.",
+      "3. 快速的扔1-4个充能龙力方块到龙心旁.",
+      "4. 当龙心给充能龙力方块充能时就意味着它开始工作了。现在站远点静静的看奇迹的发生.",
+      "每次仪式只能用一个龙心以免浪费."
     ]
   },
   {
@@ -347,9 +347,9 @@
     "images":[],
     "content":
     [
-      "You have been studying the interactions of Draconium with various materials and have come to realize that this is only an inert state.",
-      "You have discovered a method to bring out the true power of Draconium using a complex ritual involving a Dragon Heart.",
-      "(See the Dragon Heart page for details)",
+      "你一直在学习龙力与各种物质之间不同的联系，已经意识到这只是一个惰性的状态.",
+      "你已经发现了一个用龙心释放出龙力真正力量的复杂仪式.",
+      "在龙心页面查看详情",
       "[c]item.draconicevolution:draconicIngot:0"
     ]
   },
@@ -358,11 +358,11 @@
     "images":[],
     "content":
     [
-      "You have been studying the interactions of Draconium with various materials and have come to realize that this is only an inert state.",
-      "You have discovered a method to bring out the true power of Draconium using a complex ritual involving a dragon heart.",
-      "(See the Dragon Heart page for details)",
+      "你一直在学习龙力与各种物质之间不同的联系，已经意识到这只是一个惰性的状态.",
+      "你已经发现了一个用龙心释放出龙力真正力量的复杂仪式.",
+      "在龙心页面查看详情",
       "[c]tile.draconicevolution:draconicBlock:0",
-      "This block is resistant to the wither."
+      "这个方块同样可以防爆，且能够困住凋零."
     ]
   },
   {
@@ -370,18 +370,18 @@
     "images":[],
     "content":
     [
-      "This component is used to craft the most advanced draconic items.",
+      "这个材料可以用来制作最高级的龙之物品.",
       "[c]item.draconicevolution:awakenedCore:0"
     ]
   },
   {
     "name":"item.draconicevolution:draconiumEnergyCore",
-    "nameL":"Draconic Energy Core",
+    "nameL":"龙之能量核心",
     "meta":1,
     "images":[],
     "content":
     [
-      "This is a more powerful version of the Wyvern Energy Core used in the most advanced recipes.",
+      "这是双足飞龙核心的能量升级版，用于更高级的合成.",
       "[c]item.draconicevolution:draconiumEnergyCore:1"
     ]
   },
@@ -390,11 +390,11 @@
     "images":[],
     "content":
     [
-      "Further Draconic research has shown you ways to even greater power...",
-      "Mining:",
-      "  1x1x1 to 5x5x1 Base AoE with depth independently adjustable (Upgradable)",
-      "  Junk filter",
-      "  AoE safe mode to ensure you don't accidentally mine your entire base",
+     "对龙的深入研究已经为你指明了一条通往更强力量的路......",
+	 "挖掘：",
+      "  1x1x1 到 5x5x1 基本范围挖掘，深度可独立调节，可升级",
+      "  垃圾过滤器",
+      "  安全范围挖掘模式 确保你不会手滑把你整个家都挖掉",
       "[c]item.draconicevolution:draconicPickaxe:0"
     ]
   },
@@ -403,11 +403,12 @@
     "images":[],
     "content":
     [
-      "Further Draconic research has shown you ways to even greater power...",
-      "Mining:",
-      "  1x1x1 to 5x5x1 Base AoE with depth independently adjustable (Upgradable)",
-      "  Junk filter",
-      "  AoE safe mode to ensure you don't accidentally mine your entire base",
+      "对龙的深入研究已经为你指明了一条通往更强力量的路......",
+      "挖掘：",
+      "  1x1x1 到 5x5x1 基本范围挖掘，深度可独立调节，可升级",
+      "  垃圾过滤器",
+      "  安全范围挖掘模式 确保你不会手滑把你整个家都挖掉",
+
       "[c]item.draconicevolution:draconicShovel:0"
     ]
   },
@@ -416,11 +417,11 @@
     "images":[],
     "content":
     [
-      "Further Draconic research has shown you ways to even greater power...",
-      "Chopping:",
-      "  1x1x1 to 5x5x1 Base AoE with depth independently adjustable (Upgradable)",
-      "  Tree Mode (Chop down an entire tree in one swing)",
-      "  AoE safe mode to ensure you don't accidentally mine your entire base",
+      "对龙的深入研究已经为你指明了一条通往更强力量的路......",
+      "砍树：",
+      "  1x1x1 到 5x5x1 基本范围挖掘，深度可独立调节，可升级",
+      "  科学的砍树模式，一下就能砍倒整棵树",
+      "  安全范围挖掘模式 确保你不会手滑把你整个家都挖掉",
       "[c]item.draconicevolution:draconicAxe:0"
     ]
   },
@@ -429,11 +430,12 @@
     "images":[],
     "content":
     [
-      "Further Draconic research has shown you ways to even greater power...",
-      "Further Draconic research has shown you ways to even greater power...",
-      "Tilling:",
-      "  1x1 to 7x7 Base AoE (Upgradable)",
-      "  will dig or replace dirt (if you have dirt in your inventory).",
+      "对龙的深入研究已经为你指明了一条通往更强力量的路......",
+      "这个工具可以锄一块9x9的地，正中央会帮你生成水源.",
+      "它也可以挖或填9x9泥土来锄地，但背包里要有足够的泥土.",
+      "耕地：",
+      "  1x1 到 7x7基本范围挖掘，可升级",
+      "  会自动挖或者填泥土，前提是你的背包里有泥土。",
       "[c]item.draconicevolution:draconicHoe:0"
     ]
   },
@@ -442,10 +444,10 @@
     "images":[],
     "content":
     [
-      "Seeking an even more powerful weapon you combine your Wyvern sword with Awakened Draconium to make the ultimate sword.",
-      "+40 Attack damage (Upgradable)",
-      "+20% Mob Health (Adds 20% of the mob's own health to the attack damage)",
-      "5x5 AoE Attack (Upgradable)",
+      "把觉醒龙力和双足飞龙剑结合起来就可以得到更强大的武器——龙之剑.",
+      "+40 攻击伤害，可升级",
+      "+20% 生物生命 增加生物生命20%血量的伤害",
+      "5x5 范围伤害，可升级",
       "[c]item.draconicevolution:draconicSword:0"
     ]
   },
@@ -454,18 +456,18 @@
     "images":[],
     "content":
     [
-      "Further Draconic research has shown you ways to even greater power...",
-      "Adjustable Settings:",
-      "-[Base Damage] This multiplied by the arrows velocity on impact determines the inflicted damage",
-      "-[Arrow Velocity Modifier] +0 is equivalent to a vanilla bow.",
-      "-[Auto Fire] The bow will automatically fire when it reaches full draw.",
-      "-[Explosive Power] Exactly what it sounds like!",
-      "-[Shock Wave Power] The arrow will generate an extremely powerful shock wave on impact that will deal a large amount of damage to entities within the blast radius. This will not destroy blocks and is only possible with Arrow Of Draconic Fire enabled.",
-      "-[Arrow of Draconic Fire] Similar to Infinity this allows you to fire without needing arrows in your inventory. But it also increases inflicted damage by 10% allows you to use the Shock Wave effect and is 50% lighter meaning it is less effected by gravity in flight.",
-      "-[Magnification] Allows you to zoom in on your target for better accuracy.",
-      "The RF cost per shot if determined by multiplying the settings for Damage Velocity and Explosion power. This means that simply setting everything to Max requires exponentially more power then setting say damage to maximum.",
-      "Energy Capacity, Draw Speed, Arrow Velocity and Base Damage can all be upgraded",
-      "This bow is 10X more accurate then a vanilla bow. Meaning the arrow will land closer to where you were actually aiming and wont drift as much in flight",
+      "对龙的深入研究已经为你指明了一条通往更强力量的路......",
+      "可调整的设置：",
+      "-[基本伤害] 箭头击中目标的速度越大，伤害加成越大。",
+      "-[箭头速度调整器] 原版弓的数值是+0。",
+      "-[自动开火] 弓会在被拉满以后自动射击。",
+      "-[爆炸性的力量] 和它的字面意思一样！",
+      "-[激波力量] 箭头会产生一股极强的冲击波，在爆炸范围内对目标造成巨大的伤害。这个功能不会破坏方块，而且只有在龙火之矢开启的情况下才会起作用。",
+      "-[龙火之矢] 功能和无限附魔差不多，可以让你在背包里没有箭的情况下射击。但是，它也有10%的伤害加成，允许你使用激波力量，比普通的箭轻50%，在空中受到重力的影响更小。",
+	  "-[放大] 可以让你放大来射得更准。",
+      "每射一次所消耗的RF取决于设置中的攻击速度和爆炸力量的倍数。这意味着只要把所有设置调到最大需要指数型增长的更多的能量。",
+      "能源容量，拉弓速度，箭头速度和基本伤害都可以升级。",
+      "这把弓比原版的弓精确十几倍。意味着箭头会射的比你瞄准的地方更近，箭头在飞行过程中不会偏移太多。",
       "[c]item.draconicevolution:draconicBow:0"
     ]
   },
@@ -474,27 +476,27 @@
     "images":[],
     "content":
     [
-      "After great pains you have mastered the powers of the Draconic and created the ultimate weapon and destructive tool!",
-      "Mining:",
-      "  Extreme mining speed",
-      "  1x1x1 to 7x7x7 Base AoE with depth independently adjustable (Upgradable)",
-      "  Junk filter",
-      "  AoE safe mode to ensure you don't accidentally mine your entire base",
-      "Attack:",
-      "  +60 Attack damage (Upgradable)",
-      "  +30% Mob Health (Adds 30% of the mob's own health to the attack damage)",
-      "  1x1 to 7x7 AOE Attack (Upgradable)",
+      "在经历了漫长的疲劳和痛苦后，你掌握了龙之力量，创造出了永远不能落入他人之手的武器和工具!",
+      "挖矿:",
+      "  终极的挖掘速度",
+      "  1X1X1到7X7X7的基本范围挖掘，可独立调整深度，可升级",
+      "  垃圾过滤器",
+      "  安全范围挖掘模式 确保你不会手滑把你整个家都挖掉",
+      "攻击:",
+      "  +60 攻击伤害，可升级",
+      "  +30% 生物生命 增加生物生命30%血量的伤害",
+      "  1X1到7X7 范围伤害，可升级",
       "[c]item.draconicevolution:draconicDistructionStaff:0"
     ]
   },
   {
     "name":"item.draconicevolution:draconiumFluxCapacitor",
-    "nameL":"Draconic Flux Capacitor",
+    "nameL":"龙之通量电容",
     "meta":1,
     "images":[],
     "content":
     [
-      "With this upgrade you will be able to go for days without needing to stop and recharge.",
+      "有了这个升级你可以浪好几天都不用停下来充能.",
       "[c]item.draconicevolution:draconiumFluxCapacitor:1"
     ]
   },
@@ -503,12 +505,12 @@
     "images":[],
     "content":
     [
-      "No longer do you fear the night. You now can now see all the time, regardless of what is out there.",
-      "- Night Vision",
-      "- Cures negative potion effects",
-      "- Bypass suffocation and drowning damage",
-      "- Removes mining slowdown under water (Aqua Affinity)",
-      "+60 Base Shield Capacity",
+      "再也不用害怕黑夜，你任何时候都看得清所有东西，除非你摘掉眼镜.",
+      "- 夜视",
+      "- 牛奶",
+      "- 你可以不用呼吸了，免疫窒息和溺水伤害",
+      "- 水下速掘",
+      "+60 基本护甲",
       "[c]item.draconicevolution:draconicHelm:0"
     ]
   },
@@ -517,11 +519,11 @@
     "images":[],
     "content":
     [
-      "Using the heart of a dragon you are stronger and have the gift of flight.",
-      "- Flight",
-      "- Removes mining slowdown while in the air",
-      "- Fire immunity",
-      "+200 Base Shield Capacity",
+      "使用龙之心的你变得更强，你能够飞行了.",
+      "- 飞行",
+      "- 空中速掘",
+      "- 火焰保护",
+      "+200 基本护甲",
       "[c]item.draconicevolution:draconicChest:0"
     ]
   },
@@ -530,9 +532,9 @@
     "images":[],
     "content":
     [
-      "The soul of a dragon protects you and moves you even faster. Improved speed boost.",
-      "- Speed boost",
-      "+180 Base Shield Capacity",
+      "龙的灵魂会保护你，让你跑得更快.",
+      "- 速度提升",
+      "+180 基本护甲",
       "[c]item.draconicevolution:draconicLeggs:0"
     ]
   },
@@ -541,11 +543,11 @@
     "images":[],
     "content":
     [
-      "Stronger, faster, better than before. The heart of a dragon grants you higher jumping.",
-      "- Fall protection",
-      "- Jump boost",
-      "- Up Hill Step",
-      "+60 Base Shield Capacity",
+      "龙之心让你更强、更快、跳的更高.",
+      "- 摔落保护",
+      "- 跳跃提升",
+      "- 自动跳跃",
+      "+60 基本护甲",
       "[c]item.draconicevolution:draconicBoots:0"
     ]
   },
@@ -554,7 +556,7 @@
     "images":[],
     "content":
     [
-      "See the page about Chaos Islands for more info.",
+      "在混沌岛页面查看详情.",
       "[c]item.draconicevolution:chaosShard:0"
     ]
   },
@@ -563,7 +565,7 @@
     "images":[],
     "content":
     [
-      "Researching the dark energy of the chaos shards has lead you to the creation of an even more powerful core. But what could possibly utilize such a dark and powerful item?.",
+      "对混沌碎片中蕴含暗黑能量的调查指引你创造出更强大的核心.但如何利用这么一个黑暗又强大的物品是个问题.",
       "[c]item.draconicevolution:chaoticCore:0"
     ]
   },
@@ -572,12 +574,12 @@
     "images":[],
     "content":
     [
-      "The upgrade modifier is a block that allows you to upgrade your tools and items.",
-      "When you place an upgradable item in the upgrade slot you will see a list of upgrade options in the bottom half of the gui. You will also see the tools current stats to the right of the gui.",
-      "Upgrading the items stats requires cores. You will see a list of core tiers that can be applied under each upgrade option. At the top left of teh gui you will see the Core \"Cap\" This is the maximum number of cores that can be installed on this item as well as the number of cores installed and the number of slots remaining",
-      "To add a core you just have to have it in your inventory and you can press the + button under the upgrade you want to apply the core or the - button to remove a core. The numbers on the cores under the upgrades show how many of that core tier are applied to that upgrade. If you hover your mouse over that number it will show how many points that core tier is worth",
-      "The number above each upgrade is the number of upgrade points currently applied. Each upgrade will have a base number of points that you can add to and this determines the base value for that stat. If you hover your cursor over the number you will see the base points, Max points and point cost.",
-      "Using higher tier cores to upgrade the items stats means you can achieve a better upgrade then you could with lower tier cores.",
+      "升级调整器是一个可以升级工具和物品的方块",
+      "当你把一个可升级的物品放进升级槽后，你会在窗口的下半部分看到可升级选项的列表。你也可以在窗口的右侧看到工具目前的属性。",
+      "升级物品需要核心。你会在每个升级的下面看到可以使用的核心等级清单。在窗口的左上角你能看到核心 \"Cap\" 。分别是此物品最多可装核心、此物品已安装多少核心和此物品还能安装多少核心",
+      "加入核心只要你的背包里有核心，然后在你想升级的选项下面点击 + 按钮，移除一个核心点击 - 按钮。在升级下面的核心上的数字表示已经加在升级上的核心等级的数量。如果你把鼠标移到那个数字上面，他会显示那个核心等级值多少点数。",
+      "在每个升级上方的数字是当前所加的升级点。每个升级有一个加点的基数，这决定了属性的基本价值。如果你把鼠标移到数字上，你会看到基本点数、最大点数和点数消耗。",
+      "用更高等级的核心能给物品加上更好的属性。",
       "[c]tile.draconicevolution:upgradeModifier:0"
     ]
   },
@@ -586,8 +588,8 @@
     "images":[],
     "content":
     [
-      "This is a block that allows you to control the weather. To use it place some Emeralds in its inventory and select a mode. There are 3 available modes: 'Rain off', 'Rain on' and 'Thunder storm'.",
-      "To activate it, you need to apply a redstone signal.",
+      "这是一个可以控制天气的黑盒子，使用它只需往里面放几个绿宝石然后选个模式。里面有三种模式：关雨、开雨和雷电风暴.",
+      "激活它需要给它输入一个红石信号，想保持晴天或雨天的话，阳光传感器和雨水传感器是不错的选择.",
       "[c]tile.draconicevolution:weatherController:0"
     ]
   },
@@ -597,7 +599,7 @@
     "images":[],
     "content":
     [
-      "This is a basic low power (around 80 RF/t) generator that may come in handy if you have no other mods capable of generating RF power.",
+      "这是一个基础的低电量发电机 大约80RF/Tick 如果你没有其他产生RF的模组，这个东西会很便利，如果你恰好有一个自动化树场、两个极限熔炉和两个高温发电机的话，你就不需要它了.",
       "[c]tile.draconicevolution:generator:3"
     ]
   },
@@ -607,9 +609,9 @@
     "images":[],
     "content":
     [
-      "Everyone needs effective mob farms. For the cost of a bit of solid fuel (coal, charcoal, etc.) or RF power, you can kill to your heart's content knowing the forces of the Draconic have your back!",
-      "The grinder will kill all mobs in a 7x7 area in front of it. It is much more efficient and faster when powered by RF.",
-      "In order to reduce lag, experience orbs dropped by the grinder will despawn after 30 seconds if not collected. It is recommended that you use something like the OpenBlocks Vacuum Hopper to collect the experience orbs (if available).",
+      "每个人都需要有效率的怪物农场。你可以发现你所拥有的龙力!",
+      "怪物粉碎机会杀死前面7x7范围的所有生物。效率很高，通上RF能源后更快.",
+      "为了避免卡顿，被怪物粉碎机杀死的生物掉落的经验球会在30秒后消失。如果可以的话，推荐你使用类似Openblocks开放是方块模组里的虚空漏斗的东西来收集经验。←作者原话",
       "[c]tile.draconicevolution:grinder:3"
     ]
   },
@@ -618,8 +620,8 @@
     "images":[],
     "content":
     [
-      "Seeing the need for faster energy transfer you have found a way to bring the Infuser to being.",
-      "It has a faster transfer rate than most other mods' RF recharge stations (and cool particle effects to boot!)",
+      "由于更快能源传输的需求，你发现了发明出注入器的方法.",
+      "它的充电速度比其他大部分模组的RF充电器都快，而且有很酷的粒子效果!",
       "[c]tile.draconicevolution:energyInfuser:0"
     ]
   },
@@ -628,9 +630,9 @@
     "images":[],
     "content":
     [
-      "This is an extremely powerful block that allows you to change the time. Simply place it in the world and apply a constant redstone signal.",
-      "Once the device charges it will fire a particle beam at the sun accelerating it to 30 times its normal speed.",
-      "Remember to shut off the redstone signal when you have the sun where you want it.",
+      "这是可以改变时间的方块。只需把它放下来，通上一个持续的红石信号就行了.",
+      "一旦这个方块被充能，他会对太阳发射一个粒子光束，把时间加快30倍.",
+      "记得及时关掉红石信号.",
       "[c]tile.draconicevolution:sunDial:0"
     ]
   },
@@ -639,7 +641,7 @@
     "images":[],
     "content":
     [
-      "Simple player detection. It can be adjusted to detect players in a range of up to 10 blocks.",
+      "普通的玩家检测器，它最大可以调到检测10个方块内的玩家。.",
       "[c]tile.draconicevolution:playerDetector:0"
     ]
   },
@@ -648,31 +650,31 @@
     "images":[],
     "content":
     [
-      "This is an advanced version of the Player Detector.",
-      "It has a maximum range of 20 blocks, a whitelist or blacklist for fine-tuning who to detect, camouflage (allowing you to hide your detector so no one sees it) and inverted output to simplify redstone configuration.",
+      "这是玩家检测器的高级版.",
+      "最大距离20格，一个决定检测那些玩家的白名单或黑名单，伪装功能，你可以隐藏你的检测器，没人看得到它，反转红石信号输出简化配置.",
       "[c]tile.draconicevolution:playerDetectorAdvanced:0"
     ]
   },
   {
     "name":"tile.draconicevolution:flowGate",
-    "nameL":"Flow Gates",
+    "nameL":"能量阀门",
     "images":[],
     "content":
     [
-      "Gates come in two different flavours: flux and fluid. What they do is simply to allow you to control the maximum amount of Redstone Flux or Fluid that may pass through them each tick.",
-      "These devices are very simple to use. They have an input face (blue) and an output face (orange). When you place them the input face will always point towards you, similar to the way you place a piston. You can also rotate them with a wrench.",
-      "The GUI is very simple with only 2 values for you to adjust. \"Redstone Signal High\" is the flow when a redstone signal of 15 is applied. \"Redstone Signal Low\" is the flow when no redstone signal is applied. You can apply a partial signal to vary the actual flow rate between these two numbers. The \"Flow\" indicator at the bottom shows how much energy or fluid is currently able to flow through the device as determined by the received redstone signal.",
+      "阀门有了两种不同的味道：能量和流体。他们的作用是让你简单的控制每Tick通过的红石能量或流体的总量.",
+      "这些设备使用方法很简单，它有输入面和输出面.当你放置时他们的输入面总是朝着你，像放置活塞一样.你也可以用扳手旋转他们.",
+      "它的GUI只有两个值由你来调整。“红石信号高”是红石信号为15时流动。“红石信号低”是红石信号为0时流动。你可以通入0-15间的红石信号来控制流速。“流动”显示器显示根据红石信号大小可以流过的能量或液体的量.",
       "[c]tile.draconicevolution:flowGate:0",
       "[c]tile.draconicevolution:flowGate:6",
-      "ComputerCraft/Open Commuters methods:",
-      "getFlow() - Returns the current flow",
+      "ComputerCraft电脑mod/Open Commuters方法：",
+      "getFlow() - 返回当前的流量值",
       "setSignalHighFlow(integer)",
       "getSignalHighFlow()",
       "setSignalLowFlow(integer)",
       "getSignalLowFlow()",
-      "setOverrideEnabled(boolean) - Setting this to true allows you to directly control the flow rate without any influence from redstone input",
+      "setOverrideEnabled(boolean) - 把这个设置为true可以让你不受输入红石信号的影响控制流速",
       "getOverrideEnabled()",
-      "setFlowOverride(integer) - If setOverrideEnabled is set to true this method allows you to set the flow rate. This rate can not be modified from within the gate's gui or by a redstone signal."
+      "setFlowOverride(integer) - 如果 setOverrideEnabled 设置为true。这个方法可以让你设定流速，流速不能在GUI内更改且不受输入红石信号的影响。"
     ]
   },
   {
@@ -680,11 +682,11 @@
     "images":[],
     "content":
     [
-      "With this device you are able to transfer enchantments from your items to books at the cost of experience.",
-      "The cost is determined by the repair cost of the item which is decreased slightly each time an enchantment is removed.",
-      "To use it simply place the enchanted item in the first slot, place a regular book in the center slot and press the transfer button. The first enchantment will be stripped from the item and applied to the book.",
-      "When you strip an enchantment from an item it will lose a percentage of its total durability. This percentage is shown in the GUI. You can decrease the damage by placing bookshelves or other enchanting boosters around the Disenchanter. It takes a total of 20 bookshelves to prevent all damage.",
-      "WARNING: Items that use energy instead of durability will also be damaged and destroyed, but will not show their damage value.",
+      "用这个设备你可以用经验把物品上的附魔转移到书上去.",
+      "转移消耗的等级取决于物品修复消耗的等级，每次移除一个附魔，消耗的等级都会略微减少.",
+      "使用方法：把附魔的物品放在第一格，把普通的书放在中间的格子，然后点击转移按钮.物品的第一个附魔会移除到书上.",
+      "每当你为装备祛魔一次，该装备的耐久度会减少40%.耐久度在GUI上显示.你可以在周围放置书架或其他物品来减少耐久度的消耗.放置20个书架就不会掉耐久.",
+      "警告：使用能量的装备也会掉耐久度和损坏，但是不会显示损坏值.",
       "[c]tile.draconicevolution:dissEnchanter:0"
     ]
   },
@@ -693,9 +695,9 @@
     "images":[],
     "content":
     [
-      "Using your draconic knowledge you have learned how to create the ultimate chest.",
-      "With a massive 234-slot storage capacity, a built-in Crafting Table, a 5-slot RF furnace capable of doubling ore and the ability to keep its contents when harvested, this chest is the most powerful, most versatile storage device in existence!",
-      "It also comes in every colour you can imagine. Just shift right-click it with an empty hand for details.",
+      "用你已知所有关于龙的知识来创造一个龙箱.",
+      "有234个格子，集成工作台，5格双倍矿物自动冶炼RF熔炉.这是已知最好的、最多才多艺的箱子!",
+      "它可以变成你任何想要的颜色。只需空手Shift + 右键查看详情.",
       "[c]tile.draconicevolution:draconiumChest:0"
     ]
   },
@@ -704,14 +706,14 @@
     "images":[],
     "content":
     [
-      "To get started, right-click any vanilla spawner with a Draconic Core to stabilize it. You now have an empty transportable spawner that you can pick up with Draconic tools.",
-      "Use any Mob Soul on the spawner to change its type to that mob.",
-      "There are several items you can use to upgrade the spawner:",
-      "- Wyvern Core: Upgrades to tier 2 which increases spawn count and speed.",
-      "- Awakened Core: Upgrades to tier 3 further increases spawn count and speed.",
-      "- Nether Star: Removes the requirement for a player to be within 16 blocks of the spawner to function.",
-      "- Notch Apple: Makes the spawner ignore spawn requirements for the mob it is spawning e.g. it will make monsters spawn even when the light level is too high.",
-      "When breaking it you will get back everything except the Mob Soul since it is too fragile and is destroyed in the process.",
+      "用一个龙之核心右键任何刷怪笼来稳定它.然后你就可以用龙之工具挖掉它了.",
+      "用生物的灵魂来改变刷怪笼刷出的生物.",
+      "这些物品可以升级刷怪笼：",
+      "- 双足飞龙核心：升级到等级2，增加生成数量和速度.",
+      "- 觉醒核心：升级到等级3，大大增加生成总数和速度.",
+      "- 下界之星：玩家站在16个方块以外也能刷怪.",
+      "- Notch的苹果：无视生物生成的要求.例如：在最高亮度时生物也能生成.",
+      "当你破坏掉它，你会得到一切掉落物，除了生物的灵魂，因为它太脆弱，在挖掘的过程中被摧毁了.",
       "[c]tile.draconicevolution:customSpawner:0"
     ]
   },
@@ -720,8 +722,8 @@
     "images":[],
     "content":
     [
-      "Using Draconic knowledge you have discovered how to build a multi-block structure capable of storing more power than any other device ever invented, with the highest tier able to store up to 2.14 trillion RF.",
-      "More information is available in the Energy Core multi-block tutorial.",
+      "用你已知所有关于龙的知识来创造出能储存2.14兆RF的多方块构造.",
+      "详情请见多方块能量核心教程.",
       "[c]tile.draconicevolution:energyStorageCore:0"
     ]
   },
@@ -730,38 +732,55 @@
     "images":[],
     "content":
     [
-      "This device is used to extract or insert energy into the Energy Storage multiblock. Its maximum transfer rate is 2,147,483,647 RF/t.",
+      "这个设备用来提取或输入能量到多方块能量存储.它最大的传输率是2147483647 RF/Tick.",
       "[c]tile.draconicevolution:energyPylon:0"
     ]
   },
   {
     "name":"tile.draconicevolution:reactorStabilizer",
-    "nameL":"Draconic Reactor",
-    "images":[],
+    "nameL":"反应堆稳定器",
+    "images":[
+	  "http://imgur.com/jj2j1nY.png",
+	  "http://imgur.com/19fz2j8.png",
+	  "http://imgur.com/G0QmDny.png",
+	  "http://imgur.com/2da65eR.png",
+	  "http://imgur.com/T6cboSs.png",
+	  "http://imgur.com/t8dzFlS.png",
+	  "http://imgur.com/iRIhA8i.png",
+	  "http://imgur.com/4txX1DY.png",
+	  "http://imgur.com/cazROqY.jpg",
+	  "http://imgur.com/ABVL9iA.png",
+	  "http://imgur.com/M6ZYoX7.png"
+	],
     "content":
     [
-      "Unimpressed by the limited energy generated through manipulation of the mundane reagents of your world, and knowing the potential within the realm of Chaos, you exercise your extensive knowledge of the Power Draconic to create what is possibly the most dangerously concentrated energy source in the history of the Redstone Flux.",
-      "Power does not come without sacrifice, and great power does not come without great sacrifice.  This level of power will test your metal as you begin to conceptualize the means by which to make your vision of such power into a reality. You see the potential for untold destruction should you fail, but at this point, the life of mere mortal beings and the single world they populate is far beneath your immediate concern.  Be sure to consider well the blueprints you have devised as even a simple oversight could cost you more than you bargain for.  But such is the risk taken by those who seek to become like the gods.",
+      "反应堆是史上最危险的能量源，它使用了混沌领域中的能量来产生巨大的电能.",
+      "没有牺牲就不会成功，巨大的能量是非常危险的.这样的能量难以控制，你可能会失败很多次.但是在这个时刻，微不足道的凡人的生活和单调的世界早已不是你现在所考虑的.务必准备好你设计的蓝图，因为一个小小的疏忽都会造成无法预料的后果.下图为反应堆爆炸的后果.",
+	  "http://imgur.com/jj2j1nY.png[>]http://imgur.com/19fz2j8.png[>]http://imgur.com/G0QmDny.png[>]http://imgur.com/2da65eR.png[>]http://imgur.com/T6cboSs.png",
 
-      "Basic Explanation of Reactor Mechanic:",
-      "When Draconium Fuel is combined with Chaos Element, the catalytic reaction generates vast amounts of heat and RF energy.  The Draconium Fuel then converts into Chaos Element by this process.  This in turn causes heat to increase.  A Containment Field is necessary of course to prevent the dissipation of this energy, and a system must be put into place to prevent the heat from the Core Reaction from overwhelming the Containment Field.  A secondary system is then applied for the purpose of maintaining the Reaction as well as the Containment Field in a self-sustaining relationship.  A tertiary system is then recommended for the regulation of energy input and output to stabilize Reactor usage.",
-      "To expand upon  this, what ultimately forms is a super-dense and super-heated sphere of molten plasma.  That’s right, a sphere in a cuboid dimension!  Or at least such a densely compacted and vast number of cuboid molecules around a core of Chaos Fusion that appears to converse into a spherical shaping of otherwise-amorphous plasma.  And while generating millions of RF energy, the Reactor self-contains that energy with little to no RF escape once balance has been reached between the heat of the Reactor Core and energy consumption required by the Containment Field.  This balance is best achieved at operation temperature of 8,000 degrees and can be sustained by using Flux Gates and by occasional removal of converted fuel.",
-      "Stabilizers are required for you to extract the energy stored within the Reactor Core. As the energy drains from the core, the reaction will again accelerate, creating an unusual self-sustaining system that doesn’t lose energy even as it loses energy.",
-      "It should be noted that you cannot merely pull as much energy as you like from the Core. The more energy you drain, the more intense the reaction will become.  This increases the load on the containment field. Escape will then increase, reducing Reactor efficiency.  At a certain point, the containment field will weaken to a point of destabilization of the co-constitutive balance between it and the reaction within the core.  This will rapidly overwhelm the containment field and result in a catastrophic explosion of immeasurable impact.",
+      "反应堆学的基本概念:",
+      "当龙燃料与混沌晶体结合，它们会产生巨大的热量和RF能量.这个过程中燃料会产生巨大的热能.为了防止热量的分散，我们需要一个密封的区域和散热系统.第二个系统是用于维持反应堆的自我控制.第三个系统用于调整反应堆的输入和输出能量.",
+      "准备好这些系统后就会形成一种超致密、高温的等离子体.这个反应堆的核心会形成球形，其中的能量消耗和生产必须达到平衡.这种平衡最好实现在工作温度为8000度的时候.你可以通过能量阀门来控制平衡.",
+      "反应堆稳定器可以让你从核心中提取能量，但是你不能随意地提取能量.你从中提取的能量越多，核心的反应会越强烈，这样会增加密封器的负载.负载越大，反应堆的效率越低.",
+      "某种意义上来说，密封器的反应会破坏它和核心反应的平衡，这会导致灾难性的爆炸.",
 
-      "Structural Setup:",
-      "The Reactor consists of 6 main components. Four Reactor Stabilizers, the Reactor Core and an Energy Injector.  You will also need at least two Flux Gates to regulate the reactor.",
-      "Place the Reactor Core at the intended center of the structure.",
-      "Place the four Stabilizers in a ring around the Core, each facing inwards. The Stabilizers do not need to be in a horizontal ring. You may place one Stabilizer above and one below the Core, all set they can be up to 8 blocks away. They must also be far enough away that they will not be consumed by the expansion of the Core as you continue to energize it.  The Core will expand to twice its original size when at max temperature. So, if you intend for the Core to reach maximum capacity, the Stabilizers will need to be placed a minimum of 4 blocks away. To test for adequate Stabilizer linkage to the Core, simply right click onr of the stabilizers and the Reactor GUI will open. If all 4 stabilizers are setup correctly the Reactor status should show as \"OFFLINE\".  Otherwise, status will read \"INVALID SETUP\" and require you to make changes in Stabilizer placement before continuing.",
-      "If the GUI dose not open at all break and replace the stabilizer making sure there are no blocks between the core and the stabilizer when it is placed. If you can access the gui from all 4 stabilizers they are good to go. This also applies to the energy injector. You can not access the gui from the injector but it is important to make sure there are no blocks obstructing its link to the core when it is placed.",
-      "Once you have Stabilizers and the Core positioned accurately, place the Energy Injector on one of the remaining two sides of the Reactor Core.",
+      "建造方法:",
+      "建造反应堆需要以下材料：4个反应堆稳定器、1个反应堆核心、1个能量喷射器、两个能量阀门.",
+      "第一步：将反应堆核心放在中央位置.",
+	  "http://imgur.com/t8dzFlS.png",
+      "第二步：把四个反应堆稳定器放在核心的四面，每一个都面向核心，且与核心之间的距离为4格.",
+	  "http://imgur.com/iRIhA8i.png",
+      "第三步：在核心的下面放置能量喷射器，shift+右键把它设置为  温度 反转 模式",
+	  "http://imgur.com/4txX1DY.png",
+      "如果要检测反应堆稳定器是否与核心连接，只需右键单击核心，将反应堆的GUI打开.如果打不开可以尝试重新放置反应堆核心.如果四个反应堆稳定器都放置正确，反应堆状态会显示OFFLINE离线.反之将显示INVALID SETUP 无效的设置，并且你需要重新设置稳定器的位置.",
+	  "http://imgur.com/cazROqY.jpg",
 
-      "Component Functions:",
+      "反应堆零件的作用与合成方式:",
       "[c]tile.draconicevolution:reactorCore:0",
-      "The Core itself is a seed from which the Reaction can grow. It contains a Chaos Shard/Element and a small amount of Awakened Draconium to catalyze the Reaction.",
+      "反应堆核心会在反应中扩大，它包含一个混沌碎片，用少量的龙锭做催化反应.",
       "[c]tile.draconicevolution:reactorEnergyInjector:0",
-      "The Energy Injector conducts a portion of that energy to the Stabilizers in order to create and maintain the Containment Field. The Containment Field will grow as the Reactor Core increases in heat and power output.  All four Stabilizers are required to maintain the field, so if one is destroyed while the reactor is active the field will fail and you will deal with the ramifications of negligence. The Stabilizers are also used to extract energy from the Core, but since there is no limit on how much you can extract at any given time through the Stabilizers, you should connect them via a Flux Gate to regulate energy Input/Output.  Without such a precaution, the danger of Reactor explosion increases dramatically.",
-      "The Energy Injector itself also serves a dual purpose.  First, it is used to supply the power required to spark the initial Chaos Element catalytic reaction that starts the Reactor.  The Containment Field will accept an unlimited amount of energy - far more than it will need under normal operational conditions - so applying another Flux Gate to the Energy Injector will regulate the energy required to maintain the Containment Field and the Core as they both escalate to a point of equilibrium.  Although this system is designed to be self-sustaining, without backup or alternative power to maintain the Containment Field, you put yourself and your world at risk.",
+      "能量喷射器是用来启动混沌碎片的催化反应，使密封区域中产生能量.",
+      "所以我们需要能量阀门来调节能量大小使得密封区域中的能量处于平衡状态.这个装置没有备用系统，如果控制不当会产生剧烈的爆炸.",
       "[c]tile.draconicevolution:reactorStabilizer:0",
       "[c]item.draconicevolution:reactorCraftingPart:0",
       "[c]item.draconicevolution:reactorCraftingPart:1",
@@ -769,36 +788,36 @@
       "[c]item.draconicevolution:reactorCraftingPart:3",
       "[c]item.draconicevolution:reactorCraftingPart:4",
 
-      "Reactor Operational Guide:",
-      "The first thing you will need to do is open the Reactor GUI and insert up to 8 Blocks worth of Awakened Draconium into the Fuel Slot.  This can be injected in the form of Blocks, Ingots or Nuggets.  The Extraction will remove as much material as is feasible, though some will always remain within the reactor due to constant consumption.",
-      "Once the Reaction is begun, all matter within the Fuel Slot must be consumed before the Reactor can be reloaded, so make certain you add only as much Fuel as you are willing to commit.  The Reactor must be shut down in order to refuel and/or remove excess converted Chaos Element.",
-      "Once the Fuel Slot is adequately loaded with the required material, press the \"Charge Reactor\" button.  As long as you are feeding energy into the Reactor via an Energy Injector, the reactor will begin and then continue to charge.  The Containment Field and Core energy saturation need to be charged to 50% for the Reactor to safely start up and go “ONLINE” for serving out RF.  Temperature of the Core will then rise until it reaches a maximum of 2,000 degrees. ",
-      "After the Reactor has sufficient charge and temperature, press the \"Activate\" button to activate the reactor. The Reactor status should change to “ONLINE” and the Reactor should be producing energy.",
-      "The temperature gauge shows the Reactor Core’s temperature. The hotter it gets, the more energy will be drained for use by the Containment Field.  For maximum efficiency it is best to try to  maintain a Reactor temperature of approximately 8,000 degrees.  If Core temperature passes 8,000 degrees, the Containment Field will begin suffering increased power drainage, which reduces overall RF output efficiency. For instance, at 10,000 degrees the field will be suffering 10 times the load it was under at 8,000 degrees. At 11,000 degrees, the field will be under about 20 times the load it was under at 8,000 degrees. Eventually it will become impossible for the Containment Field to receive enough power quickly enough and explosion becomes imminent.",
-      "The gauge measuring the Containment Field shows the strength of the Field.  Remember, the Containment Field will accept an unlimited amount of energy so you will never be able to get its strength to 100%.  How much power you feed the containment field is up to you.  As long as you keep the gauge out of the red, you are safely operating the Reactor.  Feeding it more power than it needs gives you more room for making errors that would otherwise result in Reactor failure.  Consider a Containment Field receiving more than necessary amounts of power as running in Safe Mode.",
-      "It is also important to remember that as you drain more power from the Reactor, the Core gets hotter and will subsequently require more energy to power the Containment Field.  So if you keep the field at its lowest “safe” power level, you will need to make adjustments whenever your power demands change.",
-      "If the Field strength drops to 0% the Reactor will blow up and vaporize everything within a 10 - 200 block radius (depending on how much Draconium Fuel was in the Reactor).",
-      "The Energy Saturation gauge shows how much RF charge is in the Core.  As this fills up, energy production and fuel consumption go down.  This also increases the temperature of the Reactor and therefore increases the load on the Containment Field. You get a much higher total energy output at a lower saturation level.  If you run at a higher saturation level you will get less RF/t but the efficiency of the Reactor will increase. For example, running at 80% saturation you can get up to twice the total RF output you would get by running at 20% saturation.  In short, Saturation levels drop, the Reaction in the Core intensifies, Core temperature rises, the Containment Field reaches a point where not enough energy is available to contain the expanding Core as the Core approaches critical mass.  Kaboom!  ",
-      "The Fuel Conversion gauge shows how much of the fuel has been converted to Chaos Element. As the amount of Chaos within the Reactor increases, the catalytic reaction accelerates. This increases the energy output of the Reactor and increases its efficiency. This also increases the temperature of the Reactor which in turn increases the load on the Containment Field.  You may need to make adjustments to Containment Field power as the Reactor burns through its fuel.",
-      "BE WARNED!!!",
-      "It is not known why, but if 100% of the draconium is converted into the Chaos Element, the reaction does not simply stop. Instead, Core temperature begins to rise uncontrollably.  If this happens, there is no way to shutdown the Reactor.  The temperature will just continue to rise until the Containment Field collapses and the Reactor explodes.  It is thus highly recommended that you shut the Reactor down to refuel with Awoken Draconium once the Chaos Conversion gauge reaches 80 to 90%. ",
-      "Within the Reactor GUI, when you press the Shutdown button, the Reactor will enter Shutdown mode.  In this mode the Reactor will stop outputting energy (FIRST MAKE CERTAIN you have a large backlog of energy stored, or an alternate power source at hand to maintain the Containment Field during this process), saturation will start to increase allowing the reaction to slow.  Temperature will drop.  Once the temperature drops below 2,000, the Reactor will shut down completely.  At this point you are able to safely remove the converted matter and add fresh Awoken Draconium fuel.  There will always be some fuel in the Reactor as the partial Ingot being consumed at the time of Shutdown cannot be extracted.",
+      "反应堆操作:",
+      "首先，打开反应堆稳定器，在左侧 插入燃料 处放入8个觉醒龙锭.放入的燃料可以以液体或固体的形式.",
+      "一旦启动了反应堆，燃料槽中的物质必须可以不断填充，请在燃料槽中添加足够多的燃料.如果你要清除反应堆中的能量必须要关闭反应堆.",
+      "当燃料槽中有足够的燃料，给反应堆输入的RF能量足够时，反应堆就会开始持续不断地发电.能量饱和达到50%且反应堆处于“ONLINE”状态时，核心的温度会持续上升直到达到最高温度：2000.",
+      "反应堆拥有足够的能量和温度时，按左下角的 激活 按钮来激活反应堆.反应堆的状态会改变为ONLINE，它会持续输出能量.",
+	  "http://imgur.com/ABVL9iA.png",
+      "温度表显示反应堆堆芯的温度。温度越高，所用的能量就越高，能量就会被耗尽。为最大效率，最好是保持一个反应器的温度约为8000度。如果核心温度通过8000度，密封区域将开始患上增加功率排水，从而降低整体的RF输出效率。例如，在10000度下，该领域将承受10倍的负荷，它是在8000度以下。在11000度下，该字段将在20倍以下的负载下，它是在8000度。最终它将成为不可能的密封区域获得足够的力量迅速和爆炸迫在眉睫.",
+      "反应堆会接受无限量的能量，只要反应堆是红色的状态，你就是安全的，你需要通过能量阀门来控制反应堆.",
+	  "http://imgur.com/M6ZYoX7.png",
+      "当你从反应堆中去出过多的能量时，核心会变得更热，最终导致爆炸.",
+      "如果密封器负载达到0%，反应堆就会瞬间爆炸，爆炸范围为以反应堆为圆心，10-200区块为半径的圆.具体范围取决于反应堆中的燃料.   添加动态图片：反应堆的爆炸",
+      "能量饱和度决定了反应堆的发电效率，饱和度越低，效率也就越高.但是当饱和度达到0时，反应堆将会爆炸！",
+      "总之，只要合理控制反应堆的输入和输出就可以稳定地获取RF能量.",
+      "警告！！！",
+      "如果燃料100%被转化，反应不会停止.相反，核心温度会继续上升，直到反应堆爆炸.遇到这种情况你必须关闭反应堆添加燃料.",
+      "当你在GUI中按下关闭按钮后反应堆将停止运行.接下来核心中的饱和度会增加，温度下降.温度下降到2000度以下时，反应堆将完全被关闭.这是你可以安全地清楚燃料或添加新的燃料.",
 
-      "System Failure:",
-      "So, you might be thinking it would be wise to surround your Reactor with obsidian or some other extremely strong material in case of explosion. Well, don't bother!  If this thing blows it will have about the same result as a tiny star going nova in your Minecraft base. The shock wave will cut through almost everything.  This wave will pass through what it cannot destroy, and continue to demolish whatever lies within its event horizon. There is absolutely nothing that can stop it.  This is why it is integral to setup the Reactor in a separate outpost far away from your main base of operations. The blast radius is directly proportional to the amount of fuel in the reactor. It scales from 20 blocks with just one ingot of fuel to 200 blocks when the reactor is fully loaded with 8 blocks of fuel.",
-      "Redstone Integration:",
-      "By attaching a Redstone Comparator to one of the Stabilizers or to the Energy Injector(s), you can maintain a visual external readout of the four Stabilizer gauges shown in the Core GUI.  The strength of each Comparator will change from 0 to 15 depending on the measurement of its attached gauge. You can Shift-Right-Click the Stabilizer/Energy Injector to change which gauge is being read to the connected Comparator and also invert the Redstone signal.",
+      "反应堆爆炸:",
+      "你想用黑曜石这样坚硬的材料包围反应堆来防止它的爆炸？这是不可能的.反应堆爆炸时产生的冲击波会毁灭附近的一切，没有什么能阻止它，它的爆炸范围与内部的燃料成正比.",
+      "红石应用:",
+      "在能量喷射器的旁边放置一个红石比较器可以检测能量状态，shift+右键能量喷射器可以改变它的红石模式.",
 
-      "Instability:",
-      "[Not-Yet Implemented] (This may or may not be implemented in the future. Keep an eye out for this as it may or may not affect your reactors if/when it is implemented)",
+      "Computercraft电脑mod和Open Computers开放式电脑 结合：",
 
-      "Computercraft and Open Computers Integration:",
-      "Simply attach a Computer to one of the Stabilizers or Energy Injectors and you will have access to all of the reactor information as well as the ability to turn the Reactor on and off remotely.  The methods for implementing this are pretty self-explanatory.",
-      "Methods:",
-      "getReactorInfo() - Returns and array containing [temperature, fieldStrength, maxFieldStrength, energySaturation, maxEnergySaturation, fuelConversion, maxFuelConversion, generationRate, fieldDrainRate, fuelConversionRate, status]",
-      "chargeReactor() - Dose exactly what the charge reactor button in the gui dose.",
-      "activateReactor() - Dose exactly what the activate reactor button in the gui dose.",
-      "stopReactor() - Dose exactly what the stop reactor button in the gui dose."
+      "简单地把一台电脑贴到其中一个稳定器或者能量注入器，你就可以获得反应堆所有的信息和远程关闭反应堆的功能。实施这些的方法不言自明。",
+      "方法：",
+      "getReactorInfo() - 返回和排列以下信息 温度、场强、最大场强、能量饱和度、最大能量饱和度、能量转换、最大能量转换、燃料转换、最大燃料转换、生成速率、场流失率、燃料转化率、状态",
+      "chargeReactor() - 和GUI里的充能按钮一样的效果。",
+      "activateReactor() - 和GUI里的激活反应堆按钮一样的效果。",
+      "stopReactor() - 和GUI里的停止反应堆按钮一样的效果。"
     ]
   },
   {
@@ -806,99 +825,99 @@
     "images":[],
     "content":
     [
-      "Purely decorative, this blocks allows for fully customizable particle effects to be created. For more information check out the instruction manual built into its GUI.",
-      "This block is also used as a part of the Energy Storage multi-block structure.",
+      "纯粹的装饰，这个块允许完全可定制的粒子效果，以创建。为了了解更多的信息，检查出它的图形用户界面的指令手册.",
+      "这个方块可以储存一部分多方块结构的能量.",
       "[c]tile.draconicevolution:particleGenerator:0"
     ]
   },
   {
     "name":"tile.draconicevolution:energyCrystal",
-    "nameL":"Energy Relay",
+    "nameL":"能量中继器",
     "meta":0,
     "images":[],
     "content":
     [
-      "This is the base component of the Draconic Evolution energy network.",
-      "This device on its own cannot send or receive energy from a block. Its purpose is to act as a hub to link devices that can.",
-      "See the Crystal Binder for more information on how to link them and about energy distribution.",
-      "Range: 25",
-      "Max Connections: 10",
+      "这是龙之进化的基础构件，他可以加强能量传送的距离.",
+      "这个设备本身不能发送或接收来自一个方块的能量，他的用途是作为一个枢纽，可以连接设备.",
+      "看连接扳手的信息介绍，就知道如何连接它们和能量分布.",
+      "范围: 25格",
+      "最多连接: 10个",
       "[c]tile.draconicevolution:energyCrystal:0"
     ]
   },
   {
     "name":"tile.draconicevolution:energyCrystal",
-    "nameL":"Advanced Energy Relay",
+    "nameL":"高级能量中继器",
     "meta":1,
     "images":[],
     "content":
     [
-      "This is a more powerful version of the Energy Relay. It is capable of much faster energy transfer and has the ability to link to a larger number of devices.",
-      "See the Crystal Binder for more information on how to link them and about energy distribution.",
-      "Range: 50",
-      "Max Connections: 20",
+      "这是一个更高级的能量传递器，它能够更快的能量传输，并连接更多数量的设备.",
+      "看连接扳手的信息介绍，就知道如何连接它们和能量分布.",
+      "范围: 50格",
+      "最多连接: 20个",
       "[c]tile.draconicevolution:energyCrystal:1"
     ]
   },
   {
     "name":"tile.draconicevolution:energyCrystal",
-    "nameL":"Energy Transceiver",
+    "nameL":"能量收发器",
     "meta":2,
     "images":[],
     "content":
     [
-      "This is the block used to actually import and export energy from the energy network.",
-      "Simply place it next to an energy acceptor or producer and link it to the network. You can switch between input and output mode by right-clicking it with a Crystal Binder in \"Mode Change\" mode.",
-      "See the Crystal Binder for more information on how to link them and about energy distribution.",
-      "Range: 25",
-      "Max Connections: 2",
+      "这个方块用于发送和接收能量.",
+      "将其放置在一个能量接收机器或者能量生产器旁，使用连接扳手将它们连接到到一起，你可以使用连接扳手在输入和输出模式之间切换，连接扳手通过Shift+右键改变功能.",
+      "看连接扳手的信息介绍，就知道如何连接它们和能量分布.",
+      "范围: 25格",
+      "最多连接: 2个",
       "[c]tile.draconicevolution:energyCrystal:2"
     ]
   },
   {
     "name":"tile.draconicevolution:energyCrystal",
-    "nameL":"Advanced Energy Transceiver",
+    "nameL":"高级能量收发器",
     "meta":3,
     "images":[],
     "content":
     [
-      "This is a more powerful version of the Energy Transceiver.",
-      "Along with having a much higher energy transfer rate it also has the ability to extract or insert energy into a device 5 times faster than would normally be possible.",
-      "See the Crystal Binder for more information on how to link them and about energy distribution.",
-      "Range: 50",
-      "Max Connections: 4",
+      "这是一个更强大的能量收发器.",
+      "随着它能量传输速率的提高，它达到普通设备能量发送和接收的五倍以上的速度.",
+      "看连接扳手的信息介绍，就知道如何连接它们和能量分布.",
+      "范围: 50格",
+      "最多连接: 4个",
       "[c]tile.draconicevolution:energyCrystal:3"
     ]
   },
   {
     "name":"tile.draconicevolution:energyCrystal",
-    "nameL":"Wireless Energy Transceiver",
+    "nameL":"无线能量收发器",
     "meta":4,
     "images":[],
     "content":
     [
-      "This device works similar to the Energy Relay except that it is also able to wirelessly connect to RF accepting devices.",
-      "See the Crystal Binder for more information on how to link them and about energy distribution.",
-      "Range: 25",
-      "Max Connections: 3",
-      "Wireless Range: 15",
-      "Max Wireless Connections: 8",
+      "该装置的工作原理类似于能量中继器，但它能够无线连接到RF接收设备.",
+      "看连接扳手的信息介绍，就知道如何连接它们和能量分布.",
+      "范围: 25格",
+      "最多连接: 3个",
+      "无线范围: 15格",
+      "最多无线连接: 8个",
       "[c]tile.draconicevolution:energyCrystal:4"
     ]
   },
   {
     "name":"tile.draconicevolution:energyCrystal",
-    "nameL":"Advanced Wireless Energy Transceiver",
+    "nameL":"高级的无线能量收发器",
     "meta":5,
     "images":[],
     "content":
     [
-      "This is an advanced version of the Wireless Energy Transceiver that is able to connect to a larger number of devices as well as transfer energy at a much higher rate.",
-      "See the Crystal Binder for more information on how to link them and about energy distribution.",
-      "Range: 50",
-      "Max Connections: 6",
-      "Wireless Range: 30",
-      "Max Wireless Connections: 16",
+      "这是一个高级无线能量收发器，能够连接到更多数量的设备，以及更高速度地传输能量.",
+      "看连接扳手的信息介绍，就知道如何连接它们和能量分布.",
+      "范围: 50格",
+      "最多连接: 6个",
+      "无线范围: 30格",
+      "最多无线连接: 16个",
       "[c]tile.draconicevolution:energyCrystal:5"
     ]
   },
@@ -907,12 +926,12 @@
     "images":[],
     "content":
     [
-      "This is the tool used to link energy devices.",
-      "Binding: To link two devices switch the tool to bind mode with shift + right-click. Then just right-click both devices in any order to link them. Any energy network devices (Relay, Transceiver or Wireless Transceiver) can be linked to one another. The Wireless Transceiver can also be linked to any other RF accepting block by first clicking the transceiver then clicking the block.",
-      "Unbinding: To unbind two linked devices switch the tool to unbind mode, then simply right-click the two devices you wish to unlink. You can also clear all of a device's connections using \"Unbind All\" mode.",
-      "Visual Indicator: While holding the Crystal Binder you are able to see the connections between all linked devices (except the link between wireless transceivers and RF devices).",
-      "Connection Limits: All devices support a limited number of connections. This is the number of devices the block can be linked to. Relays have the highest number of available connections and are therefore useful for linking a network of Transceivers, which have a very limited number of available connections.",
-      "Energy Transfer Mechanic: Each energy device has its own internal energy buffer. If the buffer of a device it is linked to is lower than its own it will send energy to that device i order to balance the two buffers. The energy difference between the two buffers determines the rate at which energy is sent.",
+      "这个工具用来连接设备.",
+      "绑定：连接两个设备需要Shift+右键把工具切换到绑定模式。然后右键两个设备来连接他们，不分先后。任何能量网络设备如能量中继器，无限收发器都可以互相连接。无线收发器可以被连接到任何其他使用RF能量的方块。先点击无线收发器，再点击使用RF能量的方块能把它们两个连接起来.",
+      "解除绑定：解绑两个已连接的设备需要把工具切换到解绑模式，然后右键你想解绑的两个设备。你也可以用Unbind All 解绑全部 模式来解绑所有设备.",
+      "可视指示器：在保持连接扳手的同时，你可以看到所有连接设备之间的连接，除了无线收发器和RF设备之间的连接.",
+      "连接限制：所有设备支持的连接数量是有限的。这个方块可以连接的设备的数量也是有限的。中继器可用的连接数量最多，因此，可用于连接收发器，有用的链接是有限的.",
+      "能量传递机制：每一个能量装置都有它自己的内部能量缓冲区。如果一个设备的缓冲区被连接到低于它自己的缓冲区，它会发送能量到该设备，我要平衡两个缓冲区。两者之间的能量差决定了能量被发送的速率.",
       "[c]item.draconicevolution:wrench:0"
     ]
   },
@@ -921,7 +940,7 @@
     "images":[],
     "content":
     [
-      "A device that emits a redstone signal when it rains. This is perfect for signaling the weather controller.",
+      "这个装置在下雨的时候发出红石信号，完美地配合了气象控制器.",
       "[c]ile.draconicevolution:rainSensor:0"
     ]
   },
@@ -930,7 +949,7 @@
     "images":[],
     "content":
     [
-      "A simple redstone emitter that is capable of emitting a variable strength redstone signal between 0 and 15.",
+      "一个简单的红石信号发射器，能够发射红石信号，信号强度可以在0和15之间改变.",
       "[c]tile.draconicevolution:potentiometer:0"
     ]
   },
@@ -939,52 +958,60 @@
     "images":[],
     "content":
     [
-      "Many of you have probably seen a graphical glitch that sometimes occurs when chunks load that allows you to see through the world and see all of the caves and tunnels below.",
-      "This block replicates that effect. When you place it next to another block the face of the block it is touching becomes transparent, allowing you to see through the world.",
-      "This can be very useful for finding cave systems and dungeons – maybe even things other players don’t want you to find. Such a block does not come cheap. It will cost you several Nether Stars and it is so fragile that once placed it cannot be collected without destroying it. Not even with silk touch.",
+      "你们许多人很可能在加载大量方块时出现载图的错误，这种错误能让你们看到地底的矿洞与隧道.",
+      "此方块就有那样的效果，当你把它放在地面的时候，它就变得透明了，让你看穿这个世界，我看不到这个世界美好的一面，人心是那样的丑陋.",
+      "这可能对于你发现矿脉和地牢非常有帮助-也许还有其他玩家不想让你找到的东西，这个的方块不便宜。它将花费你几个下界之星，一旦被放置，除了摧毁它之外，你无法将它回收.",
       "[c]tile.draconicevolution:xRayBlock:0",
       "TODO"
     ]
   },
   {
     "name":"item.draconicevolution:safetyMatch",
-    "nameL":"Safety Match",
+    "nameL":"安全火柴",
     "meta":1000,
     "images":[],
     "content":
     [
-      "Tired of everything burning to the ground when making a fireplace? Use this match to light a fire that will never go out, burn you or burn down your house.",
+      "你对于在地上点火然后把周围的一切都烧毁了的事情害怕了吗？用这一种火柴来点火，它既不会扩散，也不会烧到你，和你的房子，你听说过卖火柴的小女孩吗，小女孩之所以没被自己的火柴烧到就是因为用了这种火柴.",
       "[c]item.draconicevolution:safetyMatch:1000",
-      "Sick of having so many loose matches in your pocket?",
+      "你不觉得你的口袋里有许多松散的火柴很麻烦吗？",
       "[c]item.draconicevolution:safetyMatch:0"
     ]
   },
   {
     "name":"item.enchanted_book",
-    "nameL":"Reaper Enchantment",
+    "nameL":"收割者",
     "images":[],
     "content":
     [
-      "The Reaper enchantment increases the drop chance of souls from mobs. It has a maximum level of 5 and makes it possible for regular weapons to drop souls from mobs."
+
+
+
+
+
+
+
+      "附魔属性  灵魂收割者灵魂收割者 这个属性可以增加怪物掉落灵魂的几率.它的最大等级是5级，它可以附魔在大多数武器上使怪物掉落灵魂."
     ]
   },
   {
-    "name":"info.Draconic Shield",
+    "name":"info.龙之护甲",
+
     "images":[],
     "content":
     [
-      "Both Wyvern and Draconic armor have a shield which is capable of absorbing damage.",
-      "Wearing any piece of Draconic or Wyvern armor will give you this shield but the more pieces you have the more damage the shield will be able to absorb and Draconic armor pieces give more absorption than Wyvern.",
-      "When your shield is active you will see its stats in a HUD that will by default be displayed to the left of your hot-bar (This can be configured in the HUD config screen which is accessed via the tool config gui)",
-      "The HUD shows three stats. Shield points (Large Red-Green bar), Entropy (Small Green bar) and the total remaining RF stored in your armor (Small Blue bar). The Numerical values for these stats will also be shown if enabled in the HUD config.",
-      "The Shield Points or Capacity is the number of damage points (Half a heart) the armor can absorb and this will drop when you take damage. As long as any piece of armor has power your shield points will regenerate at the cost of RF. The base regeneration rate is the equivalent of the entire capacity every 3 seconds.",
-      "Entropy ranges from 0 to 100%. It will increase each time you receive damage and will slowly decrease when you are not taking damage. Entropy reduces the rate at which your shield points regenerate. If your entropy reaches 100% your shield will not regenerate at all.",
-      "The shield can be upgraded using Upgrade Modifiers. Upgrading Shield Capacity will increase your shield points and upgrading Shield Recovery will increase the rate at which Entropy recovers. Note that the recovery rate is calculated by averaging the Recovery Points of all equipped armor pieces.",
-      "The shield also has a last stand ability. It is capable of blocking any fatal blow at the cost of 10 million RF. If you have less then 10MRF total stored in your armor this ability will not work at all and you will die. "
+      "飞龙和龙力装甲都有一个可以吸收伤害的护甲。",
+      "装备任何一件龙力或飞龙装甲都会给你一部分的护甲。龙力装备的护甲比飞龙装备的护甲更好。",
+      "当你的护甲处于激活状态时，你能在默认在快捷栏左边显示的小框框里看到它的数据，小框框的位置可以在工具配置文件的GUI里调整。",
+      "小框框显示三个数据：护甲点数--大红绿条，熵值/混乱值--小绿条，在盔甲中剩余的RF--小蓝条。在小框框的配置中能开启显示这些数据的数字值。",
+      "护甲点数或容量是盔甲受到半颗心伤害能吸收的伤害点数的数值，当你受到伤害时这个值会下降。护甲点数能用RF能量恢复。基本的恢复速度是整体容量除以3秒。",
+      "熵值/混乱值的范围是从0%到100%。每次你受到伤害它都会增加。熵值减少护甲点数的恢复速度。如果熵值达到了100%，那么你的护甲就完全不能回复。",
+      "护甲能在升级调整器里升级。升级护甲容量会增加护甲点数，升级护甲恢复能增加熵值的恢复速度。注意恢复速度是恢已穿装备恢复点数的平均值。"
+
     ]
   },
   {
-    "name":"info.Energy Storage Multiblock",
+    "name":"info.能量库",
     "images":[
       "https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore1.png",
       "https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore2.png",
@@ -1008,108 +1035,122 @@
     ],
     "content":
     [
-      "The Energy Core is a multi-block structure that is capable of storing immense amounts of RF power using the energy storage capabilities of Draconium and Redstone.",
-      "The Energy Core has 7 Tiers, each capable of storing considerably more than the last.",
-      "To build it you will need 5 different components:\n ♦ Energy Core (x1)\n ♦ Particle Generator (x4)\n ♦ Redstone Block (number depends on tier)\n ♦ Draconium Block (number depends on tier)\n ♦  Energy Pylon (x2+)",
-      "The Energy core consists of the Energy Core (Block) at the centre surrounded by 4 Particle Generators. The generators must be directly in line with the core as shown in the following images. \nThe generators must be placed within 10 blocks of the core.",
-      "The Core is then surrounded by a combination of Redstone Blocks and Draconium Blocks. The following images show the configuration of each tier as well as the material cost and storage capacity. Once the structure is built, simply shift right-click one of the particle generators with a empty hand to activate the core.",
-      "Tier 1",
+      "多方块结构能量存储这个能量存储器是一个多方块结构，它是一个非常实用的能量存储器，它可以用龙块和红石块来存储巨大的RF能量.",
+      "这个能量核心有7个等级，越高级的能量核心可以存储更多的能量.",
+      "建造它你需要5种不同的材料：",
+      "-能量核心   X1",
+      "-粒子发生器 X4",
+      "-红石块     不同等级的需求不同",
+      "-龙块       不同等级的需求不同",
+      "-能量塔     两个以上",
+      "这个能量存储装置由 能量核心 和四个 粒子发生器 组成，把 能量核心 放在中间，粒子发生器放在它的四周.具体方式如下图所示.连接到能量存储装置的发电机必须放在距离 能量核心方块 10格以外.",
+      "能量核心方块 的周围需要放置红石块和龙块.下面的图片会告诉你每一个等级的的建造方法以及需要的材料.当建造完成时，只需要对着任意一个粒子发生器 空手shift+右键 就可以激活能量存储装置.",
+      "等级1",
       "https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore1.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore2.png",
-      "Redstone x0\nDraconium x0\nCapacity = 45.5Million RF",
-      "Tier 2",
+      "红石块0个 龙块0个 可储存45.5万RF能量",
+      "等级2",
       "https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore1.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore3.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore4.png",
-      "Redstone x0\nDraconium x6\nCapacity = 273Million RF",
-      "Tier 3",
+      "红石块0个 龙块6个 可储存273万RF能量",
+      "等级3",
       "https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore1.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore5.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore6.png",
-      "Redstone x0\nDraconium x26\nCapacity = 1.64Billion RF",
-      "Tier 4",
+      "红石块0个 龙块26个 可储存1.64亿RF能量",
+      "等级4",
       "https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore1.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore7.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore8.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore9.png",
-      "Redstone x26\nDraconium x54\nCapacity = 9.88Billion RF",
-      "Tier 5",
+      "红石块26个 龙块54个 可储存9.88亿RF能量",
+      "等级5",
       "https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore1.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore7.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore10.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore11.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore12.png",
-      "Redstone x80\nDraconium x98\nCapacity = 59.3Billion RF",
-      "Tier 6",
+      "红石块80个 龙块98个 可储存59.3亿RF能量",
+      "等级5",
       "https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore1.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore7.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore10.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore13.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore14.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore15.png",
-      "Redstone 133\nDraconium 150\nCapacity = 356Billion RF",
-      "Tier 7",
+      "红石块133个 龙块150个 可储存356亿RF能量",
+      "等级7",
       "https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore1.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore7.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore10.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore13.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore16.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore17.png[>]https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore18.png",
-      "Redstone x328\nDraconium x218\nCapacity = 2.14Trillion RF",
-      "To add and remove energy from the core you need to place energy pylons within 15 blocks of the core. To activate a pylon place a glass block either above or below it – depending on whether the pylon is placed below or above the core e.g. if you place the pylon on your roof you would place the glass block under it.",
+      "红石块328个 龙块218个 可储存2.14万亿RF能量",
+      "如果你想给能量存储器输入能量或使存储器输出能量，你需要在距离 能量核心 15格以内的地方放置能量塔.激活一个能量塔需要在它的顶部或底部放置一块玻璃.举个例子，如果你把能量塔放在顶部，你就要把玻璃放在底部.",
       "https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/ECore/ECore19.png",
-      "When the glass block is placed the pylon should immediately activate and link with a nearby Energy Core. The link is indicated by white energy particles and the glass should change to the renderer shown in the image above. You can shift right-click the pylon to change which core it is linked to if there is more than one within range.",
-      "Energy is added and removed from the core using Energy Pylons. To toggle a Pylon between input and output mode simply right-click the sphere. The mode is identified by the colour of the Pylon (blue for input and orange for output).",
-      "Energy Transfer between the pylon and the core is indicated by a stream of blue energy particles flowing between the Pylon sphere and the core. The amount of energy flowing is roughly indicated by the density of the particle stream.",
-      "The energy stored in the core is displayed on the HUD when you look at it and in chat when you right-click it. The core will also change to a dark red colour as it fills. Its energy level can be read by placing a comparator on one of the attached pylons."
+      "当玻璃块被正确地放置以后能量塔会立刻被激活并和最近的一个能量存储装置连接.如果你看到蓝、白色的粒子效果，刚刚放置的玻璃变成了上图的样子，说明你连接成功了.你可以对能量塔按shift+右键来改变它连接的能量存储装置.",
+      "能量塔可以从给能量存储器输入能量或从中提取能量.能量塔有输入模式和输出模式，按 右键 可以改变模式，蓝色是输入模式，橙色是输出模式.",
+      "在能量塔和核心之间的能量传输用一束蓝色的能量粒子在两者之间显示出来.",
+      "当玩家把准心移动到 物品 上时存储在核心里面的能量数值会显示在左下角的聊天框里."
     ]
   },
   {
-    "name":"info.Ritual of Draconic Resurrection",
+    "name":"info.龙的复活仪式",
     "images":["https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/resurrectionRitual.png"],
     "content":
     [
-      "The Ritual of Draconic Resurrection allows you to summon the Ender Dragon. To set it up you will need the following items.\n\n(1) Resurrection Stone\n(4) Glowstone Blocks\n(4) Obsidian\n(4) Diamond Blocks\n(4) Charged Draconium Blocks\n(12) Quartz Pillars\nset up in the following configuration.",
+      "这个仪式可以让你复活末影龙.建造它你需要以下材料：",
+      "-复活石     1个",
+      "-萤石       4个",
+      "-黑曜石     4个",
+      "-钻石块     4个",
+      "-充能龙块   4个",
+      "-竖纹石英块 12个",
+      "建造方法如下图：",
       "https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/resurrectionRitual.png",
-      "The pillars dont have to be in that exact configuration as long as they are within 5 blocks of the Resurrection Stone. It also looks better if they are symmetrical. The ritual must be set up within 150 blocks of 0,0.",
-      "Once you have that set up, simply right-click the Ritual stone and stand back. The ritual should start immediately. If it doesn't you have done something wrong.",
-      "Right-clicking the Ritual Stone again will stop the ritual and drain the charge from the draconium blocks.",
-      "During the ritual all of the Ender Crystals will be reactivated. At the end of the ritual there will be a massive explosion at the centre of the structure that won't do too much damage to the terrain but will kill anything that is standing too close.",
-      "The dragon that is spawned by the ritual is almost identical to the original dragon except that it has a different texture (by GreatOrator) and it gets harder to kill and deals more damage each time it is summoned. This increase is per player and stops when it reaches a certain difficulty. It also has regeneration for 25 seconds."
+      "石英柱不必非常精确地放置，它们只需要放在距离复活石5格以外的地方就可以了.如果它们是对称的看上去会更好.这个仪式必须在末地进行.",
+      "当你准备好这个召唤大阵后，你只需要右键复活石然后退后就行了，这个仪式会立即开始，如果没有变化就说明你做错了什么.",
+      "再次右键复活石会停止这个仪式，而且充能龙块中的能量会消失.",
+      "在仪式中所有的末影水晶会被重新激活.在仪式的最后法阵的中心会发生一场巨大的爆炸，爆炸不会破坏太多的方块但是它会杀死任何靠近的生物.",
+      "仪式结束后，会生成一条和原版几乎一样的末影龙，但是他的外表会有所改变.它会更难被杀死，而且造成更大的伤害，每一次召唤都会加强末影龙.玩家越多，难度会越大，直到难度达到极点.这个仪式需要25秒."
     ]
   },
   {
-    "name":"info.Pigman Blood Rage",
+    "name":"info.猪人的血怒",
     "images":[],
     "content":
     [
-      "Don't let the pigmen see you eating pork. You won't like what happens..."
+      "不要让猪人看见你在吃猪排.你不会喜欢接下来发生的事……"
     ]
   },
   {
-    "name":"info.Comets",
+    "name":"info.彗星",
     "images":["https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/comet.png"],
     "content":
     [
-      "Mined out all of the Draconium Ore in The End? Get yourself some form of flight and go search the end. If you're lucky, you may come across an Ender Comet. These comets are comprised of End Stone, Obsidian and a significant amount of Draconium Ore. By default they have a 1 in 10000 chance to spawn in each chunk so you may need to search for a while. They come in various sizes.",
+      "把末地里所有的龙矿挖完了？去搜索末地吧.如果你很幸运的话，你可能会遇到末地彗星.这些彗星由末地石，黑曜石和重要的龙矿组成.在每个区块有万分之一的概率生成彗星，所以你需要寻找很久.它们有各种各样的形态和大小.",
       "https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/comet.png"
     ]
   },
   {
-    "name":"info.Chaos Islands",
+    "name":"info.混沌岛",
     "images":["https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/chaosIsland.png"],
     "content":
     [
-      "Looking for a challenge? The fight of your life! The Ender Dragon wasn't hard enough? Maby try 100 ender dragons all at once plus maby a few dosen withers. And if thats still not hard enough then maby this is for you! If you travel to any multiple of 10,000 in The End (e.g. {x=0, z=10000}, {x=0, z=20000}, {x=10000, z=0} etc.) you will find a Chaos Island.",
-      "A Chaos island is a formation of end stone and obsidian formed over billions of years by dark energy. At its heart in an obsidian chamber is a crystal made from pure dark energy known as a Chaos Crystal.",
-      "Chaos islands are protected by one of the most powerful mobs in existence. The Chaos Guardian. These guardians were once regular enderdragons but exposure to the dark energy of the chaos islands has mutated them into some of the deadliest killing machines of all time.",
-      "The various attacks of the Chaos Guardian will cut through almost any armor with one exception being draconic armor with its ability to block piercing damage. However it has the ability to rabidly drain any RF powered armor of its charge so it will quickly render your armor useless if you don't keep it charged.",
-      "Like the ender dragon the guardian has several healing crystals spread around the island. But unlike regular ender crystals these crystals are not so easy to destroy. They each have 50 hit points and when damaged will protect themselves with a shield for several seconds. You must disable all of the crystals before the guardian can be damaged.",
-      "Be aware that when low on health the guardian will occasionally try to re ignite some of the disabled crystals.",
-      "Once the guardian is defeated you can claim your reward. At the centre of the island several blocks below the surface you will find a chaos chamber containing a chaos crystal. When broken the chaos crystal will drop 5 chaos shards.",
-      "§4Be Warned!§r When you destroy the crystal the energy field it was generating will collapse. This will result in the total animation of the island within a matter of seconds. Unless you are wearing full draconic armor you will only have a few seconds to collect the shards and escape the island before you are obliterated along with the island.",
+      "想找一个有挑战性的事吗？没错了，你一定想要找到你的宿命的对决！打败了末影龙对你来说小菜一碟？可能你说你可以在同一时间打一百条末影龙或者一堆凋灵？如果这都不能难倒你的话那么现在就有一个机会给你.如果你在末地前往坐标x轴或z轴坐标为10000的倍数的地点.比如x为0，z为10000，或者x为0，z为20000，又或者x为10000，z为0.在诸如此类坐标的地点，你可能会找到一个混沌岛，这个岛非常危险，即使是创造模式也难以靠近.",
+      "混沌岛是一个由末地石和黑曜石组成的结构体并且形成时间绝对超过100万年。它是由暗能量促进生成的。在其黑曜石核心的晶体部分，有一个被我们称之为混沌晶体的由纯暗能量组成的超级屌的晶体.",
+      "混沌岛由一种在所有已知物种中最流逼的，最凶残的玩意儿守护着.那就是混沌守卫！他们原本都是一坨稀疏平常的末影龙，然而因为常年暴露在暗能量下，暗能量辐射并腐蚀了他们的身心，他们最终却成为了最致命的杀戮机器.",
+      "混沌守卫会用它的穿刺方块的攻击使其破除这世界上百分之九十九的护甲从而直接对目标本体进行攻击.除了一种特别的龙装以外.但同时它又有能使你的龙装中的能量疯狂流失的能力，进而使你的护甲无效化.也就是说如果你不携带能充能的玩意儿，那就是在作死.",
+      "就像末影龙一样，混沌守卫也有它自己的治疗晶体能在战斗时帮他们补充血量，而这些晶体则分散坐落在岛屿上。但有所不同的是，这些治愈晶体可没有那么轻松就会被你破坏，要不然它还能被称为最凶残最流逼吗？",
+      "要注意的是，混沌守卫比末影龙要聪明多了，他可是开着挂跟你打的，人家可是能够重新启动那些已经被你破坏的治愈晶体的.",
+      "如果混沌守卫被打败，你便可以去索要你的报酬了，好歹累死累活的打了这么久不是吗。。。混沌岛也不会亏待你，你可以屁颠屁颠的跑到混沌岛最中心，然后向下挖个几层，你就会发现一个藏有混沌晶体的的混沌室。打碎混沌晶体你就会得到你的战利品-5个混沌碎片！",
+      "警告！！！当你摧毁混沌晶体的时候，能量域场会震荡从而使那里整体坍塌。这会直接导致这整座岛屿会在几秒内毁灭。除非你小子命大正好穿着护甲正处于满格状态的龙装，不然你就认命吧因为你只有几秒的时间去捡碎片并且逃离此地，否则你就会和这座岛屿一起被抹除在这个世界上。换句话说，充好能再来，不然就GG.",
+
       "https://raw.githubusercontent.com/brandon3055/Random-Bits/master/DE%20Tablet%20Images/chaosIsland.png"
     ]
   },
   {
-    "name":"info.Placing items in world",
+    "name":"info.放置物品在世界上",
     "images":[],
     "content":
     [
-      "Draconic Evolution adds the ability to place any item in the world as a block allowing you to do things like hang tools or other items on walls for display.",
-      "To place an item in the world simply look at a block with the item selected (as if you were about to place a block) and press the \"Place Item\" key (p by default).",
-      "You can place items on the top bottom or sides of a block. You can left-click to rotate the item clockwise and shift left-click to rotate the item counter-clockwise.",
-      "You can also shift right-click to rotate the item counter-clockwise in very small increments. Right-click to pick the item up."
+      "龙之进化使你可以把任何物品当成方块放置在世界中，你可以像悬挂工具一样把物品挂在墙上进行演示.",
+      "把物品拿在手上并对准一个方块，按 Place Item 键可以把拿在手上的物品放置在世界中.Place Item的默认键是P.",
+      "你可以把物品放置在方块的底部或者侧面.按鼠标左键可以顺时针旋转它，按shift+鼠标左键可以逆时针旋转它.",
+      "你也可以按shift+鼠标右键使它们以更小的角度逆时针旋转.按右键可以捡起那些放置在世界中的物品."
     ]
   },
   {
-    "name":"info.Computercraft and Open Computers",
+    "name":"info.Computercraft模组和开放式电脑模组",
     "images":[],
     "content":
     [
-      "Several blocks can now be connected to computers.",
-      "Currently the blocks that can be connected to computers are",
-      "-Energy Storage Core (Via Energy Pylons)",
-      "-Draconic Reactor (Via Stabilizers or Injectors)",
-      "-Flux and Fluid Gates"
-    ]
-  }
+      "一些方块现在也可以和其它模组中的电脑关联.",
+      "现在以下方块可以和电脑关联",
+      "-能量核心",
+      "-反应堆",
+      "-流体阀门",
+	  "-能量阀门"
+	]
+  },
 ]

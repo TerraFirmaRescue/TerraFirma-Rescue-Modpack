@@ -1,152 +1,208 @@
 {
     "images":
     {
-        "title":
+	
+		"black":
         {
-            "image" : "mainmenu:textures/gui/null.png",
-            "posX" : -137,
-            "posY" : 30,
-            "width" : 851,
-            "height" : 127,
-            "alignment" : "top_center"
+            "image" : "mainmenu:textures/bg_menu2.png",
+            "posX" : 0,
+            "posY" : 0,
+            "width" : 150,
+            "height" : 4096,
+            "alignment" : "column_top"
+        },
+		"logo":
+        {
+            "image" : "mainmenu:textures/logo2.png",
+            "posX" : 0,
+            "posY" : 0,
+            "width" : 150,
+            "height" : 116.3692785,
+            "alignment" : "column_logo"
         }
-    },
+	
+	},
     
     "buttons":
-    {
-        "singleplayer":
+    {  
+		"singleplayer":
         {
-            "text" : "menu.singleplayer",
-            "posX" : -100,
-            "posY" : 48,
-            "width" : 200,
+            "text" : "Singleplayer",
+			"hoverText" : "A lonely journey begins...",
+			"normalTextColor" : 4227327,
+			"hoverTextColor" : 16711680,
+			"texture" : "mainmenu:textures/btn4.png",
+            "posX" : 0,
+            "posY" : -120,
+            "width" : 150,
             "height" : 20,
+			imageWidth : 1000,
+			imageHeight : 1,
+			"alignment" : "column_bottom",
             "action" : 
             {
                 "type" : "openGui",
                 "gui" : "singleplayer"
             }
-        },
-        
-        "multiplayer":
+        },		
+
+		"multiplayer":
         {
-            "text" : "menu.multiplayer",
-            "posX" : -100,
-            "posY" : 72,
-            "width" : 200,
+            "text" : "Multiplayer",	
+			"hoverText" : "Survive as a team...",		
+			"normalTextColor" : 4227327,
+			"hoverTextColor" : 65535,
+			"texture" : "mainmenu:textures/btn4.png",
+            "posX" : 0,
+            "posY" : -100,
+            "width" : 150,
             "height" : 20,
+			imageWidth : 1000,
+			imageHeight : 1,
+			"alignment" : "column_bottom",
             "action" : 
             {
                 "type" : "openGui",
                 "gui" : "multiplayer"
             }
         },
-        
-        "mods":
+               
+		"options":
         {
-            "text" : "Mods",
-            "posX" : -100,
-            "posY" : 96,
-            "width" : 200,
+            "text" : "Options",
+			"normalTextColor" : 4227327,
+			"hoverTextColor" : 16758315,
+			"texture" : "mainmenu:textures/btn4.png",
+            "posX" : 0,
+            "posY" : -80,
+            "width" : 150,
             "height" : 20,
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "mods"
-            }
-        },
-            
-        "options":
-        {
-            "text" : "menu.options",
-            "posX" : -100,
-            "posY" : 132,
-            "width" : 98,
-            "height" : 20,
+			imageWidth : 1000,
+			imageHeight : 1,
+			"alignment" : "column_bottom",
             "action" : 
             {
                 "type" : "openGui",
                 "gui" : "options"
             }
         },
-        
-        "quit":
+		        
+		"language":
         {
-            "text" : "menu.quit",
-            "posX" : 2,
-            "posY" : 132,
-            "width" : 98,
+            "text" : "Language",
+            "hoverText" : "Click to change the game to your own language",		
+			"normalTextColor" : 4227327,
+			"hoverTextColor" : 16758315,
+			"texture" : "mainmenu:textures/btn4.png",
+            "posX" : 0,
+            "posY" : -60,
+            "width" : 150,
             "height" : 20,
-            "action" : 
-            {
-                "type" : "quit"
-            }
-        },
-        
-        "language":
-        {
-            "text" : "",
-            "posX" : -124,
-            "posY" : 132,
-            "width" : 20,
-            "height" : 20,
+			imageWidth : 1000,
+			imageHeight : 1,			
+			"alignment" : "column_bottom",
             "action" : 
             {
                 "type" : "openGui",
                 "gui" : "languages"
             }
         },
-        
-        "refresh":
+		
+        "mods":
         {
-            "text" : "",
-            "posX" : -154,
-            "posY" : 132,
-            "width" : 20,
+            "text" : "Mods (#modsloaded#/#modsactive#)",
+            "hoverText" : "Click to see all the mods in this pack",		
+			"normalTextColor" : 2113664,
+			"hoverTextColor" : 8411925,
+			"texture" : "mainmenu:textures/btn4.png",
+            "posX" : 0,
+            "posY" : -40,
+            "width" : 150,
             "height" : 20,
-            "texture" : "custommainmenu:textures/gui/buttons.png",
+			imageWidth : 1000,
+			imageHeight : 1,
+			imageWidth : 1000,
+			imageHeight : 1,
+			"alignment" : "column_bottom",
             "action" : 
             {
-                "type" : "refresh"
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+                    
+        "quit":
+        {
+            "text" : "Quit",
+			"hoverText" : "No! Don't leave!",
+			"normalTextColor" : 16728128,
+			"hoverTextColor" : 16711680,
+			"texture" : "mainmenu:textures/btn4.png",
+            "posX" : 0,
+            "posY" : -20,
+            "width" : 150,
+            "height" : 20,
+			imageWidth : 1000,
+			imageHeight : 1,
+			"alignment" : "column_bottom",
+            "action" : 
+            {
+                "type" : "quit"
             }
         }
-    },
+	},
     
     "texts":
     {
         "mojang":
         {
-            "text" : "Copyright Mojang AB. Do not distribute!",
-            "posX" : -197,
-            "posY" : -10,
-            "color" : -1,
-            "alignment" : "bottom_right"
-        },
-        
-        "fml":
-        {
-            "text" : "",
-            "posX" : 2,
-            "posY" : -50,
-            "color" : -1,
-            "alignment" : "bottom_left"
-        }
+            "text" : "Forge #forgeversion# for Minecraft #mcversion# - Copyright Mojang AB. Do not distribute!",
+            "posX" : 155,
+            "posY" : 0,
+            "alignment" : "column_bottom"
+        } 
     },
     
+	
+	"alignments":
+    {
+        "column_top":
+        {
+            "factorWidth" : 0.1,
+            "factorHeight" : 0.0
+        },
+		
+        "column_logo":
+        {
+            "factorWidth" : 0.1,
+            "factorHeight" : 0.05
+        },
+ 
+        "column_center":
+        {
+            "factorWidth" : 0.1,
+            "factorHeight" : 0.5
+        },
+ 
+        "column_bottom":
+        {
+            "factorWidth" : 0.1,
+            "factorHeight" : 0.95
+        }
+		
+    },
+	
     "other":
     {
-        "splash-text":
+	        "background":
         {
-            "posX" : 90,
-            "posY" : 70,
-            "color" : -256,
-            "alignment" : "top_center",
-            "texts" : "file:minecraft:texts/splashes.txt"
-        },
-        
-        "background":{
-            "image":"mainmenu:textures/gui/BG1.png",
-            "mode":"fill"
+            "image" : "",
+            "slideshow":
+            {
+                "images" : ["mainmenu:textures/bg.png","mainmenu:textures/bg2.png","mainmenu:textures/bg4.png","mainmenu:textures/bg7.png"],
+                "displayDuration" : 150,
+                "fadeDuration" : 40
+            }
         }
     }
 }
