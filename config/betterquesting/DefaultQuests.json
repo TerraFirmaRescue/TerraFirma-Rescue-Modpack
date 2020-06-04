@@ -546,33 +546,31 @@
     "6:10": {
       "questID:3": 6,
       "preRequisites:11": [
-        3
+        349
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
           "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
-          "isMain:1": 1,
+          "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.block.bale.grass",
+            "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 1,
-            "OreDict:8": ""
+            "Damage:2": 5000,
+            "OreDict:8": "earlyAdvCraftbench"
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
-          "globalShare:1": 1,
+          "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "肝草",
-          "isGlobal:1": 0,
+          "name:8": "高级工作台",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "试试用燧石小刀收集草，合成为草方块后晾晒为干草块\n\n§c可以不露天晒，晒露天如果下雨就会腐烂。"
+          "desc:8": "高级工作台是一个非必须但很有用的设备。他可以用管道输入液体资源，在GUI上部的槽里可以用桶接液体。也可以在旁边放储物桶，合成的时候可以自动抽取物品。侧边是抽屉，也能存放不少东西，而且还有专门放工具的槽位。大力推进！"
         }
       },
       "tasks:9": {
@@ -580,34 +578,21 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:gt.block.bale.grass",
+              "id:8": "gregtech:gt.multitileentity",
               "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "gregtech:gt.block.bale.grass",
-              "Count:3": 1,
-              "Damage:2": 1,
-              "OreDict:8": ""
+              "Damage:2": 5000,
+              "OreDict:8": "earlyAdvCraftbench"
             }
           },
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {
-        "0:10": {
-          "amount:3": 1,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 1,
-          "index:3": 0
-        }
-      }
+      "rewards:9": {}
     },
     "7:10": {
       "questID:3": 7,
@@ -1724,7 +1709,6 @@
     "21:10": {
       "questID:3": 21,
       "preRequisites:11": [
-        18,
         160
       ],
       "properties:10": {
@@ -1967,35 +1951,53 @@
     },
     "25:10": {
       "questID:3": 25,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        414
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
           "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "mo:isolinear_circuit",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
-          "globalShare:1": 1,
+          "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "蒸馏塔",
-          "isGlobal:1": 0,
+          "name:8": "发电机控制板",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "小型电路，足够控制发电机产生稳定的电流。"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mo:isolinear_circuit",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
     "26:10": {
@@ -2473,7 +2475,7 @@
           "globalShare:1": 1,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "§l电解器",
+          "name:8": "§l电解器(LV)",
           "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
@@ -2696,9 +2698,9 @@
           "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.multitileentity",
+            "id:8": "gregtech:gt.multiitem.technological",
             "Count:3": 1,
-            "Damage:2": 32707,
+            "Damage:2": 30301,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
@@ -2706,12 +2708,12 @@
           "globalShare:1": 1,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "焊接",
+          "name:8": "基础电子电路(焊接完成)",
           "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "\n\n焊接时请使用熔融钎焊合金焊接以避免不必要的损失."
+          "desc:8": "和制作镀锌钢的方式类似，在不锈钢浸洗盆内导入熔融焊料，再浸洗电路板就能得到电子电路。要注意的是，焊料一共有三种：铅，锡，钎焊合金(锡和锑9:1制成)。若分别使用铅或者锡作为焊料，得到的电子电路会比电路板的等级低2级和1级，只有用钎焊合金才能保证得到的电子电路等级不下降。焊接时请使用熔融钎焊合金焊接以避免不必要的损失。\n\n\n基础电子电路用于制作一部分LV用电器，也用于制作蒸馏塔。蒸馏塔能够产出塑料，以便快速生产电路基板。"
         }
       },
       "tasks:9": {
@@ -2804,33 +2806,32 @@
     "40:10": {
       "questID:3": 40,
       "preRequisites:11": [
-        30
+        61,
+        42
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
           "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.multitileentity",
-            "Count:3": 1,
-            "Damage:2": 20012,
+            "id:8": "gregtech:gt.meta.dust",
+            "Count:3": 5,
+            "Damage:2": 15602,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
-          "globalShare:1": 1,
+          "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "磨的更稳",
-          "isGlobal:1": 0,
+          "name:8": "不想洗矿了就学化学吧",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "你需要将铬铁矿粉制成铬酸钠，再制成重铬酸钠，再制成氧化铬，以便进行下一步的操作。\n制作一条产线和铝相配合是一个很好的选择。"
         }
       },
       "tasks:9": {
@@ -2843,9 +2844,15 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:gt.multitileentity",
-              "Count:3": 1,
-              "Damage:2": 20012,
+              "id:8": "gregtech:gt.meta.dust",
+              "Count:3": 14,
+              "Damage:2": 9113,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.dust",
+              "Count:3": 5,
+              "Damage:2": 15602,
               "OreDict:8": ""
             }
           },
@@ -2857,33 +2864,31 @@
     "41:10": {
       "questID:3": 41,
       "preRequisites:11": [
-        29
+        40
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
           "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.multitileentity",
-            "Count:3": 1,
-            "Damage:2": 20292,
+            "id:8": "gregtech:gt.meta.plate",
+            "Count:3": 10,
+            "Damage:2": 240,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
-          "globalShare:1": 1,
+          "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "转起来",
-          "isGlobal:1": 0,
+          "name:8": "铝热反应",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "在燃烧反应室中放入铝粉和氧化铬，然后用打火石点火，产生铝热反应生产熔融的铬金属，并且你可以回收氧化铝。模具放在液体输出口即可固化铬金属。"
         }
       },
       "tasks:9": {
@@ -2896,47 +2901,64 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:gt.multitileentity",
-              "Count:3": 1,
-              "Damage:2": 20292,
+              "id:8": "gregtech:gt.meta.dust",
+              "Count:3": 2,
+              "Damage:2": 130,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.meta.plate",
+              "Count:3": 10,
+              "Damage:2": 240,
               "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "moegadd:point5",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "42:10": {
       "questID:3": 42,
       "preRequisites:11": [
-        41
+        207
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
           "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 20293,
+            "Damage:2": 20506,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
-          "globalShare:1": 1,
+          "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "转得飞快",
-          "isGlobal:1": 0,
+          "name:8": "高温搅拌机(LV)",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "处理一些需要很高活化能的化学反应"
         }
       },
       "tasks:9": {
@@ -2951,7 +2973,7 @@
             "0:10": {
               "id:8": "gregtech:gt.multitileentity",
               "Count:3": 1,
-              "Damage:2": 20293,
+              "Damage:2": 20506,
               "OreDict:8": ""
             }
           },
@@ -2963,33 +2985,31 @@
     "43:10": {
       "questID:3": 43,
       "preRequisites:11": [
-        40
+        44
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
           "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 20013,
+            "Damage:2": 20331,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
-          "globalShare:1": 1,
+          "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "磨的更快",
-          "isGlobal:1": 0,
+          "name:8": "激光焊接T1",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "焊接一些你原先不能在砧上锻造的金属，比如铬和钨钢。而且，也能制作砧的配方。你至此终于彻底摆脱砧了。"
         }
       },
       "tasks:9": {
@@ -3004,7 +3024,7 @@
             "0:10": {
               "id:8": "gregtech:gt.multitileentity",
               "Count:3": 1,
-              "Damage:2": 20013,
+              "Damage:2": 20331,
               "OreDict:8": ""
             }
           },
@@ -3016,33 +3036,32 @@
     "44:10": {
       "questID:3": 44,
       "preRequisites:11": [
-        42
+        207,
+        72
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
           "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 20294,
+            "Damage:2": 10101,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
-          "globalShare:1": 1,
+          "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "涡轮式洗矿",
-          "isGlobal:1": 0,
+          "name:8": "激光能LV",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "电流通过二氧化碳镭射管时会释放集中的光能，借此技术可以产生LU，一种重要的能量。很多机器需要LU运行。"
         }
       },
       "tasks:9": {
@@ -3057,7 +3076,7 @@
             "0:10": {
               "id:8": "gregtech:gt.multitileentity",
               "Count:3": 1,
-              "Damage:2": 20294,
+              "Damage:2": 10101,
               "OreDict:8": ""
             }
           },
@@ -3069,33 +3088,31 @@
     "45:10": {
       "questID:3": 45,
       "preRequisites:11": [
-        43
+        267
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
           "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 20014,
+            "Damage:2": 10113,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
-          "globalShare:1": 1,
+          "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "超快滚轮",
-          "isGlobal:1": 0,
+          "name:8": "发电机(HV)",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "一台HV级别的发电机"
         }
       },
       "tasks:9": {
@@ -3110,7 +3127,7 @@
             "0:10": {
               "id:8": "gregtech:gt.multitileentity",
               "Count:3": 1,
-              "Damage:2": 20014,
+              "Damage:2": 10113,
               "OreDict:8": ""
             }
           },
@@ -3266,33 +3283,31 @@
     "48:10": {
       "questID:3": 48,
       "preRequisites:11": [
-        28
+        235
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
           "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 20022,
+            "Damage:2": 10114,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
           "repeatTime:3": -1,
-          "globalShare:1": 1,
+          "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "加速破碎",
-          "isGlobal:1": 0,
+          "name:8": "发电机(EV)",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "一台EV级别的发电机"
         }
       },
       "tasks:9": {
@@ -3307,7 +3322,7 @@
             "0:10": {
               "id:8": "gregtech:gt.multitileentity",
               "Count:3": 1,
-              "Damage:2": 20022,
+              "Damage:2": 10114,
               "OreDict:8": ""
             }
           },
@@ -3319,7 +3334,7 @@
     "49:10": {
       "questID:3": 49,
       "preRequisites:11": [
-        48
+        102
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3332,7 +3347,7 @@
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
-            "Damage:2": 20023,
+            "Damage:2": 1044,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
@@ -3340,12 +3355,12 @@
           "globalShare:1": 1,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "高速破碎",
+          "name:8": "碳化铌钛坩锅",
           "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "碳化铌钛坩锅-你能制作的最高熔点的干锅，除了埃德曼合金以外"
         }
       },
       "tasks:9": {
@@ -3360,7 +3375,13 @@
             "0:10": {
               "id:8": "gregtech:gt.multitileentity",
               "Count:3": 1,
-              "Damage:2": 20023,
+              "Damage:2": 1044,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 1094,
               "OreDict:8": ""
             }
           },
@@ -3370,59 +3391,6 @@
       "rewards:9": {}
     },
     "50:10": {
-      "questID:3": 50,
-      "preRequisites:11": [
-        49
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.multitileentity",
-            "Count:3": 1,
-            "Damage:2": 20024,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 1,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "超速破碎",
-          "isGlobal:1": 0,
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "No Description"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.multitileentity",
-              "Count:3": 1,
-              "Damage:2": 20024,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "51:10": {
       "questID:3": 51,
       "preRequisites:11": [
         159
@@ -3493,7 +3461,7 @@
         }
       }
     },
-    "52:10": {
+    "51:10": {
       "questID:3": 52,
       "preRequisites:11": [
         27
@@ -3565,7 +3533,7 @@
         }
       }
     },
-    "53:10": {
+    "52:10": {
       "questID:3": 53,
       "preRequisites:11": [
         24
@@ -3630,7 +3598,7 @@
       },
       "rewards:9": {}
     },
-    "54:10": {
+    "53:10": {
       "questID:3": 54,
       "preRequisites:11": [
         24
@@ -3695,10 +3663,10 @@
       },
       "rewards:9": {}
     },
-    "55:10": {
+    "54:10": {
       "questID:3": 55,
       "preRequisites:11": [
-        34
+        207
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3748,7 +3716,7 @@
       },
       "rewards:9": {}
     },
-    "56:10": {
+    "55:10": {
       "questID:3": 56,
       "preRequisites:11": [
         27,
@@ -3802,7 +3770,7 @@
       },
       "rewards:9": {}
     },
-    "57:10": {
+    "56:10": {
       "questID:3": 57,
       "preRequisites:11": [
         34
@@ -3855,7 +3823,7 @@
       },
       "rewards:9": {}
     },
-    "58:10": {
+    "57:10": {
       "questID:3": 58,
       "preRequisites:11": [
         32
@@ -3945,7 +3913,7 @@
         }
       }
     },
-    "59:10": {
+    "58:10": {
       "questID:3": 59,
       "preRequisites:11": [
         261
@@ -4028,10 +3996,9 @@
         }
       }
     },
-    "60:10": {
+    "59:10": {
       "questID:3": 60,
       "preRequisites:11": [
-        57,
         84
       ],
       "properties:10": {
@@ -4040,10 +4007,10 @@
           "taskLogic:8": "AND",
           "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
-          "isMain:1": 1,
+          "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.meta.ingot",
+            "id:8": "gregtech:gt.meta.dust",
             "Count:3": 1,
             "Damage:2": 220,
             "OreDict:8": ""
@@ -4082,7 +4049,7 @@
       },
       "rewards:9": {}
     },
-    "61:10": {
+    "60:10": {
       "questID:3": 61,
       "preRequisites:11": [
         54,
@@ -4097,7 +4064,7 @@
           "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.meta.ingot",
+            "id:8": "gregtech:gt.meta.dust",
             "Count:3": 1,
             "Damage:2": 130,
             "OreDict:8": ""
@@ -4136,12 +4103,10 @@
       },
       "rewards:9": {}
     },
-    "62:10": {
+    "61:10": {
       "questID:3": 62,
       "preRequisites:11": [
-        57,
-        53,
-        84
+        53
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4191,7 +4156,7 @@
       },
       "rewards:9": {}
     },
-    "63:10": {
+    "62:10": {
       "questID:3": 63,
       "preRequisites:11": [
         211
@@ -4220,7 +4185,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "用于裂化石化产物，将高级烷烃裂化为更多的低级烷烃。产出的流体比裂化塔少。"
         }
       },
       "tasks:9": {
@@ -4244,10 +4209,11 @@
       },
       "rewards:9": {}
     },
-    "64:10": {
+    "63:10": {
       "questID:3": 64,
       "preRequisites:11": [
-        266
+        266,
+        207
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4273,7 +4239,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "电路板分为基板，蚀刻电路，和电子元件三部分组成。\n在热电子工作台中，你可以制作他们。"
+          "desc:8": "恭喜你，可以制作人生中第一个电路板了！\n低等级的电路板分为基板，蚀刻电路，和电子元件三部分组成。\n在热电子工作台中，你可以制作他们。"
         }
       },
       "tasks:9": {
@@ -4309,7 +4275,7 @@
       },
       "rewards:9": {}
     },
-    "65:10": {
+    "64:10": {
       "questID:3": 65,
       "preRequisites:11": [
         11,
@@ -4387,7 +4353,7 @@
         }
       }
     },
-    "66:10": {
+    "65:10": {
       "questID:3": 66,
       "preRequisites:11": [
         65
@@ -4446,7 +4412,7 @@
       },
       "rewards:9": {}
     },
-    "67:10": {
+    "66:10": {
       "questID:3": 67,
       "preRequisites:11": [
         60
@@ -4498,7 +4464,7 @@
       },
       "rewards:9": {}
     },
-    "68:10": {
+    "67:10": {
       "questID:3": 68,
       "preRequisites:11": [
         101
@@ -4576,10 +4542,10 @@
         }
       }
     },
-    "69:10": {
+    "68:10": {
       "questID:3": 69,
       "preRequisites:11": [
-        266
+        240
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4629,7 +4595,7 @@
       },
       "rewards:9": {}
     },
-    "70:10": {
+    "69:10": {
       "questID:3": 70,
       "preRequisites:11": [
         27
@@ -4701,7 +4667,7 @@
         }
       }
     },
-    "71:10": {
+    "70:10": {
       "questID:3": 71,
       "preRequisites:11": [
         63
@@ -4754,7 +4720,7 @@
       },
       "rewards:9": {}
     },
-    "72:10": {
+    "71:10": {
       "questID:3": 72,
       "preRequisites:11": [
         64
@@ -4770,7 +4736,7 @@
           "icon:10": {
             "id:8": "gregtech:gt.multiitem.technological",
             "Count:3": 1,
-            "Damage:2": 30301,
+            "Damage:2": 30201,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
@@ -4778,12 +4744,12 @@
           "globalShare:1": 1,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "第一个电路板",
+          "name:8": "基础电路板(等待焊接)",
           "isGlobal:1": 0,
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": ""
         }
       },
       "tasks:9": {
@@ -4807,7 +4773,7 @@
       },
       "rewards:9": {}
     },
-    "73:10": {
+    "72:10": {
       "questID:3": 73,
       "preRequisites:11": [
         69
@@ -4860,62 +4826,7 @@
       },
       "rewards:9": {}
     },
-    "74:10": {
-      "questID:3": 74,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "betterquesting:placeholder",
-            "Count:3": 1,
-            "tag:10": {
-              "orig_meta:3": 0,
-              "orig_id:8": "GalacticraftCore:item.spaceship"
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 1,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "春节期间上线福利",
-          "isGlobal:1": 0,
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "本福利每天更新(要记得每天来哦)(什么你觉得有一阶火箭免费送?那是你想多了)"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "minecraft:cooked_porkchop",
-              "Count:3": 6,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "75:10": {
+    "73:10": {
       "questID:3": 75,
       "preRequisites:11": [
         17
@@ -4968,7 +4879,7 @@
       },
       "rewards:9": {}
     },
-    "76:10": {
+    "74:10": {
       "questID:3": 76,
       "preRequisites:11": [
         12
@@ -5034,7 +4945,7 @@
         }
       }
     },
-    "77:10": {
+    "75:10": {
       "questID:3": 77,
       "preRequisites:11": [
         75,
@@ -5088,7 +4999,7 @@
       },
       "rewards:9": {}
     },
-    "78:10": {
+    "76:10": {
       "questID:3": 78,
       "preRequisites:11": [
         37
@@ -5159,10 +5070,11 @@
         }
       }
     },
-    "79:10": {
+    "77:10": {
       "questID:3": 79,
       "preRequisites:11": [
-        38
+        38,
+        44
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -5183,7 +5095,7 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "激光蚀刻",
+          "name:8": "激光蚀刻T1",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
@@ -5202,12 +5114,6 @@
             "0:10": {
               "id:8": "gregtech:gt.multitileentity",
               "Count:3": 1,
-              "Damage:2": 10101,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "gregtech:gt.multitileentity",
-              "Count:3": 1,
               "Damage:2": 20321,
               "OreDict:8": ""
             }
@@ -5217,7 +5123,7 @@
       },
       "rewards:9": {}
     },
-    "80:10": {
+    "78:10": {
       "questID:3": 80,
       "preRequisites:11": [
         27
@@ -5269,7 +5175,7 @@
       },
       "rewards:9": {}
     },
-    "81:10": {
+    "79:10": {
       "questID:3": 81,
       "preRequisites:11": [
         304
@@ -5340,7 +5246,7 @@
         }
       }
     },
-    "82:10": {
+    "80:10": {
       "questID:3": 82,
       "preRequisites:11": [
         69
@@ -5392,7 +5298,7 @@
       },
       "rewards:9": {}
     },
-    "83:10": {
+    "81:10": {
       "questID:3": 83,
       "preRequisites:11": [
         27
@@ -5445,10 +5351,10 @@
       },
       "rewards:9": {}
     },
-    "84:10": {
+    "82:10": {
       "questID:3": 84,
       "preRequisites:11": [
-        34
+        57
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -5498,7 +5404,7 @@
       },
       "rewards:9": {}
     },
-    "85:10": {
+    "83:10": {
       "questID:3": 85,
       "preRequisites:11": [
         32,
@@ -5552,64 +5458,7 @@
       },
       "rewards:9": {}
     },
-    "86:10": {
-      "questID:3": 86,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:nether_star",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": ""
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "minecraft:stone",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "amount:3": 1,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 1,
-          "index:3": 0
-        }
-      }
-    },
-    "87:10": {
+    "84:10": {
       "questID:3": 87,
       "preRequisites:11": [
         370
@@ -5653,7 +5502,7 @@
       },
       "rewards:9": {}
     },
-    "88:10": {
+    "85:10": {
       "questID:3": 88,
       "preRequisites:11": [
         27
@@ -5725,152 +5574,7 @@
         }
       }
     },
-    "89:10": {
-      "questID:3": 89,
-      "preRequisites:11": [
-        74
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:mob_spawner",
-            "Count:3": 1,
-            "Damage:2": 50,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "春节限定任务一",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Creeper?我相信聪明的你应该不会要草.minecraft的吧."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "ignoreNBT:1": 1,
-          "index:3": 1,
-          "targetNBT:10": {
-            "Attributes:9": {
-              "0:10": {
-                "Base:6": 20.0,
-                "Name:8": "generic.maxHealth"
-              },
-              "1:10": {
-                "Base:6": 0.0,
-                "Name:8": "generic.knockbackResistance"
-              },
-              "2:10": {
-                "Base:6": 0.25,
-                "Name:8": "generic.movementSpeed"
-              },
-              "3:10": {
-                "Base:6": 16.0,
-                "Name:8": "generic.followRange"
-              },
-              "4:10": {
-                "Base:6": 2.0,
-                "Name:8": "generic.attackDamage"
-              }
-            },
-            "Invulnerable:1": 0,
-            "PortalCooldown:3": 0,
-            "AbsorptionAmount:5": 0.0,
-            "FallDistance:5": 0.0,
-            "DeathTime:2": 0,
-            "DropChances:9": {
-              "0:5": 0.085,
-              "1:5": 0.085,
-              "2:5": 0.085,
-              "3:5": 0.085,
-              "4:5": 0.085
-            },
-            "PersistenceRequired:1": 0,
-            "id:8": "Creeper",
-            "HealF:5": 20.0,
-            "Fuse:2": 30,
-            "Motion:9": {
-              "0:6": 0.0,
-              "1:6": 0.0,
-              "2:6": 0.0
-            },
-            "Leashed:1": 0,
-            "UUIDLeast:4": 6789345393167121993,
-            "Health:2": 20,
-            "Air:2": 300,
-            "OnGround:1": 0,
-            "Dimension:3": 0,
-            "ignited:1": 0,
-            "Rotation:9": {
-              "0:5": 2.9282496,
-              "1:5": 0.0
-            },
-            "UUIDMost:4": 14721723198517,
-            "Equipment:9": {
-              "0:10": {},
-              "1:10": {},
-              "2:10": {},
-              "3:10": {},
-              "4:10": {}
-            },
-            "CustomName:8": "",
-            "Pos:9": {
-              "0:6": 0.0,
-              "1:6": 0.0,
-              "2:6": 0.0
-            },
-            "Fire:2": 0,
-            "CanPickUpLoot:1": 0,
-            "HurtTime:2": 0,
-            "AttackTime:2": 0,
-            "ExplosionRadius:1": 3,
-            "CustomNameVisible:1": 0
-          },
-          "damageType:8": "",
-          "required:3": 1,
-          "taskID:8": "bq_standard:hunt",
-          "target:8": "Creeper",
-          "subtypes:1": 1
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:choice",
-          "index:3": 0,
-          "choices:9": {
-            "0:10": {
-              "id:8": "minecraft:tallgrass",
-              "Count:3": 64,
-              "Damage:2": 1,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "minecraft:potion",
-              "Count:3": 1,
-              "Damage:2": 8262,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "id:8": "minecraft:cake",
-              "Count:3": 4,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "90:10": {
+    "86:10": {
       "questID:3": 90,
       "preRequisites:11": [
         160
@@ -5970,7 +5674,7 @@
         }
       }
     },
-    "91:10": {
+    "87:10": {
       "questID:3": 91,
       "preRequisites:11": [
         90
@@ -6022,7 +5726,7 @@
         }
       }
     },
-    "92:10": {
+    "88:10": {
       "questID:3": 92,
       "preRequisites:11": [
         213
@@ -6033,7 +5737,7 @@
           "taskLogic:8": "AND",
           "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
-          "isMain:1": 1,
+          "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
@@ -6080,7 +5784,7 @@
       },
       "rewards:9": {}
     },
-    "93:10": {
+    "89:10": {
       "questID:3": 93,
       "preRequisites:11": [
         62
@@ -6132,7 +5836,7 @@
       },
       "rewards:9": {}
     },
-    "94:10": {
+    "90:10": {
       "questID:3": 94,
       "preRequisites:11": [
         92
@@ -6170,7 +5874,7 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
               "id:8": "gregtech:gt.meta.ingot",
@@ -6184,7 +5888,7 @@
       },
       "rewards:9": {}
     },
-    "95:10": {
+    "91:10": {
       "questID:3": 95,
       "preRequisites:11": [
         61
@@ -6198,7 +5902,7 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.meta.ingot",
+            "id:8": "gregtech:gt.meta.plate",
             "Count:3": 1,
             "Damage:2": 8665,
             "OreDict:8": ""
@@ -6225,8 +5929,8 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:gt.meta.ingot",
-              "Count:3": 1,
+              "id:8": "gregtech:gt.meta.plate",
+              "Count:3": 16,
               "Damage:2": 8665,
               "OreDict:8": ""
             }
@@ -6236,7 +5940,7 @@
       },
       "rewards:9": {}
     },
-    "96:10": {
+    "92:10": {
       "questID:3": 96,
       "preRequisites:11": [
         61
@@ -6313,10 +6017,11 @@
         }
       }
     },
-    "97:10": {
-      "questID:3": 97,
+    "93:10": {
+      "questID:3": 98,
       "preRequisites:11": [
-        61
+        61,
+        38
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6325,66 +6030,6 @@
           "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
           "isMain:1": 1,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "betterquesting:placeholder",
-            "Count:3": 1,
-            "tag:10": {
-              "orig_meta:3": 0,
-              "orig_id:8": "GalacticraftCore:item.spaceship"
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "我要上天",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "有铝了，搓个火箭吧？"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "betterquesting:placeholder",
-              "Count:3": 1,
-              "tag:10": {
-                "orig_meta:3": 0,
-                "orig_id:8": "GalacticraftCore:item.spaceship"
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "98:10": {
-      "questID:3": 98,
-      "preRequisites:11": [
-        61
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
@@ -6397,7 +6042,7 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "我想要更多的电",
+          "name:8": "发电机(MV)-我想要更多的电",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
@@ -6473,7 +6118,7 @@
       },
       "rewards:9": {}
     },
-    "99:10": {
+    "94:10": {
       "questID:3": 99,
       "preRequisites:11": [
         136,
@@ -6563,7 +6208,7 @@
         }
       }
     },
-    "100:10": {
+    "95:10": {
       "questID:3": 100,
       "preRequisites:11": [
         90
@@ -6640,7 +6285,7 @@
         }
       }
     },
-    "101:10": {
+    "96:10": {
       "questID:3": 101,
       "preRequisites:11": [
         11
@@ -6720,7 +6365,7 @@
         }
       }
     },
-    "102:10": {
+    "97:10": {
       "questID:3": 102,
       "preRequisites:11": [
         103,
@@ -6750,7 +6395,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "你能制作的最高熔点的干锅，除了埃德曼合金以外"
+          "desc:8": "碳化铪钽坩锅"
         }
       },
       "tasks:9": {
@@ -6780,7 +6425,7 @@
       },
       "rewards:9": {}
     },
-    "103:10": {
+    "98:10": {
       "questID:3": 103,
       "preRequisites:11": [
         34
@@ -6833,7 +6478,7 @@
       },
       "rewards:9": {}
     },
-    "104:10": {
+    "99:10": {
       "questID:3": 104,
       "preRequisites:11": [
         94
@@ -6892,252 +6537,7 @@
       },
       "rewards:9": {}
     },
-    "105:10": {
-      "questID:3": 105,
-      "preRequisites:11": [
-        97
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "betterquesting:placeholder",
-            "Count:3": 1,
-            "tag:10": {
-              "orig_meta:3": 1,
-              "orig_id:8": "GalacticraftMars:item.spaceshipTier2"
-            },
-            "Damage:2": 1,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 1,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "火星计划",
-          "isGlobal:1": 0,
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "二级火箭不难做，让它带你去火星这片富饶之地吧。火星的矿脉生成与GT5类似，能够提供两种特殊的金属：硅岩和telin"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "betterquesting:placeholder",
-              "Count:3": 1,
-              "tag:10": {
-                "orig_meta:3": 1,
-                "orig_id:8": "GalacticraftMars:item.spaceshipTier2"
-              },
-              "Damage:2": 1,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "106:10": {
-      "questID:3": 106,
-      "preRequisites:11": [
-        105
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "betterquesting:placeholder",
-            "Count:3": 1,
-            "tag:10": {
-              "orig_meta:3": 12,
-              "orig_id:8": "GalaxySpace:item.BasicItems"
-            },
-            "Damage:2": 12,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 1,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "地牢",
-          "isGlobal:1": 0,
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "在月球和火星的表面探索时你有时会发现很深的坑。这是地牢。击败其中的boss你将获得钥匙并获得图纸。寻找图纸盒，他将是你制作更高级火箭的必需品。"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "betterquesting:placeholder",
-              "Count:3": 1,
-              "tag:10": {
-                "orig_meta:3": 12,
-                "orig_id:8": "GalaxySpace:item.BasicItems"
-              },
-              "Damage:2": 12,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "107:10": {
-      "questID:3": 107,
-      "preRequisites:11": [
-        105
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "betterquesting:placeholder",
-            "Count:3": 1,
-            "tag:10": {
-              "orig_meta:3": 0,
-              "orig_id:8": "GalaxySpace:rocketAssembly"
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 1,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "火箭工业",
-          "isGlobal:1": 0,
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "制作三级以上的火箭"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "betterquesting:placeholder",
-              "Count:3": 1,
-              "tag:10": {
-                "orig_meta:3": 0,
-                "orig_id:8": "GalaxySpace:rocketAssembly"
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "108:10": {
-      "questID:3": 108,
-      "preRequisites:11": [
-        107,
-        106
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "betterquesting:placeholder",
-            "Count:3": 1,
-            "tag:10": {
-              "orig_meta:3": 0,
-              "orig_id:8": "GalacticraftMars:item.itemTier3Rocket"
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 1,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "小行星带",
-          "isGlobal:1": 0,
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "3级火箭可以前往小行星带，那里有巨量的钛铁矿和赤铁矿。"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "betterquesting:placeholder",
-              "Count:3": 1,
-              "tag:10": {
-                "orig_meta:3": 0,
-                "orig_id:8": "GalacticraftMars:item.itemTier3Rocket"
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "109:10": {
+    "100:10": {
       "questID:3": 109,
       "preRequisites:11": [
         93
@@ -7189,7 +6589,7 @@
       },
       "rewards:9": {}
     },
-    "110:10": {
+    "101:10": {
       "questID:3": 110,
       "preRequisites:11": [
         93
@@ -7241,10 +6641,11 @@
       },
       "rewards:9": {}
     },
-    "111:10": {
+    "102:10": {
       "questID:3": 111,
       "preRequisites:11": [
-        235
+        235,
+        45
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -7265,11 +6666,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "足够大量的光",
+          "name:8": "激光蚀刻机(HV)-足够大量的光",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "有了HV激光器之后，电路工业的大门才真正向你敞开"
+          "desc:8": "有了HV激光器之后，半导体工业的大门才真正向你敞开"
         }
       },
       "tasks:9": {
@@ -7299,7 +6700,7 @@
       },
       "rewards:9": {}
     },
-    "112:10": {
+    "103:10": {
       "questID:3": 112,
       "preRequisites:11": [
         113
@@ -7351,7 +6752,7 @@
       },
       "rewards:9": {}
     },
-    "113:10": {
+    "104:10": {
       "questID:3": 113,
       "preRequisites:11": [
         245,
@@ -7404,10 +6805,10 @@
       },
       "rewards:9": {}
     },
-    "114:10": {
+    "105:10": {
       "questID:3": 114,
       "preRequisites:11": [
-        266
+        98
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -7462,7 +6863,7 @@
       },
       "rewards:9": {}
     },
-    "115:10": {
+    "106:10": {
       "questID:3": 115,
       "preRequisites:11": [
         113
@@ -7514,7 +6915,7 @@
       },
       "rewards:9": {}
     },
-    "116:10": {
+    "107:10": {
       "questID:3": 116,
       "preRequisites:11": [
         113
@@ -7566,7 +6967,7 @@
       },
       "rewards:9": {}
     },
-    "117:10": {
+    "108:10": {
       "questID:3": 117,
       "preRequisites:11": [
         113
@@ -7618,89 +7019,7 @@
       },
       "rewards:9": {}
     },
-    "118:10": {
-      "questID:3": 118,
-      "preRequisites:11": [
-        74
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "DraconicEvolution:draconicChest",
-            "Count:3": 1,
-            "tag:10": {
-              "Energy:3": 9868499,
-              "ShieldEntropy:5": 0.0,
-              "ConfigProfiles:9": {
-                "0:10": {},
-                "1:10": {},
-                "2:10": {},
-                "3:10": {},
-                "4:10": {}
-              },
-              "ProtectionPoints:5": 200.0
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "防御病毒专栏",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "出门要保护好自己-by：Moegcraft全体管理组成员"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "minecraft:leather_helmet",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "minecraft:leather_chestplate",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "id:8": "minecraft:leather_leggings",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "3:10": {
-              "id:8": "minecraft:leather_boots",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "119:10": {
+    "109:10": {
       "questID:3": 119,
       "preRequisites:11": [
         129,
@@ -7767,7 +7086,7 @@
         }
       }
     },
-    "120:10": {
+    "110:10": {
       "questID:3": 120,
       "preRequisites:11": [
         119
@@ -7925,7 +7244,7 @@
       },
       "rewards:9": {}
     },
-    "121:10": {
+    "111:10": {
       "questID:3": 121,
       "preRequisites:11": [
         337
@@ -7993,7 +7312,7 @@
         }
       }
     },
-    "122:10": {
+    "112:10": {
       "questID:3": 122,
       "preRequisites:11": [
         121
@@ -8058,7 +7377,7 @@
         }
       }
     },
-    "123:10": {
+    "113:10": {
       "questID:3": 123,
       "preRequisites:11": [
         125
@@ -8110,7 +7429,7 @@
       },
       "rewards:9": {}
     },
-    "124:10": {
+    "114:10": {
       "questID:3": 124,
       "preRequisites:11": [
         125
@@ -8180,7 +7499,7 @@
       },
       "rewards:9": {}
     },
-    "125:10": {
+    "115:10": {
       "questID:3": 125,
       "preRequisites:11": [
         535
@@ -8263,7 +7582,7 @@
         }
       }
     },
-    "126:10": {
+    "116:10": {
       "questID:3": 126,
       "preRequisites:11": [
         536,
@@ -8340,57 +7659,7 @@
       },
       "rewards:9": {}
     },
-    "127:10": {
-      "questID:3": 127,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "Avaritia:Neutron_Collector",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "中子素",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "你可以通过GT聚变或者中子态素收集器获得它们"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "Avaritia:Neutron_Collector",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "128:10": {
+    "117:10": {
       "questID:3": 128,
       "preRequisites:11": [
         131
@@ -8442,7 +7711,7 @@
       },
       "rewards:9": {}
     },
-    "129:10": {
+    "118:10": {
       "questID:3": 129,
       "preRequisites:11": [
         215
@@ -8494,7 +7763,7 @@
       },
       "rewards:9": {}
     },
-    "130:10": {
+    "119:10": {
       "questID:3": 130,
       "preRequisites:11": [
         216
@@ -8553,7 +7822,7 @@
         }
       }
     },
-    "131:10": {
+    "120:10": {
       "questID:3": 131,
       "preRequisites:11": [
         154
@@ -8605,7 +7874,7 @@
       },
       "rewards:9": {}
     },
-    "132:10": {
+    "121:10": {
       "questID:3": 132,
       "preRequisites:11": [
         520
@@ -8644,57 +7913,7 @@
       },
       "rewards:9": {}
     },
-    "133:10": {
-      "questID:3": 133,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:red_flower",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "FTBU圈地指南",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "你可以打开物品栏左上角有一个地图的图标，打开它可以认领区块。\n不需要任何费用.\n但请别胡乱圈地浪费土地资源.\n地图图标上面的绿色小人可以加好友给权限."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "terrafirmacraft:item.leggingsCloth",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "134:10": {
+    "122:10": {
       "questID:3": 134,
       "preRequisites:11": [
         221
@@ -8759,44 +7978,7 @@
         }
       }
     },
-    "135:10": {
-      "questID:3": 135,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.meta.ingot",
-            "Count:3": 13,
-            "Damage:2": 2220,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "赞助",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "§e[支持]赞助系统2.6来啦！\n*三种卷赞助方式更改为赠送点券后自行使用/pshop open 进行兑换。\n1武器/工具/资源券\u003d40点券\n全新上架的枪系列见下方截图\n*以后会推出更多种类的赞助奖励，现有需要的话请联系在线管理员。\n*点券赞助奖励礼包如下：\n1RMB\u003d10+0点券（充值优惠送5游戏币）\n6RMB\u003d60+0点卷（充值优惠送30游戏币）\n10RMB\u003d100+1点券（充值优惠送1点券）\n30RMB\u003d300+10点券（充值优惠送10点券）\n50RMB\u003d500+20点券（充值优惠送20点券）\n100RMB\u003d1000+50点券\n200RMB\u003d2000+100点券\n*新年首冲优惠！\n首次充值满300点卷即可免费额外获赠60点卷，或者获得一条30点卷的兑换码（可转赠他人）\n首次充值300点卷最高可享370点卷！每位玩家限享受一次。\n本活动最后解释权由moegcraft管理组所有"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
-        }
-      },
-      "rewards:9": {}
-    },
-    "136:10": {
+    "123:10": {
       "questID:3": 136,
       "preRequisites:11": [
         155,
@@ -8869,7 +8051,7 @@
         }
       }
     },
-    "137:10": {
+    "124:10": {
       "questID:3": 137,
       "preRequisites:11": [
         281
@@ -8908,44 +8090,7 @@
       },
       "rewards:9": {}
     },
-    "138:10": {
-      "questID:3": 138,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.multitileentity",
-            "Count:3": 1,
-            "Damage:2": 9147,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "好多英文啊我看不懂怎么办",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "群文件里有一个叫GregTech.lang的文件，是最新版的汉化，放在.minecraft这个文件夹里即可"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
-        }
-      },
-      "rewards:9": {}
-    },
-    "139:10": {
+    "125:10": {
       "questID:3": 139,
       "preRequisites:11": [
         27
@@ -9017,7 +8162,7 @@
         }
       }
     },
-    "140:10": {
+    "126:10": {
       "questID:3": 140,
       "preRequisites:11": [
         257
@@ -9082,7 +8227,7 @@
         }
       }
     },
-    "141:10": {
+    "127:10": {
       "questID:3": 141,
       "preRequisites:11": [
         27
@@ -9154,7 +8299,7 @@
         }
       }
     },
-    "142:10": {
+    "128:10": {
       "questID:3": 142,
       "preRequisites:11": [
         93
@@ -9206,7 +8351,7 @@
       },
       "rewards:9": {}
     },
-    "143:10": {
+    "129:10": {
       "questID:3": 143,
       "preRequisites:11": [
         32
@@ -9258,7 +8403,7 @@
       },
       "rewards:9": {}
     },
-    "144:10": {
+    "130:10": {
       "questID:3": 144,
       "preRequisites:11": [
         95
@@ -9310,7 +8455,7 @@
       },
       "rewards:9": {}
     },
-    "145:10": {
+    "131:10": {
       "questID:3": 145,
       "preRequisites:11": [
         93
@@ -9362,7 +8507,7 @@
       },
       "rewards:9": {}
     },
-    "146:10": {
+    "132:10": {
       "questID:3": 146,
       "preRequisites:11": [
         93
@@ -9414,7 +8559,7 @@
       },
       "rewards:9": {}
     },
-    "147:10": {
+    "133:10": {
       "questID:3": 147,
       "preRequisites:11": [
         60
@@ -9466,7 +8611,7 @@
       },
       "rewards:9": {}
     },
-    "148:10": {
+    "134:10": {
       "questID:3": 148,
       "preRequisites:11": [
         60
@@ -9518,158 +8663,7 @@
       },
       "rewards:9": {}
     },
-    "149:10": {
-      "questID:3": 149,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:nether_star",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "免费的食物",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "群峦传说mod会导致你无法进食一些原版的食物，其中就包括送你的苹果，不过别担心，我帮你准备了点其他的。别看这面包只有一个，但是他非常耐吃，多吃几口试试？"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "terrafirmacraft:item.Wheat Bread",
-              "Count:3": 1,
-              "tag:10": {
-                "foodWeight:5": 160.0,
-                "foodDecay:5": -24.0,
-                "decayTimer:3": 6333
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "150:10": {
-      "questID:3": 150,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.meta.ore.normal.default",
-            "Count:3": 1,
-            "Damage:2": 9115,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "砷辉钴矿",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "制作三级镐的便宜金属材料\n坐标x\u003d-260 z\u003d508"
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "151:10": {
-      "questID:3": 151,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.meta.ore.normal.default",
-            "Count:3": 1,
-            "Damage:2": 9104,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "赤铁矿",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "炼铁用原料之一，虽然黑沙更好用，但是我担心会被很快挖空\nx\u003d227 z\u003d181"
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "152:10": {
-      "questID:3": 152,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.meta.ore.normal.default",
-            "Count:3": 1,
-            "Damage:2": 9111,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "黄铜矿",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "里面有黄铜矿和黄铁矿，是铜的重要来源之一\nx\u003d-556 z\u003d-145"
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "153:10": {
+    "135:10": {
       "questID:3": 153,
       "preRequisites:11": [
         116,
@@ -9722,7 +8716,7 @@
       },
       "rewards:9": {}
     },
-    "154:10": {
+    "136:10": {
       "questID:3": 154,
       "preRequisites:11": [
         366,
@@ -9823,7 +8817,7 @@
       },
       "rewards:9": {}
     },
-    "155:10": {
+    "137:10": {
       "questID:3": 155,
       "preRequisites:11": [
         440
@@ -9888,72 +8882,7 @@
         }
       }
     },
-    "156:10": {
-      "questID:3": 156,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "terrafirmacraft:item.Wheat Bread",
-            "Count:3": 1,
-            "tag:10": {
-              "foodWeight:5": 160.0,
-              "foodDecay:5": -24.0,
-              "decayTimer:3": 6335
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "免费的食物",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "群峦传说mod会导致你无法进食原版的食物，你需要食用群峦自己的食物。(就算你变成了机器人还是要吃群峦食物)\n海里有海带，用小刀左键海带就可以得到海带，可以直接吃，也可以烤熟之后吃。"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "terrafirmacraft:item.helmetCloth",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "terrafirmacraft:item.Wheat Bread",
-              "Count:3": 1,
-              "tag:10": {
-                "foodWeight:5": 160.0,
-                "foodDecay:5": -24.0
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "157:10": {
+    "138:10": {
       "questID:3": 157,
       "preRequisites:11": [
         369
@@ -10005,7 +8934,7 @@
       },
       "rewards:9": {}
     },
-    "158:10": {
+    "139:10": {
       "questID:3": 158,
       "preRequisites:11": [
         14
@@ -10041,7 +8970,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -10070,7 +8999,7 @@
         }
       }
     },
-    "159:10": {
+    "140:10": {
       "questID:3": 159,
       "preRequisites:11": [
         160
@@ -10106,7 +9035,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -10141,7 +9070,7 @@
         }
       }
     },
-    "160:10": {
+    "141:10": {
       "questID:3": 160,
       "preRequisites:11": [
         161
@@ -10165,11 +9094,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "§b§l黑钢砧",
+          "name:8": "§b§l黑钢砧-向蒸汽时代的一瞥",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "使用黑钢砧可以制作大部分钢熔点以下熔点以下的金属了，包括钢，锻铁，青铜，铜，锡等。你可以使用这个砧制作众多格雷科技的零件。未来你可以通过其他机器自动化制作他们。不过现在，动手吧！"
+          "desc:8": "使用黑钢砧可以制作大部分钢熔点以下熔点以下的金属了，包括钢，锻铁，青铜，铜，锡等。\n\n刚进入这个阶段的时候你会发现你的各种金属产量严重不足，我建议你去制作几台RC高炉和碎石机配合大量生产钢和铁，并且制作RC辊压机得到3锭转化为2板的收益，另外你应该尽快作出蓝钢或者红钢以解锁格雷坩锅。"
         }
       },
       "tasks:9": {
@@ -10212,7 +9141,7 @@
         }
       }
     },
-    "161:10": {
+    "142:10": {
       "questID:3": 161,
       "preRequisites:11": [
         162,
@@ -10249,7 +9178,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -10278,7 +9207,7 @@
         }
       }
     },
-    "162:10": {
+    "143:10": {
       "questID:3": 162,
       "preRequisites:11": [
         158
@@ -10306,7 +9235,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "焊接双层黑钢，锻造钢锭为各种工具和材料。"
+          "desc:8": "焊接双层黑钢，锻造钢锭为各种工具和材料。你可以使用这个砧制作众多格雷科技的零件。未来你可以通过其他机器自动化制作他们。不过现在，动手吧！"
         }
       },
       "tasks:9": {
@@ -10361,7 +9290,7 @@
         }
       }
     },
-    "163:10": {
+    "144:10": {
       "questID:3": 163,
       "preRequisites:11": [
         10
@@ -10405,7 +9334,7 @@
       },
       "rewards:9": {}
     },
-    "164:10": {
+    "145:10": {
       "questID:3": 164,
       "preRequisites:11": [
         261
@@ -10449,107 +9378,7 @@
       },
       "rewards:9": {}
     },
-    "165:10": {
-      "questID:3": 165,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:gold_block",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "关于赞助\n\n",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Moegcraft从创立至今都在以为我们的玩家提供更好的游戏体验为目标而努力着，如果你赞同我们的理念的话可以选择赞助我们，让我们更加有动力为各位提供优质的服务和最好的魔改整合包。\n\n赞助商城/pshop open\n"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "terrafirmacraft:item.bootsCloth",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "166:10": {
-      "questID:3": 166,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:stone",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "常见指令表",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "玩家指令：\n1.返回主城/spawn\n2.设置家/sethome (家的名称)\n3.传送去家/home (家的名称)\n4.建议反馈/bug report\n5.私聊其他人/t 要私聊的人\n6.传送至其他人/tpa\n7.接受他人传送/tpaccept\nVIP指令系列：\n1.随身工作台/wb\n2.随身末影箱/ec\n3.传送别人/tp(不能传送到固定坐标)\n4.飞行/fly\n5.自助充电（龙套）/res tp Mvp\n6.带一些奇奇怪怪的东西到头上/hat\n7.返回上一个位置/死的位置 /back"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "terrafirmacraft:item.chestplateCloth",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "167:10": {
+    "146:10": {
       "questID:3": 167,
       "preRequisites:11": [
         158
@@ -10614,7 +9443,7 @@
         }
       }
     },
-    "168:10": {
+    "147:10": {
       "questID:3": 168,
       "preRequisites:11": [
         19,
@@ -10704,7 +9533,7 @@
         }
       }
     },
-    "169:10": {
+    "148:10": {
       "questID:3": 169,
       "preRequisites:11": [
         60
@@ -10756,7 +9585,7 @@
       },
       "rewards:9": {}
     },
-    "170:10": {
+    "149:10": {
       "questID:3": 170,
       "preRequisites:11": [
         95
@@ -10808,7 +9637,7 @@
       },
       "rewards:9": {}
     },
-    "171:10": {
+    "150:10": {
       "questID:3": 171,
       "preRequisites:11": [
         95
@@ -10860,7 +9689,7 @@
       },
       "rewards:9": {}
     },
-    "172:10": {
+    "151:10": {
       "questID:3": 172,
       "preRequisites:11": [
         60
@@ -10912,7 +9741,7 @@
       },
       "rewards:9": {}
     },
-    "173:10": {
+    "152:10": {
       "questID:3": 173,
       "preRequisites:11": [
         182
@@ -10964,7 +9793,7 @@
       },
       "rewards:9": {}
     },
-    "174:10": {
+    "153:10": {
       "questID:3": 174,
       "preRequisites:11": [
         32
@@ -11016,7 +9845,7 @@
       },
       "rewards:9": {}
     },
-    "175:10": {
+    "154:10": {
       "questID:3": 175,
       "preRequisites:11": [
         182
@@ -11068,7 +9897,7 @@
       },
       "rewards:9": {}
     },
-    "176:10": {
+    "155:10": {
       "questID:3": 176,
       "preRequisites:11": [
         93
@@ -11120,7 +9949,7 @@
       },
       "rewards:9": {}
     },
-    "177:10": {
+    "156:10": {
       "questID:3": 177,
       "preRequisites:11": [
         93
@@ -11172,7 +10001,7 @@
       },
       "rewards:9": {}
     },
-    "178:10": {
+    "157:10": {
       "questID:3": 178,
       "preRequisites:11": [
         182
@@ -11224,7 +10053,7 @@
       },
       "rewards:9": {}
     },
-    "179:10": {
+    "158:10": {
       "questID:3": 179,
       "preRequisites:11": [
         93
@@ -11276,7 +10105,7 @@
       },
       "rewards:9": {}
     },
-    "180:10": {
+    "159:10": {
       "questID:3": 180,
       "preRequisites:11": [
         182
@@ -11328,7 +10157,7 @@
       },
       "rewards:9": {}
     },
-    "181:10": {
+    "160:10": {
       "questID:3": 181,
       "preRequisites:11": [
         93
@@ -11380,7 +10209,7 @@
       },
       "rewards:9": {}
     },
-    "182:10": {
+    "161:10": {
       "questID:3": 182,
       "preRequisites:11": [
         60
@@ -11421,9 +10250,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:gt.meta.ingot",
-              "Count:3": 1,
-              "Damage:2": 27000,
+              "id:8": "gregtech:gt.meta.plate",
+              "Count:3": 16,
+              "Damage:2": 15000,
               "OreDict:8": ""
             }
           },
@@ -11432,7 +10261,7 @@
       },
       "rewards:9": {}
     },
-    "183:10": {
+    "162:10": {
       "questID:3": 183,
       "preRequisites:11": [
         154
@@ -11484,7 +10313,7 @@
       },
       "rewards:9": {}
     },
-    "184:10": {
+    "163:10": {
       "questID:3": 184,
       "preRequisites:11": [
         154
@@ -11536,7 +10365,7 @@
       },
       "rewards:9": {}
     },
-    "185:10": {
+    "164:10": {
       "questID:3": 185,
       "preRequisites:11": [
         154
@@ -11588,7 +10417,7 @@
       },
       "rewards:9": {}
     },
-    "186:10": {
+    "165:10": {
       "questID:3": 186,
       "preRequisites:11": [
         154
@@ -11640,7 +10469,7 @@
       },
       "rewards:9": {}
     },
-    "187:10": {
+    "166:10": {
       "questID:3": 187,
       "preRequisites:11": [
         154
@@ -11692,7 +10521,7 @@
       },
       "rewards:9": {}
     },
-    "188:10": {
+    "167:10": {
       "questID:3": 188,
       "preRequisites:11": [
         32
@@ -11805,7 +10634,7 @@
       },
       "rewards:9": {}
     },
-    "189:10": {
+    "168:10": {
       "questID:3": 189,
       "preRequisites:11": [
         245
@@ -11869,7 +10698,7 @@
       },
       "rewards:9": {}
     },
-    "190:10": {
+    "169:10": {
       "questID:3": 190,
       "preRequisites:11": [
         189
@@ -11921,7 +10750,7 @@
       },
       "rewards:9": {}
     },
-    "191:10": {
+    "170:10": {
       "questID:3": 191,
       "preRequisites:11": [
         190
@@ -11973,7 +10802,7 @@
       },
       "rewards:9": {}
     },
-    "192:10": {
+    "171:10": {
       "questID:3": 192,
       "preRequisites:11": [
         191
@@ -12025,7 +10854,7 @@
       },
       "rewards:9": {}
     },
-    "193:10": {
+    "172:10": {
       "questID:3": 193,
       "preRequisites:11": [
         192
@@ -12077,7 +10906,7 @@
       },
       "rewards:9": {}
     },
-    "194:10": {
+    "173:10": {
       "questID:3": 194,
       "preRequisites:11": [
         192
@@ -12129,7 +10958,7 @@
       },
       "rewards:9": {}
     },
-    "195:10": {
+    "174:10": {
       "questID:3": 195,
       "preRequisites:11": [
         194
@@ -12181,7 +11010,7 @@
       },
       "rewards:9": {}
     },
-    "196:10": {
+    "175:10": {
       "questID:3": 196,
       "preRequisites:11": [
         197,
@@ -12221,7 +11050,7 @@
       },
       "rewards:9": {}
     },
-    "197:10": {
+    "176:10": {
       "questID:3": 197,
       "preRequisites:11": [
         193
@@ -12273,7 +11102,7 @@
       },
       "rewards:9": {}
     },
-    "198:10": {
+    "177:10": {
       "questID:3": 198,
       "preRequisites:11": [
         202
@@ -12325,7 +11154,7 @@
       },
       "rewards:9": {}
     },
-    "199:10": {
+    "178:10": {
       "questID:3": 199,
       "preRequisites:11": [
         198
@@ -12377,59 +11206,7 @@
       },
       "rewards:9": {}
     },
-    "200:10": {
-      "questID:3": 200,
-      "preRequisites:11": [
-        414
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "mo:isolinear_circuit",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "普通电路板",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "最基础的电路板，用于制作LV发电机"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "mo:isolinear_circuit",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "201:10": {
+    "179:10": {
       "questID:3": 201,
       "preRequisites:11": [
         17
@@ -12481,7 +11258,7 @@
       },
       "rewards:9": {}
     },
-    "202:10": {
+    "180:10": {
       "questID:3": 202,
       "preRequisites:11": [
         221,
@@ -12546,7 +11323,7 @@
       },
       "rewards:9": {}
     },
-    "203:10": {
+    "181:10": {
       "questID:3": 203,
       "preRequisites:11": [
         202
@@ -12598,7 +11375,7 @@
       },
       "rewards:9": {}
     },
-    "204:10": {
+    "182:10": {
       "questID:3": 204,
       "preRequisites:11": [
         202
@@ -12650,7 +11427,7 @@
       },
       "rewards:9": {}
     },
-    "205:10": {
+    "183:10": {
       "questID:3": 205,
       "preRequisites:11": [
         202
@@ -12702,7 +11479,7 @@
       },
       "rewards:9": {}
     },
-    "206:10": {
+    "184:10": {
       "questID:3": 206,
       "preRequisites:11": [
         202
@@ -12754,11 +11531,11 @@
       },
       "rewards:9": {}
     },
-    "207:10": {
+    "185:10": {
       "questID:3": 207,
       "preRequisites:11": [
-        200,
-        58
+        58,
+        25
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12766,7 +11543,7 @@
           "taskLogic:8": "AND",
           "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
@@ -12779,7 +11556,7 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "§b§l电，而不是红石通量",
+          "name:8": "§b§l发电机(LV)-电，而不是红石通量",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
@@ -12826,39 +11603,7 @@
         }
       }
     },
-    "208:10": {
-      "questID:3": 208,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:nether_star",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "敬请期待",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "No Description"
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "209:10": {
+    "186:10": {
       "questID:3": 209,
       "preRequisites:11": [
         27
@@ -12930,7 +11675,7 @@
         }
       }
     },
-    "210:10": {
+    "187:10": {
       "questID:3": 210,
       "preRequisites:11": [
         90
@@ -13047,10 +11792,11 @@
         }
       }
     },
-    "211:10": {
+    "188:10": {
       "questID:3": 211,
       "preRequisites:11": [
-        32
+        32,
+        38
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -13075,7 +11821,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "在基岩附近零散分布着一些油田，其中一些被液体泉不断补充。他们包括轻油，原油，重油，和超重油。、\n\n各自的分馏产物种类相同，产量不同。通过建造这个你目前制作过最大的多方块机器，你就能完成石化处理的第一步：\n\n第一层：3x3热传导器\n第二层：3x3蒸馏塔壁 任意一侧中心为蒸馏塔主方块\n第三层-第十三层：3x3蒸馏塔壁\n\n你甚至可以处理含油页岩获取石油，如果你运气太差。。"
+          "desc:8": "在基岩附近零散分布着一些油田，其中一些被液体泉不断补充。他们包括轻油，原油，重油，和超重油。、\n\n各自的分馏产物种类相同，产量不同。通过建造这个你目前制作过最大的多方块机器，你就能完成石化处理的第一步：\n\n第一层：3x3热传导器\n第二层：3x3蒸馏塔壁 任意一侧中心为蒸馏塔主方块\n第三层-第十三层：3x3蒸馏塔壁"
         }
       },
       "tasks:9": {
@@ -13124,7 +11870,7 @@
         }
       }
     },
-    "212:10": {
+    "189:10": {
       "questID:3": 212,
       "preRequisites:11": [
         258,
@@ -13177,10 +11923,11 @@
       },
       "rewards:9": {}
     },
-    "213:10": {
+    "190:10": {
       "questID:3": 213,
       "preRequisites:11": [
-        62
+        62,
+        140
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -13236,7 +11983,7 @@
       },
       "rewards:9": {}
     },
-    "214:10": {
+    "191:10": {
       "questID:3": 214,
       "preRequisites:11": [
         11
@@ -13289,7 +12036,7 @@
       },
       "rewards:9": {}
     },
-    "215:10": {
+    "192:10": {
       "questID:3": 215,
       "preRequisites:11": [
         154
@@ -13341,7 +12088,7 @@
       },
       "rewards:9": {}
     },
-    "216:10": {
+    "193:10": {
       "questID:3": 216,
       "preRequisites:11": [
         157,
@@ -13413,7 +12160,7 @@
         }
       }
     },
-    "217:10": {
+    "194:10": {
       "questID:3": 217,
       "preRequisites:11": [
         216
@@ -13465,7 +12212,7 @@
       },
       "rewards:9": {}
     },
-    "218:10": {
+    "195:10": {
       "questID:3": 218,
       "preRequisites:11": [
         217,
@@ -13531,7 +12278,7 @@
         }
       }
     },
-    "219:10": {
+    "196:10": {
       "questID:3": 219,
       "preRequisites:11": [
         218,
@@ -13599,7 +12346,7 @@
         }
       }
     },
-    "220:10": {
+    "197:10": {
       "questID:3": 220,
       "preRequisites:11": [
         0
@@ -13674,7 +12421,7 @@
         }
       }
     },
-    "221:10": {
+    "198:10": {
       "questID:3": 221,
       "preRequisites:11": [
         162
@@ -13726,7 +12473,7 @@
       },
       "rewards:9": {}
     },
-    "222:10": {
+    "199:10": {
       "questID:3": 222,
       "preRequisites:11": [
         221
@@ -13778,7 +12525,7 @@
       },
       "rewards:9": {}
     },
-    "223:10": {
+    "200:10": {
       "questID:3": 223,
       "preRequisites:11": [
         4
@@ -13830,7 +12577,7 @@
       },
       "rewards:9": {}
     },
-    "224:10": {
+    "201:10": {
       "questID:3": 224,
       "preRequisites:11": [
         2
@@ -13882,7 +12629,7 @@
       },
       "rewards:9": {}
     },
-    "225:10": {
+    "202:10": {
       "questID:3": 225,
       "preRequisites:11": [
         220
@@ -13921,7 +12668,7 @@
       },
       "rewards:9": {}
     },
-    "226:10": {
+    "203:10": {
       "questID:3": 226,
       "preRequisites:11": [
         225
@@ -13978,7 +12725,7 @@
         }
       }
     },
-    "227:10": {
+    "204:10": {
       "questID:3": 227,
       "preRequisites:11": [
         310
@@ -14091,7 +12838,7 @@
         }
       }
     },
-    "228:10": {
+    "205:10": {
       "questID:3": 228,
       "preRequisites:11": [
         310
@@ -14182,7 +12929,7 @@
         }
       }
     },
-    "229:10": {
+    "206:10": {
       "questID:3": 229,
       "preRequisites:11": [
         310
@@ -14295,7 +13042,7 @@
         }
       }
     },
-    "230:10": {
+    "207:10": {
       "questID:3": 230,
       "preRequisites:11": [
         310
@@ -14408,7 +13155,7 @@
         }
       }
     },
-    "231:10": {
+    "208:10": {
       "questID:3": 231,
       "preRequisites:11": [
         310
@@ -14477,7 +13224,7 @@
         }
       }
     },
-    "232:10": {
+    "209:10": {
       "questID:3": 232,
       "preRequisites:11": [
         162
@@ -14548,7 +13295,7 @@
         }
       }
     },
-    "233:10": {
+    "210:10": {
       "questID:3": 233,
       "preRequisites:11": [
         13,
@@ -14614,7 +13361,7 @@
         }
       }
     },
-    "234:10": {
+    "211:10": {
       "questID:3": 234,
       "preRequisites:11": [
         440
@@ -14679,12 +13426,12 @@
         }
       }
     },
-    "235:10": {
+    "212:10": {
       "questID:3": 235,
       "preRequisites:11": [
-        79,
         71,
-        267
+        267,
+        79
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -14692,7 +13439,7 @@
           "taskLogic:8": "AND",
           "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.multiitem.technological",
@@ -14705,7 +13452,7 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "进阶电路板",
+          "name:8": "进阶电子电路",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
@@ -14733,7 +13480,7 @@
       },
       "rewards:9": {}
     },
-    "236:10": {
+    "213:10": {
       "questID:3": 236,
       "preRequisites:11": [
         111
@@ -14797,7 +13544,7 @@
       },
       "rewards:9": {}
     },
-    "237:10": {
+    "214:10": {
       "questID:3": 237,
       "preRequisites:11": [
         111
@@ -14849,7 +13596,7 @@
       },
       "rewards:9": {}
     },
-    "238:10": {
+    "215:10": {
       "questID:3": 238,
       "preRequisites:11": [
         63
@@ -14863,15 +13610,9 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "OpenBlocks:tank",
+            "id:8": "gregtech:gt.meta.dust",
             "Count:3": 1,
-            "tag:10": {
-              "tank:10": {
-                "FluidName:8": "epoxid",
-                "Amount:3": 8000
-              }
-            },
-            "Damage:2": 0,
+            "Damage:2": 15403,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
@@ -14896,9 +13637,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "moegadd:EpoxyPlate",
-              "Count:3": 10,
-              "Damage:2": 0,
+              "id:8": "gregtech:gt.meta.dust",
+              "Count:3": 32,
+              "Damage:2": 15403,
               "OreDict:8": ""
             }
           },
@@ -14907,7 +13648,7 @@
       },
       "rewards:9": {}
     },
-    "239:10": {
+    "216:10": {
       "questID:3": 239,
       "preRequisites:11": [
         63
@@ -14971,11 +13712,11 @@
       },
       "rewards:9": {}
     },
-    "240:10": {
+    "217:10": {
       "questID:3": 240,
       "preRequisites:11": [
         114,
-        38
+        44
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -14996,7 +13737,7 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "组装机（T1）",
+          "name:8": "电路组装机T1",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
@@ -15024,7 +13765,7 @@
       },
       "rewards:9": {}
     },
-    "241:10": {
+    "218:10": {
       "questID:3": 241,
       "preRequisites:11": [
         32,
@@ -15083,11 +13824,12 @@
       },
       "rewards:9": {}
     },
-    "242:10": {
+    "219:10": {
       "questID:3": 242,
       "preRequisites:11": [
         32,
-        211
+        211,
+        38
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -15142,7 +13884,7 @@
       },
       "rewards:9": {}
     },
-    "243:10": {
+    "220:10": {
       "questID:3": 243,
       "preRequisites:11": [
         238
@@ -15194,7 +13936,7 @@
       },
       "rewards:9": {}
     },
-    "244:10": {
+    "221:10": {
       "questID:3": 244,
       "preRequisites:11": [
         140
@@ -15246,7 +13988,7 @@
       },
       "rewards:9": {}
     },
-    "245:10": {
+    "222:10": {
       "questID:3": 245,
       "preRequisites:11": [
         247
@@ -15317,7 +14059,7 @@
         }
       }
     },
-    "246:10": {
+    "223:10": {
       "questID:3": 246,
       "preRequisites:11": [
         254
@@ -15369,7 +14111,7 @@
       },
       "rewards:9": {}
     },
-    "247:10": {
+    "224:10": {
       "questID:3": 247,
       "preRequisites:11": [
         254
@@ -15421,7 +14163,7 @@
       },
       "rewards:9": {}
     },
-    "248:10": {
+    "225:10": {
       "questID:3": 248,
       "preRequisites:11": [
         244
@@ -15473,7 +14215,7 @@
       },
       "rewards:9": {}
     },
-    "249:10": {
+    "226:10": {
       "questID:3": 249,
       "preRequisites:11": [
         236,
@@ -15532,7 +14274,7 @@
       },
       "rewards:9": {}
     },
-    "250:10": {
+    "227:10": {
       "questID:3": 250,
       "preRequisites:11": [
         63
@@ -15546,15 +14288,9 @@
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "OpenBlocks:tank",
+            "id:8": "gregtech:gt.meta.dust",
             "Count:3": 1,
-            "tag:10": {
-              "tank:10": {
-                "FluidName:8": "polyvinylchloride",
-                "Amount:3": 16000
-              }
-            },
-            "Damage:2": 0,
+            "Damage:2": 15402,
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
@@ -15579,15 +14315,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "OpenBlocks:tank",
-              "Count:3": 1,
-              "tag:10": {
-                "tank:10": {
-                  "FluidName:8": "polyvinylchloride",
-                  "Amount:3": 16000
-                }
-              },
-              "Damage:2": 0,
+              "id:8": "gregtech:gt.meta.dust",
+              "Count:3": 32,
+              "Damage:2": 15402,
               "OreDict:8": ""
             }
           },
@@ -15596,7 +14326,7 @@
       },
       "rewards:9": {}
     },
-    "251:10": {
+    "228:10": {
       "questID:3": 251,
       "preRequisites:11": [
         63
@@ -15648,7 +14378,7 @@
       },
       "rewards:9": {}
     },
-    "252:10": {
+    "229:10": {
       "questID:3": 252,
       "preRequisites:11": [
         249
@@ -15700,7 +14430,7 @@
       },
       "rewards:9": {}
     },
-    "253:10": {
+    "230:10": {
       "questID:3": 253,
       "preRequisites:11": [
         252,
@@ -15753,7 +14483,7 @@
       },
       "rewards:9": {}
     },
-    "254:10": {
+    "231:10": {
       "questID:3": 254,
       "preRequisites:11": [
         253,
@@ -15806,7 +14536,7 @@
       },
       "rewards:9": {}
     },
-    "255:10": {
+    "232:10": {
       "questID:3": 255,
       "preRequisites:11": [
         246
@@ -15871,7 +14601,7 @@
         }
       }
     },
-    "256:10": {
+    "233:10": {
       "questID:3": 256,
       "preRequisites:11": [
         254
@@ -15942,7 +14672,7 @@
         }
       }
     },
-    "257:10": {
+    "234:10": {
       "questID:3": 257,
       "preRequisites:11": [
         245,
@@ -15996,7 +14726,7 @@
       },
       "rewards:9": {}
     },
-    "258:10": {
+    "235:10": {
       "questID:3": 258,
       "preRequisites:11": [
         248,
@@ -16049,7 +14779,7 @@
       },
       "rewards:9": {}
     },
-    "259:10": {
+    "236:10": {
       "questID:3": 259,
       "preRequisites:11": [
         35
@@ -16101,7 +14831,7 @@
       },
       "rewards:9": {}
     },
-    "260:10": {
+    "237:10": {
       "questID:3": 260,
       "preRequisites:11": [
         90
@@ -16153,7 +14883,7 @@
       },
       "rewards:9": {}
     },
-    "261:10": {
+    "238:10": {
       "questID:3": 261,
       "preRequisites:11": [
         217
@@ -16236,7 +14966,7 @@
         }
       }
     },
-    "262:10": {
+    "239:10": {
       "questID:3": 262,
       "preRequisites:11": [
         261
@@ -16301,7 +15031,7 @@
         }
       }
     },
-    "263:10": {
+    "240:10": {
       "questID:3": 263,
       "preRequisites:11": [
         39
@@ -16373,7 +15103,7 @@
         }
       }
     },
-    "264:10": {
+    "241:10": {
       "questID:3": 264,
       "preRequisites:11": [
         211
@@ -16412,7 +15142,7 @@
       },
       "rewards:9": {}
     },
-    "265:10": {
+    "242:10": {
       "questID:3": 265,
       "preRequisites:11": [
         211
@@ -16451,7 +15181,7 @@
       },
       "rewards:9": {}
     },
-    "266:10": {
+    "243:10": {
       "questID:3": 266,
       "preRequisites:11": [
         202
@@ -16503,7 +15233,7 @@
       },
       "rewards:9": {}
     },
-    "267:10": {
+    "244:10": {
       "questID:3": 267,
       "preRequisites:11": [
         240,
@@ -16574,42 +15304,9 @@
       },
       "rewards:9": {}
     },
-    "268:10": {
-      "questID:3": 268,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:nether_star",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "No Description"
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "269:10": {
+    "245:10": {
       "questID:3": 269,
       "preRequisites:11": [
-        18,
         160
       ],
       "properties:10": {
@@ -16685,7 +15382,7 @@
         }
       }
     },
-    "270:10": {
+    "246:10": {
       "questID:3": 270,
       "preRequisites:11": [
         19
@@ -16743,7 +15440,7 @@
       },
       "rewards:9": {}
     },
-    "271:10": {
+    "247:10": {
       "questID:3": 271,
       "preRequisites:11": [
         0
@@ -16811,7 +15508,7 @@
         }
       }
     },
-    "272:10": {
+    "248:10": {
       "questID:3": 272,
       "preRequisites:11": [
         223
@@ -16863,7 +15560,7 @@
       },
       "rewards:9": {}
     },
-    "273:10": {
+    "249:10": {
       "questID:3": 273,
       "preRequisites:11": [
         220
@@ -16902,7 +15599,7 @@
       },
       "rewards:9": {}
     },
-    "274:10": {
+    "250:10": {
       "questID:3": 274,
       "preRequisites:11": [
         220
@@ -16946,7 +15643,7 @@
       },
       "rewards:9": {}
     },
-    "275:10": {
+    "251:10": {
       "questID:3": 275,
       "preRequisites:11": [
         274
@@ -16990,7 +15687,7 @@
       },
       "rewards:9": {}
     },
-    "276:10": {
+    "252:10": {
       "questID:3": 276,
       "preRequisites:11": [
         272
@@ -17073,7 +15770,7 @@
         }
       }
     },
-    "277:10": {
+    "253:10": {
       "questID:3": 277,
       "preRequisites:11": [
         266
@@ -17114,32 +15811,20 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "minecraft:glass",
-              "Count:3": 8,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
               "id:8": "gregtech:gt.meta.dustTiny",
               "Count:3": 1,
               "Damage:2": 9139,
               "OreDict:8": ""
             },
-            "2:10": {
+            "1:10": {
               "id:8": "terrafirmacraft:item.Powder",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "dustAnyCalcite"
             },
-            "3:10": {
-              "id:8": "minecraft:sand",
-              "Count:3": 8,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "4:10": {
+            "2:10": {
               "id:8": "terrafirmacraft:item.Glass Bottle",
-              "Count:3": 1,
+              "Count:3": 8,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -17149,7 +15834,7 @@
       },
       "rewards:9": {}
     },
-    "278:10": {
+    "254:10": {
       "questID:3": 278,
       "preRequisites:11": [
         13
@@ -17207,7 +15892,7 @@
       },
       "rewards:9": {}
     },
-    "279:10": {
+    "255:10": {
       "questID:3": 279,
       "preRequisites:11": [
         99
@@ -17243,7 +15928,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -17278,7 +15963,7 @@
         }
       }
     },
-    "280:10": {
+    "256:10": {
       "questID:3": 280,
       "preRequisites:11": [
         12
@@ -17317,7 +16002,7 @@
       },
       "rewards:9": {}
     },
-    "281:10": {
+    "257:10": {
       "questID:3": 281,
       "preRequisites:11": [
         293
@@ -17356,10 +16041,10 @@
       },
       "rewards:9": {}
     },
-    "282:10": {
+    "258:10": {
       "questID:3": 282,
       "preRequisites:11": [
-        34
+        207
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17426,7 +16111,7 @@
         }
       }
     },
-    "283:10": {
+    "259:10": {
       "questID:3": 283,
       "preRequisites:11": [
         221
@@ -17491,7 +16176,7 @@
         }
       }
     },
-    "284:10": {
+    "260:10": {
       "questID:3": 284,
       "preRequisites:11": [
         13
@@ -17562,7 +16247,7 @@
         }
       }
     },
-    "285:10": {
+    "261:10": {
       "questID:3": 285,
       "preRequisites:11": [
         11
@@ -17601,7 +16286,7 @@
       },
       "rewards:9": {}
     },
-    "286:10": {
+    "262:10": {
       "questID:3": 286,
       "preRequisites:11": [
         11
@@ -17659,7 +16344,7 @@
       },
       "rewards:9": {}
     },
-    "287:10": {
+    "263:10": {
       "questID:3": 287,
       "preRequisites:11": [
         280
@@ -17698,7 +16383,7 @@
       },
       "rewards:9": {}
     },
-    "288:10": {
+    "264:10": {
       "questID:3": 288,
       "preRequisites:11": [
         137
@@ -17750,7 +16435,7 @@
         }
       }
     },
-    "289:10": {
+    "265:10": {
       "questID:3": 289,
       "preRequisites:11": [
         349
@@ -17812,67 +16497,7 @@
         }
       }
     },
-    "290:10": {
-      "questID:3": 290,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "CHAIN",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.multiitem.books",
-            "Count:3": 1,
-            "tag:10": {
-              "author:8": "GregTech Electrics",
-              "book:8": "Manual_Printer",
-              "title:8": "Scanner \u0026 Printer Manual"
-            },
-            "Damage:2": 32000,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Tips \u0026 Tricks with GregTech Six",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "你可能会觉得很复杂，但是你其实不需要现在就知道下面的所有内容，这个任务仅仅作为一个参考，在你未来用到他们的时候。\n\n\n以下摘自GT内部书籍：\n\nTips \u0026 Tricks with GregTech Six\n\n随便放了点提示 可能对你有用吧\n\n第一个提示：首先要仔细阅读提示，读完整！它们一般会包含必要但没多少人读的信息 它们对机器的描述通常是非常全面的\n\n如果一台机器没有按照某一个特定配方工作但其它配方没有问题 则说明供能不足 如果你的机器不工作那么基本上就是这个原因 机器的等级决定了机器需要的 超出配方需求的额外能量\n\nTier 1 - 16 ~ 64 GU（Generic Unit 格雷科技的通用能量单位 具体能量种类由配方/机器决定）\n\nTier 2 - 65 ~ 256\n\nTier 3 - 257 ~ 1024\n\nTier 4 - 1025 ~ 4096\n\nTier 5 - 4097 ~ 16192\n\n配方的等级根据上述配方需求能量而定 如果你使用的机器等级高于配方的需求的等级 它会把需求能量变为原来的 4 倍并缩短 1/2 时间 总能量消耗贵 1 倍\n\n还有 64 GU/t 依然是 T1 等级 你是需要输入这么多能量给你的 T1 级机器的 一般这可以通过一个更高一级的机器以最小功率功能来达到\n\nGT6 的电能能够和各大【使用了 IC2 应用程序接口】的 mod 通用\n\n输出低于 1024 EU/t 的机器可以给以下模组的机器供能：Galacticraft（星系）和它的附属 Applied Energistics（应用能源）Immersive Engineering（沉浸工程）OpenModularTurrets（开放式炮台）TechGuns（科技枪）甚至是 GT5U！\n\n任何种类的燃烧室都有引起火灾的危险 请确保燃烧室周围的方块都是防火的 唯二可以关闭燃烧室的方法是在它们前面摆一个固体方块或者使用二氧化碳灭火器\n\n如果你想盛水或者盛牛奶但没有铁桶 就做一个木桶 很便宜 虽然能盛的液体种类也比较少\n\n如果你需要打印机说明书 放入化学黑色染料和一本原版书就可以得到\n\n浸洗盆和浸洗器可以用液体染料给皮大衣染色\n\n前期把矿物扔进炼药锅可以洗矿 格雷管道能给炼药锅加水\n\n尽量把机器排得开一些 免得以后做自动化的时候搞成一坨屎 每两台机器之间 3m 比较合适 不行也要 2m 无需在意能量损耗"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.multiitem.books",
-              "Count:3": 1,
-              "tag:10": {
-                "author:8": "Gregorius Techneticies",
-                "book:8": "Manual_Random",
-                "title:8": "Tips \u0026 Tricks with GregTech Six"
-              },
-              "Damage:2": 32000,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "291:10": {
+    "266:10": {
       "questID:3": 291,
       "preRequisites:11": [
         217,
@@ -17937,54 +16562,7 @@
       },
       "rewards:9": {}
     },
-    "292:10": {
-      "questID:3": 292,
-      "preRequisites:11": [
-        131
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "taskLogic:8": "AND",
-          "partySingleReward:1": 0,
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "terrafirmacraft:item.Wrought Iron Ingot",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Metal Shop",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": ""
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "terrafirmacraft:item.Bronze Ingot",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "293:10": {
+    "267:10": {
       "questID:3": 293,
       "preRequisites:11": [
         132
@@ -18028,7 +16606,7 @@
       },
       "rewards:9": {}
     },
-    "294:10": {
+    "268:10": {
       "questID:3": 294,
       "preRequisites:11": [
         13
@@ -18129,7 +16707,7 @@
         }
       }
     },
-    "295:10": {
+    "269:10": {
       "questID:3": 295,
       "preRequisites:11": [
         440
@@ -18194,7 +16772,7 @@
         }
       }
     },
-    "296:10": {
+    "270:10": {
       "questID:3": 296,
       "preRequisites:11": [
         297
@@ -18265,7 +16843,7 @@
         }
       }
     },
-    "297:10": {
+    "271:10": {
       "questID:3": 297,
       "preRequisites:11": [
         160
@@ -18301,7 +16879,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -18336,7 +16914,7 @@
         }
       }
     },
-    "298:10": {
+    "272:10": {
       "questID:3": 298,
       "preRequisites:11": [
         273
@@ -18388,10 +16966,9 @@
         }
       }
     },
-    "299:10": {
+    "273:10": {
       "questID:3": 299,
       "preRequisites:11": [
-        200,
         314
       ],
       "properties:10": {
@@ -18520,7 +17097,7 @@
         }
       }
     },
-    "300:10": {
+    "274:10": {
       "questID:3": 300,
       "preRequisites:11": [
         160
@@ -18585,7 +17162,7 @@
         }
       }
     },
-    "301:10": {
+    "275:10": {
       "questID:3": 301,
       "preRequisites:11": [
         160
@@ -18650,7 +17227,7 @@
         }
       }
     },
-    "302:10": {
+    "276:10": {
       "questID:3": 302,
       "preRequisites:11": [
         59
@@ -18721,10 +17298,11 @@
         }
       }
     },
-    "303:10": {
+    "277:10": {
       "questID:3": 303,
       "preRequisites:11": [
-        160
+        162,
+        304
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -18786,7 +17364,7 @@
         }
       }
     },
-    "304:10": {
+    "278:10": {
       "questID:3": 304,
       "preRequisites:11": [
         59,
@@ -18852,7 +17430,7 @@
         }
       }
     },
-    "305:10": {
+    "279:10": {
       "questID:3": 305,
       "preRequisites:11": [
         226
@@ -18922,7 +17500,7 @@
       },
       "rewards:9": {}
     },
-    "306:10": {
+    "280:10": {
       "questID:3": 306,
       "preRequisites:11": [
         220,
@@ -18988,7 +17566,7 @@
         }
       }
     },
-    "307:10": {
+    "281:10": {
       "questID:3": 307,
       "preRequisites:11": [
         5
@@ -19027,7 +17605,7 @@
       },
       "rewards:9": {}
     },
-    "308:10": {
+    "282:10": {
       "questID:3": 308,
       "preRequisites:11": [
         220,
@@ -19129,7 +17707,7 @@
         }
       }
     },
-    "309:10": {
+    "283:10": {
       "questID:3": 309,
       "preRequisites:11": [
         231,
@@ -19180,7 +17758,7 @@
         }
       }
     },
-    "310:10": {
+    "284:10": {
       "questID:3": 310,
       "preRequisites:11": [
         226
@@ -19214,7 +17792,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "311:10": {
+    "285:10": {
       "questID:3": 311,
       "preRequisites:11": [
         314,
@@ -19286,7 +17864,7 @@
         }
       }
     },
-    "312:10": {
+    "286:10": {
       "questID:3": 312,
       "preRequisites:11": [
         220
@@ -19338,7 +17916,7 @@
       },
       "rewards:9": {}
     },
-    "313:10": {
+    "287:10": {
       "questID:3": 313,
       "preRequisites:11": [
         312
@@ -19390,7 +17968,7 @@
       },
       "rewards:9": {}
     },
-    "314:10": {
+    "288:10": {
       "questID:3": 314,
       "preRequisites:11": [
         220
@@ -19461,7 +18039,7 @@
         }
       }
     },
-    "315:10": {
+    "289:10": {
       "questID:3": 315,
       "preRequisites:11": [
         275
@@ -19550,7 +18128,7 @@
         }
       }
     },
-    "316:10": {
+    "290:10": {
       "questID:3": 316,
       "preRequisites:11": [
         162
@@ -19621,7 +18199,7 @@
         }
       }
     },
-    "317:10": {
+    "291:10": {
       "questID:3": 317,
       "preRequisites:11": [
         220
@@ -19698,7 +18276,7 @@
         }
       }
     },
-    "318:10": {
+    "292:10": {
       "questID:3": 318,
       "preRequisites:11": [
         319
@@ -19767,7 +18345,7 @@
         }
       }
     },
-    "319:10": {
+    "293:10": {
       "questID:3": 319,
       "preRequisites:11": [
         311
@@ -19844,7 +18422,7 @@
         }
       }
     },
-    "320:10": {
+    "294:10": {
       "questID:3": 320,
       "preRequisites:11": [
         349
@@ -19915,7 +18493,7 @@
         }
       }
     },
-    "321:10": {
+    "295:10": {
       "questID:3": 321,
       "preRequisites:11": [
         11
@@ -19967,10 +18545,10 @@
       },
       "rewards:9": {}
     },
-    "322:10": {
+    "296:10": {
       "questID:3": 322,
       "preRequisites:11": [
-        98
+        95
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -20006,7 +18584,7 @@
       },
       "rewards:9": {}
     },
-    "323:10": {
+    "297:10": {
       "questID:3": 323,
       "preRequisites:11": [
         322
@@ -20045,7 +18623,7 @@
       },
       "rewards:9": {}
     },
-    "324:10": {
+    "298:10": {
       "questID:3": 324,
       "preRequisites:11": [
         17,
@@ -20117,7 +18695,7 @@
         }
       }
     },
-    "325:10": {
+    "299:10": {
       "questID:3": 325,
       "preRequisites:11": [
         297,
@@ -20198,7 +18776,7 @@
         }
       }
     },
-    "326:10": {
+    "300:10": {
       "questID:3": 326,
       "preRequisites:11": [
         319
@@ -20269,11 +18847,10 @@
         }
       }
     },
-    "327:10": {
+    "301:10": {
       "questID:3": 327,
       "preRequisites:11": [
-        311,
-        61
+        311
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -20335,7 +18912,7 @@
         }
       }
     },
-    "328:10": {
+    "302:10": {
       "questID:3": 328,
       "preRequisites:11": [
         311,
@@ -20388,7 +18965,7 @@
       },
       "rewards:9": {}
     },
-    "329:10": {
+    "303:10": {
       "questID:3": 329,
       "preRequisites:11": [
         328
@@ -20452,7 +19029,7 @@
       },
       "rewards:9": {}
     },
-    "330:10": {
+    "304:10": {
       "questID:3": 330,
       "preRequisites:11": [
         328
@@ -20504,7 +19081,7 @@
       },
       "rewards:9": {}
     },
-    "331:10": {
+    "305:10": {
       "questID:3": 331,
       "preRequisites:11": [
         311,
@@ -20557,7 +19134,7 @@
       },
       "rewards:9": {}
     },
-    "332:10": {
+    "306:10": {
       "questID:3": 332,
       "preRequisites:11": [
         333
@@ -20631,7 +19208,7 @@
       },
       "rewards:9": {}
     },
-    "333:10": {
+    "307:10": {
       "questID:3": 333,
       "preRequisites:11": [
         317,
@@ -20697,7 +19274,7 @@
         }
       }
     },
-    "334:10": {
+    "308:10": {
       "questID:3": 334,
       "preRequisites:11": [
         189
@@ -20767,7 +19344,7 @@
       },
       "rewards:9": {}
     },
-    "335:10": {
+    "309:10": {
       "questID:3": 335,
       "preRequisites:11": [
         189
@@ -20831,7 +19408,7 @@
       },
       "rewards:9": {}
     },
-    "336:10": {
+    "310:10": {
       "questID:3": 336,
       "preRequisites:11": [
         189
@@ -20901,7 +19478,7 @@
       },
       "rewards:9": {}
     },
-    "337:10": {
+    "311:10": {
       "questID:3": 337,
       "preRequisites:11": [
         334,
@@ -20969,7 +19546,7 @@
         }
       }
     },
-    "338:10": {
+    "312:10": {
       "questID:3": 338,
       "preRequisites:11": [
         218
@@ -21045,7 +19622,7 @@
       },
       "rewards:9": {}
     },
-    "339:10": {
+    "313:10": {
       "questID:3": 339,
       "preRequisites:11": [
         363
@@ -21116,7 +19693,7 @@
         }
       }
     },
-    "340:10": {
+    "314:10": {
       "questID:3": 340,
       "preRequisites:11": [
         363
@@ -21193,7 +19770,7 @@
         }
       }
     },
-    "341:10": {
+    "315:10": {
       "questID:3": 341,
       "preRequisites:11": [
         363
@@ -21264,7 +19841,7 @@
         }
       }
     },
-    "342:10": {
+    "316:10": {
       "questID:3": 342,
       "preRequisites:11": [
         363
@@ -21335,7 +19912,7 @@
         }
       }
     },
-    "343:10": {
+    "317:10": {
       "questID:3": 343,
       "preRequisites:11": [
         111
@@ -21405,7 +19982,7 @@
       },
       "rewards:9": {}
     },
-    "344:10": {
+    "318:10": {
       "questID:3": 344,
       "preRequisites:11": [
         363
@@ -21476,7 +20053,7 @@
         }
       }
     },
-    "345:10": {
+    "319:10": {
       "questID:3": 345,
       "preRequisites:11": [
         363
@@ -21551,7 +20128,7 @@
         }
       }
     },
-    "346:10": {
+    "320:10": {
       "questID:3": 346,
       "preRequisites:11": [
         363
@@ -21622,7 +20199,7 @@
         }
       }
     },
-    "347:10": {
+    "321:10": {
       "questID:3": 347,
       "preRequisites:11": [
         332
@@ -21699,7 +20276,7 @@
         }
       }
     },
-    "348:10": {
+    "322:10": {
       "questID:3": 348,
       "preRequisites:11": [
         271
@@ -21764,7 +20341,7 @@
         }
       }
     },
-    "349:10": {
+    "323:10": {
       "questID:3": 349,
       "preRequisites:11": [
         136
@@ -21816,7 +20393,7 @@
       },
       "rewards:9": {}
     },
-    "350:10": {
+    "324:10": {
       "questID:3": 350,
       "preRequisites:11": [
         363
@@ -21893,7 +20470,7 @@
         }
       }
     },
-    "351:10": {
+    "325:10": {
       "questID:3": 351,
       "preRequisites:11": [
         216
@@ -21945,7 +20522,7 @@
       },
       "rewards:9": {}
     },
-    "352:10": {
+    "326:10": {
       "questID:3": 352,
       "preRequisites:11": [
         319
@@ -21979,7 +20556,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "353:10": {
+    "327:10": {
       "questID:3": 353,
       "preRequisites:11": [
         352
@@ -22066,7 +20643,7 @@
         }
       }
     },
-    "354:10": {
+    "328:10": {
       "questID:3": 354,
       "preRequisites:11": [
         352
@@ -22153,7 +20730,7 @@
         }
       }
     },
-    "355:10": {
+    "329:10": {
       "questID:3": 355,
       "preRequisites:11": [
         352
@@ -22240,7 +20817,7 @@
         }
       }
     },
-    "356:10": {
+    "330:10": {
       "questID:3": 356,
       "preRequisites:11": [
         319
@@ -22274,7 +20851,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "357:10": {
+    "331:10": {
       "questID:3": 357,
       "preRequisites:11": [
         352
@@ -22361,7 +20938,7 @@
         }
       }
     },
-    "358:10": {
+    "332:10": {
       "questID:3": 358,
       "preRequisites:11": [
         352
@@ -22448,7 +21025,7 @@
         }
       }
     },
-    "359:10": {
+    "333:10": {
       "questID:3": 359,
       "preRequisites:11": [
         352
@@ -22535,7 +21112,7 @@
         }
       }
     },
-    "360:10": {
+    "334:10": {
       "questID:3": 360,
       "preRequisites:11": [
         352
@@ -22622,7 +21199,7 @@
         }
       }
     },
-    "361:10": {
+    "335:10": {
       "questID:3": 361,
       "preRequisites:11": [
         352
@@ -22709,7 +21286,7 @@
         }
       }
     },
-    "362:10": {
+    "336:10": {
       "questID:3": 362,
       "preRequisites:11": [
         352
@@ -22796,7 +21373,7 @@
         }
       }
     },
-    "363:10": {
+    "337:10": {
       "questID:3": 363,
       "preRequisites:11": [
         319
@@ -22830,7 +21407,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "364:10": {
+    "338:10": {
       "questID:3": 364,
       "preRequisites:11": [
         116,
@@ -22886,7 +21463,7 @@
       },
       "rewards:9": {}
     },
-    "365:10": {
+    "339:10": {
       "questID:3": 365,
       "preRequisites:11": [
         257
@@ -22944,7 +21521,7 @@
       },
       "rewards:9": {}
     },
-    "366:10": {
+    "340:10": {
       "questID:3": 366,
       "preRequisites:11": [
         244,
@@ -23009,7 +21586,7 @@
       },
       "rewards:9": {}
     },
-    "367:10": {
+    "341:10": {
       "questID:3": 367,
       "preRequisites:11": [
         154
@@ -23061,7 +21638,7 @@
       },
       "rewards:9": {}
     },
-    "368:10": {
+    "342:10": {
       "questID:3": 368,
       "preRequisites:11": [
         334,
@@ -23130,7 +21707,7 @@
         }
       }
     },
-    "369:10": {
+    "343:10": {
       "questID:3": 369,
       "preRequisites:11": [
         2
@@ -23169,7 +21746,7 @@
       },
       "rewards:9": {}
     },
-    "370:10": {
+    "344:10": {
       "questID:3": 370,
       "preRequisites:11": [
         3
@@ -23243,7 +21820,7 @@
         }
       }
     },
-    "371:10": {
+    "345:10": {
       "questID:3": 371,
       "preRequisites:11": [
         440
@@ -23282,7 +21859,7 @@
       },
       "rewards:9": {}
     },
-    "372:10": {
+    "346:10": {
       "questID:3": 372,
       "preRequisites:11": [
         216
@@ -23340,7 +21917,7 @@
       },
       "rewards:9": {}
     },
-    "373:10": {
+    "347:10": {
       "questID:3": 373,
       "preRequisites:11": [
         61
@@ -23418,10 +21995,10 @@
       },
       "rewards:9": {}
     },
-    "374:10": {
+    "348:10": {
       "questID:3": 374,
       "preRequisites:11": [
-        13
+        284
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -23470,7 +22047,7 @@
       },
       "rewards:9": {}
     },
-    "375:10": {
+    "349:10": {
       "questID:3": 375,
       "preRequisites:11": [
         27
@@ -23535,7 +22112,7 @@
         }
       }
     },
-    "376:10": {
+    "350:10": {
       "questID:3": 376,
       "preRequisites:11": [
         373
@@ -23587,7 +22164,7 @@
       },
       "rewards:9": {}
     },
-    "377:10": {
+    "351:10": {
       "questID:3": 377,
       "preRequisites:11": [
         27,
@@ -23653,7 +22230,7 @@
         }
       }
     },
-    "378:10": {
+    "352:10": {
       "questID:3": 378,
       "preRequisites:11": [
         155,
@@ -23744,7 +22321,7 @@
         }
       }
     },
-    "379:10": {
+    "353:10": {
       "questID:3": 379,
       "preRequisites:11": [
         13
@@ -23833,7 +22410,7 @@
         }
       }
     },
-    "380:10": {
+    "354:10": {
       "questID:3": 380,
       "preRequisites:11": [
         160
@@ -23922,7 +22499,7 @@
         }
       }
     },
-    "381:10": {
+    "355:10": {
       "questID:3": 381,
       "preRequisites:11": [
         162
@@ -24011,7 +22588,7 @@
         }
       }
     },
-    "382:10": {
+    "356:10": {
       "questID:3": 382,
       "preRequisites:11": [
         51
@@ -24100,7 +22677,7 @@
         }
       }
     },
-    "383:10": {
+    "357:10": {
       "questID:3": 383,
       "preRequisites:11": [
         385
@@ -24167,7 +22744,7 @@
         }
       }
     },
-    "384:10": {
+    "358:10": {
       "questID:3": 384,
       "preRequisites:11": [
         218
@@ -24232,7 +22809,7 @@
         }
       }
     },
-    "385:10": {
+    "359:10": {
       "questID:3": 385,
       "preRequisites:11": [
         38
@@ -24299,7 +22876,7 @@
         }
       }
     },
-    "386:10": {
+    "360:10": {
       "questID:3": 386,
       "preRequisites:11": [
         140
@@ -24388,7 +22965,7 @@
         }
       }
     },
-    "387:10": {
+    "361:10": {
       "questID:3": 387,
       "preRequisites:11": [
         386,
@@ -24480,7 +23057,7 @@
         }
       }
     },
-    "388:10": {
+    "362:10": {
       "questID:3": 388,
       "preRequisites:11": [
         367
@@ -24584,7 +23161,7 @@
         }
       }
     },
-    "389:10": {
+    "363:10": {
       "questID:3": 389,
       "preRequisites:11": [
         119,
@@ -24674,7 +23251,7 @@
         }
       }
     },
-    "390:10": {
+    "364:10": {
       "questID:3": 390,
       "preRequisites:11": [
         367,
@@ -24779,7 +23356,7 @@
         }
       }
     },
-    "391:10": {
+    "365:10": {
       "questID:3": 391,
       "preRequisites:11": [
         39
@@ -24831,7 +23408,7 @@
       },
       "rewards:9": {}
     },
-    "392:10": {
+    "366:10": {
       "questID:3": 392,
       "preRequisites:11": [
         39
@@ -24903,7 +23480,7 @@
         }
       }
     },
-    "393:10": {
+    "367:10": {
       "questID:3": 393,
       "preRequisites:11": [
         39
@@ -24975,7 +23552,7 @@
         }
       }
     },
-    "394:10": {
+    "368:10": {
       "questID:3": 394,
       "preRequisites:11": [
         39
@@ -25027,7 +23604,7 @@
       },
       "rewards:9": {}
     },
-    "395:10": {
+    "369:10": {
       "questID:3": 395,
       "preRequisites:11": [
         39
@@ -25099,7 +23676,7 @@
         }
       }
     },
-    "396:10": {
+    "370:10": {
       "questID:3": 396,
       "preRequisites:11": [
         39
@@ -25171,7 +23748,7 @@
         }
       }
     },
-    "397:10": {
+    "371:10": {
       "questID:3": 397,
       "preRequisites:11": [
         39
@@ -25243,7 +23820,7 @@
         }
       }
     },
-    "398:10": {
+    "372:10": {
       "questID:3": 398,
       "preRequisites:11": [
         39
@@ -25315,7 +23892,7 @@
         }
       }
     },
-    "399:10": {
+    "373:10": {
       "questID:3": 399,
       "preRequisites:11": [
         39
@@ -25380,7 +23957,7 @@
         }
       }
     },
-    "400:10": {
+    "374:10": {
       "questID:3": 400,
       "preRequisites:11": [
         39
@@ -25452,7 +24029,7 @@
         }
       }
     },
-    "401:10": {
+    "375:10": {
       "questID:3": 401,
       "preRequisites:11": [
         39
@@ -25505,7 +24082,7 @@
       },
       "rewards:9": {}
     },
-    "402:10": {
+    "376:10": {
       "questID:3": 402,
       "preRequisites:11": [
         39
@@ -25558,7 +24135,7 @@
       },
       "rewards:9": {}
     },
-    "403:10": {
+    "377:10": {
       "questID:3": 403,
       "preRequisites:11": [
         39
@@ -25630,7 +24207,7 @@
         }
       }
     },
-    "404:10": {
+    "378:10": {
       "questID:3": 404,
       "preRequisites:11": [
         32,
@@ -25684,7 +24261,7 @@
       },
       "rewards:9": {}
     },
-    "405:10": {
+    "379:10": {
       "questID:3": 405,
       "preRequisites:11": [
         56,
@@ -25724,7 +24301,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "406:10": {
+    "380:10": {
       "questID:3": 406,
       "preRequisites:11": [
         17
@@ -25777,7 +24354,7 @@
       },
       "rewards:9": {}
     },
-    "407:10": {
+    "381:10": {
       "questID:3": 407,
       "preRequisites:11": [
         76
@@ -25836,7 +24413,7 @@
         }
       }
     },
-    "408:10": {
+    "382:10": {
       "questID:3": 408,
       "preRequisites:11": [
         76
@@ -25888,7 +24465,7 @@
       },
       "rewards:9": {}
     },
-    "409:10": {
+    "383:10": {
       "questID:3": 409,
       "preRequisites:11": [
         76
@@ -25941,7 +24518,7 @@
       },
       "rewards:9": {}
     },
-    "410:10": {
+    "384:10": {
       "questID:3": 410,
       "preRequisites:11": [
         76
@@ -25994,7 +24571,7 @@
       },
       "rewards:9": {}
     },
-    "411:10": {
+    "385:10": {
       "questID:3": 411,
       "preRequisites:11": [
         76
@@ -26047,7 +24624,7 @@
       },
       "rewards:9": {}
     },
-    "412:10": {
+    "386:10": {
       "questID:3": 412,
       "preRequisites:11": [
         28,
@@ -26082,7 +24659,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "413:10": {
+    "387:10": {
       "questID:3": 413,
       "preRequisites:11": [
         201,
@@ -26148,7 +24725,7 @@
         }
       }
     },
-    "414:10": {
+    "388:10": {
       "questID:3": 414,
       "preRequisites:11": [
         205,
@@ -26204,7 +24781,7 @@
       },
       "rewards:9": {}
     },
-    "415:10": {
+    "389:10": {
       "questID:3": 415,
       "preRequisites:11": [
         366
@@ -26256,7 +24833,7 @@
       },
       "rewards:9": {}
     },
-    "416:10": {
+    "390:10": {
       "questID:3": 416,
       "preRequisites:11": [
         415
@@ -26308,7 +24885,7 @@
       },
       "rewards:9": {}
     },
-    "417:10": {
+    "391:10": {
       "questID:3": 417,
       "preRequisites:11": [
         288
@@ -27021,7 +25598,7 @@
         }
       }
     },
-    "418:10": {
+    "392:10": {
       "questID:3": 418,
       "preRequisites:11": [
         29,
@@ -27056,7 +25633,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "419:10": {
+    "393:10": {
       "questID:3": 419,
       "preRequisites:11": [
         69
@@ -27109,7 +25686,7 @@
       },
       "rewards:9": {}
     },
-    "420:10": {
+    "394:10": {
       "questID:3": 420,
       "preRequisites:11": [
         155,
@@ -27176,7 +25753,7 @@
         }
       }
     },
-    "421:10": {
+    "395:10": {
       "questID:3": 421,
       "preRequisites:11": [
         279
@@ -27241,7 +25818,7 @@
         }
       }
     },
-    "422:10": {
+    "396:10": {
       "questID:3": 422,
       "preRequisites:11": [
         10
@@ -27306,7 +25883,7 @@
         }
       }
     },
-    "423:10": {
+    "397:10": {
       "questID:3": 423,
       "preRequisites:11": [
         10
@@ -27371,7 +25948,7 @@
         }
       }
     },
-    "424:10": {
+    "398:10": {
       "questID:3": 424,
       "preRequisites:11": [
         10
@@ -27436,7 +26013,7 @@
         }
       }
     },
-    "425:10": {
+    "399:10": {
       "questID:3": 425,
       "preRequisites:11": [
         10
@@ -27501,7 +26078,7 @@
         }
       }
     },
-    "426:10": {
+    "400:10": {
       "questID:3": 426,
       "preRequisites:11": [
         92
@@ -27566,7 +26143,7 @@
         }
       }
     },
-    "427:10": {
+    "401:10": {
       "questID:3": 427,
       "preRequisites:11": [
         60
@@ -27631,7 +26208,7 @@
         }
       }
     },
-    "428:10": {
+    "402:10": {
       "questID:3": 428,
       "preRequisites:11": [
         61
@@ -27696,7 +26273,7 @@
         }
       }
     },
-    "429:10": {
+    "403:10": {
       "questID:3": 429,
       "preRequisites:11": [],
       "properties:10": {
@@ -27798,7 +26375,7 @@
         }
       }
     },
-    "430:10": {
+    "404:10": {
       "questID:3": 430,
       "preRequisites:11": [
         10
@@ -27863,7 +26440,7 @@
         }
       }
     },
-    "431:10": {
+    "405:10": {
       "questID:3": 431,
       "preRequisites:11": [
         11
@@ -27928,7 +26505,7 @@
         }
       }
     },
-    "432:10": {
+    "406:10": {
       "questID:3": 432,
       "preRequisites:11": [
         11
@@ -27993,7 +26570,7 @@
         }
       }
     },
-    "433:10": {
+    "407:10": {
       "questID:3": 433,
       "preRequisites:11": [
         158
@@ -28058,7 +26635,7 @@
         }
       }
     },
-    "434:10": {
+    "408:10": {
       "questID:3": 434,
       "preRequisites:11": [
         99
@@ -28145,7 +26722,7 @@
         }
       }
     },
-    "435:10": {
+    "409:10": {
       "questID:3": 435,
       "preRequisites:11": [],
       "properties:10": {
@@ -28256,7 +26833,7 @@
         }
       }
     },
-    "436:10": {
+    "410:10": {
       "questID:3": 436,
       "preRequisites:11": [],
       "properties:10": {
@@ -28358,7 +26935,7 @@
         }
       }
     },
-    "437:10": {
+    "411:10": {
       "questID:3": 437,
       "preRequisites:11": [
         21
@@ -28410,7 +26987,7 @@
       },
       "rewards:9": {}
     },
-    "438:10": {
+    "412:10": {
       "questID:3": 438,
       "preRequisites:11": [
         19
@@ -28468,7 +27045,7 @@
       },
       "rewards:9": {}
     },
-    "439:10": {
+    "413:10": {
       "questID:3": 439,
       "preRequisites:11": [
         216
@@ -28520,7 +27097,7 @@
       },
       "rewards:9": {}
     },
-    "440:10": {
+    "414:10": {
       "questID:3": 440,
       "preRequisites:11": [
         5
@@ -28554,7 +27131,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "441:10": {
+    "415:10": {
       "questID:3": 441,
       "preRequisites:11": [
         217
@@ -28658,7 +27235,7 @@
         }
       }
     },
-    "442:10": {
+    "416:10": {
       "questID:3": 442,
       "preRequisites:11": [
         216
@@ -28729,7 +27306,7 @@
         }
       }
     },
-    "443:10": {
+    "417:10": {
       "questID:3": 443,
       "preRequisites:11": [
         442,
@@ -28801,7 +27378,7 @@
         }
       }
     },
-    "444:10": {
+    "418:10": {
       "questID:3": 444,
       "preRequisites:11": [
         442,
@@ -28873,7 +27450,7 @@
         }
       }
     },
-    "445:10": {
+    "419:10": {
       "questID:3": 445,
       "preRequisites:11": [
         442,
@@ -28945,7 +27522,7 @@
         }
       }
     },
-    "446:10": {
+    "420:10": {
       "questID:3": 446,
       "preRequisites:11": [
         442,
@@ -29017,7 +27594,7 @@
         }
       }
     },
-    "447:10": {
+    "421:10": {
       "questID:3": 447,
       "preRequisites:11": [
         442,
@@ -29089,7 +27666,7 @@
         }
       }
     },
-    "448:10": {
+    "422:10": {
       "questID:3": 448,
       "preRequisites:11": [
         442,
@@ -29161,7 +27738,7 @@
         }
       }
     },
-    "449:10": {
+    "423:10": {
       "questID:3": 449,
       "preRequisites:11": [
         62
@@ -29232,7 +27809,7 @@
         }
       }
     },
-    "450:10": {
+    "424:10": {
       "questID:3": 450,
       "preRequisites:11": [
         440
@@ -29303,7 +27880,7 @@
         }
       }
     },
-    "451:10": {
+    "425:10": {
       "questID:3": 451,
       "preRequisites:11": [
         158
@@ -29374,7 +27951,7 @@
         }
       }
     },
-    "452:10": {
+    "426:10": {
       "questID:3": 452,
       "preRequisites:11": [
         448
@@ -29445,7 +28022,7 @@
         }
       }
     },
-    "453:10": {
+    "427:10": {
       "questID:3": 453,
       "preRequisites:11": [
         304
@@ -29516,7 +28093,7 @@
         }
       }
     },
-    "454:10": {
+    "428:10": {
       "questID:3": 454,
       "preRequisites:11": [
         304
@@ -29587,7 +28164,7 @@
         }
       }
     },
-    "455:10": {
+    "429:10": {
       "questID:3": 455,
       "preRequisites:11": [
         304
@@ -29658,7 +28235,7 @@
         }
       }
     },
-    "456:10": {
+    "430:10": {
       "questID:3": 456,
       "preRequisites:11": [
         304
@@ -29729,7 +28306,7 @@
         }
       }
     },
-    "457:10": {
+    "431:10": {
       "questID:3": 457,
       "preRequisites:11": [
         304
@@ -29800,7 +28377,7 @@
         }
       }
     },
-    "458:10": {
+    "432:10": {
       "questID:3": 458,
       "preRequisites:11": [
         13
@@ -29871,7 +28448,7 @@
         }
       }
     },
-    "459:10": {
+    "433:10": {
       "questID:3": 459,
       "preRequisites:11": [
         0
@@ -29936,7 +28513,7 @@
         }
       }
     },
-    "460:10": {
+    "434:10": {
       "questID:3": 460,
       "preRequisites:11": [
         10
@@ -29988,7 +28565,7 @@
       },
       "rewards:9": {}
     },
-    "461:10": {
+    "435:10": {
       "questID:3": 461,
       "preRequisites:11": [
         10
@@ -30027,7 +28604,7 @@
       },
       "rewards:9": {}
     },
-    "462:10": {
+    "436:10": {
       "questID:3": 462,
       "preRequisites:11": [],
       "properties:10": {
@@ -30180,7 +28757,7 @@
         }
       }
     },
-    "463:10": {
+    "437:10": {
       "questID:3": 463,
       "preRequisites:11": [],
       "properties:10": {
@@ -30328,7 +28905,7 @@
         }
       }
     },
-    "464:10": {
+    "438:10": {
       "questID:3": 464,
       "preRequisites:11": [],
       "properties:10": {
@@ -30471,7 +29048,7 @@
         }
       }
     },
-    "465:10": {
+    "439:10": {
       "questID:3": 465,
       "preRequisites:11": [],
       "properties:10": {
@@ -30634,9 +29211,11 @@
         }
       }
     },
-    "466:10": {
+    "440:10": {
       "questID:3": 466,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        471
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -30775,9 +29354,11 @@
         }
       }
     },
-    "467:10": {
+    "441:10": {
       "questID:3": 467,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        474
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -30916,7 +29497,7 @@
         }
       }
     },
-    "468:10": {
+    "442:10": {
       "questID:3": 468,
       "preRequisites:11": [],
       "properties:10": {
@@ -31067,7 +29648,7 @@
         }
       }
     },
-    "469:10": {
+    "443:10": {
       "questID:3": 469,
       "preRequisites:11": [],
       "properties:10": {
@@ -31217,9 +29798,11 @@
         }
       }
     },
-    "470:10": {
+    "444:10": {
       "questID:3": 470,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        466
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -31355,7 +29938,7 @@
         }
       }
     },
-    "471:10": {
+    "445:10": {
       "questID:3": 471,
       "preRequisites:11": [],
       "properties:10": {
@@ -31502,7 +30085,7 @@
         }
       }
     },
-    "472:10": {
+    "446:10": {
       "questID:3": 472,
       "preRequisites:11": [],
       "properties:10": {
@@ -31660,9 +30243,11 @@
         }
       }
     },
-    "473:10": {
+    "447:10": {
       "questID:3": 473,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        470
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -31801,9 +30386,11 @@
         }
       }
     },
-    "474:10": {
+    "448:10": {
       "questID:3": 474,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        473
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -31939,7 +30526,7 @@
         }
       }
     },
-    "475:10": {
+    "449:10": {
       "questID:3": 475,
       "preRequisites:11": [],
       "properties:10": {
@@ -32074,7 +30661,7 @@
         }
       }
     },
-    "476:10": {
+    "450:10": {
       "questID:3": 476,
       "preRequisites:11": [
         462
@@ -32229,7 +30816,7 @@
         }
       }
     },
-    "477:10": {
+    "451:10": {
       "questID:3": 477,
       "preRequisites:11": [
         463
@@ -32379,7 +30966,7 @@
         }
       }
     },
-    "478:10": {
+    "452:10": {
       "questID:3": 478,
       "preRequisites:11": [
         464
@@ -32524,7 +31111,7 @@
         }
       }
     },
-    "479:10": {
+    "453:10": {
       "questID:3": 479,
       "preRequisites:11": [
         468
@@ -32677,7 +31264,7 @@
         }
       }
     },
-    "480:10": {
+    "454:10": {
       "questID:3": 480,
       "preRequisites:11": [
         469
@@ -32829,7 +31416,7 @@
         }
       }
     },
-    "481:10": {
+    "455:10": {
       "questID:3": 481,
       "preRequisites:11": [
         465
@@ -32994,7 +31581,7 @@
         }
       }
     },
-    "482:10": {
+    "456:10": {
       "questID:3": 482,
       "preRequisites:11": [
         472
@@ -33154,7 +31741,7 @@
         }
       }
     },
-    "483:10": {
+    "457:10": {
       "questID:3": 483,
       "preRequisites:11": [
         475
@@ -33291,7 +31878,7 @@
         }
       }
     },
-    "484:10": {
+    "458:10": {
       "questID:3": 484,
       "preRequisites:11": [
         472,
@@ -33339,7 +31926,7 @@
         }
       }
     },
-    "485:10": {
+    "459:10": {
       "questID:3": 485,
       "preRequisites:11": [
         462,
@@ -33396,7 +31983,7 @@
         }
       }
     },
-    "486:10": {
+    "460:10": {
       "questID:3": 486,
       "preRequisites:11": [
         476,
@@ -33453,7 +32040,7 @@
         }
       }
     },
-    "487:10": {
+    "461:10": {
       "questID:3": 487,
       "preRequisites:11": [
         482,
@@ -33501,7 +32088,7 @@
         }
       }
     },
-    "488:10": {
+    "462:10": {
       "questID:3": 488,
       "preRequisites:11": [
         483
@@ -33638,7 +32225,7 @@
         }
       }
     },
-    "489:10": {
+    "463:10": {
       "questID:3": 489,
       "preRequisites:11": [
         488
@@ -33775,7 +32362,7 @@
         }
       }
     },
-    "490:10": {
+    "464:10": {
       "questID:3": 490,
       "preRequisites:11": [
         489
@@ -33912,7 +32499,7 @@
         }
       }
     },
-    "491:10": {
+    "465:10": {
       "questID:3": 491,
       "preRequisites:11": [
         476
@@ -34067,7 +32654,7 @@
         }
       }
     },
-    "492:10": {
+    "466:10": {
       "questID:3": 492,
       "preRequisites:11": [
         477
@@ -34217,7 +32804,7 @@
         }
       }
     },
-    "493:10": {
+    "467:10": {
       "questID:3": 493,
       "preRequisites:11": [
         478
@@ -34362,7 +32949,7 @@
         }
       }
     },
-    "494:10": {
+    "468:10": {
       "questID:3": 494,
       "preRequisites:11": [
         479
@@ -34515,7 +33102,7 @@
         }
       }
     },
-    "495:10": {
+    "469:10": {
       "questID:3": 495,
       "preRequisites:11": [
         480
@@ -34667,7 +33254,7 @@
         }
       }
     },
-    "496:10": {
+    "470:10": {
       "questID:3": 496,
       "preRequisites:11": [
         481
@@ -34832,7 +33419,7 @@
         }
       }
     },
-    "497:10": {
+    "471:10": {
       "questID:3": 497,
       "preRequisites:11": [
         482,
@@ -34993,7 +33580,7 @@
         }
       }
     },
-    "498:10": {
+    "472:10": {
       "questID:3": 498,
       "preRequisites:11": [
         491
@@ -35148,7 +33735,7 @@
         }
       }
     },
-    "499:10": {
+    "473:10": {
       "questID:3": 499,
       "preRequisites:11": [
         492
@@ -35298,7 +33885,7 @@
         }
       }
     },
-    "500:10": {
+    "474:10": {
       "questID:3": 500,
       "preRequisites:11": [
         493
@@ -35443,7 +34030,7 @@
         }
       }
     },
-    "501:10": {
+    "475:10": {
       "questID:3": 501,
       "preRequisites:11": [
         494
@@ -35596,7 +34183,7 @@
         }
       }
     },
-    "502:10": {
+    "476:10": {
       "questID:3": 502,
       "preRequisites:11": [
         495
@@ -35748,7 +34335,7 @@
         }
       }
     },
-    "503:10": {
+    "477:10": {
       "questID:3": 503,
       "preRequisites:11": [
         496
@@ -35913,7 +34500,7 @@
         }
       }
     },
-    "504:10": {
+    "478:10": {
       "questID:3": 504,
       "preRequisites:11": [
         497
@@ -36073,7 +34660,7 @@
         }
       }
     },
-    "505:10": {
+    "479:10": {
       "questID:3": 505,
       "preRequisites:11": [
         498
@@ -36157,7 +34744,7 @@
         }
       }
     },
-    "506:10": {
+    "480:10": {
       "questID:3": 506,
       "preRequisites:11": [
         499
@@ -36241,7 +34828,7 @@
         }
       }
     },
-    "507:10": {
+    "481:10": {
       "questID:3": 507,
       "preRequisites:11": [
         500
@@ -36321,7 +34908,7 @@
         }
       }
     },
-    "508:10": {
+    "482:10": {
       "questID:3": 508,
       "preRequisites:11": [
         501
@@ -36406,7 +34993,7 @@
         }
       }
     },
-    "509:10": {
+    "483:10": {
       "questID:3": 509,
       "preRequisites:11": [
         502
@@ -36491,7 +35078,7 @@
         }
       }
     },
-    "510:10": {
+    "484:10": {
       "questID:3": 510,
       "preRequisites:11": [
         503
@@ -36656,7 +35243,7 @@
         }
       }
     },
-    "511:10": {
+    "485:10": {
       "questID:3": 511,
       "preRequisites:11": [
         504
@@ -36816,7 +35403,7 @@
         }
       }
     },
-    "512:10": {
+    "486:10": {
       "questID:3": 512,
       "preRequisites:11": [
         496
@@ -36863,7 +35450,7 @@
         }
       }
     },
-    "513:10": {
+    "487:10": {
       "questID:3": 513,
       "preRequisites:11": [
         504,
@@ -36911,7 +35498,7 @@
         }
       }
     },
-    "514:10": {
+    "488:10": {
       "questID:3": 514,
       "preRequisites:11": [
         511,
@@ -36959,7 +35546,7 @@
         }
       }
     },
-    "515:10": {
+    "489:10": {
       "questID:3": 515,
       "preRequisites:11": [
         491,
@@ -37010,7 +35597,7 @@
         }
       }
     },
-    "516:10": {
+    "490:10": {
       "questID:3": 516,
       "preRequisites:11": [
         498,
@@ -37061,7 +35648,7 @@
         }
       }
     },
-    "517:10": {
+    "491:10": {
       "questID:3": 517,
       "preRequisites:11": [
         505,
@@ -37112,7 +35699,7 @@
         }
       }
     },
-    "518:10": {
+    "492:10": {
       "questID:3": 518,
       "preRequisites:11": [
         514,
@@ -37124,7 +35711,7 @@
           "taskLogic:8": "AND",
           "partySingleReward:1": 0,
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.meta.rotor",
@@ -37166,9 +35753,11 @@
         }
       }
     },
-    "519:10": {
+    "493:10": {
       "questID:3": 519,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        467
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "minecraft:entity.player.levelup",
@@ -37282,7 +35871,7 @@
       },
       "rewards:9": {}
     },
-    "520:10": {
+    "494:10": {
       "questID:3": 520,
       "preRequisites:11": [
         3
@@ -37350,7 +35939,7 @@
         }
       }
     },
-    "521:10": {
+    "495:10": {
       "questID:3": 521,
       "preRequisites:11": [
         343,
@@ -37416,7 +36005,7 @@
         }
       }
     },
-    "522:10": {
+    "496:10": {
       "questID:3": 522,
       "preRequisites:11": [
         521,
@@ -37469,7 +36058,7 @@
       },
       "rewards:9": {}
     },
-    "523:10": {
+    "497:10": {
       "questID:3": 523,
       "preRequisites:11": [
         521
@@ -37528,7 +36117,7 @@
       },
       "rewards:9": {}
     },
-    "524:10": {
+    "498:10": {
       "questID:3": 524,
       "preRequisites:11": [
         523
@@ -37580,7 +36169,7 @@
       },
       "rewards:9": {}
     },
-    "525:10": {
+    "499:10": {
       "questID:3": 525,
       "preRequisites:11": [
         337
@@ -37645,7 +36234,7 @@
         }
       }
     },
-    "526:10": {
+    "500:10": {
       "questID:3": 526,
       "preRequisites:11": [
         525
@@ -37697,7 +36286,7 @@
       },
       "rewards:9": {}
     },
-    "527:10": {
+    "501:10": {
       "questID:3": 527,
       "preRequisites:11": [
         526
@@ -37749,7 +36338,7 @@
       },
       "rewards:9": {}
     },
-    "528:10": {
+    "502:10": {
       "questID:3": 528,
       "preRequisites:11": [
         527
@@ -37801,7 +36390,7 @@
       },
       "rewards:9": {}
     },
-    "529:10": {
+    "503:10": {
       "questID:3": 529,
       "preRequisites:11": [
         523,
@@ -37854,7 +36443,7 @@
       },
       "rewards:9": {}
     },
-    "530:10": {
+    "504:10": {
       "questID:3": 530,
       "preRequisites:11": [
         529
@@ -37906,7 +36495,7 @@
       },
       "rewards:9": {}
     },
-    "531:10": {
+    "505:10": {
       "questID:3": 531,
       "preRequisites:11": [
         529
@@ -37958,7 +36547,7 @@
       },
       "rewards:9": {}
     },
-    "532:10": {
+    "506:10": {
       "questID:3": 532,
       "preRequisites:11": [
         529
@@ -38040,7 +36629,7 @@
       },
       "rewards:9": {}
     },
-    "533:10": {
+    "507:10": {
       "questID:3": 533,
       "preRequisites:11": [
         529
@@ -38099,10 +36688,9 @@
       },
       "rewards:9": {}
     },
-    "534:10": {
+    "508:10": {
       "questID:3": 534,
       "preRequisites:11": [
-        200,
         121
       ],
       "properties:10": {
@@ -38166,7 +36754,7 @@
       },
       "rewards:9": {}
     },
-    "535:10": {
+    "509:10": {
       "questID:3": 535,
       "preRequisites:11": [
         534
@@ -38237,7 +36825,7 @@
         }
       }
     },
-    "536:10": {
+    "510:10": {
       "questID:3": 536,
       "preRequisites:11": [
         534
@@ -38308,7 +36896,7 @@
         }
       }
     },
-    "537:10": {
+    "511:10": {
       "questID:3": 537,
       "preRequisites:11": [
         121
@@ -38379,7 +36967,7 @@
         }
       }
     },
-    "538:10": {
+    "512:10": {
       "questID:3": 538,
       "preRequisites:11": [
         535
@@ -38452,7 +37040,7 @@
         }
       }
     },
-    "539:10": {
+    "513:10": {
       "questID:3": 539,
       "preRequisites:11": [
         541
@@ -38523,7 +37111,7 @@
         }
       }
     },
-    "540:10": {
+    "514:10": {
       "questID:3": 540,
       "preRequisites:11": [
         538,
@@ -38595,7 +37183,7 @@
         }
       }
     },
-    "541:10": {
+    "515:10": {
       "questID:3": 541,
       "preRequisites:11": [
         538
@@ -38668,7 +37256,7 @@
         }
       }
     },
-    "542:10": {
+    "516:10": {
       "questID:3": 542,
       "preRequisites:11": [
         121
@@ -38739,7 +37327,7 @@
         }
       }
     },
-    "543:10": {
+    "517:10": {
       "questID:3": 543,
       "preRequisites:11": [
         125
@@ -38834,7 +37422,7 @@
         }
       }
     },
-    "544:10": {
+    "518:10": {
       "questID:3": 544,
       "preRequisites:11": [
         532
@@ -38892,7 +37480,7 @@
       },
       "rewards:9": {}
     },
-    "545:10": {
+    "519:10": {
       "questID:3": 545,
       "preRequisites:11": [
         533
@@ -38971,7 +37559,7 @@
         }
       }
     },
-    "546:10": {
+    "520:10": {
       "questID:3": 546,
       "preRequisites:11": [
         532
@@ -39023,7 +37611,7 @@
       },
       "rewards:9": {}
     },
-    "547:10": {
+    "521:10": {
       "questID:3": 547,
       "preRequisites:11": [
         532
@@ -39081,7 +37669,7 @@
       },
       "rewards:9": {}
     },
-    "548:10": {
+    "522:10": {
       "questID:3": 548,
       "preRequisites:11": [
         532
@@ -39133,7 +37721,7 @@
       },
       "rewards:9": {}
     },
-    "549:10": {
+    "523:10": {
       "questID:3": 549,
       "preRequisites:11": [
         524
@@ -39185,7 +37773,7 @@
       },
       "rewards:9": {}
     },
-    "550:10": {
+    "524:10": {
       "questID:3": 550,
       "preRequisites:11": [
         523
@@ -39239,7 +37827,7 @@
       },
       "rewards:9": {}
     },
-    "551:10": {
+    "525:10": {
       "questID:3": 551,
       "preRequisites:11": [
         304
@@ -39310,7 +37898,7 @@
         }
       }
     },
-    "552:10": {
+    "526:10": {
       "questID:3": 552,
       "preRequisites:11": [
         315
@@ -39361,7 +37949,7 @@
       },
       "rewards:9": {}
     },
-    "553:10": {
+    "527:10": {
       "questID:3": 553,
       "preRequisites:11": [
         552
@@ -39500,7 +38088,7 @@
         "4:10": {
           "sizeX:3": 24,
           "x:3": -48,
-          "y:3": 132,
+          "y:3": 180,
           "id:3": 22,
           "sizeY:3": 24
         },
@@ -39555,166 +38143,187 @@
         },
         "12:10": {
           "sizeX:3": 24,
+          "x:3": 12,
+          "y:3": -12,
+          "id:3": 134,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 24,
           "x:3": 36,
           "y:3": 84,
           "id:3": 158,
           "sizeY:3": 24
         },
-        "13:10": {
+        "14:10": {
           "sizeX:3": 24,
           "x:3": 228,
           "y:3": 132,
           "id:3": 159,
           "sizeY:3": 24
         },
-        "14:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": 84,
           "id:3": 160,
           "sizeY:3": 24
         },
-        "15:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": 84,
           "id:3": 161,
           "sizeY:3": 24
         },
-        "16:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 84,
           "id:3": 162,
           "sizeY:3": 24
         },
-        "17:10": {
+        "18:10": {
           "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": 132,
+          "x:3": 24,
+          "y:3": 144,
           "id:3": 167,
           "sizeY:3": 24
         },
-        "18:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": 180,
           "id:3": 210,
           "sizeY:3": 24
         },
-        "19:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": 360,
           "y:3": 84,
           "id:3": 214,
           "sizeY:3": 24
         },
-        "20:10": {
+        "21:10": {
           "sizeX:3": 24,
-          "x:3": 84,
+          "x:3": 36,
           "y:3": 36,
+          "id:3": 221,
+          "sizeY:3": 24
+        },
+        "22:10": {
+          "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": -12,
+          "id:3": 222,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "sizeX:3": 24,
+          "x:3": 108,
+          "y:3": -12,
           "id:3": 232,
           "sizeY:3": 24
         },
-        "21:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": 132,
           "id:3": 260,
           "sizeY:3": 24
         },
-        "22:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": 36,
           "id:3": 269,
           "sizeY:3": 24
         },
-        "23:10": {
+        "26:10": {
           "sizeX:3": 24,
-          "x:3": -84,
+          "x:3": -96,
           "y:3": 36,
           "id:3": 278,
           "sizeY:3": 24
         },
-        "24:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": 84,
           "id:3": 279,
           "sizeY:3": 24
         },
-        "25:10": {
+        "28:10": {
           "sizeX:3": 24,
-          "x:3": -84,
+          "x:3": -96,
           "y:3": 132,
           "id:3": 284,
           "sizeY:3": 24
         },
-        "26:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": 324,
           "y:3": 132,
           "id:3": 285,
           "sizeY:3": 24
         },
-        "27:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": 360,
           "y:3": 132,
           "id:3": 286,
           "sizeY:3": 24
         },
-        "28:10": {
+        "31:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 36,
+          "x:3": -48,
+          "y:3": -12,
           "id:3": 294,
           "sizeY:3": 24
         },
-        "29:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 276,
           "y:3": 60,
           "id:3": 296,
           "sizeY:3": 24
         },
-        "30:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 228,
           "y:3": 36,
           "id:3": 297,
           "sizeY:3": 24
         },
-        "31:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": 84,
-          "y:3": 132,
+          "y:3": 180,
           "id:3": 316,
           "sizeY:3": 24
         },
-        "32:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": 360,
           "y:3": 36,
           "id:3": 321,
           "sizeY:3": 24
         },
-        "33:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": 228,
           "y:3": 84,
           "id:3": 325,
           "sizeY:3": 24
         },
-        "34:10": {
+        "37:10": {
           "sizeX:3": 24,
-          "x:3": -48,
-          "y:3": 36,
+          "x:3": -108,
+          "y:3": 180,
           "id:3": 374,
           "sizeY:3": 24
         },
-        "35:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": -12,
@@ -39842,355 +38451,362 @@
         },
         "14:10": {
           "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 0,
+          "id:3": 33,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "sizeX:3": 24,
           "x:3": 552,
           "y:3": 0,
           "id:3": 35,
           "sizeY:3": 24
         },
-        "15:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": 588,
           "y:3": -48,
           "id:3": 36,
           "sizeY:3": 24
         },
-        "16:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": 348,
           "y:3": 132,
           "id:3": 39,
           "sizeY:3": 24
         },
-        "17:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": -132,
           "id:3": 46,
           "sizeY:3": 24
         },
-        "18:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": -240,
           "id:3": 47,
           "sizeY:3": 24
         },
-        "19:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": -204,
           "id:3": 52,
           "sizeY:3": 24
         },
-        "20:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": 468,
           "y:3": 48,
           "id:3": 53,
           "sizeY:3": 24
         },
-        "21:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": 468,
           "y:3": -48,
           "id:3": 54,
           "sizeY:3": 24
         },
-        "22:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": -84,
           "id:3": 56,
           "sizeY:3": 24
         },
-        "23:10": {
+        "24:10": {
           "sizeX:3": 48,
           "x:3": 660,
           "y:3": -12,
           "id:3": 58,
           "sizeY:3": 48
         },
-        "24:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": 300,
           "y:3": 48,
           "id:3": 65,
           "sizeY:3": 24
         },
-        "25:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": -240,
           "id:3": 70,
           "sizeY:3": 24
         },
-        "26:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": -84,
           "id:3": 75,
           "sizeY:3": 24
         },
-        "27:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": 132,
           "id:3": 76,
           "sizeY:3": 24
         },
-        "28:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": 0,
           "id:3": 77,
           "sizeY:3": 24
         },
-        "29:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": -276,
           "id:3": 80,
           "sizeY:3": 24
         },
-        "30:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": -204,
           "id:3": 83,
           "sizeY:3": 24
         },
-        "31:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 372,
           "y:3": -276,
           "id:3": 88,
           "sizeY:3": 24
         },
-        "32:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 408,
           "y:3": -276,
           "id:3": 139,
           "sizeY:3": 24
         },
-        "33:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": 324,
           "y:3": -276,
           "id:3": 141,
           "sizeY:3": 24
         },
-        "34:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": -132,
           "id:3": 201,
           "sizeY:3": 24
         },
-        "35:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": 288,
           "y:3": -276,
           "id:3": 209,
           "sizeY:3": 24
         },
-        "36:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": 588,
           "y:3": 48,
           "id:3": 259,
           "sizeY:3": 24
         },
-        "37:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": 132,
           "id:3": 263,
           "sizeY:3": 24
         },
-        "38:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": 108,
           "y:3": 0,
           "id:3": 280,
           "sizeY:3": 24
         },
-        "39:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": 72,
           "y:3": 0,
           "id:3": 287,
           "sizeY:3": 24
         },
-        "40:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": -276,
           "id:3": 375,
           "sizeY:3": 24
         },
-        "41:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": 168,
           "id:3": 391,
           "sizeY:3": 24
         },
-        "42:10": {
+        "43:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": 204,
           "id:3": 392,
           "sizeY:3": 24
         },
-        "43:10": {
+        "44:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": 240,
           "id:3": 393,
           "sizeY:3": 24
         },
-        "44:10": {
+        "45:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": 276,
           "id:3": 394,
           "sizeY:3": 24
         },
-        "45:10": {
+        "46:10": {
           "sizeX:3": 24,
           "x:3": 372,
           "y:3": 276,
           "id:3": 395,
           "sizeY:3": 24
         },
-        "46:10": {
+        "47:10": {
           "sizeX:3": 24,
           "x:3": 288,
           "y:3": 276,
           "id:3": 396,
           "sizeY:3": 24
         },
-        "47:10": {
+        "48:10": {
           "sizeX:3": 24,
           "x:3": 324,
           "y:3": 276,
           "id:3": 397,
           "sizeY:3": 24
         },
-        "48:10": {
+        "49:10": {
           "sizeX:3": 24,
           "x:3": 408,
           "y:3": 276,
           "id:3": 398,
           "sizeY:3": 24
         },
-        "49:10": {
+        "50:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": 276,
           "id:3": 399,
           "sizeY:3": 24
         },
-        "50:10": {
+        "51:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": 240,
           "id:3": 400,
           "sizeY:3": 24
         },
-        "51:10": {
+        "52:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": 204,
           "id:3": 401,
           "sizeY:3": 24
         },
-        "52:10": {
+        "53:10": {
           "sizeX:3": 24,
           "x:3": 552,
           "y:3": 132,
           "id:3": 402,
           "sizeY:3": 24
         },
-        "53:10": {
+        "54:10": {
           "sizeX:3": 24,
           "x:3": 348,
           "y:3": 48,
           "id:3": 403,
           "sizeY:3": 24
         },
-        "54:10": {
+        "55:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": 84,
           "id:3": 404,
           "sizeY:3": 24
         },
-        "55:10": {
+        "56:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": 0,
           "id:3": 405,
           "sizeY:3": 24
         },
-        "56:10": {
+        "57:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": -180,
           "id:3": 406,
           "sizeY:3": 24
         },
-        "57:10": {
+        "58:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": 132,
           "id:3": 407,
           "sizeY:3": 24
         },
-        "58:10": {
+        "59:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": 132,
           "id:3": 408,
           "sizeY:3": 24
         },
-        "59:10": {
+        "60:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": 84,
           "id:3": 409,
           "sizeY:3": 24
         },
-        "60:10": {
+        "61:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": 180,
           "id:3": 410,
           "sizeY:3": 24
         },
-        "61:10": {
+        "62:10": {
           "sizeX:3": 24,
           "x:3": -12,
           "y:3": 180,
           "id:3": 411,
           "sizeY:3": 24
         },
-        "62:10": {
+        "63:10": {
           "sizeX:3": 24,
           "x:3": 276,
           "y:3": 0,
           "id:3": 412,
           "sizeY:3": 24
         },
-        "63:10": {
+        "64:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": 0,
           "id:3": 413,
           "sizeY:3": 24
         },
-        "64:10": {
+        "65:10": {
           "sizeX:3": 24,
           "x:3": 324,
           "y:3": 0,
@@ -40220,169 +38836,302 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 60,
+          "x:3": -132,
+          "y:3": 240,
           "id:3": 34,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": 96,
+          "x:3": -132,
           "y:3": 12,
-          "id:3": 55,
+          "id:3": 38,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 108,
-          "id:3": 57,
+          "x:3": -12,
+          "y:3": 216,
+          "id:3": 40,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 108,
-          "id:3": 60,
+          "x:3": 48,
+          "y:3": 216,
+          "id:3": 41,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 204,
-          "id:3": 61,
+          "x:3": -72,
+          "y:3": 216,
+          "id:3": 42,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 108,
-          "id:3": 62,
+          "x:3": -48,
+          "y:3": 60,
+          "id:3": 43,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 60,
-          "id:3": 84,
+          "x:3": -48,
+          "y:3": 120,
+          "id:3": 44,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 156,
-          "id:3": 85,
+          "x:3": 252,
+          "y:3": 228,
+          "id:3": 45,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": 60,
-          "id:3": 92,
+          "x:3": 324,
+          "y:3": 228,
+          "id:3": 48,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 156,
-          "id:3": 93,
+          "x:3": -192,
+          "y:3": 360,
+          "id:3": 49,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": 348,
-          "y:3": 60,
-          "id:3": 94,
+          "x:3": -180,
+          "y:3": 180,
+          "id:3": 55,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 204,
-          "id:3": 95,
+          "x:3": -12,
+          "y:3": 300,
+          "id:3": 57,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 204,
-          "id:3": 96,
+          "x:3": 48,
+          "y:3": 360,
+          "id:3": 60,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 252,
-          "id:3": 98,
+          "x:3": 108,
+          "y:3": 264,
+          "id:3": 61,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": 228,
-          "y:3": 60,
-          "id:3": 102,
+          "x:3": -12,
+          "y:3": 420,
+          "id:3": 62,
           "sizeY:3": 24
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 60,
-          "id:3": 103,
+          "x:3": -132,
+          "y:3": 120,
+          "id:3": 64,
           "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 408,
-          "y:3": 60,
-          "id:3": 104,
+          "x:3": 228,
+          "y:3": 84,
+          "id:3": 69,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": -48,
-          "y:3": 108,
-          "id:3": 182,
+          "x:3": -132,
+          "y:3": 72,
+          "id:3": 72,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": 108,
-          "id:3": 213,
+          "x:3": 276,
+          "y:3": 84,
+          "id:3": 73,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": 24,
+          "x:3": 324,
           "y:3": 12,
-          "id:3": 282,
+          "id:3": 79,
           "sizeY:3": 24
         },
         "20:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 300,
-          "id:3": 322,
+          "x:3": 252,
+          "y:3": 132,
+          "id:3": 82,
           "sizeY:3": 24
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 348,
-          "id:3": 323,
+          "x:3": -12,
+          "y:3": 360,
+          "id:3": 84,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 252,
-          "id:3": 373,
+          "x:3": 48,
+          "y:3": 300,
+          "id:3": 85,
           "sizeY:3": 24
         },
         "23:10": {
           "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": 252,
+          "x:3": -72,
+          "y:3": 360,
+          "id:3": 92,
+          "sizeY:3": 24
+        },
+        "24:10": {
+          "sizeX:3": 24,
+          "x:3": 48,
+          "y:3": 420,
+          "id:3": 93,
+          "sizeY:3": 24
+        },
+        "25:10": {
+          "sizeX:3": 24,
+          "x:3": -72,
+          "y:3": 420,
+          "id:3": 94,
+          "sizeY:3": 24
+        },
+        "26:10": {
+          "sizeX:3": 24,
+          "x:3": 180,
+          "y:3": 360,
+          "id:3": 95,
+          "sizeY:3": 24
+        },
+        "27:10": {
+          "sizeX:3": 24,
+          "x:3": 180,
+          "y:3": 264,
+          "id:3": 96,
+          "sizeY:3": 24
+        },
+        "28:10": {
+          "sizeX:3": 24,
+          "x:3": 108,
+          "y:3": 12,
+          "id:3": 98,
+          "sizeY:3": 24
+        },
+        "29:10": {
+          "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": 360,
+          "id:3": 102,
+          "sizeY:3": 24
+        },
+        "30:10": {
+          "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": 300,
+          "id:3": 103,
+          "sizeY:3": 24
+        },
+        "31:10": {
+          "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": 420,
+          "id:3": 104,
+          "sizeY:3": 24
+        },
+        "32:10": {
+          "sizeX:3": 24,
+          "x:3": 180,
+          "y:3": 12,
+          "id:3": 114,
+          "sizeY:3": 24
+        },
+        "33:10": {
+          "sizeX:3": 24,
+          "x:3": 108,
+          "y:3": 360,
+          "id:3": 182,
+          "sizeY:3": 24
+        },
+        "34:10": {
+          "sizeX:3": 36,
+          "x:3": -132,
+          "y:3": 180,
+          "id:3": 207,
+          "sizeY:3": 36
+        },
+        "35:10": {
+          "sizeX:3": 24,
+          "x:3": -72,
+          "y:3": 300,
+          "id:3": 213,
+          "sizeY:3": 24
+        },
+        "36:10": {
+          "sizeX:3": 24,
+          "x:3": 324,
+          "y:3": 180,
+          "id:3": 235,
+          "sizeY:3": 24
+        },
+        "37:10": {
+          "sizeX:3": 24,
+          "x:3": 180,
+          "y:3": 180,
+          "id:3": 240,
+          "sizeY:3": 24
+        },
+        "38:10": {
+          "sizeX:3": 24,
+          "x:3": 252,
+          "y:3": 180,
+          "id:3": 267,
+          "sizeY:3": 24
+        },
+        "39:10": {
+          "sizeX:3": 24,
+          "x:3": 228,
+          "y:3": 360,
+          "id:3": 322,
+          "sizeY:3": 24
+        },
+        "40:10": {
+          "sizeX:3": 24,
+          "x:3": 276,
+          "y:3": 360,
+          "id:3": 323,
+          "sizeY:3": 24
+        },
+        "41:10": {
+          "sizeX:3": 24,
+          "x:3": 180,
+          "y:3": 312,
+          "id:3": 373,
+          "sizeY:3": 24
+        },
+        "42:10": {
+          "sizeX:3": 24,
+          "x:3": 228,
+          "y:3": 312,
           "id:3": 376,
           "sizeY:3": 24
         }
@@ -40391,7 +39140,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "NORMAL",
-          "name:8": "Tier 4 - 基础电力时代",
+          "name:8": "Tier 4 - 初入电力时代(LV-MV)",
           "icon:10": {
             "id:8": "customnpcs:npcLightningSpell",
             "Count:3": 1,
@@ -40403,295 +39152,204 @@
           "desc:8": "电力时代！~~~"
         }
       },
-      "order:3": 5
+      "order:3": 4
     },
     "4:10": {
       "quests:9": {
         "0:10": {
-          "sizeX:3": 24,
-          "x:3": 156,
-          "y:3": -36,
-          "id:3": 38,
-          "sizeY:3": 24
-        },
-        "1:10": {
-          "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": -36,
-          "id:3": 64,
-          "sizeY:3": 24
-        },
-        "2:10": {
-          "sizeX:3": 24,
-          "x:3": 108,
-          "y:3": -156,
-          "id:3": 69,
-          "sizeY:3": 24
-        },
-        "3:10": {
-          "sizeX:3": 24,
-          "x:3": 108,
-          "y:3": -36,
-          "id:3": 72,
-          "sizeY:3": 24
-        },
-        "4:10": {
-          "sizeX:3": 24,
-          "x:3": 540,
-          "y:3": -156,
-          "id:3": 73,
-          "sizeY:3": 24
-        },
-        "5:10": {
-          "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": -36,
-          "id:3": 79,
-          "sizeY:3": 24
-        },
-        "6:10": {
-          "sizeX:3": 24,
-          "x:3": 156,
-          "y:3": -120,
-          "id:3": 82,
-          "sizeY:3": 24
-        },
-        "7:10": {
           "sizeX:3": 24,
           "x:3": 300,
           "y:3": -36,
           "id:3": 111,
           "sizeY:3": 24
         },
-        "8:10": {
+        "1:10": {
           "sizeX:3": 24,
           "x:3": 756,
           "y:3": 84,
           "id:3": 112,
           "sizeY:3": 24
         },
-        "9:10": {
+        "2:10": {
           "sizeX:3": 24,
           "x:3": 660,
           "y:3": 36,
           "id:3": 113,
           "sizeY:3": 24
         },
-        "10:10": {
-          "sizeX:3": 24,
-          "x:3": 108,
-          "y:3": -84,
-          "id:3": 114,
-          "sizeY:3": 24
-        },
-        "11:10": {
+        "3:10": {
           "sizeX:3": 24,
           "x:3": 756,
           "y:3": 132,
           "id:3": 115,
           "sizeY:3": 24
         },
-        "12:10": {
+        "4:10": {
           "sizeX:3": 24,
           "x:3": 756,
           "y:3": 36,
           "id:3": 116,
           "sizeY:3": 24
         },
-        "13:10": {
+        "5:10": {
           "sizeX:3": 24,
           "x:3": 756,
           "y:3": 180,
           "id:3": 117,
           "sizeY:3": 24
         },
-        "14:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": 756,
           "y:3": -60,
           "id:3": 140,
           "sizeY:3": 24
         },
-        "15:10": {
-          "sizeX:3": 24,
-          "x:3": 252,
-          "y:3": -36,
-          "id:3": 235,
-          "sizeY:3": 24
-        },
-        "16:10": {
+        "7:10": {
           "sizeX:3": 24,
           "x:3": 348,
           "y:3": 0,
           "id:3": 236,
           "sizeY:3": 24
         },
-        "17:10": {
+        "8:10": {
           "sizeX:3": 24,
           "x:3": 348,
           "y:3": -72,
           "id:3": 237,
           "sizeY:3": 24
         },
-        "18:10": {
-          "sizeX:3": 24,
-          "x:3": 156,
-          "y:3": -84,
-          "id:3": 240,
-          "sizeY:3": 24
-        },
-        "19:10": {
+        "9:10": {
           "sizeX:3": 24,
           "x:3": 492,
           "y:3": -108,
           "id:3": 243,
           "sizeY:3": 24
         },
-        "20:10": {
+        "10:10": {
           "sizeX:3": 24,
           "x:3": 816,
           "y:3": -60,
           "id:3": 244,
           "sizeY:3": 24
         },
-        "21:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": 660,
           "y:3": -60,
           "id:3": 245,
           "sizeY:3": 24
         },
-        "22:10": {
+        "12:10": {
           "sizeX:3": 24,
           "x:3": 588,
           "y:3": -12,
           "id:3": 246,
           "sizeY:3": 24
         },
-        "23:10": {
+        "13:10": {
           "sizeX:3": 24,
           "x:3": 588,
           "y:3": -60,
           "id:3": 247,
           "sizeY:3": 24
         },
-        "24:10": {
+        "14:10": {
           "sizeX:3": 24,
           "x:3": 876,
           "y:3": -60,
           "id:3": 248,
           "sizeY:3": 24
         },
-        "25:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": 396,
           "y:3": -36,
           "id:3": 249,
           "sizeY:3": 24
         },
-        "26:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": -36,
           "id:3": 252,
           "sizeY:3": 24
         },
-        "27:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": 492,
           "y:3": -36,
           "id:3": 253,
           "sizeY:3": 24
         },
-        "28:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": 540,
           "y:3": -36,
           "id:3": 254,
           "sizeY:3": 24
         },
-        "29:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": 660,
           "y:3": -12,
           "id:3": 255,
           "sizeY:3": 24
         },
-        "30:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": 624,
           "y:3": -36,
           "id:3": 256,
           "sizeY:3": 24
         },
-        "31:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": 708,
           "y:3": -36,
           "id:3": 257,
           "sizeY:3": 24
         },
-        "32:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": 936,
           "y:3": -60,
           "id:3": 258,
           "sizeY:3": 24
         },
-        "33:10": {
-          "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": -120,
-          "id:3": 266,
-          "sizeY:3": 24
-        },
-        "34:10": {
-          "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": -84,
-          "id:3": 267,
-          "sizeY:3": 24
-        },
-        "35:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": 816,
           "y:3": 120,
           "id:3": 364,
           "sizeY:3": 24
         },
-        "36:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": 756,
           "y:3": -12,
           "id:3": 365,
           "sizeY:3": 24
         },
-        "37:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": 816,
           "y:3": -12,
           "id:3": 366,
           "sizeY:3": 24
         },
-        "38:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": 876,
           "y:3": -12,
           "id:3": 415,
           "sizeY:3": 24
         },
-        "39:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": 936,
           "y:3": -12,
           "id:3": 416,
-          "sizeY:3": 24
-        },
-        "40:10": {
-          "sizeX:3": 24,
-          "x:3": 108,
-          "y:3": -192,
-          "id:3": 419,
           "sizeY:3": 24
         }
       },
@@ -40699,7 +39357,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "NORMAL",
-          "name:8": "Tier 5 - 半导体工业",
+          "name:8": "Tier 5 - 半导体工业(HV-IV)",
           "icon:10": {
             "id:8": "moegadd:RawWafer",
             "Count:3": 1,
@@ -40718,109 +39376,81 @@
         "0:10": {
           "sizeX:3": 24,
           "x:3": -168,
-          "y:3": -120,
-          "id:3": 33,
+          "y:3": 108,
+          "id:3": 25,
           "sizeY:3": 24
         },
         "1:10": {
-          "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": -120,
-          "id:3": 134,
-          "sizeY:3": 24
-        },
-        "2:10": {
           "sizeX:3": 24,
           "x:3": -204,
           "y:3": -12,
           "id:3": 198,
           "sizeY:3": 24
         },
-        "3:10": {
+        "2:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": -12,
           "id:3": 199,
           "sizeY:3": 24
         },
-        "4:10": {
-          "sizeX:3": 24,
-          "x:3": -168,
-          "y:3": 108,
-          "id:3": 200,
-          "sizeY:3": 24
-        },
-        "5:10": {
+        "3:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": -48,
           "id:3": 202,
           "sizeY:3": 24
         },
-        "6:10": {
+        "4:10": {
           "sizeX:3": 24,
           "x:3": -240,
-          "y:3": -84,
+          "y:3": -48,
           "id:3": 203,
           "sizeY:3": 24
         },
-        "7:10": {
+        "5:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": -12,
           "id:3": 204,
           "sizeY:3": 24
         },
-        "8:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": -240,
           "y:3": -12,
           "id:3": 205,
           "sizeY:3": 24
         },
-        "9:10": {
+        "7:10": {
           "sizeX:3": 24,
           "x:3": -96,
           "y:3": -12,
           "id:3": 206,
           "sizeY:3": 24
         },
-        "10:10": {
+        "8:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": 144,
           "id:3": 207,
           "sizeY:3": 24
         },
-        "11:10": {
-          "sizeX:3": 24,
-          "x:3": -168,
-          "y:3": -84,
-          "id:3": 221,
-          "sizeY:3": 24
-        },
-        "12:10": {
-          "sizeX:3": 24,
-          "x:3": -216,
-          "y:3": -120,
-          "id:3": 222,
-          "sizeY:3": 24
-        },
-        "13:10": {
+        "9:10": {
           "sizeX:3": 24,
           "x:3": -96,
-          "y:3": -84,
+          "y:3": -48,
           "id:3": 266,
           "sizeY:3": 24
         },
-        "14:10": {
+        "10:10": {
           "sizeX:3": 24,
           "x:3": -60,
-          "y:3": -84,
+          "y:3": -48,
           "id:3": 277,
           "sizeY:3": 24
         },
-        "15:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": 72,
@@ -41035,7 +39665,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "NORMAL",
-          "name:8": "Tier 6 - 物理学革命",
+          "name:8": "Tier 6 - 物理学革命(LUV-PUV1)",
           "icon:10": {
             "id:8": "gregtech:gt.multiitem.physics",
             "Count:3": 1,
@@ -41386,13 +40016,20 @@
           "y:3": -48,
           "id:3": 188,
           "sizeY:3": 24
+        },
+        "29:10": {
+          "sizeX:3": 24,
+          "x:3": 0,
+          "y:3": 0,
+          "id:3": 282,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 9,
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "NORMAL",
-          "name:8": "多方块机器",
+          "name:8": "大规模生产与使用",
           "icon:10": {
             "id:8": "gregtech:gt.multitileentity",
             "Count:3": 1,
@@ -41915,7 +40552,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "NORMAL",
-          "name:8": "Tier 3.5 - 石化革命",
+          "name:8": "Tier 4.5 - 石化革命(LV-MV)",
           "icon:10": {
             "id:8": "gregtech:gt.meta.chemtube",
             "Count:3": 1,
@@ -41927,7 +40564,7 @@
           "desc:8": "与电力一同在第二次工业革命中出现，是制造便宜储罐和电路板的重要过程(你喜欢的话也可以拿来烧)"
         }
       },
-      "order:3": 4
+      "order:3": 5
     },
     "12:10": {
       "quests:9": {
@@ -42430,173 +41067,180 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": -180,
+          "id:3": 6,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
           "x:3": -84,
           "y:3": -180,
           "id:3": 81,
           "sizeY:3": 24
         },
-        "1:10": {
-          "sizeX:3": 24,
-          "x:3": -240,
-          "y:3": -132,
-          "id:3": 130,
-          "sizeY:3": 24
-        },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -204,
-          "y:3": -132,
-          "id:3": 300,
+          "x:3": -180,
+          "y:3": -180,
+          "id:3": 130,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -276,
-          "y:3": -84,
-          "id:3": 301,
+          "x:3": -180,
+          "y:3": -132,
+          "id:3": 300,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": -276,
+          "x:3": -144,
           "y:3": -132,
-          "id:3": 302,
+          "id:3": 301,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": -276,
-          "y:3": -36,
-          "id:3": 303,
+          "x:3": -144,
+          "y:3": -180,
+          "id:3": 302,
           "sizeY:3": 24
         },
         "6:10": {
+          "sizeX:3": 24,
+          "x:3": -144,
+          "y:3": -84,
+          "id:3": 303,
+          "sizeY:3": 24
+        },
+        "7:10": {
           "sizeX:3": 24,
           "x:3": -84,
           "y:3": -132,
           "id:3": 304,
           "sizeY:3": 24
         },
-        "7:10": {
+        "8:10": {
           "sizeX:3": 24,
           "x:3": -84,
           "y:3": -84,
           "id:3": 442,
           "sizeY:3": 24
         },
-        "8:10": {
+        "9:10": {
           "sizeX:3": 24,
           "x:3": -12,
           "y:3": -84,
           "id:3": 443,
           "sizeY:3": 24
         },
-        "9:10": {
+        "10:10": {
           "sizeX:3": 24,
           "x:3": 24,
           "y:3": -84,
           "id:3": 444,
           "sizeY:3": 24
         },
-        "10:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": -48,
           "y:3": -84,
           "id:3": 445,
           "sizeY:3": 24
         },
-        "11:10": {
+        "12:10": {
           "sizeX:3": 24,
           "x:3": -48,
           "y:3": -36,
           "id:3": 446,
           "sizeY:3": 24
         },
-        "12:10": {
+        "13:10": {
           "sizeX:3": 24,
           "x:3": -84,
           "y:3": -36,
           "id:3": 447,
           "sizeY:3": 24
         },
-        "13:10": {
+        "14:10": {
           "sizeX:3": 24,
           "x:3": -12,
           "y:3": -36,
           "id:3": 448,
           "sizeY:3": 24
         },
-        "14:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": 96,
           "y:3": -36,
           "id:3": 449,
           "sizeY:3": 24
         },
-        "15:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": -36,
           "id:3": 450,
           "sizeY:3": 24
         },
-        "16:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": 60,
           "y:3": -36,
           "id:3": 451,
           "sizeY:3": 24
         },
-        "17:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": 24,
           "y:3": -36,
           "id:3": 452,
           "sizeY:3": 24
         },
-        "18:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": 60,
           "y:3": -132,
           "id:3": 453,
           "sizeY:3": 24
         },
-        "19:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": 24,
           "y:3": -132,
           "id:3": 454,
           "sizeY:3": 24
         },
-        "20:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": -48,
           "y:3": -132,
           "id:3": 455,
           "sizeY:3": 24
         },
-        "21:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": -12,
           "y:3": -132,
           "id:3": 456,
           "sizeY:3": 24
         },
-        "22:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": -48,
           "y:3": -180,
           "id:3": 457,
           "sizeY:3": 24
         },
-        "23:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": 168,
           "y:3": -36,
           "id:3": 458,
           "sizeY:3": 24
         },
-        "24:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": -12,
           "y:3": -180,
@@ -42969,15 +41613,15 @@
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": -144,
+          "x:3": 108,
+          "y:3": -108,
           "id:3": 466,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": -144,
+          "x:3": 108,
+          "y:3": 36,
           "id:3": 467,
           "sizeY:3": 24
         },
@@ -42997,8 +41641,8 @@
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": 180,
-          "y:3": -144,
+          "x:3": 108,
+          "y:3": -72,
           "id:3": 470,
           "sizeY:3": 24
         },
@@ -43018,15 +41662,15 @@
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": 216,
-          "y:3": -144,
+          "x:3": 108,
+          "y:3": -36,
           "id:3": 473,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": 252,
-          "y:3": -144,
+          "x:3": 108,
+          "y:3": 0,
           "id:3": 474,
           "sizeY:3": 24
         },
@@ -43332,16 +41976,16 @@
           "sizeY:3": 24
         },
         "56:10": {
-          "sizeX:3": 48,
-          "x:3": -168,
-          "y:3": 72,
+          "sizeX:3": 288,
+          "x:3": -288,
+          "y:3": 36,
           "id:3": 518,
-          "sizeY:3": 48
+          "sizeY:3": 24
         },
         "57:10": {
           "sizeX:3": 24,
-          "x:3": 324,
-          "y:3": -144,
+          "x:3": 72,
+          "y:3": 36,
           "id:3": 519,
           "sizeY:3": 24
         }
@@ -43516,7 +42160,7 @@
       "home_image:8": "betterquesting:textures/gui/default_title.png",
       "party_enable:1": 1,
       "pack_version:3": 0,
-      "editMode:1": 0,
+      "editMode:1": 1,
       "home_offset_x:3": -128,
       "home_offset_y:3": 0
     }
