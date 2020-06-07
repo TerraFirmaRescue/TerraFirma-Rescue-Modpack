@@ -1,0 +1,5 @@
+enhancedlootbags.string.lootbag_templatename=LootBag (%s)
+enhancedlootbags.string.default=Default
+enhancedlootbags.string.try_again=That didn't work. Please try again!
+enhancedlootbags.string.sorry_damaged=This LootBag seems to be damaged, sorry about that
+itemGroup.ELBTab=Enhanced LootBags

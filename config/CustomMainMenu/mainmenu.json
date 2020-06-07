@@ -1,23 +1,25 @@
 {
     "images":
     {
-	
-		"black":
-        {
-            "image" : "mainmenu:textures/bg_menu2.png",
-            "posX" : 0,
-            "posY" : 0,
-            "width" : 150,
-            "height" : 4096,
-            "alignment" : "column_top"
-        },
 		"logo":
         {
-            "image" : "mainmenu:textures/logo2.png",
+            "image" : "mainmenu:textures/logo.png",
             "posX" : 0,
             "posY" : 0,
             "width" : 150,
-            "height" : 116.3692785,
+            "height" : 150,
+            "alignment" : "column_logo"
+        },
+
+        "title":
+        {
+            "image" : "mainmenu:textures/terra-firma-rescue.png",
+            "posX" : 260,
+            "posY" : 50,
+            "imageWidth" : 866,
+			"imageHeight" : 125,
+            "width" : 509,
+            "height" : 74,
             "alignment" : "column_logo"
         }
 	
@@ -28,16 +30,16 @@
 		"singleplayer":
         {
             "text" : "Singleplayer",
-			"hoverText" : "A lonely journey begins...",
-			"normalTextColor" : 4227327,
-			"hoverTextColor" : 16711680,
-			"texture" : "mainmenu:textures/btn4.png",
-            "posX" : 0,
-            "posY" : -120,
+			"hoverText" : "单人游戏",
+			"normalTextColor" : 16777215,
+			"hoverTextColor" : 65535,
+			"texture" : "mainmenu:textures/button_template.png",
+            "posX" : 600,
+            "posY" : -340,
             "width" : 150,
-            "height" : 20,
-			imageWidth : 1000,
-			imageHeight : 1,
+            "height" : 18,
+			"imageWidth" : 150,
+			"imageHeight" : 18,
 			"alignment" : "column_bottom",
             "action" : 
             {
@@ -49,16 +51,16 @@
 		"multiplayer":
         {
             "text" : "Multiplayer",	
-			"hoverText" : "Survive as a team...",		
-			"normalTextColor" : 4227327,
+			"hoverText" : "多人游戏",		
+			"normalTextColor" : 16777215,
 			"hoverTextColor" : 65535,
-			"texture" : "mainmenu:textures/btn4.png",
-            "posX" : 0,
-            "posY" : -100,
+			"texture" : "mainmenu:textures/button_template.png",
+            "posX" : 600,
+            "posY" : -315,
             "width" : 150,
-            "height" : 20,
-			imageWidth : 1000,
-			imageHeight : 1,
+            "height" : 18,
+			"imageWidth" : 150,
+			"imageHeight" : 18,
 			"alignment" : "column_bottom",
             "action" : 
             {
@@ -70,15 +72,16 @@
 		"options":
         {
             "text" : "Options",
-			"normalTextColor" : 4227327,
+            "hoverText" : "选项",		
+			"normalTextColor" : 16777215,
 			"hoverTextColor" : 16758315,
-			"texture" : "mainmenu:textures/btn4.png",
-            "posX" : 0,
-            "posY" : -80,
+			"texture" : "mainmenu:textures/button_template.png",
+            "posX" : 600,
+            "posY" : -290,
             "width" : 150,
-            "height" : 20,
-			imageWidth : 1000,
-			imageHeight : 1,
+            "height" : 18,
+			"imageWidth" : 150,
+			"imageHeight" : 18,
 			"alignment" : "column_bottom",
             "action" : 
             {
@@ -90,16 +93,16 @@
 		"language":
         {
             "text" : "Language",
-            "hoverText" : "Click to change the game to your own language",		
-			"normalTextColor" : 4227327,
+            "hoverText" : "语言",		
+			"normalTextColor" : 16777215,
 			"hoverTextColor" : 16758315,
-			"texture" : "mainmenu:textures/btn4.png",
-            "posX" : 0,
-            "posY" : -60,
+			"texture" : "mainmenu:textures/button_template.png",
+            "posX" : 600,
+            "posY" : -265,
             "width" : 150,
-            "height" : 20,
-			imageWidth : 1000,
-			imageHeight : 1,			
+            "height" : 18,
+			"imageWidth" : 150,
+			"imageHeight" : 18,			
 			"alignment" : "column_bottom",
             "action" : 
             {
@@ -111,18 +114,16 @@
         "mods":
         {
             "text" : "Mods (#modsloaded#/#modsactive#)",
-            "hoverText" : "Click to see all the mods in this pack",		
-			"normalTextColor" : 2113664,
-			"hoverTextColor" : 8411925,
-			"texture" : "mainmenu:textures/btn4.png",
-            "posX" : 0,
-            "posY" : -40,
+            "hoverText" : "模组 (#modsloaded#/#modsactive#)",		
+			"normalTextColor" : 16777215,
+			"hoverTextColor" : 16758315,
+			"texture" : "mainmenu:textures/button_template.png",
+            "posX" : 600,
+            "posY" : -240,
             "width" : 150,
-            "height" : 20,
-			imageWidth : 1000,
-			imageHeight : 1,
-			imageWidth : 1000,
-			imageHeight : 1,
+            "height" : 18,
+			"imageWidth" : 150,
+			"imageHeight" : 18,
 			"alignment" : "column_bottom",
             "action" : 
             {
@@ -130,24 +131,228 @@
                 "gui" : "mods"
             }
         },
+
+        "team":
+        {
+            "text" : "Development Team",
+            "hoverText" : "开发团队",		
+			"normalTextColor" : 16777215,
+			"hoverTextColor" : 16758315,
+			"texture" : "mainmenu:textures/button_template.png",
+            "posX" : 600,
+            "posY" : -215,
+            "width" : 150,
+            "height" : 18,
+			"imageWidth" : 150,
+			"imageHeight" : 18,
+			"alignment" : "column_bottom",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "custom.teammoeg"
+            }
+        },
                     
         "quit":
         {
             "text" : "Quit",
-			"hoverText" : "No! Don't leave!",
+			"hoverText" : "退出",
 			"normalTextColor" : 16728128,
 			"hoverTextColor" : 16711680,
-			"texture" : "mainmenu:textures/btn4.png",
-            "posX" : 0,
-            "posY" : -20,
+			"texture" : "mainmenu:textures/button_template.png",
+            "posX" : 600,
+            "posY" : -190,
             "width" : 150,
-            "height" : 20,
-			imageWidth : 1000,
-			imageHeight : 1,
+            "height" : 18,
+			"imageWidth" : 150,
+			"imageHeight" : 18,
 			"alignment" : "column_bottom",
             "action" : 
             {
                 "type" : "quit"
+            }
+        },
+
+        "discord": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "Click to join our Discord | 加入Discord群聊",
+            "texture": "modpack:Buttons/discord.png",
+            "posX" : 760,
+            "posY" : -340,
+            "width": 20,
+            "height": 20,
+            "imageWidth": 300,
+            "imageHeight": 300,
+            "alignment": "column_bottom",
+            "action": {
+                "type": "openLink",
+                "link": "https://discord.gg/97Mj6vK"
+            }
+        },
+
+        "Github": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "Report any bugs here | 反馈Bug",
+            "texture": "modpack:Buttons/git.png",
+            "posX" : 760,
+            "posY" : -315,
+            "width": 20,
+            "height": 20,
+            "imageWidth": 300,
+            "imageHeight": 300,
+            "alignment": "column_bottom",
+            "action": {
+                "type": "openLink",
+                "link": "https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues"
+            }
+        },
+
+        "Official": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "Official Website | 官网",
+            "texture": "mainmenu:textures/logo.png",
+            "posX" : 760,
+            "posY" : -290,
+            "width": 20,
+            "height": 20,
+            "imageWidth": 512,
+            "imageHeight": 512,
+            "alignment": "column_bottom",
+            "action": {
+                "type": "openLink",
+                "link": "https://terrafirmarescue.wordpress.com/international/"
+            }
+        },
+
+        "Wiki": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "Official Wiki | 官方维基",
+            "texture": "mainmenu:textures/logo.png",
+            "posX" : 760,
+            "posY" : -265,
+            "width": 20,
+            "height": 20,
+            "imageWidth": 512,
+            "imageHeight": 512,
+            "alignment": "column_bottom",
+            "action": {
+                "type": "openLink",
+                "link": "http://www.terrafirmarescue.com:11004/"
+            }
+        },
+
+        "Patreon": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "Support Us on Patreon!",
+            "texture": "mainmenu:textures/logo.png",
+            "posX" : 760,
+            "posY" : -240,
+            "width": 20,
+            "height": 20,
+            "imageWidth": 512,
+            "imageHeight": 512,
+            "alignment": "column_bottom",
+            "action": {
+                "type": "openLink",
+                "link": "https://www.patreon.com/TeamMoeg"
+            }
+        },
+
+        "Aifadian": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "在爱发电支持我们!",
+            "texture": "mainmenu:textures/logo.png",
+            "posX" : 760,
+            "posY" : -215,
+            "width": 20,
+            "height": 20,
+            "imageWidth": 512,
+            "imageHeight": 512,
+            "alignment": "column_bottom",
+            "action": {
+                "type": "openLink",
+                "link": "https://afdian.net/@teammoeg"
+            }
+        },
+
+        "License": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "License 协议",
+            "texture": "mainmenu:textures/logo.png",
+            "posX" : 760,
+            "posY" : -190,
+            "width": 20,
+            "height": 20,
+            "imageWidth": 512,
+            "imageHeight": 512,
+            "alignment": "column_bottom",
+            "action": {
+                "type": "openLink",
+                "link": "https://www.curseforge.com/project/384368/license"
+            }
+        },
+
+        "Supporterlist": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "Support List | 支持者",
+            "texture": "mainmenu:textures/logo.png",
+            "posX" : 760,
+            "posY" : -165,
+            "width": 20,
+            "height": 20,
+            "imageWidth": 512,
+            "imageHeight": 512,
+            "alignment": "column_bottom",
+            "action": {
+                "type": "openLink",
+                "link": "https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/supporterlist.txt"
+            }
+        },
+
+        "SupporterlistGold": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "Support List Gold| 黄金支持者",
+            "texture": "mainmenu:textures/logo.png",
+            "posX" : 760,
+            "posY" : -140,
+            "width": 20,
+            "height": 20,
+            "imageWidth": 512,
+            "imageHeight": 512,
+            "alignment": "column_bottom",
+            "action": {
+                "type": "openLink",
+                "link": "https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/supporterlistgold.txt"
+            }
+        },
+
+        "refresh": {
+            "text": "",
+            "posX": -154,
+            "posY": 132,
+            "width": 20,
+            "height": 20,
+            "texture": "modpack:Buttons/refresh.png",
+            "action": {
+                "type": "refresh"
             }
         }
 	},
@@ -157,8 +362,22 @@
         "mojang":
         {
             "text" : "Forge #forgeversion# for Minecraft #mcversion# - Copyright Mojang AB. Do not distribute!",
-            "posX" : 155,
+            "posX" : 0,
             "posY" : 0,
+            "alignment" : "column_bottom"
+        }, 
+        "teammoeg":
+        {
+            "text" : "Authro: Team Moeg - All Scripts, Config, Resources, and Original Assets are Licensed under CC-BY-NC-ND 4.0",
+            "posX" : 0,
+            "posY" : -20,
+            "alignment" : "column_bottom"
+        },
+        "credits":
+        {
+            "text" : "Credits: Opening Pictures by Freys84 from James Cameron - Movie Avatar; Opening BGM from Hans Zimmer - Cornfield Chase.",
+            "posX" : 0,
+            "posY" : -40,
             "alignment" : "column_bottom"
         } 
     },
@@ -194,15 +413,23 @@
 	
     "other":
     {
-	        "background":
+	    "background":
         {
             "image" : "",
             "slideshow":
             {
-                "images" : ["mainmenu:textures/bg.png","mainmenu:textures/bg2.png","mainmenu:textures/bg4.png","mainmenu:textures/bg7.png"],
+                "images" : ["mainmenu:textures/bg.png","mainmenu:textures/bg2.png","mainmenu:textures/bg3.png","mainmenu:textures/bg4.png","mainmenu:textures/bg7.png"],
                 "displayDuration" : 150,
                 "fadeDuration" : 40
             }
+        },
+
+        "splash-text": {
+            "posX": 110,
+            "posY": -80,
+            "color": -256,
+            "alignment": "column_center",
+            "texts": "file:modpack:textures/splash.txt"
         }
     }
 }
