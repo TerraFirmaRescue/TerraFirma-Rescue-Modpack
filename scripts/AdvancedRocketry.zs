@@ -122,7 +122,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 2000 ,0,[10000],
 recipes.remove(<advancedRocketry:tile.spaceElevatorController>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 4000 ,0,[10000],
 [<gregtech:gt.meta.machine.double:220>, <gregtech:gt.multiitem.technological:30502>*2, <gregtech:gt.meta.chain:9175>*64, <gregtech:gt.meta.chain:9175>*64,
-<minecraft:minecart>, <gregtech:gt.multitileentity:10050>*20, <gregtech:gt.multitileentity:29950>*64],
+<minecraft:minecart>, <gregtech:gt.multitileentity:10050>*16, <gregtech:gt.multitileentity:29950>*64],
 [<liquid:molten.solderingalloy>*3000],
 [null],
 [<advancedRocketry:tile.spaceElevatorController>]);

@@ -14,13 +14,13 @@
         "title":
         {
             "image" : "mainmenu:textures/terra-firma-rescue.png",
-            "posX" : 260,
-            "posY" : 50,
-            "imageWidth" : 866,
-			"imageHeight" : 125,
-            "width" : 509,
-            "height" : 74,
-            "alignment" : "column_logo"
+            "posX" : 0,
+            "posY" : 0,
+            "imageWidth" : 898,
+			"imageHeight" : 78,
+            "width" : 449,
+            "height" : 39,
+            "alignment" : "column_title"
         }
 	
 	},
@@ -34,13 +34,13 @@
 			"normalTextColor" : 16777215,
 			"hoverTextColor" : 65535,
 			"texture" : "mainmenu:textures/button_template.png",
-            "posX" : 600,
-            "posY" : -340,
+            "posX" : 0,
+            "posY" : 0,
             "width" : 150,
             "height" : 18,
 			"imageWidth" : 150,
 			"imageHeight" : 18,
-			"alignment" : "column_bottom",
+			"alignment" : "column_right",
             "action" : 
             {
                 "type" : "openGui",
@@ -55,13 +55,13 @@
 			"normalTextColor" : 16777215,
 			"hoverTextColor" : 65535,
 			"texture" : "mainmenu:textures/button_template.png",
-            "posX" : 600,
-            "posY" : -315,
+            "posX" : 0,
+            "posY" : 25,
             "width" : 150,
             "height" : 18,
 			"imageWidth" : 150,
 			"imageHeight" : 18,
-			"alignment" : "column_bottom",
+			"alignment" : "column_right",
             "action" : 
             {
                 "type" : "openGui",
@@ -76,13 +76,13 @@
 			"normalTextColor" : 16777215,
 			"hoverTextColor" : 16758315,
 			"texture" : "mainmenu:textures/button_template.png",
-            "posX" : 600,
-            "posY" : -290,
+            "posX" : 0,
+            "posY" : 50,
             "width" : 150,
             "height" : 18,
 			"imageWidth" : 150,
 			"imageHeight" : 18,
-			"alignment" : "column_bottom",
+			"alignment" : "column_right",
             "action" : 
             {
                 "type" : "openGui",
@@ -97,13 +97,13 @@
 			"normalTextColor" : 16777215,
 			"hoverTextColor" : 16758315,
 			"texture" : "mainmenu:textures/button_template.png",
-            "posX" : 600,
-            "posY" : -265,
+            "posX" : 0,
+            "posY" : 75,
             "width" : 150,
             "height" : 18,
 			"imageWidth" : 150,
 			"imageHeight" : 18,			
-			"alignment" : "column_bottom",
+			"alignment" : "column_right",
             "action" : 
             {
                 "type" : "openGui",
@@ -118,13 +118,13 @@
 			"normalTextColor" : 16777215,
 			"hoverTextColor" : 16758315,
 			"texture" : "mainmenu:textures/button_template.png",
-            "posX" : 600,
-            "posY" : -240,
+            "posX" : 0,
+            "posY" : 100,
             "width" : 150,
             "height" : 18,
 			"imageWidth" : 150,
 			"imageHeight" : 18,
-			"alignment" : "column_bottom",
+			"alignment" : "column_right",
             "action" : 
             {
                 "type" : "openGui",
@@ -139,13 +139,13 @@
 			"normalTextColor" : 16777215,
 			"hoverTextColor" : 16758315,
 			"texture" : "mainmenu:textures/button_template.png",
-            "posX" : 600,
-            "posY" : -215,
+            "posX" : 0,
+            "posY" : 125,
             "width" : 150,
             "height" : 18,
 			"imageWidth" : 150,
 			"imageHeight" : 18,
-			"alignment" : "column_bottom",
+			"alignment" : "column_right",
             "action" : 
             {
                 "type" : "openGui",
@@ -160,13 +160,13 @@
 			"normalTextColor" : 16728128,
 			"hoverTextColor" : 16711680,
 			"texture" : "mainmenu:textures/button_template.png",
-            "posX" : 600,
-            "posY" : -190,
+            "posX" : 0,
+            "posY" : 150,
             "width" : 150,
             "height" : 18,
 			"imageWidth" : 150,
 			"imageHeight" : 18,
-			"alignment" : "column_bottom",
+			"alignment" : "column_right",
             "action" : 
             {
                 "type" : "quit"
@@ -179,13 +179,13 @@
             "hoverTextColor": 41704,
             "tooltip": "Click to join our Discord | 加入Discord群聊",
             "texture": "modpack:Buttons/discord.png",
-            "posX" : 760,
-            "posY" : -340,
+            "posX" : 160,
+            "posY" : 0,
             "width": 20,
             "height": 20,
             "imageWidth": 300,
             "imageHeight": 300,
-            "alignment": "column_bottom",
+            "alignment": "column_right",
             "action": {
                 "type": "openLink",
                 "link": "https://discord.gg/97Mj6vK"
@@ -198,13 +198,13 @@
             "hoverTextColor": 41704,
             "tooltip": "Report any bugs here | 反馈Bug",
             "texture": "modpack:Buttons/git.png",
-            "posX" : 760,
-            "posY" : -315,
+            "posX" : 160,
+            "posY" : 25,
             "width": 20,
             "height": 20,
             "imageWidth": 300,
             "imageHeight": 300,
-            "alignment": "column_bottom",
+            "alignment": "column_right",
             "action": {
                 "type": "openLink",
                 "link": "https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues"
@@ -217,13 +217,13 @@
             "hoverTextColor": 41704,
             "tooltip": "Official Website | 官网",
             "texture": "mainmenu:textures/logo.png",
-            "posX" : 760,
-            "posY" : -290,
+            "posX" : 160,
+            "posY" : 50,
             "width": 20,
             "height": 20,
             "imageWidth": 512,
             "imageHeight": 512,
-            "alignment": "column_bottom",
+            "alignment": "column_right",
             "action": {
                 "type": "openLink",
                 "link": "https://terrafirmarescue.wordpress.com/international/"
@@ -235,14 +235,14 @@
             "normalTextColor": 6081343,
             "hoverTextColor": 41704,
             "tooltip": "Official Wiki | 官方维基",
-            "texture": "mainmenu:textures/logo.png",
-            "posX" : 760,
-            "posY" : -265,
+            "texture": "modpack:Buttons/wiki.png",
+            "posX" : 160,
+            "posY" : 75,
             "width": 20,
             "height": 20,
-            "imageWidth": 512,
-            "imageHeight": 512,
-            "alignment": "column_bottom",
+            "imageWidth": 300,
+            "imageHeight": 300,
+            "alignment": "column_right",
             "action": {
                 "type": "openLink",
                 "link": "http://www.terrafirmarescue.com:11004/"
@@ -254,14 +254,14 @@
             "normalTextColor": 6081343,
             "hoverTextColor": 41704,
             "tooltip": "Support Us on Patreon!",
-            "texture": "mainmenu:textures/logo.png",
-            "posX" : 760,
-            "posY" : -240,
+            "texture": "modpack:Buttons/patreon.png",
+            "posX" : 160,
+            "posY" : 100,
             "width": 20,
             "height": 20,
-            "imageWidth": 512,
-            "imageHeight": 512,
-            "alignment": "column_bottom",
+            "imageWidth": 300,
+            "imageHeight": 300,
+            "alignment": "column_right",
             "action": {
                 "type": "openLink",
                 "link": "https://www.patreon.com/TeamMoeg"
@@ -273,14 +273,14 @@
             "normalTextColor": 6081343,
             "hoverTextColor": 41704,
             "tooltip": "在爱发电支持我们!",
-            "texture": "mainmenu:textures/logo.png",
-            "posX" : 760,
-            "posY" : -215,
+            "texture": "modpack:Buttons/afd.png",
+            "posX" : 160,
+            "posY" : 125,
             "width": 20,
             "height": 20,
-            "imageWidth": 512,
-            "imageHeight": 512,
-            "alignment": "column_bottom",
+            "imageWidth": 300,
+            "imageHeight": 300,
+            "alignment": "column_right",
             "action": {
                 "type": "openLink",
                 "link": "https://afdian.net/@teammoeg"
@@ -292,14 +292,14 @@
             "normalTextColor": 6081343,
             "hoverTextColor": 41704,
             "tooltip": "License 协议",
-            "texture": "mainmenu:textures/logo.png",
-            "posX" : 760,
-            "posY" : -190,
+            "texture": "modpack:Buttons/license.png",
+            "posX" : 160,
+            "posY" : 150,
             "width": 20,
             "height": 20,
-            "imageWidth": 512,
-            "imageHeight": 512,
-            "alignment": "column_bottom",
+            "imageWidth": 300,
+            "imageHeight": 300,
+            "alignment": "column_right",
             "action": {
                 "type": "openLink",
                 "link": "https://www.curseforge.com/project/384368/license"
@@ -311,14 +311,14 @@
             "normalTextColor": 6081343,
             "hoverTextColor": 41704,
             "tooltip": "Support List | 支持者",
-            "texture": "mainmenu:textures/logo.png",
-            "posX" : 760,
-            "posY" : -165,
+            "texture": "modpack:Buttons/supporter.png",
+            "posX" : 160,
+            "posY" : 175,
             "width": 20,
             "height": 20,
-            "imageWidth": 512,
-            "imageHeight": 512,
-            "alignment": "column_bottom",
+            "imageWidth": 300,
+            "imageHeight": 300,
+            "alignment": "column_right",
             "action": {
                 "type": "openLink",
                 "link": "https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/supporterlist.txt"
@@ -330,14 +330,14 @@
             "normalTextColor": 6081343,
             "hoverTextColor": 41704,
             "tooltip": "Support List Gold| 黄金支持者",
-            "texture": "mainmenu:textures/logo.png",
-            "posX" : 760,
-            "posY" : -140,
+            "texture": "modpack:Buttons/supportergold.png",
+            "posX" : 160,
+            "posY" : 200,
             "width": 20,
             "height": 20,
-            "imageWidth": 512,
-            "imageHeight": 512,
-            "alignment": "column_bottom",
+            "imageWidth": 300,
+            "imageHeight": 300,
+            "alignment": "column_right",
             "action": {
                 "type": "openLink",
                 "link": "https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/supporterlistgold.txt"
@@ -346,8 +346,8 @@
 
         "refresh": {
             "text": "",
-            "posX": -154,
-            "posY": 132,
+            "posX": 160,
+            "posY": 225,
             "width": 20,
             "height": 20,
             "texture": "modpack:Buttons/refresh.png",
@@ -362,24 +362,43 @@
         "mojang":
         {
             "text" : "Forge #forgeversion# for Minecraft #mcversion# - Copyright Mojang AB. Do not distribute!",
-            "posX" : 0,
-            "posY" : 0,
-            "alignment" : "column_bottom"
+            "posX" : -200,
+            "posY" : -5,
+            "fontSize": 0.6,
+            "alignment" : "column_credits"
         }, 
         "teammoeg":
         {
-            "text" : "Authro: Team Moeg - All Scripts, Config, Resources, and Original Assets are Licensed under CC-BY-NC-ND 4.0",
-            "posX" : 0,
-            "posY" : -20,
-            "alignment" : "column_bottom"
+            "text" : "Author: Team Moeg - All Scripts, Config, Resources, and Original Assets are Licensed under CC-BY-NC-ND 4.0",
+            "posX" : -200,
+            "posY" : -15,
+            "fontSize": 0.6,
+            "alignment" : "column_credits"
         },
-        "credits":
+        "credits1":
         {
-            "text" : "Credits: Opening Pictures by Freys84 from James Cameron - Movie Avatar; Opening BGM from Hans Zimmer - Cornfield Chase.",
-            "posX" : 0,
-            "posY" : -40,
-            "alignment" : "column_bottom"
-        } 
+            "text" : "Credits: Opening Pictures by Freys84 from James Cameron's Movie - Avatar",
+            "posX" : -200,
+            "posY" : -25,
+            "fontSize": 0.6,
+            "alignment" : "column_credits"
+        },
+        "credits2":
+        {
+            "text" : "Credits: Opening BGM from Hans Zimmer - Cornfield Chase",
+            "posX" : -200,
+            "posY" : -35,
+            "fontSize": 0.6,
+            "alignment" : "column_credits"
+        },
+        "credits3":
+        {
+            "text" : "Credits: In-Game BGMs: Mountain Lake - Dream Valley, Last Sunrise - Lind Erebos, Far Horizons - Jeremy Soule, Revellon - Borislav Slavov, The Slops of the Blessure - Plotr Musial",
+            "posX" : -200,
+            "posY" : -45,
+            "fontSize": 0.6,
+            "alignment" : "column_credits"
+        }
     },
     
 	
@@ -393,8 +412,8 @@
 		
         "column_logo":
         {
-            "factorWidth" : 0.1,
-            "factorHeight" : 0.05
+            "factorWidth" : 0.08,
+            "factorHeight" : 0.005
         },
  
         "column_center":
@@ -406,6 +425,24 @@
         "column_bottom":
         {
             "factorWidth" : 0.1,
+            "factorHeight" : 0.95
+        },
+
+        "column_right":
+        {
+            "factorWidth" : 0.55,
+            "factorHeight" : 0.30
+        },
+
+        "column_title":
+        {
+            "factorWidth" : 0.315,
+            "factorHeight" : 0.14
+        },
+
+        "column_credits":
+        {
+            "factorWidth" : 0.5,
             "factorHeight" : 0.95
         }
 		
@@ -425,7 +462,7 @@
         },
 
         "splash-text": {
-            "posX": 110,
+            "posX": 100,
             "posY": -80,
             "color": -256,
             "alignment": "column_center",
