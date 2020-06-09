@@ -1547,3 +1547,6 @@ recipes.addShaped(<gregtech:gt.multitileentity:17115>,
 [[<gregtech:gt.multitileentity:26166>,<gregtech:gt.multitileentity:26166>,<gregtech:gt.multitileentity:26166>],
 [<gregtech:gt.multitileentity:26166>,<gregtech:gt.multitileentity:18113>,<gregtech:gt.multitileentity:26166>],
 [<ore:gt:circuit0>,<gregtech:gt.multitileentity:26166>,<ore:gt:circuit0>]]);
+
+//stone plate
+recipes.addShapeless(<gregtech:gt.meta.plate:8500>, [File,<ore:ingotStoneBrick>,<ore:ingotStoneBrick>]);

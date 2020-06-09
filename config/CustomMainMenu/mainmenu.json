@@ -364,7 +364,7 @@
             "text" : "Forge #forgeversion# for Minecraft #mcversion# - Copyright Mojang AB. Do not distribute!",
             "posX" : -200,
             "posY" : -5,
-            "fontSize": 0.6,
+            "fontSize": 0.8,
             "alignment" : "column_credits"
         }, 
         "teammoeg":
@@ -372,7 +372,7 @@
             "text" : "Author: Team Moeg - All Scripts, Config, Resources, and Original Assets are Licensed under CC-BY-NC-ND 4.0",
             "posX" : -200,
             "posY" : -15,
-            "fontSize": 0.6,
+            "fontSize": 0.8,
             "alignment" : "column_credits"
         },
         "credits1":
@@ -380,7 +380,7 @@
             "text" : "Credits: Opening Pictures by Freys84 from James Cameron's Movie - Avatar",
             "posX" : -200,
             "posY" : -25,
-            "fontSize": 0.6,
+            "fontSize": 0.8,
             "alignment" : "column_credits"
         },
         "credits2":
@@ -388,7 +388,7 @@
             "text" : "Credits: Opening BGM from Hans Zimmer - Cornfield Chase",
             "posX" : -200,
             "posY" : -35,
-            "fontSize": 0.6,
+            "fontSize": 0.8,
             "alignment" : "column_credits"
         },
         "credits3":
@@ -396,7 +396,7 @@
             "text" : "Credits: In-Game BGMs: Mountain Lake - Dream Valley, Last Sunrise - Lind Erebos, Far Horizons - Jeremy Soule, Revellon - Borislav Slavov, The Slops of the Blessure - Plotr Musial",
             "posX" : -200,
             "posY" : -45,
-            "fontSize": 0.6,
+            "fontSize": 0.8,
             "alignment" : "column_credits"
         }
     },

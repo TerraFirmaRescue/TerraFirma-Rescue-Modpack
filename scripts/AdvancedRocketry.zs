@@ -553,5 +553,3 @@ MTUtilsGT.addCustomRecipe("gt.recipe.sharpener", false, 16, 64, 0, [10000],
 [n],
 [n],
 [<advancedRocketry:lens>]);
-
-recipes.addShapeless(<gregtech:gt.meta.plate:8500>, [File,<terrafirmacraft:item.ItemStoneBrick>,<terrafirmacraft:item.ItemStoneBrick>]);

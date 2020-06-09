@@ -1,6 +1,7 @@
 ﻿3.3.1.3: (未发布)
 模组变化：
 AdvancedRocktry-TFR 2.0.01
+InventoryTweaks-PFAA-1.58
 降级
 betterquesting-3.0.306
 IC2NEIPluginVersion-1.2.2
@@ -9,6 +10,8 @@ StandardExpansion-3.0.162
 内容变化：
 修复部分任务无法提交
 修复GT大型物质制造和大型物质复制合成冲突
+修复太空电梯无法制造
+修复只能用花岗岩做石板
 更改物质复制三件套大型机器主方块合成
 更改蒸馏塔和裂化塔主方块合成
 添加很多任务

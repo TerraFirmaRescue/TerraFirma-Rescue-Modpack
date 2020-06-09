@@ -7,10 +7,11 @@ betterquesting-3.0.306
 IC2NEIPluginVersion-1.2.2
 questbook-2.1.1
 StandardExpansion-3.0.162
-moegaddon-1.06
 Content changes:
 Fix some tasks cannot be submitted
 Repair the conflict between GT large-scale material manufacturing and large-scale material replication and synthesis
+Fixed space elevator cannot be made
+Fixed stone plate only can be made from granite
 Change the material to copy the three-piece large machine main block synthesis
 Change the main block synthesis of distillation tower and cracking tower
 Add many tasks
