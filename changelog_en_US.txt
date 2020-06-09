@@ -1,7 +1,12 @@
 3.3.1.3: (Unreleased)
-Module changes:
-AdvancedRocktry-TFR 2.0.1
-gregtech-unofficial-6.14.02
+Mod changes：
+Upgrade
+AdvancedRocktry-TFR 2.0.01
+Downgrade
+betterquesting-3.0.306
+IC2NEIPluginVersion-1.2.2
+questbook-2.1.1
+StandardExpansion-3.0.162
 moegaddon-1.06
 Content changes:
 Fix some tasks cannot be submitted
@@ -12,21 +17,21 @@ Add many tasks
 
 
 3.3.1.2:
-Module changes:
+Mod changes:
 no
 Content changes:
 Fix serious formula problems
 Fix serious module problems
 
 3.3.1.0:
-Module changes:
+Mod changes:
 Remove Optifine
 Content changes:
 no
 
 
 3.3.0.0:
-Module changes:
+Mod changes:
 Upgrade gregtech 6.14.00
 TerraFirmaCraft-TFR 0.79.36-v2
 AdvancedRocketry-TFR 2.0.0
@@ -101,7 +106,7 @@ Fix task book bug
 Fixed bug where Qunluan wrought iron products were placed in the general iron mineral dictionary
 
 3.2.2.0 (serious problems, please update)
-Module changes:
+Mod changes:
 Upgrade gregtech 6.13.07
 Upgrade MoegAddon-TFR 1.03
 Upgrade TerraFirmaCraft-TFR 0.79.36
@@ -170,7 +175,7 @@ Canceled the OmniOcular profile of the crucible
 Canceled the synthesis of tantalum casting basin
 
 3.2.1.0
-Module changes:
+Mod changes:
 Upgrade gregtech6.13.06
 Add HardcoreDarkness
 Add MoegAddon
@@ -219,7 +224,7 @@ Content changes:
 Fix the problem that the task book is not displayed
 
 3.2.0.1
-Module changes:
+Mod changes:
 ResourceLoader
 CustomMainMenu
 
