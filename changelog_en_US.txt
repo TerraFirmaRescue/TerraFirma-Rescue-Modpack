@@ -14,6 +14,7 @@ Fixed space elevator cannot be made
 Fixed stone plate only can be made from granite
 Change the material to copy the three-piece large machine main block synthesis
 Change the main block synthesis of distillation tower and cracking tower
+Change some quests to accept more varied items
 Add many tasks
 
 

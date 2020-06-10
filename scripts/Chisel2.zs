@@ -46,3 +46,7 @@ recipes.addShaped(<chisel:technical>,
 
 //remove diamond into block
 mods.chisel.Groups.removeGroup("diamond_block");
+
+//chisel
+recipes.remove(<chisel:chisel>);
+recipes.addShapeless(<chisel:chisel>,[<gregtech:gt.meta.plateCurved:8643>,<ore:stickWood>]);

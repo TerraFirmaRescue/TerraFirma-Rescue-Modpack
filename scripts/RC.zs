@@ -114,15 +114,10 @@ recipes.addShaped(<Railcraft:machine.beta:6>,
 
 //Rc blast furnace
 recipes.remove(<Railcraft:machine.alpha:12>);
-recipes.addShaped(<Railcraft:machine.alpha:12>*5,
-[[<ore:plateBronze>,<terrafirmacraft:FireBrick>,HHammer],
-[<terrafirmacraft:FireBrick>,<terrafirmacraft:FireBrick>,<terrafirmacraft:FireBrick>],
-[Wrench,<terrafirmacraft:FireBrick>,<ore:plateBronze>]]);
-
-recipes.addShaped(<Railcraft:machine.alpha:12>*5,
-[[<ore:plateAnyIronOrSteel>,n,HHammer],
-[<terrafirmacraft:FireBrick>,<terrafirmacraft:FireBrick>,<terrafirmacraft:FireBrick>],
-[Wrench,n,<ore:plateAnyIronOrSteel>]]);
+recipes.addShaped(<Railcraft:machine.alpha:12>*4,
+[[<terrafirmacraft:item.Mortar>,<terrafirmacraft:FireBrick>,<terrafirmacraft:item.Mortar>],
+[<terrafirmacraft:FireBrick>,<ore:plateSteel>,<terrafirmacraft:FireBrick>],
+[<terrafirmacraft:item.Mortar>,<terrafirmacraft:FireBrick>,<terrafirmacraft:item.Mortar>]]);
 
 //RC Bender recipes change
 //3 ingot into 2 plate

@@ -122,9 +122,9 @@ recipes.addShaped(<terrafirmacraft:EarlyBloomery>,
 //tfc blast furnace
 recipes.remove(<terrafirmacraft:Bloomery>);
 recipes.addShaped(<terrafirmacraft:Bloomery>,
-[[HHammer,null,Wrench],
-[<terrafirmacraft:item.Wrought Iron Double Sheet>,null,<terrafirmacraft:item.Wrought Iron Double Sheet>],
-[<terrafirmacraft:item.Wrought Iron Double Sheet>,<terrafirmacraft:Crucible>,<terrafirmacraft:item.Wrought Iron Double Sheet>]]);
+[[HHammer,<terrafirmacraft:item.Wrought Iron Sheet>,n],
+[<terrafirmacraft:item.Wrought Iron Sheet>,<terrafirmacraft:Crucible>,<terrafirmacraft:item.Wrought Iron Sheet>],
+[n,<terrafirmacraft:item.Wrought Iron Sheet>,n]]);
 
 //hopper mc
 MTUtilsGT.addCustomRecipe("gt.recipe.extruder", false, 16, 160, 0, [10000],

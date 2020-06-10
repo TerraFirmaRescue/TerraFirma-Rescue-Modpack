@@ -375,8 +375,8 @@ recipes.addShaped(<gregtech:gt.multitileentity:32706>,
 //gt furnaces
 recipes.remove(<gregtech:gt.multitileentity:20001>);
 recipes.addShaped(<gregtech:gt.multitileentity:20001>,
-[[HHammer,<terrafirmacraft:item.Black Steel Double Sheet>,Wrench],
-[<terrafirmacraft:item.Black Steel Double Sheet>,<gregtech:gt.meta.machine:8630>,<terrafirmacraft:item.Black Steel Double Sheet>],
+[[HHammer,<terrafirmacraft:item.Black Steel Sheet>,Wrench],
+[<terrafirmacraft:item.Black Steel Sheet>,<gregtech:gt.meta.machine:8630>,<terrafirmacraft:item.Black Steel Sheet>],
 [<minecraft:brick_block>,<terrafirmacraft:item.Copper Double Sheet>,<minecraft:brick_block>]]);
 
 recipes.remove(<gregtech:gt.multitileentity:20002>);
@@ -508,32 +508,32 @@ recipes.addShaped(<gregtech:gt.multitileentity:1208>,
 //Burners
 recipes.addShaped(<gregtech:gt.multitileentity:1100>,
 [[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Black Steel Sheet>,<ore:casingMachineLead>,<terrafirmacraft:item.Black Steel Sheet>],
+[<terrafirmacraft:item.Black Steel Sheet>,<gregtech:gt.multitileentity:18011>,<terrafirmacraft:item.Black Steel Sheet>],
 [<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
 
 recipes.addShaped(<gregtech:gt.multitileentity:1101>,
 [[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Black Steel Sheet>,<ore:casingMachineBismuth>,<terrafirmacraft:item.Black Steel Sheet>],
+[<terrafirmacraft:item.Black Steel Sheet>,<gregtech:gt.meta.plateQuadruple:830>,<terrafirmacraft:item.Black Steel Sheet>],
 [<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
 
 recipes.addShaped(<gregtech:gt.multitileentity:1102>,
 [[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Black Steel Sheet>,<ore:casingMachineBronze>,<terrafirmacraft:item.Black Steel Sheet>],
+[<terrafirmacraft:item.Black Steel Sheet>,<gregtech:gt.multitileentity:18010>,<terrafirmacraft:item.Black Steel Sheet>],
 [<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
 
 recipes.addShaped(<gregtech:gt.multitileentity:1103>,
 [[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Black Steel Sheet>,<ore:casingMachineInvar>,<terrafirmacraft:item.Black Steel Sheet>],
+[<terrafirmacraft:item.Black Steel Sheet>,<gregtech:gt.multitileentity:18007>,<terrafirmacraft:item.Black Steel Sheet>],
 [<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
 
 recipes.addShaped(<gregtech:gt.multitileentity:1104>,
 [[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Black Steel Sheet>,<ore:casingMachineSteel>,<terrafirmacraft:item.Black Steel Sheet>],
+[<terrafirmacraft:item.Black Steel Sheet>,<gregtech:gt.multitileentity:18009>,<terrafirmacraft:item.Black Steel Sheet>],
 [<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
 
 recipes.addShaped(<gregtech:gt.multitileentity:1105>,
 [[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Black Steel Sheet>,<ore:casingMachineChromium>,<terrafirmacraft:item.Black Steel Sheet>],
+[<terrafirmacraft:item.Black Steel Sheet>,<gregtech:gt.meta.plateQuadruple:240>,<terrafirmacraft:item.Black Steel Sheet>],
 [<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
 
 recipes.addShaped(<gregtech:gt.multitileentity:1106>,

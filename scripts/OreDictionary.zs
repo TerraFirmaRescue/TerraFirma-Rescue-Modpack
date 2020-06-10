@@ -320,7 +320,7 @@ Shears.add(<terrafirmacraft:item.shears>);
 <ore:gt:circuit6>.add(<moegadd:Microchip>);
 //wei xing xin pian
 
-//advanced craftbenches
+//early advanced craftbenches
 <ore:earlyAdvCraftbench>.add(<gregtech:gt.multitileentity:5000>);
 <ore:earlyAdvCraftbench>.add(<gregtech:gt.multitileentity:5016>);
 <ore:earlyAdvCraftbench>.add(<gregtech:gt.multitileentity:5047>);
@@ -330,3 +330,27 @@ Shears.add(<terrafirmacraft:item.shears>);
 <ore:earlyAdvCraftbench>.add(<gregtech:gt.multitileentity:5010>);
 <ore:earlyAdvCraftbench>.add(<gregtech:gt.multitileentity:5003>);
 <ore:earlyAdvCraftbench>.add(<gregtech:gt.multitileentity:5002>);
+
+//early boilers
+<ore:earlyBoiler>.add(<gregtech:gt.multitileentity:1202>);
+<ore:earlyBoiler>.add(<gregtech:gt.multitileentity:1204>);
+
+//early burning box
+<ore:earlyBurningBox>.add(<gregtech:gt.multitileentity:1100>);
+<ore:earlyBurningBox>.add(<gregtech:gt.multitileentity:1101>);
+<ore:earlyBurningBox>.add(<gregtech:gt.multitileentity:1102>);
+<ore:earlyBurningBox>.add(<gregtech:gt.multitileentity:1103>);
+<ore:earlyBurningBox>.add(<gregtech:gt.multitileentity:1104>);
+
+<ore:earlyBurningBoxLiquid>.add(<gregtech:gt.multitileentity:1402>);
+<ore:earlyBurningBoxLiquid>.add(<gregtech:gt.multitileentity:1403>);
+<ore:earlyBurningBoxLiquid>.add(<gregtech:gt.multitileentity:1404>);
+
+<ore:earlyBurningBoxGas>.add(<gregtech:gt.multitileentity:1602>);
+<ore:earlyBurningBoxGas>.add(<gregtech:gt.multitileentity:1603>);
+<ore:earlyBurningBoxGas>.add(<gregtech:gt.multitileentity:1604>);
+
+<ore:earlyBurningBox>.addAll(<ore:earlyBurningBoxLiquid>);
+<ore:earlyBurningBox>.addAll(<ore:earlyBurningBoxGas>);
+
+
