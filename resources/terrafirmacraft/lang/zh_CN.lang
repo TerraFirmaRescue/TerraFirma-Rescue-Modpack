@@ -298,7 +298,7 @@ item.CornWhiskey.name=玉米威士忌
 #===========
 #= Pottery =
 #===========
-item.Clay.Clay.name=粘土
+item.Clay.Clay.name=粘土(TFC)
 item.Clay.Fire Clay.name=陶土
 
 item.Flat Clay.clay flat light.name=压平的浅色粘土
@@ -1933,9 +1933,9 @@ tile.Ice.name=冰
 #== Misc Items ==
 item.arrow.name=箭
 item.book.name=书
-item.stick.name=棍子
-item.coal.coal.name=煤炭
-item.coal.charcoal.name=木炭
+item.stick.name=棍子(TFC)
+item.coal.coal.name=煤炭(TFC)
+item.coal.charcoal.name=木炭(TFC)
 item.Fertilizer.name=化肥
 item.Reeds.name=芦苇
 
@@ -2004,10 +2004,10 @@ tile.customBed.sleep=这张床太不舒服了，睡不着。
 tile.BasicPipe.name=管道
 tile.ValvePipe.name=阀门
 tile.Smoke.name=烟
-tile.Torch.name=火把
-tile.Chest.name=箱子
+tile.Torch.name=原始火把
+tile.Chest.name=原始箱子
 tile.Bookshelf.name=书架
-tile.Workbench.name=工作台
+tile.Workbench.name=3x3背包工作台升级
 tile.ButtonWood.name=木头按钮
 tile.Firepit.name=火堆
 tile.LogPile.name=原木垛
