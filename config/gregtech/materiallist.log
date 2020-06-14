@@ -111,10 +111,12 @@ Thorium
 Protactinium
 Uranium
 Uranium235
+Uranium233
 Neptunium
 Plutonium
 Plutonium241
 Plutonium243
+Plutonium239
 Americium
 Americium241
 Curium
@@ -159,6 +161,7 @@ Atlarus
 Adamantium
 MacGuffium
 Gravitonium
+Neutronium
 Magic
 AntiPhoton
 AntiNeutrino
@@ -865,6 +868,9 @@ GreenAventurine
 BlackAventurine
 BlueAventurine
 RedAventurine
+Moonstone
+Sunstone
+Chimerite
 Stone
 Concrete
 Netherrack
@@ -1004,6 +1010,9 @@ Elvorium
 NiflheimPower
 MuspelheimPower
 Iffesal
+AncientDebris
+Netherite
+NetherizedDiamond
 Desh
 Duranium
 Tritanium
@@ -1058,6 +1067,12 @@ BasalticMineralSand
 GraniticMineralSand
 GarnetSand
 QuartzSand
+UraniumTetrafluoride
+UraniumHexafluoride
+Uranium238Tetrafluoride
+Uranium238Hexafluoride
+Uranium235Tetrafluoride
+Uranium235Hexafluoride
 RareEarth
 Almandine
 Andradite
@@ -1180,6 +1195,7 @@ Prismarine
 PrismarineDark
 Bischofite
 Slate
+Blackstone
 MeatRaw
 MeatCooked
 Wheat
@@ -1235,6 +1251,7 @@ Lava
 SemiheavyWater
 HeavyWater
 TritiatedWater
+Steam
 NitroCarbon
 Glyceryl
 SodiumPersulfate
@@ -1288,9 +1305,16 @@ ConstructionFoam
 UUAmplifier
 UUMatter
 Latex
-Polyethylene
 TitaniumNiobiumCarbide
 PhosphoricAcid
 Naphtha
 IonizedHydrogen
 IonizedHelium
+Polytetrafluoroethylene
+Polyethylene
+Polyvinylchloride
+Epoxid
+SodiumChromate
+SodiumDichromate
+ChromiumOxide
+AluminiumChloride
