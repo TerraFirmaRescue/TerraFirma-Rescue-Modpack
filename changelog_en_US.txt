@@ -50,6 +50,8 @@ Change RC blast furnace synthesis
 
 Change the startup interface and the main interface
 
+Change the glass production
+
 Reduce part of combustor cost
 
 Reduce the cost of TFC blast furnace
