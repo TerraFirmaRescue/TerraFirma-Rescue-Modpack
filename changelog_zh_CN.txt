@@ -2,6 +2,7 @@
 模组变化：
 AdvancedRocktry-TFR 2.0.01
 InventoryTweaks-PFAA-1.58
+NotEnoughCharacters-1.0
 降级
 betterquesting-3.0.306
 IC2NEIPluginVersion-1.2.2
