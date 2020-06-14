@@ -146,19 +146,18 @@ val plateFe  = <terrafirmacraft:item.Wrought Iron Sheet>;
 val platePb  = <terrafirmacraft:item.Lead Sheet>;
 
 //RC blast furnace recipes
+furnace.setFuel(<terrafirmacraft:item.coal>, 1600);
+furnace.setFuel(<terrafirmacraft:item.coal:1>, 1600);
+
 mods.railcraft.BlastFurnace.addFuel(<terrafirmacraft:item.coal>);
 mods.railcraft.BlastFurnace.addFuel(<terrafirmacraft:item.coal:1>);
-
-furnace.setFuel(<terrafirmacraft:item.coal>, 4000);
-furnace.setFuel(<terrafirmacraft:item.coal:1>, 4000);
 
 recipes.addShapeless(<moegadd:BlastPreparedIronOre>,[<terrafirmacraft:item.Small Ore:11>,<terrafirmacraft:item.Powder>]);
 recipes.addShapeless(<moegadd:BlastPreparedIronOre>,[<terrafirmacraft:item.Small Ore:10>,<terrafirmacraft:item.Powder>]);
 recipes.addShapeless(<moegadd:BlastPreparedIronOre>,[<terrafirmacraft:item.Small Ore:3>,<terrafirmacraft:item.Powder>]);
 
-mods.railcraft.BlastFurnace.addRecipe(<moegadd:BlastPreparedIronOre>, false, false, 400, <terrafirmacraft:item.MetalNugget:9>*2);
-mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.MetalNugget:9>, false, false, 200, <terrafirmacraft:item.MetalNugget:17>);
-//TODO: Add powdered iron ore to produce iron, blast prepared iron ore to produce steel, 600ticks and 800ticks respectively
+mods.railcraft.BlastFurnace.addRecipe(<moegadd:BlastPreparedIronOre>, false, false, 711, <terrafirmacraft:item.MetalNugget:9>*2);
+mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.MetalNugget:9>, false, false, 711, <terrafirmacraft:item.MetalNugget:17>);
 
 //water reservoir
 recipes.remove(<Railcraft:machine.alpha:14>);

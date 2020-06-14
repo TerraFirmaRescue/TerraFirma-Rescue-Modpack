@@ -1,22 +1,62 @@
-3.3.1.3: (Unreleased)
-Mod changes：
-AdvancedRocktry-TFR 2.0.01
-InventoryTweaks-PFAA-1.58
-NotEnoughCharacters-1.0
-Downgrade
-betterquesting-3.0.306
-IC2NEIPluginVersion-1.2.2
-questbook-2.1.1
-StandardExpansion-3.0.162
+3.3.1.3
+
+Module changes:
+
+MoegAddon - 1.06 -
+
+AdvancedRocktry - TFR 2.0.0.01
+
+InventoryTweaks PFAA - 1.58
+
+NotEnoughCharacters - 1.0 -
+
+demotion
+
+Betterquesting - 3.0.306
+
+IC2NEIPluginVersion - 1.2.2
+
+Questbook 2.1.1 -
+
+StandardExpansion - 3.0.162
+
 Content changes:
-Fix some tasks cannot be submitted
-Repair the conflict between GT large-scale material manufacturing and large-scale material replication and synthesis
-Fixed space elevator cannot be made
-Fixed stone plate only can be made from granite
-Change the material to copy the three-piece large machine main block synthesis
-Change the main block synthesis of distillation tower and cracking tower
-Change some quests to accept more varied items
-Add many tasks
+
+Fixed some tasks that could not be committed
+
+Fixed GT large material manufacturing and large material replication and synthesis conflict
+
+Repair space elevator cannot be built
+
+Restoration can only be done with granite slabs
+
+Repair tin plate cannot be heated
+
+Fixed meaningless text messages starting the game
+
+Fixed partial fluid abnormal display name
+
+Change material copy to three-piece set of large machine main block synthesis
+
+Modified main block composition for distillation column and cracking column
+
+Change some tasks to accept more items
+
+Change the iron and steel time of RC blast furnace
+
+Change TFC charcoal and coal burning times
+
+Change RC blast furnace synthesis
+
+Change the startup interface and the main interface
+
+Reduce part of combustor cost
+
+Reduce the cost of TFC blast furnace
+
+Add a lot of tasks
+
+Add more task rewards
 
 
 3.3.1.2:

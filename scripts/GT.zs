@@ -1550,3 +1550,10 @@ recipes.addShaped(<gregtech:gt.multitileentity:17115>,
 
 //stone plate
 recipes.addShapeless(<gregtech:gt.meta.plate:8500>, [File,<ore:ingotStoneBrick>,<ore:ingotStoneBrick>]);
+
+//grinder manual
+recipes.remove(<gregtech:gt.multitileentity:32075>);
+recipes.addShaped(<gregtech:gt.multitileentity:32075>,
+[[HHammer,<ore:ingotSteel>,Chisel],
+[<minecraft:brick_block>,<ore:ingotSteel>,<minecraft:brick_block>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);

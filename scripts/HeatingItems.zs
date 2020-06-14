@@ -83,7 +83,7 @@ mods.Terrafirmacraft.ItemHeat.addRecipe(uk,<gregtech:gt.meta.plate:130> ,663  ,0
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk,<gregtech:gt.meta.plate:220> ,1668 ,0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk,<gregtech:gt.meta.plate:8636>,1670 ,0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk,<gregtech:gt.meta.plate:8665>,656  ,0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(uk,<gregtech:gt.meta.plate:8667>,985  ,0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(uk,<Railcraft:part.plate:2>,985  ,0.35);
 
 //plateDouble
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk,<gregtech:gt.meta.plateDouble:8661>,1643 ,0.35);
