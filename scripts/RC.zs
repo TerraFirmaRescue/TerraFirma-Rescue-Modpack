@@ -146,6 +146,10 @@ val plateFe  = <terrafirmacraft:item.Wrought Iron Sheet>;
 val platePb  = <terrafirmacraft:item.Lead Sheet>;
 
 //RC blast furnace recipes
+mods.railcraft.BlastFurnace.removeRecipe(<terrafirmacraft:item.Steel Ingot>);
+mods.railcraft.BlastFurnace.removeRecipe(<terrafirmacraft:item.MetalNugget:17>);
+mods.railcraft.BlastFurnace.removeRecipe(<Railcraft:cube:2>);
+
 furnace.setFuel(<terrafirmacraft:item.coal>, 1600);
 furnace.setFuel(<terrafirmacraft:item.coal:1>, 1600);
 
@@ -156,8 +160,13 @@ recipes.addShapeless(<moegadd:BlastPreparedIronOre>,[<terrafirmacraft:item.Small
 recipes.addShapeless(<moegadd:BlastPreparedIronOre>,[<terrafirmacraft:item.Small Ore:10>,<terrafirmacraft:item.Powder>]);
 recipes.addShapeless(<moegadd:BlastPreparedIronOre>,[<terrafirmacraft:item.Small Ore:3>,<terrafirmacraft:item.Powder>]);
 
-mods.railcraft.BlastFurnace.addRecipe(<moegadd:BlastPreparedIronOre>, false, false, 711, <terrafirmacraft:item.MetalNugget:9>*2);
-mods.railcraft.BlastFurnace.addRecipe(<terrafirmacraft:item.MetalNugget:9>, false, false, 711, <terrafirmacraft:item.MetalNugget:17>);
+var win = <terrafirmacraft:item.MetalNugget:9>.withTag({display: {Name: "Wrought Iron Nugget", Lore: ["Can be blasted again."]}});
+var winormal = <terrafirmacraft:item.MetalNugget:9>;
+
+recipes.addShapeless(win,[winormal]);
+
+mods.railcraft.BlastFurnace.addRecipe(<moegadd:BlastPreparedIronOre>, false, false, 711, win*2);
+mods.railcraft.BlastFurnace.addRecipe(win, false, true, 711, <terrafirmacraft:item.MetalNugget:17>);
 
 //water reservoir
 recipes.remove(<Railcraft:machine.alpha:14>);

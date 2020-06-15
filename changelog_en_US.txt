@@ -56,6 +56,8 @@ Reduce part of combustor cost
 
 Reduce the cost of TFC blast furnace
 
+Deleted producing steels by other recipes in RC Blast Furnace.
+
 Add a lot of tasks
 
 Add more task rewards
