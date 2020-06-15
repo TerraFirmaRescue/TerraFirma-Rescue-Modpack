@@ -1,0 +1,46 @@
+┣Milky Way银河系
+    ┣Dashuaibia A 达戍贲 A
+        ┣ Netheriat 狱星
+        ┣ HD (无译名)
+        ┣ Duck Egg 鸭蛋
+            ┣ Terrafirma 群峦(又译"泰拉孚马"）
+            ┣ Merganser 秋沙鸭
+            ┣ Canary 金丝雀
+            ┣ Golden Eagle 金雕
+            ┣ Sarus Crane 赤颈鹤
+            ┣ White Crane 白鹤
+            ┣ Tragopan 角雉
+            ┣ Ibis 朱鹭
+            ┣ Black Stork 黑鹳
+        ┣ Evan 伊文
+        ┗ Zthen 㻸
+
+    ┣Dashuaibia B 达戍贲 B
+        ┣ Endest 终望星
+        ┣ Dracona 德拉克纳星(又译“龙星”)
+
+    ┣Dashuaibia C 达戍贲 C
+
+    ┣Sun 太阳
+        ┣ Mercury 水星
+        ┣ Venus 金星
+        ┣ Earth 地球
+            ┣ Luna 月球
+        ┣ Mars 火星
+            ┣ Phobos 火卫一
+            ┣ Deimos 火卫二
+        ┣ Jupiter 木星
+            ┣ Io 木卫一
+            ┣ Europa 木卫二
+            ┣ Ganymede 木卫三
+            ┣ Callisto 木卫四
+        ┣ Saturn 土星
+            ┣ Titan 土卫六
+            ┣ Enceladus 土卫二
+        ┣ Uranus 天王星
+        ┣ Neptune 海王星
+            ┣ Proteus 海卫八
+        ┣ Ceres 谷神星
+        ┣ Pluto 冥王星
+        ┣ Haumea 妊神星
+        ┣ Kuiper Belt 柯伊伯带
