@@ -62,6 +62,10 @@ Add a lot of tasks
 
 Add more task rewards
 
+Add RC Rolling recipes for long rods, curved plates, foils, and small casings
+
+Add new Main Menu and Opening Music
+
 
 3.3.1.2:
 Mod changes:

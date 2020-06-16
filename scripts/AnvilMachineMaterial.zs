@@ -31,12 +31,12 @@ MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
 []);
 **/
 
-//remove original rolling machine recipes
-mods.railcraft.Rolling.removeRecipe(<ore:plateCopper>);
+//remove original rolling
 mods.railcraft.Rolling.removeRecipe(<terrafirmacraft:item.Steel Sheet>);
 mods.railcraft.Rolling.removeRecipe(<terrafirmacraft:item.Wrought Iron Sheet>);
 mods.railcraft.Rolling.removeRecipe(<terrafirmacraft:item.Lead Sheet>);
 mods.railcraft.Rolling.removeRecipe(<Railcraft:part.plate:2>);
+mods.railcraft.Rolling.removeRecipe(<Railcraft:part.plate:3>);
 
 //remove gt machine hulls by hand
 var machinehulls = [
@@ -1444,7 +1444,21 @@ mods.Terrafirmacraft.Anvil.addAnvilRecipe(aspringSmall, astick, "gtspringsmall",
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(aplateCurved, aplate, "gtplatecurved", 4);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(achain, astick, astick, "gtchain", 4);
 //RC_ROLLINGMACHINE
-mods.railcraft.Rolling.addShapeless(aplate*2, [aingot, aingot, aingot]);
+mods.railcraft.Rolling.addShaped(aplate*2, [[null, null, null],
+                                           [aingot, aingot, aingot],
+                                           [null, null, null]]);
+mods.railcraft.Rolling.addShaped(astickLong*2, [[null, null, aingot],
+                                           [null, aingot, null],
+                                           [aingot, null, null]]);
+mods.railcraft.Rolling.addShaped(acasingSmall*3, [[null, null, null],
+                                           [aplate, aplate, null],
+                                           [null, null, null]]);
+mods.railcraft.Rolling.addShaped(afoil*3, [[null, null, null],
+                                           [null, aplate, null],
+                                           [null, null, null]]);
+mods.railcraft.Rolling.addShaped(aplateCurved*2, [[null, null, null],
+                                           [null, aplate, null],
+                                           [aplate, null, aplate]]);
 //LASER WELDING
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",aplate2);
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",aplate3);

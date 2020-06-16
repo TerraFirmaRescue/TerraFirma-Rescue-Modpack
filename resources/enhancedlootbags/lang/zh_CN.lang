@@ -1,5 +1,5 @@
-enhancedlootbags.string.lootbag_templatename=奖励袋子 (%s)
+enhancedlootbags.string.lootbag_templatename=战利品袋(%s)
 enhancedlootbags.string.default=默认
-enhancedlootbags.string.try_again=这不起作用,再试一次吧
-enhancedlootbags.string.sorry_damaged=这个奖励袋子貌似坏了,抱歉
-itemGroup.ELBTab=更好的奖励袋子
+enhancedlootbags.string.try_again=无效. 请再试一次!
+enhancedlootbags.string.sorry_damaged=这个战利品袋看起来损坏了, 抱歉
+itemGroup.ELBTab=增强战利品袋

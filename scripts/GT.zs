@@ -1557,3 +1557,9 @@ recipes.addShaped(<gregtech:gt.multitileentity:32075>,
 [[HHammer,<ore:ingotSteel>,Chisel],
 [<minecraft:brick_block>,<ore:ingotSteel>,<minecraft:brick_block>],
 [<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
+
+//diamond
+recipes.addShapeless(<terrafirmacraft:item.Diamond:3>*2,[<terrafirmacraft:item.Diamond:4>,HHammer]);
+recipes.addShapeless(<terrafirmacraft:item.Diamond:2>*2,[<terrafirmacraft:item.Diamond:3>,HHammer]);
+recipes.addShapeless(<terrafirmacraft:item.Diamond:1>*2,[<terrafirmacraft:item.Diamond:2>,HHammer]);
+recipes.addShapeless(<terrafirmacraft:item.Diamond>*2,[<terrafirmacraft:item.Diamond:1>,HHammer]);
