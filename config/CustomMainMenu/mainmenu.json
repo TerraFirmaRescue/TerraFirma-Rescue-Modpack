@@ -4,22 +4,22 @@
 		"logo":
         {
             "image" : "mainmenu:textures/logo.png",
-            "posX" : 0,
-            "posY" : 0,
-            "width" : 150,
-            "height" : 150,
-            "alignment" : "column_logo"
+            "posX" : -213,
+            "posY" : 75,
+            "width" : 75,
+            "height" : 75,
+            "alignment" : "column_title"
         },
 
         "title":
         {
             "image" : "mainmenu:textures/terra-firma-rescue.png",
-            "posX" : 0,
+            "posX" : -213,
             "posY" : 0,
             "imageWidth" : 898,
 			"imageHeight" : 78,
-            "width" : 449,
-            "height" : 39,
+            "width" : 429,
+            "height" : 37,
             "alignment" : "column_title"
         }
 	
@@ -29,12 +29,12 @@
     {  
 		"singleplayer":
         {
-            "text" : "Singleplayer",
-			"hoverText" : "单人游戏",
-			"normalTextColor" : 16777215,
-			"hoverTextColor" : 65535,
-			"texture" : "mainmenu:textures/button_template.png",
-            "posX" : 0,
+            "text": "Singleplayer",
+            "hoverText": "",
+            "normalTextColor" : 16440086,
+            "hoverTextColor" : 16440086,
+			"texture" : "mainmenu:textures/buttons/singleplayer.png",
+            "posX" : -75,
             "posY" : 0,
             "width" : 150,
             "height" : 18,
@@ -50,12 +50,12 @@
 
 		"multiplayer":
         {
-            "text" : "Multiplayer",	
-			"hoverText" : "多人游戏",		
-			"normalTextColor" : 16777215,
-			"hoverTextColor" : 65535,
-			"texture" : "mainmenu:textures/button_template.png",
-            "posX" : 0,
+            "text" : "Multiplayer",
+            "hoverText": "",	
+            "normalTextColor" : 16440086,
+            "hoverTextColor" : 16440086,
+			"texture" : "mainmenu:textures/buttons/multiplayer.png",
+            "posX" : -75,
             "posY" : 25,
             "width" : 150,
             "height" : 18,
@@ -72,11 +72,11 @@
 		"options":
         {
             "text" : "Options",
-            "hoverText" : "选项",		
-			"normalTextColor" : 16777215,
-			"hoverTextColor" : 16758315,
-			"texture" : "mainmenu:textures/button_template.png",
-            "posX" : 0,
+            "hoverText": "",
+            "normalTextColor" : 16440086,
+            "hoverTextColor" : 16440086,
+			"texture" : "mainmenu:textures/buttons/settings.png",
+            "posX" : -75,
             "posY" : 50,
             "width" : 150,
             "height" : 18,
@@ -93,11 +93,11 @@
 		"language":
         {
             "text" : "Language",
-            "hoverText" : "语言",		
-			"normalTextColor" : 16777215,
-			"hoverTextColor" : 16758315,
-			"texture" : "mainmenu:textures/button_template.png",
-            "posX" : 0,
+            "hoverText": "",
+            "normalTextColor" : 16440086,
+            "hoverTextColor" : 16440086,
+			"texture" : "mainmenu:textures/buttons/language.png",
+            "posX" : -75,
             "posY" : 75,
             "width" : 150,
             "height" : 18,
@@ -114,11 +114,11 @@
         "mods":
         {
             "text" : "Mods (#modsloaded#/#modsactive#)",
-            "hoverText" : "模组 (#modsloaded#/#modsactive#)",		
-			"normalTextColor" : 16777215,
-			"hoverTextColor" : 16758315,
-			"texture" : "mainmenu:textures/button_template.png",
-            "posX" : 0,
+            "hoverText": "",
+            "normalTextColor" : 16440086,
+            "hoverTextColor" : 16440086,
+			"texture" : "mainmenu:textures/buttons/mods.png",
+            "posX" : -75,
             "posY" : 100,
             "width" : 150,
             "height" : 18,
@@ -135,11 +135,11 @@
         "team":
         {
             "text" : "Development Team",
-            "hoverText" : "开发团队",		
-			"normalTextColor" : 16777215,
-			"hoverTextColor" : 16758315,
-			"texture" : "mainmenu:textures/button_template.png",
-            "posX" : 0,
+            "hoverText": "",
+            "normalTextColor" : 16440086,
+            "hoverTextColor" : 16440086,
+			"texture" : "mainmenu:textures/buttons/team.png",
+            "posX" : -75,
             "posY" : 125,
             "width" : 150,
             "height" : 18,
@@ -156,11 +156,11 @@
         "quit":
         {
             "text" : "Quit",
-			"hoverText" : "退出",
-			"normalTextColor" : 16728128,
-			"hoverTextColor" : 16711680,
-			"texture" : "mainmenu:textures/button_template.png",
-            "posX" : 0,
+            "hoverText": "",
+            "normalTextColor" : 16728128,
+            "hoverTextColor" : 16440086,
+			"texture" : "mainmenu:textures/buttons/quit.png",
+            "posX" : -75,
             "posY" : 150,
             "width" : 150,
             "height" : 18,
@@ -177,9 +177,9 @@
             "text": "",
             "normalTextColor": 6081343,
             "hoverTextColor": 41704,
-            "tooltip": "Click to join our Discord | 加入Discord群聊",
-            "texture": "modpack:Buttons/discord.png",
-            "posX" : 160,
+            "tooltip": "Click to join our Discord",
+            "texture": "mainmenu:Buttons/discord.png",
+            "posX" : 85,
             "posY" : 0,
             "width": 20,
             "height": 20,
@@ -196,9 +196,9 @@
             "text": "",
             "normalTextColor": 6081343,
             "hoverTextColor": 41704,
-            "tooltip": "Report any bugs here | 反馈Bug",
-            "texture": "modpack:Buttons/git.png",
-            "posX" : 160,
+            "tooltip": "Report any bugs here",
+            "texture": "mainmenu:Buttons/git.png",
+            "posX" : 85,
             "posY" : 25,
             "width": 20,
             "height": 20,
@@ -215,9 +215,9 @@
             "text": "",
             "normalTextColor": 6081343,
             "hoverTextColor": 41704,
-            "tooltip": "Official Website | 官网",
+            "tooltip": "Official Website",
             "texture": "mainmenu:textures/logo.png",
-            "posX" : 160,
+            "posX" : 85,
             "posY" : 50,
             "width": 20,
             "height": 20,
@@ -234,9 +234,9 @@
             "text": "",
             "normalTextColor": 6081343,
             "hoverTextColor": 41704,
-            "tooltip": "Official Wiki | 官方维基",
-            "texture": "modpack:Buttons/wiki.png",
-            "posX" : 160,
+            "tooltip": "Official Wiki",
+            "texture": "mainmenu:Buttons/wiki.png",
+            "posX" : 85,
             "posY" : 75,
             "width": 20,
             "height": 20,
@@ -254,8 +254,8 @@
             "normalTextColor": 6081343,
             "hoverTextColor": 41704,
             "tooltip": "Support Us on Patreon!",
-            "texture": "modpack:Buttons/patreon.png",
-            "posX" : 160,
+            "texture": "mainmenu:Buttons/patreon.png",
+            "posX" : 85,
             "posY" : 100,
             "width": 20,
             "height": 20,
@@ -272,9 +272,9 @@
             "text": "",
             "normalTextColor": 6081343,
             "hoverTextColor": 41704,
-            "tooltip": "在爱发电支持我们!",
-            "texture": "modpack:Buttons/afd.png",
-            "posX" : 160,
+            "tooltip": "Support us on Aifadian!",
+            "texture": "mainmenu:Buttons/afd.png",
+            "posX" : 85,
             "posY" : 125,
             "width": 20,
             "height": 20,
@@ -291,9 +291,9 @@
             "text": "",
             "normalTextColor": 6081343,
             "hoverTextColor": 41704,
-            "tooltip": "License 协议",
-            "texture": "modpack:Buttons/license.png",
-            "posX" : 160,
+            "tooltip": "License",
+            "texture": "mainmenu:Buttons/license.png",
+            "posX" : 85,
             "posY" : 150,
             "width": 20,
             "height": 20,
@@ -310,10 +310,10 @@
             "text": "",
             "normalTextColor": 6081343,
             "hoverTextColor": 41704,
-            "tooltip": "Support List | 支持者",
-            "texture": "modpack:Buttons/supporter.png",
-            "posX" : 160,
-            "posY" : 175,
+            "tooltip": "Support List",
+            "texture": "mainmenu:Buttons/supporter.png",
+            "posX" : -105,
+            "posY" : 0,
             "width": 20,
             "height": 20,
             "imageWidth": 300,
@@ -329,10 +329,10 @@
             "text": "",
             "normalTextColor": 6081343,
             "hoverTextColor": 41704,
-            "tooltip": "Support List Gold| 黄金支持者",
-            "texture": "modpack:Buttons/supportergold.png",
-            "posX" : 160,
-            "posY" : 200,
+            "tooltip": "Support List Gold",
+            "texture": "mainmenu:Buttons/supportergold.png",
+            "posX" : -105,
+            "posY" : 25,
             "width": 20,
             "height": 20,
             "imageWidth": 300,
@@ -350,7 +350,7 @@
             "posY": 225,
             "width": 20,
             "height": 20,
-            "texture": "modpack:Buttons/refresh.png",
+            "texture": "mainmenu:Buttons/refresh.png",
             "action": {
                 "type": "refresh"
             }
@@ -362,42 +362,50 @@
         "mojang":
         {
             "text" : "Forge #forgeversion# for Minecraft #mcversion# - Copyright Mojang AB. Do not distribute!",
-            "posX" : -200,
-            "posY" : -5,
+            "posX" : 0,
+            "posY" : -30,
             "fontSize": 0.8,
-            "alignment" : "column_credits"
+            "alignment" : "column_bottom"
         }, 
         "teammoeg":
         {
             "text" : "Author: Team Moeg - All Scripts, Config, Resources, and Original Assets are Licensed under CC-BY-NC-ND 4.0",
-            "posX" : -200,
-            "posY" : -15,
+            "posX" : 0,
+            "posY" : -20,
             "fontSize": 0.8,
-            "alignment" : "column_credits"
+            "alignment" : "column_bottom"
         },
         "credits1":
         {
             "text" : "Credits: Opening Pictures by Freys84 from James Cameron's Movie - Avatar",
-            "posX" : -200,
-            "posY" : -25,
+            "posX" : 0,
+            "posY" : -10,
             "fontSize": 0.8,
-            "alignment" : "column_credits"
+            "alignment" : "column_bottom"
         },
         "credits2":
         {
-            "text" : "Credits: Opening BGM from Hans Zimmer - Cornfield Chase",
-            "posX" : -200,
-            "posY" : -35,
+            "text" : "           Opening BGM from Two Steps From Hell - El Dorado Dubstep (Remix)",
+            "posX" : 0,
+            "posY" : 0,
             "fontSize": 0.8,
-            "alignment" : "column_credits"
+            "alignment" : "column_bottom"
         },
         "credits3":
         {
-            "text" : "Credits: In-Game BGMs: Mountain Lake - Dream Valley, Last Sunrise - Lind Erebos, Far Horizons - Jeremy Soule, Revellon - Borislav Slavov, The Slops of the Blessure - Plotr Musial",
-            "posX" : -200,
-            "posY" : -45,
+            "text" : "           In-Game BGMs: Mountain Lake - Dream Valley, Last Sunrise - Lind Erebos, Far Horizons - Jeremy Soule",
+            "posX" : 0,
+            "posY" : 10,
             "fontSize": 0.8,
-            "alignment" : "column_credits"
+            "alignment" : "column_bottom"
+        },
+        "credits4":
+        {
+            "text" : "           In-Game BGMs: Revellon - Borislav Slavov, The Slops of the Blessure - Plotr Musial",
+            "posX" : 0,
+            "posY" : 20,
+            "fontSize": 0.8,
+            "alignment" : "column_bottom"
         }
     },
     
@@ -424,19 +432,19 @@
  
         "column_bottom":
         {
-            "factorWidth" : 0.1,
-            "factorHeight" : 0.95
+            "factorWidth" : 0.01,
+            "factorHeight" : 0.9
         },
 
         "column_right":
         {
-            "factorWidth" : 0.55,
+            "factorWidth" : 0.5,
             "factorHeight" : 0.30
         },
 
         "column_title":
         {
-            "factorWidth" : 0.315,
+            "factorWidth" : 0.5,
             "factorHeight" : 0.14
         },
 
@@ -455,18 +463,18 @@
             "image" : "",
             "slideshow":
             {
-                "images" : ["mainmenu:textures/bg.png","mainmenu:textures/bg2.png","mainmenu:textures/bg3.png","mainmenu:textures/bg4.png","mainmenu:textures/bg7.png"],
+                "images" : ["mainmenu:textures/bg.png","mainmenu:textures/bg1.png","mainmenu:textures/bg2.png","mainmenu:textures/bg3.png","mainmenu:textures/bg4.png","mainmenu:textures/bg7.png","mainmenu:textures/bg8.png","mainmenu:textures/bg9.png","mainmenu:textures/bg10.png","mainmenu:textures/bg11.png","mainmenu:textures/bg12.png"],
                 "displayDuration" : 150,
                 "fadeDuration" : 40
             }
         },
 
         "splash-text": {
-            "posX": 100,
-            "posY": -80,
+            "posX": 175,
+            "posY": 50,
             "color": -256,
-            "alignment": "column_center",
-            "texts": "file:modpack:textures/splash.txt"
+            "alignment": "column_title",
+            "texts": "file:mainmenu:textures/splash.txt"
         }
     }
 }

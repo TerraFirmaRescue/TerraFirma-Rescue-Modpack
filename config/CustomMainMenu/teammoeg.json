@@ -4,10 +4,10 @@
     "images": {
         "title": {
             "image": "mainmenu:textures/logo.png",
-            "posX": -100,
-            "posY": -250,
-            "width": 200,
-            "height": 200,
+            "posX": -50,
+            "posY": -150,
+            "width": 100,
+            "height": 100,
             "alignment": "center"
         }
     },
@@ -18,7 +18,7 @@
             "normalTextColor": 16777215,
             "hoverTextColor": 16728128,
             "texture": "mainmenu:textures/button_template.png",
-            "posX": -80,
+            "posX": -75,
             "posY": -40,
             "width": 150,
             "height": 18,
@@ -36,7 +36,7 @@
             "normalTextColor": 6081343,
             "hoverTextColor": 65535,
             "texture": "mainmenu:textures/button_template.png",
-            "posX": -80,
+            "posX": -75,
             "posY": -15,
             "width": 150,
             "height": 18,
@@ -54,7 +54,7 @@
             "normalTextColor": 6081343,
             "hoverTextColor": 65535,
             "texture": "mainmenu:textures/button_template.png",
-            "posX": -80,
+            "posX": -75,
             "posY": 10,
             "width": 150,
             "height": 18,
@@ -72,7 +72,7 @@
             "normalTextColor": 6081343,
             "hoverTextColor": 65535,
             "texture": "mainmenu:textures/button_template.png",
-            "posX": -80,
+            "posX": -75,
             "posY": 35,
             "width": 150,
             "height": 18,
@@ -90,7 +90,7 @@
             "normalTextColor": 6081343,
             "hoverTextColor": 65535,
             "texture": "mainmenu:textures/button_template.png",
-            "posX": -80,
+            "posX": -75,
             "posY": 60,
             "width": 150,
             "height": 18,
@@ -108,7 +108,7 @@
             "normalTextColor": 6081343,
             "hoverTextColor": 65535,
             "texture": "mainmenu:textures/button_template.png",
-            "posX": -80,
+            "posX": -75,
             "posY": 85,
             "width": 150,
             "height": 18,
@@ -127,7 +127,7 @@
             "posY": 132,
             "width": 20,
             "height": 20,
-            "texture": "modpack:Buttons/refresh.png",
+            "texture": "mainmenu:Buttons/refresh.png",
             "action": {
                 "type": "refresh"
             }
