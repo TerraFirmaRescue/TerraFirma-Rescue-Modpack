@@ -1,6 +1,6 @@
 # Terra Firma Rescue Mod Pack [![Join our Discord!](https://img.shields.io/discord/449966345665249290.svg?color=blue&label=Discord&logo=discord&style=flat-square)](https://discord.gg/97Mj6vK) [![Support the devs!](https://img.shields.io/badge/Patreon-Support-orange.svg?style=flat-square)](https://www.patreon.com/TeamMoeg)
 
-Version 3.3.1.2 is out 06.06.2020
+Version 3.3.1.3 is out 18.06.2020
 
 1. [CURSEFORGE](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
 2. [MCBBS](https://www.mcbbs.net/thread-977365-1-1.html)
@@ -8,6 +8,11 @@ Version 3.3.1.2 is out 06.06.2020
 4. [SOURCE](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack)
 5. [ISSUES](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues)
 6. [LICENSE](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE)
+
+
+## [LOCALIZATION PORT](https://github.com/TerraFirmaRescue/TFR-Localization)
+
+Quests Localization Port for Terra Firma Rescue Modpack. All contributers will be on the [SupporterList](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/supporterlist.txt).
 
 ## Storyline:
 
