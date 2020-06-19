@@ -1,5 +1,8 @@
-<!--Date: 2020/04/25-->
-<!--Version: 6.13.07-->
+<!--  Author: Amamiya-Nagisa,lin_1,YueSha  -->
+<!--  Date: 2020/06/18  -->
+<!--  Version: GT6U 6.14.01  -->
+<!--  Language: Chinese  -->
+
 <oo>
 
 	<!-- ID to EnergyTier -->
@@ -611,6 +614,80 @@
 			}
 		}
 	</init>
+
+	<!-- 坩埚   -->
+    <tileentity id="gt.multitileentity.smeltery">
+	    <line displayname="当前温度">
+		return nbt['gt.temperature']+BLUE+" K"
+        </line>
+		<line displayname="熔炼物种数">
+		return nbt['gt.materials']['size']+BLUE+" 种"
+        </line>
+		<line displayname="熔炼物1">
+		return (nbt['gt.materials']['0']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['0']['i']
+        </line>
+		<line displayname="熔炼物2">
+		return (nbt['gt.materials']['1']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['1']['i']
+        </line>
+		<line displayname="熔炼物3">
+		return (nbt['gt.materials']['2']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['2']['i']
+        </line>
+		<line displayname="熔炼物4">
+		return (nbt['gt.materials']['3']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['3']['i']
+        </line>
+		<line displayname="熔炼物5">
+		return (nbt['gt.materials']['4']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['4']['i']
+        </line>
+		<line displayname="熔炼物6">
+		return (nbt['gt.materials']['5']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['5']['i']
+        </line>
+		<line displayname="熔炼物7">
+		return (nbt['gt.materials']['6']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['6']['i']
+        </line>
+		<line displayname="熔炼物8">
+		return (nbt['gt.materials']['7']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['7']['i']
+        </line>
+		<line displayname="熔炼物9">
+		return (nbt['gt.materials']['8']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['8']['i']
+        </line>
+	</tileentity>
+	
+	<!-- 大型坩埚   -->
+    <tileentity id="gt.multitileentity.multiblock.crucible">
+	    <line displayname="当前温度">
+		return nbt['gt.temperature']+BLUE+" K"
+        </line>
+		<line displayname="熔炼物种数">
+		return nbt['gt.materials']['size']+BLUE+" 种"
+        </line>
+		<line displayname="熔炼物1">
+		return (nbt['gt.materials']['0']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['0']['i']
+        </line>
+		<line displayname="熔炼物2">
+		return (nbt['gt.materials']['1']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['1']['i']
+        </line>
+		<line displayname="熔炼物3">
+		return (nbt['gt.materials']['2']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['2']['i']
+        </line>
+		<line displayname="熔炼物4">
+		return (nbt['gt.materials']['3']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['3']['i']
+        </line>
+		<line displayname="熔炼物5">
+		return (nbt['gt.materials']['4']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['4']['i']
+        </line>
+		<line displayname="熔炼物6">
+		return (nbt['gt.materials']['5']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['5']['i']
+        </line>
+		<line displayname="熔炼物7">
+		return (nbt['gt.materials']['6']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['6']['i']
+        </line>
+		<line displayname="熔炼物8">
+		return (nbt['gt.materials']['7']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['7']['i']
+        </line>
+		<line displayname="熔炼物9">
+		return (nbt['gt.materials']['8']['a'] / 648648000).toFixed(2)+BLUE+"份 "+RED+nbt['gt.materials']['8']['i']
+        </line>
+	</tileentity>
 	
 	<!-- 模具 -->
 	<tileentity id = "gt.multitileentity.mold">

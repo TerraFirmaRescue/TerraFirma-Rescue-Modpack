@@ -958,7 +958,7 @@ recipes.addShaped(<gregtech:gt.multitileentity:17200>,
 
 //PUV1 emitter
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 4096, 400 ,0,[10000],
-[<gregtech:gt.multitileentity:29207>*10,<gregtech:gt.meta.plateDouble:8684>*2,<moegadd:StarPlatinum>,<moegadd:Mainframe3>*2],
+[<gregtech:gt.multitileentity:29207>*8, <gregtech:gt.multitileentity:29207>*2, <gregtech:gt.meta.plateDouble:8684>*2,<moegadd:StarPlatinum>,<moegadd:Mainframe3>*2],
 [null],
 [null],
 [<gregtech:gt.multiitem.technological:12109>]);
