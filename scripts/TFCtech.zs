@@ -60,6 +60,7 @@ recipes.remove(<tfctech:item.Vulcanizing Agents>);
 MTUtilsGT.removeAllRecipes("gt.recipe.bath",<minecraft:paper>);
 MTUtilsGT.removeAllRecipes("gt.recipe.loom",<minecraft:paper>);
 MTUtilsGT.removeAllRecipes("gt.recipe.fermenter",<tfctech:item.Glue>);
+recipes.remove(<tfcprimitivetech:itemWoodenTwig>);
 
 //delete ends
 

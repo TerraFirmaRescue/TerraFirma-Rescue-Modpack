@@ -47,27 +47,23 @@ val Cutter = <ore:craftingToolWireCutter>;
 val File = <ore:craftingToolFile>;
 val n = null;
 
-/* Remove Recipes */
-
-
-
+// Factory block
 recipes.remove(<chisel:factoryblock>);
 recipes.addShaped(<chisel:factoryblock>*64,
 [[<ore:ingotAnyIronOrSteel>,<ore:stoneBricks>,<ore:ingotAnyIronOrSteel>],
 [<ore:stoneBricks>,null,<ore:stoneBricks>],
 [<ore:ingotAnyIronOrSteel>,<ore:stoneBricks>,<ore:ingotAnyIronOrSteel>]]);
-//gongchangfangkuai
 
+// Technical block
 recipes.remove(<chisel:technical>);
 recipes.addShaped(<chisel:technical>,
 [[<ore:stoneBricks>,<ore:ingotAnyIronOrSteel>,<ore:stoneBricks>],
 [<ore:ingotAnyIronOrSteel>,<ore:stoneBricks>,<ore:ingotAnyIronOrSteel>],
 [<ore:stoneBricks>,<ore:ingotAnyIronOrSteel>,<ore:stoneBricks>]]);
-//gongyifangkuai
 
-//remove diamond into block
+// Remove diamond into block
 mods.chisel.Groups.removeGroup("diamond_block");
 
-//chisel
+// Chisel
 recipes.remove(<chisel:chisel>);
 recipes.addShapeless(<chisel:chisel>,[<gregtech:gt.meta.plateCurved:8643>,<ore:stickWood>]);

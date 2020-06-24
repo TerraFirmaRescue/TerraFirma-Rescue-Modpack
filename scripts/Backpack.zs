@@ -50,19 +50,13 @@ val w = <liquid:water>;
 val dw = <liquid:ic2distilledwater>;
 val fw = <liquid:freshwater>;
 
-/* Remove Recipes */
-
-
+// Remove backpacks
 recipes.remove(<Backpack:backpack>);
 recipes.remove(<Backpack:backpack:100>);
 recipes.remove(<Backpack:backpack:200>);
 
+// Small backpack
 mods.Terrafirmacraft.Loom.addRecipe(<Backpack:backpack>, <terrafirmacraft:item.TFC Leather> * 8);
-
-recipes.addShaped(<Backpack:backpack:100>,
-[[<terrafirmacraft:item.TFC Leather>, Screwdriver,<terrafirmacraft:item.TFC Leather>],
-[<gregtech:gt.meta.screw:8610>, <Backpack:backpack>, <gregtech:gt.meta.screw:8610>],
-[<terrafirmacraft:item.TFC Leather>,<terrafirmacraft:item.TFC Leather>,<terrafirmacraft:item.TFC Leather>]]);
 
 MTUtilsGT.removeAllRecipes("gt.recipe.loom",<Backpack:backpack>);
 MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 400, 0, [10000],
@@ -71,6 +65,13 @@ MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 400, 0, [10000],
 [n],
 [<Backpack:backpack>]);
 
+// Mid backpack
+recipes.addShaped(<Backpack:backpack:100>,
+[[<terrafirmacraft:item.TFC Leather>, Screwdriver,<terrafirmacraft:item.TFC Leather>],
+[<gregtech:gt.meta.screw:8610>, <Backpack:backpack>, <gregtech:gt.meta.screw:8610>],
+[<terrafirmacraft:item.TFC Leather>,<terrafirmacraft:item.TFC Leather>,<terrafirmacraft:item.TFC Leather>]]);
+
+// Big backpack
 MTUtilsGT.removeAllRecipes("gt.recipe.loom",<Backpack:backpack:200>);
 MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 400, 0, [10000],
 [<Backpack:tannedLeather>*8,<terrafirmacraft:item.WoolCloth>*2,<gregtech:gt.meta.screw:8610>*4,<gregtech:gt.meta.ring:8610>*4],
@@ -86,6 +87,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 200, 0, [10000],
 [n],
 [<Backpack:boundLeather>]);
 
+// Ender backpack
 recipes.remove(<Backpack:backpack:31999>);
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",<Backpack:backpack:31999>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 400, 0, [10000],
@@ -94,12 +96,14 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 400, 0, [10000],
 [n],
 [<Backpack:backpack:31999>]);
 
+// Crafttable backpack small
 recipes.remove(<Backpack:backpack:17>);
 recipes.addShaped(<Backpack:backpack:17>,
 [[Wrench,HHammer,Screwdriver],
 [<terrafirmacraft:item.Bronze Sheet>,<Backpack:backpack>,<terrafirmacraft:item.Bronze Sheet>],
 [<terrafirmacraft:item.Bronze Sheet>,<minecraft:crafting_table>,<terrafirmacraft:item.Bronze Sheet>]]);
 
+// Crafttable backpack Large
 recipes.remove(<Backpack:backpack:217>);
 recipes.addShaped(<Backpack:backpack:217>,
 [[Wrench,HHammer,Screwdriver],

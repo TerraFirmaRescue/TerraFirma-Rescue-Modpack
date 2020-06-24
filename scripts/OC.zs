@@ -51,9 +51,11 @@ val dw = <liquid:ic2distilledwater>;
 val fw = <liquid:freshwater>;
 
 /* Remove Recipes */
-
-
 recipes.remove(<OpenComputers:item:32>);
+
+// OC Board
 recipes.addShapeless(<OpenComputers:item:32>,[<moegadd:EpoxyCircuitBoard>,<moegadd:EpoxyCircuitBoard>,<moegadd:EpoxyCircuitBoard>]);
+
+// Remove bugged
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multiitem.technological:30301>);
 

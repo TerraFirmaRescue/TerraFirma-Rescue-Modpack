@@ -50,17 +50,6 @@ val w = <liquid:water>*900;
 val dw = <liquid:ic2distilledwater>*900;
 val fw = <liquid:freshwater>*900;
 
-/* Remove Recipes */
-
-
-/*
-MTUtilsGT.removeAllRecipes("gt.recipe.",);
-MTUtilsGT.addCustomRecipe("gt.recipe.", false, 16, 64, 0, [10000],
-[],
-[],
-[],
-[]);
-*/
 
 /*---------remove---------*/
 MTUtilsGT.removeAllRecipes("gt.recipe.crusher",<gregtech:gt.meta.crushed:9116>);

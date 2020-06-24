@@ -47,18 +47,18 @@ val Cutter = <ore:craftingToolWireCutter>;
 val File = <ore:craftingToolFile>;
 val n = null;
 
-/* Remove Recipes */
+//========================================
+// This File is about TFC Anvil changes on GT materials
+//========================================
 
-
-
-//remove original rolling
+// Remove original rolling recipes
 mods.railcraft.Rolling.removeRecipe(<terrafirmacraft:item.Steel Sheet>);
 mods.railcraft.Rolling.removeRecipe(<terrafirmacraft:item.Wrought Iron Sheet>);
 mods.railcraft.Rolling.removeRecipe(<terrafirmacraft:item.Lead Sheet>);
 mods.railcraft.Rolling.removeRecipe(<Railcraft:part.plate:2>);
 mods.railcraft.Rolling.removeRecipe(<Railcraft:part.plate:3>);
 
-//remove gt machine hulls by hand
+// Remove gt machine hulls made by hand
 var machinehulls = [
 <gregtech:gt.meta.machine:40>,
 <gregtech:gt.meta.machine:130>,
@@ -582,7 +582,7 @@ recipes.remove(m4);
 recipes.remove(m9);
 }
 
-/*---Heatings Starts---*/
+/*---Anvil with Heating Starts---*/
 
 //Ingot-1
 var ingot = [

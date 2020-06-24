@@ -49,10 +49,6 @@ val n = null;
 
 /* Remove Recipes */
 
-
-
-//AR
-//recipes.remove();
 recipes.remove(<advancedRocketry:tile.blockHandPress>);
 recipes.remove(<advancedRocketry:circuitIC:5>);
 recipes.remove(<advancedRocketry:circuitIC:4>);
@@ -69,37 +65,21 @@ recipes.remove(<libVulpes:libVulpescoil0:7>);
 recipes.remove(<libVulpes:libVulpescoil0:2>);
 recipes.remove(<libVulpes:libVulpescoil0:10>);
 
-//delete ends
-
-//template
-/*
-recipes.remove();
-recipes.addShaped(,
- [[,,],
-  [,,],
-  [,,]]);
-
-MTUtilsGT.removeAllRecipes("", );
-MTUtilsGT.addCustomRecipe("", false, 16, 16, 0, [10000],
-[],
-[]);
-
-*/
-
-//machine block
+// Structure Block
 recipes.remove(<libVulpes:blockStructureBlock>);
 recipes.addShaped(<libVulpes:blockStructureBlock>*2,
 [[<ore:plateTinAlloy>, <ore:stickTinAlloy>, <ore:plateTinAlloy>],
 [<ore:stickTinAlloy>, <ore:craftingToolWrench>, <ore:stickTinAlloy>],
 [<ore:plateTinAlloy>, <ore:stickTinAlloy>, <ore:plateTinAlloy>]]);
 
-//advanced block
+// Advanced Structure Block
 recipes.remove(<libVulpes:tile.advStructureMachine>);
 recipes.addShaped(<libVulpes:tile.advStructureMachine>*2,
 [[<ore:plateTitanium>, <ore:stickTitanium>, <ore:plateTitanium>],
 [<ore:stickTitanium>, <ore:craftingToolWrench>, <ore:stickTitanium>],
 [<ore:plateTitanium>, <ore:stickTitanium>, <ore:plateTitanium>]]);
 
+// CircuitICs
 MTUtilsGT.removeAllRecipes("gt.recipe.press",<advancedRocketry:circuitIC:5>);
 MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16,  1200,0,[10000], 
 [<tfctech:item.Circuit>,<minecraft:dye:4>*4,<gregtech:gt.meta.wireFine:8708>*4],
@@ -113,12 +93,14 @@ MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16,  1200,0,[10000],
 [<tfctech:item.Circuit>,<gregtech:gt.meta.wireFine:290>*4,<gregtech:gt.meta.wireFine:8708>*4],
 [<advancedRocketry:circuitIC:3>]);
 
+// Precision Assembly Machine
 recipes.remove(<advancedRocketry:precisionassemblingmachine>);
 recipes.addShaped(<advancedRocketry:precisionassemblingmachine>,
 [[<advancedRocketry:tile.energyPipe>,<advancedRocketry:miscpart>, <advancedRocketry:tile.energyPipe>],
 [<advancedRocketry:circuitIC:3>,<libVulpes:blockStructureBlock>, <advancedRocketry:circuitIC:4>],
 [<gregtech:gt.multiitem.technological:12000>, <gregtech:gt.multiitem.technological:12040>, <gregtech:gt.multiitem.technological:12060>]]);
 
+// Launch Pad
 recipes.remove(<advancedRocketry:launchpad>);
 MTUtilsGT.removeAllRecipes("gt.recipe.drying",<advancedRocketry:launchpad>);
 MTUtilsGT.addCustomRecipe("gt.recipe.drying", false, 16, 600 ,0,[10000],
@@ -127,7 +109,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.drying", false, 16, 600 ,0,[10000],
 [<liquid:water>*10],
 [<advancedRocketry:launchpad>]);
 
-//rocket builder
+// Rocket Builder
 recipes.remove(<advancedRocketry:rocketBuilder>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<advancedRocketry:rocketBuilder>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 2000 ,0,[10000],
@@ -137,7 +119,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 2000 ,0,[10000],
 [null],
 [<advancedRocketry:rocketBuilder>]);
 
-//space elevator
+// Space elevator
 recipes.remove(<advancedRocketry:tile.spaceElevatorController>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 4000 ,0,[10000],
 [<gregtech:gt.meta.machine.double:220>, <gregtech:gt.multiitem.technological:30502>*2, <gregtech:gt.meta.chain:9175>*64, <gregtech:gt.meta.chain:9175>*64,
@@ -146,18 +128,14 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 256, 4000 ,0,[10000],
 [null],
 [<advancedRocketry:tile.spaceElevatorController>]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 16, 256 ,0,[10000],
-[<gregapi:gt.integrated_circuit:24>*0, <gregtech:gt.meta.dust:60>],
-[<gregtech:gt.meta.chain:9175>]);
-
-//battery
+// AR Battery
 recipes.remove(<libVulpes:battery>);
 recipes.addShaped(<libVulpes:battery>,
 [[null,<gregtech:gt.multitileentity:27006>,Cutter],
 [<minecraft:redstone>,<gregtech:gt.meta.plateCurved:8668>,<minecraft:redstone>],
 [<minecraft:redstone>,<gregtech:gt.meta.ring:8217>,<minecraft:redstone>]]);
 
-//coils
+// AR Coils
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 256 ,0,[10000],
 [<gregtech:gt.multitileentity:29403>*4],
 [<liquid:molten.tin>*20],
@@ -188,7 +166,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 256 ,0,[10000],
 [null],
 [<libVulpes:libVulpescoil0:2>]);
 
-//motors
+// AR Motors GT Ass
 recipes.remove(<libVulpes:tile.motor>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 16, 256 ,0,[10000],
 [<gregtech:gt.meta.plateCurved:8651>, <gregtech:gt.meta.stick:8645>, <gregtech:gt.multitileentity:28350>, <gregtech:gt.meta.gearGtSmall:8651>, <gregtech:gt.meta.gearGt:8651>],
@@ -214,33 +192,34 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 128, 256 ,0,[10000],
 [null],
 [<libVulpes:tile.eliteMotor>]);
 
+// AR Motors Shapeless
 recipes.addShapeless(<libVulpes:tile.motor>,[<gregtech:gt.meta.plateCurved:8651>, <gregtech:gt.meta.stick:8645>, <gregtech:gt.multitileentity:28350>, <gregtech:gt.meta.gearGtSmall:8651>, <gregtech:gt.meta.gearGt:8651>]);
 recipes.addShapeless(<libVulpes:tile.advancedMotor>,[<gregtech:gt.multiitem.technological:12002>,<gregtech:gt.meta.gearGtSmall:130>, <gregtech:gt.meta.gearGt:130>]);
 recipes.addShapeless(<libVulpes:tile.enhancedMotor>,[<gregtech:gt.multiitem.technological:12003>,<gregtech:gt.meta.gearGtSmall:8636>,<gregtech:gt.meta.gearGt:8636>]);
 recipes.addShapeless(<libVulpes:tile.eliteMotor>,[<gregtech:gt.multiitem.technological:12004>, <gregtech:gt.meta.gearGtSmall:240>, <gregtech:gt.meta.gearGt:240>]);
 
+// AR Copper Coil
 recipes.remove(<libVulpes:libVulpescoil0:4>);
 recipes.addShaped(<libVulpes:libVulpescoil0:4>,
 [[<gregtech:gt.multitileentity:28351>,<gregtech:gt.multitileentity:28351>,<gregtech:gt.multitileentity:28351>],
 [<gregtech:gt.multitileentity:28351>,<ore:craftingToolWireCutter>,<gregtech:gt.multitileentity:28351>],
 [<gregtech:gt.multitileentity:28351>,<gregtech:gt.multitileentity:28351>,<gregtech:gt.multitileentity:28351>]]);
-//Cu xianquan
 
-//ElectricArcFurnace block
+// Electric Arc Furnace Block
 recipes.remove(<advancedRocketry:utilBlock>);
 recipes.addShaped(<advancedRocketry:utilBlock>*2,
 [[null,<ore:plateInvar>,null],
 [<ore:plateInvar>,<terrafirmacraft:FireBrick>,<ore:plateInvar>],
 [null,<ore:plateInvar>,null]]);
 
-//electric arc furnace
+// Electric Arc Furnace
 recipes.remove(<advancedRocketry:tile.electricArcFurnace>);
 recipes.addShaped(<advancedRocketry:tile.electricArcFurnace>,
 [[<gregtech:gt.meta.stick:9175>,<advancedRocketry:miscpart>,<gregtech:gt.meta.stick:9175>],
 [<ore:plateInvar>,<gregtech:gt.meta.machine.double:220>,<ore:plateInvar>],
 [<gregtech:gt.multiitem.technological:30304>,<ore:plateInvar>,<gregtech:gt.multiitem.technological:30304>]]);
 
-//lunar soil processing
+// Moon Turf processing
 MTUtilsGT.removeAllRecipes("gt.recipe.centrifuge",<gregtech:gt.meta.dust:8514>);
 MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 128, 1024, 0, [9000],
 [<advancedRocketry:moonTurf>],
@@ -248,7 +227,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 128, 1024, 0, [9000],
 [<liquid:enderair>*200],
 [<gregtech:gt.meta.dust:8514>]);
 
-//mars soil processing
+// Hot Turf processing
 MTUtilsGT.removeAllRecipes("gt.recipe.centrifuge",<gregtech:gt.meta.dustTiny:9176>);
 MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 128, 1024, 0, [8000, 1000, 1000, 500, 500],
 [<advancedRocketry:blockHotTurf>],
@@ -256,43 +235,48 @@ MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 128, 1024, 0, [8000, 10
 [null],
 [<gregtech:gt.meta.dust:8505>,<gregtech:gt.meta.dustTiny:9176>,<gregtech:gt.meta.dustTiny:9140>,<gregtech:gt.meta.dustTiny:8311>,<gregtech:gt.meta.dustTiny:9104>]);
 
-//Asteroids rock
+// Geode
 MTUtilsGT.removeAllRecipes("gt.recipe.mixer",<gregtech:gt.meta.dust:8245>);
+MTUtilsGT.removeAllRecipes("gt.recipe.crusher",<gregtech:gt.meta.dust:8247>);
 MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 [<advancedRocketry:tile.geode>],
 [<gregtech:gt.meta.dust:8247>]);
+
+// Geode Processing
 MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 256 ,0,[7000, 1500],
 [<gregtech:gt.meta.dust:8247>],
 [null],
 [null],
 [<gregtech:gt.meta.dust:260>,<gregtech:gt.meta.dust:8649>]);
 
-//space station assembler
+// Space station assembler
 recipes.remove(<advancedRocketry:tile.stationAssembler>);
 recipes.addShaped(<advancedRocketry:tile.stationAssembler>,
 [[<libVulpes:libVulpesproductgear:7>,Wrench,<libVulpes:libVulpesproductgear:7>],
 [<gregtech:gt.meta.stick:220>,<advancedRocketry:rocketBuilder>,<gregtech:gt.meta.stick:220>],
 [<gregtech:gt.multiitem.technological:30306>,Screwdriver,<gregtech:gt.multiitem.technological:30306>]]);
 
-//unmanned spaceship assembler
+// Unmanned spaceship assembler
 recipes.remove(<advancedRocketry:tile.deployableRocketAssembler>);
 recipes.addShaped(<advancedRocketry:tile.deployableRocketAssembler>,
 [[<advancedRocketry:advancedRocketryproductgear>,Wrench,<advancedRocketry:advancedRocketryproductgear>],
 [<gregtech:gt.meta.stick:8794>,<advancedRocketry:rocketBuilder>,<gregtech:gt.meta.stick:8794>],
 [<gregtech:gt.multiitem.technological:30306>,Screwdriver,<gregtech:gt.multiitem.technological:30306>]]);
 
-//linker
+// Linker
 recipes.remove(<libVulpes:Linker>);
 recipes.addShaped(<libVulpes:Linker>,
 [[<gregtech:gt.multitileentity:28116>,<gregtech:gt.meta.casingSmall:8643>,<gregtech:gt.multitileentity:28700>],
 [<gregtech:gt.multitileentity:28116>,<ore:gemQuartz>,<gregtech:gt.meta.casingSmall:8643>],
 [<minecraft:redstone_torch>,<gregtech:gt.multitileentity:28116>,<gregtech:gt.multitileentity:28116>]]);
 
+
+// Saw Blade
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 256 ,0,[10000],
 [<gregtech:gt.meta.plateQuadruple:8643>,<gregapi:gt.integrated_circuit:4>],
 [<advancedRocketry:sawBlade>]);
 
-//Artificial satellite
+// Artificial satellite
 recipes.remove(<advancedRocketry:item.satellite>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 120, 4000 ,0,[10000],
 [<gregtech:gt.meta.machine.double:8794>,<gregtech:gt.meta.stickLong:8794>*2,<libVulpes:libVulpesproductsheet:9>*12],
@@ -300,7 +284,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 120, 4000 ,0,[10000],
 [null],
 [<advancedRocketry:item.satellite>]);
 
-//liquid fuel tank
+// Liquid Fuel tank
 recipes.remove(<advancedRocketry:fuelTank>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
 [<gregtech:gt.meta.plateCurved:8665>*6,<gregtech:gt.meta.stickLong:8665>*4,<gregtech:gt.meta.ring:8636>*2],
@@ -308,8 +292,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
 [null],
 [<advancedRocketry:fuelTank>]);
 
-//liquid engine source: https://zhidao.baidu.com/question/1604334018380485187.html
-
+// Rocket Motor
 recipes.remove(<advancedRocketry:rocketmotor>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
 [<advancedRocketry:pressureTank:3>,<gregtech:gt.meta.ring:8664>*4,<gregtech:gt.meta.screw:8664>*4,<gregtech:gt.meta.rotor:8621>,<gregtech:gt.meta.plateCurved:8663>*4,<gregtech:gt.multiitem.technological:12023>,<gregtech:gt.multitileentity:26160>*4],
@@ -317,6 +300,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
 [null],
 [<advancedRocketry:rocketmotor>]);
 
+// Adv Rocket Motor
 recipes.remove(<advancedRocketry:tile.advRocket>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
 [<advancedRocketry:pressureTank:3>,<gregtech:gt.meta.ring:8756>*4,<gregtech:gt.meta.screw:8756>*4,<gregtech:gt.meta.rotor:8793>,<gregtech:gt.meta.plateCurved:8638>*4,<gregtech:gt.multiitem.technological:12025>,<gregtech:gt.multitileentity:26160>*4],
@@ -324,14 +308,14 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
 [null],
 [<advancedRocketry:tile.advRocket>]);
 
-//carbon collector recycle
+// Carbon collector Recycling
 MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 16, 500 ,0,[10000],
 [<advancedRocketry:item.carbonScrubberCartridge>.withDamage(32767)],
 [null],
 [null],
 [<advancedRocketry:item.carbonScrubberCartridge>]);
 
-//satellite cabin
+// Satellite Cabin
 recipes.remove(<advancedRocketry:tile.loader:1>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
 [<gregtech:gt.multiitem.technological:30304>,<gregtech:gt.meta.machine:8665>,<gregtech:gt.meta.stick:220>*2],
@@ -339,7 +323,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 1000 ,0,[10000],
 [null],
 [<advancedRocketry:tile.loader:1>]);
 
-//guidance computer
+// Guidance computer
 recipes.remove(<advancedRocketry:tile.guidanceComputer>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 64, 1000 ,0,[10000],
 [<gregtech:gt.meta.plate:220>,<libVulpes:blockStructureBlock>,<moegadd:Mainframe1>,<gregtech:gt.multiitem.technological:30306>],
@@ -347,67 +331,66 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 64, 1000 ,0,[10000],
 [null],
 [<advancedRocketry:tile.guidanceComputer>]);
 
-//solar panel
+// Solar panel
 recipes.addShapeless(<advancedRocketry:tile.solarPanel>,[<gregtech:gt.multitileentity:10050>]);
 
-//rocket fuel
+// Rocket fuel
 MTUtilsGT.addCustomRecipe("gt.recipe.cryomixer", false, 64, 100 ,0,[10000],
 [<gregapi:gt.integrated_circuit>*0],
 [<liquid:oxygen>*1000,<liquid:hydrogen>*2000],
 [<liquid:rocketfuel>*30],
 [null]);
 
-//holographic planetary chooser
+// Holographic planetary Selector
 recipes.addShaped(<advancedRocketry:tile.planetHoloSelector>,
 [[<ore:craftingLensRed>,<ore:craftingLensBlue>,<ore:craftingLensPurple>],
 [<ore:craftingLensWhite>,<gregtech:gt.multiitem.technological:11003>,<ore:craftingLensGreen>],
 [<gregtech:gt.multitileentity:18008>,<gregtech:gt.multitileentity:18008>,<gregtech:gt.multitileentity:18008>]]);
 
+//GT Plate block -> AR block
 recipes.addShapeless(<libVulpes:libVulpesmetal0:7>,[<gregtech:gt.meta.storage.solid:220>]);
 recipes.addShapeless(<libVulpes:libVulpesmetal0:9>,[<gregtech:gt.meta.storage.solid:130>]);
 recipes.addShapeless(<libVulpes:libVulpesmetal0:10>,[<gregtech:gt.meta.storage.solid:770>]);
 recipes.addShapeless(<libVulpes:libVulpesmetal0:6>,[<gregtech:gt.meta.storage.solid:8630>]);
 recipes.addShapeless(<libVulpes:libVulpesmetal0:5>,[<gregtech:gt.meta.storage.solid:500>]);
 recipes.addShapeless(<libVulpes:libVulpesmetal0:4>,[<gregtech:gt.meta.storage.solid:290>]);
-//GT Plate block -> AR block
 
-//Space Suit
-//silk
-MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 32, 100 ,0,[10000],
-[<terrafirmacraft:item.WoolYarn>*6],
-[<liquid:seedoil>*100],
-[n],
-[<Forestry:craftingMaterial:3>]);
+//Space Suit Process
 
 recipes.remove(<advancedRocketry:item.spaceHelmet>);
 recipes.remove(<advancedRocketry:item.spaceChest>);
 recipes.remove(<advancedRocketry:item.spaceLeggings>);
 recipes.remove(<advancedRocketry:item.spaceBoots>);
 
+// Head
 val helmet1 = <gregtech:gt.armor.hazmat.frost.head:201>.withTag({display: {Name: "Spacesuit Helmet (Stage 1)", Lore: ["You need warm keeping!"]}});
 val helmet2 = <gregtech:gt.armor.hazmat.frost.head:202>.withTag({display: {Name: "Spacesuit Helmet (Stage 2)", Lore: ["You need cooling!"]}});
 val helmet3 = <gregtech:gt.armor.hazmat.frost.head:203>.withTag({display: {Name: "Spacesuit Helmet (Stage 3)", Lore: ["You need insulation!"]}});
 val helmet4 = <gregtech:gt.armor.hazmat.frost.head:204>.withTag({display: {Name: "Spacesuit Helmet (Stage 4)", Lore: ["You need heat resistance!"]}});
 val helmet5 = <gregtech:gt.armor.hazmat.frost.head:205>.withTag({display: {Name: "Spacesuit Helmet (Stage 5)", Lore: ["You need cosmic ray protection!"]}});
 
+// Chestplate
 val chest1 = <gregtech:gt.armor.hazmat.frost.chest:201>.withTag({display: {Name: "Spacesuit Chest (Stage 1)", Lore: ["You need warm keeping!"]}});
 val chest2 = <gregtech:gt.armor.hazmat.frost.chest:202>.withTag({display: {Name: "Spacesuit Chest (Stage 2)", Lore: ["You need cooling!"]}});
 val chest3 = <gregtech:gt.armor.hazmat.frost.chest:203>.withTag({display: {Name: "Spacesuit Chest (Stage 3)", Lore: ["You need insulation!"]}});
 val chest4 = <gregtech:gt.armor.hazmat.frost.chest:204>.withTag({display: {Name: "Spacesuit Chest (Stage 4)", Lore: ["You need heat resistance!"]}});
 val chest5 = <gregtech:gt.armor.hazmat.frost.chest:205>.withTag({display: {Name: "Spacesuit Chest (Stage 5)", Lore: ["You need cosmic ray protection!"]}});
 
+// Leggings
 val legs1 = <gregtech:gt.armor.hazmat.frost.legs:201>.withTag({display: {Name: "Spacesuit Leggings (Stage 1)", Lore: ["You need warm keeping!"]}});
 val legs2 = <gregtech:gt.armor.hazmat.frost.legs:202>.withTag({display: {Name: "Spacesuit Leggings (Stage 2)", Lore: ["You need cooling!"]}});
 val legs3 = <gregtech:gt.armor.hazmat.frost.legs:203>.withTag({display: {Name: "Spacesuit Leggings (Stage 3)", Lore: ["You need insulation!"]}});
 val legs4 = <gregtech:gt.armor.hazmat.frost.legs:204>.withTag({display: {Name: "Spacesuit Leggings (Stage 4)", Lore: ["You need heat resistance!"]}});
 val legs5 = <gregtech:gt.armor.hazmat.frost.legs:205>.withTag({display: {Name: "Spacesuit Leggings (Stage 5)", Lore: ["You need cosmic ray protection!"]}});
 
+// Boots
 val boots1 = <gregtech:gt.armor.hazmat.frost.boots:201>.withTag({display: {Name: "Spacesuit Boots (Stage 1)", Lore: ["You need warm keeping!"]}});
 val boots2 = <gregtech:gt.armor.hazmat.frost.boots:202>.withTag({display: {Name: "Spacesuit Boots (Stage 2)", Lore: ["You need cooling!"]}});
 val boots3 = <gregtech:gt.armor.hazmat.frost.boots:203>.withTag({display: {Name: "Spacesuit Boots (Stage 3)", Lore: ["You need insulation!"]}});
 val boots4 = <gregtech:gt.armor.hazmat.frost.boots:204>.withTag({display: {Name: "Spacesuit Boots (Stage 4)", Lore: ["You need heat resistance!"]}});
 val boots5 = <gregtech:gt.armor.hazmat.frost.boots:205>.withTag({display: {Name: "Spacesuit Boots (Stage 5)", Lore: ["You need cosmic ray protection!"]}});
 
+// some Materials
 val cloth = <terrafirmacraft:item.WoolCloth>;
 val str = <ore:itemString>;
 var silk = <Forestry:craftingMaterial:3>;
@@ -544,13 +527,14 @@ recipes.addShaped(<advancedRocketry:item.spaceBoots>,
 [alf,boots5,alf],
 [Cutter,n,Knife]]);
 
+// Electric Saw Blade
 recipes.remove(<advancedRocketry:tile.sawBlade>);
 recipes.addShaped(<advancedRocketry:tile.sawBlade>,[
 [<ore:stickAnyIronOrSteel>,null,<ore:stickAnyIronOrSteel>],
 [<ore:plateAnyIronOrSteel>,<advancedRocketry:sawBlade>,<ore:plateAnyIronOrSteel>],
 [<ore:plateAnyIronOrSteel>,null,<ore:plateAnyIronOrSteel>]]);
-//dian ju
 
+// Holo Projector
 recipes.remove(<libVulpes:item.holoProjector>);
 recipes.addShaped(<libVulpes:item.holoProjector>,
 [[<advancedRocketry:satellitePrimaryFunction>,<gregtech:gt.meta.wireFine:8660>,<advancedRocketry:satellitePrimaryFunction>],
@@ -558,13 +542,14 @@ recipes.addShaped(<libVulpes:item.holoProjector>,
 [<moegadd:Simpleresistance>,<moegadd:SimpleCapacitance>,<moegadd:Simpletransistor>]]);
 //tou ying yi
 
-//satellite builder
+// Satellite builder
 recipes.remove(<advancedRocketry:blockSatelliteBuilder>);
 recipes.addShaped(<advancedRocketry:blockSatelliteBuilder>,
 [[<ore:gt:circuit6>,<gregtech:gt.meta.plateDouble:220>,<ore:gt:circuit6>],
 [<ore:gt:circuit6>,<advancedRocketry:rocketBuilder>,<ore:gt:circuit6>],
 [<libVulpes:tile.motor>,Screwdriver,<advancedRocketry:tile.sawBlade>]]);
 
+// Lens
 recipes.remove(<advancedRocketry:lens>);
 MTUtilsGT.removeAllRecipes("gt.recipe.sharpener",<advancedRocketry:lens>);
 MTUtilsGT.addCustomRecipe("gt.recipe.sharpener", false, 16, 64, 0, [10000],

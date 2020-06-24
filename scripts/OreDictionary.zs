@@ -59,7 +59,6 @@ val fw = <liquid:freshwater>;
 /* Remove Recipes */
 
 
-
 //deprecated
 /*
 <ore:plateCopper>.remove(<terrafirmacraft:item.Copper Sheet>);

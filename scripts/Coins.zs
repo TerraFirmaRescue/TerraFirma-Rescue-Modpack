@@ -47,9 +47,7 @@ val Cutter = <ore:craftingToolWireCutter>;
 val File = <ore:craftingToolFile>;
 val n = null;
 
-/* Remove Recipes */
-
-
+// Point conversion
 recipes.addShapeless(<moegadd:point5>,[<moegadd:point1>,<moegadd:point1>,<moegadd:point1>,<moegadd:point1>,<moegadd:point1>]);
 recipes.addShapeless(<moegadd:point10>,[<moegadd:point5>,<moegadd:point5>]);
 recipes.addShapeless(<moegadd:point50>,[<moegadd:point10>,<moegadd:point10>,<moegadd:point10>,<moegadd:point10>,<moegadd:point10>]);
@@ -59,6 +57,7 @@ recipes.addShapeless(<moegadd:point5>*2,[<moegadd:point10>]);
 recipes.addShapeless(<moegadd:point10>*5,[<moegadd:point50>]);
 recipes.addShapeless(<moegadd:point50>*2,[<moegadd:point100>]);
 
+// MED conversion
 recipes.addShapeless(<moegadd:MED0_1>*10,[<moegadd:MED1>]);
 MTUtilsGT.removeAllRecipes("gt.recipe.generifier",<moegadd:MED1>);
 MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],

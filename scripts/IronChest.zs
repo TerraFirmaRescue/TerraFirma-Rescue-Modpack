@@ -50,11 +50,10 @@ val w = <liquid:water>;
 val dw = <liquid:ic2distilledwater>;
 val fw = <liquid:freshwater>;
 
-/* Remove Recipes */
-
-
+// Remove all chests
 recipes.remove(<IronChest:BlockIronChest:*>);
-//copper chest
+
+// Add chests
 recipes.addShaped(<IronChest:BlockIronChest:3>,
 [[<ore:plateCopper>,<ore:plateCopper>,<ore:plateCopper>],
 [<ore:screwCopper>,<ore:chestWood>,<ore:screwCopper>],
@@ -93,7 +92,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 256, 400, 0, [10000],
 [n],
 [<IronChest:BlockIronChest:6>]);
 
-//Upgrades
+// Remove Upgrades
 recipes.remove(<IronChest:woodCopperUpgrade>);
 recipes.remove(<IronChest:ironGoldUpgrade>);
 recipes.remove(<IronChest:diamondCrystalUpgrade>);

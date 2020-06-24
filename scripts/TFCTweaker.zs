@@ -51,8 +51,9 @@ val dw = <liquid:ic2distilledwater>;
 val fw = <liquid:freshwater>;
 val tag0 = <gregapi:gt.integrated_circuit>;
 
-/* Remove Recipes */
-
+//========================================
+// This File is a documentation about TFC Tweaker
+//========================================
 
 //========================================================================
 //                          Anvil Recipes

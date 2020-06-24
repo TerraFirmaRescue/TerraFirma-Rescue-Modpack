@@ -47,9 +47,11 @@ val Cutter = <ore:craftingToolWireCutter>;
 val File = <ore:craftingToolFile>;
 val n = null;
 
-/* Remove Recipes */
+//========================================
+// This File is about TFC Anvil Plans
+//========================================
 
-
+// Documentation
 
 //To show proper custom plan name, use the minetweaker methods to add localization:
 //----------------------------------------------------------------------------------
@@ -94,7 +96,6 @@ mods.Terrafirmacraft.Anvil.addPlanRecipe("gtspring", 1, 1, 32);
 mods.Terrafirmacraft.Anvil.addPlanRecipe("gtspringsmall", 1, 1, 32);
 mods.Terrafirmacraft.Anvil.addPlanRecipe("gtplatecurved", 2, 2, 2);
 mods.Terrafirmacraft.Anvil.addPlanRecipe("gtchain", 8, 8, 8);
-
 
 //plan add ends -------
 

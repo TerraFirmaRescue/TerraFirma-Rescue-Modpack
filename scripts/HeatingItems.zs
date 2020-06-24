@@ -50,18 +50,16 @@ val w = <liquid:water>;
 val dw = <liquid:ic2distilledwater>;
 val fw = <liquid:freshwater>;
 
-/* Remove Recipes */
-
-
-
+//============================
 //TFC heating system
+//============================
 
 val uk = <terrafirmacraft:item.Unknown Ingot>;
 
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk,<ore:stickLongRedAlloy>, 800, 0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plate:8660> ,800, 0.35);
 
-//Reference Melting Temps and Specific Heats:
+// Reference Melting Temps and Specific Heats:
 //----------------------
 //Bismuth: 270C at 0.14                 Iron: 1535C at 0.35                 Sterling Silver: 900C at 0.35
 //Bismuth Bronze: 985C at 0.35          Lead: 328C at 0.22                  Tin: 230C at 0.14
@@ -73,9 +71,9 @@ mods.Terrafirmacraft.ItemHeat.addRecipe(uk, <gregtech:gt.meta.plate:8660> ,800, 
 //Copper: 1080C at 0.35                 Silver: 961C at 0.48
 //Gold: 1060C at 0.6                    Steel: 1540C at 0.35
 
-//Machine Materials
+// Machine Materials
 
-//Since TFC has assigned heat values to its ingots, doubleingots, plate, and doubleplates already, so only GT materials are listed here
+// Since TFC has assigned heat values to its ingots, doubleingots, plate, and doubleplates already, so only GT materials are listed here
 //ingot
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk,<gregtech:gt.meta.ingot:8661>,1643 ,0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk,<gregtech:gt.meta.ingot:320> ,938  ,0.35);
@@ -681,4 +679,6 @@ mods.Terrafirmacraft.ItemHeat.addRecipe(uk,<gregtech:gt.meta.machine.quadruple:2
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk,<gregtech:gt.meta.machine.quadruple:8636>,1670 ,0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk,<gregtech:gt.meta.machine.quadruple:8665>,656  ,0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(uk,<gregtech:gt.meta.machine.quadruple:8667>,985  ,0.35);
+
+//TODO: change uknown ingot into respective nuggets or chunks or feiliao
 

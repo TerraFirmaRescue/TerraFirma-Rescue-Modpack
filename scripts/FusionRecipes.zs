@@ -50,11 +50,8 @@ val w = <liquid:water>;
 val dw = <liquid:ic2distilledwater>;
 val fw = <liquid:freshwater>;
 
-/* Remove Recipes */
 
-
-
-//Dilithium
+// Dilithium
 MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor",<libVulpes:libVulpesproductdust>);
 MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 1024, 100000000,[10000],
 [<gregapi:gt.integrated_circuit:2>*0],
@@ -62,7 +59,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 1024, 10000000
 [<liquid:hydrogen>*144],
 [<libVulpes:libVulpesproductdust>]);
 
-//Lithium-6
+// Lithium-6
 MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor",<gregtech:gt.meta.dust:30>);
 MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 120, 100000000,[10000],
 [<gregtech:gt.meta.dust:30>],
@@ -70,7 +67,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 120, 100000000
 [<liquid:molten.lithium6>*32],
 [<gregtech:gt.meta.dust:30>]);
 
-//Adamantium
+// Adamantium
 MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor",<gregtech:gt.meta.dustTiny:8761>);
 MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 120, 300000000,[10000],
 [<gregapi:gt.integrated_circuit:10>],
@@ -78,7 +75,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 120, 300000000
 [<liquid:molten.adamantium>*32],
 [<gregtech:gt.meta.dustTiny:8761>]);
 
-//Draconium Awakened
+// Draconium Awakened
 MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor", <gregtech:gt.meta.dustTiny:8791>);
 MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 4096, 60, 200000000, [10000],
 [<gregtech:gt.meta.dustTiny:1520>],
@@ -86,7 +83,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 4096, 60, 200000000,
 [<liquid:molten.draconiumawakened>*16],
 [<gregtech:gt.meta.dustTiny:8791>]);
 
-//Chaos Fragment
+// Chaos Fragment
 MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor", <DraconicEvolution:chaosFragment>);
 MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 4096, 60, 300000000, [10000],
 [<gregtech:gt.meta.dustTiny:1520>],
@@ -94,7 +91,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 4096, 60, 300000000,
 [<liquid:oxygen>*100],
 [<DraconicEvolution:chaosFragment>]);
 
-//Cosmic Neutronium
+// Cosmic Neutronium
 MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor",<Avaritia:Resource:2>);
 MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 8192, 60, 1600000000, [10000],
 [<gregapi:gt.integrated_circuit:24>*0,<gregtech:gt.meta.dustSmall:950>],

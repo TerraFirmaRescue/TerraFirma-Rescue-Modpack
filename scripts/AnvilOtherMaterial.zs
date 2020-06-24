@@ -47,9 +47,9 @@ val Cutter = <ore:craftingToolWireCutter>;
 val File = <ore:craftingToolFile>;
 val n = null;
 
-/* Remove Recipes */
-
-
+//========================================
+// This File is about TFC Anvil changes for Misc Materials
+//========================================
 
 //TFC ANVIL RECIPES
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<gregtech:gt.meta.plateCurved:8660>,  <gregtech:gt.meta.plate:8660> ,   "gtplatecurved",2);

@@ -51,9 +51,11 @@ val dw = <liquid:ic2distilledwater>;
 val fw = <liquid:freshwater>;
 val tag0 = <gregapi:gt.integrated_circuit>;
 
-/* Remove Recipes */
+//========================================
+// This File is about Electronics in TFR
+//========================================
 
-
+// Remove
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<moegadd:CPU_256MHz_2>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<moegadd:CPU_256MHz_4>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<moegadd:CPU_256MHz_8>);

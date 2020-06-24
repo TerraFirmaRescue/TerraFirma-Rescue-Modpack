@@ -225,9 +225,12 @@ mods.railcraft.RockCrusher.removeRecipe(<Railcraft:machine.alpha:2>);
 mods.railcraft.RockCrusher.removeRecipe(<Railcraft:machine.alpha:13>);
 mods.railcraft.RockCrusher.removeRecipe(<minecraft:gravel>);
 
-//rolling machine tweaks
+// rolling machine tweaks
 mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rebar>);
 mods.railcraft.Rolling.removeRecipe(<Railcraft:post:2>);
 mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rail:5>);
 mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rail:4>);
 mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rail:3>);
+
+// Remove firestone
+recipes.remove(<Railcraft:firestone.cut>);

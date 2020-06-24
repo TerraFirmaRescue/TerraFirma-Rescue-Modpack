@@ -50,9 +50,6 @@ val w = <liquid:water>;
 val dw = <liquid:ic2distilledwater>;
 val fw = <liquid:freshwater>;
 
-/* Remove Recipes */
-
-
 
 //tfc ores amount: 10 15 25 35
 //RC Crusher recipes change

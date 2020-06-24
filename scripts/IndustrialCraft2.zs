@@ -50,10 +50,7 @@ val w = <liquid:water>;
 val dw = <liquid:ic2distilledwater>;
 val fw = <liquid:freshwater>;
 
-/* Remove Recipes */
-
-
-
+// Reactor chamber
 recipes.remove(<IC2:blockReactorChamber>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler", <IC2:blockReactorChamber>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 2048, 400, 0, [10000], 
@@ -62,6 +59,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 2048, 400, 0, [10000],
 [null],
 [<IC2:blockReactorChamber>]);
 
+// Reactor Core
 recipes.remove(<IC2:blockGenerator:5>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler", <IC2:blockGenerator:5>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 2048, 800, 0, [10000], 
@@ -80,6 +78,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 2048, 800, 0, [10000],
 [null],
 [<IC2:blockGenerator:5>]);
 
+// Vent
 recipes.remove(<IC2:reactorVent:1>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<IC2:reactorVent:1>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1024,256, 0, [10000], 
@@ -87,7 +86,8 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1024,256, 0, [10000],
 [null],
 [null],
 [<IC2:reactorVent:1>]);
-//san re pian
+
+// Overclocking Vent
 recipes.remove(<IC2:reactorVentGold:1>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<IC2:reactorVentGold:1>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512,20, 0, [10000], 
@@ -95,7 +95,8 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512,20, 0, [10000],
 [null],
 [null],
 [<IC2:reactorVentGold:1>]);
-//chao pin san re pian
+
+// Adv Vent
 recipes.remove(<IC2:reactorVentDiamond:1>);
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<IC2:reactorVentDiamond:1>);
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512,20, 0, [10000], 
@@ -103,50 +104,63 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512,20, 0, [10000],
 [null],
 [null],
 [<IC2:reactorVentDiamond:1>]);
-//gao ji san re pian
 
+// Remove upgrade kit
 recipes.remove(<IC2:itemupgradekit>);
+
 recipes.remove(<IC2:itemRecipePart:5>);
 recipes.addShaped(<IC2:itemRecipePart:5>,
 [[<gregtech:gt.meta.plate:8217>,<terrafirmacraft:item.Copper Sheet>,<ore:craftingToolWrench>],
 [<gregtech:gt.multitileentity:26100>,<gregtech:gt.multitileentity:26100>,<gregtech:gt.multitileentity:26100>],
 [<gregtech:gt.meta.plate:8217>,<terrafirmacraft:item.Copper Sheet>,<gregtech:gt.meta.plate:8217>]]);
 
+// Mining machine
 recipes.remove(<IC2:blockMachine:7>);
 recipes.addShaped(<IC2:blockMachine:7>,[
 [<ore:craftingToolWrench>,<ore:MF1>,<ore:craftingToolHardHammer>],
 [<gregtech:gt.multitileentity:25002>,<IC2:blockMachine>,<gregtech:gt.multitileentity:10>],
 [<IC2:blockMiningPipe>,<ore:gt:re-battery1>,<IC2:blockMiningPipe>]]);
-//cai kuang ji
 
+// Adv Mining Machine
 recipes.remove(<IC2:blockMachine2:11>);
 recipes.addShaped(<IC2:blockMachine2:11>,[
 [<gregtech:gt.multiitem.technological:12083>,<IC2:blockElectric:1>,<gregtech:gt.multitileentity:4010>],
 [<ore:MF5>,<IC2:blockMachine:12>,<gregtech:gt.multitileentity:25430>],
 [<IC2:blockMachine2>,<appliedenergistics2:item.ItemMultiPart:300>,<IC2:blockMachine2>]]);
-//gao ji cai kuang ji
 
+// Teleporter
 recipes.remove(<IC2:blockMachine2>);
 recipes.addShaped(<IC2:blockMachine2>,[
 [<gregtech:gt.multitileentity:14504>,<gregtech:gt.multiitem.technological:30504>,<gregtech:gt.multitileentity:10104>],
 [<appliedenergistics2:item.ItemMultiMaterial:41>,<IC2:blockMachine:12>,<gregtech:gt.multiitem.technological:12104>],
 [<gregtech:gt.multiitem.technological:12144>,<ore:MF5>,<gregtech:gt.multiitem.technological:12124>]]);
-//chuan song ji
 
+// Universal Fluid Cell
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 64, 0, [10000],
 [<gregtech:gt.multitileentity:32607>,<gregtech:gt.meta.plateCurved:500>,<gregtech:gt.meta.foil:15402>*2,],
 [<liquid:glass>*144],
 [null],
 [<IC2:itemFluidCell>]);
-//tong yong liu ti dan yuan
 
+// Remove ic 2 circuits
 recipes.remove(<IC2:itemPartCircuit>);
 recipes.remove(<IC2:itemPartCircuitAdv>);
-//remove ic 2 circuits
 
+// Remove ic 2 parts
 recipes.remove(<IC2:itemPartIridium>);
 recipes.remove(<IC2:itemPartCoalBall>);
 recipes.remove(<IC2:itemPartCoalChunk>);
-//remove ic 2 parts
+
+// IC fertilizer
+MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 16 ,0,[10000],
+[<gregtech:gt.meta.dust:8203>,<gregtech:gt.meta.dust:8207>*2],
+[<IC2:itemFertilizer>*3]);
+
+// Remove nuke
+recipes.remove(<IC2:blockNuke>);
+
+// IC 2 iron plate
+recipes.addShapeless(<IC2:itemPlates:4>,[<terrafirmacraft:item.Wrought Iron Sheet>]);
+
 
 //todo: ban ic2 cables and add their needed recipes.
