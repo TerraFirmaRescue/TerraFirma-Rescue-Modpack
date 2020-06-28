@@ -199,6 +199,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.lightning", false, 256, 144, 0, [10000],
 recipes.addShapeless(<minecraft:red_flower>,[<terrafirmacraft:Flowers2>]);
 recipes.addShapeless(<minecraft:brown_mushroom>,[<terrafirmacraft:Fungi>]);
 recipes.addShapeless(<minecraft:red_mushroom>,[<terrafirmacraft:Fungi:1>]);
+recipes.addShapeless(<minecraft:yellow_flower>,[<terrafirmacraft:Flora>]);
 
 // book
 recipes.remove(<minecraft:book>);
@@ -564,6 +565,10 @@ mods.forestry.Carpenter.addRecipe(<gregtech:gt.block.sapling:2> * 1, [[null, <Fo
                                                             [<Forestry:mulch>, <terrafirmacraft:sapling:14>, <Forestry:mulch>],
                                                             [null, <Forestry:mulch>, null]], <liquid:seedoil> * 100, 400);
 
+mods.forestry.Carpenter.addRecipe(<gregtech:gt.block.sapling:2> * 1, [[null, <Forestry:mulch>, null],
+                                                            [<Forestry:mulch>, <terrafirmacraft:sapling:13>, <Forestry:mulch>],
+                                                            [null, <Forestry:mulch>, null]], <liquid:seedoil> * 100, 400);
+
 mods.forestry.Carpenter.addRecipe(<gregtech:gt.block.sapling:4> * 1, [[<minecraft:sapling:2>, <Forestry:mulch>, <minecraft:sapling:2>],
                                                             [<Forestry:mulch>, <minecraft:sapling:2>, <Forestry:mulch>],
                                                             [<minecraft:sapling:2>, <Forestry:mulch>, <minecraft:sapling:2>]], <liquid:seedoil> * 500, 400);
@@ -571,6 +576,34 @@ mods.forestry.Carpenter.addRecipe(<gregtech:gt.block.sapling:4> * 1, [[<minecraf
 mods.forestry.Carpenter.addRecipe(<gregtech:gt.block.sapling:7> * 1, [[<minecraft:sapling:2>, <Forestry:mulch>, <gregtech:gt.block.sapling:4>],
                                                             [<Forestry:mulch>, <Genetics:misc:1>, <Forestry:mulch>],
                                                             [<gregtech:gt.block.sapling:2>, <Forestry:mulch>, <minecraft:sapling>]], <liquid:seedoil> * 500, 400);
+
+mods.forestry.Carpenter.addRecipe(<minecraft:sapling:1> * 1, [[null, <Forestry:mulch>, null],
+                                                            [<Forestry:mulch>, <terrafirmacraft:sapling:10>, <Forestry:mulch>],
+                                                            [null, <Forestry:mulch>, null]], <liquid:seedoil> * 100, 400);
+
+mods.forestry.Carpenter.addRecipe(<minecraft:sapling:3> * 1, [[null, <Forestry:mulch>, null],
+                                                            [<Forestry:mulch>, <terrafirmacraft:sapling:15>, <Forestry:mulch>],
+                                                            [null, <Forestry:mulch>, null]], <liquid:seedoil> * 100, 400);
+
+mods.forestry.Carpenter.addRecipe(<minecraft:sapling:4> * 1, [[null, <Forestry:mulch>, null],
+                                                            [<Forestry:mulch>, <terrafirmacraft:sapling2>, <Forestry:mulch>],
+                                                            [null, <Forestry:mulch>, null]], <liquid:seedoil> * 100, 400);
+
+mods.forestry.Carpenter.addRecipe(<minecraft:sapling:5> * 1, [[null, <Forestry:mulch>, null],
+                                                            [<Forestry:mulch>, <terrafirmacraft:sapling:4>, <Forestry:mulch>],
+                                                            [null, <Forestry:mulch>, null]], <liquid:seedoil> * 100, 400);
+
+
+// Lilypad
+mods.forestry.Carpenter.addRecipe(<minecraft:waterlily> * 1, [[null, <Forestry:mulch>, null],
+                                                            [<IC2:itemFuelPlantBall>, <IC2:itemFuelPlantBall>, <IC2:itemFuelPlantBall>],
+                                                            [null, <Forestry:mulch>, null]], <liquid:water> * 100, 400);
+
+// Cactus
+mods.forestry.Carpenter.addRecipe(<minecraft:cactus> * 1, [[<minecraft:sand>, <IC2:itemFuelPlantBall>, <minecraft:sand>],
+                                                            [<Forestry:mulch>, <IC2:itemFuelPlantBall>, <Forestry:mulch>],
+                                                            [<minecraft:sand>, <IC2:itemFuelPlantBall>, <minecraft:sand>]], <liquid:water> * 100, 400);
+
 
 // Planks
 recipes.remove(<minecraft:planks:2>);
@@ -604,3 +637,12 @@ for item in <ore:dirt>.items {
     [n],
     [<minecraft:dirt:1>,<minecraft:carrot>,<minecraft:potato>,<minecraft:pumpkin_seeds>,<minecraft:melon_seeds>,<minecraft:wheat_seeds>]);
 }
+
+// Iron generalization
+MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
+[<terrafirmacraft:item.Wrought Iron Ingot>],[n],
+[n],[<minecraft:iron_ingot>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
+[<terrafirmacraft:MetalBlock:9>],[n],
+[n],[<minecraft:iron_block>]);

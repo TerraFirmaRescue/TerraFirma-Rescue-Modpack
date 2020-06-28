@@ -557,3 +557,10 @@ MTUtilsGT.addCustomRecipe("gt.recipe.sharpener", false, 16, 64, 0, [10000],
 [n],
 [n],
 [<advancedRocketry:lens>]);
+
+// Dilithium trans
+MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
+[<mo:dilithium_crystal>],[n],
+[n],[<libVulpes:libVulpesproductcrystal>]);
+
+recipes.addShapeless(<libVulpes:libVulpesproductcrystal>,[<mo:dilithium_crystal>]);

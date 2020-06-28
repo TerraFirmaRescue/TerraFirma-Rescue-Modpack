@@ -162,5 +162,12 @@ recipes.remove(<IC2:blockNuke>);
 // IC 2 iron plate
 recipes.addShapeless(<IC2:itemPlates:4>,[<terrafirmacraft:item.Wrought Iron Sheet>]);
 
-
 //todo: ban ic2 cables and add their needed recipes.
+
+// Reactor Quad
+recipes.remove(<IC2:reactorUraniumQuad:1>);
+MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 256, 400, 0, [10000],
+[<IC2:reactorUraniumSimple:1>*4,<terrafirmacraft:item.Wrought Iron Sheet>*4],
+[n],
+[null],
+[<IC2:reactorUraniumQuad:1>]);

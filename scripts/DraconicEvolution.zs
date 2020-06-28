@@ -53,7 +53,7 @@ recipes.remove(<DraconicEvolution:draconium:1>);
 // Dragon Egg
 MTUtilsGT.removeAllRecipes("gt.recipe.massfab", <minecraft:dragon_egg>);
 MTUtilsGT.addCustomRecipe("gt.recipe.massfab", false, 256, 320, 0, [10000],
-[<OpenBlocks:goldenegg>,<gregtech:gt.multiitem.technological:30198>*4,<gregtech:gt.multiitem.technological:12144>*4],
+[<gregtech:gt.meta.lens:8300>,<gregtech:gt.multiitem.technological:30198>*4],
 [<liquid:molten.draconium>*1440],
 [null],
 [<minecraft:dragon_egg>]);
