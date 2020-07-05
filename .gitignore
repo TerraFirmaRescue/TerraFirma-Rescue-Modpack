@@ -1,0 +1,30 @@
+# Blacklist everything by default
+*
+
+!/.gitignore
+!/.gitattributes
+
+# License files
+!/LICENSE*
+!/LICENSE_zh_CN*
+
+# Documentation files
+!/README.md
+!/supporterlist.txt
+!/supporterlistgold.txt
+
+# Changelogs
+!/changelog_en_US.txt
+!/changelog_zh_CN.txt
+
+# Lang file
+!/GregTech.lang
+
+# Resources
+!/resources/
+!/scripts/
+!/config/
+!/resourcepacks/
+
+/options.txt
+
