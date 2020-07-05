@@ -1,5 +1,5 @@
 # Blacklist everything by default
-*
+/*
 
 !/.gitignore
 !/.gitattributes
@@ -21,10 +21,7 @@
 !/GregTech.lang
 
 # Resources
-!/resources/
-!/scripts/
-!/config/
-!/resourcepacks/
-
-/options.txt
-
+!/resources/*
+!/scripts/*
+!/config/*
+!/resourcepacks/*
