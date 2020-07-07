@@ -47,4 +47,10 @@ val Cutter = <ore:craftingToolWireCutter>;
 val File = <ore:craftingToolFile>;
 val n = null;
 
+MTUtiolsGT.addCustomRecipe("gt.recipe.assember", false, 16, 64, [10000],
+[<gregtech:gt.multiitem.biology:1008>, <moegadd:FabricStrengthenedCircuitBoard>, <gregtech:gt.multitileentity:32612>, <moegadd:Microchip>4, <gregtech:gt.meta.wireFine:9175>4, <gregtech:gt.multiitem.technological:12021>],
+[<liquid:msc>*4000],
+[null],
+[<moegadd:BioCircuit>]);
+//sheng wu dian lu ban
 
