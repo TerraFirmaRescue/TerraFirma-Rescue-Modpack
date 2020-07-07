@@ -85,7 +85,7 @@ recipes.addShapeless(<gregtech:gt.multitileentity:28950>,[<tfctech:item.Steel Wi
 
 recipes.remove(<mo:isolinear_circuit>);
 
-recipes.addShaped(<tfctech:item.Circuit>,
+recipes.addShaped(<tfctech:item.Circuit>*3,
 [[<ore:dustSmallAnySiliconDioxide>,<ore:dyeGreen>,<ore:dustSmallAnySiliconDioxide>],
 [<gregtech:gt.meta.plateDouble:8216>,<gregtech:gt.meta.plateDouble:8216>,<gregtech:gt.meta.plateDouble:8216>],
 [<ore:dustSmallAnySiliconDioxide>,<tfctech:item.Rubber Mix>,<ore:dustSmallAnySiliconDioxide>]]);
@@ -136,44 +136,44 @@ recipes.addShapeless(<tfcprimitivetech:itemWoodenTwig>,[<terrafirmacraft:item.st
 MTUtilsGT.removeAllRecipes("gt.recipe.bath",<tfcprimitivetech:itemCelluloseFibers>);
 MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 40, 1000,[10000],
 [<terrafirmacraft:item.Reeds>],
-[<liquid:basepotashliquor>*250],
+[<liquid:basepotashliquor>*100],
 [n],
 [<tfcprimitivetech:itemCelluloseFibers>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 40, 1000,[10000],
 [<Forestry:woodPulp>],
-[<liquid:basepotashliquor>*250],
+[<liquid:basepotashliquor>*100],
 [n],
 [<tfcprimitivetech:itemCelluloseFibers>]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.drying", false, 16, 300, 1000,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.drying", false, 16, 100, 1000,[10000],
 [<tfcprimitivetech:itemCelluloseFibers>],
-[<liquid:basepotashliquor>*250],
+[n],
 [n],
 [<gregtech:gt.meta.dust:8216>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 100, 1000,[10000],
-[<gregapi:gt.integrated_circuit>*0,<gregtech:gt.meta.dust:8216>],
+[<gregapi:gt.integrated_circuit>*0,<gregtech:gt.meta.dust:8216>*3],
 [n],
 [n],
-[<minecraft:paper>]);
+[<minecraft:paper>*3]);
 
 //glue
 MTUtilsGT.addCustomRecipe("gt.recipe.fermenter", false, 16, 64 ,0,[10000],
 [<minecraft:dye:15>],
 [<liquid:water>*200],
 [null],
-[<tfctech:item.Glue>]);
+[<tfctech:item.Glue>*4]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.fermenter", false, 16, 64 ,0,[10000],
 [<minecraft:dye:15>],
 [<liquid:freshwater>*200],
 [null],
-[<tfctech:item.Glue>]);
+[<tfctech:item.Glue>*4]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.fermenter", false, 16, 64 ,0,[10000],
 [<minecraft:dye:15>],
 [<liquid:ic2distilledwater>*200],
 [null],
-[<tfctech:item.Glue>]);
+[<tfctech:item.Glue>*4]);
 

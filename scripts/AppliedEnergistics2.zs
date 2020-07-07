@@ -305,22 +305,18 @@ recipes.remove(<appliedenergistics2:item.ItemMultiPart:140>);
 MTUtilsGT.removeAllRecipes("gt.recipe.mixer",<appliedenergistics2:item.ItemMultiPart:140>);
 MTUtilsGT.removeAllRecipes("gt.recipe.mixer",<appliedenergistics2:tile.BlockQuartzGlass>);
 
-// Add FR Quartz glass
-mods.forestry.ThermionicFabricator.addCast(<appliedenergistics2:tile.BlockQuartzGlass>*8, [
-  [<gregtech:gt.meta.dustTiny:9139>,<ore:dustAnyQuartz>,<ore:dustAnyQuartz>],
-  [<ore:dustAnyQuartz>,<ore:dustAnyQuartz>,<ore:dustAnyQuartz>],
-  [<ore:dustAnyQuartz>,<ore:dustAnyQuartz>,<ore:dustAnyQuartz>]], 8000, <gregtech:gt.multiitem.technological:10201>);
-
 // Add GT Quartz glass
-for item in <ore:dustAnyQuartz>.items {
+var quartzdusts = [<appliedenergistics2:item.ItemMultiMaterial:2>,<appliedenergistics2:item.ItemMultiMaterial:8>, <gregtech:gt.meta.dust:8346>] as IItemStack[];
+
+for item in quartzdusts {
 MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
-[<gregapi:gt.integrated_circuit:1>*0,<gregtech:gt.multiitem.technological:10214>*0,item*4,<gregtech:gt.meta.dustTiny:9139>],
+[<gregapi:gt.integrated_circuit:1>*0,<gregtech:gt.multiitem.technological:10214>*0,item*4],
 [<liquid:glass>*8000],
 [n],
 [<appliedenergistics2:tile.BlockQuartzGlass>*8]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 144, 0, [10000],
-[<gregapi:gt.integrated_circuit:1>*0,<gregtech:gt.multiitem.technological:10207>*0,item*4,<gregtech:gt.meta.dustTiny:9139>],
+[<gregapi:gt.integrated_circuit:1>*0,<gregtech:gt.multiitem.technological:10207>*0,item*4],
 [<liquid:glass>*8000],
 [n],
 [<appliedenergistics2:item.ItemMultiPart:140>*4]);
@@ -509,3 +505,16 @@ recipes.addShaped(<appliedenergistics2:tile.BlockQuartzGrowthAccelerator>,
 
 // p2p-rf
 recipes.addShapeless(<appliedenergistics2:item.ItemMultiPart:466>,[<appliedenergistics2:item.ItemMultiPart:460>,<gregtech:gt.meta.plate:8660>]);
+
+// destroy and form panel
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:320>);
+recipes.addShaped(<appliedenergistics2:item.ItemMultiPart:320>,
+[[<appliedenergistics2:item.ItemMultiMaterial:8>,<appliedenergistics2:item.ItemMultiMaterial:43>,<appliedenergistics2:item.ItemMultiMaterial:8>],
+[<gregtech:gt.meta.plate:220>,<gregtech:gt.meta.plate:220>,<gregtech:gt.meta.plate:220>],
+[n,n,n]]);
+
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:300>);
+recipes.addShaped(<appliedenergistics2:item.ItemMultiPart:300>,
+[[<appliedenergistics2:item.ItemMultiMaterial:8>,<appliedenergistics2:item.ItemMultiMaterial:44>,<appliedenergistics2:item.ItemMultiMaterial:8>],
+[<gregtech:gt.meta.plate:220>,<gregtech:gt.meta.plate:220>,<gregtech:gt.meta.plate:220>],
+[n,n,n]]);

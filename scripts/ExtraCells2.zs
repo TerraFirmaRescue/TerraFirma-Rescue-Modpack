@@ -65,9 +65,11 @@ val tiscrew = <gregtech:gt.meta.screw:220>;
 val tirod = <gregtech:gt.meta.stick:220>;
 val tifoil = <gregtech:gt.meta.foil:220>;
 val ticasing = <gregtech:gt.meta.casingSmall:220>;
+val crcasing = <gregtech:gt.meta.casingSmall:240>;
 val alcable = <gregtech:gt.multitileentity:29016>;
 val qglass = <appliedenergistics2:tile.BlockQuartzGlass>;
 val redcab = <gregtech:gt.meta.wireFine:8660>;
+val ycab = <gregtech:gt.meta.wireFine:8709>;
 val logic = <appliedenergistics2:item.ItemMultiMaterial:22>;
 val engin = <appliedenergistics2:item.ItemMultiMaterial:24>;
 val calc = <appliedenergistics2:item.ItemMultiMaterial:24>;
@@ -78,6 +80,7 @@ val f1k   = <extracells:storage.component:4>;
 val f4k   = <extracells:storage.component:5>;
 val f16k  = <extracells:storage.component:6>;
 val f64k  = <extracells:storage.component:7>;
+val pump = <gregtech:gt.multiitem.technological:12024>;
 
 // ME Fluid Storage Units
 recipes.remove(<extracells:storage.component:4>);
@@ -113,4 +116,50 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1200, 100, 0, [10000],
 [n],
 [f64k]);
 
+// ME Fluid Storage casing
+recipes.remove(<extracells:storage.casing:1>);
+recipes.addShaped(<extracells:storage.casing:1>,
+[[qglass,Screwdriver,qglass],
+[crcasing,n,crcasing],
+[ycab,crcasing,ycab]]);
 
+// Adv casing
+recipes.remove(<extracells:storage.casing>);
+recipes.addShaped(<extracells:storage.casing>,
+[[<gregtech:gt.meta.plateGem:8300>,<extracells:storage.casing:1>,<gregtech:gt.meta.plateGem:8300>],
+[n,<gregtech:gt.meta.plateGem:8300>,n],
+[n,HHammer,n]]);
+
+// Interface
+recipes.remove(<extracells:ecbaseblock>);
+recipes.addShaped(<extracells:ecbaseblock>,
+[[null,pump,null],
+[<appliedenergistics2:item.ItemMultiMaterial:43>,<gregtech:gt.meta.machine:240>,<appliedenergistics2:item.ItemMultiMaterial:44>],
+[null,pump,null]]);
+
+// Output Bus
+recipes.remove(<extracells:part.base>);
+recipes.addShaped(<extracells:part.base>,
+[[<appliedenergistics2:item.ItemMultiMaterial:43>],
+[pump],
+[<gregtech:gt.meta.plate:220>]]);
+
+// Input Bus
+recipes.remove(<extracells:part.base:1>);
+recipes.addShaped(<extracells:part.base:1>,
+[[<appliedenergistics2:item.ItemMultiMaterial:44>],
+[pump],
+[<gregtech:gt.meta.plate:220>]]);
+
+// destroy and form panel
+recipes.remove(<extracells:part.base:6>);
+recipes.addShaped(<extracells:part.base:6>,
+[[<appliedenergistics2:item.ItemMultiMaterial:8>,<appliedenergistics2:item.ItemMultiMaterial:43>,<appliedenergistics2:item.ItemMultiMaterial:8>],
+[<gregtech:gt.meta.plate:240>,<gregtech:gt.meta.plate:240>,<gregtech:gt.meta.plate:240>],
+[n,pump,n]]);
+
+recipes.remove(<extracells:part.base:5>);
+recipes.addShaped(<extracells:part.base:5>,
+[[<appliedenergistics2:item.ItemMultiMaterial:8>,<appliedenergistics2:item.ItemMultiMaterial:44>,<appliedenergistics2:item.ItemMultiMaterial:8>],
+[<gregtech:gt.meta.plate:240>,<gregtech:gt.meta.plate:240>,<gregtech:gt.meta.plate:240>],
+[n,pump,n]]);

@@ -26,7 +26,11 @@ for i, x in x { }
 
 recipes.addShapeless(,[]);
 
-recipes.addShaped(,[[],[],[]]);
+recipes.remove();
+recipes.addShaped(,
+[[],
+[],
+[]]);
 
 MTUtilsGT.removeAllRecipes("gt.recipe.",);
 
@@ -234,3 +238,41 @@ mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rail:3>);
 
 // Remove firestone
 recipes.remove(<Railcraft:firestone.cut>);
+
+// Tanks, they are too op with current price
+recipes.remove(<Railcraft:machine.beta>);
+recipes.addShaped(<Railcraft:machine.beta>*4,
+[[<ore:plateWroughtIron>,<ore:plateStainlessSteel>,<ore:plateWroughtIron>],
+[n, HHammer, n],
+[<ore:plateWroughtIron>,<ore:plateStainlessSteel>,<ore:plateWroughtIron>]]);
+
+recipes.remove(<Railcraft:machine.beta:1>);
+recipes.addShaped(<Railcraft:machine.beta:1>*4,
+[[<ore:plateWroughtIron>,<ore:plateStainlessSteel>,<ore:plateWroughtIron>],
+[<minecraft:glass_pane>, HHammer, <minecraft:glass_pane>],
+[<ore:plateWroughtIron>,<ore:plateStainlessSteel>,<ore:plateWroughtIron>]]);
+
+recipes.remove(<Railcraft:machine.beta:2>);
+recipes.addShaped(<Railcraft:machine.beta:2>,
+[[n, n, n],
+[n, HHammer, n],
+[<ore:plateWroughtIron>,<gregtech:gt.multitileentity:26162>,<ore:plateWroughtIron>]]);
+
+// Steel Tanks
+recipes.remove(<Railcraft:machine.beta:13>);
+recipes.addShaped(<Railcraft:machine.beta:13>*2,
+[[<ore:plateSteel>,<ore:plateStainlessSteel>,<ore:plateSteel>],
+[n, HHammer, n],
+[<ore:plateSteel>,<ore:plateStainlessSteel>,<ore:plateSteel>]]);
+
+recipes.remove(<Railcraft:machine.beta:14>);
+recipes.addShaped(<Railcraft:machine.beta:14>*2,
+[[<ore:plateSteel>,<ore:plateStainlessSteel>,<ore:plateSteel>],
+[<minecraft:glass_pane>, HHammer, <minecraft:glass_pane>],
+[<ore:plateSteel>,<ore:plateStainlessSteel>,<ore:plateSteel>]]);
+
+recipes.remove(<Railcraft:machine.beta:15>);
+recipes.addShaped(<Railcraft:machine.beta:15>,
+[[n, n, n],
+[n, HHammer, n],
+[<ore:plateSteel>,<gregtech:gt.multitileentity:26161>,<ore:plateSteel>]]);
