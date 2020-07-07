@@ -70,7 +70,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 120, 100000000
 // Adamantium
 MTUtilsGT.removeAllRecipes("gt.recipe.fusionreactor",<gregtech:gt.meta.dustTiny:8761>);
 MTUtilsGT.addCustomRecipe("gt.recipe.fusionreactor", false, 2048, 120, 300000000,[10000],
-[<gregapi:gt.integrated_circuit:10>],
+[<gregapi:gt.integrated_circuit:10>*0],
 [<liquid:molten.naquadria>*32,<liquid:radon>*32],
 [<liquid:molten.adamantium>*32],
 [<gregtech:gt.meta.dustTiny:8761>]);
