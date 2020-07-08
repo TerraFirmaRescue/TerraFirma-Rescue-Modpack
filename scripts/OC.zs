@@ -54,7 +54,7 @@ val fw = <liquid:freshwater>;
 recipes.remove(<OpenComputers:item:32>);
 
 // OC Board
-recipes.addShapeless(<OpenComputers:item:32>,[<moegadd:EpoxyCircuitBoard>,<moegadd:EpoxyCircuitBoard>,<moegadd:EpoxyCircuitBoard>]);
+recipes.addShapeless(<OpenComputers:item:32>,[<gregtech:gt.multiitem.technological:30018>,<gregtech:gt.multiitem.technological:30018>,<gregtech:gt.multiitem.technological:30018>]);
 
 // Remove bugged
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multiitem.technological:30301>);

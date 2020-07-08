@@ -300,20 +300,17 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 720, 48 ,0,[10000],
 [<gregtech:gt.multiitem.technological:30106>]);
 
 /*---epoxy circuit board---*/
-MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 200 ,0,[10000],
-[<moegadd:EpoxyPlate>,<gregtech:gt.meta.foil:290>],
+MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 100 ,0,[10000],
+[<gregtech:gt.multiitem.technological:30018>,<gregtech:gt.meta.foil:290>],
 [<liquid:sulfuricacid>*125],
 [n],
 [<moegadd:EpoxyCircuitBoard>]);
 
-/*---Platinum circuit mainboard--*/
-MTUtilsGT.removeAllRecipes("gt.recipe.press", <gregtech:gt.multiitem.technological:30006>);
-MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 64 ,0,[10000],
-[<moegadd:EpoxyCircuitBoard>,<gregtech:gt.multiitem.technological:30005>],
+MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1 ,0,[10000],
+[<moegadd:EpoxyCircuitBoard>],
 [n],
 [n],
-[<gregtech:gt.multiitem.technological:30006>]);
-
+[<gregtech:gt.multiitem.technological:30018>]);
 
 /*--Mainframe Clusters--*/
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 1000 ,0,[10000],
@@ -909,7 +906,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 512, 200 ,0,[10000],
 [<moegadd:IntermediateProcessorMainboard>]);
 //2
 MTUtilsGT.addCustomRecipe("gt.recipe.assembler", false, 1024, 400 ,0,[10000],
-[<moegadd:FabricStrengthenedCircuitBoard>,<gregtech:gt.multiitem.technological:30005>,<moegadd:PatchTransistor>*64,<moegadd:SMDResistor>*64,<moegadd:PatchDiode>*64,<moegadd:PatchCapacitor>*64,<moegadd:Mainframe4>*0],
+[<gregtech:gt.multiitem.technological:30020>,<gregtech:gt.multiitem.technological:30005>,<moegadd:PatchTransistor>*64,<moegadd:SMDResistor>*64,<moegadd:PatchDiode>*64,<moegadd:PatchCapacitor>*64,<moegadd:Mainframe4>*0],
 [<liquid:molten.solderingalloy>*576],
 [n],
 [<moegadd:AdvancedProcessorMainboard>]);
@@ -1073,6 +1070,12 @@ MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multiitem.technolo
 /**T1 GT Circuit*/
 MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 64 ,0,[10000],
 [<tfctech:item.Circuit>,<gregtech:gt.multiitem.technological:30001>,<gregtech:gt.multiitem.technological:30101>*4],
+[n],
+[n],
+[<gregtech:gt.multiitem.technological:30201>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 64 ,0,[10000],
+[<gregtech:gt.multiitem.technological:30002>,<gregtech:gt.multiitem.technological:30101>*4],
 [n],
 [n],
 [<gregtech:gt.multiitem.technological:30201>]);
