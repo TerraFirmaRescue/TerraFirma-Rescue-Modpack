@@ -50,10 +50,15 @@ val n = null;
 // Biocircuit
 MTUtilsGT.removeAllRecipes("gt.recipe.biolab",<moegadd:BioCircuit>);
 MTUtilsGT.addCustomRecipe("gt.recipe.biolab", false, 8192, 1000, 100000000, [10000],
-[<gregtech:gt.multiitem.biology:1008>, <moegadd:FabricStrengthenedCircuitBoard>, <gregtech:gt.multitileentity:32612>, <moegadd:Microchip>*4, <gregtech:gt.meta.wireFine:9175>*4, <gregtech:gt.multiitem.technological:12021>],
+[<gregtech:gt.multiitem.biology:1008>, <gregtech:gt.multiitem.technological:30500>, <gregtech:gt.multitileentity:32612>, <moegadd:Microchip>*8, <gregtech:gt.meta.wireFine:9175>*32, <gregtech:gt.multiitem.technological:12021>],
 [<liquid:msc>*40000],
 [null],
 [<moegadd:BioCircuit>]);
+
+//MSC
+MTUtilsGT.addCustomRecipe("gt.recipe.cryomixer", false, 64, 640, 0, [10000],
+[<gregapi:gt.integrated_circuit>*0],[<liquid:mscsupplement>*100,<liquid:mscbasalmedium>*100],
+[<liquid:msc>*200],[n]);
 
 /*
 //jing mi ji xie bi
@@ -124,7 +129,7 @@ recipes.addShaped(<gendustry:Sampler>,
 [<gendustry:GeneticsProcessor>,<gregtech:gt.meta.machine:460>,<gendustry:GeneticsProcessor>],
 [<gregtech:gt.meta.plate:140>,<ore:MF6>,<gregtech:gt.meta.plate:140>]]);
 //ji yin cai yang ji
-}
+
 
 recipes.remove(<gendustry:MutagenProducer>);
 recipes.addShaped(<gendustry:MutagenProducer>,
@@ -160,7 +165,7 @@ recipes.addShaped(<Genetics:machine>,
 
 recipes.remove(<Genetics:advMachine>);
 recipes.addShaped(<Genetics:advMachine>,
-[[,<minecraft:blaze_rod>,],
+[[n,<minecraft:blaze_rod>,n],
 [<gregtech:gt.multiitem.biology:1010>,<gregtech:gt.meta.machine:8794>,<gregtech:gt.multiitem.biology:1010>],
 [<minecraft:blaze_rod>,<ore:MF6>, <minecraft:blaze_rod>]]);
 //ji yin pin jie qi
@@ -168,7 +173,7 @@ recipes.addShaped(<Genetics:advMachine>,
 recipes.remove(<Genetics:machine:2>);
 recipes.addShaped(<Genetics:machine:2>,
 [[<gregtech:gt.multitileentity:31000>,<ore:MF3>,<minecraft:glass>],
-[<minecraft:glass>,<<gregtech:gt.meta.machine:8794>,<minecraft:glass>],
+[<minecraft:glass>,<gregtech:gt.meta.machine:8794>,<minecraft:glass>],
 [<gregtech:gt.meta.springSmall:8663>,<gregtech:gt.meta.springSmall:8663>,<gregtech:gt.meta.springSmall:8663>]]);
 //PCR yi
 
@@ -186,6 +191,7 @@ recipes.addShaped(<Genetics:machine:1>,
 [<Genetics:misc:2>,<ore:MF6>,<Genetics:misc:2>]]);
 //ce xu yi
 
+/*
 recipes.remove();
 recipes.addShaped(,
 [[],
@@ -199,3 +205,4 @@ recipes.addShaped(,
 [],
 []]);
 //
+*/
