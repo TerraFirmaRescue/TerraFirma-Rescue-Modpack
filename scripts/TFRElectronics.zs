@@ -1068,11 +1068,11 @@ MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multiitem.technolo
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multiitem.technological:30103>);
 
 /**T1 GT Circuit*/
-MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 64 ,0,[10000],
-[<tfctech:item.Circuit>,<gregtech:gt.multiitem.technological:30001>,<gregtech:gt.multiitem.technological:30101>*4],
+MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 32 ,0,[10000],
+[<tfctech:item.Circuit>,<gregtech:gt.multiitem.technological:30001>],
 [n],
 [n],
-[<gregtech:gt.multiitem.technological:30201>]);
+[<gregtech:gt.multiitem.technological:30002>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.press", false, 16, 64 ,0,[10000],
 [<gregtech:gt.multiitem.technological:30002>,<gregtech:gt.multiitem.technological:30101>*4],

@@ -1561,3 +1561,6 @@ recipes.addShapeless(<terrafirmacraft:item.Diamond:3>*2,[<terrafirmacraft:item.D
 recipes.addShapeless(<terrafirmacraft:item.Diamond:2>*2,[<terrafirmacraft:item.Diamond:3>,HHammer]);
 recipes.addShapeless(<terrafirmacraft:item.Diamond:1>*2,[<terrafirmacraft:item.Diamond:2>,HHammer]);
 recipes.addShapeless(<terrafirmacraft:item.Diamond>*2,[<terrafirmacraft:item.Diamond:1>,HHammer]);
+
+//Fushi
+recipes.addShapeless(<gregtech:gt.meta.dust:9165>,[<gregtech:gt.meta.dust:9139>,File]);
