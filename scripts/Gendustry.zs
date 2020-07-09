@@ -171,19 +171,24 @@ recipes.addShaped(<Genetics:machine:1>,
 [<Genetics:misc:2>,<ore:MF6>,<Genetics:misc:2>]]);
 //ce xu yi
 
-/*
-recipes.remove();
-recipes.addShaped(,
-[[],
-[],
-[]]);
-//
 
-recipes.remove();
-recipes.addShaped(,
-[[],
-[],
-[]]);
-//
-*/
+recipes.remove(<Genetics:machine:3>);
+recipes.addShaped(<Genetics:machine:3>,
+[[<gregtech:gt.multiitem.biology:1010>,<MF5>,Wrench],
+[<gregtech:gt.meta.dust:8028>,<gregtech:gt.meta.machine:8794>,<gregtech:gt.meta.dust:8028>],
+[<gregtech:gt.meta.dust:790>,<gregtech:gt.multiitem.technological:12105>,<gregtech:gt.meta.dust:790>]]);
+//ji yin zhu she qi
 
+recipes.remove(<Genetics:labMachine:1>);
+recipes.addShaped(<Genetics:labMachine:1>,
+[[<gregtech:gt.meta.lens:8001>,<Forestry:beealyzer>,<gregtech:gt.meta.lens:8001>],
+[<MF6>,<gregtech:gt.multitileentity:20545>,Wrench],
+[<Genetics:misc:1>,<gregtech:gt.meta.machine:8794>,<Genetics:misc:1>]]);
+//fen xi yi
+
+recipes.remove(<Genetics:labMachine:4>);
+recipes.addShaped(<Genetics:labMachine:4>,
+[[<gregtech:gt.multitileentity:31002>,<gregtech:gt.meta.plateGem:8001>,<gregtech:gt.multitileentity:31000>],
+[<gregtech:gt.meta.dust:9802>,<gregtech:gt.meta.machine:8794>,<gregtech:gt.meta.dust:9802>],
+[<gregtech:gt.meta.springSmall:8663>,<ore:MF5>,<gregtech:gt.meta.springSmall:8663>]]);
+//shi ying xing tiao zheng qi
