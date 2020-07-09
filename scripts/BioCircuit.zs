@@ -93,6 +93,11 @@ MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 2, 0, [10000],
 [<Forestry:beeQueenGE>*1],[n],
 [n],[<gregtech:gt.meta.dustTiny:9700>]);
 
+//BoneMarrow
+MTUtilsGT.addCustomRecipe("gt.recipe.juicer", false, 256, 4096, 0, [10000],
+[<minecraft:bone>*1],[n],
+[<liquid:bonemarrow>*1],[<minecraft:dye:15>*2]);
+
 /*
 //jing mi ji xie bi
 for aMF5 in <ore:MF5>.items{
