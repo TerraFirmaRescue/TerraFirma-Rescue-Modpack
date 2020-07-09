@@ -80,6 +80,18 @@ MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 16, 64, 0, [10000],
 //Egg
 recipes.addShapeless(<minecraft:egg>,[<terrafirmacraft:item.egg>,File]);
 
+//Meat from bees
+MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 2, 0, [10000],
+[<Forestry:beePrincessGE>*1],[n],
+[n],[<gregtech:gt.meta.dustTiny:9700>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 2, 0, [10000],
+[<Forestry:beeDroneGE>*1],[n],
+[n],[<gregtech:gt.meta.dustTiny:9700>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 2, 0, [10000],
+[<Forestry:beeQueenGE>*1],[n],
+[n],[<gregtech:gt.meta.dustTiny:9700>]);
 
 /*
 //jing mi ji xie bi
