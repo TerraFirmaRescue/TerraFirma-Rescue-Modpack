@@ -94,9 +94,9 @@ MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 2, 0, [10000],
 [n],[<gregtech:gt.meta.dustTiny:9700>]);
 
 //BoneMarrow
-MTUtilsGT.addCustomRecipe("gt.recipe.juicer", false, 256, 4096, 0, [10000],
-[<minecraft:bone>*1],[n],
-[<liquid:bonemarrow>*1],[<minecraft:dye:15>*2]);
+MTUtilsGT.addCustomRecipe("gt.recipe.squeezer", false, 256, 4096, 0, [10000],
+[<minecraft:bone>],[n],
+[<liquid:bonemarrow>],[<minecraft:dye:15>*2]);
 
 /*
 //jing mi ji xie bi
