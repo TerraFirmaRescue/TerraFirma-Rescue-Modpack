@@ -21,9 +21,8 @@
 !/GregTech.lang
 
 # Resources
-!/resources/*
-!/scripts/*
-!/resourcepacks/*
-!/config/*
-/config/recipes/*
-/config/NEI/*
+!/resources
+!/scripts
+!/resourcepacks/TFR Theme Texture
+!/modpack
+!/config/
