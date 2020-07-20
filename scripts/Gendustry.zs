@@ -174,7 +174,7 @@ recipes.addShaped(<Genetics:machine:1>,
 
 recipes.remove(<Genetics:machine:3>);
 recipes.addShaped(<Genetics:machine:3>,
-[[<gregtech:gt.multiitem.biology:1010>,<MF5>,Wrench],
+[[<gregtech:gt.multiitem.biology:1010>,<ore:MF5>,Wrench],
 [<gregtech:gt.meta.dust:8028>,<gregtech:gt.meta.machine:8794>,<gregtech:gt.meta.dust:8028>],
 [<gregtech:gt.meta.dust:790>,<gregtech:gt.multiitem.technological:12105>,<gregtech:gt.meta.dust:790>]]);
 //ji yin zhu she qi
@@ -182,7 +182,7 @@ recipes.addShaped(<Genetics:machine:3>,
 recipes.remove(<Genetics:labMachine:1>);
 recipes.addShaped(<Genetics:labMachine:1>,
 [[<gregtech:gt.meta.lens:8001>,<Forestry:beealyzer>,<gregtech:gt.meta.lens:8001>],
-[<MF6>,<gregtech:gt.multitileentity:20545>,Wrench],
+[<ore:MF6>,<gregtech:gt.multitileentity:20545>,Wrench],
 [<Genetics:misc:1>,<gregtech:gt.meta.machine:8794>,<Genetics:misc:1>]]);
 //fen xi yi
 
