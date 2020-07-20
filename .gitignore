@@ -23,5 +23,7 @@
 # Resources
 !/resources/*
 !/scripts/*
-!/config/*
 !/resourcepacks/*
+!/config/*
+/config/recipes/*
+/config/NEI/*
