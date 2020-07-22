@@ -53,8 +53,8 @@ val tag0 = <gregapi:gt.integrated_circuit>;
 
 /* Remove Recipes */
 
-
-
+/*
+Deprecated TFC.36
 //TFCblock
 mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock>, <terrafirmacraft:item.Bismuth Double Sheet>,<terrafirmacraft:item.Bismuth Double Sheet>, "block", 7);
 mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock:1>, <terrafirmacraft:item.Bismuth Bronze Double Sheet>,<terrafirmacraft:item.Bismuth Bronze Double Sheet>, "block", 7);
@@ -101,6 +101,8 @@ recipes.remove(<terrafirmacraft:item.MetalNugget:13>);recipes.remove(<terrafirma
 recipes.remove(<terrafirmacraft:item.MetalNugget:16>);recipes.remove(<terrafirmacraft:item.MetalNugget:17>);recipes.remove(<terrafirmacraft:item.MetalNugget:18>);
 recipes.remove(<terrafirmacraft:item.MetalNugget:19>);recipes.remove(<terrafirmacraft:item.MetalNugget:20>);recipes.remove(<terrafirmacraft:item.MetalNugget:21>);
 recipes.remove(<terrafirmacraft:item.MetalNugget:22>);
+
+*/
 
 //delete ends
 
@@ -158,6 +160,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.freezer", false, 16, 128, 0, [10000],
 [null],
 [<tfccellars:Ice>]);
 
+/*Deprecated TFC.36
 recipes.addShapeless(<terrafirmacraft:item.Wrought Iron Ingot>,
 [<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,
 <terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,
@@ -167,6 +170,7 @@ recipes.addShapeless(<terrafirmacraft:item.Steel Ingot>,
 [<terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>,
 <terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>,
 <terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>]);
+*/
 
 //template
 /*
@@ -236,8 +240,8 @@ for i, chest in tfcChests {
 var p = singlePlanks[i];
 recipes.remove(chest);
 recipes.addShaped(chest,
-[[<gregtech:gt.meta.ring:8221>,p,p],
-[<terrafirmacraft:item.stick>,SHammer,n],
+[[p,p,p],
+[<ore:stickWood>,SHammer,<ore:stickWood>],
 [p,p,p]]);
 
 }
