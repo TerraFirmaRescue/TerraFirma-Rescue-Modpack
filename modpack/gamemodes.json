@@ -3,6 +3,6 @@
     "normal",
     "expert"
   ],
-  "default": "expert",
+  "default": "normal",
   "common": "common"
 }
