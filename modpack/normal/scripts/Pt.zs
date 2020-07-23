@@ -50,20 +50,6 @@ val w = <liquid:water>*900;
 val dw = <liquid:ic2distilledwater>*900;
 val fw = <liquid:freshwater>*900;
 
-
-/*---------remove---------*/
-MTUtilsGT.removeAllRecipes("gt.recipe.crusher",<gregtech:gt.meta.crushed:9116>);
-MTUtilsGT.removeAllRecipes("gt.recipe.crusher",<gregtech:gt.meta.crushed:770>);
-MTUtilsGT.removeAllRecipes("gt.recipe.bath",<gregtech:gt.meta.crushedPurified:9116>);
-MTUtilsGT.removeAllRecipes("gt.recipe.bath",<gregtech:gt.meta.crushedPurifiedTiny:9116>);
-MTUtilsGT.removeAllRecipes("gt.recipe.bath",<gregtech:gt.meta.crushedPurified:770>);
-MTUtilsGT.removeAllRecipes("gt.recipe.bath",<gregtech:gt.meta.crushedPurifiedTiny:770>);
-MTUtilsGT.removeAllRecipes("gt.recipe.sluice",<gregtech:gt.meta.crushedPurified:9116>);
-MTUtilsGT.removeAllRecipes("gt.recipe.sluice",<gregtech:gt.meta.crushedPurifiedTiny:9116>);
-MTUtilsGT.removeAllRecipes("gt.recipe.sluice",<gregtech:gt.meta.crushedPurified:770>);
-MTUtilsGT.removeAllRecipes("gt.recipe.sluice",<gregtech:gt.meta.crushedPurifiedTiny:770>);
-/*---------end---------*/
-
 //Generification
 MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
 [<gregtech:gt.meta.ore.normal.default:9116>],
