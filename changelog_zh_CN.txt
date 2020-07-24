@@ -1,7 +1,7 @@
 ﻿3.3.2.1
 模组变化:
 升级TFC0.79.37-TFR
-升级AdvancedRockery2.0.1-TFR
+升级AdvancedRockery2.0.0.02-TFR
 
 内容变化
 新增普通模式

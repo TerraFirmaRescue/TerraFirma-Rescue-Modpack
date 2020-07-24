@@ -378,4 +378,14 @@ Shears.add(<terrafirmacraft:item.shears>);
 <ore:earlyBurningBox>.addAll(<ore:earlyBurningBoxLiquid>);
 <ore:earlyBurningBox>.addAll(<ore:earlyBurningBoxGas>);
 
+<ore:itemTuyere>.add(<terrafirmacraft:item.Copper Tuyere>);
+<ore:itemTuyere>.add(<terrafirmacraft:item.Bronze Tuyere>);
+<ore:itemTuyere>.add(<terrafirmacraft:item.Black Bronze Tuyere>);
+<ore:itemTuyere>.add(<terrafirmacraft:item.Bismuth Bronze Tuyere>);
+<ore:itemTuyere>.add(<terrafirmacraft:item.Wrought Iron Tuyere>);
+<ore:itemTuyere>.add(<terrafirmacraft:item.Steel Tuyere>);
+<ore:itemTuyere>.add(<terrafirmacraft:item.Black Steel Tuyere>);
+<ore:itemTuyere>.add(<terrafirmacraft:item.Red Steel Tuyere>);
+<ore:itemTuyere>.add(<terrafirmacraft:item.Blue Steel Tuyere>);
+
 
