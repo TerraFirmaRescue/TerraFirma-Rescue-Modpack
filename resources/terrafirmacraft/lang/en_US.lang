@@ -2086,9 +2086,9 @@ tile.Ice.name=Ice
 #== Misc Items ==
 item.arrow.name=Arrow
 item.book.name=Book
-item.stick.name=Stick(TFC)
-item.coal.coal.name=Coal(TFC)
-item.coal.charcoal.name=Charcoal(TFC)
+item.stick.name=Stick
+item.coal.coal.name=Coal
+item.coal.charcoal.name=Charcoal
 item.Fertilizer.name=Fertilizer
 item.Reeds.name=Reeds
 

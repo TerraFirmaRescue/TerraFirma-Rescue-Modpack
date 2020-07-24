@@ -1,0 +1,10 @@
+tile.BellowsDriver.name=波紋管驅動器
+tile.SteamBoiler.name=蒸汽鍋爐
+tile.PotteryKiln.name=陶窯
+tile.PotteryKilnChamber.name=陶器窯室
+
+item.BellowsDriver.name=波紋管驅動器
+item.SteamBoiler.name=蒸汽鍋爐
+
+container.PotteryKiln.name=陶窯
+container.PotteryKilnChamber.name=陶器窯室

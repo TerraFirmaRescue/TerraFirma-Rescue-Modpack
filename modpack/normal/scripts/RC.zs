@@ -118,10 +118,10 @@ recipes.addShaped(<Railcraft:machine.alpha:8>,
 
 //steam engine minke
 recipes.remove(<Railcraft:machine.beta:7>);
-recipes.addShaped(<Railcraft:machine.beta:7>,
-[[Wrench,n,HHammer],
-[<ore:gearTin>,<minecraft:piston>,<gregtech:gt.meta.ring:500>],
-[<ore:plateGold>,<minecraft:brick_block>,Screwdriver]]);
+recipes.addShaped(<Railcraft:machine.beta:7>*2,
+[[<tfctech:item.Copper Wire>,<ore:gearCopper>,<tfctech:item.Copper Wire>],
+[<tfctech:item.Copper Wire>,Wrench,<tfctech:item.Copper Wire>],
+[<terrafirmacraft:item.Fire Brick:1>,<minecraft:piston>,<terrafirmacraft:item.Fire Brick:1>]]);
 
 //solid burner
 recipes.remove(<Railcraft:machine.beta:5>);

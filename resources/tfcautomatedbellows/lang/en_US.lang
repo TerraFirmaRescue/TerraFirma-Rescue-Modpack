@@ -1,0 +1,26 @@
+tile.BellowsDriver.name=Bellows Driver
+tile.SteamBoiler.name=Steam Boiler
+tile.PotteryKiln.name=Pottery Kiln
+tile.PotteryKilnChamber.name=Pottery Kiln Chamber
+tile.WaterFilter.name=Water Filter
+
+item.BellowsDriver.name=Bellows Driver
+item.SteamBoiler.name=Steam Boiler
+
+item.bismuthBronzeShield.name=Bismuth Bronze Shield
+item.blackBronzeShield.name=Black Bronze Shield
+item.blackSteelShield.name=Black Steel Shield
+item.blueSteelShield.name=Blue Steel Shield
+item.bronzeShield.name=Bronze Shield
+item.copperShield.name=Copper Shield
+item.wroughtIronShield.name=Wrought Iron Shield
+item.redSteelShield.name=Red Steel Shield
+item.steelShield.name=Steel Shield
+item.woodenShield.name=Wooden Shield
+
+item.shepherdStaff.name=Shepherd Staff
+
+container.PotteryKiln.name=Pottery Kiln
+container.PotteryKilnChamber.name=Pottery Kiln Chamber
+
+gui.plans.metalshield=Metal Shield

@@ -1,0 +1,42 @@
+## 汉化者= 233Isaac
+
+tile.BellowsDriver.name=风箱驱动器
+tile.SteamBoiler.name=蒸汽炉
+tile.PotteryKiln.name=陶瓷窑
+tile.PotteryKilnChamber.name=陶瓷窑室
+tile.WaterFilter.name=滤水器
+
+item.BellowsDriver.name=风箱驱动器
+item.SteamBoiler.name=蒸汽炉
+
+item.bismuthBronzeShield.name=铋青铜盾
+item.blackBronzeShield.name=黑青铜盾
+item.blackSteelShield.name=黑钢盾
+item.blueSteelShield.name=蓝钢盾
+item.bronzeShield.name=青铜盾
+item.copperShield.name=铜盾
+item.wroughtIronShield.name=锻铁盾
+item.redSteelShield.name=红钢盾
+item.steelShield.name=钢盾
+item.woodenShield.name=木盾
+
+item.shepherdStaff.name=牧民长鞭
+
+container.PotteryKiln.name=陶瓷窑
+container.PotteryKilnChamber.name=陶瓷窑室
+
+gui.plans.metalshield=铁盾
+
+gui.seconds delay=秒延迟
+gui.Running=燃料:
+gui.Water=|延迟:
+gui.Running=运行
+gui.Hours remaining=剩余小时数:
+gui.Chamber=陶瓷窑室:
+gui.Processing=烧窑中
+
+gui.steam0=蒸汽炉含有燃料，运行良好（驱动器需要有红石信号）.
+gui.steam1=蒸汽炉正在运行，低燃料.
+gui.steam2=蒸汽炉有燃料并准备工作.
+gui.steam3=蒸汽炉需要清水.
+gui.steam4=把原木或煤放进陶瓷窑.

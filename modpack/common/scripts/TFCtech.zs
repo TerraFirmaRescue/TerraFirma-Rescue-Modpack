@@ -110,6 +110,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 40, 1000,[10000],
 
 //jia jian shui
 mods.Terrafirmacraft.Barrel.addItemFluidConversion(<liquid:basepotashliquor> * 5000, <gregtech:gt.meta.dust:8200>, <liquid:freshwater> * 5000, 0, false, 0);
+mods.Terrafirmacraft.Barrel.addItemFluidConversion(<tfcprimitivetech:itemCelluloseFibers>, <liquid:waste>*100, <terrafirmacraft:item.Reeds>,  <liquid:basepotashliquor> * 100, 0, true, 24);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 100, 1000,[10000],
 [<gregtech:gt.meta.dust:8200>, tag0*0],

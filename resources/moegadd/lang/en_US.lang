@@ -1,0 +1,251 @@
+item.Simpleresistance.name=Simple Resistance
+item.Simpletransistor.name=Simple Transistor
+item.SimpleCapacitance.name=Simple Capacitance
+item.SeedCrystalSilicon.name=Seed Crystal Silicon
+item.PolycrystallineSilicon.name=Poly Crystalline Silicon
+item.RawWafer.name=Raw Wafer
+
+item.PhotomaskRaw.name=Raw Photomask
+item.PhotomaskWork.name=Working Photomask
+item.PhotomaskCentral.name=Central Photomask
+
+item.PhotomaskControl1.name=Low Tier Control Photomask
+item.PhotomaskControl2.name=Intermediate Tier Control Photomask
+item.PhotomaskControl3.name=High Tier Control Photomask
+item.PhotomaskControl4.name=Super Tier Control Photomask
+
+item.PhotomaskFilm1.name=Low Tier PhotomaskFilm
+item.PhotomaskFilm2.name=Intermediate Tier PhotomaskFilm
+item.PhotomaskFilm3.name=High Tier PhotomaskFilm
+item.PhotomaskFilm4.name=Super Tier PhotomaskFilm
+
+item.Wafer30wm.name=Wafer(30 micron process)
+item.Wafer20wm.name=Wafer(20 micron process)
+item.Wafer10wm.name=Wafer(10 micron process)
+item.Wafer1wm.name=Wafer(1 micron process)
+item.Wafer200nm.name=Wafer(200 nano process)
+item.Wafer60nm.name=Wafer(60 nano process)
+item.Wafer20nm.name=Wafer(20 nano process)
+item.CleanedWafer1wm.name=Cleaned Wafer(1 micron process)
+item.CleanedWafer200nm.name=Cleaned Wafer(200 nano process)
+item.CleanedWafer60nm.name=Cleaned Wafer(60 nano process)
+item.CleanedWafer20nm.name=Cleaned Wafer(20 nano process)
+item.MonolayerWafer1wm.name=Monolayer Wafer(1 micron process)
+item.MonolayerWafer200nm.name=Monolayer Wafer(200 nano process)
+item.MonolayerWafer60nm.name=Monolayer Wafer(60 nano process)
+item.MonolayerWafer20nm.name=Monolayer Wafer(20 nano process)
+item.MultilayerWafer1wm.name=Multilayer Wafer(1 micron process)
+item.MultilayerWafer200nm.name=Multilayer Wafer(200 nano process)
+item.MultilayerWafer60nm.name=Multilayer Wafer(60 nano process)
+item.MultilayerWafer20nm.name=Multilayer Wafer(20 nano process)
+item.IntegratedCircuit256MHz.name=Integrated Circuit(256MHz)
+item.IntegratedCircuit512MHz.name=Integrated Circuit(512MHz)
+item.IntegratedCircuit1GHz.name=Integrated Circuit(1GHz)
+item.IntegratedCircuit2GHz.name=Integrated Circuit(2GHz)
+
+item.CPU_256MHz_2.name=Dual-core 256MHz CPU(512MHz)
+item.CPU_256MHz_4.name=Quad-core 256MHz CPU(1GHz)
+item.CPU_256MHz_8.name=Eight-core 256MHz CPU(2GHz)
+item.CPU_256MHz_16.name=Sixteen-core 256MHz CPU(4GHz)
+
+item.CPU_512MHz_2.name=Dual-core 512MHz CPU(1GHz)
+item.CPU_512MHz_4.name=Quad-core 512MHz CPU(2GHz)
+item.CPU_512MHz_8.name=Eight-core 512MHz CPU(4GHz)
+item.CPU_512MHz_16.name=Sixteen-core 512MHz CPU(8GHz)
+
+item.CPU_1GHz_2.name=Dual-core 1GHz CPU(2GHz)
+item.CPU_1GHz_4.name=Quad-core 1GHz CPU(4GHz)
+item.CPU_1GHz_8.name=Eight-core 1GHz CPU(8GHz)
+item.CPU_1GHz_16.name=Sixteen-core 1GHz CPU(16GHz)
+
+item.CPU_2GHz_2.name=Dual-core 2GHz CPU(4GHz)
+item.CPU_2GHz_4.name=Quad-core 2GHz CPU(8GHz)
+item.CPU_2GHz_8.name=Eight-core 2GHz CPU(16GHz)
+item.CPU_2GHz_16.name=Sixteen-core 2GHz CPU(32GHz)
+
+item.CCL.name=Copper Clad Laminate
+item.MemoryCell128M.name=Memory Cell(128M)
+item.MemoryCell256M.name=Memory Cell(256M)
+item.MemoryCell512M.name=Memory Cell(512M)
+item.MemoryCell1G.name=Memory Cell(1G)
+
+item.RAM_128M_2.name=RAM 128M*2
+item.RAM_128M_4.name=RAM 128M*4
+item.RAM_128M_8.name=RAM 128M*8
+item.RAM_128M_16.name=RAM 128M*16
+
+item.RAM_256M_2.name=RAM 256M*2
+item.RAM_256M_4.name=RAM 256M*4
+item.RAM_256M_8.name=RAM 256M*8
+item.RAM_256M_16.name=RAM 256M*16
+
+item.RAM_512M_2.name=RAM 512M*2
+item.RAM_512M_4.name=RAM 512M*4
+item.RAM_512M_8.name=RAM 512M*8
+item.RAM_512M_16.name=RAM 512M*16
+
+item.RAM_1G_2.name=RAM 1G*2
+item.RAM_1G_4.name=RAM 1G*4
+item.RAM_1G_8.name=RAM 1G*8
+item.RAM_1G_16.name=RAM 1G*16
+
+item.SMDResistor.name=Chip Resistor
+item.PatchCapacitor.name=Patch Capacitor
+item.PatchDiode.name=Patch Diode
+item.PatchTransistor.name=Patch Transistor
+
+item.EpoxyPlate.name=Epoxy Plate
+item.EpoxyCircuitBoard.name=Epoxy Circuit Board
+item.FabricStrengthenedCircuitBoard.name=Fabric Strengthened Circuit Board
+item.BioCircuitBoard.name=BioCircuit Board
+item.BasicProcessorMainboard.name=Basic Motherboard
+item.IntermediateProcessorMainboard.name=Intermediate Motherboard
+item.AdvancedProcessorMainboard.name=Advanced Motherboard
+
+item.Mainframe1.name=Mainframe Level 1
+item.Mainframe2.name=Mainframe Level 2
+item.Mainframe3.name=Mainframe Level 3
+item.Mainframe4.name=Mainframe Level 4
+item.Mainframe5.name=Mainframe Level 5
+item.Mainframe6.name=Mainframe Level 6
+item.Mainframe7.name=Mainframe Level 7
+
+item.StarPlatinum.name=Star Platinum
+
+item.CrushedPlatinumOre.name=Crushed Platinum Ore
+item.WashedPlatinumOre.name=Washed Platinum Ore
+item.dustAmmoniumChloroPlatate.name=Ammonium Chloro Platate Dust
+item.dustPalladiumDichloride.name=Palladium Dichlorid Dust
+item.dustLeachingResidueRhIrOsRu.name=Leaching Residue Dust (Rh,Ir,Os,Ru)
+item.dustLeachingResidueIrOsRu.name=Leaching Residue Dust (Ir,Os,Ru)
+item.dustLeachingResidueIr.name=Leaching Residue Dust (Ir)
+item.dustRhodiumSulfate.name=Rhodium Sulfate Dust
+item.dustSodiumPeroxide.name=Sodium Peroxide Dust
+item.dustAmmoniumHexachloroOsmium.name=Ammonium Hexachloro Osmium Dust
+item.dustAmmoniumHexachloroRuthenium.name=Ammonium Hexachloro Ruthenium Dust
+item.dustAmmoniumIridiumChloride.name=Ammonium Iridium Chloride Dust
+item.dustIridiumOxide.name=Iridium Oxide Dust
+item.dustRhodiumHydroxide.name=Rhodium Hydroxide Dust
+item.dustAmmoniumChloroRhodium.name=Ammonium Chloro Rhodium Dust
+item.dustNH4Cl.name=Ammonium Chloride Dust
+item.dustSodiumOsmiumHexachloride.name=Osmium Sodium Hexachloride Dust
+
+item.CrushedPlacerPlatinumOre.name=CrushedPlacerPlatinumOre
+item.WashedPlacerPlatinumOre.name=WashedPlacerPlatinumOre
+item.CrushedBraggiteOre.name=CrushedBraggiteOre
+item.WashedBraggiteOre.name=WashedBraggiteOre
+item.CrushedAtokiteOre.name=CrushedAtokiteOre
+item.WashedAtokiteOre.name=WashedAtokiteOre
+item.CrushedMasloviteOre.name=CrushedMasloviteOre
+item.WashedMasloviteOre.name=WashedMasloviteOre
+item.CrushedOsmiridiumOre.name=CrushedOsmiridiumOre
+item.WashedOsmiridiumOre.name=WashedOsmiridiumOre
+
+#Bio circuit related
+item.CultureDishEmpty.name=Empty Culture Dish
+item.CultureDishMSC.name=Culture Dish (MSC)
+item.CultureDishStemCellEmbryonic.name=Culture Dish (Stem Cell Embryonic)
+item.CultureDishStemCellSomatic.name=Culture Dish (Stem Cell Somatic)
+item.dustInorganicSaltMixture.name=Inorganic Salt Mixture Dust
+item.dustTinyInorganicSaltMixture.name=Inorganic Salt Mixture Tiny Dust
+item.dustGlucose.name=Glucose Dust
+item.StemCell.name=Stem Cell
+item.NeuronCell.name=Neuron Cell
+item.UnformedEmbryo.name=Unformed Embryo
+item.Microchip.name=Microchip
+item.BioCircuit.name=Bio Circuit
+
+#points
+item.point1.name=1 Credit Point (Intergalactica Universal)
+item.point5.name=5 Credit Point (Intergalactica Universal)
+item.point10.name=10 Credit Point (Intergalactica Universal)
+item.point50.name=50 Credit Point (Intergalactica Universal)
+item.point100.name=100 Credit Point (Intergalactica Universal)
+
+#TFCrelated
+item.BlastPreparedIronOre.name=Blast Prepared Iron Ore
+item.QuartzMixture.name=Quartz Mixture
+item.RoughQuickLime.name=Rough Quicklime
+item.BlackSaltpetre.name=Black Saltpetre
+item.RoughSodaAsh.name=Rough Soda Ash
+item.RoughCausticSoda.name=Rough Caustic Soda
+item.CeramicBlockMold.name=Ceramic Block Mold
+item.CeramicBlockMoldFull.name=Ceramic Block Mold (Full)
+item.CeramicBlockMoldMoltenGlass.name=Ceramic Block Mold (Molten Glass)
+item.CeramicBottleMold.name=Ceramic Bottle Mold
+item.CeramicBottleMoldFull.name=Ceramic Bottle Mold (Full)
+item.CeramicBottleMoldMoltenGlass.name=Ceramic Bottle Mold (Molten Glass)
+
+#MEDs
+item.MED0_1.name=0.1 MED
+item.MED1.name=1 MED
+item.MED5.name=5 MED
+item.MED10.name=10 MED
+item.MED50.name=50 MED
+item.MED100.name=100 MED
+
+#CreativeTabs
+itemGroup.ElectronicTab=Item Tab | MoegAddon
+itemGroup.BlockTab=Block Tab | MoegAddon
+
+#Tiles
+tile.MainframeCluster1.name=Mainframe Cluster Level 1
+tile.MainframeCluster2.name=Mainframe Cluster Level 2
+tile.MainframeCluster3.name=Mainframe Cluster Level 3
+tile.MainframeCluster4.name=Mainframe Cluster Level 4
+tile.MainframeCluster5.name=Mainframe Cluster Level 5
+tile.MainframeCluster6.name=Mainframe Cluster Level 6
+tile.MainframeCluster7.name=Mainframe Cluster Level 7
+tile.Flammableice.name=Flammable Ice
+tile.PlacerPlatinumOre.name=PlacerPlatinumOre
+tile.BraggiteOre.name=BraggiteOre
+tile.AtokiteOre.name=Atokite
+tile.MasloviteOre.name=Maslovite
+tile.OsmiridiumOre.name=OsmiridiumOre
+
+#Fluids
+fluid.SolutionRichPtPa.name=Rich Platinum Palladium Solution
+fluid.SolutionRichPa.name=Rich Palladium Solution
+fluid.MoltenSodiumBisulfate.name=Molten Sodium Bisulfate
+fluid.RhodiumSulfideSolution.name=Rhodium Sulfide Solution
+fluid.PregnantSolutionOsRu.name=Rich Osmium Ruthenium Pregnant Solution
+fluid.AbsorptionLiquidOsRu.name=Rich Osmium Ruthenium Absorption Liqudid
+fluid.AbsorptionLiquidRu.name=Rich Ruthenium Absorption Liquid
+fluid.RutheniumTetroxide.name=Ruthenium Tetroxide
+fluid.OsmiumTetroxide.name=Osmium Tetroxide
+fluid.ChloroRhodiumAcid.name=Chlororhodium Acid
+fluid.MSCBasalMedium.name=MSC Basal Medium
+fluid.MSCSupplement.name=MSC Supplement
+fluid.MSC.name=MSC
+fluid.BoneMarrow.name=Bone Marrow
+fluid.SPSS.name=Stroke-physiological Saline Solution
+fluid.AmylumSolution.name=Amylum Solution
+fluid.VitaminSolution.name=Vitamin B Solution
+fluid.HormoneSolution.name=Hormone Solution
+fluid.Polyimide.name=Polyimide
+fluid.HexamethyleneDiamine.name=Hexamethylene Diamine
+fluid.PyromelliticDianhydride.name=Pyromellitic Dianhydride
+fluid.DifferentiationPromotingProteinNeuron.name=Differentiation Promoting Protein (Neuron Cell)
+
+tile.SolutionRichPtPa.name=Rich Platinum Palladium Solution
+tile.SolutionRichPa.name=Rich Palladium Solution
+tile.MoltenSodiumBisulfate.name=Molten Sodium Bisulfate
+tile.RhodiumSulfideSolution.name=Rhodium Sulfide Solution
+tile.PregnantSolutionOsRu.name=Rich Osmium Ruthenium Pregnant Solution
+tile.AbsorptionLiquidOsRu.name=Rich Osmium Ruthenium Absorption Liqudid
+tile.AbsorptionLiquidRu.name=Rich Ruthenium Absorption Liquid
+tile.RutheniumTetroxide.name=Ruthenium Tetroxide
+tile.OsmiumTetroxide.name=Osmium Tetroxide
+tile.ChloroRhodiumAcid.name=Chlororhodium Acid
+tile.MSCBasalMedium.name=MSC Basal Medium
+tile.MSCSupplement.name=MSC Supplement
+tile.MSC.name=MSC
+tile.BoneMarrow.name=Bone Marrow
+tile.SPSS.name=Stroke-physiological Saline Solution
+tile.AmylumSolution.name=Amylum Solution
+tile.VitaminBSolution.name=Vitamin B Solution
+tile.HormoneSolution.name=Hormone Solution
+tile.Polyimide.name=Polyimide
+tile.HexamethyleneDiamine.name=Hexamethylene Diamine
+tile.PyromelliticDianhydride.name=Pyromellitic Dianhydride
+tile.DifferentiationPromotingProteinNeuron.name=Differentiation Promoting Protein (Neuron Cell)

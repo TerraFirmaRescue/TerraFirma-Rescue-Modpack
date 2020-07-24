@@ -192,3 +192,24 @@ recipes.addShaped(<Genetics:labMachine:4>,
 [<gregtech:gt.meta.dust:9802>,<gregtech:gt.meta.machine:8794>,<gregtech:gt.meta.dust:9802>],
 [<gregtech:gt.meta.springSmall:8663>,<ore:MF5>,<gregtech:gt.meta.springSmall:8663>]]);
 //shi ying xing tiao zheng qi
+
+recipes.remove(<gendustry:EnvProcessor>);
+recipes.addShaped(<gendustry:EnvProcessor>,
+[[n,<gregtech:gt.multiitem.technological:12145>,Screwdriver],
+[<gregtech:gt.multitileentity:31002>,<ore:CPU2G>,<gregtech:gt.multitileentity:31000>],
+[n,<gregtech:gt.multiitem.technological:12145>,n]]);
+//processor
+
+recipes.remove(<gendustry:GeneticsProcessor>);
+recipes.addShaped(<gendustry:GeneticsProcessor>,
+[[n,<gregtech:gt.multiitem.technological:12145>,Screwdriver],
+[<gregtech:gt.multiitem.technological:12125>,<ore:CPU2G>,<gregtech:gt.multiitem.technological:12125>],
+[n,<gregtech:gt.multiitem.technological:12145>,n]]);
+//processor 2
+
+recipes.remove(<gendustry:UpgradeFrame>);
+recipes.addShaped(<gendustry:UpgradeFrame>,
+[[<gregtech:gt.meta.stickLong:15400>,<gregtech:gt.multitileentity:27006>,<gregtech:gt.meta.stickLong:15400>],
+[<gregtech:gt.multitileentity:27006>,<gregtech:gt.meta.plateQuadruple:15400>,<gregtech:gt.multitileentity:27006>],
+[<gregtech:gt.meta.stickLong:15400>,<gregtech:gt.multitileentity:27006>,<gregtech:gt.meta.stickLong:15400>]]);
+//upgrade plate

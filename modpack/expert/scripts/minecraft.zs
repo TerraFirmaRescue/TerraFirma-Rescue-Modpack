@@ -68,6 +68,7 @@ mods.forestry.ThermionicFabricator.removeCast(<minecraft:glass>);
 furnace.remove(<minecraft:glass>);
 MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<minecraft:glass_bottle>);
 MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<terrafirmacraft:item.Glass Bottle>);
+//mods.Terrafirmacraft.ItemHeat.removeRecipe(<terrafirmacraft:Sand>);
 
 // Remove Misc
 recipes.remove(<minecraft:cauldron>);
