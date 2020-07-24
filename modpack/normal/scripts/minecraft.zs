@@ -69,7 +69,7 @@ furnace.remove(<minecraft:glass>);
 MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<minecraft:glass_bottle>);
 MTUtilsGT.removeAllRecipes("gt.recipe.extruder",<terrafirmacraft:item.Glass Bottle>);
 mods.Terrafirmacraft.ItemHeat.removeRecipe(<terrafirmacraft:Sand>);
-mods.Terrafirmacraft.ItemHeat.removeRecipe(<terrafirmacraft:Sand2>);
+//mods.Terrafirmacraft.ItemHeat.removeRecipe(<terrafirmacraft:Sand2>);
 
 // Remove Misc
 recipes.remove(<minecraft:cauldron>);
