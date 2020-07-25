@@ -1,3 +1,109 @@
+3.3.3.0
+
+Module changes:
+
+Upgrade TFC0.79.37 - TFR
+
+Upgrade AdvancedRockery2.0.0.02 - TFR
+
+Upgrade gregtech6.14.04
+
+Upgrade TFRTech0.3.1
+
+
+
+Content change
+
+Fixed some minor bugs
+
+Repair paper fiber cannot be made in wooden barrels
+
+Fixed an issue with advanced rocket decomposing to exit the server
+
+Fixed TFC anvil brush issue
+
+Fixed synthetic clay bricks that sometimes flash back
+
+Fixed automatic blower module without English localization
+
+Fixed ammonium chloride not localized
+
+The TFC sheet metal is now melted in the crucible to give half the original metal units
+
+Modified civilian steam engine synthesis
+
+Glass is no longer available in bonfires
+
+Add normal mode
+
+New expert model
+
+
+
+3.3.2.0
+
+Module changes:
+
+Upgrade gregtech6.14.03
+
+
+
+Content changes:
+
+Fixed PUV1 emitter not compositing
+
+Repair glass cannot be manufactured on thermoelectronic worktable
+
+Repair nailed leather synthetic conflict
+
+Add protocol content to the file
+
+Modify the synthesis of some articles such as OB water storage tank elevator
+
+Elevators and rotary elevators can now convert colors with chisels
+
+Add iron ingots to unify the machines
+
+Dual lithium conversion is allowed
+
+Modification of quadruple fuel rod manufacturing
+
+Increase the original composition of all saplings
+
+Increase lotus leaf synthesis
+
+Increase cactus synthesis
+
+Change dragon egg composition
+
+Fixed fusing some formula swallowing programming circuits
+
+Dry paper powders now do not require potassium lye
+
+Circuit board manufacturing price reduction
+
+AE fluid stores some items that change composition
+
+ME glass modified composition
+
+Change the composition of the RC reservoir
+
+Change part of circuit base plate composition
+
+Change of advanced computer motherboard composition
+
+Machine synthesis of modified gene industries
+
+Machine synthesis of modified genetic engineering
+
+Close the black hole destruction square
+
+Increase biosynthesis of biological circuit boards
+
+Increase bacteria and their ways of increasing biomass
+
+
+
 3.3.1.3
 
 Module changes:
