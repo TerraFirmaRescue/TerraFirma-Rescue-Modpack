@@ -80,6 +80,7 @@ mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:3>, <t
 mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:4>, <terrafirmacraft:item.Zinc Double Sheet>,<terrafirmacraft:item.Zinc Double Sheet>, "block", 7);
 mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:5>, <terrafirmacraft:item.Electrum Double Sheet>,<terrafirmacraft:item.Electrum Double Sheet>, "block", 7);
 mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<terrafirmacraft:MetalBlock2:6>, <terrafirmacraft:item.Cupronickel Double Sheet>,<terrafirmacraft:item.Cupronickel Double Sheet>, "block", 7);
+*/
 
 //tfc nuggets
 recipes.remove(<terrafirmacraft:item.MetalNugget>);
@@ -102,7 +103,6 @@ recipes.remove(<terrafirmacraft:item.MetalNugget:16>);recipes.remove(<terrafirma
 recipes.remove(<terrafirmacraft:item.MetalNugget:19>);recipes.remove(<terrafirmacraft:item.MetalNugget:20>);recipes.remove(<terrafirmacraft:item.MetalNugget:21>);
 recipes.remove(<terrafirmacraft:item.MetalNugget:22>);
 
-*/
 
 //delete ends
 
@@ -160,7 +160,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.freezer", false, 16, 128, 0, [10000],
 [null],
 [<tfccellars:Ice>]);
 
-/*Deprecated TFC.36
 recipes.addShapeless(<terrafirmacraft:item.Wrought Iron Ingot>,
 [<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,
 <terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,<terrafirmacraft:item.MetalNugget:9>,
@@ -170,7 +169,6 @@ recipes.addShapeless(<terrafirmacraft:item.Steel Ingot>,
 [<terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>,
 <terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>,
 <terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>,<terrafirmacraft:item.MetalNugget:17>]);
-*/
 
 //template
 /*

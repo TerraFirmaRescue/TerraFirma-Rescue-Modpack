@@ -55,7 +55,7 @@ val fw = <liquid:freshwater>;
 //recipes.remove(<gregtech:gt.multitileentity:20201>);
 recipes.remove(<gregtech:gt.multitileentity:20151>);
 recipes.remove(<gregtech:gt.multitileentity:10111>);
-//recipes.remove(<terrafirmacraft:item.MetalNugget:7>);
+recipes.remove(<terrafirmacraft:item.MetalNugget:7>);
 recipes.remove(<gregtech:gt.meta.ingot:8336>);
 recipes.remove(<gregtech:gt.multitileentity:1086>);
 recipes.remove(<gregtech:gt.multitileentity:1786>);

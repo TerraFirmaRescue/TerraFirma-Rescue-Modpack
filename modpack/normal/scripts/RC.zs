@@ -148,6 +148,7 @@ recipes.addShaped(<Railcraft:machine.alpha:12>*6,
 [[<terrafirmacraft:item.Mortar>,<terrafirmacraft:FireBrick>,<terrafirmacraft:item.Mortar>],
 [<terrafirmacraft:FireBrick>,<ore:plateDoubleWroughtIron>,<terrafirmacraft:FireBrick>],
 [<terrafirmacraft:item.Mortar>,<terrafirmacraft:FireBrick>,<terrafirmacraft:item.Mortar>]]);
+
 //RC Bender recipes change
 //3 ingot into 2 plate
 val ingotCu  = <terrafirmacraft:item.Copper Ingot>;
@@ -155,8 +156,8 @@ val ingotBiB = <terrafirmacraft:item.Bismuth Bronze Ingot>;
 val ingotBlB = <terrafirmacraft:item.Black Bronze Ingot>;
 val ingotBSt = <terrafirmacraft:item.Black Steel Ingot>;
 val ingotSt  = <terrafirmacraft:item.Steel Ingot>;
-val ingotEl  = <tfctech:item.Electrum Ingot>;
-val ingotCup = <tfctech:item.Constantan Ingot>;
+val ingotEl  = <terrafirmacraft:item.Electrum Ingot>;
+val ingotCup = <terrafirmacraft:item.Cupronickel Ingot>;
 val ingotTin = <terrafirmacraft:item.Tin Ingot>;
 val ingotBro = <terrafirmacraft:item.Bronze Ingot>;
 val ingotFe  = <terrafirmacraft:item.Wrought Iron Ingot>;
@@ -167,8 +168,8 @@ val plateBiB = <terrafirmacraft:item.Bismuth Bronze Sheet>;
 val plateBlB = <terrafirmacraft:item.Black Bronze Sheet>;
 val plateBSt = <terrafirmacraft:item.Black Steel Sheet>;
 val plateSt  = <terrafirmacraft:item.Steel Sheet>;
-val plateEl  = <tfctech:item.Electrum Sheet>;
-val plateCup = <tfctech:item.Constantan Sheet>;
+val plateEl  = <terrafirmacraft:item.Electrum Sheet>;
+val plateCup = <terrafirmacraft:item.Cupronickel Sheet>;
 val plateTin = <terrafirmacraft:item.Tin Sheet>;
 val plateBro = <terrafirmacraft:item.Bronze Sheet>;
 val plateFe  = <terrafirmacraft:item.Wrought Iron Sheet>;
@@ -176,7 +177,7 @@ val platePb  = <terrafirmacraft:item.Lead Sheet>;
 
 //RC blast furnace recipes
 mods.railcraft.BlastFurnace.removeRecipe(<terrafirmacraft:item.Steel Ingot>);
-mods.railcraft.BlastFurnace.removeRecipe(<gregtech:gt.meta.nugget:8630>);
+mods.railcraft.BlastFurnace.removeRecipe(<terrafirmacraft:item.MetalNugget:17>);
 mods.railcraft.BlastFurnace.removeRecipe(<Railcraft:cube:2>);
 
 furnace.setFuel(<terrafirmacraft:item.coal>, 1600);
@@ -189,31 +190,13 @@ recipes.addShapeless(<moegadd:BlastPreparedIronOre>,[<terrafirmacraft:item.Small
 recipes.addShapeless(<moegadd:BlastPreparedIronOre>,[<terrafirmacraft:item.Small Ore:10>,<terrafirmacraft:item.Powder>]);
 recipes.addShapeless(<moegadd:BlastPreparedIronOre>,[<terrafirmacraft:item.Small Ore:3>,<terrafirmacraft:item.Powder>]);
 
-var win = <gregtech:gt.meta.nugget:8643>.withTag({display: {Name: "Blasted Wrought Iron Nugget", Lore: ["Can be blasted again."]}});
-var winormal = <gregtech:gt.meta.nugget:8643>;
-var steelnug = <gregtech:gt.meta.nugget:8630>;
+var win = <terrafirmacraft:item.MetalNugget:9>.withTag({display: {Name: "Wrought Iron Nugget", Lore: ["Can be blasted again."]}});
+var winormal = <terrafirmacraft:item.MetalNugget:9>;
 
-MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
-[winormal],[win]);
+recipes.addShapeless(win,[winormal]);
 
-mods.railcraft.BlastFurnace.addRecipe(<moegadd:BlastPreparedIronOre>, false, false, 400, win*3);
-mods.railcraft.BlastFurnace.addRecipe(win, false, true, 400, <gregtech:gt.meta.nugget:8630>);
-
-recipes.remove(<gregtech:gt.meta.nugget:8643>);
-recipes.remove(<gregtech:gt.meta.nugget:8630>);
-
-recipes.addShapeless(<gregtech:gt.meta.nugget:8643>*9,[<terrafirmacraft:item.Wrought Iron Ingot>,<ore:itemChiselMedium>.transformDamage()]);
-recipes.addShapeless(<gregtech:gt.meta.nugget:8630>*9,[<terrafirmacraft:item.Steel Ingot>,<ore:itemChiselHard>.transformDamage()]);
-
-recipes.addShaped(<terrafirmacraft:item.Wrought Iron Ingot>,
-[[winormal,winormal,winormal],
-[winormal,winormal,winormal],
-[winormal,winormal,winormal]]);
-
-recipes.addShaped(<terrafirmacraft:item.Steel Ingot>,
-[[steelnug,steelnug,steelnug],
-[steelnug,steelnug,steelnug],
-[steelnug,steelnug,steelnug]]);
+mods.railcraft.BlastFurnace.addRecipe(<moegadd:BlastPreparedIronOre>, false, false, 711, win*2);
+mods.railcraft.BlastFurnace.addRecipe(win, false, true, 711, <terrafirmacraft:item.MetalNugget:17>);
 
 //water reservoir
 recipes.remove(<Railcraft:machine.alpha:14>);

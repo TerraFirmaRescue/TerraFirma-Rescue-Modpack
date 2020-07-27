@@ -644,3 +644,8 @@ for item in <ore:dirt>.items {
 MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
 [<terrafirmacraft:item.Wrought Iron Ingot>],[n],
 [n],[<minecraft:iron_ingot>]);
+
+
+MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
+[<terrafirmacraft:MetalBlock:9>],[n],
+[n],[<minecraft:iron_block>]);
