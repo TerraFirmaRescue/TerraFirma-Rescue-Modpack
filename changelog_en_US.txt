@@ -1,3 +1,39 @@
+3.3.4.0
+
+Note:
+
+Both 3.3.2.0 and 3.3.3.0 packs are seriously buggy. If you have updated to the 3.3.3.0 or 3.3.2.0 client,
+
+Find an archive backup of version 3.3.1.3 (Typically, the upgrade integrator saves one automatically in the Saves folder),
+
+Take out the original level.dat and session.lock and replace the two files you have saved now.
+
+After that, you can update our upcoming 3.3.4.0 release. Otherwise, ID mismatch will occur!!
+
+
+
+Module changes:
+
+Upgrade TFC0.80.03 - TFR
+
+
+
+Content changes:
+
+Fixed an item ID change in the previous version
+
+Fixed a series of magic crashes caused by the last release
+
+Fixed TFC anvil brush issue
+
+The TFC sheet metal is now melted in the crucible to give half the original metal units
+
+Fixed synthetic clay bricks that sometimes flash back
+
+Fixed a problem where forging recipes disappear/fail to align when switching dimensions (server multi-world plug-in)
+
+
+
 3.3.3.0
 
 Module changes:
