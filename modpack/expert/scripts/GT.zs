@@ -207,6 +207,13 @@ recipes.remove(<gregtech:gt.multitileentity:11104>);
 recipes.remove(<gregtech:gt.multitileentity:11105>);
 
 
+//hjj
+recipes.addShaped(<gregtech:gt.multitileentity:20331>,
+[[<gregtech:gt.meta.screw:8651>,<gregtech:gt.meta.lens:8300>,<gregtech:gt.meta.screw:8651>],
+[<gregtech:gt.meta.gearGtSmall:8651>,<ore:craftingHardenedClay>,<gregtech:gt.meta.gearGtSmall:8651>],
+[<ore:gt:circuit0>,<gregtech:gt.meta.machine:8651>,<ore:gt:circuit0>]]);
+
+
 // RF-LU ZPM
 
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",<gregtech:gt.multiitem.technological:12127>);

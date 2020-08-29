@@ -205,6 +205,12 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 4096, 400, 0, [10000],
 [<gregtech:gt.multiitem.technological:12127>]);
 
 
+//hjj
+recipes.addShaped(<gregtech:gt.multitileentity:20331>,
+[[<gregtech:gt.meta.screw:8651>,<gregtech:gt.meta.lens:8300>,<gregtech:gt.meta.screw:8651>],
+[<gregtech:gt.meta.gearGtSmall:8651>,<ore:craftingHardenedClay>,<gregtech:gt.meta.gearGtSmall:8651>],
+[<ore:gt:circuit0>,<gregtech:gt.meta.machine:8651>,<ore:gt:circuit0>]]);
+
 // UV
 MTUtilsGT.removeAllRecipes("gt.recipe.welder",<gregtech:gt.multiitem.technological:12128>);
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 8192, 400, 0, [10000],
