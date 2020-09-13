@@ -1,12 +1,18 @@
 ﻿3.4.1.0
 模组变化:
-升级TFC0.80.05-TFR
-升级gregtech6.14.06
-添加Botania-TFR-2602
+升级TFC0.80.06-TFR
+升级gregtech6.14.07
+升级Botania-TFR-2602
+升级MoegAddon-1.10
+添加BetterLoadingScreen-1.4.00-TFR
 
 内容变化:
 修复上个版本出现的Bug
-
+添加更好看的加载界面
+加载界面添加小提示
+修复净油器
+为赞助玩家添加披风和游戏内证书
+添加关于植物魔法的任务
 
 3.4.0.0
 模组变化:

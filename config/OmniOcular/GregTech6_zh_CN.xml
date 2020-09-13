@@ -316,6 +316,12 @@
 		}
 		}
 		else{
+		if(mID >= 14040){
+		return 64 * ID2Cap(mID - 40,"EU");
+		}
+		if(mID >= 14030){
+		return 32 * ID2Cap(mID - 30,"EU");
+		}
 		if(mID >= 14020){
 		return 2 * ID2Cap(mID - 20,"EU");
 		}
@@ -405,8 +411,12 @@
 		case 32064:{return 64000;}
 		case 32022:{return 64000;}
 		case 32023:{return 64000;}
+		case 32089:{return 128000;}
 		case 32742:{return 128000;}
 		case 32063:{return 256000;}
+		case 32100:{return 256000;}
+		case 32717:{return 256000;}
+		case 32718:{return 256000;}
 		case 32083:{return 512000;}
 		case 32024:{return 1024000;}
 		case 32087:{return 4096000;}
@@ -414,6 +424,7 @@
 		case 17001:{return 432000;}
 		case 17002:{return 1728000;}
 		case 17007:{return 1728000;}
+		case 17008:{return 2474000;}
 		case 17006:{return 3456000;}
 		case 17003:{return 6912000;}
 		case 17004:{return 6912000;}
@@ -421,6 +432,7 @@
 		case 17009:{return 8192000;}
 		case 17022:{return 6912000;}
 		case 17027:{return 6912000;}
+		case 17028:{return 9896000;}
 		case 17026:{return 13824000;}
 		case 17023:{return 27648000;}
 		case 17024:{return 27648000;}
@@ -448,6 +460,7 @@
 		switch(LC['gt.mte.id']){
 		case 17042:{return 8000000;}
 		case 17047:{return 8000000;}
+		case 17048:{return 12000000;}
 		case 17046:{return 16000000;}
 		case 17043:{return 32000000;}
 		case 17044:{return 32000000;}
@@ -455,6 +468,7 @@
 		case 17049:{return 64000000;}
 		case 17062:{return 32000000;}
 		case 17067:{return 32000000;}
+		case 17068:{return 48000000;}
 		case 17066:{return 64000000;}
 		case 17063:{return 128000000;}
 		case 17064:{return 128000000;}
@@ -481,6 +495,7 @@
 		case 1041:{return 2341;}
 		case 1025:{return 2428;}
 		case 1026:{return 2807;}
+		case 1045:{return 2807;}
 		case 1031:{return 2513;}
 		case 1032:{return 2807;}
 		case 1027:{return 2682;}
@@ -497,8 +512,10 @@
 		case 1038:{return 2728;}
 		case 1024:{return 4618;}
 		case 1030:{return 3750;}
+		case 1044:{return 5245;}
+		case 1043:{return 5328;}
 		case 1048:{return 5000;}
-		case 1049:{return 6781;}
+		case 1049:{return 6531;}
 		default :{
 		if(Kevin >= 1750){
 		return KevinCap(Kevin - 750);
@@ -1879,88 +1896,93 @@
 		</line>
 	</tileentity>
 
-	<!-- 核反应堆 -->
+	<!-- 核反应堆(2x2) -->
 	<tileentity id = "gt.multitileentity.generator.reactor.core">
-		<line displayname = "产热量">
-			if(nbt['gt.value.o.0']!=undefined){
-			return  nbt['gt.value.o.2']+Unit("HU")
-			}
-			else
-		</line>
 		<line displayname = "燃料棒1">
-			if(nbt['gt.invlist']['0']['tag']!= undefined){
-			if(nbt['gt.value.o.0']== undefined){
-			return  name(nbt['gt.invlist']['0'])+": "+GREEN+(nbt['gt.invlist']['0']['tag']['gt.durability']/1200).toFixed(0)+BLUE+" 分钟"
+			if(nbt['gt.invlist']['0']!= undefined){
+			var str = '';
+			str = name(nbt['gt.invlist']['0']);
+			
+			if(nbt['gt.invlist']['0']['tag']['gt.durability']!= undefined){
+			if((nbt['gt.invlist']['0']['Damage']>=9400) && (nbt['gt.invlist']['0']['Damage']< 9500)){
+			str += ": "+BLUE+"转换需要: "+GREEN+nbt['gt.invlist']['0']['tag']['gt.durability']+DPURPLE+" N";
 			}
 			else{
-			return  name(nbt['gt.invlist']['0'])+": "+nbt['gt.value.o.0']+Unit("HU")+" "+GREEN+(nbt['gt.invlist']['0']['tag']['gt.durability']/1200).toFixed(0)+BLUE+" 分钟"
+			str += ": "+BLUE+"剩余: "+GREEN+(nbt['gt.invlist']['0']['tag']['gt.durability']/120000).toFixed(0)+BLUE+" 分钟";
 			}
 			}
-			else{
-			if(nbt['gt.value.o.0'] == undefined){
-			return  name(nbt['gt.invlist']['0'])
+			var neutnamestr = '';
+			neutnamestr = 'gt.value.o.' + nbt['gt.invlist']['0']['s'];
+			if(nbt[neutnamestr]!= undefined){
+			str += WHITE+" "+nbt[neutnamestr]+DPURPLE+" N";
 			}
-			else{
-			return  name(nbt['gt.invlist']['0'])+": "+nbt['gt.value.o.0']+Unit("HU")
-			}
+			return str;
 			}
 		</line>
 		<line displayname = "燃料棒2">
-			if(nbt['gt.invlist']['1']['tag']!= undefined){
-			if(nbt['gt.value.o.1']== undefined){
-			return  name(nbt['gt.invlist']['1'])+": "+GREEN+(nbt['gt.invlist']['1']['tag']['gt.durability']/1200).toFixed(0)+BLUE+" 分钟"
+			if(nbt['gt.invlist']['1']!= undefined){
+			var str = '';
+			str = name(nbt['gt.invlist']['1']);
+			
+			if(nbt['gt.invlist']['1']['tag']['gt.durability']!= undefined){
+			if((nbt['gt.invlist']['1']['Damage']>=9400) && (nbt['gt.invlist']['1']['Damage']< 9500)){
+			str += ": "+BLUE+"转换需要: "+GREEN+nbt['gt.invlist']['1']['tag']['gt.durability']+DPURPLE+" N";
 			}
 			else{
-			return  name(nbt['gt.invlist']['1'])+": "+nbt['gt.value.o.1']+Unit("HU")+" "+GREEN+(nbt['gt.invlist']['1']['tag']['gt.durability']/1200).toFixed(0)+BLUE+" 分钟"
+			str += ": "+BLUE+"剩余: "+GREEN+(nbt['gt.invlist']['1']['tag']['gt.durability']/120000).toFixed(0)+BLUE+" 分钟";
 			}
 			}
-			else{
-			if(nbt['gt.value.o.1'] == undefined){
-			return  name(nbt['gt.invlist']['1'])
+			var neutnamestr = '';
+			neutnamestr = 'gt.value.o.' + nbt['gt.invlist']['1']['s'];
+			if(nbt[neutnamestr]!= undefined){
+			str += WHITE+" "+nbt[neutnamestr]+DPURPLE+" N";
 			}
-			else{
-			return  name(nbt['gt.invlist']['1'])+": "+nbt['gt.value.o.1']+Unit("HU")
-			}
+			return str;
 			}
 		</line>
 		<line displayname = "燃料棒3">
-			if(nbt['gt.invlist']['2']['tag']!= undefined){
-			if(nbt['gt.value.o.2']== undefined){
-			return  name(nbt['gt.invlist']['2'])+": "+GREEN+(nbt['gt.invlist']['2']['tag']['gt.durability']/1200).toFixed(0)+BLUE+" 分钟"
+			if(nbt['gt.invlist']['2']!= undefined){
+			var str = '';
+			str = name(nbt['gt.invlist']['2']);
+			
+			if(nbt['gt.invlist']['2']['tag']['gt.durability']!= undefined){
+			if((nbt['gt.invlist']['2']['Damage']>=9400) && (nbt['gt.invlist']['2']['Damage']< 9500)){
+			str += ": "+BLUE+"转换需要: "+GREEN+nbt['gt.invlist']['2']['tag']['gt.durability']+DPURPLE+" N";
 			}
 			else{
-			return  name(nbt['gt.invlist']['2'])+": "+nbt['gt.value.o.2']+Unit("HU")+" "+GREEN+(nbt['gt.invlist']['2']['tag']['gt.durability']/1200).toFixed(0)+BLUE+" 分钟"
+			str += ": "+BLUE+"剩余: "+GREEN+(nbt['gt.invlist']['2']['tag']['gt.durability']/120000).toFixed(0)+BLUE+" 分钟";
 			}
 			}
-			else{
-			if(nbt['gt.value.o.2'] == undefined){
-			return  name(nbt['gt.invlist']['2'])
+			var neutnamestr = '';
+			neutnamestr = 'gt.value.o.' + nbt['gt.invlist']['2']['s'];
+			if(nbt[neutnamestr]!= undefined){
+			str += WHITE+" "+nbt[neutnamestr]+DPURPLE+" N";
 			}
-			else{
-			return  name(nbt['gt.invlist']['2'])+": "+nbt['gt.value.o.2']+Unit("HU")
-			}
+			return str;
 			}
 		</line>
 		<line displayname = "燃料棒4">
-			if(nbt['gt.invlist']['3']['tag']!= undefined){
-			if(nbt['gt.value.o.3']== undefined){
-			return  name(nbt['gt.invlist']['3'])+": "+GREEN+(nbt['gt.invlist']['3']['tag']['gt.durability']/1200).toFixed(0)+BLUE+" 分钟"
+			if(nbt['gt.invlist']['3']!= undefined){
+			var str = '';
+			str = name(nbt['gt.invlist']['3']);
+			
+			if(nbt['gt.invlist']['3']['tag']['gt.durability']!= undefined){
+			if((nbt['gt.invlist']['3']['Damage']>=9400) && (nbt['gt.invlist']['3']['Damage']< 9500)){
+			str += ": "+BLUE+"转换需要: "+GREEN+nbt['gt.invlist']['3']['tag']['gt.durability']+DPURPLE+" N";
 			}
 			else{
-
-			return  name(nbt['gt.invlist']['3'])+": "+nbt['gt.value.o.3']+Unit("HU")+" "+GREEN+(nbt['gt.invlist']['3']['tag']['gt.durability']/1200).toFixed(0)+BLUE+" 分钟"
+			str += ": "+BLUE+"剩余: "+GREEN+(nbt['gt.invlist']['3']['tag']['gt.durability']/120000).toFixed(0)+BLUE+" 分钟";
 			}
 			}
-			else{
-			if(nbt['gt.value.o.3']== undefined){
-			return  name(nbt['gt.invlist']['3'])
+			var neutnamestr = '';
+			neutnamestr = 'gt.value.o.' + nbt['gt.invlist']['3']['s'];
+			if(nbt[neutnamestr]!= undefined){
+			str += WHITE+" "+nbt[neutnamestr]+DPURPLE+" N";
 			}
-			else{
-
-			return  name(nbt['gt.invlist']['3'])+": "+nbt['gt.value.o.3']+Unit("HU")
-			}
+			return str;
 			}
 		</line>
+
 		<line displayname = "输入流体">
 			return nbt['gt.tank.0']['Amount'] + Unit("L") + " " + fluidName(nbt['gt.tank.0']['FluidName']);
 		</line>
@@ -1968,7 +1990,37 @@
 			return nbt['gt.tank.1']['Amount'] + Unit("L") + " " + fluidName(nbt['gt.tank.1']['FluidName']);
 		</line>
 	</tileentity>
+	
+	<!-- 核反应堆(1x1) -->
+	<tileentity id = "gt.multitileentity.generator.reactor.core.1x1">
+		<line displayname = "燃料棒">
+			if(nbt['gt.invlist']['0']!= undefined){
+			var str = '';
+			str = name(nbt['gt.invlist']['0']);
+		
+			if(nbt['gt.invlist']['0']['tag']['gt.durability']!= undefined){
+			if((nbt['gt.invlist']['0']['Damage']>=9400) && (nbt['gt.invlist']['0']['Damage']< 9500)){
+			str += ": "+BLUE+"转换需要: "+GREEN+nbt['gt.invlist']['0']['tag']['gt.durability']+DPURPLE+" N";
+			}
+			else{
+			str += ": "+BLUE+"剩余: "+GREEN+(nbt['gt.invlist']['0']['tag']['gt.durability']/120000).toFixed(0)+BLUE+" 分钟";
+			}
+			}
+			if(nbt['gt.value.o.0']!= undefined){
+			str += WHITE+" "+nbt['gt.value.o.0']+DPURPLE+" N";
+			}
+			return str;
+			}
+		</line>
 
+		<line displayname = "输入流体">
+			return nbt['gt.tank.0']['Amount'] + Unit("L") + " " + fluidName(nbt['gt.tank.0']['FluidName']);
+		</line>
+		<line displayname = "输出流体">
+			return nbt['gt.tank.1']['Amount'] + Unit("L") + " " + fluidName(nbt['gt.tank.1']['FluidName']);
+		</line>
+	</tileentity>
+	
 	<!-- 油泉 -->
 	<tileentity id = "gt.multitileentity.fluid.spring">
 		<line displayname = "生成速度">
@@ -2013,6 +2065,13 @@
 
 	<!-- 单方块储罐 -->
 	<tileentity id = "gt.multitileentity.tank.barrel.wood">
+		<line displayname = "流体存量">
+			return nbt['gt.tank']['Amount'] + "/" + LiquidCap(nbt) + Unit("L") + " " + fluidName(nbt['gt.tank']['FluidName']);
+		</line>
+	</tileentity>
+	
+	<!-- 单方块储罐 -->
+	<tileentity id = "gt.multitileentity.tank.barrel.plastic">
 		<line displayname = "流体存量">
 			return nbt['gt.tank']['Amount'] + "/" + LiquidCap(nbt) + Unit("L") + " " + fluidName(nbt['gt.tank']['FluidName']);
 		</line>
@@ -3875,6 +3934,6 @@
 
 	</tileentity>
 
-	
+
 
 </oo>
