@@ -3,9 +3,16 @@
 升级MoegAddon-1.11
 添加InGameInfoXML-1.7.10-2.8.2.3-universal
 添加LunatriusCore-1.7.10-1.1.2.21-universal
+添加NotEnoughItems-1.7.10-2.0.4-GTNH-universal
+删除Neieasysearch
+删除NotEnoughItems
 
 内容变化:
-修复无法加载资源的问题
+· 美观的关键信息悬浮显示，如温度，降雨量，日期，区块信息，群峦技能等。
+· 使用GTNH团队制作的NEI，搜索反应速度至少提升5倍
+· 添加进入游戏时的欢迎文字，包含了各类交流方式，新手不怕困惑啦
+· 除了赞助可以获得的披风外，您还能在第一次进入游戏后获得一个赞助证书，以表达我们对您的感谢
+· 进入游戏时没有奇怪的文字报错了～
 
 3.4.2.0
 模组变化:
