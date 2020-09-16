@@ -52,9 +52,9 @@ val n = null;
 //========================================
 
 // Remove original rolling recipes
-mods.railcraft.Rolling.removeRecipe(<terrafirmacraft:item.Steel Sheet>);
-mods.railcraft.Rolling.removeRecipe(<terrafirmacraft:item.Wrought Iron Sheet>);
-mods.railcraft.Rolling.removeRecipe(<terrafirmacraft:item.Lead Sheet>);
+//mods.railcraft.Rolling.removeRecipe(<Railcraft:part.plate:1>);
+//mods.railcraft.Rolling.removeRecipe(<Railcraft:part.plate>);
+//mods.railcraft.Rolling.removeRecipe(<Railcraft:part.plate:4>);
 mods.railcraft.Rolling.removeRecipe(<Railcraft:part.plate:2>);
 mods.railcraft.Rolling.removeRecipe(<Railcraft:part.plate:3>);
 
