@@ -1,4 +1,13 @@
-﻿3.4.2.0
+﻿3.4.3.0
+模组变化:
+升级MoegAddon-1.11
+添加InGameInfoXML-1.7.10-2.8.2.3-universal
+添加LunatriusCore-1.7.10-1.1.2.21-universal
+
+内容变化:
+修复无法加载资源的问题
+
+3.4.2.0
 模组变化:
 升级BetterLoadingScreen-1.4.1-TFR
 

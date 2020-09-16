@@ -1,0 +1,76 @@
+# Maximal characters for a tip: 77 (more can go out of the screen)
+# The line below, including the "#" are 77 chars
+# My grandma is a very clever person, so is my grandpa, and so is myself, ha
+Join our forums: forum.teammoeg.com
+Join our Wiki: wiki.teammoeg.com
+Ask for help: support.teammoeg.com
+Main website: terrafirmarescue.wordpress.com/international
+We've got a QQ Group: 1046723658
+We've got a Discord: https://discord.gg/BWn6E94
+Press F3+H to open the advanced material information display.
+Covers in GregTech could help you a lot.
+You can use a screwdriver to adjust the number of single outputs of hoppers.
+Temperature sensors from GT can be used in nuclear reactors in  IC2.
+Steam pipes that used to supply the machines should not be too long.
+Use the monkey wrench to adjust the buck-boost mode of the transformers.
+Right-click the item in the item filter to set it to fuzzy filtering mode.
+Most items from TerraFrimaCraft can be transform to vanilia items.
+Ore nuggets on the surface hint corresponding ore veins under them.
+Kaolinite and graphite don't have tagged nuggets on the surface.
+GregTech's tools can be made with almost any metal
+Refined iron billets less than 100 unit can be recycled in the bloomery
+Death does not restore thirst and hunger level
+Please use NEI to check the recipes of items, the default keys are Z and X
+GregTech's machine will explode when exposed to water (including rain)
+Some machines can process multiple identical recipes at the same time
+Please pay attention to your nutritional balance
+Powders can be crafted into smaller powders
+1x cables can be directly crafted into 4x cables
+It is worth noting that the grass will grow over time (real grass)
+There is no transmission method for RF in the early stage
+Animals only spawn when the world is generated
+Mostly, quadrupled power input equals doubled processing speed
+The wrongly carved GT molds can be thrown into the crucible for recycling
+Please read the descriptions of the quests carefully
+The small and large on GT anvil represent the literal physical shape
+The builder's wand is useful sometimes
+Animals’ favorability will not drop until it reaches yellow
+You can only get unlimited water through draining wells and liquid wells
+Iron chests are awesome
+Happy gliding!
+In the server plug-in, you can turn on the ore dictionary display
+Smaller refined iron billets can be melted directly in the crucible
+Press O by default to open NEI
+Plates attached to machines can be removed with a crowbar
+The material melted in the GT Crucible can be obtained by a drum
+When collecting natural gas, you should use pipes larger than 1000L
+Lower level machines cannot handle high-power recipes
+Clay blocks and thatches are not affected by gravity
+Don’t be afraid of bears or polar bears, just RUN!!!
+Inducing bears into the water will make it easy to kill them
+Collapsing blocks will destroy the ores
+Don’t eat food of only one nutrient type
+Polar bears are good source of resources, with meat, leather, and wool yarn.
+Crops only grow in corresponding seasons and temperature zones
+Ice can be obtained either by a winter travel or by saltpeter-water in barrels
+Sluicing sand gives gems, and gravel gives ore nuggets.
+There are many blocks in GregTech that cannot be pushed by pistons
+Sulfur and peat are easy fuels with high heat level in the early stage
+Temperature affects blast furnace's efficiency and food decay rate
+Press F3 to check the local rain amount and temperature
+It is recommended to fell large trees such as acacia and sequoia
+The crops on the crop racks are very fragile, and sprinting may damage them
+Use the Journey Map to find naked ore deposits faster
+Press P by default to place item in your hand on ground or wall
+Heated metal can be cooled down in barrels or large vessels filled with water
+Most of GT stuff can be recycled as raw materials by grinders or crucibles
+The monsters in the overworld have been greatly buffed.
+Use appropriate weapons to fight the monsters.
+Fruit tree saplings can only be obtained by breaking the branches
+Chaotic steam pipe management lead to boiler explosion and diseasters
+Crafting items can be similar in texture, keep you eyes sharp!
+Machines always reduce material loss compared to manual operation
+Blocks and tools have mining levels, check on tooltips
+High temperature liquid in GT crucible can melt improper molds
+Faucet and nozzle can extract liquid and gas in the machines respectively
+The hammer has an extra damage on the skeleton (comminuted fracture).

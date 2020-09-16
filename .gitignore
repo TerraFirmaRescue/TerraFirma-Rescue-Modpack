@@ -27,3 +27,7 @@
 !/modpack
 !/config/
 !/gregtech.cfg
+
+# Options files
+!/gregtech.cfg
+!/options.txt
