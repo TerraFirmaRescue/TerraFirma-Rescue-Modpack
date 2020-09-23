@@ -35,7 +35,7 @@ Licensed Under [CC-BY-NC-ND-4.0](https://github.com/TerraFirmaRescue/TerraFirma-
 
 ## Background Story
 
-After countless hours, we reached the target planet, *Terrafirma*. What woke me up was not the call of my teammates but a harsh alarm. I looked at my side: a glass piece was inserted in the chest of my teammate who was murmuring in a mosquito-like voice: "Be fast - this ship is about to crash. I have the key to the escape shuttle and the *Gregtech Intergalactical Co.,Ltd.'s Technology Guide*. I hope you can live well...". Then, he closed his eyes forever. Laid his body flat on the floor and taken his key and guide, I entered the escape shuttle and arrived at this unknown world of mystery. This is my story.
+After hibernating 342 years, we reached the target planet, *Terrafirma*. However, what woke me up was not the call of my teammates. I was a harsh alarm. Covered with hibernation fluid, I looked at my side in shock: a glass piece was inserted in the chest of my teammate who was murmuring in a mosquito-like voice: "Move quickly - this ship is falling into the gas giant. I have the key to the escape shuttle and the *Gregtech Intergalactical Co.,Ltd. Technology Guide*. I hope you can live well...". Then, he closed his eyes forever. Laid his body flat on the floor and taken his key and guide, I entered the escape shuttle and arrived at this unknown world of mystery. This is my story.
 
 Exerpted from *The Memoir of Alexander Steve II*
  
