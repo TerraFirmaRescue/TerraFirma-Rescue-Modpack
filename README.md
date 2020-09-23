@@ -1,8 +1,8 @@
 # Terra Firma Rescue Mod Pack [![Join our Discord!](https://img.shields.io/badge/Discord-Join%20Us-blue)](https://discord.gg/BWn6E94) [![Support the devs!](https://img.shields.io/badge/Patreon-Support-orange.svg?style=flat-square)](https://www.patreon.com/TeamMoeg)
 
-[Imgur](https://imgur.com/vppALlx)
+![Imgur](https://imgur.com/vppALlx)
 
-[TFR](https://raw.githubusercontent.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/master/resources/mainmenu/textures/TechnicLogo%20copy.png)
+![TFR](https://raw.githubusercontent.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/master/resources/mainmenu/textures/TechnicLogo%20copy.png)
 
 1. [CURSEFORGE](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
 2. [TECHNIC](https://www.technicpack.net/modpack/terra-firma-rescue.1727928)
