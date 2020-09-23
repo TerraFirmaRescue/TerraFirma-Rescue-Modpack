@@ -4,6 +4,8 @@
 
 A [Forge](https://github.com/MinecraftForge/MinecraftForge) Modpack for Minecraft 1.7.10 centered around [TerraFirmaCraft](https://www.curseforge.com/minecraft/mc-mods/tfcraft), [GregTech-6-Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech6-unofficial), and [Advanced Rocketry](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry). This Modpack is strongly technology-inclined and science oriented. You start an epic story of rescuing yourself on a miraculous life-sustainable moon - Terrafirma - of a gas giant 68.4 light years from Earth, starting with nothing, gathering natural resources, expanding a base, developing technology, exploring the expanse of the planetary system, and eventually building a warp engine to return to Earth, the Sweet Cozy Home of Mankind. 
 
+---
+
 ## Download Latest
 
 1. [CURSEFORGE](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
@@ -27,9 +29,11 @@ A [Forge](https://github.com/MinecraftForge/MinecraftForge) Modpack for Minecraf
 
 ---
 
-## Background Story:
+## Background Story
 
-***After countless hours, we reached the target galaxy-Terrafirma B. What wakes me up is not the call of my teammates. It was a harsh alarm. I looked aside, a glass was inserted in the chest of my teammate, and I heard him say in a mosquito-like voice: "Come on, this ship is about to crash. I have the key to the escape bin and the company's technology guide . I hope you can live well. " Then he closed his eyes forever, and I laid his body flat on the ground and took his key and guide. Sit on the escape cabin and come to this unknown world. This is my story. --- Alexander Steve II***
+**After countless hours, we reached the target planetary system, Terrafirma B. What woke me up was not the call of my teammates but a harsh alarm. I looked at my side: a glass piece was inserted in the chest of my teammate who was murmuring in a mosquito-like voice: "Be fast - this ship is about to crash. I have the key to the escape shuttle and the Gregtech Intergalactical Co.,Ltd.'s technology guide. I hope you can live well...". Then, he closed his eyes forever. Laid his body flat on the floor and taken his key and guide, I entered the escape shuttle and arrived at this unknown world of mystery. This is my story.
+
+***exerpted from The Memoir of Alexander Steve II
  
 ## What is Terra Firma Rescue?
 
