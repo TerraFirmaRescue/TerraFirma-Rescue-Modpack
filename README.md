@@ -2,7 +2,7 @@
 
 ![TFR](https://raw.githubusercontent.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/master/resources/mainmenu/textures/TechnicLogo%20copy.png)
 
-A [Forge](https://github.com/MinecraftForge/MinecraftForge) Modpack for Minecraft 1.7.10 centered around [TerraFirmaCraft](https://www.curseforge.com/minecraft/mc-mods/tfcraft), [GregTech-6-Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech6-unofficial), and [Advanced Rocketry](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry). 
+A [Forge](https://github.com/MinecraftForge/MinecraftForge) Modpack for Minecraft 1.7.10 centered around [TerraFirmaCraft](https://www.curseforge.com/minecraft/mc-mods/tfcraft), [GregTech-6-Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech6-unofficial), and [Advanced Rocketry](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry). This Modpack is strongly technology-inclined and science oriented. You start an epic story of rescuing yourself on a miraculous life-sustainable moon - Terrafirma - of a gas giant 68.4 light years from Earth, starting with nothing, gathering natural resources, expanding a base, developing technology, exploring the expanse of the planetary system, and eventually building a warp engine to return to Earth, the Sweet Cozy Home of Mankind. 
 
 ## Download Latest
 
