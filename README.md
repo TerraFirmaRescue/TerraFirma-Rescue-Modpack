@@ -1,5 +1,7 @@
 # Terra Firma Rescue Mod Pack [![Join our Discord!](https://img.shields.io/badge/Discord-Join%20Us-blue)](https://discord.gg/BWn6E94) [![Support the devs!](https://img.shields.io/badge/Patreon-Support-orange.svg?style=flat-square)](https://www.patreon.com/TeamMoeg)
 
+[Imgur](https://imgur.com/vppALlx)
+
 1. [CURSEFORGE](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
 2. [TECHNIC](https://www.technicpack.net/modpack/terra-firma-rescue.1727928)
 2. [MCBBS](https://www.mcbbs.net/thread-977365-1-1.html)
