@@ -2,6 +2,8 @@
 
 [Imgur](https://imgur.com/vppALlx)
 
+[TFR](https://raw.githubusercontent.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/master/resources/mainmenu/textures/TechnicLogo%20copy.png)
+
 1. [CURSEFORGE](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
 2. [TECHNIC](https://www.technicpack.net/modpack/terra-firma-rescue.1727928)
 2. [MCBBS](https://www.mcbbs.net/thread-977365-1-1.html)
