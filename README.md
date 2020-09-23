@@ -1,27 +1,36 @@
-# Terra Firma Rescue Mod Pack [![Join our Discord!](https://img.shields.io/badge/Discord-Join%20Us-blue)](https://discord.gg/BWn6E94) [![Support the devs!](https://img.shields.io/badge/Patreon-Support-orange.svg?style=flat-square)](https://www.patreon.com/TeamMoeg)
-
-![Imgur](https://imgur.com/vppALlx)
+# Terra Firma Rescue [![Join our Discord!](https://img.shields.io/badge/Discord-Join%20Us-blue)](https://discord.gg/BWn6E94) [![Support the devs!](https://img.shields.io/badge/Patreon-Support-orange.svg?style=flat-square)](https://www.patreon.com/TeamMoeg)
 
 ![TFR](https://raw.githubusercontent.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/master/resources/mainmenu/textures/TechnicLogo%20copy.png)
 
+A [Forge](https://github.com/MinecraftForge/MinecraftForge) Modpack for Minecraft 1.7.10 centered around [TerraFirmaCraft](https://www.curseforge.com/minecraft/mc-mods/tfcraft), [GregTech-6-Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech6-unofficial), and [Advanced Rocketry](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry). 
+
+## Download Latest
+
 1. [CURSEFORGE](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
 2. [TECHNIC](https://www.technicpack.net/modpack/terra-firma-rescue.1727928)
-2. [MCBBS](https://www.mcbbs.net/thread-977365-1-1.html)
-3. [OFFICIAL WIKI](https://wiki.teammoeg.com/)
-4. [SOURCE](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack)
-5. [ISSUES](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues)
-6. [LICENSE](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE)
-7. [FORUMS](https://forum.teammoeg.com/)
+3. [MCBBS](https://www.mcbbs.net/thread-977365-1-1.html)
 
-## [LOCALIZATION PORT](https://github.com/TerraFirmaRescue/TFR-Localization)
+## Join Community
 
-Quests Localization Port for Terra Firma Rescue Modpack. All contributers will be on the [SupporterList](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/supporterlist.txt).
+1. [OFFICIAL WIKI](https://wiki.teammoeg.com/)
+2. [FORUMS](https://forum.teammoeg.com/)
 
-## Storyline:
+## Help Development
+
+1. [SOURCE](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack)
+2. [ISSUES](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues)
+3. [LICENSE](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE)
+
+## Help Localization
+
+**The [Localization Port](https://github.com/TerraFirmaRescue/TFR-Localization) of Quests and Scripts for Terra Firma Rescue**. All contributers will be on the [SupporterList](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/supporterlist.txt).
+
+---
+
+## Background Story:
 
 ***After countless hours, we reached the target galaxy-Terrafirma B. What wakes me up is not the call of my teammates. It was a harsh alarm. I looked aside, a glass was inserted in the chest of my teammate, and I heard him say in a mosquito-like voice: "Come on, this ship is about to crash. I have the key to the escape bin and the company's technology guide . I hope you can live well. " Then he closed his eyes forever, and I laid his body flat on the ground and took his key and guide. Sit on the escape cabin and come to this unknown world. This is my story. --- Alexander Steve II***
  
-
 ## What is Terra Firma Rescue?
 
 Have you imagined the coexistence of GregTech and Terra Firma Craft? This is not a dream anymore. 
