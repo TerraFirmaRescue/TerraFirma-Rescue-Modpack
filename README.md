@@ -4,6 +4,8 @@
 
 **A [Forge](https://github.com/MinecraftForge/MinecraftForge) Modpack for Minecraft 1.7.10 centered around [TerraFirmaCraft](https://www.curseforge.com/minecraft/mc-mods/tfcraft), [GregTech-6-Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech6-unofficial), and [Advanced Rocketry](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry). This Modpack is strongly technology-inclined and science oriented. You start an epic story of rescuing yourself on a miraculous life-sustainable moon - Terrafirma - of a gas giant 68.4 light years from Earth, starting with nothing, gathering natural resources, expanding a base, developing technology, exploring the expanse of the planetary system, and eventually building a warp engine to return to Earth, the Sweet Cozy Home of Mankind.**
 
+Licensed Under [CC-BY-NC-ND-4.0](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE).
+
 ---
 
 ## Download Latest
@@ -16,12 +18,14 @@
 
 1. [OFFICIAL WIKI](https://wiki.teammoeg.com/)
 2. [FORUMS](https://forum.teammoeg.com/)
+3. [DISCORD](https://discord.gg/BWn6E94)
+4. QQ Group Number: 1046723658
 
-## Help Development
+## Support Development
 
 1. [SOURCE](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack)
 2. [ISSUES](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues)
-3. [LICENSE](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE)
+3. We do TFR for Free, but maintaining the servers cost money. Consider Sponsoring us at [PATREON](https://www.patreon.com/TeamMoeg) or [AIFADIAN(CN)](https://afdian.net/@teammoeg)
 
 ## Help Localization
 
