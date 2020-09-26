@@ -1,5 +1,5 @@
 # Blacklist everything by default
-/*
+*
 
 !/.gitignore
 !/.gitattributes
