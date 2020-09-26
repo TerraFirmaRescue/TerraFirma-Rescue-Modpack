@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <config>
-    <lines at="topcenter">
-		<line>
-            <str>现实时间: $e{rltime24}$f  </str>
-            <str>$f坐标: $cX:{xi}$f / $cY:{yi}$f / $cZ:{zi}$f $e</str>
-            <round>
-                <pct>
-                    <var>xi</var>
-                    <var>yi</var>
-                    <var>zi</var>
-                </pct>
-            </round>
-        </line>
-	</lines>
     <lines at="topleft">
         <line>
             <str>{pingicon}$e$l{username}$f </str>
@@ -42,6 +29,9 @@
                 <num>0</num>
             </round>
             <str>%</str>
+
+            <str>$8 使用/igi disable关闭信息显示</str>
+
         </line>
         <line>
             <icon>
@@ -67,40 +57,39 @@
                 <str>terrafirmacraft:item.LooseRock</str>
             </icon>
             <str> $r世界： </str>
-                <op>
-                    <str>eq</str>
-                    <var>dimensionid</var>
-                    <num>-1</num>
-                    <num>-1</num>
-                    <num>0</num>
-                    <num>1</num>
-                    <num>2</num>
-                    <num>7</num>
-                    <num>10</num>
-                    <num>11</num>
-                    <num>12</num>
-                    <num>13</num>
-                    <num>14</num>
-                    <num>15</num>
-                    <num>16</num>
-                    <num>17</num>
-                    <num>18</num>
+            <op>
+                <str>eq</str>
+                <var>dimensionid</var>
+                <num>-1</num>
+                <num>-1</num>
+                <num>0</num>
+                <num>1</num>
+                <num>2</num>
+                <num>7</num>
+                <num>10</num>
+                <num>11</num>
+                <num>12</num>
+                <num>13</num>
+                <num>14</num>
+                <num>15</num>
+                <num>16</num>
+                <num>17</num>
+                <num>18</num>
 
-                    <str>$6下界 $e(Ne)</str>
-                    <str>$6群峦星 $e(TF)</str>
-                    <str>$6末地 $e(EN)</str>
-                    <str>$6通灵空间 $e(不建议使用)</str>
-                    <str>$6暮色森林 $e(TF)</str>
-                    <str>$6鸭蛋星 $e(DU)</str>
-                    <str>$6鸭卫二 $e(DB)</str>
-                    <str>$6鸭卫三 $e(DC)</str>
-                    <str>$6HD星 $e(HD)</str>
-                    <str>$6伊万星 $e(EV)</str>
-                    <str>$6萨特恩星 $e(SA)</str>
-                    <str>$6德拉克纳星 $e(DR)</str>
-                    <str>$6终望星 $e(ED)</str>
-                </op>
-            <str> $r已加载区块数： $b{loadedchunks} </str>
+                <str>$6下界 $e(Ne)</str>
+                <str>$6群峦星 $e(TF)</str>
+                <str>$6末地 $e(EN)</str>
+                <str>$6通灵空间 $e(不建议使用)</str>
+                <str>$6暮色森林 $e(TF)</str>
+                <str>$6鸭蛋星 $e(DU)</str>
+                <str>$6鸭卫二 $e(DB)</str>
+                <str>$6鸭卫三 $e(DC)</str>
+                <str>$6HD星 $e(HD)</str>
+                <str>$6伊万星 $e(EV)</str>
+                <str>$6萨特恩星 $e(SA)</str>
+                <str>$6德拉克纳星 $e(DR)</str>
+                <str>$6终望星 $e(ED)</str>
+            </op>
         </line>
         <line>
             <icon>
@@ -166,7 +155,7 @@
                 <num>52</num>
                 <num>53</num>
                 <num>54</num>
-                
+
                 <num>56</num>
                 <num>57</num>
                 <num>58</num>
@@ -204,7 +193,7 @@
                 <num>90</num>
                 <num>91</num>
                 <num>92</num>
-                
+
                 <num>94</num>
                 <num>95</num>
                 <num>96</num>
@@ -227,7 +216,7 @@
                 <num>113</num>
                 <num>114</num>
                 <num>115</num>
-                
+
                 <num>117</num>
                 <num>118</num>
                 <num>119</num>
@@ -278,7 +267,7 @@
                 <num>171</num>
                 <num>172</num>
                 <num>173</num>
-                
+
                 <num>175</num>
                 <num>176</num>
                 <num>177</num>
@@ -287,7 +276,7 @@
                 <num>180</num>
                 <num>181</num>
                 <num>182</num>
-                
+
                 <num>184</num>
                 <num>185</num>
                 <num>186</num>
@@ -406,7 +395,7 @@
                 <str>樱花林</str>
                 <str>针叶林</str>
                 <str>珊瑚礁</str>
-                
+
                 <str>峭壁</str>
                 <str>死亡森林</str>
                 <str>荒芜沼泽</str>
@@ -444,7 +433,7 @@
                 <str>果园</str>
                 <str>起源山谷</str>
                 <str>干燥石滩</str>
-                
+
                 <str>极地裂谷</str>
                 <str>草原</str>
                 <str>泥潭</str>
@@ -467,7 +456,7 @@
                 <str>热带雨林</str>
                 <str>热带海岛</str>
                 <str>苔原</str>
-                
+
                 <str>血池肉林</str>
                 <str>火山</str>
                 <str>类月平原</str>
@@ -513,12 +502,12 @@
                 <str>平顶山（岩柱）</str>
                 <str>平顶山高原 F M</str>
                 <str>平顶山高原 M</str>
-                
+
                 <str>暮色林中空地</str>
                 <str>黑暗森林</str>
                 <str>黑暗森林中心</str>
                 <str>蘑菇密林</str>
-                
+
                 <str>火焰沼泽</str>
                 <str>暮色冰川</str>
                 <str>暮色高地</str>
@@ -527,7 +516,7 @@
                 <str>萤火虫森林</str>
                 <str>蘑菇森林</str>
                 <str>橡木稀树草原</str>
-                
+
                 <str>暮色溪流</str>
                 <str>暮色沼泽</str>
                 <str>荆棘之地</str>
@@ -602,47 +591,6 @@
             </icon>
             <str>$f 平均温度: $b{tfcaveragetemperature}$r°C </str>
             <str>$f 当前温度: $b{tfctemperature}$r°C </str>
-            <str>$f 外部热源温度: $b{tfctemperatureheatsources}$r°C</str>
-        </line>
-        <line>
-            <icon>
-                <str>minecraft:skull</str>
-                <num>4</num>
-            </icon>
-            <str> 实体: $b{entitiesrendered}$f 已显现 / $b{entitiestotal}$f 已加载  </str>
-        </line>
-        <line>
-            <icon>
-                <str>minecraft:compass</str>
-                <num>0</num>
-            </icon>
-            <str> 区块坐标: X:$b {chunkx} $fZ:$b {chunkz} $fY: $b{yfeeti} $f 区块内位置: $3$6 {chunkoffsetx} $f:$b {chunkoffsetz} $f</str>
-            <str> $f面向 $b</str>
-            <op>
-                <str>eq</str>
-                <var>finedirection</var>
-                <str>North</str>
-                <str>North East</str>
-                <str>East</str>
-                <str>South East</str>
-                <str>South</str>
-                <str>South West</str>
-                <str>West</str>
-                <str>North West</str>
-                <str>北方</str>
-                <str>东北</str>
-                <str>东方</str>
-                <str>东南</str>
-                <str>南方</str>
-                <str>西南</str>
-                <str>西方</str>
-                <str>西北</str>
-            </op>
-            <str>$f</str>
-            <if>
-                <var>slimechunk</var>
-                <str> $6史莱姆区块$f</str>
-            </if>
         </line>
         <line>
             <icon>
@@ -889,90 +837,38 @@
                 <str/>
             </max>
         </line>
-    </lines>
-    <lines at="middleright">
-        <line>
-            <icon>
-                <str>minecraft:book</str>
-            </icon>
-            <str>$f{underline}技能列表</str>            
-        </line>
-        <line>
-            <icon>
-                <str>terrafirmacraft:item.Seeds Wheat</str>
-            </icon>
-            <str> $2{tfcskillagriculture}</str>
-        </line>
-        <line>
-            <icon>
-                <str>terrafirmacraft:item.Blue Steel ProPick</str>
-            </icon>
-            <str> $9{tfcskillprospecting}</str>
-        </line>
-        <line>
-            <icon>
-                <str>terrafirmacraft:item.Mutton</str>
-            </icon>
-            <str> $6{tfcskillbutchering}</str>
-        </line>
-        <line>
-            <icon>
-                <str>terrafirmacraft:item.Barley Bread</str>
-            </icon>
-            <str> $4{tfcskillcooking}</str>
-        </line>
-        <line>
-            <icon>
-                <str>terrafirmacraft:item.Blue Steel Chestplate</str>
-            </icon>
-            <str> $5{tfcskillarmorsmith}</str>
-        </line>
-        <line>
-            <icon>
-                <str>terrafirmacraft:item.Blue Steel Ingot</str>
-            </icon>
-            <str> $b{tfcskillgensmith}</str>
-        </line>
-        <line>
-            <icon>
-                <str>terrafirmacraft:item.Blue Steel Pick</str>
-            </icon>
-            <str> $7{tfcskilltoolsmith}</str>
-        </line>
-        <line>
-            <icon>
-                <str>terrafirmacraft:item.Blue Steel Sword</str>
-            </icon>
-            <str> $8{tfcskillweaponsmith}</str>
-        </line>
 
-    </lines>
-    <lines at="bottomright">
+        <line> </line>
+
         <line>
+            <str>{potionicon0}</str>
             <max>
                 <var>potiondurationticks0</var>
                 <num>0.5</num>
-                <str>{potionduration0} {potionicon0}</str>
+                <str>{potionduration0}</str>
                 <str/>
             </max>
         </line>
         <line>
+            <str>{potionicon1}</str>
             <max>
                 <var>potiondurationticks1</var>
                 <num>0.5</num>
-                <str>{potionduration1} {potionicon1}</str>
+                <str>{potionduration1}</str>
                 <str/>
             </max>
         </line>
         <line>
+            <str>{potionicon2}</str>
             <max>
                 <var>potiondurationticks2</var>
                 <num>0.5</num>
-                <str>{potionduration2} {potionicon2}</str>
+                <str>{potionduration2}</str>
                 <str/>
             </max>
         </line>
         <line>
+            <str>{potionicon3}</str>
             <max>
                 <var>potiondurationticks3</var>
                 <num>0.5</num>
@@ -981,42 +877,11 @@
             </max>
         </line>
         <line>
+            <str>{potionicon4}</str>
             <max>
                 <var>potiondurationticks4</var>
                 <num>0.5</num>
                 <str>{potionduration4} {potionicon4}</str>
-                <str/>
-            </max>
-        </line>
-        <line>
-            <max>
-                <var>potiondurationticks5</var>
-                <num>0.5</num>
-                <str>{potionduration5} {potionicon5}</str>
-                <str/>
-            </max>
-        </line>
-        <line>
-            <max>
-                <var>potiondurationticks6</var>
-                <num>0.5</num>
-                <str>{potionduration6} {potionicon6}</str>
-                <str/>
-            </max>
-        </line>
-        <line>
-            <max>
-                <var>potiondurationticks7</var>
-                <num>0.5</num>
-                <str>{potionduration7} {potionicon7}</str>
-                <str/>
-            </max>
-        </line>
-        <line>
-            <max>
-                <var>potiondurationticks8</var>
-                <num>0.5</num>
-                <str>{potionduration8} {potionicon8}</str>
                 <str/>
             </max>
         </line>

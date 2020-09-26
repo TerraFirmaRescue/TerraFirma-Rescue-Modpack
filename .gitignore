@@ -28,6 +28,9 @@
 !/config/
 !/gregtech.cfg
 
+!/config/IGI_TFR_DEBUG.xml
+!/config/IGI_TFR_USER.xml
+
 # Options files
 !/gregtech.cfg
 !/options.txt
