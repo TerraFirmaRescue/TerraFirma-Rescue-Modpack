@@ -4,7 +4,7 @@ fov:0.0
 gamma:0.5
 saturation:0.0
 renderDistance:12
-guiScale:2
+guiScale:0
 particles:0
 bobView:true
 anaglyph3d:false
@@ -96,7 +96,7 @@ key_key.SwitchMagnetMode:0
 key_key.ToolMode:50
 key_key.LockTool:38
 key_key.personalBackpack:23
-key_key.betterquesting.quests:144
+key_key.betterquesting.quests:41
 key_Quest Log:34
 key_openblocks.keybind.vario_switch:22
 key_openblocks.keybind.vario_vol_up:0
