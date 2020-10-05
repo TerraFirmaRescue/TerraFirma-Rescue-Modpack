@@ -1,444 +1,322 @@
+3.4.5.0
+
+
+3.4.4.0
+Module changes:
+- Upgrade MoegAddon-1.12
+
+Content Changes:
+- Reduce in-game message hover ratio, remove meaningless messages
+- Modified the default size, which is now automatic
+- Updating the sponsorship form's cloud-based website to quickly access sponsor information to display capes
+- Added an update check to alert you when an integration package running below the latest version of the integration package is available
+
+3.4.3.0
+Module changes:
+- Upgrading MoegAddon-1.11
+- Added InGameInfoXML-1.7.10-2.8.2.3-universal
+- Added LunatriusCore-1.7.10-1.1.2.21-universal
+- Add NotEnoughItems-1.7.10-2.0.4-GTNH-universal
+- Delete Neieasysearch
+- Remove NotEnoughItems
+
+Content Changes :
+- Beautifully hover display of key information such as temperature, rainfall, date, block information, group range skills and more.
+- Using the NEI created by the GTNH team, the search response is at least 5 times faster.
+- Add a welcome text when you enter the game, including various ways to communicate, so newcomers won't be confused!
+- In addition to the poncho you can get for sponsoring, you'll also get a sponsorship certificate upon entering the game for the first time to show how much we appreciate you!
+- No strange text error when entering the game~!
+
+3.4.2.0
+Module changes:
+- Update BetterLoadingScreen-1.4.1-TFR
+
+Content Changes :
+- Fix for Unable to Load Resources
+
+3.4.1.0
+Module changes:
+- Upgrade TFC0.80.06-TFR
+- Upgraded gregtech 6.14.07.
+- Upgraded Botania-TFR-2602
+- Update MoegAddon-1.10
+- Add BetterLoadingScreen-1.4.00-TFR
+
+Content Changes :
+- Fix bugs that appeared in the previous version
+- Add a better looking loading interface
+- Adding tips to the loading screen
+- Repair of oil purifier
+- Add capes and in-game certificates for sponsored players
+- Add quests about plant magic
+
+3.4.0.0
+Module changes:
+- Upgrade TFC0.80.04-TFR
+- Update gregtech 6.14.05
+- Added Botania-TFR-2601.
+- Add Baubles
+
+Content Changes :
+- Fix various bugs in TFC switching worlds
+- Adds compatibility with Plant Magic and Lore of the Mountains
+- The world is now generating magic flowers.
+- The Crucible of Magic
+- Forge of Magic
+- Gaia's blood and damage is set to a group range rating
+- multi-cube energy storage structure
+
 3.3.4.0
-
-Note:
-
-Both 3.3.2.0 and 3.3.3.0 packs are seriously buggy. If you have updated to the 3.3.3.0 or 3.3.2.0 client,
-
-Find an archive backup of version 3.3.1.3 (Typically, the upgrade integrator saves one automatically in the Saves folder),
-
-Take out the original level.dat and session.lock and replace the two files you have saved now.
-
-After that, you can update our upcoming 3.3.4.0 release. Otherwise, ID mismatch will occur!!
-
-
+Notes:
+Both the 3.3.2.0 and 3.3.3.0 integration packages have serious bugs. if you have updated to the 3.3.3.0 or 3.3.2.0 client.
+Look for an archive backup of version 3.3.1.3 (normally the upgrade integration package will automatically save one in the saves folder).
+And take out the level.dat and session.lock from the original archive and replace them with the files you have now.
+Then, you can update only the version 3.3.4.0 that we will release. Otherwise, you'll have ID misalignment issues!
 
 Module changes:
+- Upgrade TFC0.80.03-TFR
 
-Upgrade TFC0.80.03 - TFR
-
-
-
-Content changes:
-
-Fixed an item ID change in the previous version
-
-Fixed a series of magic crashes caused by the last release
-
-Fixed TFC anvil brush issue
-
-The TFC sheet metal is now melted in the crucible to give half the original metal units
-
-Fixed synthetic clay bricks that sometimes flash back
-
-Fixed a problem where forging recipes disappear/fail to align when switching dimensions (server multi-world plug-in)
-
-
+Content Changes :
+- Fix the item ID changes that appeared in the previous version
+- Fixing a series of crashes caused by the previous version of Mojo.
+- Fix TFC stone anvil that would brush items
+- TFC sheets are now melted in a crucible to yield half the original metal units.
+- Fix synthetic clay tiles sometimes glitching issue
+- Fix issue with forge recipes disappearing/not aligning when switching dimensions (server multiworld plugin)
 
 3.3.3.0
-
 Module changes:
+- Upgrade TFC0.79.37-TFR
+- Upgrading AdvancedRockery 2.0.0.02-TFR
+- Upgraded gregtech6.14.04
+- Upgraded TFRTech0.3.1
 
-Upgrade TFC0.79.37 - TFR
-
-Upgrade AdvancedRockery2.0.0.02 - TFR
-
-Upgrade gregtech6.14.04
-
-Upgrade TFRTech0.3.1
-
-
-
-Content change
-
-Fixed some minor bugs
-
-Repair paper fiber cannot be made in wooden barrels
-
-Fixed an issue with advanced rocket decomposing to exit the server
-
-Fixed TFC anvil brush issue
-
-Fixed synthetic clay bricks that sometimes flash back
-
-Fixed automatic blower module without English localization
-
-Fixed ammonium chloride not localized
-
-The TFC sheet metal is now melted in the crucible to give half the original metal units
-
-Modified civilian steam engine synthesis
-
-Glass is no longer available in bonfires
-
-Add normal mode
-
-New expert model
-
-
+Content changes
+- Fixed a few bits and pieces of bugs
+- Repair of paper fibers cannot be made in barrels
+- Fix the issue of quitting the server when advanced rocket disintegration
+- Fix auto-blower module without English localization
+- Repair of ammonium chloride not localized
+- Modification of Minko steam engine synthesis
+- Glass is no longer available in the campfire.
+- New normal mode
+- New expert mode
 
 3.3.2.0
-
 Module changes:
-
-Upgrade gregtech6.14.03
-
-
-
-Content changes:
-
-Fixed PUV1 emitter not compositing
-
-Repair glass cannot be manufactured on thermoelectronic worktable
-
-Repair nailed leather synthetic conflict
-
-Add protocol content to the file
-
-Modify the synthesis of some articles such as OB water storage tank elevator
-
-Elevators and rotary elevators can now convert colors with chisels
-
-Add iron ingots to unify the machines
-
-Dual lithium conversion is allowed
-
-Modification of quadruple fuel rod manufacturing
-
-Increase the original composition of all saplings
-
-Increase lotus leaf synthesis
-
-Increase cactus synthesis
-
-Change dragon egg composition
-
-Fixed fusing some formula swallowing programming circuits
-
-Dry paper powders now do not require potassium lye
-
-Circuit board manufacturing price reduction
-
-AE fluid stores some items that change composition
-
-ME glass modified composition
-
-Change the composition of the RC reservoir
-
-Change part of circuit base plate composition
-
-Change of advanced computer motherboard composition
-
-Machine synthesis of modified gene industries
-
-Machine synthesis of modified genetic engineering
-
-Close the black hole destruction square
-
-Increase biosynthesis of biological circuit boards
-
-Increase bacteria and their ways of increasing biomass
-
-
-
-3.3.1.3
-
-Module changes:
-
-MoegAddon - 1.06 -
-
-AdvancedRocktry - TFR 2.0.0.01
-
-InventoryTweaks PFAA - 1.58
-
-NotEnoughCharacters - 1.0 -
-
-demotion
-
-Betterquesting - 3.0.306
-
-IC2NEIPluginVersion - 1.2.2
-
-Questbook 2.1.1 -
-
-StandardExpansion - 3.0.162
-
-Content changes:
-
-Fixed some tasks that could not be committed
-
-Fixed GT large material manufacturing and large material replication and synthesis conflict
-
-Repair space elevator cannot be built
-
-Restoration can only be done with granite slabs
-
-Repair tin plate cannot be heated
-
-Fixed meaningless text messages starting the game
-
-Fixed partial fluid abnormal display name
-
-Change material copy to three-piece set of large machine main block synthesis
-
-Modified main block composition for distillation column and cracking column
-
-Change some tasks to accept more items
-
-Change the iron and steel time of RC blast furnace
-
-Change TFC charcoal and coal burning times
-
-Change RC blast furnace synthesis
-
-Change the startup interface and the main interface
-
-Change the glass production
-
-Reduce part of combustor cost
-
-Reduce the cost of TFC blast furnace
-
-Deleted producing steels by other recipes in RC Blast Furnace.
-
-Add a lot of tasks
-
-Add more task rewards
-
-Add RC Rolling recipes for long rods, curved plates, foils, and small casings
-
-Add new Main Menu and Opening Music
+- Update gregtech6.14.03
+
+Content Change:
+- Fix PUV1 emitter not synthesizing
+- Fix glass can't be manufactured at the hot electronic table
+- Fix nailed leather composite conflicts
+- Adding agreements to the document
+- Modify OB reservoir elevator and other partial item synthesis
+- Elevators and rotating elevators can now change colors with a chisel
+- Increase of ingot unification machines
+- Allows dilithium conversion
+- Modification of quadruple fuel rod manufacturing
+- Add all the original saplings to the synthesis
+- Increased lotus leaf synthesis
+- Increased cactus synthesis
+- Change Dragon Egg Synthesis
+- Fix fusion some recipes swallowing programmed circuits
+- Dry paper powders now don't need potash water.
+- Circuit Board Backplane Manufacturing Price Reductions
+- AE fluid storage for some items to change synthesis
+- ME Glass Change Synthesis
+- RC Reservoir Modification Synthesis
+- Changing some of the circuit base plate compositions
+- Change Advanced Computer Motherboard Composition
+- Robotic synthesis for the genetic industry
+- Modified genetic engineering for machine synthesis
+- Close the black hole and destroy the cube.
+- Increased synthesis of biological circuit boards
+- Increasing bacteria and the way they increase biomass production
+
+3.3.1.3:
+Module changes.
+- Upgraded MoegAddon-1.06
+- Upgraded AdvancedRocktry-TFR 2.0.01
+- InventoryTweaks-PFAA-1.58
+- Upgraded NotEnoughCharacters-1.0
+- Downgraded Betterquesting-3.0.306
+- Downgraded IC2NEIPluginVersion-1.2.2
+- Downgraded questbook-2.1.1
+- Downgraded StandardExpansion-3.0.162
+
+Content changes.
+- Repair of some tasks that could not be submitted
+- Fixing the GT Large Matter Manufacturing and Large Matter Replication Synthesis conflict
+- Fix the space elevator can't be made.
+- Restoration can only be done with slabs of granite.
+- Fix tin-alloy plates that don't heat up
+- Fix meaningless text messages to start the game
+- Fix part of the fluid not displaying names properly
+- Alter Substance Replication Trio Large Machine Master Cube Synthesis
+- Change distillation tower and cracking tower main cube synthesis
+- Change some missions to accept more items
+- Change of RC furnace firing and steel time
+- Changing TFC charcoal and coal burn times
+- Change of RC blast furnace synthesis
+- Changing the startup and main screens
+- Modifications to glass manufacturing
+- Reduced cost of partial combustion chamber
+- Reduce the cost of TFC blast furnaces
+- Delete other formulations for RC blast furnace fired steel.
+- Add many tasks
+- Add more mission rewards
+- Add recipe for RC Roller Press to make long rods, shells, bent plates, and foils.
+- Adding a new main interface and intro music
 
 
 3.3.1.2:
-Mod changes:
-no
-Content changes:
-Fix serious formula problems
-Fix serious module problems
+Module changes.
+- None
+
+Content changes.
+- Fix serious formulation problems
+- Fix serious module problems
 
 3.3.1.0:
-Mod changes:
-Remove Optifine
-Content changes:
-no
+Module changes.
+- Delete Optifine
 
+Content changes.
+- None
 
 3.3.0.0:
-Mod changes:
-Upgrade gregtech 6.14.00
-TerraFirmaCraft-TFR 0.79.36-v2
-AdvancedRocketry-TFR 2.0.0
-TFRTech-0.3.0
-LibVulpes-0.2.8-37-universal
-StandardExpansion-3.0.181
-questbook-3.0.0
-OpenModsLib-0.10.1
-OpenComputers-1.7.5.1290
-OpenBlocks-1.6
-GT6TweakerInMTUtils-1.8
-ModTweaker2-0.9.6
-IC2CropPlugin-1.3.1
-HardcoreDarkness-1.7
-ExtraCells-2.3.14b200
-CustomOreGen-1.2.26
-Chisel-2.9.5.11
-Carpenter's Blocks-3.3.8.2
-BetterQuesting-3.0.328
-Downgrade
-OmniOcular-1.0build103
-industrialcraft-2-2.2.827-experimental
-forestry-4.2.16.64
-The following modules of the international CF version have lower versions:
-Railcraft-9.12.2.0
-ae2stuff-0.5.1.61
-appliedenergistics2-rv3-beta-6
-backpack-2.2.4
+Module changes.
+- Upgraded gregtech 6.14.00
+- Upgraded TerraFirmaCraft-TFR 0.79.36-v2
+- Upgrade AdvancedRocketry-TFR 2.0.0
+- Upgraded TFRTech-0.3.0
+- Upgraded LibVulpes-0.2.8-37-universal
+- Upgrade StandardExpansion-3.0.181
+- Upgraded questbook-3.0.0
+- Upgraded OpenModsLib-0.10.1
+- Upgraded OpenComputers-1.7.5.1290
+- Upgraded OpenBlocks-1.6
+- Upgraded GT6TweakerInMTUtils-1.8
+- Upgraded ModTweaker2-0.9.6
+- Upgraded IC2CropPlugin-1.3.1
+- Upgraded HardcoreDarkness-1.7
+- Added ExtraCells-2.3.14b200
+- Upgraded CustomOreGen-1.2.26
+- Upgraded Chisel-2.9.5.11
+- Upgraded Carpenter's Blocks-3.3.8.2
+- Upgraded BetterQuesting-3.0.328
+- Downgrade OmniOcular-1.0build103
+- downgradedindustrialcraft-2-2.2.827-experimental
+- Downgradedforestry-4.2.16.64
+CurseForge version of the following module versions are lower:
+- Railcraft-9.12.2.0
+- ae2stuff-0.5.1.61
+- appliedenergistics2-rv3-beta-6
+- backpack-2.2.4
 
-Content changes:
-Completely modified the original platinum-based metal mineral treatment
-Fixed a conflict between the synthesis of diamond boxes and crystal boxes
-Fix AR projector synthesis
-Repair anvil synthesis
-Repair water storage tank can only be synthesized by oak
-Change endless sets of composition
-Change jetpack, power jetpack synthesis
-Change the composition of most backpacks
-Change enderbox composition
-Change the synthesis of most original redstone related items
-Change original track synthesis
-Changed the anvil grade required to make GT parts, now only steel is needed
-Change Compressed Box Synthesis
-Changed the grass rope synthesis
-Changed satellite construction machine, rocket assembly machine, navigation computer synthesis
-Changed the smelting method of iron ore in RC blast furnace
-Changed the generation of alien platinum mines
-Decrease conveyor cost
-Add Neutron Element Synthesis
-Add P2P-RF synthesis
-Add saltpeter to make ice
-Add GT looms to make TGC looms
-Add GT cutting machine to make wood
-Add original wood and TFC log disordered synthesis conversion
-Added TFC pyrolusite and crushed
-Add reward bag system
-Added original oak sapling, birch sapling, GT willow sapling, hazelnut sapling, rainbow sapling synthesis
-Add water wells and seawater wells
-Added five platinum minerals
-Add TFC chromite to treat as crushed ore
-Add AE2 and MO missions
-Add microcircuit
-Add monster side quest
-Added several asteroids
-Added Venus Star
-Cancelled the guide rail synthesis except the GT roller press
-Cancelled the hand-to-origin board
-Cancelled the generation of all GT ores in the main world
+Content changes.
+- Complete modification of the original platinum-based metal mineral processing method
+- Fixed the conflict between the diamond chest and crystal chest synthesis
+- Fix AR projector compositions
+- Fix Anvil Synthesis
+- Restoration of the cistern can only be made of oak.
+- Changing the endless set synthesis
+- Change Jetpack, Power Jetpack Synthesis
+- Change the synthesis of most backpacks
+- Changing the final shadowbox composition
+- Changed most of the original Redstone related item synthesis
+- Changing the original rail composite
+- Changed the anvil grade required to make GT parts, now only steel is required
+- Change Compressed Box Composition
+- Changed the grass rope synthesis
+- Modified satellite builder, rocket assembler, navigation computer synthesis.
+- Changed the method of smelting iron ore in the RC blast furnace
+- Altered platinum mining on the outer planets.
+- Downward revision of the cost of conveyors
+- Add neutron element parts synthesis
+- Add P2P-RF synthesis
+- Add saltpeter for ice synthesis
+- Adding a recipe for a GT loom to make a TGC loom
+- Add a GT cutter to make wood
+- Add original wood to TFC logs for unordered synthetic conversions
+- Added TFC soft manganese ore and crushing
+- Adding a reward bag system
+- Added original oak seedling, birch seedling, GT willow seedling, hazelnut seedling, rainbow seedling composite
+- Addition of water wells and seawater wells
+- Five platinum-based minerals have been added.
+- Addition of TFC chromite treated to crushed ore
+- Adding tasks for AE2 and MO
+- Adding microcircuits
+- Adding monster quests
+- Several asteroids have been added.
+- Venus Star added.
+- Cancellation of rail compounding except for GT roller presses
+- Eliminate the hand-jointed original boards
+- Canceled all GT Ore generation in the main world
 
 3.2.2.1
-Fix task book bug
-Fixed bug where Qunluan wrought iron products were placed in the general iron mineral dictionary
+Module changes.
+- Upgraded gregtech 6.13.07
+- Upgraded MoegAddon-TFR 1.03
+- Upgraded TerraFirmaCraft-TFR 0.79.36
+- Added OpenComputers
+- Add IronChests
+- Adding TFCScales
+- Adding TooMuchTime
+- Add TFCUdaryMod
+- Add ae2stuff.
+- Adding Avaritaddons
+- Add backpack
+- Add BetterBuilderWands
+- Add binnie-mods
+- Add EnhancedLootBags
+- Adding ExtraCells
+- Adding Gendustry
+- Adding HoloInventory
+- Add IC2NeiPlugin
+- Add IC2NuclearControl
+- Adding neiaddons
+- Adding NEIIntegration
+- Adding OpenComputers
+- Add WirelessCraftingTerminal
 
-3.2.2.0 (serious problems, please update)
-Mod changes:
-Upgrade gregtech 6.13.07
-Upgrade MoegAddon-TFR 1.03
-Upgrade TerraFirmaCraft-TFR 0.79.36
-Add to
-OpenComputers
-IronChests
-TFCScales
-TooMuchTime
-TFCUdaryMod
-ae2stuff
-Avaritaddons
-backpack
-BetterBuilderWands
-binnie-mods
-EnhancedLootBags
-ExtraCells
-Gendustry
-HoloInventory
-IC2NeiPlugin
-IC2NuclearControl
-neiaddons
-NEIIntegration
-OpenComputers
-WirelessCraftingTerminal
+Content changes.
+- Fix the mission statement bug
+- Fix a bug that caused wrought iron products to be placed in the common iron mineral dictionary.
+- New high-temperature mixers have been added to replace the existing flash processors in photoresist manufacturing and mixers in epoxy manufacturing.
+- New recipes for the treatment of moon top soil and iron oxide sand have been added.
+- New partial fusion formulation
+- Synthesis of some of the original crops added
+- New recipe for synthesizing liquefaction furnace with iridium crucible
+- Changed the melting point and specific heat capacity of some of the materials used in the Qun-Luan forging to allow the welding of plates.
+- Changed the fabrication of 20nm wafers, now requires radon
+- Changed synthesis on some of the advanced machines, now requires the main engine
+- Changed the synthesis of superconducting wires
+- Changed the formula for the reactor core of the Dragon Reactor.
+- Changed the recipe for most AE items
+- Change in glass manufacturing
+- Changed the synthesis of the Endless Catalyst.
+- Changed the synthesis of basic, low-level and advanced Gray's boards.
+- Changed the door synthesis
+- Changed the output of RC Crusher to make smaller ores
+- Modified synthesis of nuclear reactors
+- Changed the synthesis of IC miners and advanced miners
+- Changed the synthesis of the IC transmitter.
+- Changed doped wafer synthesis
+- Changed the synthesis of the dragon core.
+- Changed the synthesis of space suits.
+- Changed the density of ore production in the alien veins.
+- Changed the synthesis in the Iron Box module
+- Changes to the synthesis of the electric arc blast furnace
+- Synthesis of unlimited water sources (T1-T8) has been added.
+- Borax grinding has been added.
+- Synthesis of chaos debris in fusion reactors has been added.
+- New cutter to make ceramic plates
+- New synthesis of molten shadow pearls
+- Adding the manufacture of Gray's leather
+- Fixed an issue where the Qunran and Gray tools were not working together.
+- Fix the nanomanufacturing jam technology
+- Repair of polysilicon crushing
 
-Content changes:
-Added a high-temperature mixer to replace the original lightning processor in photoresist manufacturing and the mixer in epoxy resin manufacturing
-Added treatment formula for lunar soil and iron oxide sand
-Added some fusion recipes
-Added some original crop synthesis
-Added the formula of synthetic liquefaction furnace with iridium crucible
-Changed the melting point and specific heat capacity of some materials in Qunluan forging, allowing welding of plates
-Changed the production of 20nm wafers, now radon is needed
-Changed the synthesis of some advanced machines, now requires a host
-Changed the synthesis of superconducting wires
-Changed the formula of the reactor core of Dragon Reactor
-Changed the recipe of most AE items
-Changed glass manufacturing
-Changed the synthesis of Endless Catalyst
-Changed the basic, low-level, and advanced Gray board synthesis
-Changed the composition of the door
-Changed the output of RC stone crusher to make small ore
-Changed the synthesis of nuclear reactors
-Changed the synthesis of IC mining machine and advanced mining machine
-Changed the synthesis of the IC conveyor
-Changed doped wafer synthesis
-Changed the composition of Godson
-Changed the synthesis of space suits
-Changed the density of ore formation in alien veins
-Changed the composition in the Iron Box mod
-Changed the synthesis of arc blast furnace
-Added the synthesis of infinite water (T1-T8)
-Added grinding of borax
-Added the synthesis of chaotic fragments in the fusion reactor
-Add cutting machine to make ceramic plate
-Added the synthesis of Molten Ender Pearl
-Added gray leather manufacturing
-Fixed an issue where Qunluan tool and Gray tool could not be used universally
-Fix the problem of nano manufacturing stuck technology
-Fixed the issue of excessive energy consumption when polysilicon was broken
-Fixed an issue where some triple plates could not be welded
-Canceled the newly added synthesis of titanium
-Canceled the generation of plutonium mines
-Canceled unlimited water
-Canceled the OmniOcular profile of the crucible
-Canceled the synthesis of tantalum casting basin
-
-3.2.1.0
-Mod changes:
-Upgrade gregtech6.13.06
-Add HardcoreDarkness
-Add MoegAddon
-Add Carpenter’s Craft
-Add NBTEdit
-
-Content changes:
-Added lithography machine (multi-block)
-Added fluid curing device (single box)
-16 new CPUs and 16 clock RAMs have been added, which are classified as 7-level CPUs and 7-level RAMs.
-CPU: 512MHz, 1GHz, 2GHz, 4GHz, 8GHz, 16GHz, 32GHz
-RAM: 256M, 512M, 1G, 2G, 4G, 6G, 8G, 16G
-Add the same level of CPU and RAM (can be mixed) can be made as the host of this level, divided into 7 levels: low level, basic, advanced, advanced, elite, ultimate, ultimate
-Added 4 mainframes of the same level can be made as giant components, divided into 7 levels.
-Add some fluids, including epoxy resin, photoresist, polyvinyl chloride, etc.
-Newly added epoxy resin, photoresist, polyvinyl chloride, and the synthesis of raw materials
-Added synthesis of phosphoric acid
-Added industrial synthesis of rubber paste
-Added a synthesis for making AE controller
-New Platinum Star
-Added industrial synthesis of Nether Star
-A lot of new TFC items and original items are disorderly synthesized conversion
-Added radon produced from asphalt uranium
-Added centrifugal soil centrifugal to produce end air
-Changed the amount of salt rock crushing
-Changed the synthesis of a large number of AE items
-Changed papermaking, now it is more real
-Changed the method of making glass, now it becomes more real
-Changed the synthesis of nuclear fusion host Mk1
-Changed the composition of the particle collider host
-Changed the manufacturing methods of advanced, high-tech, and ultimate circuit boards
-Change the composition of the circuit board (platinum)
-Changed the synthesis of the crystal circuit
-Changed the synthesis of five quad-core crystal processors
-Many aspects of the recipe have been changed, and a balanced adjustment has been made for the new version of the electronics industry.
-Changed the method of making rocket fuel
-Changed the synthesis of graphene
-Changed the synthesis of the heat absorption device
-Changed the cost of rocket assembly machine and navigation computer
-Changed the production of aluminum fluoride, and now directly output molten aluminum fluoride
-Changed the synthesis of AR motors
-Fixed the large ionizer cannot be synthesized
-
-3.2.0.2
-Content changes:
-Fix the problem that the task book is not displayed
-
-3.2.0.1
-Mod changes:
-ResourceLoader
-CustomMainMenu
-
-Content changes:
-Fix main interface illustration
-
-3.2.0.0 (official version)
-The first release
-
-3.1.0.0 (beta version)
-Content changes: (incomplete)
-Added stone crusher processing and crusher processing for TFC mine
-Changed boiler synthesis
-Changed the synthesis of GT crucible
-Changed combustor synthesis
-Changed clay synthesis
-Changed generator synthesis
-Changed rocket assembly machine synthesis
-Removed GT anvil synthesis
-
-3.0.0.0
-Upgrade from MoegCraft2 to Terrafirma-Rescue
-Module changes:
-Restructure the entire module list, centering on TFC and GT6U
+Translated with www.DeepL.com/Translator (free version)
