@@ -12,7 +12,7 @@ advancedOpengl:false
 maxFps:120
 fboEnable:true
 difficulty:0
-fancyGraphics:true
+fancyGraphics:false
 ao:2
 clouds:true
 resourcePacks:["TFR Theme Texture"]
@@ -126,8 +126,8 @@ key_railcraft.keybind.loco.faster:52
 key_railcraft.keybind.loco.slower:51
 key_railcraft.keybind.loco.mode:50
 key_railcraft.keybind.loco.whistle:49
-key_开关喷气背包:45
-key_打开火箭界面:46
+key_Toggle Jetpack:45
+key_Open Rocket GUI:46
 key_key.journeymap.map_toggle:36
 key_key.journeymap.zoom_in:13
 key_key.journeymap.zoom_out:12
@@ -137,7 +137,7 @@ key_key.journeymap.minimap_preset:11
 key_key.journeymap.create_waypoint:48
 key_BetterFps:88
 soundCategory_master:0.0
-soundCategory_music:0.8873239
+soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:0.18309858
 soundCategory_block:1.0
