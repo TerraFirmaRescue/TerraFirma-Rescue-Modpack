@@ -17,7 +17,7 @@ ao:2
 clouds:true
 resourcePacks:["TFR Theme Texture"]
 lastServer:bgp.d1.toho.cloud:51021
-lang:zh_CN
+lang:en_US
 chatVisibility:0
 chatColors:true
 chatLinks:true
