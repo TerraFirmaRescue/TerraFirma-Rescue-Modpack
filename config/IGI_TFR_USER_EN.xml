@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<config>
+    <lines at="topleft">
+        <line>
+            <str>{pingicon}$e$l{username}$f </str>
+            <str>$lFPS: </str>
+            <op>
+                <str>gt</str>
+                <var>fps</var>
+                <num>60</num>
+                <num>45</num>
+                <num>30</num>
+                <num>15</num>
+                <num>0</num>
+                <str>$a</str>
+                <str>$e</str>
+                <str>$b</str>
+                <str>$c</str>
+                <str>$4</str>
+                <str/>
+            </op>
+            <var>fps</var>
+            <str> $f$lRAM: $b</str>
+            <round>
+                <pct>
+                    <var>memused</var>
+                    <var>memtotal</var>
+                </pct>
+                <num>0</num>
+            </round>
+            <str>%</str>
+
+            <str>$8 Use '/igi disable' to disable this overlay</str>
+
+        </line>
+        <line>
+            <icon>
+                <str>advancedRocketry:item.satellite</str>
+            </icon>
+            <str> $rLanded on Terrafirma for $6{day} $f天</str>
+        </line>
+        <line>
+            <icon>
+                <str>minecraft:clock</str>
+            </icon>
+            <str> $rTerrafirma Calendar：$6 {tfcdate}</str>
+            <str>$6 {tfcseason} </str>
+            <str>$b{mctime12} $r</str>
+            <if>
+                <var>daytime</var>
+                <str>$e(Day)</str>
+                <str>$7(Night)</str>
+            </if>
+        </line>
+        <line>
+            <icon>
+                <str>terrafirmacraft:item.LooseRock</str>
+            </icon>
+            <str> $rWorld： </str>
+            <op>
+                <str>eq</str>
+                <var>dimensionid</var>
+                <num>-1</num>
+                <num>-1</num>
+                <num>0</num>
+                <num>1</num>
+                <num>2</num>
+                <num>7</num>
+                <num>10</num>
+                <num>11</num>
+                <num>12</num>
+                <num>13</num>
+                <num>14</num>
+                <num>15</num>
+                <num>16</num>
+                <num>17</num>
+                <num>18</num>
+
+                <str>$6Nether $e(Ne)</str>
+                <str>$6Terrafirma $e(TF)</str>
+                <str>$6End $e(EN)</str>
+                <str>$6Soul $e(Not recommended)</str>
+                <str>$6Twilight Forest $e(TF)</str>
+                <str>$6Duck Egg $e(DU)</str>
+                <str>$6Duck Egg B $e(DB)</str>
+                <str>$6Duck Egg C $e(DC)</str>
+                <str>$6HD $e(HD)</str>
+                <str>$6Evan $e(EV)</str>
+                <str>$6Saturn $e(SA)</str>
+                <str>$6Dracona $e(DR)</str>
+                <str>$6Endest $e(ED)</str>
+            </op>
+        </line>
+        <line>
+            <icon>
+                <str>terrafirmacraft:Flora</str>
+                <num>4</num>
+            </icon>
+            <str> Biome: $3{biome}$f</str>
+            <str> $f Humidity: $b{humidity}%</str>
+            <str> $f Rain: $b{tfcrainfall}</str>
+        </line>
+        <line>
+            <icon>
+                <str>IC2NuclearControl:ItemToolThermometer</str>
+            </icon>
+            <str>$f Average Temp: $b{tfcaveragetemperature}$r°C </str>
+            <str>$f Current Temp: $b{tfctemperature}$r°C </str>
+        </line>
+        <line>
+            <icon>
+                <str>minecraft:torch</str>
+            </icon>
+            <str> Light level： </str>
+            <max>
+                <var>light</var>
+                <num>7.5</num>
+                <str>$e</str>
+                <str>$c</str>
+            </max>
+            <var>light</var>
+            <str>$r (Standing point light level： </str>
+            <max>
+                <var>lightfeet</var>
+                <num>7.5</num>
+                <str>$e</str>
+                <str>$c</str>
+            </max>
+            <var>lightfeet</var>
+            <str>$r)</str>
+        </line>
+        <line>
+            <str>$0</str>
+        </line>
+        <line>
+            <if>
+                <var>snowing</var>
+                <str>  Is $2{underline}Snowing$r$2$r</str>
+            </if>
+            <if>
+                <var>raining</var>
+                <str>  Is $2{underline}Raining$r$2$r</str>
+            </if>
+            <if>
+                <var>thundering</var>
+                <str> also $2{u}Storming$r$2$f.</str>
+            </if>
+        </line>
+        <line>
+            <str>$0</str>
+        </line>
+        <line>
+            <if>
+                <and>
+                    <equal>
+                        <var>chunkoffsetx</var>
+                        <num>7</num>
+                    </equal>
+                    <equal>
+                        <var>chunkoffsetz</var>
+                        <num>7</num>
+                    </equal>
+                </and>
+                <concat>
+                    <if>
+                        <and>
+                            <or>
+                                <equal>
+                                    <modi>
+                                        <var>chunkx</var>
+                                        <num>3</num>
+                                    </modi>
+                                    <num>-1</num>
+                                </equal>
+                                <equal>
+                                    <modi>
+                                        <var>chunkx</var>
+                                        <num>3</num>
+                                    </modi>
+                                    <num>1</num>
+                                </equal>
+                            </or>
+                            <or>
+                                <equal>
+                                    <modi>
+                                        <var>chunkz</var>
+                                        <num>3</num>
+                                    </modi>
+                                    <num>-1</num>
+                                </equal>
+                                <equal>
+                                    <modi>
+                                        <var>chunkz</var>
+                                        <num>3</num>
+                                    </modi>
+                                    <num>1</num>
+                                </equal>
+                            </or>
+                        </and>
+                        <str>      </str>
+                    </if>
+                    <str>  You are at chunk $4center$f .</str>
+                </concat>
+            </if>
+        </line>
+        <line>
+            <str>$0</str>
+        </line>
+        <line>
+            <if>
+                <str>  Closest player：</str>
+            </if>
+        </line>
+        <line>
+            <if>
+                <str>  1) $b{nearbyplayername0}$f({nearbyplayerdistance0}m)</str>
+            </if>
+        </line>
+        <line>
+            <if>
+                <str>  2) $b{nearbyplayername1}$f({nearbyplayerdistance1}m)</str>
+            </if>
+        </line>
+        <line>
+            <if>
+                <str>  2) $b{nearbyplayername2}$f({nearbyplayerdistance2}m)</str>
+            </if>
+        </line>
+    </lines>
+    <lines at="middleleft">
+        <line>
+            <var>equippedicon</var>
+            <str> </str>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>equippeddamageleft</var>
+                    <var>equippedmaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <num>0</num>
+                <str>$e</str>
+                <str>$b</str>
+                <str>$c</str>
+                <str>$4</str>
+                <str/>
+            </op>
+            <max>
+                <var>equippeddamageleft</var>
+                <num>0.5</num>
+                <str>{equippeddamageleft}$f / $e{equippedmaxdamage}</str>
+                <var>equippedname</var>
+            </max>
+        </line>
+        <line>
+            <var>helmeticon</var>
+            <str> </str>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>helmetdamageleft</var>
+                    <var>helmetmaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <str>$e</str>
+                <str>$b</str>
+                <str>$c</str>
+                <str>$4</str>
+            </op>
+            <max>
+                <var>helmetdamageleft</var>
+                <num>0.5</num>
+                <str>{helmetdamageleft}$f / $e{helmetmaxdamage}</str>
+                <str/>
+            </max>
+            <str> </str>
+        </line>
+        <line>
+            <var>chestplateicon</var>
+            <str> </str>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>chestplatedamageleft</var>
+                    <var>chestplatemaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <str>$e</str>
+                <str>$b</str>
+                <str>$c</str>
+                <str>$4</str>
+            </op>
+            <max>
+                <var>chestplatedamageleft</var>
+                <num>0.5</num>
+                <str>{chestplatedamageleft}$f / $e{chestplatemaxdamage}</str>
+                <str/>
+            </max>
+            <str> </str>
+        </line>
+        <line>
+            <var>leggingsicon</var>
+            <str> </str>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>leggingsdamageleft</var>
+                    <var>leggingsmaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <str>$e</str>
+                <str>$b</str>
+                <str>$c</str>
+                <str>$4</str>
+            </op>
+            <max>
+                <var>leggingsdamageleft</var>
+                <num>0.5</num>
+                <str>{leggingsdamageleft}$f / $e{leggingsmaxdamage}</str>
+                <str/>
+            </max>
+        </line>
+        <line>
+            <var>bootsicon</var>
+            <str> </str>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>bootsdamageleft</var>
+                    <var>bootsmaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <str>$e</str>
+                <str>$b</str>
+                <str>$c</str>
+                <str>$4</str>
+            </op>
+            <max>
+                <var>bootsdamageleft</var>
+                <num>0.5</num>
+                <str>{bootsdamageleft}$f / $e{bootsmaxdamage}</str>
+                <str/>
+            </max>
+        </line>
+
+        <line> </line>
+
+        <line>
+            <str>{potionicon0}</str>
+            <max>
+                <var>potiondurationticks0</var>
+                <num>0.5</num>
+                <str>{potionduration0}</str>
+                <str/>
+            </max>
+        </line>
+        <line>
+            <str>{potionicon1}</str>
+            <max>
+                <var>potiondurationticks1</var>
+                <num>0.5</num>
+                <str>{potionduration1}</str>
+                <str/>
+            </max>
+        </line>
+        <line>
+            <str>{potionicon2}</str>
+            <max>
+                <var>potiondurationticks2</var>
+                <num>0.5</num>
+                <str>{potionduration2}</str>
+                <str/>
+            </max>
+        </line>
+        <line>
+            <str>{potionicon3}</str>
+            <max>
+                <var>potiondurationticks3</var>
+                <num>0.5</num>
+                <str>{potionduration3} {potionicon3}</str>
+                <str/>
+            </max>
+        </line>
+        <line>
+            <str>{potionicon4}</str>
+            <max>
+                <var>potiondurationticks4</var>
+                <num>0.5</num>
+                <str>{potionduration4} {potionicon4}</str>
+                <str/>
+            </max>
+        </line>
+    </lines>
+</config>
