@@ -1,5 +1,22 @@
 3.4.5.0
+Module changes:
+- Upgrade TFC0.80.07-TFR
+- Upgrade gregtech6.15.02-unofficial
 
+Content Change :
+- Reduced cost of normal mode boiler
+- The white lens is now capable of making more machines.
+- Yellow lens and orange lens oredict merged.
+- Light green lens and green lens oredict combined
+- Crushed yellow sapphires, sapphires, rubies can be obtained from a number of common minerals.
+- Fixing get TFC falling rocks from the chisel and cause a crash
+- Large backpack reduced cost
+- Changing the Dryer Pad recipe
+- Fixed a couple of buggy Tips
+- Changed the lathe synthesis to eliminate the need for the original iron.
+- Several tasks were added
+- Unreasonable quests logic was changed
+- Changed metal strip recipes
 
 3.4.4.0
 Module changes:

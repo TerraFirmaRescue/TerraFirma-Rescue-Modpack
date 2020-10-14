@@ -34,8 +34,8 @@ The wrongly carved GT molds can be thrown into the crucible for recycling
 Please read the descriptions of the quests carefully
 The small and large on GT anvil represent the literal physical shape
 The builder's wand is useful sometimes
-Animals’ favorability will not drop until it reaches yellow
-You can only get unlimited water through draining wells and liquid wells
+Animals’ favorability will not drop when it reaches white frame
+Get unlimited water through draining wells, liquid wells, and reservoir
 Iron chests are awesome
 Happy gliding!
 In the server plug-in, you can turn on the ore dictionary display
@@ -52,7 +52,7 @@ Collapsing blocks will destroy the ores
 Don’t eat food of only one nutrient type
 Polar bears are good source of resources, with meat, leather, and wool yarn.
 Crops only grow in corresponding seasons and temperature zones
-Ice can be obtained either by a winter travel or by saltpeter-water in barrels
+Ice can be obtained either at winter, arctic, or saltpeter and water in barrels
 Sluicing sand gives gems, and gravel gives ore nuggets.
 There are many blocks in GregTech that cannot be pushed by pistons
 Sulfur and peat are easy fuels with high heat level in the early stage

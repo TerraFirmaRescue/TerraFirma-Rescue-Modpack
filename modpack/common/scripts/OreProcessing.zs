@@ -144,7 +144,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 
 MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 [<terrafirmacraft:item.Ore:28>],
-[<gregtech:gt.meta.crushed:8009>*8,<gregtech:gt.meta.dust:8500>]);
+[<gregtech:gt.meta.crushed:8009>*4,<gregtech:gt.meta.dust:8500>]);
 
 MTUtilsGT.removeAllRecipes("gt.recipe.crusher",<gregtech:gt.meta.crushed:9174>);
 MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
@@ -155,7 +155,18 @@ MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 [<terrafirmacraft:item.LooseRock:5>],
 [<gregtech:gt.meta.crushed:8204>*6,<gregtech:gt.meta.dust:8500>]);
 
+// xianan remove
 MTUtilsGT.removeAllRecipes("gt.recipe.crusher",<gregtech:gt.meta.crushed:8753>);
+
+// ruby from redstone
+MTUtilsGT.removeAllRecipes("gt.recipe.crusher",<gregtech:gt.meta.crushed:8753>);
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<terrafirmacraft:item.Ore:27>],
+[<gregtech:gt.meta.crushed:8333>*8,<gregtech:gt.meta.crushed:9114>*2,<gregtech:gt.meta.crushed:8302>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<gregtech:gt.meta.ore.normal.default:8333>],
+[<gregtech:gt.meta.crushed:8333>*8,<gregtech:gt.meta.crushed:9114>*2,<gregtech:gt.meta.crushed:8302>]);
 
 //metal
 MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
@@ -194,9 +205,9 @@ MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 [<terrafirmacraft:item.Small Ore:12>],
 [<gregtech:gt.meta.crushed:9130>,<gregtech:gt.meta.dust:8500>]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000,5000,5000],
 [<tfctech:item.Small Ore>],
-[<gregtech:gt.meta.crushed:9105>*4,<gregtech:gt.meta.dust:8500>]);
+[<gregtech:gt.meta.crushed:9105>*4,<gregtech:gt.meta.crushed:8304>,<gregtech:gt.meta.crushed:8315>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 [<terrafirmacraft:item.Small Ore:1>],

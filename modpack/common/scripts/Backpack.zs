@@ -71,14 +71,7 @@ recipes.addShaped(<Backpack:backpack:100>,
 [<gregtech:gt.meta.screw:8610>, <Backpack:backpack>, <gregtech:gt.meta.screw:8610>],
 [<terrafirmacraft:item.TFC Leather>,<terrafirmacraft:item.TFC Leather>,<terrafirmacraft:item.TFC Leather>]]);
 
-// Big backpack
-MTUtilsGT.removeAllRecipes("gt.recipe.loom",<Backpack:backpack:200>);
-MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 400, 0, [10000],
-[<Backpack:tannedLeather>*8,<terrafirmacraft:item.WoolCloth>*2,<gregtech:gt.meta.screw:8610>*4,<gregtech:gt.meta.ring:8610>*4],
-[n],
-[n],
-[<Backpack:backpack:200>]);
-
+// Bound leather
 recipes.remove(<Backpack:boundLeather>);
 MTUtilsGT.removeAllRecipes("gt.recipe.loom",<Backpack:boundLeather>);
 MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 200, 0, [10000],

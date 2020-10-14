@@ -564,3 +564,10 @@ MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
 [n],[<libVulpes:libVulpesproductcrystal>]);
 
 recipes.addShapeless(<libVulpes:libVulpesproductcrystal>,[<mo:dilithium_crystal>]);
+
+// Lathe
+recipes.remove(<advancedRocketry:tile.lathe>);
+recipes.addShaped(<advancedRocketry:tile.lathe>,
+[[<ore:stickSteel>,<advancedRocketry:miscpart>,<ore:stickSteel>],
+[<advancedRocketry:circuitIC:4>,<libVulpes:blockStructureBlock>,<advancedRocketry:circuitIC:3>],
+[<ore:plateSteel>,<ore:gearSteel>,<ore:plateSteel>]]);

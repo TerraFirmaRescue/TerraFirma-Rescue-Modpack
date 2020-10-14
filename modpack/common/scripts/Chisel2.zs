@@ -105,3 +105,38 @@ mods.chisel.Groups.addVariation("rotating_elevator", <OpenBlocks:elevator_rotati
 mods.chisel.Groups.addVariation("rotating_elevator", <OpenBlocks:elevator_rotating:13>);
 mods.chisel.Groups.addVariation("rotating_elevator", <OpenBlocks:elevator_rotating:14>);
 mods.chisel.Groups.addVariation("rotating_elevator", <OpenBlocks:elevator_rotating:15>);
+
+// Fix the TFC Falling stone chisel issue
+mods.chisel.Groups.removeGroup("cobblestone");
+mods.chisel.Groups.addGroup("renewed_cobblestone");
+mods.chisel.Groups.addVariation("renewed_cobblestone", <chisel:cobblestone:1>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <chisel:cobblestone:2>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <chisel:cobblestone:3>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <chisel:cobblestone:4>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <chisel:cobblestone:5>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <chisel:cobblestone:6>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <chisel:cobblestone:7>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <chisel:cobblestone:8>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <chisel:cobblestone:9>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <chisel:cobblestone:10>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <chisel:cobblestone:11>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <chisel:cobblestone:12>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <chisel:cobblestone:13>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <chisel:cobblestone:14>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <chisel:cobblestone:15>);
+
+mods.chisel.Groups.addVariation("renewed_cobblestone", <minecraft:mossy_cobblestone>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <gregtech:gt.stone.granite.black:1>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <gregtech:gt.stone.granite.red:1>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <gregtech:gt.stone.basalt:1>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <gregtech:gt.stone.marble:1>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <gregtech:gt.stone.limestone:1>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <gregtech:gt.stone.granite:1>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <gregtech:gt.stone.diorite:1>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <gregtech:gt.stone.andesite:1>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <gregtech:gt.stone.komatiite:1>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <gregtech:gt.stone.greenschist:1>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <gregtech:gt.stone.blueschist:1>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <gregtech:gt.stone.kimberlite:1>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <gregtech:gt.stone.quartzite:1>);
+mods.chisel.Groups.addVariation("renewed_cobblestone", <gregtech:gt.stone.basalt:1>);

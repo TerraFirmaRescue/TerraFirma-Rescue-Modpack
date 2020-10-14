@@ -243,3 +243,68 @@ MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 1200, 1000,[10000],
 [null],
 [<gregtech:gt.multitileentity:26504>]);
 // huge pipe
+
+// Boilers
+
+recipes.remove(<gregtech:gt.multitileentity:1200>);
+recipes.addShaped(<gregtech:gt.multitileentity:1200>,
+[[<ore:plateLead>,<gregtech:gt.meta.ring:820>,<ore:plateLead>],
+[<ore:plateLead>,<gregtech:gt.multitileentity:18011>,<ore:plateLead>],
+[<ore:plateLead>,<ore:craftingToolWrench>,<ore:plateLead>]]);
+// Pb
+
+recipes.remove(<gregtech:gt.multitileentity:1201>);
+recipes.addShaped(<gregtech:gt.multitileentity:1201>,
+[[<ore:plateBismuth>,<gregtech:gt.meta.ring:830>,<ore:plateBismuth>],
+[<ore:plateBismuth>,<gregtech:gt.meta.plateQuadruple:830>,<ore:plateBismuth>],
+[<ore:plateBismuth>,<ore:craftingToolWrench>,<ore:plateBismuth>]]);
+// Bi
+
+recipes.remove(<gregtech:gt.multitileentity:1202>);
+recipes.addShaped(<gregtech:gt.multitileentity:1202>,
+[[<ore:plateBronze>,<gregtech:gt.meta.ring:8610>,<ore:plateBronze>],
+[<ore:plateBronze>,<gregtech:gt.multitileentity:18010>,<ore:plateBronze>],
+[<ore:plateBronze>,<ore:craftingToolWrench>,<ore:plateBronze>]]);
+// Cu3Sn
+
+recipes.remove(<gregtech:gt.multitileentity:1203>);
+recipes.addShaped(<gregtech:gt.multitileentity:1203>,
+[[<ore:plateInvar>,<gregtech:gt.meta.ring:8661>,<ore:plateInvar>],
+[<ore:plateInvar>,<gregtech:gt.multitileentity:18007>,<ore:plateInvar>],
+[<ore:plateInvar>,<ore:craftingToolWrench>,<ore:plateInvar>]]);
+// Fe2Ni
+
+recipes.remove(<gregtech:gt.multitileentity:1204>);
+recipes.addShaped(<gregtech:gt.multitileentity:1204>,
+[[<ore:plateSteel>,<gregtech:gt.meta.ring:8630>,<ore:plateSteel>],
+[<ore:plateSteel>,<gregtech:gt.multitileentity:18009>,<ore:plateSteel>],
+[<ore:plateSteel>,<ore:craftingToolWrench>,<ore:plateSteel>]]);
+// Fe
+
+recipes.remove(<gregtech:gt.multitileentity:1205>);
+recipes.addShaped(<gregtech:gt.multitileentity:1205>,
+[[<ore:plateChrome>,<gregtech:gt.meta.ring:240>,<ore:plateChrome>],
+[<ore:plateChrome>,<gregtech:gt.meta.plateQuadruple:240>,<ore:plateChrome>],
+[<ore:plateChrome>,<ore:craftingToolWrench>,<ore:plateChrome>]]);
+// Cr
+
+recipes.remove(<gregtech:gt.multitileentity:1206>);
+recipes.addShaped(<gregtech:gt.multitileentity:1206>,
+[[<ore:plateTitanium>,<gregtech:gt.meta.ring:220>,<ore:plateTitanium>],
+[<ore:plateTitanium>,<gregtech:gt.multitileentity:18006>,<ore:plateTitanium>],
+[<ore:plateTitanium>,<ore:craftingToolWrench>,<ore:plateTitanium>]]);
+// Ti
+
+recipes.remove(<gregtech:gt.multitileentity:1207>);
+recipes.addShaped(<gregtech:gt.multitileentity:1207>,
+[[<ore:plateTungsten>,<gregtech:gt.meta.ring:740>,<ore:plateTungsten>],
+[<ore:plateTungsten>,<gregtech:gt.multitileentity:18004>,<ore:plateTungsten>],
+[<ore:plateTungsten>,<ore:craftingToolWrench>,<ore:plateTungsten>]]);
+// W
+
+recipes.remove(<gregtech:gt.multitileentity:1208>);
+recipes.addShaped(<gregtech:gt.multitileentity:1208>,
+[[<ore:plateTungstenSteel>,<gregtech:gt.meta.ring:8635>,<ore:plateTungstenSteel>],
+[<ore:plateTungstenSteel>,<gregtech:gt.multitileentity:18003>,<ore:plateTungstenSteel>],
+[<ore:plateTungstenSteel>,<ore:craftingToolWrench>,<ore:plateTungstenSteel>]]);
+// FeW

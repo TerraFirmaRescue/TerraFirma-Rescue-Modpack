@@ -178,3 +178,19 @@ MTUtilsGT.addCustomRecipe("gt.recipe.fermenter", false, 16, 64 ,0,[10000],
 [null],
 [<tfctech:item.Glue>*4]);
 
+// Metal strips
+recipes.remove(<tfctech:item.Tin Stripe>);
+recipes.remove(<tfctech:item.Aluminum Stripe>);
+recipes.remove(<tfctech:item.Copper Stripe>);
+recipes.remove(<tfctech:item.Gold Stripe>);
+recipes.remove(<tfctech:item.Electrum Stripe>);
+recipes.remove(<tfctech:item.Wrought Iron Stripe>);
+recipes.remove(<tfctech:item.Steel Stripe>);
+
+recipes.addShaped(<tfctech:item.Tin Stripe>*4,[[n,Saw,n],[n,<terrafirmacraft:item.Tin Sheet>,n],[n,HHammer,n]]);
+recipes.addShaped(<tfctech:item.Aluminum Stripe>*4,[[n,Saw,n],[n,<tfctech:item.Aluminum Sheet>,n],[n,HHammer,n]]);
+recipes.addShaped(<tfctech:item.Copper Stripe>*4,[[n,Saw,n],[n,<terrafirmacraft:item.Copper Sheet>,n],[n,HHammer,n]]);
+recipes.addShaped(<tfctech:item.Gold Stripe>*4,[[n,Saw,n],[n,<terrafirmacraft:item.Gold Sheet>,n],[n,HHammer,n]]);
+recipes.addShaped(<tfctech:item.Electrum Stripe>*4,[[n,Saw,n],[n,<terrafirmacraft:item.Electrum Sheet>,n],[n,HHammer,n]]);
+recipes.addShaped(<tfctech:item.Wrought Iron Stripe>*4,[[n,Saw,n],[n,<terrafirmacraft:item.Wrought Iron Sheet>,n],[n,HHammer,n]]);
+recipes.addShaped(<tfctech:item.Steel Stripe>*4,[[n,Saw,n],[n,<terrafirmacraft:item.Steel Sheet>,n],[n,HHammer,n]]);

@@ -388,4 +388,8 @@ Shears.add(<terrafirmacraft:item.shears>);
 <ore:itemTuyere>.add(<terrafirmacraft:item.Red Steel Tuyere>);
 <ore:itemTuyere>.add(<terrafirmacraft:item.Blue Steel Tuyere>);
 
+// Orange lens -> Yellow lens
+<ore:craftingLensYellow>.addAll(<ore:craftingLensOrange>);
+<ore:craftingLensGreen>.addAll(<ore:craftingLensLime>);
+
 
