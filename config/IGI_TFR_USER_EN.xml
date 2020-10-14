@@ -37,7 +37,7 @@
             <icon>
                 <str>advancedRocketry:item.satellite</str>
             </icon>
-            <str> $rLanded on Terrafirma for $6{day} $f天</str>
+            <str> $rLanded on Terrafirma for $6{day} $fDay(s)</str>
         </line>
         <line>
             <icon>
