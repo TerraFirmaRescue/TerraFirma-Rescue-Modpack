@@ -1,0 +1,84 @@
+Update process:
+
+==== ALL LANGUAGE ===
+
+Update minecraft /GregTech.lang if needed
+
+Change Line 14 of minecraft/config/MoegAddon/moegadd.cfg into:
+    S:ModPackVersion=VERSION_NUMBER
+
+Load minecraft/config/betterquesting/DefaultQuests.json from QuestHandler.py
+
+Output Localized lang files to:
+minecraft/resources/minecraft/lang/en_US.lang
+minecraft/resources/minecraft/lang/zh_CN.lang
+minecraft/resources/minecraft/lang/ru_RU.lang
+
+Output unlocalized BQ quests to:
+minecraft/config/betterquesting/DefaultQuests_Unlocalized.json
+
+Manual check of Localized langs.
+
+=== HMCL ===
+
+Copy
+minecraft/mods
+minecraft/modpack
+minecraft/config
+minecraft/resources
+minecraft/resourcespack
+minecraft/LICENSE_zh_CN
+minecraft/supporterlist.txt
+minecraft/supporterlistgold.txt
+to /TFR-HMCL and override existing directories
+
+Copy
+minecraft/GregTech.lang
+to /TFR-HMCL and override existing file
+
+Compress
+TFR-HMCL/*
+to 群峦：救援_HMCL-VERSION_NUMBER.zip
+
+=== TECHNIC ===
+
+Copy
+minecraft/mods
+minecraft/modpack
+minecraft/config
+minecraft/resources
+minecraft/resourcespack
+minecraft/LICENSE
+minecraft/supporterlist.txt
+minecraft/supporterlistgold.txt
+to /TFR-Technic and override existing directories
+
+Change Line 38 of TFR-Technic/config/InGameInfoXML.cfg into:
+    S:filename=IGI_TFR_USER_EN.xml
+
+Delete
+TFR-Technic/config/OmniOcular/GregTech6_zh_CN.xml
+TFR-Technic/config/OmniOcular/GregTech6_material_zh_CN.xml
+
+Copy
+English OmniOcular XMLs to TFR-Technic/config/OmniOcular
+
+Compress
+TFR-Technic/*
+into TerraFirmaRescue_TECHNIC-VERSION_NUMBER.zip
+
+=== CURSEFORGE ===
+Copy
+// TFR-Technic/mods
+TFR-Technic/modpack
+TFR-Technic/config
+TFR-Technic/resources
+TFR-Technic/resourcespack
+TFR-Technic/LICENSE
+TFR-Technic/supporterlist.txt
+TFR-Technic/supporterlistgold.txt
+to wyc/Twitch/Minecraft/instances/TerraFirma/ Rescue  and override existing directories
+
+Update the mods in Twitch App
+
+Export Profile into TerraFirmaRescue_CURSE-VERSION_NUMBER.zip
