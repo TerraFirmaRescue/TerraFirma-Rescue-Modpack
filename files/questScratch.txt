@@ -80,32 +80,6 @@ ohh
 
 金属焊接
 
-21X1年8月10日
-
-距离核聚变反应堆开始稳定运行已经过去八年了，我不再需要担心能源耗尽——鸭蛋星有取之不尽的氦-3资源，至少能够供我使用20000年。
-但是我可活不了那么久。我没忘记我那最开始的祈望：回到地球上去。
-
-21X2年2月3日
-
-这段时间我一直在研究超远跃迁技术的应用。跃迁技术已经能让我前往临近的星系，但是前往地球那样远距离的星系——68光年以外的地方，我依旧无法安心。
-我明白超远距离的跃迁可能对我造成永久性的伤害。
-
-21X2年6月10日
-
-春天又过去了，群峦星开始变得生机勃勃，但我却变得越发萎靡不振。
-直到昨天，我才发现了一件令人害怕的事实：我患上了白血病。我想这很可能是鸭蛋星所释放的高能粒子在这几十年间对我持续的影响导致的。
-这件事就像一个响雷，让我不得不沉思我的对策。我没有防辐射或治疗癌症的药物。即使我能研发，我也可能撑不到那个时候。
-
-21X2年6月15日
-
-我决定冒险。我将我所能制造出的最坚硬的合金——无尽——打造成一身防护服。我希望这将能保护我免受超远距离跃迁的伤害。
-
-21X2年7月16日
-
-不管是谁在阅读这段日记，我想告诉你：我出发了。我花费了一个月的时间将我需要携带的物品运送上空间站，然而留在群峦星上的机械依旧很多。
-地球的坐标已经输入跃迁控制器，我身穿无尽防护服，推下跃迁拉杆。
-开始了...返乡之旅。
-
 双锂
 
 在聚变反应堆中生产的一种元素。用途不明，但是似乎是跃迁技术的关键消耗品。为了返回地球，跃迁技术是必须要攻破的难关。
@@ -180,3 +154,211 @@ HD是一个一个酷似太阳系火星的星球，地壳富含贵金属。其中
 在下界你能找到下界石英、赛特斯石英、硫磺矿脉、和一些硫化金属矿脉。同时，你也能找到萤石，一种间接的氦气资源。
 
 总之，这是个获取资源的好地方。不过记住：在y=64一下建造地狱门，别怪我没提醒你！
+
+21X1年8月10日
+
+距离核聚变反应堆开始稳定运行已经过去八年了，我不再需要担心能源耗尽——鸭蛋星有取之不尽的氦-3资源，至少能够供我使用20000年。
+但是我可活不了那么久。我没忘记我那最开始的祈望：回到地球上去。
+
+21X2年2月3日
+
+这段时间我一直在研究超远跃迁技术的应用。跃迁技术已经能让我前往临近的星系，但是前往地球那样远距离的星系——68光年以外的地方，我依旧无法安心。
+我明白超远距离的跃迁可能对我造成永久性的伤害。
+
+21X2年6月10日
+
+春天又过去了，群峦星开始变得生机勃勃，但我却变得越发萎靡不振。
+直到昨天，我才发现了一件令人害怕的事实：我患上了白血病。我想这很可能是鸭蛋星所释放的高能粒子在这几十年间对我持续的影响导致的。
+这件事就像一个响雷，让我不得不沉思我的对策。我没有防辐射或治疗癌症的药物。即使我能研发，我也可能撑不到那个时候。
+
+21X2年6月15日
+
+我决定冒险。我将我所能制造出的最坚硬的合金——无尽——打造成一身防护服。我希望这将能保护我免受超远距离跃迁的伤害。
+
+21X2年7月16日
+
+不管是谁在阅读这段日记，我想告诉你：我出发了。我花费了一个月的时间将我需要携带的物品运送上空间站，然而留在群峦星上的机械依旧很多。
+地球的坐标已经输入跃迁控制器，我身穿无尽防护服，推下跃迁拉杆。
+开始了...返乡之旅。
+
+August 10, 21X1
+
+It's been eight years since the fusion reactor began stable operation, and I no longer need to worry about running out of energy - Duck Egg has an inexhaustible supply of helium-3 that will last me at least 20,000 years.
+But I won't live that long. I haven't forgotten my first and always wish: to return to Earth.
+
+February 3, 21X2.
+
+I've been researching the application of space-warp technology. Space-warp has allowed me to travel to neighboring planetary systems, but I still convern traveling to a place as far away as Earth - 68 light years away.
+I understand that space-warp over great distances could cause permanent damage to me.
+
+June 10, 21X2.
+
+Spring has passed again, and Terrafirma is starting to come alive, but I am becoming more and more depressed.
+It wasn't until yesterday that I discovered a frightening fact: I have leukemia. I thought it was most likely the result of the continuing effects on me over the decades of the high-energy particles released by Duck Egg.
+The incident was like a thunderbolt that forced me to contemplate my response. I don't have radiation protection or a cure for cancer. Even if I could develop it, I probably wouldn't make it through that time.
+
+June 15, 21X2.
+
+I decided to take a risk. I forged the toughest alloy I could make - Infinity - into a protective suit. I hope that this will protect me from the damage of the hyper warp.
+
+July 16, 21X2.
+
+Whoever is reading this diary, I want you to know that I'm off. It has taken me a month to transport the items I need to carry on board the space station, yet the machinery left on the Terrafirma is still plentiful.
+Earth's coordinates have been entered into the warp controller, and I push down the warp lever in my Infinity protective suit.
+Beginning the... the homeward journey.
+
+亚历山大·史蒂夫·二世
+
+最后的日记
+
+没有人知道亚历山大·史蒂夫·二世最后是否安全抵达了地球。如果他成功了，我想他会很失望的。这时的地球已经变成了一个荒芜人烟的，被沙尘暴和酸雨肆虐的地狱。
+
+感谢相对论，亚光速航行的亚历山大经历的时间比地球上的人们，至少在他们离开那里之前，要少得多。经过计算，地球在他离开这段时间里，至少经历了400年的历史。谁也不知道地球上发生了什么，人类去了哪里。
+
+亚历山大的空间站上存有地球基因库样本以及20万颗人类受精卵。希望，这似乎已经熄灭的火焰，依旧在寂静的宇宙中存在着。亚历山大的故事，将会由后人继续书写。
+
+尾声
+
+Acknowledgement
+
+All Supporters and Golden Supporters of TeamMoeg, for patronizing us.
+All MoegCraft-3-Alpha Players: LebN, woyun, Sui_Fei, Ruo_Fei, 031110, Contrl_, Gloa, Xiao_JJ, true, 65t7tyyu, Melon_rinds, 2333_guizu, ZinX, xiaozhen, MICU, China12580, Small_Mo, etc.
+All MoegCraft Players for supporting us.
+MCBBS Modpack Panel Admins: YPXiaoK，HuluNoSugar，Limuliya，for giving us the opportunity to show TFR.
+MCMOD Founder：RebornIsDream, for supporting us.
+GregoriousT, TFC-Team, zmaster587, and all Mod authors of mods in TFR, for creating wonderful mods.
+MinecraftForge and Mojang, for creating such a wonderful platform for TFR.
+Allen Steele, the author of Coyote Trilogy, for inspiration.
+My physics, chemistry teachers Mr. C, Mr. S, Mr. L, and Ms. R, for endowing me knowledge.
+
+鸣谢
+
+所有TeamMoeg的支持者和黄金支持者，感谢他们对我们的赞助。
+
+所有MoegCraft-3-Alpha的玩家。LebN, woyun, Sui_Fei, Ruo_Fei, 031110, Contrl_, Gloa, Xiao_JJ, true, 65t7tyyu, Melon_rinds, 2333_guizu, ZinX, xiaozhen, MICU, China12580, Small_Mo, 等。
+
+所有MoegCraft玩家对我们的支持。
+
+MCBBS 整合包版版主。YPXiaoK，没糖的葫芦，梨木利亚，感谢他们给了我们展示TFR的机会。
+
+MCMOD创始人：重生是希望，感谢对我们的支持。
+
+GregoriousT，TFC-Team，zmaster587，以及所有在TFR中的Mod作者，感谢他们为我们创造了精彩的Mod。
+
+MinecraftForge和Mojang，感谢他们为TFR创造了如此美妙的平台。
+
+Allen Steele，Coyote三部曲的作者，感谢他给予我灵感。
+
+我的物理、化学老师Mr.C、Mr.S、Mr.L和Ms.R，感谢他们赋予我知识。
+
+谨以此整合包致敬所有在航天事业中做出贡献的人们，你们的功绩永垂不朽。我
+
+This modpack is a tribute to all those who have contributed to the aerospace industry. Your achievements are immortal.
+
+制作人员
+
+TeamMoeg
+
+Conceptual Design:
+YueSha
+
+Story Design:
+YueSha
+dasuhaibia
+
+Modding:
+YueSha
+duck_egg
+dashuaibia
+Draculea
+
+Script Tweaking:
+YueSha
+duck_egg
+dashuaibia
+
+UI Design:
+MangoHi
+
+Pixel Art:
+duck_egg
+Tian_Mi
+
+Community Administration:
+Evan
+HD_
+lei_yu
+GBL
+
+Website:
+Evan
+
+Server Pack:
+Evan
+
+Download Management:
+Evan
+
+
+TeamMoeg
+
+概念设计:
+YueSha
+
+故事设计:
+YueSha
+dashuabia
+
+修改:
+YueSha
+duck_egg
+dashuabia
+Draculea
+
+脚本调整:
+YueSha
+duck_egg
+dashuabia
+
+UI设计:
+MangoHi
+
+像素艺术:
+duck_egg
+Tian_Mi
+
+社区管理:
+Evan
+HD_
+lei_yu
+GBL
+
+网站:
+Evan
+
+服务器包:
+Evan
+
+下载管理:
+Evan
+
+群峦：救援制作人员
+
+TeamMoeg
+
+关于我们
+
+我们非常欢迎玩家加入我们的QQ交流群或者Discord群聊:
+QQ1群： 1046723658
+QQ2群： 1154748118
+Discord： https://discord.gg/BWn6E94
+
+或者您也可以通过官网/论坛/Wiki访问我们:
+官网： www.teammoeg.com
+论坛： forum.teammoeg.com
+Wiki： wiki.teammoeg.com
+
+或者给我们发送邮件:
+邮箱： support@teammoeg.com
+
+加入社区
