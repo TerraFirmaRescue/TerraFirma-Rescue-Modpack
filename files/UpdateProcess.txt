@@ -61,7 +61,9 @@ TFR-Technic/config/OmniOcular/GregTech6_zh_CN.xml
 TFR-Technic/config/OmniOcular/GregTech6_material_zh_CN.xml
 
 Copy
-English OmniOcular XMLs to TFR-Technic/config/OmniOcular
+GT6U/omni-ocular-gt6/GregTech6_en_US.xml
+GT6U/omni-ocular-gt6/GregTech6_material_en_US.xml
+to TFR-Technic/config/OmniOcular
 
 Compress
 TFR-Technic/*

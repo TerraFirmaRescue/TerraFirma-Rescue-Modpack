@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <LootGroups>
     <LootGroup GroupMetaID="0" GroupName="Trash" Rarity="0" MinItems="1" MaxItems="1" CombineTrashGroup="false">
-        <Loot Identifier="52d168d1-98ac-46a7-86b6-2d29f6102a39" ItemName="minecraft:experience_bottle" Amount="16" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="true"/>
-        <Loot Identifier="25f6196c-0487-4f5d-bebb-8fd605ba869b" ItemName="minecraft:lever" Amount="6" NBTTag="" Chance="65" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="251e45c9-f571-4ad3-a8cd-504b4463d0d2" ItemName="minecraft:string" Amount="8" NBTTag="" Chance="65" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="253fbe89-0e4b-48f1-bea7-3c3fdaa1644d" ItemName="terrafirmacraft:item.arrow" Amount="16" NBTTag="" Chance="50" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="52d168d1-98ac-46a7-86b6-2d29f6102a39" ItemName="minecraft:experience_bottle" Amount="16" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="true"/>
+        <Loot Identifier="25f6196c-0487-4f5d-bebb-8fd605ba869b" ItemName="minecraft:lever" Amount="6" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="251e45c9-f571-4ad3-a8cd-504b4463d0d2" ItemName="minecraft:string" Amount="8" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="253fbe89-0e4b-48f1-bea7-3c3fdaa1644d" ItemName="terrafirmacraft:item.arrow" Amount="16" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="275da512-1cb2-4c9b-ae64-d9c0e7d3ba75" ItemName="terrafirmacraft:item.bow" Amount="1" NBTTag="" Chance="40" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="6ee96087-4a4d-4607-86e6-9a5ba3334b85" ItemName="minecraft:ender_pearl" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="50817d0e-d1d9-472b-b034-2cde100003b1" ItemName="minecraft:heavy_weighted_pressure_plate" Amount="1" NBTTag="" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="ac6c8fee-9d0c-472e-8674-107252eb5303" ItemName="terrafirmacraft:Cactus" Amount="1" NBTTag="" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="ebcc9720-6f6f-491b-bfbc-a5793d5159eb" ItemName="terrafirmacraft:item.helmetCloth" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="ebcc9720-6f6f-491b-bfbc-a5793d5159eb" ItemName="terrafirmacraft:item.helmetCloth" Amount="1" NBTTag="" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="3e5182d5-b44c-4a08-a5bf-9b62dab2c1db" ItemName="terrafirmacraft:item.coal" Amount="8" NBTTag="" Chance="45" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="7f38c3dd-5522-4a5e-a5ad-f63c1c3cca1b" ItemName="terrafirmacraft:Fence" Amount="8" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="148bbcdd-3527-4396-bf58-580d25446dcc" ItemName="minecraft:rail" Amount="8" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
@@ -25,8 +25,8 @@
         <Loot Identifier="fb9e57fb-c876-4bd9-b254-66fd39e74df3" ItemName="terrafirmacraft:sapling:sapling:4" Amount="1" NBTTag="" Chance="12" ItemGroup="saplings_normal" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="500f1b62-b911-4dc1-adf1-19678e8ed6ab" ItemName="terrafirmacraft:item.dyePowder:4" Amount="3" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="066d8f49-25a5-421b-814e-4fdf6190eb28" ItemName="terrafirmacraft:item.Diamond:2" Amount="1" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="eac9eb71-8d25-47dc-b8c4-47c397634794" ItemName="terrafirmacraft:item.bootsCloth" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="dbed1bec-31e6-4631-9bff-8d98767bdf00" ItemName="minecraft:stone_pressure_plate" Amount="4" NBTTag="" Chance="55" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="eac9eb71-8d25-47dc-b8c4-47c397634794" ItemName="terrafirmacraft:item.bootsCloth" Amount="1" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="dbed1bec-31e6-4631-9bff-8d98767bdf00" ItemName="minecraft:stone_pressure_plate" Amount="4" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="e7e24491-4390-46d7-a61c-e7e38b9f3679" ItemName="minecraft:feather" Amount="16" NBTTag="" Chance="22" ItemGroup="" LimitedDropCount="0" RandomAmount="true"/>
         <Loot Identifier="9306a28c-933d-4712-ae9a-dd4bbe3fc246" ItemName="terrafirmacraft:sapling:sapling:5" Amount="1" NBTTag="" Chance="12" ItemGroup="saplings_normal" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="a33d072c-19ff-4f14-a503-4e8ec39d9aef" ItemName="minecraft:leather" Amount="4" NBTTag="" Chance="50" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
@@ -52,19 +52,6 @@
         <Loot Identifier="5a68859e-f94d-481f-83d0-440772174e5d" ItemName="minecraft:obsidian" Amount="10" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="0806ab6a-cd59-44e4-b71d-080628a57887" ItemName="gregtech:gt.multitileentity:32013" Amount="20" NBTTag="" Chance="45" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="f1fd9c07-979c-4154-8500-5acb813d7e5d" ItemName="minecraft:glowstone_dust" Amount="1" NBTTag="" Chance="6" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="bread_small" ItemName="terrafirmacraft:item.Wheat Bread" Amount="1" NBTTag="{foodWeight: 10.0 as float}" Chance="65" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="bread_med" ItemName="terrafirmacraft:item.Wheat Bread" Amount="1" NBTTag="{foodWeight: 30.0 as float}" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="bread_large" ItemName="terrafirmacraft:item.Wheat Bread" Amount="1" NBTTag="{foodWeight: 60.0 as float}" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="Lemon_small" ItemName="terrafirmacraft:item.Lemon" Amount="1" NBTTag="{foodWeight: 10.0 as float}" Chance="65" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="Lemon_med" ItemName="terrafirmacraft:item.Lemon" Amount="1" NBTTag="{foodWeight: 30.0 as float}" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="Lemon_large" ItemName="terrafirmacraft:item.Lemon" Amount="1" NBTTag="{foodWeight: 60.0 as float}" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="Mutton_small" ItemName="terrafirmacraft:item.Mutton" Amount="1" NBTTag="{foodWeight: 10.0 as float}" Chance="65" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="Mutton_med" ItemName="terrafirmacraft:item.Mutton" Amount="1" NBTTag="{foodWeight: 30.0 as float}" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="Mutton_large" ItemName="terrafirmacraft:item.Mutton" Amount="1" NBTTag="{foodWeight: 60.0 as float}" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="Cabbage_small" ItemName="terrafirmacraft:item.Cabbage" Amount="1" NBTTag="{foodWeight: 10.0 as float}" Chance="65" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="Cabbage_med" ItemName="terrafirmacraft:item.Cabbage" Amount="1" NBTTag="{foodWeight: 30.0 as float}" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="Cabbage_large" ItemName="terrafirmacraft:item.Cabbage" Amount="1" NBTTag="{foodWeight: 60.0 as float}" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
-        <Loot Identifier="Cheese_med" ItemName="terrafirmacraft:item.Cheese" Amount="1" NBTTag="{foodWeight: 30.0 as float}" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="Rye" ItemName="terrafirmacraft:item.Seeds Rye" Amount="5" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="Tomato" ItemName="terrafirmacraft:item.Seeds Tomato" Amount="5" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="Rice" ItemName="terrafirmacraft:item.Seeds Rice" Amount="5" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
@@ -73,9 +60,50 @@
         <Loot Identifier="Jute" ItemName="terrafirmacraft:item.Seeds Jute" Amount="5" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="Reeds" ItemName="terrafirmacraft:item.Reeds" Amount="5" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="ptFireStarter" ItemName="gregtech:gt.multiitem.randomtools:5009" Amount="1" NBTTag="" Chance="1" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:7010" ItemName="gregtech:gt.multiitem.food:7010" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:5001" ItemName="gregtech:gt.multiitem.food:5001" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:5002" ItemName="gregtech:gt.multiitem.food:5002" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:5003" ItemName="gregtech:gt.multiitem.food:5003" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:5010" ItemName="gregtech:gt.multiitem.food:5010" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:5011" ItemName="gregtech:gt.multiitem.food:5011" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:5012" ItemName="gregtech:gt.multiitem.food:5012" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:5013" ItemName="gregtech:gt.multiitem.food:5013" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:5016" ItemName="gregtech:gt.multiitem.food:5016" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:5017" ItemName="gregtech:gt.multiitem.food:5017" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:5018" ItemName="gregtech:gt.multiitem.food:5018" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:6000" ItemName="gregtech:gt.multiitem.food:6000" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:6002" ItemName="gregtech:gt.multiitem.food:6002" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:6003" ItemName="gregtech:gt.multiitem.food:6003" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:6010" ItemName="gregtech:gt.multiitem.food:6010" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:6011" ItemName="gregtech:gt.multiitem.food:6011" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:6014" ItemName="gregtech:gt.multiitem.food:6014" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:6015" ItemName="gregtech:gt.multiitem.food:6015" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:8011" ItemName="gregtech:gt.multiitem.food:8011" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:9011" ItemName="gregtech:gt.multiitem.food:9011" Amount="1" NBTTag="" Chance="35" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:32701" ItemName="gregtech:gt.multiitem.food:32701" Amount="1" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:4017" ItemName="gregtech:gt.multiitem.food:4017" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:20" ItemName="gregtech:gt.multiitem.food:20" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:2003" ItemName="gregtech:gt.multiitem.food:2003" Amount="10" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.food:32111" ItemName="gregtech:gt.multiitem.food:32111" Amount="64" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
     </LootGroup>
 
     <LootGroup GroupMetaID="1" GroupName="Tier 0" Rarity="0" MinItems="1" MaxItems="2" CombineTrashGroup="true">
+        <Loot Identifier="terrafirmacraft:item.Bronze Sword" ItemName="terrafirmacraft:item.Bronze Sword" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Bronze Pick" ItemName="terrafirmacraft:item.Bronze Pick" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Bronze Axe" ItemName="terrafirmacraft:item.Bronze Axe" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Bronze Hoe" ItemName="terrafirmacraft:item.Bronze Hoe" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Bronze Chisel" ItemName="terrafirmacraft:item.Bronze Chisel" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Bronze Mace" ItemName="terrafirmacraft:item.Bronze Mace" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Bronze Saw" ItemName="terrafirmacraft:item.Bronze Saw" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="terrafirmacraft:item.Wrought Iron Sword" ItemName="terrafirmacraft:item.Wrought Iron Sword" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Wrought Iron Pick" ItemName="terrafirmacraft:item.Wrought Iron Pick" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Wrought Iron Axe" ItemName="terrafirmacraft:item.Wrought Iron Axe" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Wrought Iron Hoe" ItemName="terrafirmacraft:item.Wrought Iron Hoe" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Wrought Iron Chisel" ItemName="terrafirmacraft:item.Wrought Iron Chisel" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Wrought Iron Mace" ItemName="terrafirmacraft:item.Wrought Iron Mace" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Wrought Iron Saw" ItemName="terrafirmacraft:item.Wrought Iron Saw" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
         <Loot Identifier="SmoothStone" ItemName="terrafirmacraft:StoneIgInSmooth:2" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="Stone" ItemName="terrafirmacraft:StoneIgIn" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
         <Loot Identifier="LooseRock" ItemName="terrafirmacraft:item.LooseRock" Amount="10" NBTTag="" Chance="60" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
@@ -98,27 +126,180 @@
     </LootGroup>
 
     <LootGroup GroupMetaID="2" GroupName="Tier 1" Rarity="0" MinItems="1" MaxItems="2" CombineTrashGroup="true">
-        <Loot Identifier="SmoothStone1" ItemName="terrafirmacraft:StoneIgInSmooth:2" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Black Steel Sword" ItemName="terrafirmacraft:item.Black Steel Sword" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Black Steel Pick" ItemName="terrafirmacraft:item.Black Steel Pick" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Black Steel Axe" ItemName="terrafirmacraft:item.Black Steel Axe" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Black Steel Hoe" ItemName="terrafirmacraft:item.Black Steel Hoe" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Black Steel Chisel" ItemName="terrafirmacraft:item.Black Steel Chisel" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Black Steel Mace" ItemName="terrafirmacraft:item.Black Steel Mace" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Black Steel Saw" ItemName="terrafirmacraft:item.Black Steel Saw" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Sword" ItemName="terrafirmacraft:item.Blue Steel Sword" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Pick" ItemName="terrafirmacraft:item.Blue Steel Pick" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Axe" ItemName="terrafirmacraft:item.Blue Steel Axe" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Hoe" ItemName="terrafirmacraft:item.Blue Steel Hoe" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Chisel" ItemName="terrafirmacraft:item.Blue Steel Chisel" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Mace" ItemName="terrafirmacraft:item.Blue Steel Mace" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Saw" ItemName="terrafirmacraft:item.Blue Steel Saw" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="terrafirmacraft:item.Wrought Iron Sheet" ItemName="terrafirmacraft:item.Steel Sheet" Amount="2" NBTTag="" Chance="40" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Steel Sheet" ItemName="terrafirmacraft:item.Steel Sheet" Amount="2" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Black Steel Sheet" ItemName="terrafirmacraft:item.Steel Sheet" Amount="2" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Sheet" ItemName="terrafirmacraft:item.Steel Sheet" Amount="2" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Red Steel Sheet" ItemName="terrafirmacraft:item.Steel Sheet" Amount="2" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="gregtech:gt.multitileentity:25027" ItemName="gregtech:gt.multitileentity:25027" Amount="6" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multitileentity:25028" ItemName="gregtech:gt.multitileentity:25028" Amount="6" NBTTag="" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multitileentity:25102" ItemName="gregtech:gt.multitileentity:25102" Amount="4" NBTTag="" Chance="26" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multitileentity:25103" ItemName="gregtech:gt.multitileentity:25103" Amount="4" NBTTag="" Chance="13" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="gregtech:gt.multitileentity:8009" ItemName="gregtech:gt.multitileentity:8009" Amount="3" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multitileentity:8026" ItemName="gregtech:gt.multitileentity:8026" Amount="1" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multitileentity:8247" ItemName="gregtech:gt.multitileentity:8026" Amount="2" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="IronChest:BlockIronChest:5" ItemName="IronChest:BlockIronChest:5" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multitileentity:6" ItemName="gregtech:gt.multitileentity:6" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="tfctech:item.Copper Wire" ItemName="tfctech:item.Copper Wire" Amount="2" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Railcraft:machine.beta:7" ItemName="Railcraft:machine.beta:7" Amount="1" NBTTag="" Chance="3" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="tfctech:item.Rubber Mix" ItemName="tfctech:item.Rubber Mix" Amount="8" NBTTag="" Chance="40" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.ingot:8660" ItemName="1gregtech:gt.meta.ingot:8660" Amount="4" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="tfctech:item.Circuit" ItemName="tfctech:item.Circuit" Amount="2" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
     </LootGroup>
 
     <LootGroup GroupMetaID="3" GroupName="Tier 2" Rarity="0" MinItems="1" MaxItems="2" CombineTrashGroup="true">
-        <Loot Identifier="SmoothStone2" ItemName="terrafirmacraft:StoneIgInSmooth:2" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Sword" ItemName="terrafirmacraft:item.Blue Steel Sword" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Pick" ItemName="terrafirmacraft:item.Blue Steel Pick" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Axe" ItemName="terrafirmacraft:item.Blue Steel Axe" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Hoe" ItemName="terrafirmacraft:item.Blue Steel Hoe" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Chisel" ItemName="terrafirmacraft:item.Blue Steel Chisel" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Mace" ItemName="terrafirmacraft:item.Blue Steel Mace" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Saw" ItemName="terrafirmacraft:item.Blue Steel Saw" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="terrafirmacraft:item.Wrought Iron Sheet" ItemName="terrafirmacraft:item.Wrought Iron Sheet" Amount="2" NBTTag="" Chance="40" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Steel Sheet" ItemName="terrafirmacraft:item.Steel Sheet" Amount="2" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Black Steel Sheet" ItemName="terrafirmacraft:item.Black Steel Sheet" Amount="2" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Blue Steel Sheet" ItemName="terrafirmacraft:item.Blue Steel Sheet" Amount="2" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="terrafirmacraft:item.Red Steel Sheet" ItemName="terrafirmacraft:item.Red Steel Sheet" Amount="2" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="gregtech:gt.multitileentity:25027" ItemName="gregtech:gt.multitileentity:25027" Amount="6" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multitileentity:25028" ItemName="gregtech:gt.multitileentity:25028" Amount="6" NBTTag="" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multitileentity:25102" ItemName="gregtech:gt.multitileentity:25102" Amount="4" NBTTag="" Chance="26" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multitileentity:25103" ItemName="gregtech:gt.multitileentity:25103" Amount="4" NBTTag="" Chance="13" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="gregtech:gt.multitileentity:8009" ItemName="gregtech:gt.multitileentity:8009" Amount="3" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multitileentity:8026" ItemName="gregtech:gt.multitileentity:8026" Amount="1" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multitileentity:8247" ItemName="gregtech:gt.multitileentity:8026" Amount="2" NBTTag="" Chance="25" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="IronChest:BlockIronChest:5" ItemName="IronChest:BlockIronChest:5" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multitileentity:6" ItemName="gregtech:gt.multitileentity:6" Amount="1" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="tfctech:item.Copper Wire" ItemName="tfctech:item.Copper Wire" Amount="2" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="Railcraft:machine.beta:7" ItemName="Railcraft:machine.beta:7" Amount="1" NBTTag="" Chance="3" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="advancedRocketry:circuitIC:3" ItemName="advancedRocketry:circuitIC:3" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="advancedRocketry:circuitIC:4" ItemName="advancedRocketry:circuitIC:4" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="advancedRocketry:circuitIC:5" ItemName="advancedRocketry:circuitIC:5" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="libVulpes:blockStructureBlock" ItemName="libVulpes:blockStructureBlock" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="tfctech:item.Rubber Mix" ItemName="tfctech:item.Rubber Mix" Amount="8" NBTTag="" Chance="60" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.ingot:8660" ItemName="gregtech:gt.meta.ingot:8660" Amount="4" NBTTag="" Chance="40" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="tfctech:item.Circuit" ItemName="tfctech:item.Circuit" Amount="2" NBTTag="" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
     </LootGroup>
 
     <LootGroup GroupMetaID="4" GroupName="Tier 3" Rarity="0" MinItems="1" MaxItems="2" CombineTrashGroup="true">
-        <Loot Identifier="SmoothStone3" ItemName="terrafirmacraft:StoneIgInSmooth:2" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12001" ItemName="gregtech:gt.multiitem.technological:12001" Amount="2" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12002" ItemName="gregtech:gt.multiitem.technological:12002" Amount="2" NBTTag="" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12003" ItemName="gregtech:gt.multiitem.technological:12003" Amount="2" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12004" ItemName="gregtech:gt.multiitem.technological:12004" Amount="2" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12005" ItemName="gregtech:gt.multiitem.technological:12005" Amount="2" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="gregtech:gt.meta.machine:8651" ItemName="gregtech:gt.meta.machine:8651" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:130" ItemName="gregtech:gt.meta.machine:130" Amount="1" NBTTag="" Chance="7" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:8636" ItemName="gregtech:gt.meta.machine:8636" Amount="1" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:240" ItemName="gregtech:gt.meta.machine:240" Amount="1" NBTTag="" Chance="4" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:220" ItemName="gregtech:gt.meta.machine:220" Amount="1" NBTTag="" Chance="2" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="gregtech:gt.multitileentity:10111" ItemName="gregtech:gt.multitileentity:10111" Amount="1" NBTTag="" Chance="8" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12101" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12102" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="8" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12103" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="6" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12104" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="4" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12105" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="2" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="minecraft:nether_star" ItemName="minecraft:nether_star" Amount="1" NBTTag="" Chance="1" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
     </LootGroup>
 
     <LootGroup GroupMetaID="5" GroupName="Tier 4" Rarity="0" MinItems="1" MaxItems="2" CombineTrashGroup="true">
-        <Loot Identifier="SmoothStone4" ItemName="terrafirmacraft:StoneIgInSmooth:2" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12001" ItemName="gregtech:gt.multiitem.technological:12001" Amount="2" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12002" ItemName="gregtech:gt.multiitem.technological:12002" Amount="2" NBTTag="" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12003" ItemName="gregtech:gt.multiitem.technological:12003" Amount="2" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12004" ItemName="gregtech:gt.multiitem.technological:12004" Amount="2" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12005" ItemName="gregtech:gt.multiitem.technological:12005" Amount="2" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="gregtech:gt.meta.machine:8651" ItemName="gregtech:gt.meta.machine:8651" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:130" ItemName="gregtech:gt.meta.machine:130" Amount="1" NBTTag="" Chance="7" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:8636" ItemName="gregtech:gt.meta.machine:8636" Amount="1" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:240" ItemName="gregtech:gt.meta.machine:240" Amount="1" NBTTag="" Chance="4" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:220" ItemName="gregtech:gt.meta.machine:220" Amount="1" NBTTag="" Chance="2" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="gregtech:gt.multitileentity:10111" ItemName="gregtech:gt.multitileentity:10111" Amount="1" NBTTag="" Chance="8" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12101" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12102" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="8" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12103" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="6" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12104" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="4" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12105" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="2" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="minecraft:nether_star" ItemName="minecraft:nether_star" Amount="2" NBTTag="" Chance="1" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
     </LootGroup>
 
     <LootGroup GroupMetaID="6" GroupName="Tier 5" Rarity="0" MinItems="1" MaxItems="2" CombineTrashGroup="true">
-        <Loot Identifier="SmoothStone5" ItemName="terrafirmacraft:StoneIgInSmooth:2" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12001" ItemName="gregtech:gt.multiitem.technological:12001" Amount="2" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12002" ItemName="gregtech:gt.multiitem.technological:12002" Amount="2" NBTTag="" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12003" ItemName="gregtech:gt.multiitem.technological:12003" Amount="2" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12004" ItemName="gregtech:gt.multiitem.technological:12004" Amount="2" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12005" ItemName="gregtech:gt.multiitem.technological:12005" Amount="2" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="gregtech:gt.meta.machine:8651" ItemName="gregtech:gt.meta.machine:8651" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:130" ItemName="gregtech:gt.meta.machine:130" Amount="1" NBTTag="" Chance="7" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:8636" ItemName="gregtech:gt.meta.machine:8636" Amount="1" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:240" ItemName="gregtech:gt.meta.machine:240" Amount="1" NBTTag="" Chance="4" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:220" ItemName="gregtech:gt.meta.machine:220" Amount="1" NBTTag="" Chance="2" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="gregtech:gt.multitileentity:10111" ItemName="gregtech:gt.multitileentity:10111" Amount="1" NBTTag="" Chance="8" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12101" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12102" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="8" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12103" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="6" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12104" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="4" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12105" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="2" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="minecraft:nether_star" ItemName="minecraft:nether_star" Amount="2" NBTTag="" Chance="1" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
     </LootGroup>
 
     <LootGroup GroupMetaID="7" GroupName="Tier 6" Rarity="0" MinItems="1" MaxItems="2" CombineTrashGroup="true">
-        <Loot Identifier="SmoothStone6" ItemName="terrafirmacraft:StoneIgInSmooth:2" Amount="1" NBTTag="" Chance="30" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12001" ItemName="gregtech:gt.multiitem.technological:12001" Amount="2" NBTTag="" Chance="20" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12002" ItemName="gregtech:gt.multiitem.technological:12002" Amount="2" NBTTag="" Chance="15" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12003" ItemName="gregtech:gt.multiitem.technological:12003" Amount="2" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12004" ItemName="gregtech:gt.multiitem.technological:12004" Amount="2" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12005" ItemName="gregtech:gt.multiitem.technological:12005" Amount="2" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="gregtech:gt.meta.machine:8651" ItemName="gregtech:gt.meta.machine:8651" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:130" ItemName="gregtech:gt.meta.machine:130" Amount="1" NBTTag="" Chance="7" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:8636" ItemName="gregtech:gt.meta.machine:8636" Amount="1" NBTTag="" Chance="5" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:240" ItemName="gregtech:gt.meta.machine:240" Amount="1" NBTTag="" Chance="4" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.meta.machine:220" ItemName="gregtech:gt.meta.machine:220" Amount="1" NBTTag="" Chance="2" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="gregtech:gt.multitileentity:10111" ItemName="gregtech:gt.multitileentity:10111" Amount="1" NBTTag="" Chance="8" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12101" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="10" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12102" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="8" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12103" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="6" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12104" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="4" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+        <Loot Identifier="gregtech:gt.multiitem.technological:12105" ItemName="gregtech:gt.multiitem.technological:12101" Amount="1" NBTTag="" Chance="2" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
+        <Loot Identifier="minecraft:nether_star" ItemName="minecraft:nether_star" Amount="2" NBTTag="" Chance="1" ItemGroup="" LimitedDropCount="0" RandomAmount="false"/>
+
     </LootGroup>
 
 </LootGroups>
