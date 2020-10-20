@@ -32,6 +32,10 @@ minecraft/supporterlist.txt
 minecraft/supporterlistgold.txt
 to /TFR-HMCL and override existing directories
 
+Remove
+TFR-HMCL/minecraft/mods/CocoaInput-1.7.10-3.0.5.jar
+TFR-HMCL/minecraft/config/NEI
+
 Copy
 minecraft/GregTech.lang
 to /TFR-HMCL and override existing file
@@ -56,9 +60,12 @@ to /TFR-Technic and override existing directories
 Change Line 38 of TFR-Technic/config/InGameInfoXML.cfg into:
     S:filename=IGI_TFR_USER_EN.xml
 
-Delete
+Remove
+TFR-Technic/minecraft/mods/CocoaInput-1.7.10-3.0.5.jar
+TFR-Technic/config/OmniOcular/Railcraft.xml
 TFR-Technic/config/OmniOcular/GregTech6_zh_CN.xml
 TFR-Technic/config/OmniOcular/GregTech6_material_zh_CN.xml
+TFR-Technic/config/NEI
 
 Copy
 GT6U/omni-ocular-gt6/GregTech6_en_US.xml
