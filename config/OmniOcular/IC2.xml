@@ -536,16 +536,16 @@
 		</line>
     </tileentity>
 	<tileentity id="TECrop">
-		<line displayname="作物:">
+		<line displayname="Crop:">
 			return name(nbt['cropName'])
 		</line>
-		<line displayname="所属mod:">
+		<line displayname="Mod:">
             return nbt['cropOwner']
         </line>
-        <line displayname="长速G/种子G/抵抗R:">
+        <line displayname="Growth G/Gain G/Resistance R:">
             if(nbt['cropName']!=undefined){return nbt['statGrowth']+"/"+nbt['statGain']+"/"+nbt['statResistance']}
         </line>		
-		<line displayname="营养/农药/含水量:">
+		<line displayname="Nutrition/Pesticide/Water:">
             if(nbt['exStorage']!=0||nbt['nutrientStorage']!=0||nbt['waterStorage']!=0)
 			{return nbt['nutrientStorage']+"/"+nbt['exStorage']+"/"+nbt['waterStorage']}
         </line>
