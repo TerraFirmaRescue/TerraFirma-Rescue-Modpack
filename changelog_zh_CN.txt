@@ -1,7 +1,7 @@
 ﻿3.5.0.0
 模组变化
 · 升级TFC0.80.08-TFR
-· 升级gregtech6.15.02-unofficial
+· 升级gregtech6.15.03-unofficial
 · 升级Botania-TFR
 · 升级BetterLoadingScreen-TFR
 
