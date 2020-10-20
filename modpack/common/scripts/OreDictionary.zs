@@ -392,4 +392,8 @@ Shears.add(<terrafirmacraft:item.shears>);
 <ore:craftingLensYellow>.addAll(<ore:craftingLensOrange>);
 <ore:craftingLensGreen>.addAll(<ore:craftingLensLime>);
 
+// OC Chip
+<ore:oc:circuitChip1>.add(<moegadd:Microchip>);
+<ore:oc:materialTransistor>.add(<moegadd:Simpletransistor>);
+<ore:oc:materialTransistor>.add(<moegadd:PatchTransistor>);
 
