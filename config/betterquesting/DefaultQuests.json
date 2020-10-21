@@ -29501,7 +29501,7 @@
               "Count:3": 1,
               "id:8": "gregtech:gt.metatool.01",
               "tag:10": {
-                "gt.energy:3": 1000000,
+                "gt.energy:3": 10000000,
                 "GT.ToolStats:10": {
                   "a:2": 8794,
                   "c:2": 8635,
@@ -45960,7 +45960,7 @@
           "simultaneous:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "id:8": "minecraft:diamond_block",
+            "id:8": "minecraft:anvil",
             "Damage:2": 0,
             "OreDict:8": ""
           },
