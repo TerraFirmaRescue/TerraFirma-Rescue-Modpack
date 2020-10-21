@@ -59,3 +59,8 @@ recipes.addShapeless(<OpenComputers:item:32>,[<gregtech:gt.multiitem.technologic
 // Remove bugged
 MTUtilsGT.removeAllRecipes("gt.recipe.assembler",<gregtech:gt.multiitem.technological:30301>);
 
+// Transistor
+recipes.remove(<OpenComputers:item:23>);
+recipes.addShapeless(<OpenComputers:item:23>,[<moegadd:PatchTransistor>]);
+recipes.addShapeless(<OpenComputers:item:23>,[<moegadd:Simpletransistor>]);
+

@@ -1933,7 +1933,7 @@ tile.Ice.name=冰
 #== Misc Items ==
 item.arrow.name=箭
 item.book.name=书
-item.stick.name=棍子(TFC)
+item.stick.name=棍子
 item.coal.coal.name=煤炭(TFC)
 item.coal.charcoal.name=木炭(TFC)
 item.Fertilizer.name=化肥

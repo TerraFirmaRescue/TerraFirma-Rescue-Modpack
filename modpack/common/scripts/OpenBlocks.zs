@@ -107,3 +107,10 @@ recipes.remove(<OpenBlocks:vacuumhopper>);
 recipes.addShaped(<OpenBlocks:vacuumhopper>,[[n,<minecraft:obsidian>,n],
 [<gregtech:gt.multiitem.technological:12021>,<minecraft:ender_eye>,<gregtech:gt.multiitem.technological:12021>],
 [n,<minecraft:hopper>,n]]);
+
+// Manual
+recipes.remove(<OpenBlocks:infoBook>);
+recipes.addShaped(<OpenBlocks:infoBook>,
+[[<minecraft:iron_ingot>,n,<minecraft:iron_ingot>],
+[n,<minecraft:book>,n],
+[<minecraft:iron_ingot>,n,<minecraft:iron_ingot>]]);

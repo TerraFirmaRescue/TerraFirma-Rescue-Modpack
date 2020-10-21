@@ -35,8 +35,8 @@
 
 # Resourcepacks
 /resourcepacks/TFC_Anvil.zip
-/resourcepacks/TFC_Texture_BDCraft_32x.zip
-/resourcepacks/TFC_Texture_H3D_64x_v5.1.2.zip
+/OtherResourcepacks/TFC_Texture_BDCraft_32x.zip
+/OtherResourcepacks/TFC_Texture_H3D_64x_v5.1.2.zip
 
 # Config cache
 /config/recipes/
@@ -60,3 +60,15 @@
 /config/NEI/bookmarks.ini
 /dumps/
 /config/NEI/client.cfg
+/resourcepacks/TFR BlueLine UI/
+/resourcepacks/TFR Ancient UI/
+/resourcepacks/TFR BlueLine UI.zip
+/resourcepacks/TFR Ancient UI.zip
+/resourcepacks/TFC Forging Assistance Texture.zip
+/config/draconicevolution/manual.json
+/config/forestry/gamemodes/
+/config/forestry/apiculture.cfg
+/config/forestry/backpacks.cfg
+/config/forestry/common.cfg
+/config/forestry/fluids.cfg
+/config/forestry/lepidopterology.cfg
