@@ -29507,10 +29507,7 @@
               "id:8": "gregtech:gt.metatool.01",
               "Count:3": 1,
               "tag:10": {
-<<<<<<< HEAD
                 "gt.energy:3": 10000000,
-=======
->>>>>>> 4db2eae97885563ac7013127e84e5c136e9c1dc8
                 "GT.ToolStats:10": {
                   "a:2": 8794,
                   "c:2": 8635,
@@ -46015,12 +46012,7 @@
           "icon:10": {
             "id:8": "minecraft:red_flower",
             "Count:3": 1,
-<<<<<<< HEAD
-            "id:8": "minecraft:anvil",
-            "Damage:2": 0,
-=======
             "Damage:2": 1,
->>>>>>> 4db2eae97885563ac7013127e84e5c136e9c1dc8
             "OreDict:8": ""
           },
           "snd_update:8": "minecraft:entity.player.levelup",
