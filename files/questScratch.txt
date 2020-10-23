@@ -261,6 +261,8 @@ TeamMoeg
 
 Conceptual Design:
 YueSha
+duck_egg
+dashuaibia
 
 Story Design:
 YueSha
@@ -279,10 +281,12 @@ dashuaibia
 
 UI Design:
 MangoHi
+GBL
 
 Pixel Art:
 duck_egg
-Tian_Mi
+dashuaibia
+YueSha
 
 Community Administration:
 Evan
@@ -304,6 +308,8 @@ TeamMoeg
 
 概念设计:
 YueSha
+duck_egg
+dashuaibia
 
 故事设计:
 YueSha
@@ -322,10 +328,12 @@ dashuabia
 
 UI设计:
 MangoHi
+GBL
 
 像素艺术:
 duck_egg
-Tian_Mi
+dashuaibia
+YueSha
 
 社区管理:
 Evan

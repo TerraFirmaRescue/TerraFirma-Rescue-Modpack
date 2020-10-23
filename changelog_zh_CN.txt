@@ -2,8 +2,9 @@
 模组变化
 · 升级TFC0.80.08-TFR
 · 升级gregtech6.15.03-unofficial
-· 升级Botania-TFR
-· 升级BetterLoadingScreen-TFR
+· 升级Botania2603-TFR
+· 升级BetterLoadingScreen1.5.0-TFR
+· 升级MoegAddon1.13
 
 内容变化:
 · 全新的加载界面和主界面
