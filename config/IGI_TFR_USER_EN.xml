@@ -119,15 +119,6 @@
                 <str>$c</str>
             </max>
             <var>light</var>
-            <str>$r (Standing point light level： </str>
-            <max>
-                <var>lightfeet</var>
-                <num>7.5</num>
-                <str>$e</str>
-                <str>$c</str>
-            </max>
-            <var>lightfeet</var>
-            <str>$r)</str>
         </line>
         <line>
             <str>$0</str>

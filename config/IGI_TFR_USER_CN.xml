@@ -604,15 +604,6 @@
                 <str>$c</str>
             </max>
             <var>light</var>
-            <str>$r (立足处光照等级： </str>
-            <max>
-                <var>lightfeet</var>
-                <num>7.5</num>
-                <str>$e</str>
-                <str>$c</str>
-            </max>
-            <var>lightfeet</var>
-            <str>$r)</str>
         </line>
         <line>
             <str>$0</str>
