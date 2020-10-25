@@ -1,0 +1,441 @@
+{
+    "images":
+    {
+		"title":
+        {
+            "image" : "mainmenu:blueline/title.png",
+            "posX" : 0,
+            "posY" : 0,
+            "imageWidth" : 1921,
+            "imageHeight" : 186,
+            "width" : 576,
+            "height" : 55.8,
+            "alignment" : "topleft"
+        },
+        "playerid_bg":
+        {
+            "image" : "mainmenu:blueline/en/en_player_id.png",
+            "posX" : 0,
+            "posY" : 70,
+            "imageWidth" : 580,
+            "imageHeight" : 120,
+            "width" : 177.6,
+            "height" : 36.6,
+            "alignment" : "topleft"
+        },
+        "bottom_bg":
+        {
+            "image" : "mainmenu:blueline/bottom_bg.png",
+            "posX" : 0,
+            "posY" : -37.8,
+            "imageWidth" : 672,
+            "imageHeight" : 126,
+            "width" : 201.6,
+            "height" : 37.8,
+            "alignment" : "bottomleft"
+        }
+	},
+    
+    "buttons":
+    {  
+        "multiplayer":
+        {
+            "text" : "",
+            "hoverText": "",	
+            "normalTextColor" : 16440086,
+            "hoverTextColor" : 16440086,
+			"texture" : "mainmenu:blueline/en/en_multi_button.png",
+            "posX" : -250,
+            "posY" : 57,
+            "width" : 226.5,
+            "height" : 53.1,
+			"imageWidth" : 755,
+			"imageHeight" : 177,
+			"alignment" : "topright",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+
+		"singleplayer":
+        {
+            "text": "",
+            "hoverText": "",
+            "normalTextColor" : 16440086,
+            "hoverTextColor" : 16440086,
+			"texture" : "mainmenu:blueline/en/en_single_button.png",
+            "posX" : -230,
+            "posY" : 117,
+            "width" : 126.3,
+            "height" : 36,
+			"imageWidth" : 421,
+			"imageHeight" : 120,
+			"alignment" : "topright",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+
+        "About":
+        {
+            "text" : "",
+            "hoverText": "",
+            "normalTextColor" : 16440086,
+            "hoverTextColor" : 16440086,
+			"texture" : "mainmenu:blueline/en/en_about_button.png",
+            "posX" : -98,
+            "posY" : 117,
+            "width" : 64.8,
+            "height" : 36,
+			"imageWidth" : 216,
+			"imageHeight" : 120,
+			"alignment" : "topright",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "custom.about"
+            }
+        },
+
+        		
+        "mods":
+        {
+            "text" : "",
+            "hoverText": "",
+            "normalTextColor" : 16440086,
+            "hoverTextColor" : 16440086,
+			"texture" : "mainmenu:blueline/en/en_mod_button.png",
+            "posX" : -220,
+            "posY" : 157,
+            "width" : 66.6,
+            "height" : 35.85,
+			"imageWidth" : 222,
+			"imageHeight" : 119.5,
+			"alignment" : "topright",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+               
+		"setting":
+        {
+            "text" : "",
+            "hoverText": "",
+            "normalTextColor" : 16440086,
+            "hoverTextColor" : 16440086,
+			"texture" : "mainmenu:blueline/en/en_setting_button.png",
+            "posX" : -154,
+            "posY" : 157,
+            "width" : 109.2,
+            "height" : 35.85,
+			"imageWidth" : 364,
+			"imageHeight" : 119.5,
+			"alignment" : "topright",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+		        
+		"language":
+        {
+            "text" : "",
+            "hoverText": "",
+            "normalTextColor" : 16440086,
+            "hoverTextColor" : 16440086,
+			"texture" : "mainmenu:blueline/lang_button.png",
+            "posX" : -197,
+            "posY" : 197,
+            "width" : 39.9,
+            "height" : 39.75,
+			"imageWidth" : 133,
+			"imageHeight" : 132.5,
+			"alignment" : "topright",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        },
+                    
+        "quit":
+        {
+            "text" : "",
+            "hoverText": "",
+            "normalTextColor" : 16728128,
+            "hoverTextColor" : 16440086,
+			"texture" : "mainmenu:blueline/en/en_quit_button.png",
+            "posX" : -150,
+            "posY" : 197,
+            "width" : 120.3,
+            "height" : 39.9,
+			"imageWidth" : 401,
+			"imageHeight" : 133,
+			"alignment" : "topright",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+
+        "Discord": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "Click to join our Discord",
+            "texture": "mainmenu:blueline/white_buttons/discord_button.png",
+            "posX" : 15,
+            "posY" : -25,
+            "width": 21.3,
+            "height": 16.5,
+            "imageWidth": 71,
+            "imageHeight": 55,
+            "alignment": "bottomleft",
+            "action": {
+                "type": "openLink",
+                "link": "https://discord.gg/BWn6E94"
+            }
+        },
+
+        "Github": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "Report any bugs here",
+            "texture": "mainmenu:blueline/white_buttons/github_button.png",
+            "posX" : 45,
+            "posY" : -25,
+            "width": 18.6,
+            "height": 17.7,
+            "imageWidth": 62,
+            "imageHeight": 59,
+            "alignment": "bottomleft",
+            "action": {
+                "type": "openLink",
+                "link": "https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues"
+            }
+        },
+
+        "Homepage": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "Official Website",
+            "texture": "mainmenu:blueline/white_buttons/homepage_button.png",
+            "posX" : 72,
+            "posY" : -25,
+            "width": 17.7,
+            "height": 17.4,
+            "imageWidth": 59,
+            "imageHeight": 58,
+            "alignment": "bottomleft",
+            "action": {
+                "type": "openLink",
+                "link": "https://terrafirmarescue.wordpress.com/international/"
+            }
+        },
+
+        "Wiki": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "Official Wiki",
+            "texture": "mainmenu:blueline/white_buttons/wiki_button.png",
+            "posX" : 98,
+            "posY" : -25,
+            "width": 13.5,
+            "height": 17.7,
+            "imageWidth": 45,
+            "imageHeight": 59,
+            "alignment": "bottomleft",
+            "action": {
+                "type": "openLink",
+                "link": "http://wiki.teammoeg.com"
+            }
+        },
+
+        "Patreon": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "Support Us on Patreon!",
+            "texture": "mainmenu:blueline/white_buttons/patreon_button.png",
+            "posX" : 122,
+            "posY" : -25,
+            "width": 17.1,
+            "height": 16.8,
+            "imageWidth": 57,
+            "imageHeight": 56,
+            "alignment": "bottomleft",
+            "action": {
+                "type": "openLink",
+                "link": "https://www.patreon.com/TeamMoeg"
+            }
+        },
+
+        "Aifadian": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "Support us on Aifadian!",
+            "texture": "mainmenu:blueline/white_buttons/afd_button.png",
+            "posX" : 145,
+            "posY" : -25,
+            "width": 22.8,
+            "height": 17.7,
+            "imageWidth": 76,
+            "imageHeight": 59,
+            "alignment": "bottomleft",
+            "action": {
+                "type": "openLink",
+                "link": "https://afdian.net/@teammoeg"
+            }
+        },
+
+        "Forum": {
+            "text": "",
+            "normalTextColor": 6081343,
+            "hoverTextColor": 41704,
+            "tooltip": "Join our forums",
+            "texture": "mainmenu:blueline/white_buttons/forum_button.png",
+            "posX" : 175,
+            "posY" : -25,
+            "width": 19.5,
+            "height": 18.3,
+            "imageWidth": 65,
+            "imageHeight": 61,
+            "alignment": "bottomleft",
+            "action": {
+                "type": "openLink",
+                "link": "https://forum.teammoeg.com"
+            }
+        },
+
+        "refresh": {
+            "text": "",
+            "posX": 160,
+            "posY": 225,
+            "width": 20,
+            "height": 20,
+            "texture": "mainmenu:textures/refresh.png",
+            "action": {
+                "type": "refresh"
+            }
+        },
+
+        "latestversion_fakebutton": {
+            "text": "",
+            "tooltip": "See update link",
+            "texture": "mainmenu:textures/refresh.png",
+            "posX" : 184,
+            "posY" : 34,
+            "width": 20,
+            "height": 20,
+            "alignment": "topleft",
+            "action": {
+                "type": "openLink",
+                "link": "https://forum.teammoeg.com/d/30-terrafirma-rescue-downloadupdate-links"
+            }
+        }
+	},
+    
+    "texts":
+    {
+        "username": {
+            "text" : "#username#",
+            "posX" : 60,
+            "posY" : 88,
+            "fontSize": 1,
+            "alignment" : "topleft"
+        },
+
+        "currentversionprefix": {
+            "text" : "Current:",
+            "posX" : 65,
+            "posY" : 40,
+            "fontSize": 1,
+            "alignment" : "topleft"
+        },
+
+        "currentversion": {
+            "text" : "3.5.0.0",
+            "posX" : 110,
+            "posY" : 40,
+            "fontSize": 1,
+            "alignment" : "topleft"
+        },
+
+        "latestvesionprefix": {
+            "text" : "Latest:",
+            "posX" : 145,
+            "posY" : 40,
+            "fontSize": 1,
+            "alignment" : "topleft"
+        },
+
+        "latestvesion": {
+            "text" : "web:https://info.teammoeg.com/tfrversion.txt",
+            "posX" : 182,
+            "posY" : 40,
+            "fontSize": 1,
+            "alignment" : "topleft"
+        }
+    },
+    
+	
+	"alignments":
+    {
+        "topleft":
+        {
+            "factorWidth" : 0.0,
+            "factorHeight" : 0.0
+        },
+
+        "bottomleft":
+        {
+            "factorWidth" : 0.0,
+            "factorHeight" : 1.0
+        },
+
+        "topright":
+        {
+            "factorWidth" : 1.0,
+            "factorHeight" : 0.0
+        },
+
+        "bottomright":
+        {
+            "factorWidth" : 1.0,
+            "factorHeight" : 1.0
+        }
+    },
+	
+    "other":
+    {
+	    "background":
+        {
+            "image" : "",
+            "slideshow":
+            {
+                "images" : ["mainmenu:textures/bg1.png","mainmenu:textures/bg2.png","mainmenu:textures/bg3.png"],
+                "displayDuration" : 150,
+                "fadeDuration" : 40
+            }
+        },
+
+        "splash-text": {
+            "posX": -90,
+            "posY": 320,
+            "color": -256,
+            "alignment": "topright",
+            "texts": "file:mainmenu:textures/splash.txt"
+        }
+    }
+}
