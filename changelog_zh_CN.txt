@@ -1,36 +1,35 @@
-﻿3.5.0.0
-Module variations
-- Upgrade TFC0.80.08-TFR
-- Upgrade gregtech6.15.03-unofficial
-- Upgrade Botania2603-TFR
-- Upgrade BetterLoadingScreen 1.5.0-TFR
-- Upgrade MoegAddon 1.13
+﻿模组变化
+· 升级TFC0.80.08-TFR
+· 升级gregtech6.15.03-unofficial
+· 升级Botania2603-TFR
+· 升级BetterLoadingScreen1.5.0-TFR
+· 升级MoegAddon1.13
 
-Content Changes:
-- New loading UI and mainmenu UI
-- Customized version of modern Blue Line UI available
-- All minerals (graphite, kaolinite, cinnabar, etc.) have surface indicators now.
-- Reduced hardness of TFC blocks of stone, wood, dirt, etc.
-- The loots for loot bags just got a whole lot richer.
-- Raising the level of the steel anvil to 5 means that the black anvil is no longer mandatory to make
-- The cost of the TFC anvil changed to 8 ingots.
-- Earth and Moon dimensions added - you can now officially win games in TFR!
-- Post part of the questbook gets expansion and refinement
-- Reduced cost of a normal mode boilers
-- The white lens is now capable of making more machines.
-- Yellow lens and orange lens oredict merge.
-- Light green lens and green lens oredict merge.
-- Crushed yellow sapphires, sapphires, rubies can be obtained from a number of common minerals.
-- Fixed able to get TFC falling rocks from the chisel and cause a crash
-- Large backpack reduces cost
-- Changing the Dryer Pad recipe
-- Fixed a couple of buggy Tips
-- Changed the lathe recipe to cancel the need for the vanilla iron.
-- Several tasks were added
-- Unreasonable quest logics were changed
-- Changing the Metal Bar recipe
-- A few more rewards in the quests
-- Entering the game by default will no longer get the OC and OB instructions
+内容变化:
+· 全新的加载界面和主界面
+· 定制版现代蓝线UI可供使用
+· 所有矿物质（石墨、高岭石、朱砂等）都有地表指示物了
+· TFC的石头、木头、泥土等方块硬度降低
+· 奖励袋子的奖品池更丰富了
+· 将钢砧的等级提升为5级，这意味着黑钢砧不再是必须制作的
+· TFC砧的造价更改为8锭
+· 添加了地球维度和月球维度——您在群峦：救援中可以正式赢得游戏了
+· 对后期任务进行了扩充和完善
+· 普通版锅炉造价降低
+· 白色透镜能够制作更多机器了
+· 黄色透镜和橙色透镜矿词合并
+· 淡绿色透镜和绿色透镜矿词合并
+· 粉碎的黄色蓝宝石，蓝宝石，红宝石可以从一些普通矿物里破碎获得
+· 修复圆石能从凿子里获得TFC坠落石头，并导致崩服
+· 大背包降低造价
+· 更改晾干垫合成
+· 修复了几个错误的Tips
+· 更改了车床合成，不需要原版铁了
+· 补充了几个任务
+· 更改了不合理的任务逻辑
+· 更改金属条合成
+· 任务书里多了一些奖励
+· 进入游戏默认不会再获得OC和OB的指导书
 
 3.4.4.0
 模组变化:

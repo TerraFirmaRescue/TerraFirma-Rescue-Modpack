@@ -1,22 +1,37 @@
-3.4.5.0
-Module changes:
-- Upgrade TFC0.80.07-TFR
-- Upgrade gregtech6.15.02-unofficial
+3.5.0.0
+Module variations
+- Upgrade TFC0.80.08-TFR
+- Upgrade gregtech6.15.03-unofficial
+- Upgrade Botania2603-TFR
+- Upgrade BetterLoadingScreen 1.5.0-TFR
+- Upgrade MoegAddon 1.13
 
-Content Change :
-- Reduced cost of normal mode boiler
+Content Changes:
+- New loading UI and mainmenu UI
+- Customized version of modern Blue Line UI available
+- All minerals (graphite, kaolinite, cinnabar, etc.) have surface indicators now.
+- Reduced hardness of TFC blocks of stone, wood, dirt, etc.
+- The loots for loot bags just got a whole lot richer.
+- Raising the level of the steel anvil to 5 means that the black anvil is no longer mandatory to make
+- The cost of the TFC anvil changed to 8 ingots.
+- Earth and Moon dimensions added - you can now officially win games in TFR!
+- Post part of the questbook gets expansion and refinement
+- Reduced cost of a normal mode boilers
 - The white lens is now capable of making more machines.
-- Yellow lens and orange lens oredict merged.
-- Light green lens and green lens oredict combined
+- Yellow lens and orange lens oredict merge.
+- Light green lens and green lens oredict merge.
 - Crushed yellow sapphires, sapphires, rubies can be obtained from a number of common minerals.
-- Fixing get TFC falling rocks from the chisel and cause a crash
-- Large backpack reduced cost
+- Fixed able to get TFC falling rocks from the chisel and cause a crash
+- Large backpack reduces cost
 - Changing the Dryer Pad recipe
 - Fixed a couple of buggy Tips
-- Changed the lathe synthesis to eliminate the need for the original iron.
+- Changed the lathe recipe to cancel the need for the vanilla iron.
 - Several tasks were added
-- Unreasonable quests logic was changed
-- Changed metal strip recipes
+- Unreasonable quest logics were changed
+- Changing the Metal Bar recipe
+- A few more rewards in the quests
+- Entering the game by default will no longer get the OC and OB instructions
+
 
 3.4.4.0
 Module changes:
