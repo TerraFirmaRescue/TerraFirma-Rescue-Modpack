@@ -41,7 +41,7 @@
 # Config cache
 /config/recipes/
 /config/fastcraft.ini
-/config/IC2.ini
+
 /config/InvTweaks.cfg
 /config/MouseTweaks.cfg
 /config/splash.properties
