@@ -1,0 +1,206 @@
+
+{
+
+    "images": {
+        "tfrlogo": {
+            "image": "mainmenu:textures/tfrlogo.png",
+            "posX": 35,
+            "posY": 60,
+            "width": 100,
+            "height": 100,
+            "alignment": "topleft"
+        },
+        "teammoeg_banner": {
+            "image": "mainmenu:textures/teammoeg_banner.png",
+            "posX": 35,
+            "posY": 170,
+            "width": 89,
+            "height": 29.7,
+            "alignment": "topleft"
+        },
+        "bottom_bg":
+        {
+            "image" : "mainmenu:blueline/bottom_bg.png",
+            "posX" : 0,
+            "posY" : -50,
+            "width" : 360,
+            "height" : 50,
+            "alignment" : "bottomleft"
+        },
+        "bottom_blueline":
+        {
+            "image" : "mainmenu:blueline/en/en_player_id.png",
+            "posX" : 0,
+            "posY" : -50,
+            "imageWidth" : 2,
+            "imageHeight" : 120,
+            "width" : 5,
+            "height" : 20,
+            "alignment" : "bottomleft"
+        },
+        "bottom_blueline_2":
+        {
+            "image" : "mainmenu:blueline/en/en_player_id.png",
+            "posX" : 0,
+            "posY" : -40,
+            "imageWidth" : 2,
+            "imageHeight" : 120,
+            "width" : 5,
+            "height" : 20,
+            "alignment" : "bottomleft"
+        },
+        "bottom_blueline_3":
+        {
+            "image" : "mainmenu:blueline/en/en_player_id.png",
+            "posX" : 0,
+            "posY" : -30,
+            "imageWidth" : 2,
+            "imageHeight" : 120,
+            "width" : 5,
+            "height" : 20,
+            "alignment" : "bottomleft"
+        },
+        "bottom_blueline_4":
+        {
+            "image" : "mainmenu:blueline/en/en_player_id.png",
+            "posX" : 0,
+            "posY" : -20,
+            "imageWidth" : 2,
+            "imageHeight" : 120,
+            "width" : 5,
+            "height" : 20,
+            "alignment" : "bottomleft"
+        },
+        "bottom_blueline_5":
+        {
+            "image" : "mainmenu:blueline/en/en_player_id.png",
+            "posX" : 0,
+            "posY" : -10,
+            "imageWidth" : 2,
+            "imageHeight" : 120,
+            "width" : 5,
+            "height" : 20,
+            "alignment" : "bottomleft"
+        }
+    },
+
+    "buttons": {
+        "refresh": {
+            "text": "",
+            "posX": -154,
+            "posY": 132,
+            "width": 20,
+            "height": 20,
+            "texture": "mainmenu:textures/refresh.png",
+            "action": {
+                "type": "refresh"
+            }
+        }
+    },
+
+    "texts": {
+        "tfrcopyright": {
+            "text": "Modpack created by TeamMoeg. All scripts and custom resources are licensed under CC-BY-NC-ND 4.0 International! See: https://creativecommons.org/",
+            "posX": 5,
+            "posY": -35,
+            "fontSize": 0.6,
+            "color": -1,
+            "hoverColor": -1,
+            "alignment": "bottomleft"
+        },
+        "mcforgecopyright": {
+            "text": "Minecraft #mcversion# modded by Forge #forgeversion# with #modsloaded# Mods Loaded. Copyright Mojang AB. Do not distribute! ",
+            "posX": 5,
+            "posY": -10,
+            "fontSize": 0.6,
+            "color": -1,
+            "hoverColor": -1,
+            "alignment": "bottomleft"
+        },
+        "music": {
+            "text": "Featuring Music: Woodland Fantasy - Matthew Pablo https://matthewpablo.com/, Mountain Lake - Dream Valley, Last Sunrise - Lind Erebos, \nFar Horizons - Jeremy Soule, Revellon - Borislav Slavov, The Slops of the Blessure - Plotr Musial",
+            "posX": 5,
+            "posY": -25,
+            "fontSize": 0.6,
+            "color": -1,
+            "hoverColor": -1,
+            "alignment": "bottomleft"
+        },
+        "credits": {
+            "text": "Credits:",
+            "posX": 200,
+            "posY": 40,
+            "fontSize": 2,
+            "color": -1,
+            "hoverColor": -1,
+            "alignment": "topleft"
+        },
+        "creditcolumn_1": {
+            "text": " Conceptual Design:\n YueSha\n duck_egg\n dashuaibia\n\n Story Design:\n YueSha\n dashuaibia\n\n Modding:\n YueSha\n dashuaibia\n duck_egg\n Draculea\n\n Script Tweaking:\n YueSha\n duck_egg\n dahsuaibia\n\n",
+            "posX": 200,
+            "posY": 60,
+            "fontSize": 0.8,
+            "color": -1,
+            "hoverColor": -1,
+            "alignment": "topleft"
+        },
+        "creditcolumn_2": {
+            "text": " UI Design:\n MangoHi\n GBL\n\n Pixel Art:\n duck_egg\n dashuaibia\n YueSha\n\n Community Administration:\n Evan\n HD_\n GBL\n lei_yu\n\n Website:\n Evan\n\n Server Pack:\n Evan\n\n Download Management:\n Evan\n\n",
+            "posX": 310,
+            "posY": 60,
+            "fontSize": 0.8,
+            "color": -1,
+            "hoverColor": -1,
+            "alignment": "topleft"
+        }
+    },
+
+    "other":
+    {
+	    "background":
+        {
+            "image" : "",
+            "slideshow":
+            {
+                "images" : ["mainmenu:textures/bg2.png"],
+                "displayDuration" : 150,
+                "fadeDuration" : 40
+            }
+        },
+
+        "splash-text": {
+            "posX": -80,
+            "posY": 40,
+            "color": -256,
+            "alignment": "topright",
+            "texts": "file:mainmenu:textures/splash.txt"
+        }
+    },
+
+    "alignments":
+    {
+        "topleft":
+        {
+            "factorWidth" : 0.0,
+            "factorHeight" : 0.0
+        },
+
+        "bottomleft":
+        {
+            "factorWidth" : 0.0,
+            "factorHeight" : 1.0
+        },
+
+        "topright":
+        {
+            "factorWidth" : 1.0,
+            "factorHeight" : 0.0
+        },
+
+        "bottomright":
+        {
+            "factorWidth" : 1.0,
+            "factorHeight" : 1.0
+        }
+    }
+}

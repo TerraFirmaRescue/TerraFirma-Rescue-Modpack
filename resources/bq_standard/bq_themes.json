@@ -1524,9 +1524,9 @@
     }
   },
   {
-    "themeParent": "bq_standard:dark",
-    "themeName": "TFR Blue Line",
-    "themeID": "bq_standard:tfr_blueline",
+    "themeParent":"bq_standard:dark",
+    "themeName":"TFR Blueline",
+    "themeID":"bq_standard:tfr_blueline",
     "textures":
     {
       "betterquesting:panel_main":
@@ -1668,7 +1668,7 @@
       "betterquesting:quest_main_0":
       {
         "textureType": "betterquesting:texture_sliced",
-        "atlas": "bq_standard:textures/gui/editor_gui_tfr_blueline.png.png",
+        "atlas": "bq_standard:textures/gui/editor_gui_tfr_blueline.png",
         "bounds": [24,104,24,24],
         "padding": [11,11,11,11],
         "sliceMode": 1
@@ -1676,7 +1676,7 @@
       "betterquesting:quest_main_1":
       {
         "textureType": "betterquesting:texture_sliced",
-        "atlas": "bq_standard:textures/gui/editor_gui_tfr_blueline.png.png",
+        "atlas": "bq_standard:textures/gui/editor_gui_tfr_blueline.png",
         "bounds": [24,104,24,24],
         "padding": [11,11,11,11],
         "sliceMode": 1
@@ -1684,7 +1684,7 @@
       "betterquesting:quest_main_2":
       {
         "textureType": "betterquesting:texture_sliced",
-        "atlas": "bq_standard:textures/gui/editor_gui_tfr_blueline.png.png",
+        "atlas": "bq_standard:textures/gui/editor_gui_tfr_blueline.png",
         "bounds": [24,104,24,24],
         "padding": [11,11,11,11],
         "sliceMode": 1
@@ -1692,7 +1692,7 @@
       "betterquesting:quest_main_3":
       {
         "textureType": "betterquesting:texture_sliced",
-        "atlas": "bq_standard:textures/gui/editor_gui_tfr_blueline.png.png",
+        "atlas": "bq_standard:textures/gui/editor_gui_tfr_blueline.png",
         "bounds": [24,104,24,24],
         "padding": [11,11,11,11],
         "sliceMode": 1
