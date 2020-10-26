@@ -32,3 +32,6 @@ recipes.addShaped(<gregtech:gt.multitileentity:32722>,
 [[<ore:craftingToolChisel>,null,<ore:craftingToolHardHammer>],
 [<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>],
 [null,null,null]]);
+
+recipes.addShapeless(<Botania:item.manaResource:3>, <gregtech:gt.meta.stick:8289>);
+recipes.addShapeless(<Botania:item.manaResource:13>, <gregtech:gt.meta.stick:8290>);
