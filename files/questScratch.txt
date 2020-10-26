@@ -181,31 +181,14 @@ HD是一个一个酷似太阳系火星的星球，地壳富含贵金属。其中
 地球的坐标已经输入跃迁控制器，我身穿无尽防护服，推下跃迁拉杆。
 开始了...返乡之旅。
 
-August 10, 21X1
 
-It's been eight years since the fusion reactor began stable operation, and I no longer need to worry about running out of energy - Duck Egg has an inexhaustible supply of helium-3 that will last me at least 20,000 years.
-But I won't live that long. I haven't forgotten my first and always wish: to return to Earth.
 
-February 3, 21X2.
+August 10, 21X1%n%nIt's been eight years since the fusion reactor began stable operation, and I no longer need to worry about running out of energy - Duck Egg has an inexhaustible supply of helium-3 that will last me at least 20,000 years.%nBut I won't live that long. I haven't forgotten my first and always wish: to return to Earth.%n%nFebruary 3, 21X2.%n%nI've been researching the application of space-warp technology. Space-warp has allowed me to travel to neighboring planetary systems, but I still convern traveling to a place as far away as Earth - 68 light years away.%nI understand that space-warp over great distances could cause permanent damage to me.%n%nJune 10, 21X2.%n%nSpring has passed again, and Terrafirma is starting to come alive, but I am becoming more and more depressed.%nIt wasn't until yesterday that I discovered a frightening fact: I have leukemia. I thought it was most likely the result of the continuing effects on me over the decades of the high-energy particles released by Duck Egg.%nThe incident was like a thunderbolt that forced me to contemplate my response. I don't have radiation protection or a cure for cancer. Even if I could develop it, I probably wouldn't make it through that time.%n%nJune 15, 21X2.%n%nI decided to take a risk. I forged the toughest alloy I could make - Infinity - into a protective suit. I hope that this will protect me from the damage of the hyper warp.%n%nJuly 16, 21X2.%n%nWhoever is reading this diary, I want you to know that I'm off. It has taken me a month to transport the items I need to carry on board the space station, yet the machinery left on the Terrafirma is still plentiful.%nEarth's coordinates have been entered into the warp controller, and I push down the warp lever in my Infinity protective suit.%nBeginning the... the homeward journey.%n%nAugust 10, 21X1%n%nIt's been eight years since the fusion reactor began stable operation, and I no longer need to worry about running out of energy - Duck Egg has an inexhaustible supply of helium-3 that will last me at least 20,000 years.%nBut I won't live that long. I haven't forgotten my first and always wish: to return to Earth.%n%nFebruary 3, 21X2.%n%nI've been researching the application of space-warp technology. Space-warp has allowed me to travel to neighboring planetary systems, but I still convern traveling to a place as far away as Earth - 68 light years away.%nI understand that space-warp over great distances could cause permanent damage to me.%n%nJune 10, 21X2.%n%nSpring has passed again, and Terrafirma is starting to come alive, but I am becoming more and more depressed.%nIt wasn't until yesterday that I discovered a frightening fact: I have leukemia. I thought it was most likely the result of the continuing effects on me over the decades of the high-energy particles released by Duck Egg.%nThe incident was like a thunderbolt that forced me to contemplate my response. I don't have radiation protection or a cure for cancer. Even if I could develop it, I probably wouldn't make it through that time.%n%nJune 15, 21X2.%n%nI decided to take a risk. I forged the toughest alloy I could make - Infinity - into a protective suit. I hope that this will protect me from the damage of the hyper warp.%n%nJuly 16, 21X2.%n%nWhoever is reading this diary, I want you to know that I'm off. It has taken me a month to transport the items I need to carry on board the space station, yet the machinery left on the Terrafirma is still plentiful.%nEarth's coordinates have been entered into the warp controller, and I push down the warp lever in my Infinity protective suit.%nBeginning the... the homeward journey.
 
-I've been researching the application of space-warp technology. Space-warp has allowed me to travel to neighboring planetary systems, but I still convern traveling to a place as far away as Earth - 68 light years away.
-I understand that space-warp over great distances could cause permanent damage to me.
 
-June 10, 21X2.
+tfr.quest77.desc=The dense plates can be used to make a hardened steam engine
+tfr.quest89.desc=If you find pyrolusite, this will help you get manganese quickly. But if you can't find it, you can also get manganese by treating byproducts of other minerals.
 
-Spring has passed again, and Terrafirma is starting to come alive, but I am becoming more and more depressed.
-It wasn't until yesterday that I discovered a frightening fact: I have leukemia. I thought it was most likely the result of the continuing effects on me over the decades of the high-energy particles released by Duck Egg.
-The incident was like a thunderbolt that forced me to contemplate my response. I don't have radiation protection or a cure for cancer. Even if I could develop it, I probably wouldn't make it through that time.
-
-June 15, 21X2.
-
-I decided to take a risk. I forged the toughest alloy I could make - Infinity - into a protective suit. I hope that this will protect me from the damage of the hyper warp.
-
-July 16, 21X2.
-
-Whoever is reading this diary, I want you to know that I'm off. It has taken me a month to transport the items I need to carry on board the space station, yet the machinery left on the Terrafirma is still plentiful.
-Earth's coordinates have been entered into the warp controller, and I push down the warp lever in my Infinity protective suit.
-Beginning the... the homeward journey.
 
 亚历山大·史蒂夫·二世
 
