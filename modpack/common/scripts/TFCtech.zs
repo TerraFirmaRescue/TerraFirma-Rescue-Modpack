@@ -187,10 +187,10 @@ recipes.remove(<tfctech:item.Electrum Stripe>);
 recipes.remove(<tfctech:item.Wrought Iron Stripe>);
 recipes.remove(<tfctech:item.Steel Stripe>);
 
-recipes.addShaped(<tfctech:item.Tin Stripe>*4,[[n,Saw,n],[n,<terrafirmacraft:item.Tin Sheet>,n],[n,HHammer,n]]);
-recipes.addShaped(<tfctech:item.Aluminum Stripe>*4,[[n,Saw,n],[n,<tfctech:item.Aluminum Sheet>,n],[n,HHammer,n]]);
-recipes.addShaped(<tfctech:item.Copper Stripe>*4,[[n,Saw,n],[n,<terrafirmacraft:item.Copper Sheet>,n],[n,HHammer,n]]);
-recipes.addShaped(<tfctech:item.Gold Stripe>*4,[[n,Saw,n],[n,<terrafirmacraft:item.Gold Sheet>,n],[n,HHammer,n]]);
-recipes.addShaped(<tfctech:item.Electrum Stripe>*4,[[n,Saw,n],[n,<terrafirmacraft:item.Electrum Sheet>,n],[n,HHammer,n]]);
-recipes.addShaped(<tfctech:item.Wrought Iron Stripe>*4,[[n,Saw,n],[n,<terrafirmacraft:item.Wrought Iron Sheet>,n],[n,HHammer,n]]);
-recipes.addShaped(<tfctech:item.Steel Stripe>*4,[[n,Saw,n],[n,<terrafirmacraft:item.Steel Sheet>,n],[n,HHammer,n]]);
+recipes.addShaped(<tfctech:item.Tin Stripe>*2,[[n,Saw,n],[n,<terrafirmacraft:item.Tin Sheet>,n],[n,HHammer,n]]);
+recipes.addShaped(<tfctech:item.Aluminum Stripe>*2,[[n,Saw,n],[n,<tfctech:item.Aluminum Sheet>,n],[n,HHammer,n]]);
+recipes.addShaped(<tfctech:item.Copper Stripe>*2,[[n,Saw,n],[n,<terrafirmacraft:item.Copper Sheet>,n],[n,HHammer,n]]);
+recipes.addShaped(<tfctech:item.Gold Stripe>*2,[[n,Saw,n],[n,<terrafirmacraft:item.Gold Sheet>,n],[n,HHammer,n]]);
+recipes.addShaped(<tfctech:item.Electrum Stripe>*2,[[n,Saw,n],[n,<terrafirmacraft:item.Electrum Sheet>,n],[n,HHammer,n]]);
+recipes.addShaped(<tfctech:item.Wrought Iron Stripe>*2,[[n,Saw,n],[n,<terrafirmacraft:item.Wrought Iron Sheet>,n],[n,HHammer,n]]);
+recipes.addShaped(<tfctech:item.Steel Stripe>*2,[[n,Saw,n],[n,<terrafirmacraft:item.Steel Sheet>,n],[n,HHammer,n]]);
