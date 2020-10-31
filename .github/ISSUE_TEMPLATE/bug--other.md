@@ -1,9 +1,9 @@
 ---
-name: 'Bug: Crash'
-about: Report a bug that crashes the game
+name: 'Bug: Other'
+about: If the bug is not a gameplay issue or crash, report it here
 title: ''
-labels: 'Bug: Crash'
-assignees: yuesha-yc, duckegg128, dashuaibia, Evanenir
+labels: ''
+assignees: ''
 
 ---
 
