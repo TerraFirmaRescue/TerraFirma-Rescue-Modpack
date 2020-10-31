@@ -8,7 +8,7 @@ assignees: yuesha-yc, duckegg128, dashuaibia, Evanenir
 ---
 
 **Version**
-Version of the modpack you are using (e.g. 3.1.x.x)
+Version of the modpack you are using [e.g. 3.1.x.x]
 
 **Describe the bug**
 A clear and concise description of what the bug is.
