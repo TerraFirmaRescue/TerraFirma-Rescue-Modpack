@@ -1,5 +1,5 @@
 ---
-name: Bug：游戏过程
+name: 游戏过程BUG
 about: 关于游戏过程中的BUG（如：配方错误、复制物品、无法前往某地）
 title: ''
 labels: 'Bug: Game Play'

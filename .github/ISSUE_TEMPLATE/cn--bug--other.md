@@ -1,5 +1,5 @@
 ---
-name: Bug：其他
+name: 其他BUG
 about: 其他类型的BUG
 title: ''
 labels: ''

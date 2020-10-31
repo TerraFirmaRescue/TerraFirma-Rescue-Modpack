@@ -1,5 +1,5 @@
 ---
-name: Bug：游戏崩溃
+name: 游戏崩溃BUG
 about: 导致游戏崩溃的BUG（如：闪退、无法启动、存档无法进入）
 title: ''
 labels: 'Bug: Crash'
