@@ -75,13 +75,13 @@ recipes.addShaped(<IronChest:BlockIronChest:4>,
 [<ore:plateDoubleSilver>,<ore:plateDoubleSilver>,<ore:plateDoubleSilver>]]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 400, 0, [10000],
-[<gregtech:gt.multitileentity:18006>,<gregtech:gt.meta.plateGem:8300>*8,<gregapi:gt.integrated_circuit:8>],
+[<gregtech:gt.multitileentity:18006>,<gregtech:gt.meta.plateGem:8300>*8,<gregapi:gt.integrated_circuit:8>*0],
 [n],
 [n],
 [<IronChest:BlockIronChest:2>]);
 
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 64, 400, 0, [10000],
-[<gregtech:gt.multitileentity:18006>,<gregtech:gt.meta.plateGem:8300>*8,<gregapi:gt.integrated_circuit:16>],
+[<gregtech:gt.multitileentity:18006>,<gregtech:gt.meta.plateGem:8300>*8,<gregapi:gt.integrated_circuit:16>*0],
 [<liquid:glass>*1000],
 [n],
 [<IronChest:BlockIronChest:5>]);
