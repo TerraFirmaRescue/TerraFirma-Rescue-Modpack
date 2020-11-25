@@ -281,3 +281,5 @@ recipes.addShaped(<Railcraft:machine.beta:15>,
 [[n, n, n],
 [n, HHammer, n],
 [<ore:plateSteel>,<gregtech:gt.multitileentity:26161>,<ore:plateSteel>]]);
+
+mods.railcraft.BlastFurnace.removeRecipe(<terrafirmacraft:item.Steel Ingot>);

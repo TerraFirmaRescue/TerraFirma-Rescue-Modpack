@@ -237,7 +237,7 @@ mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Resource:6>,
   [null,null,null,null,null,np11,ns11,null,null],
   [null,null,null,null,np11,qd11,ns11,null,null],
   [null,null,null,np11,ic11,cg11,ns11,null,null],
-  [null,null,np11,ic11,cg11,ic11,np11,null,null],
+  [null,null,np11,ic11,<DraconicEvolution:dragonHeart>,ic11,np11,null,null],
   [null,null,ns11,cg11,ic11,np11,null,null,null],
   [null,null,ns11,qd11,np11,null,null,null,null],
   [null,null,ns11,np11,null,null,null,null,null],
@@ -401,6 +401,17 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 256, 640, 0, [10000],
 [n],
 [n],
 [<avaritiaddons:CompressedChest>]);
+
+mods.avaritia.ExtremeCrafting.addShaped (<DraconicEvolution:DragonBeacon>,
+[ [null,null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,null,null],
+  [null,null,null,null,<DraconicEvolution:chaosShard>,null,null,null,null],
+  [null,null,null,<DraconicEvolution:draconicIngot>,<DraconicEvolution:awakenedCore>,<DraconicEvolution:draconicIngot>,null,null,null],
+  [null,null,null,<DraconicEvolution:draconicIngot>,<DraconicEvolution:draconicIngot>,<DraconicEvolution:draconicIngot>,null,null,null],
+  [null,null,null,null,<DraconicEvolution:draconicIngot>,null,null,null,null],
+  [null,null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,null,null]]);
 
 /*
 mods.avaritia.ExtremeCrafting.remove();

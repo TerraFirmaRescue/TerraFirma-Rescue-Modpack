@@ -429,11 +429,6 @@ recipes.addShaped(<gregtech:gt.multitileentity:20314>,
 [<terrafirmacraft:item.Blue Steel Double Sheet>,<gregtech:gt.meta.machine:8638>,<terrafirmacraft:item.Blue Steel Double Sheet>],
 [<minecraft:brick_block>,<gregtech:gt.meta.plateDouble:8640>,<minecraft:brick_block>]]);
 
-// Laser radiator
-recipes.addShaped(<gregtech:gt.multitileentity:11104>,
-[[<gregtech:gt.multiitem.technological:12127>,<gregtech:gt.multiitem.technological:12128>,<gregtech:gt.multiitem.technological:12127>],
-[<advancedRocketry:circuitIC>,<gregtech:gt.meta.machine.double:8610>,<advancedRocketry:circuitIC>],
-[null,null,null]]);
 
 // Burners
 recipes.addShaped(<gregtech:gt.multitileentity:1100>,
