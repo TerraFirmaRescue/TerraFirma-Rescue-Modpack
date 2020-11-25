@@ -60,7 +60,7 @@ recipes.remove(<gregtech:gt.meta.ingot:8336>);
 recipes.remove(<gregtech:gt.multitileentity:1086>);
 recipes.remove(<gregtech:gt.multitileentity:1786>);
 
-// Remove gt lower anvils
+// Remove gt lower anvils - below and inlude black steel
 recipes.remove(<gregtech:gt.multitileentity:32025>);
 recipes.remove(<gregtech:gt.multitileentity:32026>);
 recipes.remove(<gregtech:gt.multitileentity:32027>);

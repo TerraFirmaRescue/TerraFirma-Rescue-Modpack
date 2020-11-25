@@ -273,7 +273,7 @@ recipes.addShaped(<libVulpes:Linker>,
 
 // Saw Blade
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 256 ,0,[10000],
-[<gregtech:gt.meta.plateQuadruple:8643>,<gregapi:gt.integrated_circuit:4>],
+[<gregapi:gt.integrated_circuit:4>*0, <gregtech:gt.meta.plateQuadruple:8643>],
 [<advancedRocketry:sawBlade>]);
 
 // Artificial satellite

@@ -120,7 +120,7 @@ recipes.addShaped(<minecraft:shears>,
 
 // Wool
 MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 100, 1000,[10000],
-[<terrafirmacraft:item.WoolYarn>*4],
+[<gregapi:gt.integrated_circuit:4>*0,<terrafirmacraft:item.WoolYarn>*4],
 [<minecraft:wool>]);
 
 // Hopper
@@ -385,7 +385,7 @@ recipes.addShaped(<minecraft:clay>,
 
 // Cauldron welding
 MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 16, 400, 0, [10000],
-[<terrafirmacraft:item.Wrought Iron Sheet>*7,<gregapi:gt.integrated_circuit:7>],
+[<gregapi:gt.integrated_circuit:7>*0, <terrafirmacraft:item.Wrought Iron Sheet>*7],
 [n],
 [n],
 [<minecraft:cauldron>]);

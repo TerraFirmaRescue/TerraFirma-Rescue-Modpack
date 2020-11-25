@@ -50,6 +50,23 @@ val w = <liquid:water>;
 val dw = <liquid:ic2distilledwater>;
 val fw = <liquid:freshwater>;
 
+// Remove All GT Anvil Recipes
+recipes.remove(<gregtech:gt.multitileentity:32035>);
+recipes.remove(<gregtech:gt.multitileentity:32036>);
+recipes.remove(<gregtech:gt.multitileentity:32037>);
+recipes.remove(<gregtech:gt.multitileentity:32040>);
+recipes.remove(<gregtech:gt.multitileentity:32088>);
+recipes.remove(<gregtech:gt.multitileentity:32043>);
+recipes.remove(<gregtech:gt.multitileentity:32044>);
+recipes.remove(<gregtech:gt.multitileentity:32045>);
+recipes.remove(<gregtech:gt.multitileentity:32046>);
+recipes.remove(<gregtech:gt.multitileentity:32047>);
+recipes.remove(<gregtech:gt.multitileentity:32048>);
+recipes.remove(<gregtech:gt.multitileentity:32049>);
+recipes.remove(<gregtech:gt.multitileentity:32068>);
+recipes.remove(<gregtech:gt.multitileentity:32069>);
+
+
 // Graphene
 MTUtilsGT.removeAllRecipes("gt.recipe.nanofab",<gregtech:gt.meta.foil:9175>);//bo
 MTUtilsGT.addCustomRecipe("gt.recipe.nanofab", false, 20, 256, 1000,[10000],

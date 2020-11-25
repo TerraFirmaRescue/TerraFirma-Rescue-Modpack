@@ -170,6 +170,10 @@ MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 
 //metal
 MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
+[<terrafirmacraft:item.Small Ore:9>],
+[<gregtech:gt.meta.crushed:9156>,<gregtech:gt.meta.dust:8500>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 256, 0,[10000],
 [<terrafirmacraft:item.Small Ore:13>],
 [<gregtech:gt.meta.crushed:9132>,<gregtech:gt.meta.dust:8500>]);
 
