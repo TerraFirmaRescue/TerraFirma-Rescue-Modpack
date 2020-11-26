@@ -1,3 +1,42 @@
+3.5.1.1
+Module variations:
+- Upgrade DraconicEvolution-1710-TFR-v2
+
+Content changes:
+- Fix the problem that the GUI of the Dragon Research module does not have materials.
+
+3.5.1.0
+Module changes:
+- Upgrade TFC0.80.10-TFR
+- Upgrade gregtech6.15.05-unofficial
+- Upgrade Botania2604-TFR
+- Upgrade DraconicEvolution-1710-TFR-v1
+
+Content Changes:
+- Chaos Dragons Now Present on Dracona
+- Increased density of chromite veins
+- Increased generation probability of kaolinite and kimberlite veins.
+- Increased probability of magma pool generation
+- Reduced time for pit firing and charcoal firing.
+- Slightly increased the rate at which all items heat up.
+- Slightly reduced cooling rate of all items
+- Reduced up-front electronic component fabrication costs
+- Endless Ingot requires Heart of the Dragon synthesis
+- Items such as gates cannot be recycled into ingots in railroad blast furnaces.
+- Diamond Armor can now be synthesized
+- Fixes potash water synthesis conflicts
+- The primary platinum granule crusher has two different outputs
+- Repair Expert mode can synthesize blue steel over Grey Anvil.
+- Fix for not being able to make wool yarn on the loom
+- Repair of the soldering consumable programming circuit for the pot and hacksaw.
+- Indicators for restoring lapis lazuli are platinum stones.
+- Double-layer plastic ingot in MESU shell without synthetic formulation
+- Fix recipe error in Tara Crusher due to inability to synthesize live wood rods.
+- Fix English spelling problem in Blue Line UI
+- Fix Qunlian Legend ingot stack duplication problem
+- Fix Malachite can't be processed in Greystone Crusher
+- Fix wrought iron drawing plate task unrecognized problem.
+
 3.5.0.0
 Module variations
 - Upgrade TFC0.80.08-TFR

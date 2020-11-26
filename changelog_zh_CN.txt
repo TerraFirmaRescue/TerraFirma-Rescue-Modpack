@@ -1,9 +1,16 @@
-﻿3.5.1.0
+﻿3.5.1.1
+模组变化：
+· 升级DraconicEvolution-1710-TFR-v2
+
+内容变化：
+· 修复龙之研究模组的GUI没有材质的问题
+
+3.5.1.0
 模组变化:
 · 升级TFC0.80.10-TFR
 · 升级gregtech6.15.05-unofficial
 · 升级Botania2604-TFR
-· 升级DraconicEvolution-1710-TFR
+· 升级DraconicEvolution-1710-TFR-v1
 
 内容变化:
 · 混沌龙现在在德拉克纳星出现
