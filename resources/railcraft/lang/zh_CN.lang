@@ -1,0 +1,2 @@
+tile.railcraft.machine.beta.boiler.tank.pressure.high.tip=多方块结构:尺寸可变\n燃烧室规格可选:1x1x1, 2x2x2, 2x3x2,\n 3x2x3, 3x3x3, 3x4x3\n 每tick产生20mB蒸汽
+tile.railcraft.machine.beta.boiler.tank.pressure.low.tip=多方块结构:尺寸可变\n燃烧室规格可选:1x1x1, 2x2x2, 2x3x2,\n 3x2x3, 3x3x3, 3x4x3\n 每tick产生10mB蒸汽

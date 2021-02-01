@@ -1,0 +1,239 @@
+key.DebugMode=调试模式
+
+tile.empty.name=空方块
+item.empty.name=空物品
+
+#===========
+#= Devices =
+#===========
+
+item.Alloy Calculator.name=合金计算器
+item.Anodising Vessel.name=电镀池
+item.Ceramic Battery.name=电池(陶瓷)
+item.Drying Mat.name=干燥垫
+item.Evaporator Pan.name=蒸发盘
+item.Ore Cooker.name=矿石冶炼埚
+item.Ceramic Bucket.name=陶瓷桶
+
+tile.Alloy Calculator.name=合金计算器
+tile.Anodising Vessel.name=阳极埚
+tile.Drying Mat.name=干燥垫
+tile.Evaporator Pan.name=蒸发盘
+tile.Ore Cooker.name=矿石冶炼埚
+tile.TFC Log Pile.name=原木垛(Udary)
+
+#==========
+#= Fluids =
+#==========
+
+#== Fluid Names ==
+fluid.nitricacid=硝酸
+fluid.sulfuricacid=硫酸
+
+#== Bottled Fluids ==
+item.Bottled Brine.name=瓶装海水
+item.Bottled Limewater.name=瓶装石灰水
+item.Bottled Milk.name=瓶装牛奶
+item.Bottled Nitric Acid.name=瓶装硝酸
+item.Bottled Olive Oil.name=瓶装橄榄油
+item.Bottled Salt Water.name=瓶装盐水
+item.Bottled Sulfuric Acid.name=瓶装硫酸
+item.Bottled Tannin.name=瓶装鞣酸
+item.Bottled Vinegar.name=瓶装醋
+item.Bottled Water.name=瓶装水
+
+#== Ceramic Jug Fluids
+item.Jug Milk.name=牛奶杯
+
+#== Steel Bucket Fluids ==
+item.Blue Steel Bucket Nitric Acid.name=蓝钢桶(硝酸)
+item.Blue Steel Bucket Sulfuric Acid.name=蓝钢桶(硫酸)
+item.Red Steel Bucket Nitric Acid.name=红钢桶(硝酸)
+item.Red Steel Bucket Sulfuric Acid.name=红钢桶(硫酸)
+
+#== Wooden Bucket Fluids ==
+item.Beer.name=啤酒
+item.Brine.name=海水
+item.Cider.name=苹果酒
+item.Corn Whiskey.name=玉米威士忌
+item.Limewater.name=石灰水
+item.Olive Oil.name=橄榄油
+item.Rum.name=朗姆酒
+item.Rye Whiskey.name=黑麦威士忌
+item.Sake.name=清酒
+item.Tannin.name=鞣酸
+item.Vodka.name=伏特加
+item.Whiskey.name=威士忌
+
+#=============
+#= Materials =
+#=============
+
+item.Copper Wire.name=铜线
+item.Wrought Iron Buckle.name=锻铁扣
+
+#========
+#= Ores =
+#========
+
+item.Cooked Limonite Small.name=小型熟褐铁矿
+item.Cooked Limonite Poor.name=贫瘠熟褐铁矿
+item.Cooked Limonite.name=熟褐铁矿
+item.Cooked Limonite Rich.name=富集熟褐铁矿
+item.Nickel Flake.name=镍片
+item.Nickel Flake Clump.name=镍小块
+item.Silver Flake.name=银片
+item.Silver Flake Clump.name=银小块
+
+#===========
+#= Pottery =
+#===========
+
+item.Rod Mold.Clay Mold Rod.name=粘土棒子模具
+item.Rod Mold.Ceramic Mold Rod.name=棒子模具
+item.Rod Mold.Ceramic Mold Rod Copper.name=棒子模具(铜)
+
+#==========
+#= Powder =
+#==========
+
+item.Cooked Limonite Powder.name=熟褐铁矿粉
+
+#===========
+#= Recipes =
+#===========
+
+recipe.AV Nitric Acid.name=硝酸
+recipe.AV Sulfuric Acid.name=硫酸
+recipe.EP Salt.name=盐
+recipe.EP Sulfer.name=硫磺
+recipe.EP Saltpeter.name=硝石
+recipe.OC Cooked Limonite (10).name=熟褐铁矿 (10)
+recipe.OC Cooked Limonite (15).name=熟褐铁矿 (15)
+recipe.OC Cooked Limonite (25).name=熟褐铁矿 (25)
+recipe.OC Cooked Limonite (35).name=熟褐铁矿 (35)
+
+#=========
+#= Tools =
+#=========
+
+item.Carbon Rod.name=碳电极
+item.Copper Rod.name=铜电极
+item.Copper Rod Nickel Coated.name=镀镍铜电极
+item.Copper Rod Silver Coated.name=镀银铜电极
+item.Tucker Bag.name=普通塔克袋
+item.Tucker Bag Full.name=普通塔克袋(满)
+item.Tucker Bag v2.name=加强型塔克袋
+item.Tucker Bag v2 Full.name=加强型塔克袋(满)
+
+#=======
+#= GUI =
+#=======
+
+#== Common ==
+gui.capacity=容量
+gui.cooking=烹饪
+gui.count=计数
+gui.damage=伤害
+gui.drying=干燥
+gui.idle=闲置
+gui.notavailable=不可用
+gui.processing=处理中
+gui.progress=进度
+gui.remaining=剩余
+gui.result=产出
+gui.temperature=温度
+
+gui.alloycalculator.calculator=计算器
+gui.alloycalculator.list=清单
+gui.alloycalculator.result=可能的合金
+
+#== Plans ==
+gui.plans._buckle=扣
+gui.plans._evaporatorpan=蒸发盘
+gui.plans._rod=棒子
+gui.plans._wire=线
+
+#== Devices ==
+gui.Battery.charge=电荷
+
+#== Tooltips ==
+gui.ShowMoreInfo=§8更多... (按下 §fCtrl§8)
+gui.taste.factor=口味因子
+
+#== Units of Measure ==
+gui.battery.unit1=mU
+gui.battery.unit1000=U
+gui.barrel.unit1=mB
+gui.barrel.unit1000=B
+gui.decay.unit=%
+gui.food.unit=oz
+gui.nickel.units=单位镍
+gui.progress.unit=%
+gui.silver.units=单位银
+gui.units=单位
+
+
+#===========
+#= Strings =
+#===========
+string.tuckerbag.bagtodamaged=塔克袋损坏，无法捕捉动物
+string.tuckerbag.bagversiontolow=塔克袋的版本太低，无法捕捉动物.
+string.tuckerbag.entityleashed=动物被拴住了.
+string.tuckerbag.entitynotallowed=该动物不能用塔克袋捕获.
+string.tuckerbag.entitynotregistered=该动物不能用塔克袋抓捕.
+string.tuckerbag.entityridden=该动物正在被骑乘.
+string.tuckerbag.version.1=普通版
+string.tuckerbag.version.2=强化版
+string.tuckerbag.version.none=无
+
+#========
+#= Misc =
+#========
+
+#== Creative Tabs ==
+itemGroup.UdaryArmor=(Udary) 盔甲
+itemGroup.UdaryMaterials=(Udary) 材料
+itemGroup.UdaryMisc=(Udary) 其他
+itemGroup.UdaryPottery=(Udary) 陶艺
+itemGroup.UdaryTools=(Udary) 工具
+itemGroup.UdaryWeapons=(Udary) 武器
+itemGroup.UdaryDevices=(Udary) 设备
+itemGroup.UdaryFoods=(Udary) 食物
+itemGroup.UdaryBuilding=(Udary) 建筑方块
+itemGroup.UdaryDecoration=(Udary) 装饰方块
+itemGroup.UdaryFluids=(Udary) 流体
+
+
+#=========
+#= WAILA =
+#=========
+
+#== Tooltips ==
+tooltip.adult=成人
+tooltip.birthdate=出生日期
+tooltip.daystoadult=距离成年天数
+tooltip.empty=(空)
+tooltip.familiarisedlast=上一次熟悉
+tooltip.familiarisedtoday=今天熟悉了
+tooltip.familiarity=熟悉度
+tooltip.gender=性别
+tooltip.harvest=收获
+tooltip.hasfruit=已结果
+tooltip.hours=小时
+tooltip.hp=HP
+tooltip.inlove=恋爱中
+tooltip.milkedtoday=今天挤奶了
+tooltip.none=无
+tooltip.pregnancyremaining=妊娠期剩余时间
+tooltip.pregnant=怀孕
+tooltip.remaining=剩余
+tooltip.stacklevels=有效的堆栈级别
+tooltip.stackvalid=有效的烟堆栈级别
+tooltip.tamed=已驯服
+tooltip.tuckerbag=塔克袋
+tooltip.tuckerbagversion=版本
+tooltip.tuckerbagdamageamount=损坏程度
+tooltip.ticks=Ticks
+tooltip.unknown=未知
+tooltip.wasroped=被绳索缠住了

@@ -24,3 +24,17 @@ container.PotteryKiln.name=Pottery Kiln
 container.PotteryKilnChamber.name=Pottery Kiln Chamber
 
 gui.plans.metalshield=Metal Shield
+
+gui.seconds delay=Seconds Delay
+gui.Running=Fuel:
+gui.Water=|Delay:
+gui.Running=Running
+gui.Hours remaining=Hours Remaining:
+gui.Chamber=Ceramic Chamber:
+gui.Processing=Kiln Processing
+
+gui.steam0=Steam boiler contains fuel and is running well (driver needs to have redstone signal).
+gui.steam1=Steam boiler is running, low fuel.
+gui.steam2=Steam boiler is fueled and ready to work.
+gui.steam3=Steam boiler needs fresh water.
+gui.steam4=Put logs or coal into the kiln.
