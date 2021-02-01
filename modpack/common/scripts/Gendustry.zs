@@ -210,6 +210,6 @@ recipes.addShaped(<gendustry:GeneticsProcessor>,
 recipes.remove(<gendustry:UpgradeFrame>);
 recipes.addShaped(<gendustry:UpgradeFrame>,
 [[<gregtech:gt.meta.stickLong:15400>,<gregtech:gt.multitileentity:27006>,<gregtech:gt.meta.stickLong:15400>],
-[<gregtech:gt.multitileentity:27006>,<gregtech:gt.meta.plateQuadruple:15400>,<gregtech:gt.multitileentity:27006>],
+[<gregtech:gt.multitileentity:27006>,<gregtech:gt.meta.plate:15400>,<gregtech:gt.multitileentity:27006>],
 [<gregtech:gt.meta.stickLong:15400>,<gregtech:gt.multitileentity:27006>,<gregtech:gt.meta.stickLong:15400>]]);
 //upgrade plate

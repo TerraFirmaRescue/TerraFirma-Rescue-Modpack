@@ -279,8 +279,8 @@ recipes.addShapeless(<moegadd:CeramicBlockMoldFull>,[<moegadd:QuartzMixture>,<mo
 mods.Terrafirmacraft.ItemHeat.addRecipe(<moegadd:CeramicBottleMoldMoltenGlass>,<moegadd:CeramicBottleMoldFull>, 600, 0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(<moegadd:CeramicBlockMoldMoltenGlass>,<moegadd:CeramicBlockMoldFull>, 600, 0.35);
 
-recipes.addShapeless(<terrafirmacraft:item.Glass Bottle>,[<moegadd:CeramicBottleMoldMoltenGlass>,HHammer,<ore:itemTuyere>.transformDamage()]);
-recipes.addShapeless(<minecraft:glass>*3,[<moegadd:CeramicBlockMoldMoltenGlass>,HHammer,<ore:itemTuyere>.transformDamage()]);
+recipes.addShapeless(<terrafirmacraft:item.Glass Bottle>,[<moegadd:CeramicBottleMoldMoltenGlass>,HHammer]);
+recipes.addShapeless(<minecraft:glass>*3,[<moegadd:CeramicBlockMoldMoltenGlass>,HHammer]);
 
 // Industrial prudction of glass
 for dust in <ore:dustAnyCalcite>.items {
@@ -647,3 +647,8 @@ MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
 MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
 [<terrafirmacraft:MetalBlock:9>],[n],
 [n],[<minecraft:iron_block>]);
+
+// Golden nugget unification
+MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
+[<terrafirmacraft:item.MetalNugget:8>],[n],
+[n],[<minecraft:gold_nugget>]);

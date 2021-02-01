@@ -385,3 +385,6 @@ MTUtilsGT.addCustomRecipe("gt.recipe.sluice", false, 16, 16 ,0,[10000,300,300,30
 [dw*100],
 [<liquid:sluicejuice>*100],
 [<gregtech:gt.meta.crushedPurifiedTiny:9161>,s1,s2,s3,s4,s5,s6,s7,s8]);
+
+// Remove Pitchblende to U-238 in RC Crusher
+mods.railcraft.RockCrusher.removeRecipe(<terrafirmacraft:item.Ore:26>);
