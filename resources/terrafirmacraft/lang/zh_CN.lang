@@ -1,9 +1,6 @@
 #zh_CN
-#本文件为简体中文语言配置文件,翻译者:crafteverywhere, moshee, Huesca
-#Terrafirmcraft 群峦传说
-
-
-
+#本文件为简体中文语言配置文件,翻译者:crafteverywhere, moshee, Huesca, YueSha
+#Terrafirmcraft - TFR 群峦传说 - TFR 版本 V0.80.10-TFR
 
 generator.TFCDefault=TFC默认生成模式
 generator.TFCFlat=TFC平坦世界
@@ -598,7 +595,7 @@ item.FlatRock.Schist.name=片岩
 item.FlatRock.Shale.name=页岩
 item.FlatRock.Slate=板岩
 
-#== Stone Blocks ==
+#== Stone块s ==
 tile.WallCobble.Andesite.name=页岩圆石墙
 tile.WallCobble.Basalt.name=泥岩圆石墙
 tile.WallCobble.Chalk.name=英安岩圆石墙
@@ -861,7 +858,7 @@ item.Small Ore.Native Silver.name=原生银粒
 item.Small Ore.Sphalerite.name=小型闪锌矿
 item.Small Ore.Tetrahedrite.name=小型黝铜矿
 
-#== Ore Blocks ==
+#== Ore块s ==
 tile.Ore.name=矿石
 tile.Ore.Bituminous Coal.name=烟煤
 tile.Ore.Borax.name=硼砂
@@ -994,7 +991,7 @@ item.Loom.White Cedar.name=北美香柏树织布机
 item.Loom.White Elm.name=榆树织布机
 item.Loom.Willow.name=杨柳织布机
 
-#== Wood Blocks ==
+#== Wood块s ==
 tile.Chest.Acacia.name=金合欢箱子
 tile.Chest.Ash.name=白蜡树箱子
 tile.Chest.Aspen.name=白杨树箱子
@@ -1774,6 +1771,32 @@ item.Weak Steel Unshaped.name=未成形:脆钢
 item.Wrought Iron Unshaped.name=未成形:锻铁
 item.Zinc Unshaped.name=未成形:锌
 
+#== 粒 ==
+
+item.MetalNugget.Bismuth.name=铋粒
+item.MetalNugget.Bismuth Bronze.name=铋青铜粒
+item.MetalNugget.Black Bronze.name=黑青铜粒
+item.MetalNugget.Black Steel.name=黑钢粒
+item.MetalNugget.Blue Steel.name=蓝钢粒
+item.MetalNugget.Brass.name=黄铜粒
+item.MetalNugget.Bronze.name=青铜粒
+item.MetalNugget.Copper.name=铜粒
+item.MetalNugget.Gold.name=金粒
+item.MetalNugget.Wrought Iron.name=锻铁粒
+item.MetalNugget.Lead.name=铅粒
+item.MetalNugget.Nickel.name=镍粒
+item.MetalNugget.Pig Iron.name=生铁粒
+item.MetalNugget.Platinum.name=铂粒
+item.MetalNugget.Red Steel.name=红钢粒
+item.MetalNugget.Rose Gold.name=玫瑰金粒
+item.MetalNugget.Silver.name=银粒
+item.MetalNugget.Steel.name=钢粒
+item.MetalNugget.Sterling Silver.name=纯银粒
+item.MetalNugget.Tin.name=锡粒
+item.MetalNugget.Zinc.name=锌粒
+item.MetalNugget.Electrum.name=琥珀金粒
+item.MetalNugget.Cupronickel.name=康铜粒
+
 #== Ingot ==
 item.Bismuth Bronze Ingot.name=铋青铜锭
 item.Bismuth Ingot.name=铋锭
@@ -1804,6 +1827,8 @@ item.Weak Red Steel Ingot.name=脆红钢锭
 item.Weak Steel Ingot.name=脆钢锭
 item.Wrought Iron Ingot.name=锻铁锭
 item.Zinc Ingot.name=锌锭
+item.Electrum Ingot.name=琥珀金锭
+item.Cupronickel Ingot.name=康铜锭
 
 #== Double Ingot ==
 item.Bismuth Bronze Double Ingot.name=铋青铜双层锭
@@ -1827,6 +1852,8 @@ item.Sterling Silver Double Ingot.name=纯银双层锭
 item.Tin Double Ingot.name=锡双层锭
 item.Wrought Iron Double Ingot.name=锻铁双层锭
 item.Zinc Double Ingot.name=锌双层锭
+item.Electrum Double Ingot.name=琥珀金双层锭
+item.Cupronickel Double Ingot.name=康铜双层锭
 
 #== Sheet ==
 item.Bismuth Bronze Sheet.name=铋青铜薄板
@@ -1850,6 +1877,8 @@ item.Sterling Silver Sheet.name=纯银薄板
 item.Tin Sheet.name=锡薄板
 item.Wrought Iron Sheet.name=锻铁薄板
 item.Zinc Sheet.name=锌薄板
+item.Electrum Sheet.name=琥珀金薄板
+item.Cupronickel Sheet.name=康铜薄板
 
 #== DoubleSheet ==
 item.Bismuth Bronze Double Sheet.name=铋青铜双层薄板
@@ -1873,6 +1902,8 @@ item.Sterling Silver Double Sheet.name=纯银双层薄板
 item.Tin Double Sheet.name=锡双层薄板
 item.Wrought Iron Double Sheet.name=锻铁双层薄板
 item.Zinc Double Sheet.name=锌双层薄板
+item.Electrum Double Sheet.name=琥珀金双层薄板
+item.Cupronickel Double Sheet.name=康铜双层薄板
 
 #== Misc ==
 item.Blueprint=图纸
@@ -1896,6 +1927,32 @@ tile.FoodPrep.name=厨台
 tile.MetalSheet.name=金属板
 tile.ingotpile.name=金属锭
 tile.SmokeRack.name=烟熏架
+tile.FlowerPot.name=花盆
+
+#== Metal Blocks ==
+tile.MetalBlock.Bismuth.name=铋块
+tile.MetalBlock.Bismuth Bronze.name=铋青铜块
+tile.MetalBlock.Black Bronze.name=黑青铜块
+tile.MetalBlock.Black Steel.name=黑钢块
+tile.MetalBlock.Blue Steel.name=蓝钢块
+tile.MetalBlock.Brass.name=Brass块
+tile.MetalBlock.Bronze.name=青铜块
+tile.MetalBlock.Copper.name=铜块
+tile.MetalBlock.Gold.name=金块
+tile.MetalBlock.Wrought Iron.name=锻铁块
+tile.MetalBlock.Lead.name=铅块
+tile.MetalBlock.Nickel.name=镍块
+tile.MetalBlock.Pig Iron.name=生铁块
+tile.MetalBlock.Platinum.name=铂块
+tile.MetalBlock.Red Steel.name=红钢块
+tile.MetalBlock.Rose Gold.name=玫瑰金块
+tile.MetalBlock.Silver.name=银块
+tile.MetalBlock.Steel.name=钢块
+tile.MetalBlock.Sterling Silver.name=纯银块
+tile.MetalBlock.Tin.name=锡块
+tile.MetalBlock.Zinc.name=锌块
+tile.MetalBlock.Electrum.name=琥珀金块
+tile.MetalBlock.Cupronickel.name=康铜块
 
 #== Anvils ==
 tile.Anvil.Stone.name=石砧
@@ -1923,6 +1980,7 @@ tile.ClayGrass.name=粘土草地
 tile.dirt.name=泥土
 tile.sand.name=沙子
 tile.Peat.name=泥炭
+tile.gravels.name=沙砾
 tile.tilledSoil.name=农田
 tile.LooseRock.name=碎砾
 tile.Ice.name=冰
@@ -1997,7 +2055,7 @@ item.Rope.name=绳子
 item.Mud Brick.name=泥砖
 item.Wet Mud Brick.name=湿泥砖
 
-#======== Misc. Blocks========
+#======== Misc.块s========
 tile.Straw Hide Bed.name=干草兽皮床
 tile.StrawHideBed.name=干草兽皮床
 tile.customBed.sleep=这张床太不舒服了，睡不着。
