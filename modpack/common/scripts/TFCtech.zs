@@ -112,7 +112,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 40, 1000,[10000],
 mods.Terrafirmacraft.Barrel.addItemFluidConversion(<liquid:basepotashliquor> * 5000, <gregtech:gt.meta.dust:8200>, <liquid:freshwater> * 5000, 0, false, 0);
 mods.Terrafirmacraft.Barrel.addItemFluidConversion(<tfcprimitivetech:itemCelluloseFibers>, <liquid:waste>*100, <terrafirmacraft:item.Reeds>,  <liquid:basepotashliquor> * 100, 0, true, 24);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.mixer", false, 16, 100, 1000,[10000],
+MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 100, 1000, [10000],
 [<gregtech:gt.meta.dust:8200>, tag0*0],
 [<liquid:freshwater> * 5000],
 [<liquid:basepotashliquor> * 5000],
@@ -183,3 +183,20 @@ recipes.addShaped(<tfctech:item.Gold Stripe>*2,[[n,Saw,n],[n,<terrafirmacraft:it
 recipes.addShaped(<tfctech:item.Electrum Stripe>*2,[[n,Saw,n],[n,<terrafirmacraft:item.Electrum Sheet>,n],[n,HHammer,n]]);
 recipes.addShaped(<tfctech:item.Wrought Iron Stripe>*2,[[n,Saw,n],[n,<terrafirmacraft:item.Wrought Iron Sheet>,n],[n,HHammer,n]]);
 recipes.addShaped(<tfctech:item.Steel Stripe>*2,[[n,Saw,n],[n,<terrafirmacraft:item.Steel Sheet>,n],[n,HHammer,n]]);
+
+// Fertilizer
+MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
+[<Forestry:fertilizerBio>],[n],
+[n],[<terrafirmacraft:item.Fertilizer>]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
+[<Forestry:fertilizerCompound>],[n],
+[n],[<terrafirmacraft:item.Fertilizer>]);
+
+// Raw Rubber Production latex
+MTUtilsGT.removeAllRecipes("gt.recipe.centrifuge",<tfctech:item.Rubber Mix>);
+MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 16, 128 ,0,[10000],
+[<terrafirmacraft:item.Powder:3>],
+[<liquid:latex>*144],
+[<liquid:glue>*36],
+[<tfctech:item.Rubber Mix>*5]);

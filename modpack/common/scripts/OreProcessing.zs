@@ -112,6 +112,7 @@ mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:16>, true, false,
 mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:20>, true, false, [<terrafirmacraft:item.Powder:2>*6,<gregtech:gt.meta.dust:8500>], [1,0.2]);
 mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.LooseRock:5>, true, false, [<terrafirmacraft:item.Powder:9>*6,<gregtech:gt.meta.dust:8500>], [1,0.2]);
 mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:27>, true, false, [<minecraft:redstone>*10,<gregtech:gt.meta.crushedTiny:9114>], [1,0.1]);
+mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:item.Ore:31>, true, false, [<terrafirmacraft:item.Fertilizer>*6,<gregtech:gt.meta.dust:8500>], [1,0.2]);
 
 //Quern
 mods.Terrafirmacraft.Quern.removeRecipe(<minecraft:redstone>*8, <terrafirmacraft:item.Ore:28>);

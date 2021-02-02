@@ -798,15 +798,6 @@ recipes.addShaped(<gregtech:gt.multitileentity:20091>,
 [<gregtech:gt.multitileentity:28066>,Wrench,<gregtech:gt.multitileentity:28066>],
 [n,n,n]]);
 
-// Raw Rubber Production latex
-MTUtilsGT.removeAllRecipes("gt.recipe.centrifuge",<tfctech:item.Rubber Mix>);
-
-MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 16, 128 ,0,[10000],
-[<terrafirmacraft:item.Powder:3>],
-[<liquid:latex>*100],
-[<liquid:glue>*40],
-[<tfctech:item.Rubber Mix>*6]);
-
 // Wood Bath
 recipes.remove(<gregtech:gt.multitileentity:32721>);
 recipes.addShaped(<gregtech:gt.multitileentity:32721>,[
