@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2020 TeamMoeg
+ * Copyright (c) 2021 TeamMoeg
  *
  * This file is part of Terra Firma Rescue.
  *
@@ -60,7 +60,7 @@ recipes.remove(<gregtech:gt.meta.ingot:8336>);
 recipes.remove(<gregtech:gt.multitileentity:1086>);
 recipes.remove(<gregtech:gt.multitileentity:1786>);
 
-// Remove gt lower anvils - below and inlude black steel
+// Remove gt lower anvils - below and include black steel
 recipes.remove(<gregtech:gt.multitileentity:32025>);
 recipes.remove(<gregtech:gt.multitileentity:32026>);
 recipes.remove(<gregtech:gt.multitileentity:32027>);
@@ -156,18 +156,6 @@ recipes.remove(<gregtech:gt.meta.gearGt:470>  );
 
 // Remove LV Motor
 recipes.remove(<gregtech:gt.multiitem.technological:12001>);
-
-// Remove Low tier burners
-recipes.remove(<gregtech:gt.multitileentity:1100>);
-recipes.remove(<gregtech:gt.multitileentity:1101>);
-recipes.remove(<gregtech:gt.multitileentity:1102>);
-recipes.remove(<gregtech:gt.multitileentity:1103>);
-recipes.remove(<gregtech:gt.multitileentity:1104>);
-recipes.remove(<gregtech:gt.multitileentity:1105>);
-recipes.remove(<gregtech:gt.multitileentity:1106>);
-recipes.remove(<gregtech:gt.multitileentity:1107>);
-recipes.remove(<gregtech:gt.multitileentity:1108>);
-recipes.remove(<gregtech:gt.multitileentity:1109>);
 
 // Lighters
 recipes.addShaped(<gregtech:gt.multiitem.randomtools:5004>,
@@ -276,11 +264,6 @@ recipes.addShaped(<gregtech:gt.multitileentity:11111>,
 [<ore:stickLongLead>,<gregtech:gt.meta.machine.double:8630>,<ore:stickLongLead>],
 [<gregtech:gt.multitileentity:28350>,<ore:gearLead>,<gregtech:gt.multitileentity:28350>]]);
 
-// gt clay mold
-recipes.remove(<gregtech:gt.multitileentity:1055>);
-mods.Terrafirmacraft.Knapping.addFireClayWorkingRecipe(<gregtech:gt.multitileentity:1055>, " ### ", " ### ", "     ", "#####", "#####");
-
-
 // GT coke oven
 recipes.remove(<gregtech:gt.multitileentity:18000>);
 recipes.addShaped(<gregtech:gt.multitileentity:18000>,
@@ -304,20 +287,31 @@ recipes.remove(<gregtech:gt.multitileentity:32030>);
 recipes.remove(<gregtech:gt.multitileentity:32031>);
 recipes.remove(<gregtech:gt.multitileentity:32034>);
 
-// clay crucible
-recipes.remove(<gregtech:gt.multitileentity:1005>);
-recipes.addShaped(<gregtech:gt.multitileentity:1005>,
-[[<terrafirmacraft:item.Fire Brick:1>,Chisel,<terrafirmacraft:item.Fire Brick:1>],
-[<terrafirmacraft:item.Fire Brick:1>,HHammer,<terrafirmacraft:item.Fire Brick:1>],
-[<terrafirmacraft:item.Fire Brick:1>,<ore:plateBlueSteel>,<terrafirmacraft:item.Fire Brick:1>]]);
+// Clay crucible
+recipes.remove(<gregtech:gt.multiitem.randomtools:989>);
+recipes.addShaped(<gregtech:gt.multiitem.randomtools:989>,
+[[<ore:itemClay>,<ore:craftingToolRollingPin>,<ore:itemClay>],
+[<ore:itemClay>,<ore:plateRedSteel>,<ore:itemClay>],
+[<ore:itemClay>,<ore:itemClay>,<ore:itemClay>]]);
 
-recipes.addShaped(<gregtech:gt.multitileentity:1005>,
-[[<terrafirmacraft:item.Fire Brick:1>,Chisel,<terrafirmacraft:item.Fire Brick:1>],
-[<terrafirmacraft:item.Fire Brick:1>,HHammer,<terrafirmacraft:item.Fire Brick:1>],
-[<terrafirmacraft:item.Fire Brick:1>,<ore:plateRedSteel>,<terrafirmacraft:item.Fire Brick:1>]]);
+recipes.addShaped(<gregtech:gt.multiitem.randomtools:989>,
+[[<ore:itemClay>,<ore:craftingToolRollingPin>,<ore:itemClay>],
+[<ore:itemClay>,<ore:plateBlueSteel>,<ore:itemClay>],
+[<ore:itemClay>,<ore:itemClay>,<ore:itemClay>]]);
 
+// Heating clay molds to ceramic
 
-// other crucibles
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1005>, <gregtech:gt.multiitem.randomtools:989>, 1500, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:32706>, <gregtech:gt.multiitem.randomtools:995>, 1500, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:32722>, <gregtech:gt.multiitem.randomtools:994>, 1500, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1870>, <gregtech:gt.multiitem.randomtools:993>, 1500, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1705>, <gregtech:gt.multiitem.randomtools:992>, 1500, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>, <gregtech:gt.multiitem.randomtools:991>, 1500, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1755>, <gregtech:gt.multiitem.randomtools:990>, 1500, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:32723>, <gregtech:gt.multiitem.randomtools:988>, 1500, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:32728>, <gregtech:gt.multiitem.randomtools:987>, 1500, 0.35);
+
+// higher tier crucibles
 recipes.addShaped(<gregtech:gt.multitileentity:1033>,
 [[<ore:plateChromium>,Chisel,<ore:plateChromium>],
 [<ore:plateChromium>,HHammer,<ore:plateChromium>],
@@ -337,32 +331,6 @@ recipes.addShaped(<gregtech:gt.multitileentity:1018>,
 [[<ore:gemAnyQuartz>,Chisel,<ore:gemAnyQuartz>],
 [<ore:gemAnyQuartz>,HHammer,<ore:gemAnyQuartz>],
 [<ore:gemAnyQuartz>,<terrafirmacraft:item.Red Steel Double Sheet>,<ore:gemAnyQuartz>]]);
-
-// Crucible Tools
-recipes.remove(<gregtech:gt.multitileentity:1855>);
-recipes.addShaped(<gregtech:gt.multitileentity:1855>,
-[[Chisel,<terrafirmacraft:item.Fire Brick:1>,HHammer],
-[<terrafirmacraft:item.Fire Brick:1>,<terrafirmacraft:item.Fire Brick:1>,<terrafirmacraft:item.Fire Brick:1>],
-[n,<terrafirmacraft:item.Fire Brick:1>,n]]);
-
-recipes.remove(<gregtech:gt.multitileentity:1705>);
-recipes.addShaped(<gregtech:gt.multitileentity:1705>,
-[[Chisel,n,HHammer],
-[<terrafirmacraft:item.Fire Brick:1>,null,<terrafirmacraft:item.Fire Brick:1>],
-[null,<terrafirmacraft:item.Fire Brick:1>,null]]);
-
-recipes.remove(<gregtech:gt.multitileentity:1755>);
-recipes.addShaped(<gregtech:gt.multitileentity:1755>,
-[[<terrafirmacraft:item.Fire Brick:1>,Chisel,<terrafirmacraft:item.Fire Brick:1>],
-[<terrafirmacraft:item.Fire Brick:1>,HHammer,<terrafirmacraft:item.Fire Brick:1>],
-[null,<terrafirmacraft:item.Fire Brick:1>,null]]);
-
-// Mixer bowl
-recipes.remove(<gregtech:gt.multitileentity:32706>);
-recipes.addShaped(<gregtech:gt.multitileentity:32706>,
-[[HHammer,null,Chisel],
-[<minecraft:brick_block>,null,<minecraft:brick_block>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
 
 // gt furnaces
 recipes.remove(<gregtech:gt.multitileentity:20001>);
@@ -429,78 +397,7 @@ recipes.addShaped(<gregtech:gt.multitileentity:20314>,
 [<terrafirmacraft:item.Blue Steel Double Sheet>,<gregtech:gt.meta.machine:8638>,<terrafirmacraft:item.Blue Steel Double Sheet>],
 [<minecraft:brick_block>,<gregtech:gt.meta.plateDouble:8640>,<minecraft:brick_block>]]);
 
-
-// Burners
-recipes.addShaped(<gregtech:gt.multitileentity:1100>,
-[[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Black Steel Sheet>,<gregtech:gt.multitileentity:18011>,<terrafirmacraft:item.Black Steel Sheet>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
-
-recipes.addShaped(<gregtech:gt.multitileentity:1101>,
-[[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Black Steel Sheet>,<gregtech:gt.meta.plateQuadruple:830>,<terrafirmacraft:item.Black Steel Sheet>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
-
-recipes.addShaped(<gregtech:gt.multitileentity:1102>,
-[[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Black Steel Sheet>,<gregtech:gt.multitileentity:18010>,<terrafirmacraft:item.Black Steel Sheet>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
-
-recipes.addShaped(<gregtech:gt.multitileentity:1103>,
-[[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Black Steel Sheet>,<gregtech:gt.multitileentity:18007>,<terrafirmacraft:item.Black Steel Sheet>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
-
-recipes.addShaped(<gregtech:gt.multitileentity:1104>,
-[[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Black Steel Sheet>,<gregtech:gt.multitileentity:18009>,<terrafirmacraft:item.Black Steel Sheet>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
-
-recipes.addShaped(<gregtech:gt.multitileentity:1105>,
-[[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Black Steel Sheet>,<gregtech:gt.meta.plateQuadruple:240>,<terrafirmacraft:item.Black Steel Sheet>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
-
-recipes.addShaped(<gregtech:gt.multitileentity:1106>,
-[[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Blue Steel Sheet>,<ore:casingMachineTitanium>,<terrafirmacraft:item.Blue Steel Sheet>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
-
-recipes.addShaped(<gregtech:gt.multitileentity:1106>,
-[[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Red Steel Sheet>,<ore:casingMachineTitanium>,<terrafirmacraft:item.Red Steel Sheet>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
-
-recipes.addShaped(<gregtech:gt.multitileentity:1107>,
-[[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Blue Steel Sheet>,<ore:casingMachineTungsten>,<terrafirmacraft:item.Blue Steel Sheet>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
-
-recipes.addShaped(<gregtech:gt.multitileentity:1107>,
-[[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Red Steel Sheet>,<ore:casingMachineTungsten>,<terrafirmacraft:item.Red Steel Sheet>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
-
-recipes.addShaped(<gregtech:gt.multitileentity:1108>,
-[[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Blue Steel Sheet>,<ore:casingMachineTungstensteel>,<terrafirmacraft:item.Blue Steel Sheet>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
-
-recipes.addShaped(<gregtech:gt.multitileentity:1108>,
-[[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Red Steel Sheet>,<ore:casingMachineTungstensteel>,<terrafirmacraft:item.Red Steel Sheet>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
-
-recipes.addShaped(<gregtech:gt.multitileentity:1109>,
-[[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Blue Steel Sheet>,<ore:casingMachineTantalumHafniumCarbide>,<terrafirmacraft:item.Blue Steel Sheet>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
-
-recipes.addShaped(<gregtech:gt.multitileentity:1109>,
-[[HHammer,<ore:plateDoubleCopper>,Wrench],
-[<terrafirmacraft:item.Red Steel Sheet>,<ore:casingMachineTantalumHafniumCarbide>,<terrafirmacraft:item.Red Steel Sheet>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>]]);
-
+// Wiremill Steel
 recipes.remove(<gregtech:gt.multitileentity:20152>);
 recipes.addShaped(<gregtech:gt.multitileentity:20152>,
 [[<gregtech:gt.meta.gearGtSmall:8631>,<gregtech:gt.meta.gearGt:8631>,<gregtech:gt.meta.gearGtSmall:8631>],

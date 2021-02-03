@@ -397,3 +397,10 @@ Shears.add(<terrafirmacraft:item.shears>);
 <ore:oc:materialTransistor>.add(<moegadd:Simpletransistor>);
 <ore:oc:materialTransistor>.add(<moegadd:PatchTransistor>);
 
+// GT Blue and Red steel anvil
+<ore:blueOrRedSteelAnvil>.add(<gregtech:gt.multitileentity:32035>);
+<ore:blueOrRedSteelAnvil>.add(<gregtech:gt.multitileentity:32036>);
+
+// Blue and Red Plate
+<ore:plateBlueOrRedSteel>.addAll(<ore:plateBlueSteel>);
+<ore:plateBlueOrRedSteel>.addAll(<ore:plateRedSteel>);

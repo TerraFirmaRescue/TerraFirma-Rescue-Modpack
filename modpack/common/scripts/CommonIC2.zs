@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2020 TeamMoeg
+ * Copyright (c) 2021 TeamMoeg
  *
  * This file is part of Terra Firma Rescue.
  *
@@ -150,3 +150,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.welder", false, 256, 400, 0, [10000],
 [n],
 [null],
 [<IC2:reactorUraniumQuad:1>]);
+
+// Remove Macerater and Ore Washer
+recipes.remove(<IC2:blockMachine2:5>);
+recipes.remove(<IC2:blockMachine:3>);

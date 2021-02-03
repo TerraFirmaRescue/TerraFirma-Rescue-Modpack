@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2020 TeamMoeg
+ * Copyright (c) 2021 TeamMoeg
  *
  * This file is part of Terra Firma Rescue.
  *
@@ -61,3 +61,11 @@ MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
 MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
 [<terrafirmacraft:item.Topaz:4>],[n],
 [n],[<gregtech:gt.meta.gemExquisite:8315>]);
+
+for stone in <ore:cobblestone>.items {
+MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
+[stone],
+[n],
+[n],
+[<minecraft:cobblestone>]);
+}

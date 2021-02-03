@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2020 TeamMoeg
+ * Copyright (c) 2021 TeamMoeg
  *
  * This file is part of Terra Firma Rescue.
  *
@@ -100,7 +100,7 @@ recipes.addShapeless(<terrafirmacraft:item.Log>*2,[<minecraft:log:*>,<minecraft:
 
 recipes.addShapeless(<minecraft:fence_gate>,[<ore:fenceGate>]);
 
-recipes.addShapeless(<minecraft:cobblestone>,[<ore:cobblestone>]);
+recipes.addShapeless(<minecraft:cobblestone> * 4,[<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>]);
 
 recipes.addShapeless(<terrafirmacraft:item.Straw>,[<gregtech:gt.multiitem.food:12001>]);
 recipes.addShapeless(<gregtech:gt.multiitem.food:12001>,[<terrafirmacraft:item.Straw>]);

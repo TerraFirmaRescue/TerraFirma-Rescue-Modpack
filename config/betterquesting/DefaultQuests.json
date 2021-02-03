@@ -899,19 +899,31 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "id:8": "gregtech:gt.multiitem.randomtools",
+              "Count:3": 1,
+              "Damage:2": 989,
+              "OreDict:8": ""
+            },
+            "1:10": {
               "id:8": "gregtech:gt.multitileentity",
               "Count:3": 1,
               "Damage:2": 1005,
               "OreDict:8": ""
             },
-            "1:10": {
+            "2:10": {
+              "id:8": "gregtech:gt.multiitem.randomtools",
+              "Count:3": 1,
+              "Damage:2": 991,
+              "OreDict:8": ""
+            },
+            "3:10": {
               "id:8": "gregtech:gt.multitileentity",
-              "Count:3": 8,
+              "Count:3": 1,
               "Damage:2": 1055,
               "OreDict:8": ""
             }
@@ -8011,21 +8023,8 @@
       },
       "tasks:9": {
         "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "terrafirmacraft:Gravel2",
-              "Count:3": 2,
-              "Damage:2": 0,
-              "OreDict:8": "blockDustGravel"
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:checkbox"
         }
       },
       "rewards:9": {}
@@ -18432,24 +18431,18 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "terrafirmacraft:item.Steel Tuyere",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "itemTuyere"
-            },
-            "1:10": {
               "id:8": "moegadd:QuartzMixture",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             },
-            "2:10": {
+            "1:10": {
               "id:8": "terrafirmacraft:item.Glass Bottle",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             },
-            "3:10": {
+            "2:10": {
               "id:8": "moegadd:CeramicBottleMold",
               "Count:3": 1,
               "Damage:2": 0,
@@ -48440,6 +48433,200 @@
           }
         }
       }
+    },
+    "675:10": {
+      "questID:3": 675,
+      "preRequisites:11": [
+        297,
+        159
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "tag:10": {
+              "gt.durability:3": 40000000
+            },
+            "Damage:2": 32035,
+            "OreDict:8": "blueOrRedSteelAnvil"
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "OR",
+          "name:8": "普通模式专属",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "格雷科技的砧能免去加热的麻烦。在普通模式可以制造。如果你玩专家模式请忽略这个任务。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "tag:10": {
+                "gt.durability:3": 40000000
+              },
+              "Damage:2": 32035,
+              "OreDict:8": "blueOrRedSteelAnvil"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "676:10": {
+      "questID:3": 676,
+      "preRequisites:11": [
+        252
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.multitileentity",
+            "Count:3": 1,
+            "Damage:2": 17131,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "水产养殖厂",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "这台多方块机器消耗鱼苗和养殖液大量繁殖鱼类，可以帮助你获取鱼油，剧毒药水，汞等材料。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 1,
+              "Damage:2": 17131,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 31,
+              "Damage:2": 18298,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.multitileentity",
+              "Count:3": 43,
+              "Damage:2": 18002,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enhancedlootbags:lootbag",
+              "Count:3": 1,
+              "tag:10": {
+                "ench:9": {
+                  "0:10": {
+                    "lvl:2": 3,
+                    "id:2": 35
+                  }
+                }
+              },
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "677:10": {
+      "questID:3": 677,
+      "preRequisites:11": [
+        632
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.meta.ingot",
+            "Count:3": 1,
+            "Damage:2": 8745,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "name:8": "时光倒流",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "前往地狱寻找远古残骸AncientDebris矿石和石子，并在坩埚里用4份远古残骸和4份金冶炼1份下界合金。下界合金是优秀的工具材料和锅炉材料。由于含有金，下界合金流体管道和储罐能耐酸性腐蚀。"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.meta.ingot",
+              "Count:3": 1,
+              "Damage:2": 8745,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
     }
   },
   "questLines:9": {
@@ -49304,6 +49491,20 @@
           "x:3": -48,
           "y:3": 180,
           "id:3": 632,
+          "sizeY:3": 24
+        },
+        "43:10": {
+          "sizeX:3": 24,
+          "x:3": 228,
+          "y:3": 36,
+          "id:3": 675,
+          "sizeY:3": 24
+        },
+        "44:10": {
+          "sizeX:3": 24,
+          "x:3": -48,
+          "y:3": 240,
+          "id:3": 677,
           "sizeY:3": 24
         }
       },
@@ -51117,6 +51318,13 @@
           "x:3": 24,
           "y:3": 96,
           "id:3": 666,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
+          "x:3": 96,
+          "y:3": 96,
+          "id:3": 676,
           "sizeY:3": 24
         }
       },

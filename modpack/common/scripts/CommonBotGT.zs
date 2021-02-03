@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2020 TeamMoeg
+ * Copyright (c) 2021 TeamMoeg
  *
  * This file is part of Terra Firma Rescue.
  *
@@ -25,12 +25,6 @@ recipes.addShaped(<gregtech:gt.multiitem.food:2000>*2,
 recipes.addShaped(<gregtech:gt.multiitem.food:2000>*2,
 [[null,<ore:craftingToolRollingPin>,null],
 [null,<terrafirmacraft:item.Wheat Dough>.withTag({foodWeight: 40.0 as float}),null],
-[null,null,null]]);
-
-recipes.remove(<gregtech:gt.multitileentity:32722>);
-recipes.addShaped(<gregtech:gt.multitileentity:32722>,
-[[<ore:craftingToolChisel>,null,<ore:craftingToolHardHammer>],
-[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>],
 [null,null,null]]);
 
 recipes.addShapeless(<Botania:item.manaResource:3>, [<gregtech:gt.meta.stick:8289>]);
