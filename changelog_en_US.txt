@@ -1,12 +1,54 @@
+3.6.0.0
+Mod changes:
+- Added FoamFix-1.7.10-beta2
+- Upgraded gregtech_1.7.10-6.15.06-unofficial
+- Upgraded Botania-TFR-2605
+
+Content changes:
+- Added multi-block aquatic farm
+- Added solar photovoltaic panels and light power transformers
+- Added dozens of new metal scaffolds
+- Added dozens of new metal builder's wands
+- Added clay pattern for all GT ceramic products
+- Added clay molds for all GT ceramic molds
+- Added magic diamond can be obtained by diamond powder
+- Added GT food can now be made through substance maker
+- Added GT recipes now have separators for the numbers shown in the recipe
+- Added potassium salt can now be processed in the crusher
+- Added fertilizer can be converted through multiple fertilizers
+- Updated TFC Chineseization
+- Updated the Chineseization of TFC Udary Mod
+- Updated the English of TFC Auto Bellow Add-on
+- Optimized the quest line of Power Age
+- Optimized bellow crafting
+- Optimized combustion chamber crafting cost
+- Fixed pitchblende ore can be made into crushed uranium ore
+- Fixed potassium alkaline water and gray dye recipe conflict
+- Removed botanic alchemy rotten flesh to leather recipe
+- Removed the recipe of IC2 Ore Washer and Pulverizer
+- Fixed the consumption of tuyere for making glass
+- Fixed the vanilla gold nuggets can not be obtained
+- Fixed the upgrade frame in Gendustry can not be crafted
+- Fixed some of the quests does not display the content
+- Fixed the inability to craft red stone root
+- Fixed the error of Chineseization of RC boiler
+- Fixed the error of Chineseization of TFC smooth salt rock and dolomite
+- Fixed the nutritional value of cheese as fruit
+- Fixed the inability to craft boiler cart
+- Fixed the conflict of cobble stone conversion
+- Fixed making tucker bag duplicate knife
+
+
 3.5.1.1
-Module variations:
+Mod variations:
 - Upgrade DraconicEvolution-1710-TFR-v2
 
 Content changes:
-- Fix the problem that the GUI of the Dragon Research module does not have materials.
+- Fix the problem that the GUI of the Dragon Research Mod does not have materials.
+
 
 3.5.1.0
-Module changes:
+Mod changes:
 - Upgrade TFC0.80.10-TFR
 - Upgrade gregtech6.15.05-unofficial
 - Upgrade Botania2604-TFR
@@ -37,8 +79,9 @@ Content Changes:
 - Fix Malachite can't be processed in Greystone Crusher
 - Fix wrought iron drawing plate task unrecognized problem.
 
+
 3.5.0.0
-Module variations
+Mod variations
 - Upgrade TFC0.80.08-TFR
 - Upgrade gregtech6.15.03-unofficial
 - Upgrade Botania2603-TFR
@@ -73,7 +116,7 @@ Content Changes:
 
 
 3.4.4.0
-Module changes:
+Mod changes:
 - Upgrade MoegAddon-1.12
 
 Content Changes:
@@ -82,8 +125,9 @@ Content Changes:
 - Updating the sponsorship form's cloud-based website to quickly access sponsor information to display capes
 - Added an update check to alert you when an integration package running below the latest version of the integration package is available
 
+
 3.4.3.0
-Module changes:
+Mod changes:
 - Upgrading MoegAddon-1.11
 - Added InGameInfoXML-1.7.10-2.8.2.3-universal
 - Added LunatriusCore-1.7.10-1.1.2.21-universal
@@ -98,15 +142,17 @@ Content Changes :
 - In addition to the poncho you can get for sponsoring, you'll also get a sponsorship certificate upon entering the game for the first time to show how much we appreciate you!
 - No strange text error when entering the game~!
 
+
 3.4.2.0
-Module changes:
+Mod changes:
 - Update BetterLoadingScreen-1.4.1-TFR
 
 Content Changes :
 - Fix for Unable to Load Resources
 
+
 3.4.1.0
-Module changes:
+Mod changes:
 - Upgrade TFC0.80.06-TFR
 - Upgraded gregtech 6.14.07.
 - Upgraded Botania-TFR-2602
@@ -121,8 +167,9 @@ Content Changes :
 - Add capes and in-game certificates for sponsored players
 - Add quests about plant magic
 
+
 3.4.0.0
-Module changes:
+Mod changes:
 - Upgrade TFC0.80.04-TFR
 - Update gregtech 6.14.05
 - Added Botania-TFR-2601.
@@ -137,6 +184,7 @@ Content Changes :
 - Gaia's blood and damage is set to a group range rating
 - multi-cube energy storage structure
 
+
 3.3.4.0
 Notes:
 Both the 3.3.2.0 and 3.3.3.0 integration packages have serious bugs. if you have updated to the 3.3.3.0 or 3.3.2.0 client.
@@ -144,7 +192,7 @@ Look for an archive backup of version 3.3.1.3 (normally the upgrade integration 
 And take out the level.dat and session.lock from the original archive and replace them with the files you have now.
 Then, you can update only the version 3.3.4.0 that we will release. Otherwise, you'll have ID misalignment issues!
 
-Module changes:
+Mod changes:
 - Upgrade TFC0.80.03-TFR
 
 Content Changes :
@@ -155,8 +203,9 @@ Content Changes :
 - Fix synthetic clay tiles sometimes glitching issue
 - Fix issue with forge recipes disappearing/not aligning when switching dimensions (server multiworld plugin)
 
+
 3.3.3.0
-Module changes:
+Mod changes:
 - Upgrade TFC0.79.37-TFR
 - Upgrading AdvancedRockery 2.0.0.02-TFR
 - Upgraded gregtech6.14.04
@@ -166,15 +215,16 @@ Content changes
 - Fixed a few bits and pieces of bugs
 - Repair of paper fibers cannot be made in barrels
 - Fix the issue of quitting the server when advanced rocket disintegration
-- Fix auto-blower module without English localization
+- Fix auto-blower Mod without English localization
 - Repair of ammonium chloride not localized
 - Modification of Minko steam engine synthesis
 - Glass is no longer available in the campfire.
 - New normal mode
 - New expert mode
 
+
 3.3.2.0
-Module changes:
+Mod changes:
 - Update gregtech6.14.03
 
 Content Change:
@@ -205,8 +255,9 @@ Content Change:
 - Increased synthesis of biological circuit boards
 - Increasing bacteria and the way they increase biomass production
 
+
 3.3.1.3:
-Module changes.
+Mod changes.
 - Upgraded MoegAddon-1.06
 - Upgraded AdvancedRocktry-TFR 2.0.01
 - InventoryTweaks-PFAA-1.58
@@ -242,22 +293,24 @@ Content changes.
 
 
 3.3.1.2:
-Module changes.
+Mod changes.
 - None
 
 Content changes.
 - Fix serious formulation problems
-- Fix serious module problems
+- Fix serious Mod problems
+
 
 3.3.1.0:
-Module changes.
+Mod changes.
 - Delete Optifine
 
 Content changes.
 - None
 
+
 3.3.0.0:
-Module changes.
+Mod changes.
 - Upgraded gregtech 6.14.00
 - Upgraded TerraFirmaCraft-TFR 0.79.36-v2
 - Upgrade AdvancedRocketry-TFR 2.0.0
@@ -280,7 +333,7 @@ Module changes.
 - Downgrade OmniOcular-1.0build103
 - downgradedindustrialcraft-2-2.2.827-experimental
 - Downgradedforestry-4.2.16.64
-CurseForge version of the following module versions are lower:
+CurseForge version of the following Mod versions are lower:
 - Railcraft-9.12.2.0
 - ae2stuff-0.5.1.61
 - appliedenergistics2-rv3-beta-6
@@ -326,8 +379,9 @@ Content changes.
 - Eliminate the hand-jointed original boards
 - Canceled all GT Ore generation in the main world
 
+
 3.2.2.1
-Module changes.
+Mod changes.
 - Upgraded gregtech 6.13.07
 - Upgraded MoegAddon-TFR 1.03
 - Upgraded TerraFirmaCraft-TFR 0.79.36
@@ -378,7 +432,7 @@ Content changes.
 - Changed the synthesis of the dragon core.
 - Changed the synthesis of space suits.
 - Changed the density of ore production in the alien veins.
-- Changed the synthesis in the Iron Box module
+- Changed the synthesis in the Iron Box Mod
 - Changes to the synthesis of the electric arc blast furnace
 - Synthesis of unlimited water sources (T1-T8) has been added.
 - Borax grinding has been added.
@@ -389,5 +443,3 @@ Content changes.
 - Fixed an issue where the Qunran and Gray tools were not working together.
 - Fix the nanomanufacturing jam technology
 - Repair of polysilicon crushing
-
-Translated with www.DeepL.com/Translator (free version)
