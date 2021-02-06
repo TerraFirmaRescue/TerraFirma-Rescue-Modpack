@@ -303,7 +303,7 @@ recipes.addShaped(<gregtech:gt.multiitem.randomtools:989>,
 
 mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1005>, <gregtech:gt.multiitem.randomtools:989>, 1500, 0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:32706>, <gregtech:gt.multiitem.randomtools:995>, 1500, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:32722>, <gregtech:gt.multiitem.randomtools:994>, 1500, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:32722>, <gregtech:gt.multiitem.randomtools:994>, 500, 0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1870>, <gregtech:gt.multiitem.randomtools:993>, 1500, 0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1705>, <gregtech:gt.multiitem.randomtools:992>, 1500, 0.35);
 mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>, <gregtech:gt.multiitem.randomtools:991>, 1500, 0.35);
@@ -1153,3 +1153,9 @@ recipes.addShapeless(<gregtech:gt.meta.dust:9165>,[<gregtech:gt.meta.dust:9139>,
 
 //Rubber tree seedlings
 recipes.addShapeless(<gregtech:gt.block.sapling>, [<tfctech:HeveaS>]);
+
+// Ceramic Mixing Bowl
+recipes.addShaped(<gregtech:gt.multitileentity:32722>,
+[[<ore:craftingToolChisel>,null,<ore:craftingToolHardHammer>],
+[<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>],
+[null,null,null]]);
