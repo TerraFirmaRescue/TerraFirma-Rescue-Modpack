@@ -16,6 +16,8 @@ Content changes:
 - Added GT recipes now have separators for the numbers shown in the recipe
 - Added potassium salt can now be processed in the crusher
 - Added fertilizer can be converted through multiple fertilizers
+- Changed the processing of limonite
+- Chromite can now be directly smelted into chromium
 - Updated TFC Chineseization
 - Updated the Chineseization of TFC Udary Mod
 - Updated the English of TFC Auto Bellow Add-on
