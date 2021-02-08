@@ -15,7 +15,7 @@ death.attack.alcohol=%1$s死于酒精中毒
 death.attack.heatStroke=%1$s死于中暑
 
 #==============
-#= Entities = 
+#= Entities =
 #==============
 entity.bearTFC.name=熊
 entity.chickenTFC.name=鸡
@@ -295,7 +295,7 @@ item.CornWhiskey.name=玉米威士忌
 #===========
 #= Pottery =
 #===========
-item.Clay.Clay.name=粘土(TFC)
+item.Clay.Clay.name=粘土
 item.Clay.Fire Clay.name=陶土
 
 item.Flat Clay.clay flat light.name=压平的浅色粘土
@@ -595,7 +595,7 @@ item.FlatRock.Schist.name=片岩
 item.FlatRock.Shale.name=页岩
 item.FlatRock.Slate=板岩
 
-#== Stone块s ==
+#== Stone Blocks ==
 tile.WallCobble.Andesite.name=页岩圆石墙
 tile.WallCobble.Basalt.name=泥岩圆石墙
 tile.WallCobble.Chalk.name=英安岩圆石墙
@@ -858,7 +858,7 @@ item.Small Ore.Native Silver.name=原生银粒
 item.Small Ore.Sphalerite.name=小型闪锌矿
 item.Small Ore.Tetrahedrite.name=小型黝铜矿
 
-#== Ore块s ==
+#== Ore Blocks ==
 tile.Ore.name=矿石
 tile.Ore.Bituminous Coal.name=烟煤
 tile.Ore.Borax.name=硼砂
@@ -991,7 +991,7 @@ item.Loom.White Cedar.name=北美香柏树织布机
 item.Loom.White Elm.name=榆树织布机
 item.Loom.Willow.name=杨柳织布机
 
-#== Wood块s ==
+#== Wood Blocks ==
 tile.Chest.Acacia.name=金合欢箱子
 tile.Chest.Ash.name=白蜡树箱子
 tile.Chest.Aspen.name=白杨树箱子
@@ -1771,7 +1771,7 @@ item.Weak Steel Unshaped.name=未成形:脆钢
 item.Wrought Iron Unshaped.name=未成形:锻铁
 item.Zinc Unshaped.name=未成形:锌
 
-#== 粒 ==
+#== Nugget ==
 
 item.MetalNugget.Bismuth.name=铋粒
 item.MetalNugget.Bismuth Bronze.name=铋青铜粒
@@ -1831,79 +1831,79 @@ item.Electrum Ingot.name=琥珀金锭
 item.Cupronickel Ingot.name=康铜锭
 
 #== Double Ingot ==
-item.Bismuth Bronze Double Ingot.name=铋青铜双层锭
-item.Bismuth Double Ingot.name=铋双层锭
-item.Black Bronze Double Ingot.name=黑青铜双层锭
-item.Black Steel Double Ingot.name=黑钢双层锭
-item.Blue Steel Double Ingot.name=蓝钢双层锭
-item.Brass Double Ingot.name=黄铜双层锭
-item.Bronze Double Ingot.name=青铜双层锭
-item.Copper Double Ingot.name=铜双层锭
-item.Gold Double Ingot.name=金双层锭
-item.Lead Double Ingot.name=铅双层锭
-item.Nickel Double Ingot.name=镍双层锭
-item.Pig Iron Double Ingot.name=生铁双层锭
-item.Platinum Double Ingot.name=铂双层锭
-item.Red Steel Double Ingot.name=红钢双层锭
-item.Rose Gold Double Ingot.name=玫瑰金双层锭
-item.Silver Double Ingot.name=银双层锭
-item.Steel Double Ingot.name=钢双层锭
-item.Sterling Silver Double Ingot.name=纯银双层锭
-item.Tin Double Ingot.name=锡双层锭
-item.Wrought Iron Double Ingot.name=锻铁双层锭
-item.Zinc Double Ingot.name=锌双层锭
-item.Electrum Double Ingot.name=琥珀金双层锭
-item.Cupronickel Double Ingot.name=康铜双层锭
+item.Bismuth Bronze Double Ingot.name=双重铋青铜锭
+item.Bismuth Double Ingot.name=双重铋锭
+item.Black Bronze Double Ingot.name=双重黑青铜锭
+item.Black Steel Double Ingot.name=双重黑钢锭
+item.Blue Steel Double Ingot.name=双重蓝钢锭
+item.Brass Double Ingot.name=双重黄铜锭
+item.Bronze Double Ingot.name=双重青铜锭
+item.Copper Double Ingot.name=双重铜锭
+item.Gold Double Ingot.name=双重金锭
+item.Lead Double Ingot.name=双重铅锭
+item.Nickel Double Ingot.name=双重镍锭
+item.Pig Iron Double Ingot.name=双重生铁锭
+item.Platinum Double Ingot.name=双重铂锭
+item.Red Steel Double Ingot.name=双重红钢锭
+item.Rose Gold Double Ingot.name=双重玫瑰金锭
+item.Silver Double Ingot.name=双重银锭
+item.Steel Double Ingot.name=双重钢锭
+item.Sterling Silver Double Ingot.name=双重纯银锭
+item.Tin Double Ingot.name=双重锡锭
+item.Wrought Iron Double Ingot.name=双重锻铁锭
+item.Zinc Double Ingot.name=双重锌锭
+item.Electrum Double Ingot.name=双重琥珀金锭
+item.Cupronickel Double Ingot.name=双重康铜锭
 
 #== Sheet ==
-item.Bismuth Bronze Sheet.name=铋青铜薄板
-item.Bismuth Sheet.name=铋薄板
-item.Black Bronze Sheet.name=黑青铜薄板
-item.Black Steel Sheet.name=黑钢薄板
-item.Blue Steel Sheet.name=蓝钢薄板
-item.Brass Sheet.name=黄铜薄板
-item.Bronze Sheet.name=青铜薄板
-item.Copper Sheet.name=铜薄板
-item.Gold Sheet.name=金薄板
-item.Lead Sheet.name=铅薄板
-item.Nickel Sheet.name=镍薄板
-item.Pig Iron Sheet.name=生铁薄板
-item.Platinum Sheet.name=铂薄板
-item.Red Steel Sheet.name=红钢薄板
-item.Rose Gold Sheet.name=玫瑰金薄板
-item.Silver Sheet.name=银薄板
-item.Steel Sheet.name=钢薄板
-item.Sterling Silver Sheet.name=纯银薄板
-item.Tin Sheet.name=锡薄板
-item.Wrought Iron Sheet.name=锻铁薄板
-item.Zinc Sheet.name=锌薄板
-item.Electrum Sheet.name=琥珀金薄板
-item.Cupronickel Sheet.name=康铜薄板
+item.Bismuth Bronze Sheet.name=铋青铜板
+item.Bismuth Sheet.name=铋板
+item.Black Bronze Sheet.name=黑青铜板
+item.Black Steel Sheet.name=黑钢板
+item.Blue Steel Sheet.name=蓝钢板
+item.Brass Sheet.name=黄铜板
+item.Bronze Sheet.name=青铜板
+item.Copper Sheet.name=铜板
+item.Gold Sheet.name=金板
+item.Lead Sheet.name=铅板
+item.Nickel Sheet.name=镍板
+item.Pig Iron Sheet.name=生铁板
+item.Platinum Sheet.name=铂板
+item.Red Steel Sheet.name=红钢板
+item.Rose Gold Sheet.name=玫瑰金板
+item.Silver Sheet.name=银板
+item.Steel Sheet.name=钢板
+item.Sterling Silver Sheet.name=纯银板
+item.Tin Sheet.name=锡板
+item.Wrought Iron Sheet.name=锻铁板
+item.Zinc Sheet.name=锌板
+item.Electrum Sheet.name=琥珀金板
+item.Cupronickel Sheet.name=康铜板
 
 #== DoubleSheet ==
-item.Bismuth Bronze Double Sheet.name=铋青铜双层薄板
-item.Bismuth Double Sheet.name=铋双层薄板
-item.Black Bronze Double Sheet.name=黑青铜双层薄板
-item.Black Steel Double Sheet.name=黑钢双层薄板
-item.Blue Steel Double Sheet.name=蓝钢双层薄板
-item.Brass Double Sheet.name=黄铜双层薄板
-item.Bronze Double Sheet.name=青铜双层薄板
-item.Copper Double Sheet.name=铜双层薄板
-item.Gold Double Sheet.name=金双层薄板
-item.Lead Double Sheet.name=铅双层薄板
-item.Nickel Double Sheet.name=镍双层薄板
-item.Pig Iron Double Sheet.name=生铁双层薄板
-item.Platinum Double Sheet.name=铂双层薄板
-item.Red Steel Double Sheet.name=红钢双层薄板
-item.Rose Gold Double Sheet.name=玫瑰金双层薄板
-item.Silver Double Sheet.name=银双层薄板
-item.Steel Double Sheet.name=钢双层薄板
-item.Sterling Silver Double Sheet.name=纯银双层薄板
-item.Tin Double Sheet.name=锡双层薄板
-item.Wrought Iron Double Sheet.name=锻铁双层薄板
-item.Zinc Double Sheet.name=锌双层薄板
-item.Electrum Double Sheet.name=琥珀金双层薄板
-item.Cupronickel Double Sheet.name=康铜双层薄板
+item.Bismuth Bronze Double Sheet.name=双重铋青铜板
+item.Bismuth Double Sheet.name=双重铋板
+item.Black Bronze Double Sheet.name=双重黑青铜板
+item.Black Steel Double Sheet.name=双重黑钢板
+item.Blue Steel Double Sheet.name=双重蓝钢板
+item.Brass Double Sheet.name=双重黄铜板
+item.Bronze Double Sheet.name=双重青铜板
+item.Copper Double Sheet.name=双重铜板
+item.Gold Double Sheet.name=双重金板
+item.Lead Double Sheet.name=双重铅板
+item.Nickel Double Sheet.name=双重镍板
+item.Pig Iron Double Sheet.name=双重生铁板
+item.Platinum Double Sheet.name=双重铂板
+item.Red Steel Double Sheet.name=双重红钢板
+item.Rose Gold Double Sheet.name=双重玫瑰金板
+item.Silver Double Sheet.name=双重银板
+item.Steel Double Sheet.name=双重钢板
+item.Sterling Silver Double Sheet.name=双重纯银板
+item.Tin Double Sheet.name=双重锡板
+item.Wrought Iron Double Sheet.name=双重锻铁板
+item.Zinc Double Sheet.name=双重锌板
+item.Electrum Double Sheet.name=双重琥珀金板
+item.Cupronickel Double Sheet.name=双重康铜板
 
 #== Misc ==
 item.Blueprint=图纸
@@ -2055,7 +2055,7 @@ item.Rope.name=绳子
 item.Mud Brick.name=泥砖
 item.Wet Mud Brick.name=湿泥砖
 
-#======== Misc.块s========
+#======== Misc. Blocks========
 tile.Straw Hide Bed.name=干草兽皮床
 tile.StrawHideBed.name=干草兽皮床
 tile.customBed.sleep=这张床太不舒服了，睡不着。
