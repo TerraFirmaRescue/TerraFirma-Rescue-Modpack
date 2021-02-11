@@ -31,8 +31,9 @@ recipes.addShaped(<tfcudarymod:tile.Drying Mat>*6,
 [[<terrafirmacraft:Thatch>,<terrafirmacraft:Thatch>,<terrafirmacraft:Thatch>],
 [],[]]);
 
+recipes.remove(<tfcudarymod:item.Tucker Bag>);
 recipes.remove(<tfcudarymod:item.Tucker Bag v2>);
-recipes.addShaped(<tfcudarymod:item.Tucker Bag v2>,
+/*recipes.addShaped(<tfcudarymod:item.Tucker Bag v2>,
 [[<terrafirmacraft:item.BurlapCloth>,<terrafirmacraft:item.BurlapCloth>,<terrafirmacraft:item.BurlapCloth>],
 [<terrafirmacraft:item.BurlapCloth>,<tfcudarymod:item.Tucker Bag>,<terrafirmacraft:item.BurlapCloth>],
-[<terrafirmacraft:item.BurlapCloth>,<terrafirmacraft:item.BurlapCloth>,<terrafirmacraft:item.BurlapCloth>]]);
+[<terrafirmacraft:item.BurlapCloth>,<terrafirmacraft:item.BurlapCloth>,<terrafirmacraft:item.BurlapCloth>]]);*/

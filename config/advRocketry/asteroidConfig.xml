@@ -32,4 +32,9 @@
 		<ore itemStack="gregtech:gt.meta.ore.normal.default 9217" chance="10" />
 		<ore itemStack="advancedRocketry:tile.geode" chance="5" />
 	</asteroid>
+	<asteroid name="Platinum-Iridium Asteroid" distance="20" mass="1000" massVariability="0.5" minLevel="0" probability="0.1" richness="0.8" richnessVariability="0.5">
+		<ore itemStack="gregtech:gt.meta.ore.normal.default 770" chance="10" />
+		<ore itemStack="gregtech:gt.meta.ore.normal.default 780" chance="20" />
+		<ore itemStack="advancedRocketry:tile.geode" chance="5" />
+	</asteroid>
 </Asteroids>

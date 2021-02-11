@@ -1,12 +1,12 @@
 3.6.0.0
 Mod changes:
 - Added FoamFix-1.7.10-beta2
-- Upgraded gregtech_1.7.10-6.15.06-unofficial
+- Upgraded gregtech_1.7.10-6.15.07-unofficial
 - Upgraded Botania-TFR-2605
+- Upgraded MoegAddon_1.7.10-1.14
 
 Content changes:
 - Added multi-block aquatic farm
-- Added solar photovoltaic panels and light power transformers
 - Added dozens of new metal scaffolds
 - Added dozens of new metal builder's wands
 - Added clay pattern for all GT ceramic products
@@ -16,18 +16,20 @@ Content changes:
 - Added GT recipes now have separators for the numbers shown in the recipe
 - Added potassium salt can now be processed in the crusher
 - Added fertilizer can be converted through multiple fertilizers
-- Changed the processing of limonite
-- Chromite can now be directly smelted into chromium
-- Updated TFC Chineseization
-- Updated the Chineseization of TFC Udary Mod
+- Added notification to update BetterQuesting quests
+- Added Iridium-Platinum asteroids
+- Removed botanic alchemy rotten flesh to leather recipe
+- Removed the recipe of IC2 Ore Washer and Pulverizer
+- Removed tucker bag recipes, as they cause server crash
+- Updated TFC Chinese localization
+- Updated the Chinese localization of TFC Udary Mod
 - Updated the English of TFC Auto Bellow Add-on
+- Changed the processing of limonite
 - Optimized the quest line of Power Age
 - Optimized bellow crafting
 - Optimized combustion chamber crafting cost
 - Fixed pitchblende ore can be made into crushed uranium ore
 - Fixed potassium alkaline water and gray dye recipe conflict
-- Removed botanic alchemy rotten flesh to leather recipe
-- Removed the recipe of IC2 Ore Washer and Pulverizer
 - Fixed the consumption of tuyere for making glass
 - Fixed the vanilla gold nuggets can not be obtained
 - Fixed the upgrade frame in Gendustry can not be crafted
@@ -38,7 +40,6 @@ Content changes:
 - Fixed the nutritional value of cheese as fruit
 - Fixed the inability to craft boiler cart
 - Fixed the conflict of cobble stone conversion
-- Fixed making tucker bag duplicate knife
 
 
 3.5.1.1
