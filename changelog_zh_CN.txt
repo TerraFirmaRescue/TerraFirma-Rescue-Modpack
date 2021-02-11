@@ -1,5 +1,5 @@
 ﻿3.6.0.0
-模组变化：
+模组变化:
 · 新增FoamFix-1.7.10-beta2
 · 升级gregtech_1.7.10-6.15.07-unofficial
 · 升级Botania-TFR-2605
