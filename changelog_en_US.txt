@@ -3,7 +3,7 @@ Mod changes:
 - Added FoamFix-1.7.10-beta2
 - Upgraded gregtech_1.7.10-6.15.07-unofficial
 - Upgraded Botania-TFR-2605
-- Upgraded MoegAddon_1.7.10-1.14
+- Upgraded MoegAddon_1.7.10-1.15
 
 Content changes:
 - Added multi-block aquatic farm
@@ -47,7 +47,7 @@ Mod variations:
 - Upgrade DraconicEvolution-1710-TFR-v2
 
 Content changes:
-- Fix the problem that the GUI of the Dragon Research Mod does not have materials.
+- Fixed the problem that the GUI of the Dragon Research Mod does not have materials.
 
 
 3.5.1.0
@@ -72,19 +72,19 @@ Content Changes:
 - Fixes potash water synthesis conflicts
 - The primary platinum granule crusher has two different outputs
 - Repair Expert mode can synthesize blue steel over Grey Anvil.
-- Fix for not being able to make wool yarn on the loom
+- Fixed for not being able to make wool yarn on the loom
 - Repair of the soldering consumable programming circuit for the pot and hacksaw.
 - Indicators for restoring lapis lazuli are platinum stones.
 - Double-layer plastic ingot in MESU shell without synthetic formulation
-- Fix recipe error in Tara Crusher due to inability to synthesize live wood rods.
-- Fix English spelling problem in Blue Line UI
-- Fix Qunlian Legend ingot stack duplication problem
-- Fix Malachite can't be processed in Greystone Crusher
-- Fix wrought iron drawing plate task unrecognized problem.
+- Fixed recipe error in Tara Crusher due to inability to synthesize live wood rods.
+- Fixed English spelling problem in Blue Line UI
+- Fixed TFC ingot stack duplication problem
+- Fixed Malachite can't be processed in Greystone Crusher
+- Fixed wrought iron drawing plate task unrecognized problem.
 
 
 3.5.0.0
-Mod variations
+Mod Changes：
 - Upgrade TFC0.80.08-TFR
 - Upgrade gregtech6.15.03-unofficial
 - Upgrade Botania2603-TFR
@@ -151,7 +151,7 @@ Mod changes:
 - Update BetterLoadingScreen-1.4.1-TFR
 
 Content Changes :
-- Fix for Unable to Load Resources
+- Fixed for Unable to Load Resources
 
 
 3.4.1.0
@@ -163,7 +163,7 @@ Mod changes:
 - Add BetterLoadingScreen-1.4.00-TFR
 
 Content Changes :
-- Fix bugs that appeared in the previous version
+- Fixed bugs that appeared in the previous version
 - Add a better looking loading interface
 - Adding tips to the loading screen
 - Repair of oil purifier
@@ -179,7 +179,7 @@ Mod changes:
 - Add Baubles
 
 Content Changes :
-- Fix various bugs in TFC switching worlds
+- Fixed various bugs in TFC switching worlds
 - Adds compatibility with Plant Magic and Lore of the Mountains
 - The world is now generating magic flowers.
 - The Crucible of Magic
@@ -199,12 +199,12 @@ Mod changes:
 - Upgrade TFC0.80.03-TFR
 
 Content Changes :
-- Fix the item ID changes that appeared in the previous version
+- Fixed the item ID changes that appeared in the previous version
 - Fixing a series of crashes caused by the previous version of Mojo.
-- Fix TFC stone anvil that would brush items
+- Fixed TFC stone anvil that would brush items
 - TFC sheets are now melted in a crucible to yield half the original metal units.
-- Fix synthetic clay tiles sometimes glitching issue
-- Fix issue with forge recipes disappearing/not aligning when switching dimensions (server multiworld plugin)
+- Fixed synthetic clay tiles sometimes glitching issue
+- Fixed issue with forge recipes disappearing/not aligning when switching dimensions (server multiworld plugin)
 
 
 3.3.3.0
@@ -217,8 +217,8 @@ Mod changes:
 Content changes
 - Fixed a few bits and pieces of bugs
 - Repair of paper fibers cannot be made in barrels
-- Fix the issue of quitting the server when advanced rocket disintegration
-- Fix auto-blower Mod without English localization
+- Fixed the issue of quitting the server when advanced rocket disintegration
+- Fixed auto-blower Mod without English localization
 - Repair of ammonium chloride not localized
 - Modification of Minko steam engine synthesis
 - Glass is no longer available in the campfire.
@@ -231,9 +231,9 @@ Mod changes:
 - Update gregtech6.14.03
 
 Content Change:
-- Fix PUV1 emitter not synthesizing
-- Fix glass can't be manufactured at the hot electronic table
-- Fix nailed leather composite conflicts
+- Fixed PUV1 emitter not synthesizing
+- Fixed glass can't be manufactured at the hot electronic table
+- Fixed nailed leather composite conflicts
 - Adding agreements to the document
 - Modify OB reservoir elevator and other partial item synthesis
 - Elevators and rotating elevators can now change colors with a chisel
@@ -244,7 +244,7 @@ Content Change:
 - Increased lotus leaf synthesis
 - Increased cactus synthesis
 - Change Dragon Egg Synthesis
-- Fix fusion some recipes swallowing programmed circuits
+- Fixed fusion some recipes swallowing programmed circuits
 - Dry paper powders now don't need potash water.
 - Circuit Board Backplane Manufacturing Price Reductions
 - AE fluid storage for some items to change synthesis
@@ -273,11 +273,11 @@ Mod changes.
 Content changes.
 - Repair of some tasks that could not be submitted
 - Fixing the GT Large Matter Manufacturing and Large Matter Replication Synthesis conflict
-- Fix the space elevator can't be made.
+- Fixed the space elevator can't be made.
 - Restoration can only be done with slabs of granite.
-- Fix tin-alloy plates that don't heat up
-- Fix meaningless text messages to start the game
-- Fix part of the fluid not displaying names properly
+- Fixed tin-alloy plates that don't heat up
+- Fixed meaningless text messages to start the game
+- Fixed part of the fluid not displaying names properly
 - Alter Substance Replication Trio Large Machine Master Cube Synthesis
 - Change distillation tower and cracking tower main cube synthesis
 - Change some missions to accept more items
@@ -300,8 +300,8 @@ Mod changes.
 - None
 
 Content changes.
-- Fix serious formulation problems
-- Fix serious Mod problems
+- Fixed serious formulation problems
+- Fixed serious Mod problems
 
 
 3.3.1.0:
@@ -345,8 +345,8 @@ CurseForge version of the following Mod versions are lower:
 Content changes.
 - Complete modification of the original platinum-based metal mineral processing method
 - Fixed the conflict between the diamond chest and crystal chest synthesis
-- Fix AR projector compositions
-- Fix Anvil Synthesis
+- Fixed AR projector compositions
+- Fixed Anvil Synthesis
 - Restoration of the cistern can only be made of oak.
 - Changing the endless set synthesis
 - Change Jetpack, Power Jetpack Synthesis
@@ -410,8 +410,8 @@ Mod changes.
 - Add WirelessCraftingTerminal
 
 Content changes.
-- Fix the mission statement bug
-- Fix a bug that caused wrought iron products to be placed in the common iron mineral dictionary.
+- Fixed the mission statement bug
+- Fixed a bug that caused wrought iron products to be placed in the common iron mineral dictionary.
 - New high-temperature mixers have been added to replace the existing flash processors in photoresist manufacturing and mixers in epoxy manufacturing.
 - New recipes for the treatment of moon top soil and iron oxide sand have been added.
 - New partial fusion formulation
@@ -444,5 +444,5 @@ Content changes.
 - New synthesis of molten shadow pearls
 - Adding the manufacture of Gray's leather
 - Fixed an issue where the Qunran and Gray tools were not working together.
-- Fix the nanomanufacturing jam technology
+- Fixed the nanomanufacturing jam technology
 - Repair of polysilicon crushing

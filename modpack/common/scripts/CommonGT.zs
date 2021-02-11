@@ -301,15 +301,31 @@ recipes.addShaped(<gregtech:gt.multiitem.randomtools:989>,
 
 // Heating clay molds to ceramic
 
-mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1005>, <gregtech:gt.multiitem.randomtools:989>, 1500, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:32706>, <gregtech:gt.multiitem.randomtools:995>, 1500, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:32722>, <gregtech:gt.multiitem.randomtools:994>, 500, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1870>, <gregtech:gt.multiitem.randomtools:993>, 1500, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1705>, <gregtech:gt.multiitem.randomtools:992>, 1500, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>, <gregtech:gt.multiitem.randomtools:991>, 1500, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1755>, <gregtech:gt.multiitem.randomtools:990>, 1500, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:32723>, <gregtech:gt.multiitem.randomtools:988>, 1500, 0.35);
-mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:32728>, <gregtech:gt.multiitem.randomtools:987>, 1500, 0.35);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1005>, <gregtech:gt.multiitem.randomtools:989>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:32706>, <gregtech:gt.multiitem.randomtools:995>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:32722>, <gregtech:gt.multiitem.randomtools:994>, 500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1870>, <gregtech:gt.multiitem.randomtools:993>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1705>, <gregtech:gt.multiitem.randomtools:992>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>, <gregtech:gt.multiitem.randomtools:991>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1755>, <gregtech:gt.multiitem.randomtools:990>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:32723>, <gregtech:gt.multiitem.randomtools:988>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:32728>, <gregtech:gt.multiitem.randomtools:987>, 1500, 0.1);
+
+// Heating Shape molds to ceramic
+
+/* TFC Heating currently doesn't support NBT output itemstack.
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>.withTag({"gt.mold": 15153614}), <gregtech:gt.multiitem.randomtools:900>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>.withTag({"gt.mold": 25952256}), <gregtech:gt.multiitem.randomtools:901>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>.withTag({"gt.mold": 33554431}), <gregtech:gt.multiitem.randomtools:902>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>.withTag({"gt.mold": 473536}), <gregtech:gt.multiitem.randomtools:903>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>.withTag({"gt.mold": 4224}), <gregtech:gt.multiitem.randomtools:904>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>.withTag({"gt.mold": 31744}), <gregtech:gt.multiitem.randomtools:905>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>.withTag({"gt.mold": 17043521}), <gregtech:gt.multiitem.randomtools:906>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>.withTag({"gt.mold": 31388732}), <gregtech:gt.multiitem.randomtools:907>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>.withTag({"gt.mold": 469440}), <gregtech:gt.multiitem.randomtools:908>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>.withTag({"gt.mold": 22506965}), <gregtech:gt.multiitem.randomtools:909>, 1500, 0.1);
+mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>.withTag({"gt.mold": 11512810}), <gregtech:gt.multiitem.randomtools:910>, 1500, 0.1);
+*/
 
 // higher tier crucibles
 recipes.addShaped(<gregtech:gt.multitileentity:1033>,
