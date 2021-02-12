@@ -14,6 +14,8 @@ Mod changes:
 - Upgraded MoegAddon_1.7.10-1.15
 
 Content changes:
+- Important: Added time-out limit of connecting to version storage server; this prevents MoegAddon Mod from loading extremely long time when the server is down
+- Added TFR Metal Unification Resourcepack, from Sansewuyinnai
 - Added multi-block aquatic farm
 - Added dozens of new metal scaffolds
 - Added dozens of new metal builder's wands
