@@ -331,22 +331,12 @@ mods.Terrafirmacraft.ItemHeat.addRecipe(<gregtech:gt.multitileentity:1055>.withT
 recipes.addShaped(<gregtech:gt.multitileentity:1033>,
 [[<ore:plateChromium>,Chisel,<ore:plateChromium>],
 [<ore:plateChromium>,HHammer,<ore:plateChromium>],
-[<ore:plateChromium>,<terrafirmacraft:item.Blue Steel Double Sheet>,<ore:plateChromium>]]);
+[<ore:plateChromium>,<ore:plateBlueOrRedSteel>,<ore:plateChromium>]]);
 
 recipes.addShaped(<gregtech:gt.multitileentity:1018>,
-[[<ore:gemAnyQuartz>,Chisel,<ore:gemAnyQuartz>],
-[<ore:gemAnyQuartz>,HHammer,<ore:gemAnyQuartz>],
-[<ore:gemAnyQuartz>,<terrafirmacraft:item.Blue Steel Double Sheet>,<ore:gemAnyQuartz>]]);
-
-recipes.addShaped(<gregtech:gt.multitileentity:1033>,
-[[<ore:plateChromium>,Chisel,<ore:plateChromium>],
-[<ore:plateChromium>,HHammer,<ore:plateChromium>],
-[<ore:plateChromium>,<terrafirmacraft:item.Red Steel Double Sheet>,<ore:plateChromium>]]);
-
-recipes.addShaped(<gregtech:gt.multitileentity:1018>,
-[[<ore:gemAnyQuartz>,Chisel,<ore:gemAnyQuartz>],
-[<ore:gemAnyQuartz>,HHammer,<ore:gemAnyQuartz>],
-[<ore:gemAnyQuartz>,<terrafirmacraft:item.Red Steel Double Sheet>,<ore:gemAnyQuartz>]]);
+[[<ore:craftingQuartz>,Chisel,<ore:craftingQuartz>],
+[<ore:craftingQuartz>,HHammer,<ore:craftingQuartz>],
+[<ore:craftingQuartz>,<ore:plateBlueOrRedSteel>,<ore:craftingQuartz>]]);
 
 // gt furnaces
 recipes.remove(<gregtech:gt.multitileentity:20001>);

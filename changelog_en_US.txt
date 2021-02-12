@@ -1,3 +1,11 @@
+3.6.0.1
+Mod Changes:
+- N/A
+
+Content Changes:
+- Fixed Quartz Crucible not having a crafting recipe.
+- Fixed CurseForge version missing BrandonsCore.
+
 3.6.0.0
 Mod changes:
 - Added FoamFix-1.7.10-beta2
