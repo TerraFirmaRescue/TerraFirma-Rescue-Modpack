@@ -3,12 +3,9 @@
 |
 [English](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/README.md)
 
-- **一个基于 [Forge](https://github.com/MinecraftForge/MinecraftForge) 模组的Minecraft 1.7.10 整合包，围绕 [群峦传说](https://www.curseforge.com/minecraft/mc-mods/tfcraft), [格雷科技6非官方版](https://www.curseforge.com/minecraft/mc-mods/gregtech6-unofficial), 和 [高级火箭](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry) 制作。**
+- **一个由 TeamMoeg 制作的 Minecraft 1.7.10 整合包，围绕 [群峦传说](https://www.curseforge.com/minecraft/mc-mods/tfcraft), [格雷科技6非官方版](https://www.curseforge.com/minecraft/mc-mods/gregtech6-unofficial), 和 [高级火箭](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry) 制作。**
 
-- 本整合包内的所有脚本，原创材质，音效根据 [CC-BY-NC-ND-4.0](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE) 协议发布。 
-所有包含的模组根据其原有协议发布。
-所有原创的与非官方的开源模组的协议可以在 [这个组织](https://github.com/TerraFirmaRescue/) 查阅。
-
+- 本整合包根据 [Terrafirma: Rescue License](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE) 开源
 ---
 
 ## 下载

@@ -1,3 +1,15 @@
+<!-->
+Original Author: TeamMoeg
+https://teammoeg.com
+
+This file is distributed as part of the Terrafirma: Rescue Modpack.
+Visit the whole Project Source Code on Github:
+https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack
+
+Terrafirma: Rescue is a Free and Open Source Software distributed under the
+Terrafirma: Rescue License: https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE
+<!-->
+
 <galaxy>
 	<star name="Da Shuai Bi a" temp="10" x="0" y="0" size="1.0" numPlanets="0" numGasGiants="0">
 		<planet name="Venus" DIMID="18" customIcon="VENUS">

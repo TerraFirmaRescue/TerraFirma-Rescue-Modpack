@@ -22,7 +22,11 @@ for i, x in x { }
 
 recipes.addShapeless(,[]);
 
-recipes.addShaped(,[[],[],[]]);
+recipes.remove();
+recipes.addShaped(,
+[[],
+[],
+[]]);
 
 MTUtilsGT.removeAllRecipes("gt.recipe.",);
 
@@ -46,22 +50,23 @@ val w = <liquid:water>;
 val dw = <liquid:ic2distilledwater>;
 val fw = <liquid:freshwater>;
 
-MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
-[<terrafirmacraft:item.Topaz:2>],[n],
-[n],[<gregtech:gt.meta.gem:8315>]);
+//rc crusher
+recipes.remove(<Railcraft:machine.alpha:15>);
+recipes.addShaped(<Railcraft:machine.alpha:15>*6,
+[[<ore:plateAnyIron>,HHammer,<ore:plateAnyIron>],
+[<ore:plateAnyIron>,<ore:gemDiamond>,<ore:plateAnyIron>],
+[<ore:plateAnyIron>,Wrench,<ore:plateAnyIron>]]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
-[<terrafirmacraft:item.Topaz:3>],[n],
-[n],[<gregtech:gt.meta.gemFlawless:8315>]);
+//steam engine minke
+recipes.remove(<Railcraft:machine.beta:7>);
+recipes.addShaped(<Railcraft:machine.beta:7>,
+[[<tfctech:item.Copper Wire>,<ore:gearCopper>,<tfctech:item.Copper Wire>],
+[<tfctech:item.Copper Wire>,Wrench,<tfctech:item.Copper Wire>],
+[<terrafirmacraft:item.Fire Brick:1>,<minecraft:piston>,<terrafirmacraft:item.Fire Brick:1>]]);
 
-MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
-[<terrafirmacraft:item.Topaz:4>],[n],
-[n],[<gregtech:gt.meta.gemExquisite:8315>]);
-
-for stone in <ore:cobblestone>.items {
-MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
-[stone],
-[n],
-[n],
-[<minecraft:cobblestone>]);
-}
+//Rc blast furnace
+recipes.remove(<Railcraft:machine.alpha:12>);
+recipes.addShaped(<Railcraft:machine.alpha:12>*4,
+[[<terrafirmacraft:item.Mortar>,<terrafirmacraft:FireBrick>,<terrafirmacraft:item.Mortar>],
+[<terrafirmacraft:FireBrick>,<ore:plateSteel>,<terrafirmacraft:FireBrick>],
+[<terrafirmacraft:item.Mortar>,<terrafirmacraft:FireBrick>,<terrafirmacraft:item.Mortar>]]);
