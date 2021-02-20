@@ -1,66 +1,66 @@
-The TeamMoeg Modpack License 1.0
+《群峦：救援》许可条款 1.0 版
 
-This Modpack is distributed under a reasonably open license.
-You probably want to have a read through this if you want to do something with it or hosting a public server other than just play.
+这个本模组整合包是在一个合理的开放许可下发布的。
+如果您想用它来做一些仅仅是玩之外的事请，如修改代码，分发，或者架设一个公共服务器，我建议您阅读本协议。
 
-0. Definition
-- "The Mods" refers to
-  - all or part of the JAR files under the directory /mods
+0. 定义
+- "模组"指
+  - 所有或部分在目录/mods下的JAR文件。
 
-- "Terrafirma: Rescue" (or "The Modpack") refers to
-  - all or part of the ZenScript files under the directory /modpack
-  - all or part of the XML files under the directory /config/advRocketry and /config/CustomOreGen/modules/custom
-  - all or part of the Json files under the directory /config/betterquesting and /config/CustomMainMenu
-  - all or part of the PNG files under the directory /resources/mainmenu
+- "《群峦：救援》"(或"本模组整合包")指：
+  - 目录/modpack下的全部或部分ZenScript文件。
+  - 目录/config/advRocketry和/config/CustomOreGen/modules/custom下的全部或部分XML文件。
+  - 目录/config/betterquesting和/config/CustomMainMenu下的全部或部分Json文件。
+  - 目录/resources/mainmenu下的全部或部分PNG文件。
 
-- "Distribution" refers to
-  - making available binaries, assets, or source of the Modpack available from the original sources as part of your Modpack or otherwise.
+- "分发"是指
+  - 提供二进制文件、资源文件、或本模组整合包的源代码，作为您的本模组整合包的一部分或其他方式。
 
-- "Featuring" refers to
-  - using Terrafirma: Rescue in an environment where you do not distribute binaries, assets, or source. An example would be a YouTube or Bilibili gameplay or introduction video.
+- "展示"指的是
+  - 在不发布二进制文件、资源文件或源代码的前提下使用《群峦：救援》，比如YouTube或Bilibili上的游戏或介绍视频。
 
-- "Hosting Server" refers to
-  - running a Minecraft Server with Terrafirma: Rescue
+- "架设服务器"指的是
+  - 运行带有《群峦：救援》的Minecraft服务器。
 
-- "TeamMoeg" (or "We")
-  - the creator of Terrafirma: Rescue
+- "TeamMoeg"(或 "我们")
+  - 《群峦：救援》的创造者。
 
-1. Principle
-- You are completely free and have the right to Use, Share and Adapt the Modpack. These rights can not be removed from you as long as follow the license terms.
-- The Modpack does not include The Mods. Distribute them at your own risk.
+1. 原则
+- 您有权利完全自由地使用、分享和改编该本模组整合包。只要您遵守许可条款，这些权利就不会被剥夺。
+- 本模组整合包不包括模组。分发它们的风险由您自己承担。
 
-2. General Clauses
-Clauses that apply in general to any of the uses that follow.
-- Personal Permission Clause
-  TeamMoeg will not give personal permission unless TeamMoeg knows the person asking or there's a really good reason for it, as giving personal permission implies endorsement. Asking for personal permission will likely just end up having you ignored or redirected back to this license.
-- Waive Clause
-  All restrictive clauses in this license can be ignored with personal permission. Read the above clause.
-- Extensive Clause
-  This license applies to Terrafirma: Rescue, the Terrafirma: Rescue website, the Terrafirma: Rescue Wiki and all other code, assets or binaries found on this website or the github repository unless otherwise indicated.
+2. 一般条款
+一般适用于以下任何用途的条款。
+- 个人许可条款
+  TeamMoeg不会给予个人许可，除非TeamMoeg认识要求的人或有一个非常好的理由，因为给予个人许可意味着认可。向我们请求个人许可大概率不会通过，并要求您继续遵守本条款。
+- 放弃条款
+  经个人许可，本许可证中的所有限制性条款均可忽略。请阅读上述条款。
+- 扩展条款
+  本许可条款适用于《群峦：救援》、《群峦：救援》 网站、《群峦：救援》 维基以及本网站或Github仓库中的所有其他代码、资源文件或二进制文件，除非另有说明。
 
-3. If you want to Distribute Terrafirma: Rescue
-- Attribution Clause
-  You must give appropriate credit to TeamMoeg as the creator of Terrafirma: Rescue or the parts of it you're using. If you do any alterations the fact that you do so should also be indicated. A link back is optional but it would be cool if you would do so.
-- Non-Monetary Clause
-  You may not charge for access to the distribution itself or gain money through it, this includes any type of inline advertisement, such as url shorteners (adf.ly or otherwise) or ads in your service slowing the download down. This includes restricting any amount of access behind a paywall.
+3. 如果您想分发《群峦：救援》
+- 归属条款
+  您必须适当将TeamMoeg和其他人归功为《群峦：救援》以及您正在使用的部分的创造者。如果您做出任何改动，您这样做的事实也应该被表明。尽管这并非必须，您最好提供一个返回原发布地址的连接。
+- 非货币条款
+  您不得对访问分发本身收取费用或通过它获得金钱，这包括任何类型的在线广告(如adf.ly或其他)，或者您提供的下载方式中使得下载速度变慢的广告。这包括在付费墙后面限制任何数量的访问。
 
-4. If you want to Host a Server with Terrafirma: Rescye
-- No In-game Charging Clause
-  You may not charge for in-game goods that break gaming balance such as mod items, special abilities, or cosmetic features on a public server that runs the Modpack. By public server, we mean posting server ip address on a public accessible location directly or indirectly, either on or off the internet. Breaking this rule may result in we asking you or related administration to prevent your server ip from being public accessible until you stop the behavior.
-- Whitelisting Clause
-  Charging money from whitelisted players is totally fine.
-- Donation Clause
-  Raising money from donation (no in-game reward) is totally fine.
-- Private Server Clause
-  Non-public servers do not need to follow the first clause in this section.
+4. 如果您想在架设《群峦：救援》的服务器
+- 无游戏内收费条款
+  您不得在运行本模组整合包的公共服务器上收取破坏游戏平衡的游戏内物品，如Mod物品、特殊能力或外观功能等。所谓公共服务器，是指在互联网上或互联网外直接或间接地将服务器ip地址发布在公共可访问的位置。违反此规则可能会导致我们要求您或相关管理部门阻止您的服务器ip被公开访问，直到您停止该行为。
+- 白名单条款
+  向白名单玩家收费是完全被允许的。
+- 捐赠条款
+  通过捐赠来筹集资金（没有游戏内奖励）是完全被允许的。
+- 私人服务器条款
+  非公共服务器不需要遵循本节的第一条。
 
-5. If you want to Feature Terrafirma: Rescue
-- Thief Clause
-  You must not claim that you made Terrafirma: Rescue. Giving appropriate credit to TeamMoeg as the creator of Terrafirma: Rescue makes you cooler, but you don't have to do it if you don't want to.
+5. 如果您想展示《群峦：救援》
+- 盗贼条款
+  您不能说您制作了《群峦：救援》。如果您适当地将TeamMoeg归功为《群峦：救援》的创造者，我们会很感激您。如果您不想，您不必这样做。
 
-6. If you want to Use Terrafirma: Rescue's Code or Assets
-Usage of code or assets falls under the Extensive Clause.
-- Attribution Clause
-  You must give appropriate credit to TeamMoeg as the creator of Terrafirma: Rescue or the parts of it you're using. If you do any alterations the fact that you do so should also be indicated. A link back is optional but it would be cool if you would do so.
-- Copyleft Clause
-  Your project must be open source (have its source visible and allow for redistribution and modification) and include this clause in its license.
+6. 如果您想使用《群峦：救援》的代码或资源文件
+代码或资源文件的使用属于扩展条款。
+- 归属条款
+  您必须适当将TeamMoeg和其他人归功为《群峦：救援》以及您正在使用的部分的创造者。如果您做出任何改动，您这样做的事实也应该被表明。尽管这并非必须，您最好提供一个返回原发布地址的连接。
+- 版权条款
+  您的项目必须是开源的（其源码必须可见，并允许重新分发和修改），并在其许可证中包含此许可条款。
