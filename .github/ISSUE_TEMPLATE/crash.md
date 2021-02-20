@@ -1,20 +1,20 @@
 ---
-name: 'Game Crash Bug'
-about: 导致游戏崩溃的BUG（闪退、无法启动、存档无法进入）
+name: 'Game Crash'
+about: 产生游戏崩溃的问题（闪退、无法启动、存档无法进入）
 title: ''
 labels: 'Bug: Crash'
 assignees: yuesha-yc, duckegg128, dashuaibia, Evanenir, GBLodb
 
 ---
 
-**Version of modpack [3.x.x.x]**
+**Version of modpack｜整合包版本**
 
+- 3.x.x.x
 
-**Describe the bug**
+**What's your operating system｜你的操作系统是什么**
 
+- 
 
-**To Reproduce**
+**How to reproduce｜如何复现**
 
-
-**Additional context**
-
+- 

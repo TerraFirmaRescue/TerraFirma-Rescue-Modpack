@@ -7,14 +7,10 @@ assignees: yuesha-yc, duckegg128, dashuaibia
 
 ---
 
-**Version of modpack [3.x.x.x]**
+**Version of modpack｜整合包版本**
 
+- 3.x.x.x
 
-**Is your feature request related to a problem? Please describe.**
+**Describe your suggestion｜描述你的建议**
 
-
-**Describe the suggestion you'd like**
-
-
-**Additional context**
-
+- 

@@ -7,17 +7,18 @@ assignees: yuesha-yc, duckegg128, dashuaibia
 
 ---
 
-**Version of modpack [3.x.x.x]**
+**Version of modpack｜整合包版本**
 
+- 3.x.x.x
 
-**Describe the bug**
+**Describe the bug｜描述问题**
 
+- 
 
-**To Reproduce**
+**How to reproduce｜如何复现**
 
+- 
 
-**Expected Behavior**
+**Expected behavior｜期待的修复情况**
 
-
-**Additional context**
-
+- 

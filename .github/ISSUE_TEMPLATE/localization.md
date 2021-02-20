@@ -7,8 +7,14 @@ assignees: yuesha-yc, Evanenir
 
 ---
 
-**Version of modpack [3.x.x.x]**
+**Version of modpack｜整合包版本**
 
+- 3.x.x.x
 
-**Description**
+**Which mod ｜什么模组**
 
+- 
+
+**What is the missing text｜缺失什么文字**
+
+- 
