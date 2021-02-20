@@ -1,17 +1,14 @@
 ---
-name: Localization
-about: 'Issues regarding localization, like a lack of English text, etc. '
+name: Localization Issues
+about: 本地化问题（如：缺失汉化/英文）
 title: ''
 labels: Localization
-assignees: yuesha-yc
+assignees: yuesha-yc, Evanenir
 
 ---
 
-**Version**
-Version of the modpack you are using [e.g. 3.1.x.x]
+**Version of modpack [3.x.x.x]**
+
 
 **Description**
-A clear and concise description of what the localization issue is.
 
-**Additional context**
-Add any other context about the problem here.
