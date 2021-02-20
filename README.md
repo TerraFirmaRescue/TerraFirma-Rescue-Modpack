@@ -6,7 +6,7 @@
 - This is a Minecraft 1.7.10 Modpack created by TeamMoeg, centered around [TerraFirmaCraft](https://www.curseforge.com/minecraft/mc-mods/tfcraft), [GregTech-6-Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech6-unofficial), and [Advanced Rocketry](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry). This Modpack is science-fiction and tech-oriented. 
   You start an epic story of rescuing yourself on a miraculous life-sustainable moon - Terrafirma - of a gas giant 68.4 light years from Earth, 
   starting with nothing, gathering natural resources, expanding a base, developing technology, exploring the expanse of the planetary system, 
-  and eventually building a warp engine to return to Earth, the sweet cozy Home of mankind.**
+  and eventually building a warp engine to return to Earth, the sweet cozy Home of mankind.
 
 - This Modpack is licensed under the [Terrafirma: Rescue License](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE). 
 
