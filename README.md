@@ -7,7 +7,7 @@
 	<a href="https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues"><img src="https://img.shields.io/github/issues/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square" alt="Issues"></a>
 	<a href="https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/releases"><img src="https://img.shields.io/github/tag/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square" alt="Tags"></a>
 	<a href="https://discord.gg/BWn6E94"><img src="https://img.shields.io/badge/discord-chat%20with%20players-pink?style=flat-square" alt="Discord"></a>
-	<a href="https://www.patreon.com/TeamMoeg"><img src="https://img.shields.io/badge/patreon-support%20the%20devs-orange.svg?style=flat-square" alt="Patreon"></a><br>
+	<a href="https://www.patreon.com/TeamMoeg"><img src="https://img.shields.io/badge/patreon-support%20the%20devs-orange.svg?style=flat-square" alt="Patreon"></a>
 	<a href="https://afdian.net/@teammoeg"><img src="https://img.shields.io/badge/爱发电-赞助我们-blueviolet.svg?style=flat-square" alt="Patreon"></a><br>
 </h1>
 
