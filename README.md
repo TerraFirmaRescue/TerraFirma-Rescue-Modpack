@@ -1,14 +1,14 @@
 # Terrafirma: Rescue 
 
-[![CurseForge title](https://cf.way2muchnoise.eu/title/384368.svg)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
-[![CurseForge downloads](https://cf.way2muchnoise.eu/full_384368_downloads.svg)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
-[![CurseForge versions](https://cf.way2muchnoise.eu/versions/For%20MC_384368_all.svg)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
+[![CurseForge title](https://cf.way2muchnoise.eu/title/384368.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
+[![CurseForge downloads](https://cf.way2muchnoise.eu/full_384368_downloads.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
+[![CurseForge versions](https://cf.way2muchnoise.eu/versions/For%20MC_384368_all.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
 
-[![License](https://img.shields.io/badge/license-terrafirmarescue%20license-brightgreen?style=flat-square)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues)
-[![GitHub tag](https://img.shields.io/github/tag/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/releases)
-[![Discord!](https://img.shields.io/badge/discord-chat%20with%20players-blueviolet?style=flat-square)](https://discord.gg/BWn6E94) 
-[![Patreon](https://img.shields.io/badge/patreon-support%20the%20devs-orange.svg?style=flat-square)](https://www.patreon.com/TeamMoeg) 
+[![License](https://img.shields.io/badge/license-terrafirmarescue%20license-brightgreen?style=for-the-badge)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=for-the-badge)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues)
+[![GitHub tag](https://img.shields.io/github/tag/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=for-the-badge)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/releases)
+[![Discord!](https://img.shields.io/badge/discord-chat%20with%20players-blueviolet?style=for-the-badge)](https://discord.gg/BWn6E94) 
+[![Patreon](https://img.shields.io/badge/patreon-support%20the%20devs-orange.svg?style=for-the-badge)](https://www.patreon.com/TeamMoeg) 
 
 [中文](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/README.CN.md)
 |
