@@ -6,8 +6,9 @@
 	<a href="https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-tfr%20license-brightgreen?style=flat-square" alt="License"></a>
 	<a href="https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues"><img src="https://img.shields.io/github/issues/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square" alt="Issues"></a>
 	<a href="https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/releases"><img src="https://img.shields.io/github/tag/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square" alt="Tags"></a>
-	<a href="https://discord.gg/BWn6E94"><img src="https://img.shields.io/badge/discord-chat%20with%20players-blueviolet?style=flat-square" alt="Discord"></a>
+	<a href="https://discord.gg/BWn6E94"><img src="https://img.shields.io/badge/discord-chat%20with%20players-pink?style=flat-square" alt="Discord"></a>
 	<a href="https://www.patreon.com/TeamMoeg"><img src="https://img.shields.io/badge/patreon-support%20the%20devs-orange.svg?style=flat-square" alt="Patreon"></a><br>
+	<a href="https://afdian.net/@teammoeg"><img src="https://img.shields.io/badge/爱发电-赞助我们-blueviolet.svg?style=flat-square" alt="Patreon"></a><br>
 </h1>
 
 [中文](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/README.CN.md)
@@ -24,29 +25,29 @@
 
 ---
 
-## Download Latest
+## <img src="https://i.imgur.com/QOZGF4P.png" alt="Logo" width="20"> Download Latest
 
 - [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
 - [Technic](https://www.technicpack.net/modpack/terra-firma-rescue.1727928)
 - [MCBBS](https://www.mcbbs.net/thread-977365-1-1.html)
 
-## Join Community
+## <img src="https://i.imgur.com/QOZGF4P.png" alt="Logo" width="20"> Join Community
 
 - [Official Wiki](https://wiki.teammoeg.com/)
 - [Official Forum](https://forum.teammoeg.com/)
 - [Official Discord Chat](https://discord.gg/BWn6E94)
 - QQ Group Chat Number: 1046723658
 
-## Like Our Modpack?
+## <img src="https://i.imgur.com/QOZGF4P.png" alt="Logo" width="20"> Like Our Modpack?
 
 - TeamMoeg has developed and will maintain this Modpack for Free, but maintaining the servers cost money. Consider Sponsoring us at [Patreon](https://www.patreon.com/TeamMoeg) or [Aifadian (China)](https://afdian.net/@teammoeg)
 
-## Support Localization
+## <img src="https://i.imgur.com/QOZGF4P.png" alt="Logo" width="20"> Support Localization
 
 - Visit the [Localization Port](https://github.com/TerraFirmaRescue/TFR-Localization) of quests for Terrafirma: Rescue. 
   All contributors will be included in the [Supporter List](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/supporterlist.txt).
 
-## Join the Development and Contribute to this Project!
+## <img src="https://i.imgur.com/QOZGF4P.png" alt="Logo" width="20"> Join the Development and Contribute to this Project!
 
 - TeamMoeg loves to hear from ideas from players, because we are players!
   Apart from giving suggestions, you can directly add or change features to Terrafirma: Rescue as it is fully open source. 
