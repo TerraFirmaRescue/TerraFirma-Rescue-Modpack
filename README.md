@@ -1,11 +1,15 @@
 # Terrafirma: Rescue 
 
 [comment]: <> ([![GitHub license]&#40;https://img.shields.io/github/license/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square&#41;]&#40;https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE&#41;)
+[![CurseForge downloads](https://cf.way2muchnoise.eu/title/384368.svg)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
+[![CurseForge downloads](https://cf.way2muchnoise.eu/full_384368_downloads.svg)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
+[![CurseForge downloads](https://cf.way2muchnoise.eu/versions/For%20MC_384368_all.svg)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
+
+[![License](https://img.shields.io/badge/license-terrafirmarescue%20license-brightgreen?style=flat-square)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues)
 [![GitHub tag](https://img.shields.io/github/tag/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/releases/tags)
-[![CurseForge downloads](https://cf.way2muchnoise.eu/full_384368_downloads.svg?badge_style=flat)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
-[![Discord!](https://img.shields.io/badge/Discord-Join%20Us-blue?style=flat-square)](https://discord.gg/BWn6E94) 
-[![Patreon](https://img.shields.io/badge/Patreon-Support-orange.svg?style=flat-square)](https://www.patreon.com/TeamMoeg) 
+[![Discord!](https://img.shields.io/badge/discord-chat%20with%20players-blueviolet?style=flat-square)](https://discord.gg/BWn6E94) 
+[![Patreon](https://img.shields.io/badge/patreon-support%20the%20devs-orange.svg?style=flat-square)](https://www.patreon.com/TeamMoeg) 
 
 [中文](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/README.CN.md)
 |
