@@ -1,25 +1,19 @@
-# Terrafirma: Rescue 
-
+<h1 align="center"><img src="https://i.imgur.com/QOZGF4P.png" alt="Logo" width="150"></h1>
 <h1 align="center">Terrafirma: Rescue<br>
-	<a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/title/terrafirma-rescue.svg" alt="Curseforge Title"></a>
-	<a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/terrafirma-rescue.svg" alt="Curseforge Downloads"></a>
-    <a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/full_terrafirma-rescue_downloads.svg" alt="Curseforge Downloads"></a>
-    <a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/versions/For%20MC_terrafirma-rescue_all.svg" alt="Curseforge Versions"></a><br><br>
+	<a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/title/terrafirma-rescue.svg?badge_style=flat" alt="Curseforge Title"></a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/full_terrafirma-rescue_downloads.svg?badge_style=flat" alt="Curseforge Downloads"></a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/versions/For%20MC_terrafirma-rescue_all.svg?badge_style=flat" alt="Curseforge Versions"></a><br>
+	<a href="https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-tfr%20license-brightgreen?style=flat-square" alt="License"></a>
+	<a href="https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues"><img src="https://img.shields.io/github/issues/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square" alt="Issues"></a>
+	<a href="https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/releases"><img src="https://img.shields.io/github/tag/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square" alt="Tags"></a>
+	<a href="https://discord.gg/BWn6E94"><img src="https://img.shields.io/badge/discord-chat%20with%20players-blueviolet?style=flat-square" alt="Discord"></a>
+	<a href="https://www.patreon.com/TeamMoeg"><img src="https://img.shields.io/badge/patreon-support%20the%20devs-orange.svg?style=flat-square" alt="Patreon"></a><br>
 </h1>
-
-[![CurseForge title](https://cf.way2muchnoise.eu/title/384368.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
-[![CurseForge downloads](https://cf.way2muchnoise.eu/full_384368_downloads.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
-[![CurseForge versions](https://cf.way2muchnoise.eu/versions/For%20MC_384368_all.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
-
-[![License](https://img.shields.io/badge/license-terrafirmarescue%20license-brightgreen?style=for-the-badge)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=for-the-badge)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues)
-[![GitHub tag](https://img.shields.io/github/tag/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=for-the-badge)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/releases)
-[![Discord!](https://img.shields.io/badge/discord-chat%20with%20players-blueviolet?style=for-the-badge)](https://discord.gg/BWn6E94) 
-[![Patreon](https://img.shields.io/badge/patreon-support%20the%20devs-orange.svg?style=for-the-badge)](https://www.patreon.com/TeamMoeg) 
 
 [中文](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/README.CN.md)
 |
 [English](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/README.md)
+
 
 - This is a Minecraft 1.7.10 Modpack created by TeamMoeg, centered around [TerraFirmaCraft](https://www.curseforge.com/minecraft/mc-mods/tfcraft), [GregTech-6-Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech6-unofficial), and [Advanced Rocketry](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry). This Modpack is science-fiction and tech-oriented. 
   You start an epic story of rescuing yourself on a miraculous life-sustainable moon - Terrafirma - of a gas giant 68.4 light years from Earth, 
