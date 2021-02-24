@@ -1,5 +1,12 @@
 # Terrafirma: Rescue 
 
+<h1 align="center">Terrafirma: Rescue<br>
+	<a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/title/terrafirma-rescue.svg" alt="Curseforge Title"></a>
+	<a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/terrafirma-rescue.svg" alt="Curseforge Downloads"></a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/full_terrafirma-rescue_downloads.svg" alt="Curseforge Downloads"></a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/versions/For%20MC_terrafirma-rescue_all.svg" alt="Curseforge Versions"></a><br><br>
+</h1>
+
 [![CurseForge title](https://cf.way2muchnoise.eu/title/384368.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
 [![CurseForge downloads](https://cf.way2muchnoise.eu/full_384368_downloads.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
 [![CurseForge versions](https://cf.way2muchnoise.eu/versions/For%20MC_384368_all.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
