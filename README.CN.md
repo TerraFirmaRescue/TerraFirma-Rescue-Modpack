@@ -1,4 +1,15 @@
-# 群峦：救援 [![Join our Discord!](https://img.shields.io/badge/Discord-Join%20Us-blue)](https://discord.gg/BWn6E94) [![Support the devs!](https://img.shields.io/badge/Patreon-Support-orange.svg?style=flat-square)](https://www.patreon.com/TeamMoeg)
+<p align="center"><img src="https://i.imgur.com/QOZGF4P.png" alt="Logo" width="150"></p>
+<h1 align="center">群峦：救援<br>
+	<a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/title/terrafirma-rescue.svg?badge_style=flat" alt="Curseforge Title"></a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/full_terrafirma-rescue_次下载.svg?badge_style=flat" alt="Curseforge Downloads"></a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/versions/For%20MC_terrafirma-rescue_all.svg?badge_style=flat" alt="Curseforge Versions"></a><br>
+	<a href="https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE"><img src="https://img.shields.io/badge/开源协议-tfr%20协议-brightgreen?style=flat-square" alt="License"></a>
+	<a href="https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues"><img src="https://img.shields.io/github/issues/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square" alt="Issues"></a>
+	<a href="https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/releases"><img src="https://img.shields.io/github/tag/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square" alt="Tags"></a>
+	<a href="https://discord.gg/BWn6E94"><img src="https://img.shields.io/badge/discord-和玩家聊天-blueviolet?style=flat-square" alt="Discord"></a>
+	<a href="https://www.patreon.com/TeamMoeg"><img src="https://img.shields.io/badge/patreon-赞助我们-orange.svg?style=flat-square" alt="Patreon"></a><br>
+</h1>
+
 [中文](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/README.CN.md)
 |
 [English](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/README.md)
