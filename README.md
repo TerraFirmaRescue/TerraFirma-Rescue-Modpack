@@ -1,4 +1,4 @@
-<h1 align="center"><img src="https://i.imgur.com/QOZGF4P.png" alt="Logo" width="150"></h1>
+<p align="center"><img src="https://i.imgur.com/QOZGF4P.png" alt="Logo" width="150"></p>
 <h1 align="center">Terrafirma: Rescue<br>
 	<a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/title/terrafirma-rescue.svg?badge_style=flat" alt="Curseforge Title"></a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/full_terrafirma-rescue_downloads.svg?badge_style=flat" alt="Curseforge Downloads"></a>
