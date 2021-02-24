@@ -18,8 +18,6 @@
 
 - This Modpack is licensed under the [Terrafirma: Rescue License](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE). 
 
----
-
 ## <img src="https://i.imgur.com/QOZGF4P.png" alt="Logo" width="20"> Download Latest
 
 - [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
@@ -76,7 +74,6 @@
 - **一个由 TeamMoeg 制作的 Minecraft 1.7.10 整合包，围绕 [群峦传说](https://www.curseforge.com/minecraft/mc-mods/tfcraft), [格雷科技6非官方版](https://www.curseforge.com/minecraft/mc-mods/gregtech6-unofficial), 和 [高级火箭](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry) 制作。**
 
 - 本整合包根据 [Terrafirma: Rescue License](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE) 开源
----
 
 ## 下载
 
