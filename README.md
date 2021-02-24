@@ -1,13 +1,12 @@
 # Terrafirma: Rescue 
 
-[comment]: <> ([![GitHub license]&#40;https://img.shields.io/github/license/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square&#41;]&#40;https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE&#41;)
-[![CurseForge downloads](https://cf.way2muchnoise.eu/title/384368.svg)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
+[![CurseForge title](https://cf.way2muchnoise.eu/title/384368.svg)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
 [![CurseForge downloads](https://cf.way2muchnoise.eu/full_384368_downloads.svg)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
-[![CurseForge downloads](https://cf.way2muchnoise.eu/versions/For%20MC_384368_all.svg)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
+[![CurseForge versions](https://cf.way2muchnoise.eu/versions/For%20MC_384368_all.svg)](https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue)
 
 [![License](https://img.shields.io/badge/license-terrafirmarescue%20license-brightgreen?style=flat-square)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues)
-[![GitHub tag](https://img.shields.io/github/tag/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/releases/tags)
+[![GitHub tag](https://img.shields.io/github/tag/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square)](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/releases)
 [![Discord!](https://img.shields.io/badge/discord-chat%20with%20players-blueviolet?style=flat-square)](https://discord.gg/BWn6E94) 
 [![Patreon](https://img.shields.io/badge/patreon-support%20the%20devs-orange.svg?style=flat-square)](https://www.patreon.com/TeamMoeg) 
 
@@ -18,7 +17,7 @@
 - This is a Minecraft 1.7.10 Modpack created by TeamMoeg, centered around [TerraFirmaCraft](https://www.curseforge.com/minecraft/mc-mods/tfcraft), [GregTech-6-Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech6-unofficial), and [Advanced Rocketry](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry). This Modpack is science-fiction and tech-oriented. 
   You start an epic story of rescuing yourself on a miraculous life-sustainable moon - Terrafirma - of a gas giant 68.4 light years from Earth, 
   starting with nothing, gathering natural resources, expanding a base, developing technology, exploring the expanse of the planetary system, 
-  and eventually building a warp engine to return to Earth, the sweet cozy Home of mankind.
+  and eventually building a warp engine to return to Earth, the sweet cozy home of mankind.
 
 - This Modpack is licensed under the [Terrafirma: Rescue License](https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE). 
 
