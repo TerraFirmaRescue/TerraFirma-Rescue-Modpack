@@ -2,7 +2,7 @@
 <h1 align="center">Terrafirma: Rescue<br>
 	<a href="https://www.mcbbs.net/thread-977365-1-1.html"><img src="https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Finfo.teammoeg.com%2Ftfrdownloads.json" alt="MCBBS Downloads"></a>
 	<a href="https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/title/terrafirma-rescue.svg?badge_style=flat" alt="Curseforge Title"></a>
-    <a href="https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/full_terrafirma-rescue_次下载.svg?badge_style=flat" alt="Curseforge Downloads"></a>
+    <a href="https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/full_terrafirma-rescue_downloads.svg?badge_style=flat" alt="Curseforge Downloads"></a>
     <a href="https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue"><img src="http://cf.way2muchnoise.eu/versions/For%20MC_terrafirma-rescue_all.svg?badge_style=flat" alt="Curseforge Versions"></a><br>
 	<a href="https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-tfr%20license-brightgreen?style=flat-square" alt="License"></a>
 	<a href="https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/issues"><img src="https://img.shields.io/github/issues/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square" alt="Issues"></a>
