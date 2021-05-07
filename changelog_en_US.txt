@@ -1,3 +1,17 @@
+3.7.0.0
+Mod Changes:
+- Upgraded gregtech_1.7.10-6.15.08-unofficial
+
+Content Changes:
+- Now bedrock ores sometimes spawn with multiple types of ores (extremely rare).
+- Nerfed Bedrock Lava Springs in the Nether got nerfed to 500 times less Output. Only applies to newly generated ones.
+- Fluid Pipes will now show all Fluids that are currently somewhere within all connected Pipes, when hit with a Magnifying Glass.
+- Spray Cans can now be used to dye Sheep, Wolf Collars and Grass (if their Color is applicable).
+- Blue Spruce. it changes dirt and grass into Podzol, and becomes a Christmas Tree in certain periods of time.
+- When you break Fluid Pipes, they will try to move their content to connected adjacent Blocks/Pipes in order to not waste it.
+Keyword being TRY, because if there is nowhere to go they will still send it to the Garbage Dump.
+- Fixed the Stainless Steel, Ultimet, and Signalum alloying issue by changing their alloying recipes.
+
 3.6.0.1
 Mod Changes:
 - N/A

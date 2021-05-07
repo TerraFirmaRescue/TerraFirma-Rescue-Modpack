@@ -3,7 +3,7 @@
         ┣ Netheriat 狱星
         ┣ HD (无译名)
         ┣ Duck Egg 鸭蛋
-            ┣ Terrafirma 群峦(又译"泰拉孚马"）
+            ┣ Terrafirma 群峦
             ┣ Merganser 秋沙鸭
             ┣ Canary 金丝雀
             ┣ Golden Eagle 金雕
@@ -12,6 +12,7 @@
             ┣ Tragopan 角雉
             ┣ Ibis 朱鹭
             ┣ Black Stork 黑鹳
+            群峦，鸭，雀，雕，鹤，雉，鹭，鹳
         ┣ Evan 伊文
         ┗ Zthen 㻸
 
