@@ -1154,3 +1154,12 @@ recipes.addShaped(<gregtech:gt.multitileentity:32706>,
 [[<ore:craftingToolChisel>,null,<ore:craftingToolHardHammer>],
 [<minecraft:brick_block>,<minecraft:brick_block>,<minecraft:brick_block>],
 [null,null,null]]);
+
+// Soft Hammer with TFC planks
+val TPlank = <ore:TPlank>;
+TPlank.add(<terrafirmacraft:planks:*>);
+TPlank.add(<terrafirmacraft:planks2>);
+recipes.addShaped(<gregtech:gt.meta.toolHeadHammer:9300>,
+[[TPlank,TPlank,null],
+[TPlank,TPlank,null],
+[TPlank,TPlank,Saw]]);
