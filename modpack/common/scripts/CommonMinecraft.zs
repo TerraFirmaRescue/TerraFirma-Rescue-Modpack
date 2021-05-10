@@ -648,3 +648,10 @@ MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
 MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
 [<terrafirmacraft:item.MetalNugget:8>],[n],
 [n],[<minecraft:gold_nugget>]);
+
+// Minecraft Fishing Rod
+MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 200, 0, [10000],
+[<ore:stickAnyWood>*3,<ore:materialString>*2,<ore:nuggestAnyIronOrSteel>*1],
+[n],
+[n],
+[<minecraft:fishing_rod>]);

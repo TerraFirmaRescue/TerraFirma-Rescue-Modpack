@@ -57,6 +57,7 @@ mods.Terrafirmacraft.Anvil.addAnvilRecipe(<Forestry:sturdyMachine>, <gregtech:gt
 
 //Cauldron
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<minecraft:cauldron>, <gregtech:gt.meta.plateQuadruple:8643>, <gregtech:gt.meta.plateTriple:8643>, "bucket", 3);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<minecraft:cauldron>, <gregtech:gt.meta.plateQuadruple:260>, <gregtech:gt.meta.plateTriple:260>, "bucket", 3);
 
 //Minecraft iron door
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<minecraft:iron_door>, <terrafirmacraft:item.Wrought Iron Sheet>, <terrafirmacraft:item.Wrought Iron Sheet>, "trapdoor", 3);
