@@ -56,7 +56,7 @@ mods.Terrafirmacraft.Loom.addRecipe(<Backpack:backpack>, <terrafirmacraft:item.T
 
 MTUtilsGT.removeAllRecipes("gt.recipe.loom",<Backpack:backpack>);
 MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 400, 0, [10000],
-[<terrafirmacraft:item.TFC Leather> * 8, <gregapi:gt.integrated_circuit:8>],
+[<terrafirmacraft:item.TFC Leather> * 8, <gregapi:gt.integrated_circuit:8> * 0],
 [n],
 [n],
 [<Backpack:backpack>]);
