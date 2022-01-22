@@ -162,8 +162,8 @@ for i, plank in singlePlanks {
 
 }
 
-recipes.addShapeless(<minecraft:stick>,[<terrafirmacraft:item.stick>]);
-recipes.addShapeless(<terrafirmacraft:item.stick>,[<minecraft:stick>]);
+recipes.addShapeless(<minecraft:stick>,[<terrafirmacraft:item.stick>]); 
+//recipes.addShapeless(<terrafirmacraft:item.stick>,[<minecraft:stick>]); moved to TFCtech.zs for debug
 recipes.addShapeless(<gregtech:gt.meta.ring:8221>,
 [<ore:woodLumber>,<ore:itemSaw>]);
 
@@ -651,7 +651,8 @@ MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
 
 // Minecraft Fishing Rod
 MTUtilsGT.addCustomRecipe("gt.recipe.loom", false, 16, 200, 0, [10000],
-[<ore:stickAnyWood>*3,<ore:materialString>*2,<ore:nuggestAnyIronOrSteel>*1],
+[<minecraft:stick>*3,<minecraft:string>*2,<gregtech:gt.multitileentity:28950>*1],
 [n],
 [n],
 [<minecraft:fishing_rod>]);
+

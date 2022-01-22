@@ -118,6 +118,10 @@ MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 100, 1000, [10000],
 //mu zhi
 recipes.addShapeless(<tfcprimitivetech:itemWoodenTwig>,[<terrafirmacraft:item.stick>,SHammer]);
 
+recipes.removeShapeless(<terrafirmacraft:item.stick>);
+recipes.addShapeless(<minecraft:stick>, [Knife, <tfcprimitivetech:itemWoodenTwig>]); //output is minecraft:stick. don't change it to TFC stick ,or player will spit out an extra knife! why???
+recipes.addShapeless(<terrafirmacraft:item.stick>,[<minecraft:stick>]);
+
 //More realistic paper production
 MTUtilsGT.removeAllRecipes("gt.recipe.bath",<tfcprimitivetech:itemCelluloseFibers>);
 MTUtilsGT.addCustomRecipe("gt.recipe.bath", false, 0, 40, 1000,[10000],
