@@ -321,7 +321,7 @@ mods.avaritia.ExtremeCrafting.addShaped(<Avaritia:Infinity_Axe>,
   [null,ns11,null,null,null,null,null,null,null],
   [ns11,null,null,null,null,null,null,null,null]]);
 
-var qunh = <IC2:itemArmorQuantumHelmet:27>;
+var qunh = <IC2:itemArmorQuantumHelmet:*>;
 var unih = <gregtech:gt.armor.hazmat.universal.head>;
 var zzcp = <gregtech:gt.meta.plateCurved:8800>;
 var zzpl = <gregtech:gt.meta.plate:8800>;
@@ -342,7 +342,7 @@ mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Infinity_Helm>,
   [null,null,null,null,gxxx,null,null,null,null],
   [null,null,null,null,null,null,null,null,null]]);
 
-var qunc = <IC2:itemArmorQuantumChestplate:27>;
+var qunc = <IC2:itemArmorQuantumChestplate:*>;
 var unic = <gregtech:gt.armor.hazmat.universal.chest>;
 var mk11 = <gregtech:gt.multitileentity:17198>;
 var cdxq = <gregtech:gt.multitileentity:18046>;
@@ -360,9 +360,9 @@ mods.avaritia.ExtremeCrafting.addShaped (<Avaritia:Infinity_Chest>,
   [null,puvm,ntcp,zzcp,ifp1,zzcp,ntcp,puvm,null],
   [null,zzsr,null,null,null,null,null,zzsr,null]]);
 
-var qunp = <IC2:itemArmorQuantumLegs:27>;
+var qunp = <IC2:itemArmorQuantumLegs:*>;
 var unip = <gregtech:gt.armor.hazmat.universal.legs>;
-var qunb = <IC2:itemArmorQuantumBoots:27>;
+var qunb = <IC2:itemArmorQuantumBoots:*>;
 var unib = <gregtech:gt.armor.hazmat.universal.boots>;
 var ptfe = <gregtech:gt.meta.plateDense:27006>;
 
