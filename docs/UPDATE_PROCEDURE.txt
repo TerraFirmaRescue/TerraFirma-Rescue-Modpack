@@ -30,6 +30,7 @@ minecraft/resourcespack
 minecraft/LICENSE_zh_CN
 minecraft/supporterlist.txt
 minecraft/supporterlistgold.txt
+minecraft/server.dat
 to /TFR-HMCL and override existing directories
 
 Remove

@@ -1282,7 +1282,7 @@
     "15:10": {
       "questID:3": 15,
       "preRequisites:11": [
-        1
+        2
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1315,32 +1315,22 @@
       },
       "tasks:9": {
         "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
           "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "terrafirmacraft:item.Jug",
-              "Count:3": 1,
-              "tag:10": {
-                "blowTime:4": 61350379
-              },
-              "Damage:2": 1,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:checkbox"
         }
       },
       "rewards:9": {
         "0:10": {
-          "amount:3": 1,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 1,
-          "index:3": 0
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "terrafirmacraft:item.Jug",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
         }
       }
     },
@@ -5036,7 +5026,7 @@
     "71:10": {
       "questID:3": 71,
       "preRequisites:11": [
-        63
+        678
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -15846,7 +15836,7 @@
     "238:10": {
       "questID:3": 238,
       "preRequisites:11": [
-        63
+        678
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -15911,7 +15901,7 @@
     "239:10": {
       "questID:3": 239,
       "preRequisites:11": [
-        63
+        678
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -16659,7 +16649,7 @@
     "250:10": {
       "questID:3": 250,
       "preRequisites:11": [
-        63
+        678
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -16724,7 +16714,7 @@
     "251:10": {
       "questID:3": 251,
       "preRequisites:11": [
-        63
+        678
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -41126,7 +41116,7 @@
     "558:10": {
       "questID:3": 558,
       "preRequisites:11": [
-        63
+        678
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -45433,10 +45423,10 @@
           "posZ:3": 0,
           "visible:1": 0,
           "invert:1": 0,
-          "name:8": "Duck Egg B",
+          "name:8": "Duck Egg C",
           "range:3": -1,
           "index:3": 0,
-          "dimension:3": 11,
+          "dimension:3": 12,
           "taxiCabDist:1": 0,
           "taskID:8": "bq_standard:location",
           "hideInfo:1": 0
@@ -48627,6 +48617,45 @@
         }
       },
       "rewards:9": {}
+    },
+    "678:10": {
+      "questID:3": 678,
+      "preRequisites:11": [
+        242,
+        63
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "taskLogic:8": "AND",
+          "partySingleReward:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregapi:gt.display.fluid",
+            "Count:3": 1,
+            "tag:10": {
+              "s:1": 1,
+              "f:8": "ethylene",
+              "h:2": 300
+            },
+            "Damage:2": 112,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "OR",
+          "name:8": "tfr.quest678.name",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "tfr.quest678.desc"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
     }
   },
   "questLines:9": {
@@ -50727,15 +50756,15 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 84,
+          "x:3": 12,
+          "y:3": 72,
           "id:3": 63,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": 84,
+          "x:3": 60,
+          "y:3": 108,
           "id:3": 71,
           "sizeY:3": 24
         },
@@ -50748,15 +50777,15 @@
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": 192,
+          "x:3": -36,
+          "y:3": 168,
           "id:3": 238,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": 84,
+          "x:3": -72,
+          "y:3": 144,
           "id:3": 239,
           "sizeY:3": 24
         },
@@ -50769,29 +50798,29 @@
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": 36,
+          "x:3": -36,
+          "y:3": 72,
           "id:3": 242,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": 120,
+          "x:3": 48,
+          "y:3": 144,
           "id:3": 250,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": 120,
+          "x:3": -84,
+          "y:3": 108,
           "id:3": 251,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": -12,
+          "x:3": -60,
+          "y:3": 36,
           "id:3": 264,
           "sizeY:3": 24
         },
@@ -50804,9 +50833,16 @@
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": 156,
+          "x:3": 12,
+          "y:3": 168,
           "id:3": 558,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 108,
+          "id:3": 678,
           "sizeY:3": 24
         }
       },
