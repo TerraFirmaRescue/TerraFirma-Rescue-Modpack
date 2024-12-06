@@ -1,3 +1,11 @@
+# New Update process (Dec. 6, 2024)
+
+First run QuestHandler.py to localize quest.
+Then just run Assemble.py should give a zip file for HMCL version.
+Go to TFR-Dev in curse launcher and export when GT6U is updated.
+
+If there are problems zipping, run Check_Timestamp.py
+
 Update process:
 
 ==== ALL LANGUAGE ===
