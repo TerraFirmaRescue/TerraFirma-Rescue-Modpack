@@ -9,7 +9,7 @@
 	<a href="https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/releases"><img src="https://img.shields.io/github/tag/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square" alt="Tags"></a>
 	<a href="https://discord.gg/BWn6E94"><img src="https://img.shields.io/badge/discord-chat%20with%20players-pink?style=flat-square" alt="Discord"></a>
 	<a href="https://www.patreon.com/TeamMoegProjects"><img src="https://img.shields.io/badge/patreon-support%20the%20devs-orange.svg?style=flat-square" alt="Patreon"></a>
-	<a href="https://afdian.net/@teammoeg"><img src="https://img.shields.io/badge/爱发电-赞助我们-blueviolet.svg?style=flat-square" alt="Patreon"></a><br>
+	<a href="https://afdian.com/a/teammoeg"><img src="https://img.shields.io/badge/爱发电-赞助我们-blueviolet.svg?style=flat-square" alt="Patreon"></a><br>
 </h1>
 
 - This is a Minecraft 1.7.10 Modpack created by TeamMoeg, centered around [TerraFirmaCraft](https://www.curseforge.com/minecraft/mc-mods/tfcraft), [GregTech-6-Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech6-unofficial), and [Advanced Rocketry](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry). This Modpack is science-fiction and tech-oriented. 
@@ -34,7 +34,7 @@
 
 ## <img src="https://i.imgur.com/QOZGF4P.png" alt="Logo" width="20"> Like Our Modpack?
 
-- TeamMoeg has developed and will maintain this Modpack for Free, but maintaining the servers cost money. Consider Sponsoring us at [Patreon](https://www.patreon.com/TeamMoeg) or [Aifadian (China)](https://afdian.net/@teammoeg)
+- TeamMoeg has developed and will maintain this Modpack for Free, but maintaining the servers cost money. Consider Sponsoring us at [Patreon](https://www.patreon.com/TeamMoeg) or [Aifadian (China)](https://afdian.com/a/teammoeg)
 
 ## <img src="https://i.imgur.com/QOZGF4P.png" alt="Logo" width="20"> Support Localization
 
@@ -70,7 +70,7 @@
 	<a href="https://github.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/releases"><img src="https://img.shields.io/github/tag/TerraFirmaRescue/TerraFirma-Rescue-Modpack?style=flat-square" alt="Tags"></a>
 	<a href="https://discord.gg/BWn6E94"><img src="https://img.shields.io/badge/discord-和玩家聊天-pink?style=flat-square" alt="Discord"></a>
 	<a href="https://www.patreon.com/TeamMoegProjects"><img src="https://img.shields.io/badge/patreon-赞助我们-orange.svg?style=flat-square" alt="Patreon"></a>
-	<a href="https://afdian.net/@teammoeg"><img src="https://img.shields.io/badge/爱发电-赞助我们-blueviolet.svg?style=flat-square" alt="Patreon"></a><br>
+	<a href="https://afdian.com/a/teammoeg"><img src="https://img.shields.io/badge/爱发电-赞助我们-blueviolet.svg?style=flat-square" alt="Patreon"></a><br>
 </h1>
 
 - **一个由 TeamMoeg 制作的 Minecraft 1.7.10 整合包，围绕 [群峦传说](https://www.curseforge.com/minecraft/mc-mods/tfcraft), [格雷科技6非官方版](https://www.curseforge.com/minecraft/mc-mods/gregtech6-unofficial), 和 [高级火箭](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry) 制作。**
@@ -92,7 +92,7 @@
 
 ## 支持我们
 
-- 我们完全免费提供群峦：救援整合包，但是维护服务器和下载站需要资金，请考虑在 [Patreon](https://www.patreon.com/TeamMoeg) 或者 [爱发电](https://afdian.net/@teammoeg) 赞助我们！
+- 我们完全免费提供群峦：救援整合包，但是维护服务器和下载站需要资金，请考虑在 [Patreon](https://www.patreon.com/TeamMoeg) 或者 [爱发电](https://afdian.com/a/teammoeg) 赞助我们！
 
 ## 加入开发，贡献一份力
 

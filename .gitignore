@@ -22,7 +22,7 @@
 /versions/
 
 # Launch cache
-/servers.dat
+# /servers.dat
 /NBTEdit.log
 /OpenComputersMod-1.7.5.1290-lua53-native.64.dylib
 /NBTEdit.log.lck
