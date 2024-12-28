@@ -1163,3 +1163,16 @@ recipes.addShaped(<gregtech:gt.meta.toolHeadHammer:9300>,
 [[TPlank,TPlank,null],
 [TPlank,TPlank,null],
 [TPlank,TPlank,Saw]]);
+
+//lava can produce iron by centrifuge
+MTUtilsGT.removeAllRecipes("gt.recipe.centrifuge", <terrafirmacraft:item.MetalNugget:10>);
+MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 128, 0,[300],
+[null],
+[<liquid:ic2pahoehoelava>*100],
+[null],
+[<gregtech:gt.meta.dustTiny:8505>, <terrafirmacraft:item.MetalNugget:7>*4, <terrafirmacraft:item.MetalNugget:10>*3, <terrafirmacraft:item.MetalNugget:9>*4, <terrafirmacraft:item.MetalNugget:16>, <terrafirmacraft:item.MetalNugget:8>]);
+MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 192, 0,[500],
+[null],
+[<liquid:lava>*100],
+[null],
+[<gregtech:gt.meta.dustTiny:8505>, <terrafirmacraft:item.MetalNugget:7>*4, <terrafirmacraft:item.MetalNugget:19>*3, <terrafirmacraft:item.MetalNugget:9>*5, <terrafirmacraft:item.MetalNugget:16>*2, <terrafirmacraft:item.MetalNugget:8>]);
