@@ -1166,13 +1166,59 @@ recipes.addShaped(<gregtech:gt.meta.toolHeadHammer:9300>,
 
 //lava can produce iron by centrifuge
 MTUtilsGT.removeAllRecipes("gt.recipe.centrifuge", <terrafirmacraft:item.MetalNugget:10>);
-MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 128, 0,[300],
-[null],
-[<liquid:ic2pahoehoelava>*100],
-[null],
-[<gregtech:gt.meta.dustTiny:8505>, <terrafirmacraft:item.MetalNugget:7>*4, <terrafirmacraft:item.MetalNugget:10>*3, <terrafirmacraft:item.MetalNugget:9>*4, <terrafirmacraft:item.MetalNugget:16>, <terrafirmacraft:item.MetalNugget:8>]);
-MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 192, 0,[500],
+//lava -> Cu Sn Pb Ag Au
+MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 200, 0,[10000, 1200, 800, 600, 500, 300],
 [null],
 [<liquid:lava>*100],
 [null],
-[<gregtech:gt.meta.dustTiny:8505>, <terrafirmacraft:item.MetalNugget:7>*4, <terrafirmacraft:item.MetalNugget:19>*3, <terrafirmacraft:item.MetalNugget:9>*5, <terrafirmacraft:item.MetalNugget:16>*2, <terrafirmacraft:item.MetalNugget:8>]);
+[<gregtech:gt.meta.dustTiny:8505>, <terrafirmacraft:item.MetalNugget:7>, <terrafirmacraft:item.MetalNugget:19>, <terrafirmacraft:item.MetalNugget:10>, <terrafirmacraft:item.MetalNugget:16>, <terrafirmacraft:item.MetalNugget:8>]);
+// cold lava -> Fe Ni Cr Ti W
+MTUtilsGT.addCustomRecipe("gt.recipe.centrifuge", false, 64, 200, 0,[10000, 1500, 500, 400, 300, 300],
+[null],
+[<liquid:ic2pahoehoelava>*100],
+[null],
+[<gregtech:gt.meta.dustTiny:8505>, <terrafirmacraft:item.MetalNugget:9>, <terrafirmacraft:item.MetalNugget:11>, <gregtech:gt.meta.dustTiny:9113>, <gregtech:gt.meta.dustTiny:9120>, <gregtech:gt.meta.dustTiny:9133>]);
+
+//fast replicate basic resource after made ultimate catalyst
+//Fe
+MTUtilsGT.addCustomRecipe("gt.recipe.replicator", false, 8192, 400, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:6>*64, <Avaritia:Resource:5>*0, <Avaritia:Singularity>*0],
+[<liquid:neutralmatter>*1, <liquid:chargedmatter>*1],
+[null],
+[<terrafirmacraft:item.Wrought Iron Ingot>*64]);
+//Ni
+MTUtilsGT.addCustomRecipe("gt.recipe.replicator", false, 8192, 400, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:6>*64, <Avaritia:Resource:5>*0, <Avaritia:Singularity:9>*0],
+[<liquid:neutralmatter>*1, <liquid:chargedmatter>*1],
+[null],
+[<terrafirmacraft:item.Nickel Ingot>*64]);
+//Cu
+MTUtilsGT.addCustomRecipe("gt.recipe.replicator", false, 8192, 400, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:6>*64, <Avaritia:Resource:5>*0, <Avaritia:Singularity:5>*0],
+[<liquid:neutralmatter>*1, <liquid:chargedmatter>*1],
+[null],
+[<terrafirmacraft:item.Copper Ingot>*64]);
+//Sn
+MTUtilsGT.addCustomRecipe("gt.recipe.replicator", false, 8192, 400, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:6>*64, <Avaritia:Resource:5>*0, <Avaritia:Singularity:6>*0],
+[<liquid:neutralmatter>*1, <liquid:chargedmatter>*1],
+[null],
+[<terrafirmacraft:item.Tin Ingot>*64]);
+//Pb
+MTUtilsGT.addCustomRecipe("gt.recipe.replicator", false, 8192, 400, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:6>*64, <Avaritia:Resource:5>*0, <Avaritia:Singularity:7>*0],
+[<liquid:neutralmatter>*1, <liquid:chargedmatter>*1],
+[null],
+[<terrafirmacraft:item.Lead Ingot>*64]);
+//Ag
+MTUtilsGT.addCustomRecipe("gt.recipe.replicator", false, 8192, 400, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:6>*64, <Avaritia:Resource:5>*0, <Avaritia:Singularity:8>*0],
+[<liquid:neutralmatter>*1, <liquid:chargedmatter>*1],
+[null],
+[<terrafirmacraft:item.Silver Ingot>*64]);
+//Au
+MTUtilsGT.addCustomRecipe("gt.recipe.replicator", false, 8192, 400, 0, [10000],
+[<appliedenergistics2:item.ItemMultiMaterial:6>*64, <Avaritia:Resource:5>*0, <Avaritia:Singularity:1>*0],
+[<liquid:neutralmatter>*1, <liquid:chargedmatter>*1],
+[null],
+[<terrafirmacraft:item.Gold Ingot>*64]);
