@@ -1222,3 +1222,9 @@ MTUtilsGT.addCustomRecipe("gt.recipe.replicator", false, 8192, 400, 0, [10000],
 [<liquid:neutralmatter>*1, <liquid:chargedmatter>*1],
 [null],
 [<terrafirmacraft:item.Gold Ingot>*64]);
+
+MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 0, 1, 0, [10000],
+[<gregtech:gt.meta.storage.ingot:790>],
+[null],
+[null],
+[<minecraft:gold_block>]);
