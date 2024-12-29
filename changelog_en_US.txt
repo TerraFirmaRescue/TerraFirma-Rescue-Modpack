@@ -1,4 +1,13 @@
-3.7.0.0
+3.6.1.1
+Mod Changes:
+N/A
+
+Content Changes: 
+-Modified lava centrifugation products and production, now production is higher than 3.6.1.0 and slightly lower than 3.6.0.1
+-Added a formula that use infinity catalysts (non consumable), singularities (non consumable), and itemMultiMaterial to mass produce some resources in the material replication machine
+-Added formula for converting gold ingots into regular gold ingots through GT generifier
+
+3.6.1.0
 Mod Changes:
 - Upgraded gregtech_1.7.10-6.15.08-unofficial
 
@@ -11,6 +20,10 @@ Content Changes:
 - When you break Fluid Pipes, they will try to move their content to connected adjacent Blocks/Pipes in order to not waste it.
 Keyword being TRY, because if there is nowhere to go they will still send it to the Garbage Dump.
 - Fixed the Stainless Steel, Ultimet, and Signalum alloying issue by changing their alloying recipes.
+- Fixed the electric power problem of MESU.
+- Fixed the problem that infinity armor can't be crafted.
+- Updated the link of aifadian and Patreon
+- Added official server
 
 3.6.0.1
 Mod Changes:
