@@ -523,7 +523,7 @@ item.Powder.Limonite Powder.name=褐铁矿粉
 item.Powder.Malachite Powder.name=孔雀石粉
 item.Powder.Salt.name=盐
 item.Powder.Saltpeter Powder.name=硝石粉
-item.Powder.Sulfur Powder.name=硫磺粉
+item.Powder.Sulfur Powder.name=硫粉
 
 #=========
 #= Stone =
@@ -799,7 +799,7 @@ item.Ore.Sulfur.name=硫磺
 item.Ore.Sylvite.name=钾盐
 
 item.Ore.Bismuthinite.name=辉铋矿
-item.Ore.Cassiterite.name=锡精矿
+item.Ore.Cassiterite.name=锡石矿
 item.Ore.Galena.name=方铅矿
 item.Ore.Garnierite.name=硅镁镍矿
 item.Ore.Hematite.name=赤铁矿
@@ -814,7 +814,7 @@ item.Ore.Sphalerite.name=闪锌矿
 item.Ore.Tetrahedrite.name=黝铜矿
 
 item.Ore.Rich Bismuthinite.name=富集辉铋矿
-item.Ore.Rich Cassiterite.name=富集锡精矿
+item.Ore.Rich Cassiterite.name=富集锡石矿
 item.Ore.Rich Galena.name=富集方铅矿
 item.Ore.Rich Garnierite.name=富集硅镁镍矿
 item.Ore.Rich Hematite.name=富集赤铁矿
@@ -829,7 +829,7 @@ item.Ore.Rich Sphalerite.name=富集闪锌矿
 item.Ore.Rich Tetrahedrite.name=富集黝铜矿
 
 item.Ore.Poor Bismuthinite.name=贫瘠辉铋矿
-item.Ore.Poor Cassiterite.name=贫瘠锡精矿
+item.Ore.Poor Cassiterite.name=贫瘠锡石矿
 item.Ore.Poor Galena.name=贫瘠方铅矿
 item.Ore.Poor Garnierite.name=贫瘠硅镁镍矿
 item.Ore.Poor Hematite.name=贫瘠赤铁矿
@@ -844,7 +844,7 @@ item.Ore.Poor Sphalerite.name=贫瘠闪锌矿
 item.Ore.Poor Tetrahedrite.name=贫瘠黝铜矿
 
 item.Small Ore.Bismuthinite.name=小型辉铋矿
-item.Small Ore.Cassiterite.name=小型锡精矿
+item.Small Ore.Cassiterite.name=小型锡石矿
 item.Small Ore.Galena.name=小型方铅矿
 item.Small Ore.Garnierite.name=小型硅镁镍矿
 item.Small Ore.Hematite.name=小型赤铁矿
@@ -883,7 +883,7 @@ tile.Ore.Sulfur.name=硫磺
 tile.Ore.Sylvite.name=钾盐
 
 tile.Ore.Bismuthinite.name=辉铋矿
-tile.Ore.Cassiterite.name=锡精矿
+tile.Ore.Cassiterite.name=锡石矿
 tile.Ore.Galena.name=方铅矿
 tile.Ore.Garnierite.name=硅镁镍矿
 tile.Ore.Hematite.name=赤铁矿
