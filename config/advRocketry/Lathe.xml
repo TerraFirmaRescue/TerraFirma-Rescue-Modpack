@@ -286,7 +286,7 @@ Terrafirma: Rescue License: https://github.com/TerraFirmaRescue/TerraFirma-Rescu
 			<oreDict>ingotTitaniumNiobiumCarbide</oreDict>
 		</input>
 		<output>
-			<itemStack>gregtech:gt.meta.stick 2 27000</itemStack>
+			<itemStack>gregtech:gt.meta.stick 2 15000</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -374,7 +374,7 @@ Terrafirma: Rescue License: https://github.com/TerraFirmaRescue/TerraFirma-Rescu
 			<oreDict>ingotIron</oreDict>
 		</input>
 		<output>
-			<itemStack>libVulpes:libVulpesproductrod 2 1</itemStack>
+			<itemStack>gregtech:gt.meta.stick 2 260</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -2318,7 +2318,7 @@ Terrafirma: Rescue License: https://github.com/TerraFirmaRescue/TerraFirma-Rescu
 			<oreDict>ingotSteel</oreDict>
 		</input>
 		<output>
-			<itemStack>libVulpes:libVulpesproductrod 2 6</itemStack>
+			<itemStack>gregtech:gt.meta.stick 2 8630</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
